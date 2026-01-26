@@ -115,9 +115,11 @@ icon: simple/xdadevelopers
 [:simple-materialformkdocs: **Zensical**](https://zensical.org/)
 构建而成, 使用
 [:material-microsoft-visual-studio-code: **Visual Studio Code**](https://code.visualstudio.com/)
-编写代码并最终在
+编写代码, 项目存储在
+[:simple-github: **GitHub**]() 
+私人仓库并最终在
 [:simple-netlify: **Netlify**](https://www.netlify.com/)
-部署发布, 网站的常规字体采用
+编译发布, 网站的常规字体采用
 [__M__{style="font-feature-settings: 'ss05' on""} **MiSans**](https://hyperos.mi.com/font)
 字体。
 </small>
