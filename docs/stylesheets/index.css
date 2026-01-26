@@ -1,0 +1,142 @@
+/* --- 时间模块：右对齐与响应式 --- */
+.time-module {
+    margin: 0 auto 0;
+    text-align: center;
+    width: 100%;
+}
+
+.time-aligner {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* 强制对齐时钟右侧 */
+}
+
+.sub-info {
+    font-size: clamp(0.85rem, 2vw, 1.05rem);
+    opacity: 0.6;
+    white-space: nowrap;
+    color: var(--md-default-fg-color);
+    line-height: 1.2;
+    margin-bottom: -4px;
+    /* 缩小行间距 */
+    padding-bottom: 10px;
+    /* 保留你要求的间距 */
+}
+
+.clock-display {
+    font-size: clamp(3.5rem, 15vw, 7.5rem);
+    font-weight: 900;
+    line-height: 1;
+    color: var(--md-default-fg-color);
+    font-variant-numeric: tabular-nums;
+    -webkit-font-feature-settings: "tnum";
+    font-feature-settings: "tnum";
+    letter-spacing: -0.02em;
+}
+
+[data-md-color-scheme="default"] .clock-display {
+    color: #202124;
+}
+
+/* --- 搜索框：阴影与布局 --- */
+.search-bar {
+    margin: 40px auto 0 auto;
+    width: 92%;
+    max-width: 700px;
+    height: 52px;
+    background: var(--md-default-bg-color);
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 16px;
+    box-sizing: border-box;
+    /* 确保阴影过渡平滑 */
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* 修复：补回丢失的悬停和激活阴影 */
+.search-bar:hover,
+.search-bar:focus-within {
+    border-color: rgba(128, 128, 128, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.engine-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 12px;
+    margin-right: 4px;
+    border-right: 1px solid rgba(128, 128, 128, 0.2);
+    height: 24px;
+    cursor: pointer;
+}
+
+#cur-icon-box svg {
+    width: 20px !important;
+    height: 20px !important;
+    fill: currentColor;
+    display: block;
+}
+
+.real-input {
+    flex: 1;
+    border: none !important;
+    outline: none !important;
+    padding: 0 14px;
+    font-size: 16px;
+    background: transparent !important;
+    color: var(--md-default-fg-color);
+}
+
+.search-bar ul {
+    display: none !important;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    min-width: 150px;
+    background: var(--md-default-bg-color);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    list-style: none !important;
+    padding: 6px !important;
+    margin: 0 !important;
+    z-index: 1000;
+}
+
+.search-bar ul a svg {
+    display: none !important;
+}
+
+.search-bar a {
+    display: block;
+    padding: 10px 16px !important;
+    color: var(--md-default-fg-color) !important;
+    font-size: 14px;
+    border-radius: 8px;
+    text-decoration: none !important;
+}
+
+.search-bar li:hover a {
+    background: var(--md-primary-fg-color--transparent);
+    color: var(--md-primary-fg-color) !important;
+}
+
+.go-btn {
+    cursor: pointer;
+    color: #9aa0a6;
+    padding-left: 8px;
+}
+
+.go-btn svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+    margin-top: 10px;
+}

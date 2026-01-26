@@ -1,0 +1,55 @@
+@media screen and (min-width: 45em) {
+    .md-social {
+        padding: 0;
+    }
+}
+
+.md-social,
+.md-copyright,
+.md-footer-meta__inner {
+    padding: 0;
+}
+
+.md-typeset a{
+    text-decoration: none;
+}
+
+.md-typeset table:not([class]) {
+    background: none;
+    border-radius: 0.5rem;
+}
+
+.md-typeset table:not([class]) th {
+    border-bottom: 0.125rem solid color-mix(in srgb, var(--md-accent-fg-color) 30%, transparent);
+}
+
+/* 页面最大宽度 */
+.md-grid {
+    max-width: 1440px; 
+}
+
+@font-face {
+    font-family: "MiSansVF";
+    src: url("../assets/fonts/MiSansVF.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --md-text-font: "MiSansVF", sans-serif;
+    --features: "tnum" on, "case" on, "ss04" on;
+}
+
+* {
+    font-feature-settings: var(--features);
+}
+
+.md-typeset small .twemoji {
+    margin-top: 1.35px;
+}
+
+.md-typeset h2 .twemoji {
+    margin-top: 2.7px;
+}
+

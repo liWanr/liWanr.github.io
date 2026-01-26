@@ -1,0 +1,279 @@
+# ----------------------------------------------------------------------------
+# 站点基础信息（SEO + 站点身份）
+# ----------------------------------------------------------------------------
+[project]
+
+# site_name 会显示在页面头部和浏览器窗口标题中
+site_name = "Easton L."
+
+# 写入 HTML 的 <head> 中，用于搜索引擎，应包含对站点内容的准确、有意义的描述
+site_description = "个人技术博客，专注 Python、DevOps、云原生和自托管实践。使用 Zensical 打造的现代知识库，分享实用教程、问题解决笔记和工具心得。欢迎探索与交流！"
+
+# 用于 HTML 的 <head> 元素中标识作者
+site_author = "Easton"
+
+# 站点的规范（canonical）URL，用于 SEO 和生成 RSS 源。在构建在线文档时强烈建议设置此项
+# site_url = "https://www.example.com/"
+
+# copyright 版权声明，会显示在页面底部，支持 HTML 片段。
+copyright = """
+Copyright &copy; 2025-2026 All rights reserved.
+"""
+
+# dev_addr = "0.0.0.0:8000"
+
+# 手动定义导航栏结构。如果不定义，则会根据目录和文件名结构自动推导导航
+nav = [
+    { "Home" = "index.md" },
+    { "Knowledge" = [
+        "knowledge/server-secrets.md",
+        "knowledge/git-vault.md",
+        "knowledge/using-openwrt-to-implement-remote-networking.md",
+        "knowledge/HackRF-firmware-install-and-upgrade.md",
+        { "有趣小知识" = [
+            "knowledge/fun-little-facts/index.md",
+            "knowledge/fun-little-facts/Chrome-search-default-new-tab.md",
+            "knowledge/fun-little-facts/activate-Ubuntu-network-adapter.md",
+            "knowledge/fun-little-facts/what-is-DNS.md",
+            "knowledge/fun-little-facts/free-activation-of-JetBrains-software.md",
+            "knowledge/fun-little-facts/Dual-system-time-synchronization-problem.md",
+            "knowledge/fun-little-facts/Zensical-tips.md",
+            # "knowledge/fun-little-facts/.md",
+            # "knowledge/fun-little-facts/.md",
+        ] },
+    ] },
+    # { "Tools" = "tools.md" },
+    { "About" = "about.md" },
+]
+
+# 添加自定义 CSS 文件来，可添加任意数量的 CSS 文件
+extra_css = [
+    "stylesheets/index.css",
+    "stylesheets/extra.css",
+]
+
+# 以添加自定义 JavaScript 来扩展功能
+extra_javascript = [
+    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+    "javascripts/mathjax.js",
+    "javascripts/extra.js",
+    "javascripts/index.js",
+]
+
+
+# ----------------------------------------------------------------------------
+# 主题相关配置部分
+# ----------------------------------------------------------------------------
+[project.theme]
+
+font.code = "JetBrains Mono"        # 代码块等宽字体
+
+# variant = "classic"                # 主题风格，默认为 "modern", classic 是Material for MkDocs 风格
+
+custom_dir = "overrides"            # 模板覆盖目录，用于自定义主题模板
+
+favicon = "images/favicon.svg"       # 设置浏览器标签页或标题栏显示的图标
+
+language = "zh"                     # 设置语言,zh简中, en英文, zh-Hant繁中, zh-TW台湾
+
+features = [
+    # ================= 顶部栏 & 公告 =================
+    "announce.dismiss",             # 公告栏可被用户关闭
+
+    # ================= 搜索体验 =================
+    "search.highlight",             # 搜索跳转后高亮匹配内容
+
+    # ================= 内容 & 代码体验 ===========
+    "content.code.annotate",        # 在代码关键位置添加图标+鼠标悬停提示
+    "content.code.copy",            # 在代码块中添加一键复制按钮，无需先选中内容
+    "content.code.select",          # 允许在代码块中选择特定行范围
+    "content.footnote.tooltips",    # 将脚注渲染为行内工具提示（tooltip），无需跳转即可阅读
+    "content.tabs.link",            # 同步切换内容标签页标题相同的标签
+    "content.tooltips",             # 美观提示渲染（title）
+    # "content.action.edit",         # 配置仓库并启用此功能后，文章会生成“编辑”按钮
+    # "content.action.view",         # 配置仓库并启用此功能后，文章会生成“查看markdown源码”按钮
+
+    # ================= 导航体验 ================= https://zensical.org/docs/setup/navigation/
+    "navigation.footer",            # 在页面底部显示导航栏（上一页 / 下一页）
+    "navigation.indexes",           # 启用章节索引页功能，允许文档直接挂载到章节下（适合概览页）
+    "navigation.instant",           # 启用即时导航：点击内部链接时通过 XHR 加载，不刷新整个页面
+    "navigation.instant.prefetch",  # 启用链接预加载：鼠标悬停链接时提前开始加载页面，降低感知延迟
+    "navigation.instant.progress",  # 在慢速网络下使用即时导航时，显示加载进度条
+    "navigation.path",              # 显示路径面包屑导航（在页面标题上方）
+    # "navigation.sections",          # 在大屏幕（>1220px）下，将顶级章节渲染为侧边栏分组，移动端保持原样
+    "navigation.tabs",              # 在大屏幕下，将顶级章节渲染为头部下方的菜单标签页
+    "navigation.tabs.sticky",       # 启用粘性标签页：向下滚动时标签页固定在头部下方始终可见
+    "navigation.top",               # 当用户向下滚动后开始向上滚动时，显示“返回顶部”按钮
+    "navigation.tracking",          # 启用锚点跟踪：地址栏 URL 会自动更新为当前高亮的目录锚点
+    # "navigation.expand",           # 默认展开导航侧边栏中所有可折叠的章节
+    # "navigation.prune",            # 启用修剪（prune）功能，只渲染可见的导航项，可显著减小构建体积
+    "toc.follow",                   # 目录锚点跟随：侧边栏会自动滚动，让当前激活的锚点始终可见
+    # "toc.integrate",               # 将目录（TOC）整合进左侧导航侧边栏
+    # "header.autohide",             # 页面向下滚动时自动隐藏头部区域
+]
+
+# ----------------------------------------------------------------------------
+# 配色方案（palette）配置，可设置自动、明、暗模式切换等
+# ----------------------------------------------------------------------------
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "跟随系统"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "浅色模式"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "深色模式"
+
+# ----------------------------------------------------------------------------
+# 字体配置，默认从 Google Fonts 加载，可自定义正文字体和等宽字体
+# ----------------------------------------------------------------------------
+#[project.theme.font]
+# text = "Inter"
+# code = "Jetbrains Mono"
+
+# ----------------------------------------------------------------------------
+# 图标与 Logo 配置
+# ----------------------------------------------------------------------------
+[project.theme.icon]
+logo = "local/logo"
+# repo = "lucide/smile"
+
+# ----------------------------------------------------------------------------
+# Markdown 扩展（全部逐项标注用途）
+# ----------------------------------------------------------------------------
+
+[project.markdown_extensions.abbr]                      # 启用缩写支持
+[project.markdown_extensions.admonition]                # 启用提示块（note、warning 等）
+[project.markdown_extensions.attr_list]                 # 启用属性列表（用于按钮、class 等）
+[project.markdown_extensions.def_list]                  # 启用定义列表语法
+[project.markdown_extensions.footnotes]                 # 启用脚注语法支持
+[project.markdown_extensions.md_in_html]                # 允许在 HTML 中写 Markdown
+[project.markdown_extensions.tables]                    # 启用 Markdown 表格支持
+[project.markdown_extensions.toc]
+permalink = "⚓︎"                                        # 启用目录锚点永久链接
+permalink_title = "锚点"
+
+[project.markdown_extensions.pymdownx.blocks.caption]   # 图片标题与对齐支持
+[project.markdown_extensions.pymdownx.caret]            # 启用上标/下标语法
+[project.markdown_extensions.pymdownx.details]          # 允许提示块折叠
+[project.markdown_extensions.pymdownx.inlinehilite]     # 启用行内代码高亮
+[project.markdown_extensions.pymdownx.keys]             # 启用键盘按键高亮显示
+[project.markdown_extensions.pymdownx.mark]             # 启用文本高亮标记
+[project.markdown_extensions.pymdownx.tilde]            # 启用删除线与下标语法
+[project.markdown_extensions.pymdownx.smartsymbols]     # 将某些字符序列转换为相应的符号，例如版权符号或分数
+
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true                                          # 启用数学公式渲染（Arithmatex）
+
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"       # 使用 Twemoji 表情集
+emoji_generator = "zensical.extensions.emoji.to_svg"    # 将 emoji 渲染为 SVG
+options.custom_icons = ["overrides/.icons"]             # 自定义 SVG 图标目录
+
+[project.markdown_extensions.pymdownx.highlight]
+guess_lang = true
+# linenums = true                                         # 为所有代码块添加行号
+linenums_style = "pymdownx-inline"                      # 行号样式
+auto_title = true                                       # 自动为所有代码块添加标题 ，显示所用语言的名称
+line_spans = "__span"                                   # 用于行级高亮的 span 标识
+anchor_linenums = true                                  # 允许代码行号作为锚点
+pygments_lang_class = true                              # 给代码块添加语言 class
+
+[project.markdown_extensions.pymdownx.snippets]
+auto_append = ["includes/abbreviations.md"]             # 自动引入缩写定义文件
+
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }    # 启用 Mermaid 图表
+]
+
+[project.markdown_extensions.pymdownx.magiclink]        # 启用魔法链接
+# social_url_shortener = true
+
+# pymdownx.blocks.html
+
+[project.markdown_extensions.pymdownx.blocks.html]      # 启用自定义 HTML 块支持
+
+# [project.markdown_extensions.pymdownx.b64]              # 启用 Base64 图像嵌入支持（没效果）
+
+[project.markdown_extensions.pymdownx.progressbar]      # 启用进度条支持（没效果）
+# level_class = true
+
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true                                  # 启用内容选项卡（替代样式）
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true                                  # 使用自定义复选框样式
+
+[project.markdown_extensions.zensical.extensions.preview]   # 搭配即时预览的 Markdown 扩展
+configurations = [
+    { targets.include = [
+        "customization.md",
+        "setup/extensions/*"
+    ]}
+]
+
+# ----------------------------------------------------------------------------
+# 其他杂项设置
+# ----------------------------------------------------------------------------
+[project.extra.annotate]
+Bash = [".s2"]
+
+[project.extra]
+generator = false                       # 移除 “Made with Zensical” 声明
+
+# alternate =[{ name = "简体中文", link = "/zh/", lang = "" },]
+[project.extra.tags]                    # 使用标签对任何页面进行分类，标签将作为页面元数据的一部分
+Git = "Git"
+Server = "Server"
+Network = "Network"
+Minecraft = "Minecraft"
+# [project.extra.consent]                 # Cookie 标题和内容描述
+# title = "隐私与 Cookie 设置"
+# description = """
+#     为了让你在这里的体验更加顺畅，
+#     我使用了 cookies 来记住你的喜好和浏览习惯。
+#     通过接受这个小小的帮手，
+#     你将帮助我不断优化网站，
+#     让你每次访问都能更轻松地找到需要的信息。
+#     感谢你的支持！
+# """
+
+[project.extra.status]
+new = "最新发布"
+
+# ----------------------------------------------------------------------------
+# 底部快捷链接设置
+# ----------------------------------------------------------------------------
+[[project.extra.social]]
+icon = "material/folder"
+# link = "/public/"
+name = "Public"
+
+[[project.extra.social]]
+icon = "material/folder-lock"
+# link = "/private/"
+name = "Private"
+
+[[project.extra.social]]
+icon = "simple/openwrt"
+# link = "http://10.0.0.1"
+name = "Openwrt"
+
+[[project.extra.social]]
+icon = "material/router-wireless-settings"
+# link = "http://10.0.0.1:16601"
+name = "Lucky"
+
+[[project.extra.social]]
+icon = "material/google-translate"
+link = "https://translate.google.com/?hl=zh-CN&sl=zh-CN&tl=en&op=translate"
+name = "Translate"
