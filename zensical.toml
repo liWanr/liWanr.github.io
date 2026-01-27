@@ -224,11 +224,35 @@ configurations = [
 # ----------------------------------------------------------------------------
 # 其他杂项设置
 # ----------------------------------------------------------------------------
-[project.extra.annotate]
-Bash = [".s2"]
+
 
 [project.extra]
 generator = false                       # 移除 “Made with Zensical” 声明
+
+[project.extra.analytics]
+provider = "google"
+property = "G-R2586SEC0Y"
+
+[project.extra.analytics.feedback]
+title = "这页内容对你有帮助吗？"
+
+[[project.extra.analytics.feedback.ratings]]
+icon = "material/emoticon-happy-outline"
+name = "有帮助"
+data = 1
+note = "感谢你的反馈！我很开心这页对你有用(^_^)"
+
+[[project.extra.analytics.feedback.ratings]]
+icon = "material/emoticon-sad-outline"
+name = "没太大帮助"
+data = 0
+note = """
+  感谢你的反馈！我会继续改进的/(ㄒoㄒ)/~~
+"""
+
+
+[project.extra.annotate]
+Bash = [".s2"]
 
 # alternate =[{ name = "简体中文", link = "/zh/", lang = "" },]
 [project.extra.tags]                    # 使用标签对任何页面进行分类，标签将作为页面元数据的一部分
