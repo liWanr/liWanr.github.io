@@ -4,13 +4,13 @@
 [project]
 
 # site_name 会显示在页面头部和浏览器窗口标题中
-site_name = "Easton L."
+site_name = "liWaner"
 
 # 写入 HTML 的 <head> 中，用于搜索引擎，应包含对站点内容的准确、有意义的描述
 site_description = "个人技术博客，专注 Python、DevOps、云原生和自托管实践。使用 Zensical 打造的现代知识库，分享实用教程、问题解决笔记和工具心得。欢迎探索与交流！"
 
 # 用于 HTML 的 <head> 元素中标识作者
-site_author = "Easton"
+site_author = "liWaner"
 
 # 站点的规范（canonical）URL，用于 SEO 和生成 RSS 源。在构建在线文档时强烈建议设置此项
 # site_url = "https://www.example.com/"
@@ -310,40 +310,20 @@ new = "最新发布"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/google"
-link = "mailto:iseastonLee@gmail.com"
+link = "mailto:imliwaner@gmail.com"
 name = "Gmail"
 
 [[project.extra.social]]
 icon = "material/microsoft"
-link = "mailto:iseastonLee@outlook.com"
+link = "mailto:imliwaner@outlook.com"
 name = "Outlook"
 
 [[project.extra.social]]
 icon = "simple/github"
-link = "https://github.com/iseastonlee"
+link = "https://github.com/imliwaner"
 name = "GitHub"
 
 [[project.extra.social]]
-icon = "simple/telegram"
+icon = "fontawesome/brands/telegram"
 link = "https://t.me/iseaston"
 name = "Telegram"
-
-[[project.extra.social]]
-icon = "local/instagram"
-link = "https://www.instagram.com/iseastonlee"
-name = "Instagram"
-
-[[project.extra.social]]
-icon = "simple/youtube"
-link = "https://www.youtube.com/@iseastonlee"
-name = "Youtube"
-
-[[project.extra.social]]
-icon = "simple/tiktok"
-link = "https://www.douyin.com/user/MS4wLjABAAAAOvMRoJmc5JWGlQQh0Db9Iml88UFzcLf0wmfEIi4GWEvBIUPGaDtuopwiqyE4C3an"
-name = "TikTok"
-
-[[project.extra.social]]
-icon = "simple/steam"
-link = "https://steamcommunity.com/profiles/76561199004333008/"
-name = "Steam"
