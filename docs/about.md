@@ -49,7 +49,7 @@ icon: simple/xdadevelopers
 
 -   __联系方式__
 
-    [:simple-google:](mailto:iseastonLee@gmail.com){ .md-button .md-button--primary title="Gmail"}
+    [:fontawesome-brands-google:](mailto:iseastonLee@gmail.com){ .md-button .md-button--primary title="Gmail"}
     [:material-microsoft:](mailto:iseastonLee@outlook.com){ .md-button .md-button--primary title="Outlook"}
     [:simple-github:](https://github.com/iseastonlee){ .md-button .md-button--primary title="GitHub"}
     [:simple-telegram:](https://t.me/iseaston){ .md-button .md-button--primary title="Telegram"}

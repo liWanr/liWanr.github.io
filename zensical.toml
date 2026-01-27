@@ -253,27 +253,72 @@ new = "最新发布"
 # ----------------------------------------------------------------------------
 # 底部快捷链接设置
 # ----------------------------------------------------------------------------
-[[project.extra.social]]
-icon = "material/folder"
-# link = "/public/"
-name = "Public"
+
+# ----  本地部署的底部链接  ----
+
+# [[project.extra.social]]
+# icon = "material/folder"
+# # link = "/public/"
+# name = "Public"
+
+# [[project.extra.social]]
+# icon = "material/folder-lock"
+# # link = "/private/"
+# name = "Private"
+
+# [[project.extra.social]]
+# icon = "simple/openwrt"
+# # link = "http://10.0.0.1"
+# name = "Openwrt"
+
+# [[project.extra.social]]
+# icon = "material/router-wireless-settings"
+# # link = "http://10.0.0.1:16601"
+# name = "Lucky"
+
+# [[project.extra.social]]
+# icon = "material/google-translate"
+# link = "https://translate.google.com/?hl=zh-CN&sl=zh-CN&tl=en&op=translate"
+# name = "Translate"
+
+# ----  非本地部署的底部链接  ----
 
 [[project.extra.social]]
-icon = "material/folder-lock"
-# link = "/private/"
-name = "Private"
+icon = "fontawesome/brands/google"
+link = "mailto:iseastonLee@gmail.com"
+name = "Gmail"
 
 [[project.extra.social]]
-icon = "simple/openwrt"
-# link = "http://10.0.0.1"
-name = "Openwrt"
+icon = "material/microsoft"
+link = "mailto:iseastonLee@outlook.com"
+name = "Outlook"
 
 [[project.extra.social]]
-icon = "material/router-wireless-settings"
-# link = "http://10.0.0.1:16601"
-name = "Lucky"
+icon = "simple/github"
+link = "https://github.com/iseastonlee"
+name = "GitHub"
 
 [[project.extra.social]]
-icon = "material/google-translate"
-link = "https://translate.google.com/?hl=zh-CN&sl=zh-CN&tl=en&op=translate"
-name = "Translate"
+icon = "simple/telegram"
+link = "https://t.me/iseaston"
+name = "Telegram"
+
+[[project.extra.social]]
+icon = "local/instagram"
+link = "https://www.instagram.com/iseastonlee"
+name = "Instagram"
+
+[[project.extra.social]]
+icon = "simple/youtube"
+link = "https://www.youtube.com/@iseastonlee"
+name = "Youtube"
+
+[[project.extra.social]]
+icon = "simple/tiktok"
+link = "https://www.douyin.com/user/MS4wLjABAAAAOvMRoJmc5JWGlQQh0Db9Iml88UFzcLf0wmfEIi4GWEvBIUPGaDtuopwiqyE4C3an"
+name = "TikTok"
+
+[[project.extra.social]]
+icon = "simple/steam"
+link = "https://steamcommunity.com/profiles/76561199004333008/"
+name = "Steam"
