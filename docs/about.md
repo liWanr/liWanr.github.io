@@ -130,7 +130,7 @@ icon: simple/xdadevelopers
 </div> -->
 
 <small>
-:material-fountain-pen-tip: 网站基于开源静态站点生成器
+:material-clipboard-text-play-outline:网站基于开源静态站点生成器
 [**Zensical**](https://zensical.org/)
 构建而成, 使用
 [:material-microsoft-visual-studio-code: **Visual Studio Code**](https://code.visualstudio.com/)
