@@ -53,3 +53,16 @@
     margin-top: 2.7px;
 }
 
+@media (max-width: 600px) {
+    .md-social{
+        padding: 0;
+    }
+    .md-copyright__highlight{
+        display: none;
+    }
+    .md-grid{
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}

@@ -29,21 +29,6 @@ hide:
     .md-typeset .twemoji svg {
         margin-top: 4px;
     }
-    /* 当视口宽度小于6000px时隐藏底部 Copyright */
-    @media (max-width: 600px) {
-        .md-social{
-            padding: 0;
-        }
-        .md-copyright__highlight{
-            display: none;
-        }
-        .md-grid{
-            /* display: flex; */
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-    }
 </style>
 
 <div class="time-module">
