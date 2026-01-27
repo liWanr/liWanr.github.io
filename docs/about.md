@@ -131,7 +131,7 @@ icon: simple/xdadevelopers
 
 <small>
 :material-fountain-pen-tip: 网站基于开源静态站点生成器
-[:simple-materialformkdocs: **Zensical**](https://zensical.org/)
+[**Zensical**](https://zensical.org/)
 构建而成, 使用
 [:material-microsoft-visual-studio-code: **Visual Studio Code**](https://code.visualstudio.com/)
 编写代码, 项目存储在
