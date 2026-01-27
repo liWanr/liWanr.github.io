@@ -22,7 +22,7 @@ icon: simple/xdadevelopers
 </style>
 
 <h2 style="margin-top:0; font-size:4em;">
-你好, 我是 Easton Lee!
+你好, 我是 liWaner!
 </h2>
 
 ## :octicons-person-fill-16: About Me
@@ -57,7 +57,7 @@ icon: simple/xdadevelopers
 
 <div id="target" align="center" class="grid" markdown data-show-max="1300">
 
-![Image title](https://dummyimage.com/600x400/eee/aaa){ width="400" loading=lazy}
+![Image title](./images/about/background.jpg){ width="450" style="margin-top: 20px" loading=lazy}
 
 </div>
 
@@ -68,9 +68,9 @@ icon: simple/xdadevelopers
 
 -   **Let's chat**
 
-    [:fontawesome-brands-google:](mailto:iseastonLee@gmail.com){ title="Gmail" } <small>|</small>
-    [:material-microsoft:](mailto:iseastonLee@outlook.com){ title="Outlook" } <small>|</small>
-    [:simple-github:](https://github.com/iseastonlee){ title="GitHub" } <small>|</small>
+    [:fontawesome-brands-google:](mailto:imliwaner@gmail.com){ title="Gmail" } <small>|</small>
+    [:material-microsoft:](mailto:imliwaner@outlook.com){ title="Outlook" } <small>|</small>
+    [:simple-github:](https://github.com/imliwaner){ title="GitHub" } <small>|</small>
     [:simple-telegram:](https://t.me/iseaston){ title="Telegram" } <small>|</small>
     [:local-instagram:](https://www.instagram.com/iseastonlee){ title="Instagram" } <small>|</small>
     [:simple-youtube:](https://www.youtube.com/@iseastonlee){ title="YouTube" } <small>|</small>
@@ -130,16 +130,17 @@ icon: simple/xdadevelopers
 </div> -->
 
 <small>
-:material-clipboard-text-play-outline:网站基于开源静态站点生成器
+:material-clipboard-text-play-outline:网站基于现代静态网站生成器
 [**Zensical**](https://zensical.org/)
 构建而成, 使用
-[:material-microsoft-visual-studio-code: **Visual Studio Code**](https://code.visualstudio.com/)
+[**Visual Studio Code**](https://code.visualstudio.com/)
 编写代码, 项目存储在
-[:simple-github: **GitHub**]() 
+[**GitHub**]() 
 私人仓库并最终在
-[:simple-netlify: **Netlify**](https://www.netlify.com/)
+[**Netlify**](https://www.netlify.com/) 和
+[**Vercel**](https://vercel.com/)
 部署发布, 网站的常规字体采用
-[__M__{style="font-feature-settings: 'ss05' on""} **MiSans**](https://hyperos.mi.com/font)
+[**MiSans**](https://hyperos.mi.com/font)
 字体。
 </small>
 
