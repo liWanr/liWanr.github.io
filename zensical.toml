@@ -54,8 +54,8 @@ extra_css = [
 
 # 以添加自定义 JavaScript 来扩展功能
 extra_javascript = [
-    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
-    "javascripts/mathjax.js",
+    # "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+    # "javascripts/mathjax.js",
     "javascripts/extra.js",
     "javascripts/index.js",
 ]
