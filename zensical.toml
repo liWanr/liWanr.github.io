@@ -260,16 +260,16 @@ Git = "Git"
 Server = "Server"
 Network = "Network"
 Minecraft = "Minecraft"
-# [project.extra.consent]                 # Cookie 标题和内容描述
-# title = "隐私与 Cookie 设置"
-# description = """
-#     为了让你在这里的体验更加顺畅，
-#     我使用了 cookies 来记住你的喜好和浏览习惯。
-#     通过接受这个小小的帮手，
-#     你将帮助我不断优化网站，
-#     让你每次访问都能更轻松地找到需要的信息。
-#     感谢你的支持！
-# """
+[project.extra.consent]                 # Cookie 标题和内容描述
+title = "隐私与 Cookie 设置"
+description = """
+    为了让你在这里的体验更加顺畅，
+    我使用了 cookies 来记住你的喜好和浏览习惯。
+    通过接受这个小小的帮手，
+    你将帮助我不断优化网站，
+    让你每次访问都能更轻松地找到需要的信息。
+    感谢你的支持！
+"""
 
 [project.extra.status]
 new = "最新发布"
