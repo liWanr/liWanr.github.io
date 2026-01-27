@@ -6,6 +6,7 @@ hide:
     - path
     - pageTitle
     - editButton
+    - feedback
     - footer
 ---
 
