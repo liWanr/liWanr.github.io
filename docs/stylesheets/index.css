@@ -3,6 +3,7 @@
     margin: 0 auto 0;
     text-align: center;
     width: 100%;
+    user-select: none;
 }
 
 .time-aligner {
@@ -53,6 +54,7 @@
     position: relative;
     padding: 0 16px;
     box-sizing: border-box;
+    user-select: none;
     /* 确保阴影过渡平滑 */
     transition: box-shadow 0.25s ease, border-color 0.25s ease;
 }
