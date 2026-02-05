@@ -22,7 +22,7 @@ icon: simple/xdadevelopers
 </style>
 
 <h2 style="margin-top:0; font-size:4em;">
-你好, 我是 liWaner!
+你好, 我是 liWanr!
 </h2>
 
 ## :octicons-person-fill-16: About Me
@@ -137,7 +137,6 @@ icon: simple/xdadevelopers
 编写代码, 项目存储在
 [**GitHub**]() 
 私人仓库并最终在
-[**Netlify**](https://www.netlify.com/) 和
 [**Vercel**](https://vercel.com/)
 部署发布, 网站的常规字体采用
 [**MiSans**](https://hyperos.mi.com/font)

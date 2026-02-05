@@ -4,13 +4,13 @@
 [project]
 
 # site_name 会显示在页面头部和浏览器窗口标题中
-site_name = "liWaner"
+site_name = "liWanr"
 
 # 写入 HTML 的 <head> 中，用于搜索引擎，应包含对站点内容的准确、有意义的描述
 site_description = "个人技术博客，专注 Python、DevOps、云原生和自托管实践。使用 Zensical 打造的现代知识库，分享实用教程、问题解决笔记和工具心得。欢迎探索与交流！"
 
 # 用于 HTML 的 <head> 元素中标识作者
-site_author = "liWaner"
+site_author = "liWanr"
 
 # 站点的规范（canonical）URL，用于 SEO 和生成 RSS 源。在构建在线文档时强烈建议设置此项
 # site_url = "https://www.example.com/"
@@ -309,18 +309,13 @@ new = "最新发布"
 # ----  非本地部署的底部链接  ----
 
 [[project.extra.social]]
-icon = "fontawesome/brands/google"
-link = "mailto:imliwaner@gmail.com"
-name = "Gmail"
-
-[[project.extra.social]]
 icon = "material/microsoft"
-link = "mailto:imliwaner@outlook.com"
+link = "mailto:itsWanr@outlook.com"
 name = "Outlook"
 
 [[project.extra.social]]
 icon = "simple/github"
-link = "https://github.com/imliwaner"
+link = "https://github.com/liWanr"
 name = "GitHub"
 
 [[project.extra.social]]
