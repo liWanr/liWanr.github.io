@@ -27,7 +27,8 @@ nav = [
     { "Home" = "index.md" },
     { "Recom" =  [
         "recom/epic-open-source-project.md",
-        "recom/epic-tools.md"
+        "recom/epic-tools.md",
+        "recom/epic-website.md",
     ]},
     { "Blog" = [
         # "blog/posts/index.md",
@@ -35,7 +36,7 @@ nav = [
         "blog/posts/git-vault.md",
         "blog/posts/using-openwrt-to-implement-remote-networking.md",
         "blog/posts/HackRF-firmware-install-and-upgrade.md",
-        { "Fun Fact" = [
+        { "有趣小知识" = [
             "blog/posts/fun-facts/index.md",
             "blog/posts/fun-facts/Chrome-search-default-new-tab.md",
             "blog/posts/fun-facts/activate-Ubuntu-network-adapter.md",
