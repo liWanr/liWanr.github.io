@@ -68,9 +68,9 @@ hide:
 
 -   **Let's chat**
 
-    [:lucide-mail:**Email**](mailto:itsWanr@outlook.com) <small>|</small>
-    [:simple-github:**GitHub**](https://github.com/liWanr) <small>|</small>
-    [:simple-telegram:**Telegram**](https://t.me/itsWanr)
+    [:local-at:**Outlook**](mailto:itsWanr@outlook.com) <small>|</small>
+    [:fontawesome-brands-github:**GitHub**](https://github.com/liWanr) <small>|</small>
+    [:fontawesome-brands-telegram:**Telegram**](https://t.me/itsWanr)
     
     
 -   **Links**
@@ -123,19 +123,19 @@ hide:
 </div> -->
 
 <small>
-:material-clipboard-text-play-outline:网站基于现代静态网站生成器
+:lucide-quote: 网站基于
 [**Zensical**](https://zensical.org/)
-构建而成, 使用
-[**Visual Studio Code**](https://code.visualstudio.com/)
-编写代码, 项目存储在
-[**GitHub**]() 
-私人仓库并最终在
+搭建，代码通过
+[**VS Code**](https://code.visualstudio.com/)
+编写并存储于
+[**GitHub**](https://github.com/github) 
+私人仓库中。除本地外还在
 [**Vercel**](https://vercel.com/)
-部署发布, 网站的常规字体采用
+发布, 常规文字采用
 [**MiSans**](https://hyperos.mi.com/font)
-字体, 时间部分采用
+字体, 时间元素采用
 [**Lunisolar**](https://lunisolar.js.org/)
-工具库。
+工具库实现。
 </small>
 
 

@@ -115,11 +115,11 @@ hide:
 
     - [:simple-telegram: Telegram](https://web.telegram.org/a/) 
 
-    - [:local-instagram: Instagram](https://www.instagram.com)  
+    - [:lucide-instagram: Instagram](https://www.instagram.com)  
 
-    - [:simple-youtube: YouTube](https://www.youtube.com/) 
+    - [:lucide-youtube: YouTube](https://www.youtube.com/) 
 
-    - [:fontawesome-brands-twitter: Twitter](https://x.com/) 
+    - [:lucide-twitter: Twitter](https://x.com/) 
 
     - [:simple-bilibili: Bilibili](https://www.bilibili.com/) 
 
