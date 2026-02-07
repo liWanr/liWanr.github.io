@@ -1,90 +1,76 @@
-(function() {
-    function updateClock() {
-        const now = new Date();
-        const clockEl = document.getElementById('clock');
-        if (clockEl) clockEl.textContent = now.toTimeString().split(' ')[0];
+import lunisolar from './lunisolar/lunisolar.esm.js';
 
-        const dateEl = document.getElementById('date-info');
-        if (dateEl) {
-            const w = ["日", "一", "二", "三", "四", "五", "六"][now.getDay()];
-            const d = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
-            d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
-            const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
-            const weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
-            dateEl.textContent = `${now.getFullYear()}年${now.getMonth()+1}月${now.getDate()}日 星期${w} 第${weekNo}周`;
-        }
-        
-        const lunarEl = document.getElementById('lunar-info');
-        if (lunarEl) lunarEl.textContent = "乙巳蛇年 腊月初八"; 
+// 设置全局使用中文
+await import('https://unpkg.com/lunisolar/locale/zh-cn.js');
+lunisolar.locale(lunisolarLocaleZhCn);
+
+// 引入节日
+import { festivals } from './lunisolar/festivals.js';
+lunisolar.Markers.add(festivals, "自定义节日")
+
+// 格式化
+function formatNum(num){
+    return String(num).padStart(2, '0')
+}
+
+// 更新农历
+function updateLunar(now) {
+    let lunarTime = now.format('cYcZ年 lMlD lH时').replace(/十二月/g, "腊月");;
+
+    if(now.solarTerm != null){
+        lunarTime = lunarTime + " " + now.solarTerm.toString();
+    }
+     
+    const festival = now.markers.toString()
+    if(festival != "") {
+        lunarTime = lunarTime + " " + festival;
     }
 
-    function initSearch() {
-        const bar = document.querySelector('.search-bar');
-        if (!bar) return;
-        const ul = bar.querySelector('ul');
-        if (!ul) return;
+    document.getElementById('lunar-info').textContent = lunarTime;
+}
 
-        const firstA = ul.querySelector('a');
-        let currentUrl = firstA ? firstA.href : '';
-        const getIcon = (el) => el.querySelector('svg') ? el.querySelector('svg').outerHTML : '';
+// 更新公历
+function updateDate(now) {
 
-        const trigger = document.createElement('div');
-        trigger.className = 'engine-trigger';
-        trigger.innerHTML = `<div id="cur-icon-box">${getIcon(firstA)}</div><span style="font-size:8px;margin-left:6px;opacity:0.4">▼</span>`;
+    const week = '日一二三四五六';
 
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.className = 'real-input';
-        input.placeholder = '搜索...';
-        input.spellcheck = false;
+    const nowDay = now.toDate();
+    const firstDay = new Date(now.year, 0, 1);
+    const offset = lunisolar(firstDay).dayOfWeek-1; // 偏移量，因为如果1月1号不是周一就会有误差
 
-        const btn = document.createElement('div');
-        btn.className = 'go-btn';
-        btn.innerHTML = `<svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>`;
+    const allDays = Math.floor((nowDay - firstDay) / 86400000) + 1;
+    const weekNum = Math.ceil((allDays+offset) / 7);
 
-        bar.prepend(trigger);
-        bar.insertBefore(input, ul);
-        bar.appendChild(btn);
+    const dateTime = `${now.year}年${formatNum(now.month)}月${formatNum(now.day)}日星期${week[now.dayOfWeek]} 第${weekNum}周`
 
-        // 核心修改：使用 setProperty 覆盖 CSS 的 !important 隐藏
-        trigger.onclick = (e) => {
-            e.stopPropagation();
-            const isHidden = window.getComputedStyle(ul).display === 'none';
-            if (isHidden) {
-                ul.style.setProperty('display', 'block', 'important');
-            } else {
-                ul.style.setProperty('display', 'none', 'important');
-            }
-        };
+    document.getElementById('date-info').textContent = dateTime;
+}
 
-        ul.querySelectorAll('a').forEach(a => {
-            a.onclick = (e) => {
-                e.preventDefault();
-                currentUrl = a.href;
-                document.getElementById('cur-icon-box').innerHTML = getIcon(a);
-                ul.style.setProperty('display', 'none', 'important');
-                input.focus();
-            };
-        });
+// 更新钟点
+function updateClock() {
+    const now = lunisolar(lunisolar());
 
-        const execSearch = () => {
-            const val = input.value.trim();
-            if (val) {
-                window.open(currentUrl + encodeURIComponent(val), '_blank');
-                input.value = '';
-            }
-        };
+    const hour = String(now.hour).padStart(2, '0');
+    const minute = String(now.minute).padStart(2, '0');
+    const second = String(now.second).padStart(2, '0');
 
-        input.onkeypress = (e) => { if (e.key === 'Enter') execSearch(); };
-        btn.onclick = execSearch;
-        document.addEventListener('click', () => { 
-            ul.style.setProperty('display', 'none', 'important'); 
-        });
+    const clock = `${hour}:${minute}:${second}`;
+
+    if (clock == "00:00:00") {
+        updateLunar(now);
+        updateDate(now);
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        updateClock();
-        setInterval(updateClock, 1000);
-        initSearch();
-    });
-})();
+    document.getElementById('clock').textContent = clock;
+}
+
+function init() {
+    const now = lunisolar(lunisolar());
+    updateLunar(now);
+    updateDate(now);
+    updateClock();
+}
+
+init();
+
+setInterval(updateClock, 1000);
