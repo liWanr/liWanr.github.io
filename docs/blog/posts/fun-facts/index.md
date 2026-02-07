@@ -1,4 +1,10 @@
-# 有趣小知识 {id=" "}
+---
+icon: lucide/notebook-text
+title: 有趣小知识
+hide:
+    - feedback
+    - footer
+---
 
 欢迎来到这个小小的技术奇妙角落！
 

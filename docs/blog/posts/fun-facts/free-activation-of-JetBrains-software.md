@@ -1,10 +1,10 @@
 ---
+icon: simple/jetbrains
+title: 免费激活 JetBrains
 tags:
   - Network
   - GitHub
 ---
-
-# 免费激活 JetBrains 软件 {id=" "}
 
 1. **找到激活导航地址**: 打开[激活网站](https://3.jetbra.in/){target="_blank"}，选择成功连接的地址。
 

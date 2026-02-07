@@ -1,10 +1,10 @@
 ---
+icon: material/usb
+title: U 盘安全启动
 tags:
   - Network
   - GitHub
 ---
-
-# U 盘安全启动 {id=" "}
 
 **解决方案**
 

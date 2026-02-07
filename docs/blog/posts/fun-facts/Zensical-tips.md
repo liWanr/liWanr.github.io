@@ -1,7 +1,8 @@
 ---
+icon: lucide/feather
+title: Zensical 的小技巧
 status: new
 ---
-# Zensical 的小技巧 {id=" "}
 
 ## 使用 MiSans 字体 {id="use-MiSans-font"}
 

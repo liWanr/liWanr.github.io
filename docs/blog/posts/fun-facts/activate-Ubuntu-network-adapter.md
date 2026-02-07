@@ -1,10 +1,10 @@
 ---
+icon: lucide/shield-check
+title: 激活 Ubuntu 网卡
 tags:
   - Network
   - GitHub
 ---
-
-# 激活 Ubuntu 网卡 {id=" "}
 
 ## 检查网络接口状态 {id="check-network-interface-status"}
 
