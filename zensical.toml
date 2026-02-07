@@ -64,9 +64,9 @@ path = "javascripts/extra.js"
 # [[project.extra_javascript]]
 # path = "https://unpkg.com/lunisolar@2.1.0/dist/lunisolar.js"
 
-[[project.extra_javascript]]
-path = "javascripts/index.js"
-type = "module"
+# [[project.extra_javascript]]
+# path = "javascripts/index.js"
+# type = "module"
 
 # ----------------------------------------------------------------------------
 # 主题相关配置部分

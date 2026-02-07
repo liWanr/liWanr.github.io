@@ -31,11 +31,13 @@ hide:
     }
 </style>
 
+<script type="module" src="./javascripts/index.js"></script>
+
 <div class="time-module">
   <div class="time-aligner">
-    <div id="lunar-info" class="sub-info">获取中...</div>
-    <div id="date-info" class="sub-info">获取中...</div>
-    <div id="clock" class="clock-display">00:00:00</div>
+    <div id="lunar-info" class="sub-info"></div>
+    <div id="date-info" class="sub-info"></div>
+    <div id="clock" class="clock-display"></div>
   </div>
 </div>
 

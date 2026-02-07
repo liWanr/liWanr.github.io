@@ -1,76 +1,87 @@
-import lunisolar from './lunisolar/lunisolar.esm.js';
+// ============================================
+// 性能优化版本（使用立即执行函数）
+// ============================================
 
-// 设置全局使用中文
-await import('https://unpkg.com/lunisolar/locale/zh-cn.js');
-lunisolar.locale(lunisolarLocaleZhCn);
-
-// 引入节日
-import { festivals } from './lunisolar/festivals.js';
-lunisolar.Markers.add(festivals, "自定义节日")
-
-// 格式化
-function formatNum(num){
-    return String(num).padStart(2, '0')
-}
-
-// 更新农历
-function updateLunar(now) {
-    let lunarTime = now.format('cYcZ年 lMlD lH时').replace(/十二月/g, "腊月");;
-
-    if(now.solarTerm != null){
-        lunarTime = lunarTime + " " + now.solarTerm.toString();
-    }
-     
-    const festival = now.markers.toString()
-    if(festival != "") {
-        lunarTime = lunarTime + " " + festival;
-    }
-
-    document.getElementById('lunar-info').textContent = lunarTime;
-}
-
-// 更新公历
-function updateDate(now) {
-
-    const week = '日一二三四五六';
-
-    const nowDay = now.toDate();
-    const firstDay = new Date(now.year, 0, 1);
-    const offset = lunisolar(firstDay).dayOfWeek-1; // 偏移量，因为如果1月1号不是周一就会有误差
-
-    const allDays = Math.floor((nowDay - firstDay) / 86400000) + 1;
-    const weekNum = Math.ceil((allDays+offset) / 7);
-
-    const dateTime = `${now.year}年${formatNum(now.month)}月${formatNum(now.day)}日星期${week[now.dayOfWeek]} 第${weekNum}周`
-
-    document.getElementById('date-info').textContent = dateTime;
-}
-
-// 更新钟点
-function updateClock() {
-    const now = lunisolar(lunisolar());
-
-    const hour = String(now.hour).padStart(2, '0');
-    const minute = String(now.minute).padStart(2, '0');
-    const second = String(now.second).padStart(2, '0');
-
-    const clock = `${hour}:${minute}:${second}`;
-
-    if (clock == "00:00:00") {
-        updateLunar(now);
-        updateDate(now);
-    }
-
-    document.getElementById('clock').textContent = clock;
-}
-
-function init() {
-    const now = lunisolar(lunisolar());
-    updateLunar(now);
-    updateDate(now);
-    updateClock();
-}
-
-init();
-
-setInterval(updateClock, 1000);
+(function() {
+    'use strict';
+    
+    // 并行加载依赖
+    const modules = Promise.all([
+        import('./lunisolar/lunisolar.esm.js'),
+        import('./lunisolar/festivals.js'),
+        import('./lunisolar/zh-cn.js')
+    ]);
+    
+    // 常量
+    const formatNum = num => String(num).padStart(2, '0');
+    const WEEK_CHARS = '日一二三四五六';
+    const MS_PER_DAY = 86400000;
+    
+    // DOM 缓存
+    let lunar, date, clock;
+    
+    // 更新函数
+    const updateLunar = (lunisolar, now) => {
+        let text = now.format('cYcZ年 lMlD lH时').replace(/十二月/g, "腊月");
+        if (now.solarTerm) text += ` ${now.solarTerm}`;
+        const festival = now.markers.toString();
+        if (festival) text += ` ${festival}`;
+        lunar.textContent = text;
+    };
+    
+    const updateDate = (lunisolar, now) => {
+        const firstDay = new Date(now.year, 0, 1);
+        const offset = lunisolar(firstDay).dayOfWeek - 1;
+        const daysPassed = Math.floor((now.toDate() - firstDay) / MS_PER_DAY) + 1;
+        const weekNum = Math.ceil((daysPassed + offset) / 7);
+        
+        date.textContent = `${now.year}年${formatNum(now.month)}月${formatNum(now.day)}日`
+                         + `星期${WEEK_CHARS[now.dayOfWeek]} 第${weekNum}周`;
+    };
+    
+    const updateClock = (lunisolar) => {
+        const now = lunisolar();
+        const time = `${formatNum(now.hour)}:${formatNum(now.minute)}:${formatNum(now.second)}`;
+        
+        if (time === "00:00:00") {
+            updateLunar(lunisolar, now);
+            updateDate(lunisolar, now);
+        }
+        
+        clock.textContent = time;
+    };
+    
+    // 初始化
+    const init = async () => {
+        try {
+            const [{ default: lunisolar }, { festivals }] = await modules;
+            
+            lunisolar.locale(lunisolarLocaleZhCn);
+            lunisolar.Markers.add(festivals, "自定义节日");
+            
+            lunar = document.getElementById('lunar-info');
+            date = document.getElementById('date-info');
+            clock = document.getElementById('clock');
+            
+            if (!lunar || !date || !clock) {
+                throw new Error('Required DOM elements not found');
+            }
+            
+            const now = lunisolar();
+            updateLunar(lunisolar, now);
+            updateDate(lunisolar, now);
+            updateClock(lunisolar);
+            
+            setInterval(() => updateClock(lunisolar), 1000);
+            
+        } catch (error) {
+            console.error('Init failed:', error);
+        }
+    };
+    
+    // 启动
+    document.readyState === 'loading' 
+        ? document.addEventListener('DOMContentLoaded', init)
+        : init();
+        
+})();
