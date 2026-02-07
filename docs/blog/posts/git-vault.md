@@ -1,10 +1,10 @@
 ---
+icon: lucide/github
+title: Git 宝库
 tags:
     - Knowledge
     - Git
 ---
-
-# Git 宝库
 
 ## Git 基本知识 {id="git-basics"}
 

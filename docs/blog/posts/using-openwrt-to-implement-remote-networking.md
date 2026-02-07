@@ -1,4 +1,6 @@
 ---
+icon: lucide/workflow
+title: OpenWrt 异地组网
 tags:
   - Network
 ---
@@ -6,8 +8,6 @@ tags:
 <small>
 全称：使用 OpenWrt 配置 IPv6 + DDNS + OpenVPN 实现远程访问及异地组网
 </small>
-
-# 使用 OpenWrt 实现异地组网 {id=" "}
 
 <small>
 :octicons-light-bulb-16:

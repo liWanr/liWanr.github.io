@@ -1,11 +1,9 @@
 ---
+icon: lucide/hard-drive
+title: 服务器秘籍
 tags:
     - Server
 ---
-
-# 服务器秘籍 {id=" "}
-
-
 
 ## 压缩与解压 {id="Compression-Decompression"}
 
