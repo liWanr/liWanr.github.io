@@ -25,25 +25,29 @@ Copyright &copy; 2025-2026 All rights reserved.
 # 手动定义导航栏结构。如果不定义，则会根据目录和文件名结构自动推导导航
 nav = [
     { "Home" = "index.md" },
+    { "Recom" =  [
+        "recom/epic-open-source-project.md",
+        "recom/epic-tools.md"
+    ]},
     { "Blog" = [
-        "blog/posts/index.md",
+        # "blog/posts/index.md",
         "blog/posts/server-secrets.md",
         "blog/posts/git-vault.md",
         "blog/posts/using-openwrt-to-implement-remote-networking.md",
         "blog/posts/HackRF-firmware-install-and-upgrade.md",
-        { "有趣小知识" = [
-            "blog/posts/fun-little-facts/index.md",
-            "blog/posts/fun-little-facts/Chrome-search-default-new-tab.md",
-            "blog/posts/fun-little-facts/activate-Ubuntu-network-adapter.md",
-            "blog/posts/fun-little-facts/what-is-DNS.md",
-            "blog/posts/fun-little-facts/free-activation-of-JetBrains-software.md",
-            "blog/posts/fun-little-facts/Dual-system-time-synchronization-problem.md",
-            "blog/posts/fun-little-facts/Zensical-tips.md",
-            # "blog/posts/fun-little-facts/.md",
-            # "blog/posts/fun-little-facts/.md",
+        { "Fun Fact" = [
+            "blog/posts/fun-facts/index.md",
+            "blog/posts/fun-facts/Chrome-search-default-new-tab.md",
+            "blog/posts/fun-facts/activate-Ubuntu-network-adapter.md",
+            "blog/posts/fun-facts/what-is-DNS.md",
+            "blog/posts/fun-facts/free-activation-of-JetBrains-software.md",
+            "blog/posts/fun-facts/Dual-system-time-synchronization-problem.md",
+            "blog/posts/fun-facts/Zensical-tips.md",
+            # "blog/posts/fun-facts/.md",
+            # "blog/posts/fun-facts/.md",
         ] },
     ] },
-    # { "Tools" = "tools.md" },
+    
     { "About" = "about.md" },
 ]
 
@@ -54,13 +58,15 @@ extra_css = [
 ]
 
 # 以添加自定义 JavaScript 来扩展功能
-extra_javascript = [
-    # "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
-    # "javascripts/mathjax.js",
-    "javascripts/extra.js",
-    "javascripts/index.js",
-]
+[[project.extra_javascript]]
+path = "javascripts/extra.js"
 
+# [[project.extra_javascript]]
+# path = "https://unpkg.com/lunisolar@2.1.0/dist/lunisolar.js"
+
+[[project.extra_javascript]]
+path = "javascripts/index.js"
+type = "module"
 
 # ----------------------------------------------------------------------------
 # 主题相关配置部分
@@ -211,6 +217,10 @@ custom_fences = [
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true                                  # 启用内容选项卡（替代样式）
 
+[project.markdown_extensions.pymdownx.tabbed.slugify]
+object = "pymdownx.slugs.slugify"
+case = "lower"
+
 [project.markdown_extensions.pymdownx.tasklist]
 custom_checkbox = true                                  # 使用自定义复选框样式
 
@@ -322,3 +332,8 @@ name = "GitHub"
 icon = "fontawesome/brands/telegram"
 link = "https://t.me/iseaston"
 name = "Telegram"
+
+[[project.extra.social]]
+icon = "material/google-translate"
+link = "https://translate.google.com/?hl=zh-CN&sl=zh-CN&tl=en&op=translate"
+name = "Translate"
