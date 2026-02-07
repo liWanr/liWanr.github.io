@@ -5,13 +5,13 @@ title: 屌爆了的工具
 
 ## 类型1
 
-### Termius
-
 <div class="grid cards" markdown>
 
-- [:lucide-mouse-pointer-click: **官方网站**](https://termius.com/) |
-[**下载链接**](https://termius.com/download/) |
-[**GitHub 地址**](https://github.com/termius)
+-   ### Termius
+
+    [:lucide-mouse-pointer-click: **官方网站**](https://termius.com/) |
+    [**下载链接**](https://termius.com/download/) |
+    [**GitHub 地址**](https://github.com/termius)
 
     ---
 
@@ -26,16 +26,16 @@ title: 屌爆了的工具
     - 适用人群：系统管理员、开发者、DevOps 工程师、云基础设施维护人员
 </div>
 
-### PixPin
-
 <div class="grid cards" markdown>
 
-- [:lucide-mouse-pointer-click: **官方网站**](https://pixpin.cn/) |
-[**下载链接**](https://pixpin.cn/download/)
+-   ### PixPin
+
+    [:lucide-mouse-pointer-click: **官方网站**](https://pixpin.cn/) |
+    [**下载链接**](https://pixpin.cn/download/)
 
     ---
 
-    名字来源于“Pixel Pin”，简单来说是一个截图、贴图的工具，但是PixPin以截图和贴图两大功能为核心做了大量的优化功能，目标是提升用户在工作时的工作效率，无论用户使用电脑做何种工作，都可以使用PixPin提高工作效率。
+    名字来源于“Pixel Pin”，PixPin 为截图和贴图两大功能为核心做了大量的优化功能，目标是提升用户在工作时的工作效率，无论用户使用电脑做何种工作，都可以使用PixPin提高工作效率。
 
     - 支持平台：Windows、macOS
 
