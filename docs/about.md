@@ -5,7 +5,7 @@ hide:
     - path
     - feedback
     - footer
-icon: simple/xdadevelopers
+# icon: lucide/user-round
 ---
 
 <style>
@@ -25,7 +25,7 @@ icon: simple/xdadevelopers
 你好, 我是 liWanr!
 </h2>
 
-## :octicons-person-fill-16: About Me
+## :lucide-circle-user-round: About Me
 
 <div class="grid" markdown >
 <div class="grid" markdown >
@@ -68,22 +68,15 @@ icon: simple/xdadevelopers
 
 -   **Let's chat**
 
-    [:fontawesome-brands-google:](mailto:imliwaner@gmail.com){ title="Gmail" } <small>|</small>
-    [:material-microsoft:](mailto:imliwaner@outlook.com){ title="Outlook" } <small>|</small>
-    [:simple-github:](https://github.com/imliwaner){ title="GitHub" } <small>|</small>
-    [:simple-telegram:](https://t.me/iseaston){ title="Telegram" } <small>|</small>
-    [:local-instagram:](https://www.instagram.com/iseastonlee){ title="Instagram" } <small>|</small>
-    [:simple-youtube:](https://www.youtube.com/@iseastonlee){ title="YouTube" } <small>|</small>
-    [:fontawesome-brands-x-twitter:](https://x.com/isEastonL){ title="X"} <small>|</small>
-    [:simple-tiktok:](https://www.douyin.com/user/MS4wLjABAAAAOvMRoJmc5JWGlQQh0Db9Iml88UFzcLf0wmfEIi4GWEvBIUPGaDtuopwiqyE4C3an){ title="抖音" } <small>|</small>
-    [:simple-bilibili:](https://space.bilibili.com/612629211?spm_id_from=333.337.0.0){ title="Bilibili" } <small>|</small>
-    [:simple-steam:](https://steamcommunity.com/profiles/76561199004333008/){ title="Steam" }
+    [:lucide-mail:**Email**](mailto:itsWanr@outlook.com) <small>|</small>
+    [:simple-github:**GitHub**](https://github.com/liWanr) <small>|</small>
+    [:simple-telegram:**Telegram**](https://t.me/itsWanr)
     
     
 -   **Links**
 
-    [:local-jiao:](https://dxlcq.cn/){ title="骄骄是骄傲的骄" } <small>|</small>
-    [:local-zhong:](https://dczcq.cn/){ title="Sevenalist" }
+    [:local-jiao:**Jiao**](https://dxlcq.cn/) <small>|</small>
+    [:lucide-hat-glasses:**Sevenalist**](https://dczcq.cn/)
 
 </div>
 
@@ -140,22 +133,24 @@ icon: simple/xdadevelopers
 [**Vercel**](https://vercel.com/)
 部署发布, 网站的常规字体采用
 [**MiSans**](https://hyperos.mi.com/font)
-字体。
+字体, 时间部分采用
+[**Lunisolar**](https://lunisolar.js.org/)
+工具库。
 </small>
 
 
 <script>
-  const el = document.getElementById('target');
-  const max = +el.dataset.showMax;   // 1300
+const el = document.getElementById('target');
+const max = +el.dataset.showMax;   // 1300
 
-  function check() {
-    if (window.innerWidth < max) {
-      el.style.display = 'none';
-    } else {
-      el.style.display = '';
-    }
-  }
+function check() {
+if (window.innerWidth < max) {
+    el.style.display = 'none';
+} else {
+    el.style.display = '';
+}
+}
 
-  check();                           // 初次执行
-  window.addEventListener('resize', check);
+check();                           // 初次执行
+window.addEventListener('resize', check);
 </script>
