@@ -47,7 +47,6 @@ nav = [
             # "blog/posts/fun-facts/.md",
         ] },
     ] },
-    
     { "About" = "about.md" },
 ]
 
