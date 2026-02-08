@@ -291,42 +291,42 @@ new = "最新发布"
 
 # ----  本地部署的底部链接  ----
 
-[[project.extra.social]]
-icon = "material/folder"
-link = "/public/"
-name = "Public"
+# [[project.extra.social]]
+# icon = "material/folder"
+# link = "/public/"
+# name = "Public"
 
-[[project.extra.social]]
-icon = "material/folder-lock"
-link = "/private/"
-name = "Private"
+# [[project.extra.social]]
+# icon = "material/folder-lock"
+# link = "/private/"
+# name = "Private"
 
-[[project.extra.social]]
-icon = "simple/openwrt"
-link = "http://10.0.0.1"
-name = "Openwrt"
+# [[project.extra.social]]
+# icon = "simple/openwrt"
+# link = "http://10.0.0.1"
+# name = "Openwrt"
 
-[[project.extra.social]]
-icon = "lucide/hard-drive-upload"
-link = "http://10.0.0.1:16601"
-name = "Lucky"
+# [[project.extra.social]]
+# icon = "lucide/hard-drive-upload"
+# link = "http://10.0.0.1:16601"
+# name = "Lucky"
 
 # ----  非本地部署的底部链接  ----
 
-# [[project.extra.social]]
-# icon = "material/microsoft"
-# link = "mailto:itsWanr@outlook.com"
-# name = "Outlook"
+[[project.extra.social]]
+icon = "material/microsoft"
+link = "mailto:itsWanr@outlook.com"
+name = "Outlook"
 
-# [[project.extra.social]]
-# icon = "simple/github"
-# link = "https://github.com/liWanr"
-# name = "GitHub"
+[[project.extra.social]]
+icon = "simple/github"
+link = "https://github.com/liWanr"
+name = "GitHub"
 
-# [[project.extra.social]]
-# icon = "fontawesome/brands/telegram"
-# link = "https://t.me/iseaston"
-# name = "Telegram"
+[[project.extra.social]]
+icon = "fontawesome/brands/telegram"
+link = "https://t.me/iseaston"
+name = "Telegram"
 
 [[project.extra.social]]
 icon = "material/google-translate"
