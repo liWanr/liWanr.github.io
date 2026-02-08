@@ -4,30 +4,29 @@
 
 ### 激活方式
 
-    `source .venv/bin/activate`
+`source .venv/bin/activate`
 
 ### 退出激活
 
-    `deactivate`
+`deactivate`
 
 ### 启动命令
 
-    - 边写边预览 `zensical serve`
+1. 边写边预览 `zensical serve`
 
-    - 编译 `zensical build`
+2. 编译 `zensical build`
 
-        - 清除缓存并编译 `zensical build -c`
-
-        - 指定编译目录 `zensical build -f`
+    - 清除缓存并编译 `zensical build -c`
+    - 指定编译目录 `zensical build -f`
 
 ### 版本控制
 
-    - 升级 `pip install --upgrade --force-reinstall zensical`
+1. 升级 `pip install --upgrade --force-reinstall zensical`
 
-    - 显示当前版本 `pip show zensical`
+2. 显示当前版本 `pip show zensical`
 
 ### 杀掉被占用的进程
 
-    `sudo lsof -i :8000`
+`sudo lsof -i :8000`
 
-    `sudo kill -9` PID
+`sudo kill -9` PID
