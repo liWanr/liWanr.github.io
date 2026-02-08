@@ -242,7 +242,7 @@ generator = false                       # 移除 “Made with Zensical” 声明
 
 [project.extra.analytics]
 provider = "google"
-property = "G-R2586SEC0Y"
+property = "G-NY0V3DV1XC"
 
 [project.extra.analytics.feedback]
 title = "这页内容对你有帮助吗？"
