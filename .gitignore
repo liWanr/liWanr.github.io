@@ -8,3 +8,5 @@ site/*
 .github/*
 
 node_modules/*
+
+local-build.sh
