@@ -66,18 +66,30 @@ hide:
         ---
 
         [:simple-icloud: iCloud](https://www.icloud.com.cn/)
+
+        ---
+
+        [:simple-applemusic: Apple Music](https://music.apple.com/)
     
     - [:material-microsoft-windows: Microsoft](https://account.microsoft.com/)
 
         ---
         
-        [:material-microsoft-outlook: Outlook](https://outlook.live.com/mail)
+        [:lucide-mail: Outlook](https://outlook.live.com/mail)
+
+        ---
+
+        [:lucide-medal: Rewards](https://rewards.bing.com/)
     
     - [:material-google: Google](https://myaccount.google.com/)
     
         ---
 
-        [:simple-gmail: Gmail](https://mail.google.com/mail) 
+        [:simple-gmail: Gmail](https://mail.google.com/mail)
+
+        ---
+
+        [:material-google-analytics: Analytics](https://analytics.google.com/analytics/web/)
 
     </div>
 
