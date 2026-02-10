@@ -1,5 +1,5 @@
 ---
-icon: lucide/github
+icon: lucide/git-merge
 title: Git 宝库
 tags:
     - Knowledge
@@ -8,216 +8,230 @@ tags:
 
 ## Git 基本知识 {id="git-basics"}
 
+### 安装 Git {id="install-git"}
 
-### 使用 Git {id="using-git"}
+若要在命令行上使用 Git, 需要在计算机上安装、安装和设置 Git。 [下载并安装最新版本的 Git](https://git-scm.com/downloads)
 
-1. 若要在命令行上使用 Git, 需要在计算机上安装、安装和设置 Git。 [下载并安装最新版本的 Git](https://git-scm.com/downloads)
+!!! warning "在 Chrome OS 上启用和安装 Git"
 
-    ??? warning "在 Chrome OS 上启用和安装 Git"
+    从 2020 年开始大部分 Chrome OS 设备都内置 Git。 如果需要启用可以去 Launcher 搜索 Linux 并打开。
 
-        从 2020 年开始大部分 Chrome OS 设备都内置 Git。 如果需要启用可以去 Launcher 搜索 Linux 并打开。
+    如果你使用较早版本的 Chrome OS 设备, 则需要使用 **其他方法** ：
 
-        如果你使用较早版本的 Chrome OS 设备, 则需要使用 **其他方法** ：
+    1. 在 Chrome OS 设备上安装终端模拟器, 例如 Google Play 商店中的 Termux。
 
-        1. 在 Chrome OS 设备上安装终端模拟器, 例如 Google Play 商店中的 Termux。
+    2. 从您安装的终端模拟器安装 Git。 例如, 在 Termux 中, 输入 `pkg install git` 并在出现提示时键入 ++y++。
 
-        2. 从您安装的终端模拟器安装 Git。 例如, 在 Termux 中, 输入 `pkg install git` 并在出现提示时键入 ++y++。
+### 在 GitHub 验证身份 {id="authenticating-on-GitHub"}
 
-2. 在 Git 中设置用户名与电子邮件地址。 [设置命令 :octicons-arrow-right-16:](#setting-your-username-and-commit-email-address)
+从 Git 连接到 GitHub 仓库时需要进行身份验证。
 
-### 通过 Git 向 GitHub 进行身份验证 {id="authenticating-with-GitHub-via-Git"}
+**获取 SSH 密钥**
 
-从 Git 连接到 GitHub 仓库时需要通过 HTTP 或 SSH 进行身份验证。
+:   1. 检查是否已有 SSH 密钥, 如果有 `id_*.pub` 的文件, 则说明已有 SSH 密钥。
 
-#### 通过 SSH 连接 {id="connecting-over-ssh"}
+        ```Bash title=""
+        ls -al ~/.ssh
+        ```
 
-检查是否已有 SSH 密钥, 如果有 `.pub` , 则说明已有 SSH 密钥。
+    2. 如果没有就要 **生成 SSH 密钥** , 使用 `ssh-keygen` 命令, 使用参数 `-t` 选择加密算法之后按照提示操作即可。
 
-```Bash
-ls -al ~/.ssh
-```
+        ```Bash title=""
+        ssh-keygen -t ed25519 -C "(1)"
+        ```
 
-如果没有就要 **生成 SSH 密钥** , 按照提示完成密钥的生成, 生成的密钥默认会保存在 `~/.ssh/` 目录下, 文件名为 `id_ed25519` 或其他默认名称, 取决于密钥类型。
+        1. Git 的邮箱, 比如 **`"itsWanr@outlook.com"`**
 
-```Bash
-ssh-keygen -t ed25519 -C "(1)"
-```
+        ??? tip "推荐的算法类型"
 
-1. Git 的邮箱, 比如 **`"iseastonlee@outlook.com"`**
+            |算法用途|算法名称|特点|常见应用场景|推荐程度|
+            |:-:|-|-|-|-|
+            |非对称加密|`RSA`|应用最广、成熟稳定|密钥认证|⭐⭐⭐|
+            ||`ECDSA`|密钥短、效率高|密钥认证|⭐⭐⭐⭐|
+            ||`Ed25519`|速度快、安全性最高|密钥认证|⭐⭐⭐⭐⭐|
+            |数据加密|`AES-128/192/256`|速度快、安全性高|数据传输加密|⭐⭐⭐|
+            ||`ChaCha20-Poly1305`|移动设备性能优秀|数据传输加密|⭐⭐⭐⭐⭐|
+            |密钥交换|`ECDH`|椭圆曲线 DH|会话密钥协商|⭐⭐⭐|
+            ||`Curve25519`|现代高效算法|会话密钥协商|⭐⭐⭐⭐⭐|
+            |消息认证|`UMAC`|速度更快|数据完整性验证|⭐⭐|
+            ||`Poly1305`|与 ChaCha20 配合|数据完整性验证|⭐⭐⭐|
+            ||`HMAC-SHA2-256`|安全性好|数据完整性验证|⭐⭐⭐⭐|
+            ||`HMAC-SHA2-512`|更高安全性|数据完整性验证|⭐⭐⭐⭐⭐|
+        
+    3. 查看并复制生成好的 SSH 密钥。
 
-??? tip "`ssh-keygen`命令参数 `-t` 的含义"
+        ```Bash title=""
+        cat ~/.ssh/id_ed25519.pub
+        ```
 
-    代表生成的 SSH 密钥的类型, 它定义了密钥对的加密算法。目前有如下几种：
+        <div class="result" markdown >
 
-    1. `ed25519`: 一种现代、较为安全的算法, 生成的密钥较短, 但安全性较高（推荐）。
-
-    2. `rsa`: 传统的 RSA 算法, 长度通常为 2048 位或 4096 位, 其安全性会随着密钥长度的增加而提高。
-
-    3. `ecdsa`: 基于椭圆曲线的加密算法, 提供比 RSA 更好的安全性和性能, 但在使用时也有一些限制。
+        输出案例: **`ssh-加密方式 密文 邮箱`**
+        
+        </div>
 
 **将 SSH 密钥添加到 GitHub**
 
-首先在服务器上输入 `cat ~/.ssh/id_ed25519.pub` 并复制输出内容。然后登录 GitHub, 进入 [**Add new SSH Key**](https://github.com/settings/ssh/new) 页面, 给 Key 取个名字然后将 Key 粘贴到对应位置就好了。完成后通过以下命令测试 SSH 连接状态
 
-```Bash
-ssh -T git@github.com
-```
-
-<div class="result" markdown>
-
-=== "第一次"
-
-    ```Bash {title="" .yaml .no-copy .no-select}
-    This key is not known by any other names
-    Are you sure you want to continue connecting (yes/no/[fingerprint])? yes # (1)!
-    Hi ***! You've successfully authenticated, but GitHub does not provide shell access.
-    ```
-
-    1. 会让你输入 `yes` 确认
-
-=== "不是第一次"
-
-    ```Bash {title="" .yaml .no-copy .no-select}
-    Hi ***! You've successfully authenticated, but GitHub does not provide shell access.
-    ```
-
-</div>
-
-#### 通过 HTTPS 连接 {id="connecting-over-https"}
-
-`https://` 克隆 URL 在所有存储库上都可用, 无论可见性如何。 即使你在防火墙或代理后面, `https://` 克隆 URL 也有效。
-
-在命令行上使用 HTTPS URL 将 `git clone`、`git fetch`、`git pull` 或 `git push` 执行到专用远程仓库时, Git 将要求你提供 GitHub 用户名和密码。 当 Git 提示你输入密码时, 请输入你的personal access token。 或者可以使用 [Git 凭据管理器](https://github.com/GitCredentialManager/git-credential-manager/blob/main/README.md)等凭据帮助程序。 Git 的基于密码的身份验证已被删除, 取而代之的是更安全的身份验证方法。 
-
-如果要访问使用 SAML SSO 的组织, 并且使用的是 personal access token (classic), 则在进行身份验证之前, 还必须授权 personal access token 访问该组织。 
-
-!!! tip "提示"
-
-    您可以使用凭据小助手, 让 Git 在每次与 GitHub 通信时记住您的 GitHub 凭据。 
-    
-    要克隆仓库而不在命令行中对 GitHub 进行身份验证, 你可以使用 GitHub Desktop 进行克隆。
-
-    如果希望使用 SSH, 但不能通过端口 22 进行连接, 则可通过 HTTPS 端口使用 SSH。
-
-#### 可能存在的问题 {id="potential-problems"}
-
-!!! failure "**问题内容** ssh_exchange_identification: Connection closed by remote host"
-
-**防火墙可能会阻止 SSH 连接。** 确保远程主机的防火墙设置正确, 允许 SSH 端口（默认是 22）通过：
-
-1. 检查防火墙规则：
-
-    ```Bash
-    sudo ufw status
-    ```
-
-2. 如果防火墙阻止了 SSH 端口（22）, 可以使用以下命令允许：
-
-    ```Bash
-    sudo ufw allow 22
-    ```
-
-**如果未开启防火墙或开放端口之后仍然无效** 
-
-如果仍然无效, 则可能是设置代理后, 22端口的 SSH 连接被代理阻塞, 可以尝试通过更改 SSH 设置文件, 将 GitHub 的 SSH 连接端口从 22 改为 443。
-
-1. 首先打开 config 文件：
-
-    ```Bash
-    user@host:~$ vim ~/.ssh/config
-    ```
-
-2. 在文件中添加以下内容：
+:   登录 GitHub, 进入 [**Add new SSH Key**](https://github.com/settings/ssh/new) 页面, Title 对应密钥名称, Key type 保持默认的认证加密, Key 就是对应密钥, 完成后测试 SSH 连接状态:
 
     ```Bash title=""
-    Host github.com
-        Hostname ssh.github.com
-        Port 443
-        User git
+    ssh -T git@github.com
     ```
 
-## 设置用户名与电子邮箱 {id="setting-your-username-and-commit-email-address"}
+    <div class="result" markdown>
 
-### 设置信息 {id="setting-information"}
+    === "第一次"
 
-**设置用户名**
+        ```Bash {title="" .yaml .no-copy .no-select}
+        This key is not known by any other names
+        Are you sure you want to continue connecting (yes/no/[fingerprint])? yes # (1)!
+        Hi ***! You've successfully authenticated, but GitHub does not provide shell access.
+        ```
 
-```Bash title=""
-git config --global user.name "(1)"
-```
+        1. 会让你输入 `yes` 确认
 
-1. 里面填 git 账户名, 比如 **`"iseastonlee"`**
+    === "不是第一次"
 
-**设置电子邮件**
+        ```Bash {title="" .yaml .no-copy .no-select}
+        Hi ***! You've successfully authenticated, but GitHub does not provide shell access.
+        ```
 
-```Bash
-git config --global user.email "(1)"
-```
+    </div>
 
-1. 里面填 git 账号绑定的邮箱, 比如 **`"iseastonlee@outlook.com"`**
+**可能存在的问题**
 
-!!! note ""
+:   !!! failure "**问题内容** ssh_exchange_identification: Connection closed by remote host"
 
-    如果想查看 **特定目录的 Git 设置** 就进入仓库目录后删掉 **`--global`** 参数即可
+    **防火墙可能会阻止 SSH 连接。** 确保远程主机的防火墙设置正确, 允许 SSH 端口（默认是 22）通过：
 
-### 查看 {id="view-information"}
+    1. 检查防火墙规则：
 
-通过此命令可以查看 Git 的全局设置项, 如用户名、邮箱地址等, 帮助确保 Git 设置正确无误。
+        ```Bash title=""
+        sudo ufw status
+        ```
 
-```Bash
-git config --global --list
-```
+    2. 如果防火墙阻止了 SSH 端口（22）, 可以使用以下命令允许：
 
-<div class="result" markdown>
+        ```Bash title=""
+        sudo ufw allow 22
+        ```
 
-!!! quote "示例输出"
+    **如果未开启防火墙或开放端口之后仍然无效** 
 
-    user.name=Your Name<br>
-    user.email=your.email@example.com<br>
+    如果仍然无效, 则可能是设置代理后, 22端口的 SSH 连接被代理阻塞, 可以尝试通过更改 SSH 设置文件, 将 GitHub 的 SSH 连接端口从 22 改为 443。
 
-如果想查看 **特定目录的 Git 设置** 就进入仓库后去掉以下命令的 **`--global`** 即可
-</div>
+    1. 首先打开 config 文件：
+
+        ```Bash title=""
+        user@host:~$ vim ~/.ssh/config
+        ```
+
+    2. 在文件中添加以下内容：
+
+        ```Bash title=""
+        Host github.com
+            Hostname ssh.github.com
+            Port 443
+            User git
+        ```
+
+### 配置用户名与电子邮箱 {id="configure-username-and-commit-email-address"}
+
+**配置信息**
+
+:   === "配置用户名"
+
+        ```Bash title=""
+        git config --global user.name "(1)"
+        ```
+
+        1. 里面填 git 账户名, 比如 **`"liWanr"`**
+
+    === "电子邮件"
+
+        ```Bash title=""
+        git config --global user.email "(1)"
+        ```
+
+        1. 里面填 git 账号绑定的邮箱, 比如 **`"itsWanr@outlook.com"`**
+
+    <small>
+    :octicons-light-bulb-16:
+    如果想查看 **特定目录的 Git 设置** 就去掉 **`--global`** 参数即可
+    </small>
+
+**查看信息**
+
+:   通过此命令可以查看 Git 的全局设置项, 如用户名、邮箱地址等, 帮助确保 Git 设置正确无误。
+
+    ```Bash title=""
+    git config --global --list
+    ```
+
+    <div class="result" markdown>
+
+    ```Bash {.yaml .no-copy .no-select title="输出内容"}
+    user.name=liWanr
+    user.email=itsWanr@ooutlook.com
+    ```
+
+    </div>
+
+    <small>
+    :octicons-light-bulb-16:
+    如果想查看 **特定目录的 Git 设置** 就去掉 **`--global`** 参数即可
+    </small>
 
 ## 创建和管理仓库 {id="creating-and-managing-repositories"}
 
-### 命令 {id="commands"}
+### 常用的命令 {id="common-commands"}
 
-| 命令 | 主要作用 |
-| :- | :- |
-| `git init` | 初始化仓库|
-| `git clone` | 拷贝一份远程仓库, 也就是下载一个项目|
-| `git add` | 添加文件到暂存区|
-| `git status` | 查看仓库当前的状态, 显示有变更的文件  |
-| `git commit` | 提交暂存区到本地仓库  |
-| `git reset` | 回退版本 |
-| `git rm` | 将文件从暂存区和工作区中删除 |
-| `git mv` | 移动或重命名工作区文件 |
-| `git checkout` | 分支切换 |
-| `git show` | 显示 Git 对象的详细信息 |
-| `git log` | 查看历史提交记录 |
-| `git remote` | 远程仓库操作 |
-| `git fetch` | 从远程获取代码库 |
-| `git pull` | 下载远程代码并合并 |
-| `git push` | 上传远程代码并合并 |
-| `git branch` | 查看/创建/删除分支 |
-| `git merge` | 合并分支 |
-| `git rebase` | 变基（重新整理提交历史） |
-| `git stash` | 临时保存当前工作区变更 |
-| `git tag` | 创建/查看/删除标签 |
-| `git diff` | 查看工作区/暂存区/提交间的差异 |
-| `git config` | 查看/设置 Git 配置（如用户名、邮箱） |
+|命令|主要作用|常用参数|使用场景|
+|:-|:-|:-|:-|
+|`gitinit`|初始化仓库|`--bare`创建裸仓库|在新项目目录创建Git仓库|
+|`gitclone`|拷贝一份远程仓库|`-b<branch>`克隆指定分支<br>`--depth1`浅克隆|下载远程项目到本地|
+|`gitadd`|添加文件到暂存区|`.`添加所有文件<br>`-A`添加所有变更<br>`-p`交互式添加|准备提交前暂存修改|
+|`gitstatus`|查看仓库当前状态|`-s`简洁模式<br>`-b`显示分支信息|查看哪些文件被修改/暂存|
+|`gitcommit`|提交暂存区到本地仓库|`-m"message"`添加提交信息<br>`-a`自动暂存已跟踪文件<br>`--amend`修改上次提交|保存代码变更到本地历史|
+|`gitreset`|回退版本|`--soft`保留工作区和暂存区<br>`--mixed`保留工作区<br>`--hard`全部丢弃|撤销提交或取消暂存|
+|`gitrm`|删除文件|`-r`递归删除目录<br>`--cached`仅从暂存区删除|从版本控制中移除文件|
+|`gitmv`|移动或重命名文件|无特殊参数|重命名文件并保留历史|
+|`gitcheckout`|切换分支/恢复文件|`-b<branch>`创建并切换分支<br>`--<file>`恢复文件|切换工作分支或丢弃文件修改|
+|`gitswitch`|切换分支（新命令）|`-c<branch>`创建并切换分支|更清晰的分支切换操作|
+|`gitrestore`|恢复文件（新命令）|`--staged`取消暂存<br>`--source`指定来源|恢复工作区或暂存区文件|
+|`gitshow`|显示对象详细信息|`<commit>`查看指定提交<br>`<tag>`查看标签|查看提交内容或标签信息|
+|`gitlog`|查看提交历史|`--oneline`单行显示<br>`--graph`图形化<br>`-n<num>`限制数量|浏览项目历史记录|
+|`gitremote`|管理远程仓库|`add<name><url>`添加远程库<br>`-v`查看详细信息|配置远程仓库地址|
+|`gitfetch`|获取远程更新|`--all`获取所有远程库<br>`--prune`清理远程已删除分支|下载远程更新但不合并|
+|`gitpull`|拉取并合并远程代码|`--rebase`使用变基方式<br>`origin<branch>`指定分支|同步远程分支到本地|
+|`gitpush`|推送到远程仓库|`-uorigin<branch>`设置上游<br>`--force`强制推送<br>`--tags`推送标签|上传本地提交到远程|
+|`gitbranch`|分支管理|`-a`查看所有分支<br>`-d`删除分支<br>`-m`重命名|创建/查看/删除分支|
+|`gitmerge`|合并分支|`--no-ff`禁用快进<br>`--squash`压缩提交|将其他分支合并到当前分支|
+|`gitrebase`|变基整理历史|`-i`交互式变基<br>`--continue`继续变基|整理提交历史或同步主分支|
+|`gitstash`|临时保存工作区|`save"message"`添加说明<br>`pop`恢复并删除<br>`list`查看列表|暂存当前修改切换任务|
+|`gittag`|标签管理|`-a<tag>`创建附注标签<br>`-d<tag>`删除标签|标记重要版本节点|
+|`gitdiff`|查看差异|`--cached`查看暂存区差异<br>`<commit1><commit2>`对比提交|对比文件或提交的变更|
+|`gitconfig`|配置Git|`--globaluser.name`设置用户名<br>`--list`查看配置|初始配置或修改Git设置|
+|`gitcherry-pick`|挑选提交|`<commit>`应用指定提交|将特定提交应用到当前分支|
 
-### 文件 {id="file"}
+-c### Git 项目常见配置文件说明 {id="git-project-files"}
 
-|文件名|主要作用|备注 / 常见内容示例|
+|文件名|主要作用|备注/常见内容示例|
 |:-|:-|:-|
-|`.gitignore`|指定哪些文件/目录不被 Git 跟踪（忽略临时文件、构建产物、敏感信息等）|最经典的“特殊文件”, 内容是 glob 模式|
-|`.gitattributes`|定义文件属性（如哪些文件用 LF/CRLF、哪些用 diff、哪些二进制不 diff 等）|常用于跨平台换行符处理、LFS 文件标记|
-|`.gitkeep`|占位文件（让 Git 跟踪空目录）|内容通常为空或写注释|
-|`.gitmodules`|子模块（submodule）配置文件|用 `git submodule ad`d 时自动生成|
-|`README.md`|项目说明文档（首页介绍、安装步骤、使用方法、贡献指南等）|GitHub/GitLab 等会自动渲染成仓库首页|
-|`LICENSE` / `LICENSE.md`|项目开源许可协议（MIT、Apache 2.0、GPL 等）|GitHub 会自动识别并显示在侧边栏|
-|`CONTRIBUTING.md`|贡献指南（如何提交 PR、代码规范、开发流程等）|GitHub 会自动链接到 PR 页面|
-|`CHANGELOG.md` / `HISTORY.md`|版本变更记录（每个版本加了什么、修复了什么 bug）|常和 release 一起用|
-|`SECURITY.md`|安全政策和漏洞报告指南|GitHub 会显示在仓库安全页面|
-|`CODE_OF_CONDUCT.md`|行为准则（社区规范）|GitHub 会显示在社区部分|
+|`.gitignore`|指定文件/目录不被Git跟踪|**最常用的配置文件**<br>- 忽略临时文件、构建产物、依赖包、敏感信息<br>- 使用glob模式，如`*.log`、`node_modules/`、`.env`<br>- 可用[gitignore.io](https://gitignore.io)生成模板|
+|`.gitattributes`|定义文件属性和处理规则|- 统一换行符：`*text=auto`或`*.shtexteol=lf`<br>- 标记二进制文件：`*.pngbinary`<br>- GitLFS配置：`*.psdfilter=lfs`<br>- 自定义diff驱动|
+|`.gitkeep`|跟踪空目录的占位文件|- Git默认不跟踪空目录，此文件可让目录进入版本控制<br>- 文件内容通常为空或一行注释<br>- 常用于`logs/`、`tmp/`、`uploads/`等目录|
+|`.gitmodules`|子模块(submodule)配置|- 执行`gitsubmoduleadd<url>`时自动生成<br>- 记录子模块路径、URL、分支信息<br>- 格式：`[submodule"name"]`<br>`path=xxx`<br>`url=xxx`|
+|`README.md`|项目说明文档|**必备文件**<br>- 包含：项目介绍、功能特性、安装步骤、使用示例、贡献方式<br>- GitHub/GitLab自动渲染为仓库首页<br>- 支持Markdown格式（标题、代码块、图片、徽章等）|
+|`LICENSE`<br>`LICENSE.md`|开源许可协议|- 常见协议：MIT（宽松）、Apache2.0、GPL（传染性）、BSD<br>- GitHub创建仓库时可自动添加<br>- 会显示在仓库侧边栏和文件列表顶部<br>- **没有LICENSE意味着默认版权保留**|
+|`CONTRIBUTING.md`|贡献者指南|- 包含：如何提交Issue/PR、代码规范、分支策略、测试要求<br>- GitHub在创建Issue/PR时会自动提示此文件|
+|`CHANGELOG.md`<br>`HISTORY.md`|版本变更日志|- 记录每个版本的新增功能、bug修复、破坏性变更<br>- 推荐格式：[KeepaChangelog](https://keepachangelog.com/)<br>- 分类：`Added`、`Changed`、`Deprecated`、`Removed`、`Fixed`、`Security`|
+|`SECURITY.md`|安全政策和漏洞报告指南|- 说明如何报告安全漏洞（通常是私密渠道）<br>- 列出支持的版本、修复时间表<br>- GitHub会在仓库安全标签页显示此文件|
+|`CODE_OF_CONDUCT.md`|社区行为准则|- 定义社区规范、期望行为、不可接受行为、执行措施<br>- 常用模板：[ContributorCovenant](https://www.contributor-covenant.org/)<br>- GitHub会在社区健康文件中显示|
+|`.editorconfig`|统一编辑器配置|- 跨编辑器统一代码风格（缩进、换行符、字符集等）<br>- 示例：`indent_style=space`、`indent_size=2`<br>- 主流编辑器（VSCode、IDEA）都支持|
+|`.env.example`<br>`.env.sample`|环境变量配置模板|- 提供环境变量示例（实际`.env`在`.gitignore`中）<br>- 包含：数据库连接、API密钥（占位符）、功能开关<br>- 开发者复制为`.env`后填入真实配置|
+|`package.json`|Node.js项目配置文件|- 定义依赖、脚本、版本、入口文件等<br>- npm/yarn/pnpm的核心配置<br>- 包含`dependencies`、`devDependencies`、`scripts`|
+|`requirements.txt`<br>`Pipfile`|Python项目依赖文件|- `requirements.txt`：pip依赖列表<br>- `Pipfile`：Pipenv依赖管理<br>- 用于`pipinstall-rrequirements.txt`安装依赖|
+|`Makefile`|自动化任务脚本|- 定义常用命令快捷方式（构建、测试、部署等）<br>- 使用`makebuild`、`maketest`等执行<br>- 跨平台兼容性需注意|
+|`Dockerfile`<br>`docker-compose.yml`|Docker容器化配置|- `Dockerfile`：镜像构建指令<br>- `docker-compose.yml`：多容器编排配置<br>- 用于统一开发、测试、生产环境|
