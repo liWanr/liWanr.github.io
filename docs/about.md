@@ -55,29 +55,24 @@ hide:
 </div>
 </div>
 
-<div id="target" align="center" class="grid" markdown data-show-max="1300">
-
-![Image title](./images/about/background.jpg){ width="450" style="margin-top: 20px" loading=lazy}
-
-</div>
-
-
-</div>
-
 <div class="grid cards" markdown>
 
--   **Let's chat**
+-   **Let's Chat**
 
-    [:local-at:**Outlook**](mailto:itsWanr@outlook.com) <small>|</small>
-    [:fontawesome-brands-github:**GitHub**](https://github.com/liWanr) <small>|</small>
-    [:fontawesome-brands-telegram:**Telegram**](https://t.me/itsWanr)
-    
+    [:local-at:**Outlook**](mailto:itsWanr@outlook.com)
+    <small>|</small> [:fontawesome-brands-github:**GitHub**](https://github.com/liWanr)
+    <small>|</small> [:fontawesome-brands-telegram:**Telegram**](https://t.me/itsWanr)
+
+-   **不知道放什么**
+
+    先空着占位...
     
 -   **Links**
 
-    [:local-jiao:**Jiao**](https://dxlcq.cn/) <small>|</small>
-    [:lucide-hat-glasses:**Sevenalist**](https://dczcq.cn/)
+    [:local-jiao:**Jiao**](https://dxlcq.cn/)
+    <small>|</small> [:lucide-hat-glasses:**Sevenalist**](https://dczcq.cn/)
 
+</div>
 </div>
 
 <!-- ## :material-book-education: Education
@@ -137,20 +132,3 @@ hide:
 [**Lunisolar**](https://lunisolar.js.org/)
 工具库实现。
 </small>
-
-
-<script>
-const el = document.getElementById('target');
-const max = +el.dataset.showMax;   // 1300
-
-function check() {
-if (window.innerWidth < max) {
-    el.style.display = 'none';
-} else {
-    el.style.display = '';
-}
-}
-
-check();                           // 初次执行
-window.addEventListener('resize', check);
-</script>
