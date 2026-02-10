@@ -13,7 +13,6 @@ tags:
 :octicons-light-bulb-16:
 灵感来自 YouTube 上的 UP 主：[**24K钢丝**](https://www.youtube.com/watch?v=yb-g4ZaNm9Y){target="_blank"}，
 也要感谢 [**世界上最好的奶龙**](https://dxlcq.cn/){target="_blank"} 提供帮助
-
 </small>
 
 首先说明本次用到的装备：
