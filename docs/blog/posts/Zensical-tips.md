@@ -151,17 +151,39 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
         </div>
         ```
 
-        /// html | div.result
+        <div class="result" markdown>
+
         <span style="font-size: 2em; font-feature-settings: var(--features), 'ss01' on">
         2026年4月21日 15:23
         </span> | 对比:
         <span style="font-size: 2em; font-feature-settings: 'tnum' off, 'ss04' off">
         2026年4月21日 15:23
         </span>
-        ///
 
-<!-- <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
-<script>
-var tables = document.querySelectorAll("article table")
-new Tablesort(tables.item(tables.length - 1));
-</script> -->
+        </div>
+
+## 使用 Base64 编码 {id="encoded-using-base64"}
+
+使用 Base64 编码 PNG、JPEG 和 GIF 图像后能让整个页面变成完全自包含的单个文件, 不需要额外携带图片文件夹。但是会让 HTML 文件体积增加约 33%~37%, 其次图像无法被浏览器缓存, 每次访问都会重新渲染。
+
+<small>
+:octicons-light-bulb-16:
+如果仅希望分享文档内容, 但不额外提供图像文件, Base64 就能帮到你。但不推荐在普通的网站场景中使用。
+</small>
+
+=== "`zensical.toml`"
+
+    ```toml title=""
+    [project.markdown_extensions.pymdownx.b64]
+    base_path = './docs/'
+    ```
+
+    `base_path` 参数指示用于解析相对链接的基本路径的字符串。默认为 `'.'`
+
+=== "`*.md`"
+
+    ```md title=""
+    ![1.png](/docs/images/.../*.png)
+    ```
+
+    要注意路径, 主要在 `*.md` 文档和存放图像的 `images` 目录之间的关系上。如果文档和图像目录不属于同一目录下, 比如 `/docs/blog/posts/test.md`, 那引用图像就是 `![1.png](/docs/images/.../*.png)`。但是如果文档和图像属于同一目录下, 比如是 `/docs/index.md`, 那引用图像就是 `![1.png](./images/.../*.png)`
