@@ -3,6 +3,13 @@ icon: lucide/star
 title: 屌爆了的开源项目
 ---
 
+<style>
+ hr {
+    border: none;
+    border-top: 0.125rem solid color-mix(in srgb, var(--md-accent-fg-color) 30%, transparent)
+  }
+</style>
+
 ## 类型1
 
 <div class="grid cards" markdown>
