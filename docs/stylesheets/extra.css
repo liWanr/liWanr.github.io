@@ -14,13 +14,14 @@
     text-decoration: none;
 }
 
+/* 表格的分界线 */
 .md-typeset table:not([class]) {
     background: none;
     border-radius: 0.5rem;
 }
 
 .md-typeset table:not([class]) th {
-    border-bottom: 0.125rem solid color-mix(in srgb, var(--md-accent-fg-color) 30%, transparent);
+    border-bottom: 0.125rem solid var(--md-accent-fg-color);
 }
 
 /* 页面最大宽度 */
