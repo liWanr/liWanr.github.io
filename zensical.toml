@@ -17,7 +17,9 @@ site_author = "liWanr"
 
 # copyright 版权声明，会显示在页面底部，支持 HTML 片段。
 copyright = """
-Copyright &copy; 2025-2026 All rights reserved.
+<div style="font-feature-settings: 'ss04' off;">
+&copy; 2025-2026 <strong>liWanr</strong> All Rights Reserved.
+</div>
 """
 
 # dev_addr = "0.0.0.0:8000"
@@ -36,6 +38,7 @@ nav = [
         "blog/posts/git-vault.md",
         "blog/posts/using-openwrt-to-implement-remote-networking.md",
         "blog/posts/HackRF-firmware-install-and-upgrade.md",
+        "blog/posts/Zensical-tips.md",
         { "有趣小知识" = [
             "blog/posts/fun-facts/index.md",
             "blog/posts/fun-facts/Chrome-search-default-new-tab.md",
@@ -43,7 +46,6 @@ nav = [
             "blog/posts/fun-facts/what-is-DNS.md",
             "blog/posts/fun-facts/free-activation-of-JetBrains-software.md",
             "blog/posts/fun-facts/Dual-system-time-synchronization-problem.md",
-            "blog/posts/fun-facts/Zensical-tips.md",
             # "blog/posts/fun-facts/.md",
             # "blog/posts/fun-facts/.md",
         ] },
@@ -209,7 +211,8 @@ custom_fences = [
 
 [project.markdown_extensions.pymdownx.blocks.html]      # 启用自定义 HTML 块支持
 
-# [project.markdown_extensions.pymdownx.b64]              # 启用 Base64 图像嵌入支持（没效果）
+[project.markdown_extensions.pymdownx.b64]              # 启用 Base64 图像嵌入支持（没效果）
+base_path = './docs/'
 
 [project.markdown_extensions.pymdownx.progressbar]      # 启用进度条支持（没效果）
 # level_class = true
