@@ -4,10 +4,11 @@ title: 屌爆了的工具
 ---
 
 <style>
- hr {
-    border: none;
-    border-top: 0.125rem solid color-mix(in srgb, var(--md-accent-fg-color) 30%, transparent)
-  }
+hr {
+    height: 0.125rem;
+    border-radius: 5px;
+    background-color: var(--md-accent-fg-color);
+}
 </style>
 
 ## 类型1
