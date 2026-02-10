@@ -125,7 +125,7 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
     |`'case'`|大中小三个括号与大写字母等高|__(HBCD)__{style="font-size:2em; font-feature-settings: var(--features), 'case' off"}|__(HBCD)__{style="font-size:2em;"}|
     |`'frac'`|分数|__5/9__{style="font-size:2em;"}|__5/9__{style="font-size:2em; font-feature-settings: var(--features), 'frac' on"}|
     |`'sups'`|数字/小写字母全部为上标|__12ABab__{style="font-size:2em;"}|__12ABab__{style="font-size:2em; font-feature-settings: var(--features), 'sups' on"}|
-    |`'tnum'`[^1]|数字等宽|__1,234,567,890__{style="font-size:1.5em; font-feature-settings: 'tnum' off,'ss01' on" }|__1,234,567,890__{style="font-size:1.5em;font-feature-settings: var(--features), 'ss01' on"}|
+    |`'tnum'`[^1]|数字等宽|__1,234,567,890__{style="font-size:1.5em; font-feature-settings: 'tnum' off,'ss01' on;" }|__1,234,567,890__{style="font-size:1.5em;font-feature-settings: var(--features), 'ss01' on"}|
 
     [^1]: [__M__{style="font-feature-settings: 'ss05' on"} **MiSans**](https://hyperos.mi.com/font) 官网写错了, 他写的 **`thum`**
     
