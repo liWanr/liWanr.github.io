@@ -10,3 +10,9 @@ site/*
 node_modules/*
 
 local-build.sh
+
+generate_icon_index.py
+iconsearch_index.json
+iconsearch_index.min.json
+iconsearch_stats.json
+iconSearch.css
