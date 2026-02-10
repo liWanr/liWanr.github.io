@@ -21,7 +21,7 @@ tags:
 
         1. 在 Chrome OS 设备上安装终端模拟器, 例如 Google Play 商店中的 Termux。
 
-        2. 从您安装的终端模拟器安装 Git。 例如, 在 Termux 中, 输入 `pkg install git` 并在出现提示时键入 `y`。
+        2. 从您安装的终端模拟器安装 Git。 例如, 在 Termux 中, 输入 `pkg install git` 并在出现提示时键入 ++y++。
 
 2. 在 Git 中设置用户名与电子邮件地址。 [设置命令 :octicons-arrow-right-16:](#setting-your-username-and-commit-email-address)
 
