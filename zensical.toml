@@ -3,19 +3,15 @@
 # ----------------------------------------------------------------------------
 [project]
 
-# site_name 会显示在页面头部和浏览器窗口标题中
-site_name = "liWanr"
+site_name = "liWanr"        # 页面头部和浏览器窗口标题中
 
-# 写入 HTML 的 <head> 中，用于搜索引擎，应包含对站点内容的准确、有意义的描述
-site_description = "个人技术博客，专注 Python、DevOps、云原生和自托管实践。使用 Zensical 打造的现代知识库，分享实用教程、问题解决笔记和工具心得。欢迎探索与交流！"
+site_description = ""       # 站点的简短描述，通常用于 SEO 和社交媒体预览
 
-# 用于 HTML 的 <head> 元素中标识作者
-site_author = "liWanr"
+site_author = "liWanr"      # 站点作者
 
-# 站点的规范（canonical）URL，用于 SEO 和生成 RSS 源。在构建在线文档时强烈建议设置此项
-# site_url = "https://www.example.com/"
+# site_url = "https://liWanr.com/"      # 站点的规范 URL, 用于 SEO 和生成 RSS 源
 
-# copyright 版权声明，会显示在页面底部，支持 HTML 片段。
+# 页面底部 copyright 版权声明
 copyright = """
 <div style="font-feature-settings: 'ss04' off;">
 &copy; 2025-2026 <strong>liWanr</strong> All Rights Reserved.
@@ -53,23 +49,18 @@ nav = [
     { "About" = "about.md" },
 ]
 
-# 添加自定义 CSS 文件来，可添加任意数量的 CSS 文件
+# 添加自定义 CSS 文件, 可添加任意数量的 CSS 文件
 extra_css = [
     "stylesheets/index.css",
     "stylesheets/extra.css",
-    "stylesheets/iconSearch.css"
+    "stylesheets/tabbed.css",
+    "stylesheets/progress_bar.css",
 ]
 
-# 以添加自定义 JavaScript 来扩展功能
-[[project.extra_javascript]]
-path = "javascripts/extra.js"
-
-# [[project.extra_javascript]]
-# path = "https://unpkg.com/lunisolar@2.1.0/dist/lunisolar.js"
-
-# [[project.extra_javascript]]
-# path = "javascripts/index.js"
-# type = "module"
+# 添加自定义 JavaScript 文件, 可添加任意数量的 JavaScript 文件
+extra_javascript = [
+    "javascripts/extra.js",
+]
 
 # ----------------------------------------------------------------------------
 # 主题相关配置部分
@@ -167,8 +158,8 @@ logo = "local/logo"
 [project.markdown_extensions.footnotes]                 # 启用脚注语法支持
 [project.markdown_extensions.md_in_html]                # 允许在 HTML 中写 Markdown
 [project.markdown_extensions.tables]                    # 启用 Markdown 表格支持
-[project.markdown_extensions.toc]
-permalink = "⚓︎"                                        # 启用目录锚点永久链接
+[project.markdown_extensions.toc]                       # 启用目录锚点永久链接
+permalink = "⚓︎"
 permalink_title = "锚点"
 
 [project.markdown_extensions.pymdownx.blocks.caption]   # 图片标题与对齐支持
@@ -180,8 +171,8 @@ permalink_title = "锚点"
 [project.markdown_extensions.pymdownx.tilde]            # 启用删除线与下标语法
 [project.markdown_extensions.pymdownx.smartsymbols]     # 将某些字符序列转换为相应的符号，例如版权符号或分数
 
-[project.markdown_extensions.pymdownx.arithmatex]
-generic = true                                          # 启用数学公式渲染（Arithmatex）
+# [project.markdown_extensions.pymdownx.arithmatex]
+# generic = true                                          # 启用数学公式渲染（Arithmatex）
 
 [project.markdown_extensions.pymdownx.emoji]
 emoji_index = "zensical.extensions.emoji.twemoji"       # 使用 Twemoji 表情集
@@ -192,7 +183,7 @@ options.custom_icons = ["overrides/.icons"]             # 自定义 SVG 图标�
 guess_lang = true
 # linenums = true                                         # 为所有代码块添加行号
 linenums_style = "pymdownx-inline"                      # 行号样式
-auto_title = true                                       # 自动为所有代码块添加标题 ，显示所用语言的名称
+auto_title = false                                      # 自动为所有代码块添加标题 ，显示所用语言的名称
 line_spans = "__span"                                   # 用于行级高亮的 span 标识
 anchor_linenums = true                                  # 允许代码行号作为锚点
 pygments_lang_class = true                              # 给代码块添加语言 class
@@ -200,15 +191,11 @@ pygments_lang_class = true                              # 给代码块添加语�
 [project.markdown_extensions.pymdownx.snippets]
 auto_append = ["includes/abbreviations.md"]             # 自动引入缩写定义文件
 
-[project.markdown_extensions.pymdownx.superfences]
-custom_fences = [
-  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }    # 启用 Mermaid 图表
-]
+[project.markdown_extensions.pymdownx.superfences]      # 启用 Mermaid 图表
+custom_fences = [{name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }]    
 
 [project.markdown_extensions.pymdownx.magiclink]        # 启用魔法链接
 # social_url_shortener = true
-
-# pymdownx.blocks.html
 
 [project.markdown_extensions.pymdownx.blocks.html]      # 启用自定义 HTML 块支持
 
@@ -216,17 +203,17 @@ custom_fences = [
 base_path = './docs/'
 
 [project.markdown_extensions.pymdownx.progressbar]      # 启用进度条支持（没效果）
-# level_class = true
+level_class = true
 
 [project.markdown_extensions.pymdownx.tabbed]
-alternate_style = true                                  # 启用内容选项卡（替代样式）
+alternate_style = true                                  
 
 [project.markdown_extensions.pymdownx.tabbed.slugify]
 object = "pymdownx.slugs.slugify"
 case = "lower"
 
-[project.markdown_extensions.pymdownx.tasklist]
-custom_checkbox = true                                  # 使用自定义复选框样式
+[project.markdown_extensions.pymdownx.tasklist]         # 使用自定义复选框样式
+custom_checkbox = true
 
 [project.markdown_extensions.zensical.extensions.preview]   # 搭配即时预览的 Markdown 扩展
 configurations = [
@@ -253,7 +240,7 @@ title = "这页内容对你有帮助吗？"
 
 [[project.extra.analytics.feedback.ratings]]
 icon = "material/emoticon-happy-outline"
-name = "有帮助"
+name = "有帮助"# 启用内容选项卡（替代样式）
 data = 1
 note = "感谢你的反馈！我很开心这页对你有用(^_^)"
 
@@ -262,7 +249,7 @@ icon = "material/emoticon-sad-outline"
 name = "没太大帮助"
 data = 0
 note = """
-  感谢你的反馈！我会继续改进的/(ㄒoㄒ)/~~
+感谢你的反馈！我会继续改进的/(ㄒoㄒ)/~~
 """
 
 
