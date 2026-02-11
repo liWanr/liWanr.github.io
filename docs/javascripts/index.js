@@ -30,21 +30,28 @@
     };
     
     const updateDate = (lunisolar, now) => {
+        let text = now.format('YYYY年MM月DD日ddd');
+
         const firstDay = new Date(now.year, 0, 1);
         const offset = lunisolar(firstDay).dayOfWeek - 1;
         const daysPassed = Math.floor((now.toDate() - firstDay) / MS_PER_DAY) + 1;
         const weekNum = Math.ceil((daysPassed + offset) / 7);
         
-        date.textContent = `${now.year}年${formatNum(now.month)}月${formatNum(now.day)}日`
-                         + `星期${WEEK_CHARS[now.dayOfWeek]} 第${weekNum}周`;
+        date.textContent = `${text} 第${weekNum}周`;
+        // date.textContent = text;
     };
     
     const updateClock = (lunisolar) => {
         const now = lunisolar();
+
         const time = `${formatNum(now.hour)}:${formatNum(now.minute)}:${formatNum(now.second)}`;
         
-        if (time === "00:00:00") {
+        console.log(typeof time);
+
+        if (now.hour % 2 === 1 && now.minute === 0 && now.second === 0) {
             updateLunar(lunisolar, now);
+        }
+        else if (time === "00:00:00") {
             updateDate(lunisolar, now);
         }
         
