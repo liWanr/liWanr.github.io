@@ -161,33 +161,6 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
         </span>
 
         </div>
- 
-<!--## 图标 {id="icons"}
-
-<div class="mdx-iconsearch" data-mdx-component="iconsearch">
-  <input
-    class="md-input md-input--stretch mdx-iconsearch__input"
-    placeholder="在数据库中搜索图标、表情"
-    data-mdx-component="iconsearch-query"
-  />
-  <div class="mdx-iconsearch-result" data-mdx-component="iconsearch-result">
-    <select
-      class="mdx-iconsearch-result__select"
-      data-mdx-component="iconsearch-select"
-    >
-      <option value="all" selected>All</option>
-      <option value="icons">Icons</option>
-      <option value="emojis">Emojis</option>
-    </select>
-    <div class="mdx-iconsearch-result__meta"></div>
-    <ol class="mdx-iconsearch-result__list"></ol>
-  </div>
-</div> -->
-
-<small>
-:octicons-light-bulb-16:
-输入关键词查找图标和表情符号, 然后点击短代码将其复制到剪贴板。
-</small>
 
 ## 使用 Base64 编码 {id="encoded-using-base64"}
 
