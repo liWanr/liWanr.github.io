@@ -29,6 +29,9 @@ hide:
     .md-typeset .twemoji svg {
         margin-top: 4px;
     }
+    .md-typeset .grid.cards>ul>li:hover {
+        border: .05rem solid var(--md-accent-fg-color);;
+    }
 </style>
 
 <script type="module" src="./javascripts/index.js"></script>
@@ -41,160 +44,90 @@ hide:
   </div>
 </div>
 
-=== "**`LLMs`**"
+<div class="grid cards" markdown>
 
-    <div class="grid cards" markdown>
+-   [**Apple**](https://www.apple.com/)
+    <small>|</small>
+    [**iCloud**](https://www.icloud.com.cn/)
+    <small>|</small>
+    [**Apple Music**](https://music.apple.com/)
 
-    - [:fontawesome-brands-openai: Chat GPT](https://chat.openai.com/chat)
+-   [**Google**](https://myaccount.google.com/)
+    <small>|</small>
+    [**Gmail**](https://mail.google.com/mail)
+    <small>|</small>
+    [**Analytics**](https://analytics.google.com/analytics/web/)
 
-    - [:local-grok: Grok ](https://grok.com/) 
+-   [**Microsoft**](https://account.microsoft.com/)
+    <small>|</small>
+    [**Outlook**](https://outlook.live.com/mail)
+    <small>|</small>
+    [**Rewards**](https://rewards.bing.com/)
     
-    - [:simple-googlegemini: Gemini](https://gemini.google.com/app) 
+</div>
+
+<div class="grid cards" markdown>
+
+-   [:fontawesome-brands-openai: Chat GPT](https://chat.openai.com/chat)
+
+    ---
     
-    - [:simple-claude: Claude ](https://claude.ai/) 
+    [:local-grok: Grok ](https://grok.com/)
+
+    ---
+
+    [:simple-googlegemini: Gemini](https://gemini.google.com/app)
+
+    --- 
+
+    [:simple-claude: Claude ](https://claude.ai/)
+
+    ---
+
+    [:simple-perplexity: Perplexity](https://www.perplexity.ai/)
+
+-   [:lucide-satellite-dish: IT DOG](https://www.itdog.cn/ping/)
+
+    ---
     
-    - [:local-doubao: 豆包](https://www.doubao.com/chat/)
+    [:simple-cloudflare: Cloudflare](https://dash.cloudflare.com/)
 
-    </div>
+    ---
 
-=== "**`Tech Cos`**"
-
-    <div class="grid cards" markdown>
-
-    - [:simple-apple: Apple](https://www.apple.com/)
-
-        ---
-
-        [:simple-icloud: iCloud](https://www.icloud.com.cn/)
-
-        ---
-
-        [:simple-applemusic: Apple Music](https://music.apple.com/)
+    [:lucide-satellite: Down for Everyone](https://downforeveryoneorjustme.com/)
     
-    - [:material-microsoft-windows: Microsoft](https://account.microsoft.com/)
+    ---
 
-        ---
-        
-        [:lucide-mail: Outlook](https://outlook.live.com/mail)
+    [阿里云](https://home.console.aliyun.com/home/dashboard/ProductAndService)
+    <small>|</small>
+    [腾讯云](https://console.cloud.tencent.com/)
+    <small>|</small>
+    [华为云](https://console.huaweicloud.com/console/)
+    <small>|</small>
+    [dynadot](https://www.dynadot.com/zh)
 
-        ---
-
-        [:lucide-medal: Rewards](https://rewards.bing.com/)
+    ---
     
-    - [:material-google: Google](https://myaccount.google.com/)
+    [南京大学测速站](https://test.nju.edu.cn/)
+    <small>|</small>
+    [中国科学技术大学测速站](https://test.ustc.edu.cn/)
     
-        ---
+-   [:simple-discord: Discord](https://discord.com/channels/@me)
 
-        [:simple-gmail: Gmail](https://mail.google.com/mail)
-
-        ---
-
-        [:material-google-analytics: Analytics](https://analytics.google.com/analytics/web/)
-
-    </div>
-
-=== "**`Network`**"
-
-    <div class="grid cards" markdown>
-
-    - [:lucide-satellite-dish: IT DOG](https://www.itdog.cn/ping/)
-
-    - [:lucide-satellite: Down for Everyone](https://downforeveryoneorjustme.com/)
+    ---
     
-    - [:lucide-unlink: dynadot](https://www.dynadot.com/zh)
+    [:lucide-youtube: YouTube](https://www.youtube.com/) 
+
+    ---
     
-    - [:local-nju: 南京大学测速](https://test.nju.edu.cn/)
+    [:lucide-twitter: Twitter](https://x.com/) 
+
+    ---
     
-    - [:local-ustc: 中科大测速](https://test.ustc.edu.cn/)
+    [:simple-tiktok: 抖音](https://www.douyin.com/?recommend=1)
     
-    - [:simple-cloudflare: Cloudflare](https://dash.cloudflare.com/)
+    ---
     
-    - [:simple-alibabacloud: 阿里云](https://home.console.aliyun.com/home/dashboard/ProductAndService)
-    
-    - [:local-tencent-cloud: 腾讯云](https://console.cloud.tencent.com/)
-    
-    - [:simple-huawei: 华为云](https://console.huaweicloud.com/console/)
+    [:simple-bilibili: Bilibili](https://www.bilibili.com/)
 
-    </div>
-
-=== "**`Social Media`**"
-
-    <div class="grid cards" markdown>
-
-    - [:simple-discord: Discord](https://discord.com/channels/@me)
-
-    - [:simple-tiktok: 抖音](https://www.douyin.com/?recommend=1) 
-
-    - [:simple-telegram: Telegram](https://web.telegram.org/a/) 
-
-    - [:lucide-instagram: Instagram](https://www.instagram.com)  
-
-    - [:lucide-youtube: YouTube](https://www.youtube.com/) 
-
-    - [:lucide-twitter: Twitter](https://x.com/) 
-
-    - [:simple-bilibili: Bilibili](https://www.bilibili.com/) 
-
-    </div>
-
-=== "**`UI/UX`**"
-
-    <div class="grid cards" markdown>
-
-    - [:simple-figma: Figma](https://www.figma.com/) 
-
-    - [:lucide-drafting-compass: Uiverse](https://uiverse.io/elements)
-
-    - [:simple-animedotjs: Anime.js](https://animejs.com/documentation/events/onscroll/scrollobserver-settings/target)
-
-    - [:simple-awwwards: Awwwards](https://www.awwwards.com/websites/sites_of_the_day/)
-
-    </div>
-
-=== "**`Resource`**"
-
-    <div class="grid cards" markdown>
-
-    - [:lucide-plane: 赔钱机场(村内)](https://xn--cp3a08l.com/#/register?code=Hw7cqluV) 
-    
-    - [:lucide-plane: 赔钱机场(村外)](https://xn--mes358aby2apfg.com/register?code=Hw7cqluV) 
-
-    - [:lucide-clapperboard: 厂长资源](https://www.czzy.site/)
-
-    - [:lucide-popcorn: 大米星球](https://dmr0x2.com/)
-
-    - [:lucide-phone: Hero SMS](https://hero-sms.com/services)
-    
-    - [:lucide-gamepad-directional: BYRUTOR](https://byrutgame.org/) 
-
-    - [:lucide-shield-check: 果核剥壳](https://www.ghxi.com/)
-
-    - [:lucide-stamp: 电子印章](http://web.aa6666.com/)
-
-
-
-    </div>
-
-=== "**`Material`**"
-
-    <div class="grid cards" markdown>
-
-    - [:fontawesome-brands-windows: Windows 镜像](https://www.xitongku.com)
-    
-    - [:material-ubuntu: Ubuntu 镜像](https://mirrors.ustc.edu.cn/ubuntu-releases/)
-    
-    - [:simple-centos: CentOS 镜像](https://vault.centos.org/)
-    
-    - [:fontawesome-brands-debian: Debian 镜像](http://cdimage.debian.org/cdimage/archive/)
-    
-    - [:local-vmware: VMware](https://softwareupdate.vmware.com/cds/vmw-desktop/ws/)
-
-    </div>
-
-<!-- === ""
-
-    <div class="grid cards" markdown>
-
-
-
-    </div> -->
+</div>
