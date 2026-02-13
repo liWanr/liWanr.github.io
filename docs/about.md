@@ -118,7 +118,7 @@ hide:
 </div> -->
 
 <small>
-:lucide-quote: 网站基于
+:lucide-text-quote: 网站基于
 [**Zensical**](https://zensical.org/)
 搭建，代码通过
 [**VS Code**](https://code.visualstudio.com/)
