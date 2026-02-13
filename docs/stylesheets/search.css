@@ -1,0 +1,129 @@
+.md-typeset {
+  /* Icon search container */
+  .mdx-search {
+    position: relative;
+    background-color: var(--md-default-bg-color);
+    border-radius: 2px;
+    box-shadow: var(--md-shadow-z1);
+    transition: box-shadow 125ms;
+  }
+
+  .mdx-search:is(:focus-within, :hover) {
+    box-shadow: var(--md-shadow-z2);
+  }
+
+  .mdx-search .md-input {
+    background: var(--md-default-bg-color);
+    box-shadow: none;
+  }
+
+  [data-md-color-scheme="slate"] .mdx-search .md-input {
+    background: var(--md-code-bg-color);
+  }
+
+  /* Icon search result container */
+  .mdx-search-result {
+    max-height: 50vh;
+    overflow-y: auto;
+    backface-visibility: hidden;
+    touch-action: pan-y;
+    scrollbar-color: var(--md-default-fg-color--lighter) transparent;
+    scrollbar-width: thin;
+  }
+
+  .md-tooltip .mdx-search-result {
+    max-height: 205px;
+  }
+
+  .mdx-search-result::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  .mdx-search-result::-webkit-scrollbar-thumb {
+    background-color: var(--md-default-fg-color--lighter);
+  }
+
+  .mdx-search-result::-webkit-scrollbar-thumb:hover {
+    background-color: var(--md-accent-fg-color);
+  }
+
+  /* Result metadata (作者/日期等) */
+  .mdx-search-result__meta {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 12.8px;
+    color: var(--md-default-fg-color--lighter);
+  }
+
+  /* 在移动端竖屏（mobile portrait）隐藏 meta */
+  @media (max-width: 480px) {
+    .mdx-search-result__meta {
+      display: none;
+    }
+  }
+
+  /* Select dropdown（如果有排序/筛选下拉框） */
+  .mdx-search-result__select {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    padding-block: 0.15em;
+    font-size: 12.8px;
+    color: var(--md-default-fg-color--light);
+    background-color: var(--md-default-fg-color--lightest);
+    border: none;
+    border-radius: 2px;
+    transition: color 125ms, background-color 125ms;
+  }
+
+  .mdx-search-result__select:focus,
+  .mdx-search-result__select:hover {
+    color: var(--md-accent-bg-color);
+    background-color: var(--md-accent-fg-color);
+    outline: none;
+  }
+
+  .mdx-search-result__select + .mdx-search-result__meta {
+    right: 82px;
+  }
+
+  /* Result list */
+  .mdx-search-result__list {
+    padding: 0;
+    margin: 0;
+    margin-inline-start: 0;
+    list-style: none;
+  }
+
+  /* Result item */
+  .mdx-search-result__item {
+    padding: 4px 12px;
+    margin: 0;
+    margin-inline-start: 0;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  }
+
+  .mdx-search-result__item:last-child {
+    border-bottom: none;
+  }
+
+  .mdx-search-result__item > * {
+    margin-right: 12px;
+  }
+
+  .mdx-search-result__item img {
+    width: 18px;
+    height: 18px;
+  }
+
+  [data-md-color-scheme="slate"] .mdx-search-result__item img[src*="squidfunk"] {
+    filter: invert(1);
+  }
+
+  .keys .key-power:before {
+    content: "⏻";
+    padding-right: .4em;
+  }
+}

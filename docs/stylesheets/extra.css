@@ -29,11 +29,6 @@
     max-width: 1440px; 
 } */
 
-.md-typeset .keys .key-power:before {
-    content: "⏻";
-    padding-right: .4em;
-}
-
 @font-face {
     font-family: "MiSansVF";
     src: url("../assets/fonts/MiSansVF.ttf") format("truetype");

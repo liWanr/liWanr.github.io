@@ -55,7 +55,7 @@ extra_css = [
     "stylesheets/extra.css",
     "stylesheets/tabbed.css",
     "stylesheets/progress_bar.css",
-    "stylesheets/iconSearch.css",
+    "stylesheets/search.css",
 ]
 
 # 添加自定义 JavaScript 文件, 可添加任意数量的 JavaScript 文件
