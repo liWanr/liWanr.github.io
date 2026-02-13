@@ -4,6 +4,59 @@ title: Zensical 的小技巧
 status: new
 ---
 
+<script src="../../../javascripts/keys/keys.js"></script>
+
+## 键盘按键格式 {id="Keyboard-key-format"}
+
+<div class="mdx-search" data-mdx-component="keysearch">
+    <input
+        class="md-input md-input--stretch mdx-search__input"
+        placeholder="搜索按键的对应格式"
+        data-mdx-component="keysearch-query"
+    />
+</div>
+
+<small>
+:octicons-light-bulb-16:
+我这里修改了 a-z & A-Z 的键映射索引, 如果需要可以去
+[**PyMdown Extensions**](https://facelessuser.github.io/pymdown-extensions/extensions/keys/#extendingmodifying-key-map-index)
+查怎么改
+</small>
+
+=== "**`markdown 的使用方法`**"
+
+    ```md 
+    ++ctrl+alt+delete++
+    ```
+
+    ///html |div.result
+    ++ctrl+alt+delete++
+    ///
+
+=== "**`HTML 的使用方法`**"
+
+    ```html
+    <span class="keys">
+        <kbd class="key-ctrl">Ctrl</kbd>
+        <span>+</span>
+        <kbd class="key-alt">Alt</kbd>
+        <span>+</span>
+        <kbd class="key-delete">Del</kbd>
+    </span>
+    ```
+
+    ///html |div.result
+    <span class="keys">
+        <kbd class="key-ctrl">Ctrl</kbd>
+        <span>+</span>
+        <kbd class="key-alt">Alt</kbd>
+        <span>+</span>
+        <kbd class="key-delete">Del</kbd>
+    </span>
+    ///
+
+
+
 ## 使用 MiSans 字体 {id="use-MiSans-font"}
 
 ### 基础使用 {id="basic-usage"}
@@ -187,3 +240,4 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
     ```
 
     要注意路径, 主要在 `*.md` 文档和存放图像的 `images` 目录之间的关系上。如果文档和图像目录不属于同一目录下, 比如 `/docs/blog/posts/test.md`, 那引用图像就是 `![1.png](/docs/images/.../*.png)`。但是如果文档和图像属于同一目录下, 比如是 `/docs/index.md`, 那引用图像就是 `![1.png](./images/.../*.png)`
+
