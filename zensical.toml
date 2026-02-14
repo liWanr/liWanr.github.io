@@ -128,12 +128,14 @@ media = "(prefers-color-scheme: light)"
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "浅色模式"
+accent = "deep purple"                 # 强调色
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "深色模式"
+accent = "deep purple"                 # 强调色
 
 # ----------------------------------------------------------------------------
 # 字体配置，默认从 Google Fonts 加载，可自定义正文字体和等宽字体
