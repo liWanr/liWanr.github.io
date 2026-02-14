@@ -4,7 +4,7 @@
 
 ### 激活方式
 
-`source .venv/bin/activate`
+`source ../.env/zensical/bin/activate`
 
 ### 退出激活
 
