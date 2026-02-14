@@ -206,7 +206,7 @@ custom_fences = [{name = "mermaid", class = "mermaid", format = "pymdownx.superf
 [project.markdown_extensions.pymdownx.blocks.html]      # 启用自定义 HTML 块支持
 
 [project.markdown_extensions.pymdownx.b64]              # 启用 Base64 图像嵌入支持（没效果）
-base_path = './docs/'
+base_path = './docs/assets/images/*'
 
 [project.markdown_extensions.pymdownx.progressbar]      # 启用进度条支持（没效果）
 level_class = true
