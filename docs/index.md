@@ -34,7 +34,7 @@ hide:
     }
 </style>
 
-<script type="module" src="./javascripts/index.js"></script>
+<script type="module" src="./assets/javascripts/index.js"></script>
 
 <div class="time-module">
   <div class="time-aligner">

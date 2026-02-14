@@ -33,15 +33,16 @@ nav = [
         "blog/posts/server-secrets.md",
         "blog/posts/git-vault.md",
         "blog/posts/using-openwrt-to-implement-remote-networking.md",
-        "blog/posts/HackRF-firmware-install-and-upgrade.md",
-        "blog/posts/Zensical-tips.md",
+        "blog/posts/hackrf-firmware-install-and-upgrade.md",
+        "blog/posts/zensical-tips.md",
         { "有趣小知识" = [
             "blog/posts/fun-facts/index.md",
-            "blog/posts/fun-facts/Chrome-search-default-new-tab.md",
-            "blog/posts/fun-facts/activate-Ubuntu-network-adapter.md",
+            "blog/posts/fun-facts/chrome-search-default-new-tab.md",
+            "blog/posts/fun-facts/activate-ubuntu-network-adapter.md",
             "blog/posts/fun-facts/what-is-DNS.md",
             "blog/posts/fun-facts/free-activation-of-JetBrains-software.md",
-            "blog/posts/fun-facts/Dual-system-time-synchronization-problem.md",
+            "blog/posts/fun-facts/dual-system-time-synchronization-problem.md",
+            "blog/posts/fun-facts/usb-flash-drive-safe-boot-issue.md",
             # "blog/posts/fun-facts/.md",
             # "blog/posts/fun-facts/.md",
         ] },
@@ -51,16 +52,16 @@ nav = [
 
 # 添加自定义 CSS 文件, 可添加任意数量的 CSS 文件
 extra_css = [
-    "stylesheets/index.css",
-    "stylesheets/extra.css",
-    "stylesheets/tabbed.css",
-    "stylesheets/progress_bar.css",
-    "stylesheets/search.css",
+    "assets/stylesheets/index.css",
+    "assets/stylesheets/extra.css",
+    "assets/stylesheets/tabbed.css",
+    "assets/stylesheets/progress_bar.css",
+    "assets/stylesheets/search.css",
 ]
 
 # 添加自定义 JavaScript 文件, 可添加任意数量的 JavaScript 文件
 extra_javascript = [
-    "javascripts/extra.js",
+    "assets/javascripts/extra.js",
 ]
 
 # ----------------------------------------------------------------------------
@@ -74,7 +75,7 @@ font.code = "JetBrains Mono"        # 代码块等宽字体
 
 custom_dir = "overrides"            # 模板覆盖目录，用于自定义主题模板
 
-favicon = "images/favicon.svg"       # 设置浏览器标签页或标题栏显示的图标
+favicon = "assets/images/favicon.svg"       # 设置浏览器标签页或标题栏显示的图标
 
 language = "zh"                     # 设置语言,zh简中, en英文, zh-Hant繁中, zh-TW台湾
 
@@ -245,7 +246,7 @@ title = "这页内容对你有帮助吗？"
 icon = "material/emoticon-happy-outline"
 name = "有帮助"# 启用内容选项卡（替代样式）
 data = 1
-note = "感谢你的反馈！我很开心这页对你有用(^_^)"
+note = "感谢你的反馈！我很开心这篇文章对你有用(^_^)"
 
 [[project.extra.analytics.feedback.ratings]]
 icon = "material/emoticon-sad-outline"
@@ -268,10 +269,8 @@ Minecraft = "Minecraft"
 [project.extra.consent]                 # Cookie 标题和内容描述
 title = "隐私与 Cookie 设置"
 description = """
-    为了让你在这里的体验更加顺畅，
-    我使用了 cookies 来记住你的喜好和浏览习惯。
-    通过接受这个小小的帮手，
-    你将帮助我不断优化网站，
+    为了让你在这里的体验更加顺畅,
+    我使用了 cookies 来记住你的喜好和浏览习惯,
     让你每次访问都能更轻松地找到需要的信息。
     感谢你的支持！
 """

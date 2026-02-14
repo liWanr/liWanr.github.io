@@ -4,7 +4,7 @@ title: Zensical 的小技巧
 status: new
 ---
 
-<script src="../../../javascripts/keys/keys.js"></script>
+<script src="../../../assets/javascripts/keys/keys.js"></script>
 
 ## 键盘按键格式 {id="Keyboard-key-format"}
 
@@ -170,14 +170,14 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
     |`'ss02'`|单位改为上标|__96% 96℃__{style="font-size:2em;"}|__96% 96℃__{style="font-size:2em; font-feature-settings: var(--features), 'ss02' on"}|
     |`'ss03'`|单位改为下标|__96% 96℃__{style="font-size:2em;"}|__96% 96℃__{style="font-size:2em; font-feature-settings: var(--features), 'ss03' on"}|
     |`'ss04'`|数字等高汉字|__4月21日__{style="font-size:2em; font-feature-settings: var(--features), 'ss04' off"}|__4月21日__{style="font-size:2em;"}|
-    |`'ss05'`|将大写的 M 改为 [小米](https://www.mi.com/) 图标|__M__{style="font-size:2em;"}|__M__{style="font-size:2em; font-feature-settings: var(--features), 'ss05' on"}|
-    |`'ss06'`|将大写的 M 改为 [MIUI](https://home.miui.com/) 图标|__M__{style="font-size:2em;"}|__M__{style="font-size:2em; font-feature-settings: var(--features), 'ss06' on"}|
+    |`'ss05'`|将大写的 M<br>改为 [小米](https://www.mi.com/) 图标|__M__{style="font-size:2em;"}|__M__{style="font-size:2em; font-feature-settings: var(--features), 'ss05' on"}|
+    |`'ss06'`|将大写的 M<br>改为 [MIUI](https://home.miui.com/) 图标|__M__{style="font-size:2em;"}|__M__{style="font-size:2em; font-feature-settings: var(--features), 'ss06' on"}|
     |`'ss07'`|西文式标点|__“Hi, it’s me”__{style="font-size:2em;"}|__“Hi, it’s me”__{style="font-size:2em; font-feature-settings: var(--features), 'ss07' on"}|
     |`'ss08'`|拨号专用符号|__*0#__{style="font-size:2em;"}|__*0#__{style="font-size:2em; font-feature-settings: var(--features), 'ss08' on"}|
     |`'SS09'`|小字面数字|__359264__{style="font-size:2em;"}|__359264__{style="font-size:2em; font-feature-settings: var(--features), 'ss09' on"}|
-    |`'case'`|大中小三个括号与大写字母等高|__(HBCD)__{style="font-size:2em; font-feature-settings: var(--features), 'case' off"}|__(HBCD)__{style="font-size:2em;"}|
+    |`'case'`|大中小三个括号<br>与大写字母等高|__(HBCD)__{style="font-size:2em; font-feature-settings: var(--features), 'case' off"}|__(HBCD)__{style="font-size:2em;"}|
     |`'frac'`|分数|__5/9__{style="font-size:2em;"}|__5/9__{style="font-size:2em; font-feature-settings: var(--features), 'frac' on"}|
-    |`'sups'`|数字/小写字母全部为上标|__12ABab__{style="font-size:2em;"}|__12ABab__{style="font-size:2em; font-feature-settings: var(--features), 'sups' on"}|
+    |`'sups'`|数字/小写字母<br>全部为上标|__12ABab__{style="font-size:2em;"}|__12ABab__{style="font-size:2em; font-feature-settings: var(--features), 'sups' on"}|
     |`'tnum'`[^1]|数字等宽|__1,234,567,890__{style="font-size:1.5em; font-feature-settings: 'tnum' off,'ss01' on;" }|__1,234,567,890__{style="font-size:1.5em;font-feature-settings: var(--features), 'ss01' on"}|
 
     [^1]: [__M__{style="font-feature-settings: 'ss05' on"} **MiSans**](https://hyperos.mi.com/font) 官网写错了, 他写的 **`thum`**
@@ -205,19 +205,19 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
         ```
 
         <div class="result" markdown>
-
+        前:
         <span style="font-size: 2em; font-feature-settings: var(--features), 'ss01' on">
-        2026年4月21日 15:23
-        </span> | 对比:
+        26年4月21日 15:23
+        </span> <br>后:
         <span style="font-size: 2em; font-feature-settings: 'tnum' off, 'ss04' off">
-        2026年4月21日 15:23
+        26年4月21日 15:23
         </span>
 
         </div>
 
 ## 使用 Base64 编码 {id="encoded-using-base64"}
 
-使用 Base64 编码 PNG、JPEG 和 GIF 图像后能让整个页面变成完全自包含的单个文件, 不需要额外携带图片文件夹。但是会让 HTML 文件体积增加约 33%~37%, 其次图像无法被浏览器缓存, 每次访问都会重新渲染。
+使用 Base64 编码 PNG、JPEG 和 GIF 图像能让整个页面完全**自包含**这类文件, 不需要额外携带图像文件夹。但是会让 HTML 文件体积增加约 33%~37%, 其次图像无法被浏览器缓存, 每次访问都会重新渲染。
 
 <small>
 :octicons-light-bulb-16:
@@ -231,7 +231,7 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
     base_path = './docs/'
     ```
 
-    `base_path` 参数指示用于解析相对链接的基本路径的字符串。默认为 `'.'`
+    `base_path` 参数指示用于解析相对链接的基本路径的字符串。默认为 `'.'`, 这个不管 images 在哪里都不用更改
 
 === "`*.md`"
 
@@ -239,5 +239,5 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
     ![1.png](/docs/images/.../*.png)
     ```
 
-    要注意路径, 主要在 `*.md` 文档和存放图像的 `images` 目录之间的关系上。如果文档和图像目录不属于同一目录下, 比如 `/docs/blog/posts/test.md`, 那引用图像就是 `![1.png](/docs/images/.../*.png)`。但是如果文档和图像属于同一目录下, 比如是 `/docs/index.md`, 那引用图像就是 `![1.png](./images/.../*.png)`
+    要注意路径, 主要在 **\*.md**  文档和存放图像的 **images** 目录之间的关系上。如果文档和存放图像的目录不在同一目录, 比如 `/docs/blog/test.md`, 那引用就是 `![1.png](/docs/images/.../*.png)`。如果文图在同目录下, 比如 `/docs/index.md`, 那引用就是 `![1.png](./images/.../*.png)`
 

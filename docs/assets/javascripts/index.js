@@ -46,8 +46,6 @@
 
         const time = `${formatNum(now.hour)}:${formatNum(now.minute)}:${formatNum(now.second)}`;
         
-        console.log(typeof time);
-
         if (now.hour % 2 === 1 && now.minute === 0 && now.second === 0) {
             updateLunar(lunisolar, now);
         }
