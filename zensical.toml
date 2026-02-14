@@ -9,7 +9,7 @@ site_description = ""       # 站点的简短描述，通常用于 SEO 和社交
 
 site_author = "liWanr"      # 站点作者
 
-# site_url = "https://liWanr.com/"      # 站点的规范 URL, 用于 SEO 和生成 RSS 源
+site_url = "https://liWanr.com/"      # 站点的规范 URL, 用于 SEO 和生成 RSS 源
 
 # 页面底部 copyright 版权声明
 copyright = """
@@ -17,8 +17,6 @@ copyright = """
 &copy; 2025-2026 <strong>liWanr</strong> All Rights Reserved.
 </div>
 """
-
-# dev_addr = "0.0.0.0:8000"
 
 # 手动定义导航栏结构。如果不定义，则会根据目录和文件名结构自动推导导航
 nav = [
@@ -29,7 +27,6 @@ nav = [
         "recom/epic-website.md",
     ]},
     { "Blog" = [
-        # "blog/posts/index.md",
         "blog/posts/server-secrets.md",
         "blog/posts/git-vault.md",
         "blog/posts/using-openwrt-to-implement-remote-networking.md",
@@ -65,17 +62,22 @@ extra_javascript = [
 ]
 
 # ----------------------------------------------------------------------------
+# 图标与 Logo 配置
+# ----------------------------------------------------------------------------
+[project.theme.icon]
+logo = "local/logo"
+# repo = "lucide/smile"
+
+# ----------------------------------------------------------------------------
 # 主题相关配置部分
 # ----------------------------------------------------------------------------
 [project.theme]
 
 font.code = "JetBrains Mono"        # 代码块等宽字体
 
-# variant = "classic"                # 主题风格，默认为 "modern", classic 是Material for MkDocs 风格
-
 custom_dir = "overrides"            # 模板覆盖目录，用于自定义主题模板
 
-favicon = "assets/images/favicon.svg"       # 设置浏览器标签页或标题栏显示的图标
+favicon = "assets/favicon.png"       # 设置浏览器标签页或标题栏显示的图标
 
 language = "zh"                     # 设置语言,zh简中, en英文, zh-Hant繁中, zh-TW台湾
 
@@ -128,14 +130,14 @@ media = "(prefers-color-scheme: light)"
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "浅色模式"
-accent = "deep purple"                 # 强调色
+# accent = "deep purple"                 # 强调色
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "深色模式"
-accent = "deep purple"                 # 强调色
+# accent = "deep purple"                 # 强调色
 
 # ----------------------------------------------------------------------------
 # 字体配置，默认从 Google Fonts 加载，可自定义正文字体和等宽字体
@@ -144,12 +146,7 @@ accent = "deep purple"                 # 强调色
 # text = "Inter"
 # code = "Jetbrains Mono"
 
-# ----------------------------------------------------------------------------
-# 图标与 Logo 配置
-# ----------------------------------------------------------------------------
-[project.theme.icon]
-logo = "local/logo"
-# repo = "lucide/smile"
+
 
 # ----------------------------------------------------------------------------
 # Markdown 扩展（全部逐项标注用途）
