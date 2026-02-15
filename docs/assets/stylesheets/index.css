@@ -1,21 +1,3 @@
-.md-typeset a {
-    color: var(--md-default-fg-color);
-}
-
-.md-typeset .md-button {
-    border-radius: .4rem;
-    border: .05rem solid var(--md-default-fg-color--lightest);
-    background: None;  
-}
-
-.md-typeset .md-button:hover {
-    color: var(--md-accent-fg-color);
-    border: .05rem solid var(--md-accent-fg-color);
-    background: var(--md-accent-fg-color--transparent);  
-}
-
-/*  */
-
 /* --- 时间模块：右对齐与响应式 --- */
 .time-module {
     margin: 0 auto 50px 0;

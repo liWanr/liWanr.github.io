@@ -29,8 +29,22 @@ hide:
     .md-typeset .twemoji svg {
         margin-top: 4px;
     }
+    .md-typeset a {
+        color: var(--md-default-fg-color);
+    }
     .md-typeset .grid.cards>ul>li:hover {
         border: .05rem solid var(--md-accent-fg-color);;
+    }
+    .md-typeset .md-button {
+        border-radius: .4rem;
+        border: .05rem solid var(--md-default-fg-color--lightest);
+        background: None;  
+    }
+
+    .md-typeset .md-button:hover {
+        color: var(--md-accent-fg-color);
+        border: .05rem solid var(--md-accent-fg-color);
+        background: var(--md-accent-fg-color--transparent);  
     }
 </style>
 
