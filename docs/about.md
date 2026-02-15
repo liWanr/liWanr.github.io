@@ -42,9 +42,9 @@ hide:
 
 参与过蓝牙射频指纹识别设备、网联汽车自动巡航、物联网农业工程设计实施、生物特征识别电子签名等多个项目。目前我正在用业余时间开发一款高质量台球计分小程序。
 
-工作之余, 我喜欢打台球和羽毛球, 并且对斯诺克很感兴趣, 你可以在
-[**Shooterspool**](https://www.shooterspool.net/){ .no-color title="@isEaston"}
-与我一起玩。我偏爱
+工作之余, 我喜欢打台球和羽毛球, 并且对斯诺克很感兴趣, 但是斯诺克线下太贵了, 很少打, 一般是在
+[**Shooterspool**](https://www.shooterspool.net/){ .no-color }
+里面玩，你可以搜 **isEaston** 与我一起玩。在音乐方面我偏爱
 [**陈奕迅**](https://www.instagram.com/mreasonchan/){ .no-color }
 的歌, 喜欢
 [**黄伟文**](https://www.instagram.com/concertyy/){ .no-color } 和
@@ -68,9 +68,21 @@ hide:
 
     **liWanr 和他的朋友们**
 
-    [:local-jiao:**Jiao**](https://dxlcq.cn/){ .no-color }
+    [:local-jiao:**Jiao**](https://dxlcq.cn/)
     <small>|</small>
-    [:lucide-hat-glasses:**Sevenalist**](https://dczcq.cn/){ .no-color }
+    [:lucide-hat-glasses:**Sevenalist**](https://dczcq.cn/)
+
+    ---
+
+    **我的矩阵地址们**
+
+    [**主力**](liwanr.com)
+    <small>|</small>
+    [**GitHub**](https://liwanr.github.io/zensical)
+    <small>|</small>
+    [**Vercel**](https://wanr.vercel.app/)
+    <small>|</small>
+    [**ex-GitHub**](https://liwanr.github.io/)
 
 </div>
 
