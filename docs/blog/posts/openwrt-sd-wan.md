@@ -21,7 +21,7 @@ tags:
 |公网的IPv6<br>或IPv4地址|至少一个, 可以是固定的也可以是弹性公网, 如果没有的就做内网穿透|
 |域名|可以在阿里云、腾讯云、华为云等厂家购买域名, 我用的是阿里云的|
 |软路由设备|我用的是 R4S, 买成￥571, 记得选带 TF 卡和 TF 读写器, 或者自己单独买也行。<br>也可以用其他的 RS 设备、x86_64 机子或小米、树莓派、Raspberry Pi等路由设备|
-|Open Wrt| 我用的是 BleachWrt , 版本是 bleachwrt plus 20250117, [同版本固件下载地址](https://openwrt.mpdn.fun:8443/?dir=lede), 找自己对应版本的固件下载, 并且要注意不熟悉Wrt的人尽量不要用 `.mini-daily` , 这个是精简版, **推荐使用高大全版本下载 `plus-daily`**|
+|Open Wrt| 我用的是 BleachWrt , 版本是 bleachwrt plus 20250117, [同版本固件下载地址](https://openwrt.mpdn.fun:8443/?dir=lede), 找自己对应版本的固件下载, 并且要注意不熟悉Wrt的人尽量不要用 mini-daily , 这个是精简版, **推荐使用高大全版本下载 `plus-daily`**|
 |rufus|刷固件的软件, 也可以用其他的软件, 我用的是rufus-v4.6, [下载地址](https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe)|
 
 ## 下载并安装固件 {id="download-and-install-the-firmware"}
