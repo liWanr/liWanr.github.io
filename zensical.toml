@@ -30,7 +30,7 @@ nav = [
         "blog/posts/server-cheatsheet.md",
         "blog/posts/git-vault.md",
         "blog/posts/openwrt-sd-wan.md",
-        "blog/posts/hackrf-firmware-install-update.md",
+        "blog/posts/hackrf-firmware-maint.md",
         "blog/posts/zensical-pro-tips.md",
         { "有趣小知识" = [
             "blog/posts/fun-facts/index.md",

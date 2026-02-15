@@ -1,6 +1,6 @@
 ---
 icon: lucide/audio-waveform
-title: HackRF 固件安装与升级
+title: HackRF 固件维护
 tags:
   - HackRF
   - GitHub
