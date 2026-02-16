@@ -167,7 +167,5 @@ hide:
 [**Vercel**](https://vercel.com/){ .no-color }
 和 **GitHub Page** 发布, 常规文字采用
 [**MiSans**](https://hyperos.mi.com/font){ .no-color }
-字体, 时间元素通过
-[**Lunisolar**](https://lunisolar.js.org/){ .no-color }
-工具库实现。
+字体。
 </small>
