@@ -5,7 +5,7 @@
 
 site_name = "liWanr"        # 页面头部和浏览器窗口标题中
 
-site_description = ""       # 站点的简短描述，通常用于 SEO 和社交媒体预览
+site_description = "liWanr"       # 站点的简短描述，通常用于 SEO 和社交媒体预览
 
 site_author = "liWanr"      # 站点作者
 
@@ -15,44 +15,52 @@ site_url = "https://liWanr.com/"      # 站点的规范 URL, 用于 SEO 和生�
 copyright = """
 <div style="font-feature-settings: 'ss04' off;">
 &copy; 2025-2026 <strong>liWanr</strong> All Rights Reserved.
+<small>
+|
+<a href="https://icp.gov.moe/?keyword=20260905" style="font-feature-settings: 'ss04' off;" target="_blank">萌ICP备 20260905 号</a>
+</small>
 </div>
 """
+
+
 
 # 手动定义导航栏结构。如果不定义，则会根据目录和文件名结构自动推导导航
 nav = [
     { "Home" = "index.md" },
+    { "Server" = [
+        "server/zip-unzip.md",
+        "server/use-openvpn-client.md",
+        "server/windows-mount-ubuntu-dir.md",
+
+    ]},
+    { "Git" = [
+        "git/git-basics.md",
+        "git/create-manage-repos.md"
+    ]},
     { "Recom" =  [
         "recom/epic-open-source-project.md",
         "recom/epic-tools.md",
         "recom/epic-website.md",
     ]},
     { "Blog" = [
-        "blog/posts/server-cheatsheet.md",
-        "blog/posts/git-vault.md",
         "blog/posts/openwrt-sd-wan.md",
         "blog/posts/hackrf-firmware-maint.md",
         "blog/posts/zensical-pro-tips.md",
-        { "有趣小知识" = [
-            "blog/posts/fun-facts/index.md",
-            "blog/posts/fun-facts/chrome-search-new-tab.md",
-            "blog/posts/fun-facts/ubuntu-enable-net.md",
-            "blog/posts/fun-facts/dns-explain.md",
-            "blog/posts/fun-facts/jetbrains-active-free.md",
-            "blog/posts/fun-facts/dual-boot-time-sync.md",
-            "blog/posts/fun-facts/usb-secure-boot.md",
-            # "blog/posts/fun-facts/.md",
-            # "blog/posts/fun-facts/.md",
-        ] },
+        "blog/posts/chrome-search-new-tab.md",
+        "blog/posts/ubuntu-enable-net.md",
+        "blog/posts/dns-explain.md",
+        "blog/posts/jetbrains-active-free.md",
+        "blog/posts/dual-boot-time-sync.md",
+        "blog/posts/usb-secure-boot.md",
+        # "blog/posts/.md",
+        # "blog/posts/.md",
     ] },
-    { "About" = "about.md" },
+    # { "About" = "about.md" },
 ]
 
 # 添加自定义 CSS 文件, 可添加任意数量的 CSS 文件
 extra_css = [
-    "assets/stylesheets/index.css",
     "assets/stylesheets/extra.css",
-    "assets/stylesheets/tabbed.css",
-    "assets/stylesheets/progress_bar.css",
     "assets/stylesheets/search.css",
 ]
 
@@ -236,7 +244,7 @@ generator = false                       # 移除 “Made with Zensical” 声明
 
 [project.extra.analytics]
 provider = "google"
-property = "G-NY0V3DV1XC"
+property = "G-JJZ9XN4L96"
 
 [project.extra.analytics.feedback]
 title = "这页内容对你有帮助吗？"
@@ -265,14 +273,15 @@ Git = "Git"
 Server = "Server"
 Network = "Network"
 Minecraft = "Minecraft"
-[project.extra.consent]                 # Cookie 标题和内容描述
-title = "隐私与 Cookie 设置"
-description = """
-    为了让你在这里的体验更加顺畅,
-    我使用了 cookies 来记住你的喜好和浏览习惯,
-    让你每次访问都能更轻松地找到需要的信息。
-    感谢你的支持！
-"""
+
+# [project.extra.consent]                 # Cookie 标题和内容描述
+# title = "隐私与 Cookie 设置"
+# description = """
+#     为了让你在这里的体验更加顺畅,
+#     我使用了 cookies 来记住你的喜好和浏览习惯,
+#     让你每次访问都能更轻松地找到需要的信息。
+#     感谢你的支持！
+# """
 
 [project.extra.status]
 new = "最新发布"
