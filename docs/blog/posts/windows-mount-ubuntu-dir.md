@@ -5,6 +5,10 @@ tags:
     - Server
 ---
 
+<small>
+created: 2026-02-13
+</small>
+
 ## :simple-linux: **Ubuntu 端配置** {id="ubuntu-config"}
 
 1. 安装 Samba 之后 **修改 samba 配置**, 并在末尾 **添加挂载信息**

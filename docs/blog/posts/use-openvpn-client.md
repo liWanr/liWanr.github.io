@@ -5,6 +5,10 @@ tags:
     - Server
 ---
 
+<small>
+created: 2025-03-16
+</small>
+
 ## :simple-linux: **Linux**
 
 1. :fontawesome-solid-download: **安装**

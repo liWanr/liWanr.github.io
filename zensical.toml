@@ -22,21 +22,16 @@ copyright = """
 
 nav = [
     { "Home" = "index.md" },
-    { "Server" = [
-        "server/zip-unzip.md",
-        "server/use-openvpn-client.md",
-        "server/windows-mount-ubuntu-dir.md",
-    ]},
-    { "Git" = [
-        "git/git-basics.md",
-        "git/create-manage-repos.md"
-    ]},
     { "Recom" =  [
         "recom/epic-open-source-project.md",
         "recom/epic-tools.md",
         "recom/epic-website.md",
     ]},
     { "Blog" = [
+        "blog/posts/zip-unzip.md",
+        "blog/posts/git-basics.md",
+        "blog/posts/use-openvpn-client.md",
+        "blog/posts/windows-mount-ubuntu-dir.md",
         "blog/posts/openwrt-sd-wan.md",
         "blog/posts/hackrf-firmware-maint.md",
         "blog/posts/zensical-pro-tips.md",
