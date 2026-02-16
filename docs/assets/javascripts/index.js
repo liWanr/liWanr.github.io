@@ -1,88 +1,71 @@
-(function() {
-    'use strict';
+import lunisolar from './lunisolar/lunisolar.esm.js';
 
-    let clockInterval = null;
+// 设置全局使用中文
+const locale = import('https://unpkg.com/lunisolar/locale/zh-cn.js');
+lunisolar.locale(locale.default);
 
-    // 核心初始化逻辑
-    async function init() {
-        const clockEl = document.getElementById('clock');
-        // 1. 如果页面上根本没有这个元素，直接退出，不浪费性能
-        if (!clockEl) {
-            if (clockInterval) clearInterval(clockInterval);
-            return;
-        }
+// 引入节日
+import { festivals } from './lunisolar/festivals.js';
+lunisolar.Markers.add(festivals, "自定义节日")
 
-        // 2. 如果已经加载过了（防止重复初始化），直接退出
-        if (clockEl.dataset.initialized === 'true') return;
+// 格式化
+function formatNum(num){
+    return String(num).padStart(2, '0')
+}
 
-        try {
-            // 动态加载依赖
-            const [ls, fest, zh] = await Promise.all([
-                import('./lunisolar/lunisolar.esm.js'),
-                import('./lunisolar/festivals.js'),
-                import('./lunisolar/zh-cn.js')
-            ]);
+// 更新农历
+function updateLunar(now) {
+    let lunarTime = now.format('cYcZ年 lMlD lH时').replace(/十二月/g, "腊月");;
 
-            const lunisolar = ls.default;
-            // 配置一次即可
-            if (!window.lunarConfigured) {
-                lunisolar.locale(lunisolarLocaleZhCn);
-                lunisolar.Markers.add(fest.festivals, "自定义节日");
-                window.lunarConfigured = true;
-            }
-
-            // 这里的获取 DOM 需要实时
-            const lunarInfo = document.getElementById('lunar-info');
-            const dateInfo = document.getElementById('date-info');
-            
-            const render = () => {
-                const now = lunisolar();
-                // 时间显示
-                clockEl.textContent = `${String(now.hour).padStart(2, '0')}:${String(now.minute).padStart(2, '0')}:${String(now.second).padStart(2, '0')}`;
-                
-                // 仅在初始或特定时间更新日期和农历（优化性能）
-                if (lunarInfo) {
-                    let text = now.format('cYcZ年 lMlD lH时').replace(/十二月/g, "腊月");
-                    if (now.solarTerm) text += ` ${now.solarTerm}`;
-                    if (now.markers.toString()) text += ` ${now.markers.toString()}`;
-                    lunarInfo.textContent = text;
-                }
-                if (dateInfo) {
-                    dateInfo.textContent = now.format('YYYY年MM月DD日ddd');
-                }
-            };
-
-            render();
-            if (clockInterval) clearInterval(clockInterval);
-            clockInterval = setInterval(render, 1000);
-            
-            // 标记已初始化
-            clockEl.dataset.initialized = 'true';
-
-        } catch (e) {
-            console.error("Clock init error:", e);
-        }
+    if(now.solarTerm != null){
+        lunarTime = lunarTime + " " + now.solarTerm.toString();
+    }
+     
+    const festival = now.markers.toString()
+    if(festival != "") {
+        lunarTime = lunarTime + " " + festival;
     }
 
-    // --- 解决“点进页面不加载”的多重保险 ---
+    document.getElementById('lunar-info').textContent = lunarTime;
+}
 
-    // 1. 传统的加载完成
-    if (document.readyState === 'complete') init();
-    else window.addEventListener('load', init);
+// 更新公历
+function updateDate(now) {
 
-    // 2. Astro 专用的生命周期（万一它开了 View Transitions）
-    document.addEventListener('astro:page-load', init);
+    const week = '日一二三四五六';
 
-    // 3. 暴力兜底：监听全局点击。如果点的是链接，等一会就检查 DOM
-    document.addEventListener('click', (e) => {
-        if (e.target.closest('a')) {
-            setTimeout(init, 100); // 稍微延迟，等框架渲染完 DOM
-            setTimeout(init, 500); // 双重确认
-            setTimeout(init, 1000); 
-        }
-    });
+    const nowDay = now.toDate();
+    const firstDay = new Date(now.year, 0, 1);
+    const offset = lunisolar(firstDay).dayOfWeek-1; // 偏移量，因为如果1月1号不是周一就会有误差
 
-    // 4. 监听后退/前进
-    window.addEventListener('popstate', () => setTimeout(init, 200));
+    const allDays = Math.floor((nowDay - firstDay) / 86400000) + 1;
+    const weekNum = Math.ceil((allDays+offset) / 7);
 
-})();
+    const dateTime = `${now.year}年${formatNum(now.month)}月${formatNum(now.day)}日星期${week[now.dayOfWeek]} 第${weekNum}周`
+
+    document.getElementById('date-info').textContent = dateTime;
+}
+
+// 更新钟点
+function updateClock(now) {
+
+    const hour = String(now.hour).padStart(2, '0');
+    const minute = String(now.minute).padStart(2, '0');
+    const second = String(now.second).padStart(2, '0');
+
+    const clock = `${hour}:${minute}:${second}`;
+
+    document.getElementById('clock').textContent = clock;
+}
+
+function run() {
+    const now = lunisolar(lunisolar());
+    updateLunar(now);
+    updateDate(now);
+    updateClock(now);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    run();
+    setInterval(run, 100);
+});
