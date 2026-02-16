@@ -5,6 +5,11 @@ tags:
   - Knowledge
 ---
 
+<small>
+created: 2024-12-25
+updated: 2025-02-22
+</small>
+
 在装完 Linux 和 Windows 两个系统后大概率会出现时间差异, 但是不必担心, 这是一个很常见的问题, **可以在 Linux 终端中使用这个命令修复这个问题**。
 
 ```Bash title=""

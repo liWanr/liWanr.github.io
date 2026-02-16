@@ -6,6 +6,11 @@ tags:
   - GitHub
 ---
 
+<small>
+created: 2025-03-30
+updated: 2026-01-18
+</small>
+
 ## 检查网络接口状态 {id="check-network-interface-status"}
 
 在终端输入 `ip a` , 如果网卡信息是这样, 表示网卡状态是 `DOWN` , 说明网卡没有启用, 需要以下方法激活它。

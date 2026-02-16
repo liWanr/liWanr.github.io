@@ -6,6 +6,11 @@ tags:
   - GitHub
 ---
 
+<small>
+created: 2025-01-20
+updated: 2026-01-12
+</small>
+
 ## 解决方案 {id="solution"}
 
 :   拔掉所有 U 盘, 进入 Bios 设置, 关闭 security boot 即可。

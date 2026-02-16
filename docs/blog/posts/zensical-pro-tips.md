@@ -4,6 +4,11 @@ title: Zensical 的小技巧
 status: new
 ---
 
+<small>
+created: 2025-12-16
+updated: 2026-01-18
+</small>
+
 <script src="../../../assets/javascripts/keys/keys.js"></script>
 
 ## 键盘按键格式 {id="Keyboard-key-format"}
