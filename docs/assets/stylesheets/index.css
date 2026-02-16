@@ -1,3 +1,29 @@
+.md-typeset h1,
+.md-content__button {
+    font-size: 0px;
+    color: rgb(0,0,0,0);
+    line-height: 0;
+    margin: 0 0 0 0;
+}
+
+.md-content__inner{
+    padding-top: 0em;
+}
+
+.md-content{
+    margin-top: 0px;
+} 
+.md-typeset .twemoji svg {
+    margin-top: 4px;
+}
+.md-typeset a {
+    color: var(--md-default-fg-color);
+}
+
+.md-typeset .grid.cards>ul>li:hover {
+    border: .05rem solid var(--md-accent-fg-color);
+}
+
 /* --- 时间模块：右对齐与响应式 --- */
 .time-module {
     margin: 0 auto 50px 0;
