@@ -14,3 +14,5 @@ nginx.conf
 local-build.sh
 
 generate_icon_index.py
+
+index_old.md
