@@ -33,6 +33,7 @@
     max-width: 1440px; 
 } */
 
+/* 字体 */
 @font-face {
     font-family: "MiSansVF";
     src: url("../fonts/MiSansVF.ttf") format("truetype");
@@ -58,7 +59,7 @@
     margin-top: 2.7px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .md-social {
         padding: 0;
     }
