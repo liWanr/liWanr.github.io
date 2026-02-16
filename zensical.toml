@@ -1,20 +1,18 @@
-# ----------------------------------------------------------------------------
 # 站点基础信息（SEO + 站点身份）
-# ----------------------------------------------------------------------------
 [project]
 
-site_name = "liWanr"        # 页面头部和浏览器窗口标题中
+site_name = "liWanr"    # 页面头部和浏览器窗口标题中
 
-site_description = "liWanr"       # 站点的简短描述，通常用于 SEO 和社交媒体预览
+site_author = "liWanr"  # 站点作者
 
-site_author = "liWanr"      # 站点作者
+site_url = "https://liWanr.com/"    # 站点的规范 URL, 用于 SEO 和生成 RSS 源
 
-site_url = "https://liWanr.com/"      # 站点的规范 URL, 用于 SEO 和生成 RSS 源
+# 站点的简短描述，通常用于 SEO 和社交媒体预览
+site_description = "极客向个人技术站点，内容涵盖编程、网络以及真实项目实践，关注技术落地与设计体验，记录持续探索与长期创作。" 
 
-# 页面底部 copyright 版权声明
 copyright = """
 <div style="font-feature-settings: 'ss04' off;">
-&copy; 2025-2026 <strong>liWanr</strong> All Rights Reserved.
+&copy; 2024-2026 <strong>liWanr</strong> All Rights Reserved.
 <small>
 |
 <a href="https://icp.gov.moe/?keyword=20260905" style="font-feature-settings: 'ss04' off;" target="_blank">萌ICP备 20260905 号</a>
@@ -22,16 +20,12 @@ copyright = """
 </div>
 """
 
-
-
-# 手动定义导航栏结构。如果不定义，则会根据目录和文件名结构自动推导导航
 nav = [
     { "Home" = "index.md" },
     { "Server" = [
         "server/zip-unzip.md",
         "server/use-openvpn-client.md",
         "server/windows-mount-ubuntu-dir.md",
-
     ]},
     { "Git" = [
         "git/git-basics.md",
@@ -52,8 +46,6 @@ nav = [
         "blog/posts/jetbrains-active-free.md",
         "blog/posts/dual-boot-time-sync.md",
         "blog/posts/usb-secure-boot.md",
-        # "blog/posts/.md",
-        # "blog/posts/.md",
     ] },
 ]
 
@@ -68,65 +60,39 @@ extra_javascript = [
     "assets/javascripts/extra.js",
 ]
 
-# ----------------------------------------------------------------------------
 # 图标与 Logo 配置
-# ----------------------------------------------------------------------------
 [project.theme.icon]
 logo = "local/logo"
-# repo = "lucide/smile"
 
-# ----------------------------------------------------------------------------
 # 主题相关配置部分
-# ----------------------------------------------------------------------------
 [project.theme]
-
 font.code = "JetBrains Mono"        # 代码块等宽字体
-
 custom_dir = "overrides"            # 模板覆盖目录，用于自定义主题模板
-
-favicon = "assets/favicon.png"       # 设置浏览器标签页或标题栏显示的图标
-
+favicon = "assets/favicon.png"      # 设置浏览器标签页或标题栏显示的图标
 language = "zh"                     # 设置语言,zh简中, en英文, zh-Hant繁中, zh-TW台湾
-
 features = [
-    # ================= 顶部栏 & 公告 =================
-    "announce.dismiss",             # 公告栏可被用户关闭
-
     # ================= 搜索体验 =================
     "search.highlight",             # 搜索跳转后高亮匹配内容
 
     # ================= 内容 & 代码体验 ===========
-    "content.code.annotate",        # 在代码关键位置添加图标+鼠标悬停提示
+    "content.code.annotate",        # 在代码关键位置添加图标 + 鼠标悬停提示
     "content.code.copy",            # 在代码块中添加一键复制按钮，无需先选中内容
     "content.code.select",          # 允许在代码块中选择特定行范围
     "content.footnote.tooltips",    # 将脚注渲染为行内工具提示（tooltip），无需跳转即可阅读
     "content.tabs.link",            # 同步切换内容标签页标题相同的标签
-    "content.tooltips",             # 美观提示渲染（title）
-    # "content.action.edit",         # 配置仓库并启用此功能后，文章会生成“编辑”按钮
-    # "content.action.view",         # 配置仓库并启用此功能后，文章会生成“查看markdown源码”按钮
+    "content.tooltips",             # 美化 title 提示渲染
 
     # ================= 导航体验 ================= https://zensical.org/docs/setup/navigation/
-    "navigation.footer",            # 在页面底部显示导航栏（上一页 / 下一页）
     "navigation.indexes",           # 启用章节索引页功能，允许文档直接挂载到章节下（适合概览页）
-    "navigation.instant",           # 启用即时导航：点击内部链接时通过 XHR 加载，不刷新整个页面
-    "navigation.instant.prefetch",  # 启用链接预加载：鼠标悬停链接时提前开始加载页面，降低感知延迟
-    "navigation.instant.progress",  # 在慢速网络下使用即时导航时，显示加载进度条
     "navigation.path",              # 显示路径面包屑导航（在页面标题上方）
-    # "navigation.sections",          # 在大屏幕（>1220px）下，将顶级章节渲染为侧边栏分组，移动端保持原样
     "navigation.tabs",              # 在大屏幕下，将顶级章节渲染为头部下方的菜单标签页
     "navigation.tabs.sticky",       # 启用粘性标签页：向下滚动时标签页固定在头部下方始终可见
     "navigation.top",               # 当用户向下滚动后开始向上滚动时，显示“返回顶部”按钮
     "navigation.tracking",          # 启用锚点跟踪：地址栏 URL 会自动更新为当前高亮的目录锚点
-    # "navigation.expand",           # 默认展开导航侧边栏中所有可折叠的章节
-    # "navigation.prune",            # 启用修剪（prune）功能，只渲染可见的导航项，可显著减小构建体积
     "toc.follow",                   # 目录锚点跟随：侧边栏会自动滚动，让当前激活的锚点始终可见
-    # "toc.integrate",               # 将目录（TOC）整合进左侧导航侧边栏
-    # "header.autohide",             # 页面向下滚动时自动隐藏头部区域
 ]
 
-# ----------------------------------------------------------------------------
 # 配色方案（palette）配置，可设置自动、明、暗模式切换等
-# ----------------------------------------------------------------------------
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
 toggle.icon = "lucide/sun-moon"
@@ -137,28 +103,14 @@ media = "(prefers-color-scheme: light)"
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "浅色模式"
-# accent = "deep purple"                 # 强调色
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "深色模式"
-# accent = "deep purple"                 # 强调色
 
-# ----------------------------------------------------------------------------
-# 字体配置，默认从 Google Fonts 加载，可自定义正文字体和等宽字体
-# ----------------------------------------------------------------------------
-#[project.theme.font]
-# text = "Inter"
-# code = "Jetbrains Mono"
-
-
-
-# ----------------------------------------------------------------------------
 # Markdown 扩展（全部逐项标注用途）
-# ----------------------------------------------------------------------------
-
 [project.markdown_extensions.abbr]                      # 启用缩写支持
 [project.markdown_extensions.admonition]                # 启用提示块（note、warning 等）
 [project.markdown_extensions.attr_list]                 # 启用属性列表（用于按钮、class 等）
@@ -205,16 +157,8 @@ auto_append = ["includes/abbreviations.md"]             # 自动引入缩写定�
 custom_fences = [{name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }]    
 
 [project.markdown_extensions.pymdownx.magiclink]        # 启用魔法链接
-# social_url_shortener = true
-
 [project.markdown_extensions.pymdownx.blocks.html]      # 启用自定义 HTML 块支持
-
-# [project.markdown_extensions.pymdownx.b64]              # 启用 Base64 图像嵌入支持（没效果）
-# base_path = './docs/assets/images/*'
-
-[project.markdown_extensions.pymdownx.progressbar]      # 启用进度条支持（没效果）
-level_class = true
-
+[project.markdown_extensions.pymdownx.progressbar]      # 启用进度条支持
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true                                  
 
@@ -225,21 +169,9 @@ case = "lower"
 [project.markdown_extensions.pymdownx.tasklist]         # 使用自定义复选框样式
 custom_checkbox = true
 
-[project.markdown_extensions.zensical.extensions.preview]   # 搭配即时预览的 Markdown 扩展
-configurations = [
-    { targets.include = [
-        "customization.md",
-        "setup/extensions/*"
-    ]}
-]
-
-# ----------------------------------------------------------------------------
 # 其他杂项设置
-# ----------------------------------------------------------------------------
-
-
 [project.extra]
-generator = false                       # 移除 “Made with Zensical” 声明
+generator = false                                       # 移除 “Made with Zensical” 声明
 
 [project.extra.analytics]
 provider = "google"
@@ -250,7 +182,7 @@ title = "这页内容对你有帮助吗？"
 
 [[project.extra.analytics.feedback.ratings]]
 icon = "material/emoticon-happy-outline"
-name = "有帮助"# 启用内容选项卡（替代样式）
+name = "有帮助"
 data = 1
 note = "感谢你的反馈！我很开心这篇文章对你有用(^_^)"
 
@@ -262,32 +194,26 @@ note = """
 感谢你的反馈！我会继续改进的/(ㄒoㄒ)/~~
 """
 
-
 [project.extra.annotate]
 Bash = [".s2"]
 
-# alternate =[{ name = "简体中文", link = "/zh/", lang = "" },]
 [project.extra.tags]                    # 使用标签对任何页面进行分类，标签将作为页面元数据的一部分
 Git = "Git"
 Server = "Server"
 Network = "Network"
 Minecraft = "Minecraft"
 
-# [project.extra.consent]                 # Cookie 标题和内容描述
-# title = "隐私与 Cookie 设置"
-# description = """
-#     为了让你在这里的体验更加顺畅,
-#     我使用了 cookies 来记住你的喜好和浏览习惯,
-#     让你每次访问都能更轻松地找到需要的信息。
-#     感谢你的支持！
-# """
+[project.extra.consent]                 # Cookie 标题和内容描述
+title = "隐私与 Cookie 设置"
+description = """
+    为了让你在这里的体验更加顺畅,
+    我使用了 cookies 来记住你的喜好和浏览习惯,
+    让你每次访问都能更轻松地找到需要的信息。
+    感谢你的支持！
+"""
 
 [project.extra.status]
 new = "最新发布"
-
-# ----------------------------------------------------------------------------
-# 底部快捷链接设置
-# ----------------------------------------------------------------------------
 
 # ----  本地部署的底部链接  ----
 
@@ -313,25 +239,8 @@ name = "Lucky"
 
 [[project.extra.social]]
 icon = "simple/emby"
-link = "http://10.0.0.195:8096"
+link = "http://10.0.0.196:8096"
 name = "Emby"
-
-# ----  非本地部署的底部链接  ----
-
-# [[project.extra.social]]
-# icon = "material/microsoft"
-# link = "mailto:itsWanr@outlook.com"
-# name = "Outlook"
-
-# [[project.extra.social]]
-# icon = "simple/github"
-# link = "https://github.com/liWanr"
-# name = "GitHub"
-
-# [[project.extra.social]]
-# icon = "fontawesome/brands/telegram"
-# link = "https://t.me/iseaston"
-# name = "Telegram"
 
 [[project.extra.social]]
 icon = "material/google-translate"
