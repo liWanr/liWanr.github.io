@@ -31,7 +31,7 @@ hide:
 
 <div markdown>
 
-笨笨的极客玩家, 掌握 **C**<small> / </small>**C++**<small> / </small>**Java**<small> / </small>**Python** 等编程语言, 有 **STM32** 等嵌入式设备与
+笨笨的极客玩家, 掌握 **C**<small><small>&</small></small>**C++**<small> / </small>**Java**<small> / </small>**Python** 等编程语言, 有 **STM32** 等嵌入式设备与
 [**Android**](https://developer.android.com/){ .no-color }
 数据传输与通信的经验。对
 [**OpenWrt**](https://openwrt.org/){ .no-color }<small> / </small>
