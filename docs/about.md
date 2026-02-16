@@ -76,7 +76,7 @@ hide:
 
     **我的矩阵地址们**
 
-    [**主力**](liwanr.com)
+    [**主力**](https://liwanr.com)
     <small>|</small>
     [**GitHub**](https://liwanr.github.io/zensical)
     <small>|</small>
@@ -146,11 +146,11 @@ hide:
 [**VS Code**](https://code.visualstudio.com/){ .no-color }
 编写并存储于
 [**GitHub**](https://github.com/github){ .no-color }
-私人仓库中。除本地外还在
+私人仓库中。除本地外还通过
 [**Vercel**](https://vercel.com/){ .no-color }
-发布, 常规文字采用
+和 **GitHub Page** 发布, 常规文字采用
 [**MiSans**](https://hyperos.mi.com/font){ .no-color }
-字体, 时间元素采用
+字体, 时间元素通过
 [**Lunisolar**](https://lunisolar.js.org/){ .no-color }
 工具库实现。
 </small>
