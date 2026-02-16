@@ -28,6 +28,11 @@
     border-bottom: 0.125rem solid var(--md-accent-fg-color);
 }
 
+/* small */
+small {
+    font-feature-settings: 'ss04' off;
+}
+
 /* 页面最大宽度 */
 /* .md-grid {
     max-width: 1440px; 
