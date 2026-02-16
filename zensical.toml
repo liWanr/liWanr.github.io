@@ -55,7 +55,6 @@ nav = [
         # "blog/posts/.md",
         # "blog/posts/.md",
     ] },
-    # { "About" = "about.md" },
 ]
 
 # 添加自定义 CSS 文件, 可添加任意数量的 CSS 文件
