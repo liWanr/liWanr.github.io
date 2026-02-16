@@ -22,26 +22,29 @@ copyright = """
 
 nav = [
     { "Home" = "index.md" },
-    { "Recom" =  [
-        "recom/epic-open-source-project.md",
-        "recom/epic-tools.md",
-        "recom/epic-website.md",
-    ]},
+    { "Server" = [
+        "server/zip-unzip.md",
+        "server/git-basics.md",
+        "server/ubuntu-build-nginx.md",
+        "server/ubuntu-enable-net.md",
+        "server/windows-mount-ubuntu-dir.md",
+    ] },
     { "Blog" = [
-        "blog/posts/zip-unzip.md",
-        "blog/posts/git-basics.md",
         "blog/posts/use-openvpn-client.md",
-        "blog/posts/windows-mount-ubuntu-dir.md",
         "blog/posts/openwrt-sd-wan.md",
         "blog/posts/hackrf-firmware-maint.md",
         "blog/posts/zensical-pro-tips.md",
         "blog/posts/chrome-search-new-tab.md",
-        "blog/posts/ubuntu-enable-net.md",
         "blog/posts/dns-explain.md",
         "blog/posts/jetbrains-active-free.md",
         "blog/posts/dual-boot-time-sync.md",
         "blog/posts/usb-secure-boot.md",
     ] },
+    { "Recom" =  [
+        "recom/epic-open-source-project.md",
+        "recom/epic-tools.md",
+        "recom/epic-website.md",
+    ]}
 ]
 
 # 添加自定义 CSS 文件, 可添加任意数量的 CSS 文件
@@ -72,7 +75,6 @@ features = [
     # ================= 内容 & 代码体验 ===========
     "content.code.annotate",        # 在代码关键位置添加图标 + 鼠标悬停提示
     "content.code.copy",            # 在代码块中添加一键复制按钮，无需先选中内容
-    "content.code.select",          # 允许在代码块中选择特定行范围
     "content.footnote.tooltips",    # 将脚注渲染为行内工具提示（tooltip），无需跳转即可阅读
     "content.tabs.link",            # 同步切换内容标签页标题相同的标签
     "content.tooltips",             # 美化 title 提示渲染
