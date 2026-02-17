@@ -91,7 +91,7 @@ updated: 2026-01-18
 
         === "`docs/stylesheets/extra.css`"
 
-            ```css title=""
+            ```css
             @font-face {
                 font-family: "MiSansVF";
                 src: url("../assets/fonts/MiSansVF.ttf") format("truetype");
@@ -103,7 +103,7 @@ updated: 2026-01-18
 
         === "`zensical.toml`"
 
-            ```toml title=""
+            ```toml
             [project]
             extra_css = ["stylesheets/extra.css"]
             ```
@@ -112,7 +112,7 @@ updated: 2026-01-18
 
         === "常规字体"
 
-            ```css title=""
+            ```css
             :root {
                 --md-text-font: "MiSansVF", sans-serif; /* (1)! */
             }
@@ -122,7 +122,7 @@ updated: 2026-01-18
 
         === "代码字体"
 
-            ```css title=""
+            ```css
             :root {
                 --md-code-font: "MiSansVF", sans-serif;
             }
@@ -136,7 +136,7 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
 
     === "`CSS`"
 
-        ```Css title=""
+        ```Css
         .ss01{
             font-feature-settings: 'ss01' on;
         }
@@ -155,7 +155,7 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
 
     === "`HTML`"
 
-        ```Html title=""
+        ```Html
         未开启 __123,435,400__
         已开启 __123,435,400__{style="font-feature-settings: 'ss01' on"}
         ```
@@ -191,9 +191,9 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
 
     === "`docs/stylesheets/extra.css`"
 
-        ```css title=""
+        ```css
         :root {
-            --features: "tnum" on, "ss04" on;
+            --features: "tnum" on, "case" on;
         }
 
         * {
@@ -203,7 +203,7 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
 
     === "`*.md`"
 
-        ```html title=""
+        ```html
         <div style="font-feature-settings: var(--features), 'ss01' on">
         2026年4月21日 15:23
         </div>
@@ -231,7 +231,7 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
 
 === "`zensical.toml`"
 
-    ```toml title=""
+    ```toml
     [project.markdown_extensions.pymdownx.b64]
     base_path = './docs/'
     ```
@@ -240,7 +240,7 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
 
 === "`*.md`"
 
-    ```md title=""
+    ```md
     ![1.png](/docs/images/.../*.png)
     ```
 
