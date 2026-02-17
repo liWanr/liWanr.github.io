@@ -171,10 +171,10 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
 
     |CSS 底层配置|特征效果|未启用|已启用|
     |:-|:-|:-:|:-:|
-    |`'ss01'`|数字专用标点|__:1,234,356__{style="font-size:2em;"}|__:1,234,356__{style="font-size:2em; font-feature-settings: var(--features), 'ss01' on"}|
+    |`'ss01'`|数字专用标点|__:1,234.5__{style="font-size:2em;"}|__:1,234.5__{style="font-size:2em; font-feature-settings: var(--features), 'ss01' on"}|
     |`'ss02'`|单位改为上标|__96% 96℃__{style="font-size:2em;"}|__96% 96℃__{style="font-size:2em; font-feature-settings: var(--features), 'ss02' on"}|
     |`'ss03'`|单位改为下标|__96% 96℃__{style="font-size:2em;"}|__96% 96℃__{style="font-size:2em; font-feature-settings: var(--features), 'ss03' on"}|
-    |`'ss04'`|数字等高汉字|__4月21日__{style="font-size:2em; font-feature-settings: var(--features), 'ss04' off"}|__4月21日__{style="font-size:2em;"}|
+    |`'ss04'`|数字等高汉字|__4月21日__{style="font-size:2em; "}|__4月21日__{style="font-size:2em; font-feature-settings: var(--features), 'ss04' on;"}|
     |`'ss05'`|将大写的 M<br>改为 [小米](https://www.mi.com/) 图标|__M__{style="font-size:2em;"}|__M__{style="font-size:2em; font-feature-settings: var(--features), 'ss05' on"}|
     |`'ss06'`|将大写的 M<br>改为 [MIUI](https://home.miui.com/) 图标|__M__{style="font-size:2em;"}|__M__{style="font-size:2em; font-feature-settings: var(--features), 'ss06' on"}|
     |`'ss07'`|西文式标点|__“Hi, it’s me”__{style="font-size:2em;"}|__“Hi, it’s me”__{style="font-size:2em; font-feature-settings: var(--features), 'ss07' on"}|
@@ -183,7 +183,7 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
     |`'case'`|大中小三个括号<br>与大写字母等高|__(HBCD)__{style="font-size:2em; font-feature-settings: var(--features), 'case' off"}|__(HBCD)__{style="font-size:2em;"}|
     |`'frac'`|分数|__5/9__{style="font-size:2em;"}|__5/9__{style="font-size:2em; font-feature-settings: var(--features), 'frac' on"}|
     |`'sups'`|数字/小写字母<br>全部为上标|__12ABab__{style="font-size:2em;"}|__12ABab__{style="font-size:2em; font-feature-settings: var(--features), 'sups' on"}|
-    |`'tnum'`[^1]|数字等宽|__1,234,567,890__{style="font-size:1.5em; font-feature-settings: 'tnum' off,'ss01' on;" }|__1,234,567,890__{style="font-size:1.5em;font-feature-settings: var(--features), 'ss01' on"}|
+    |`'tnum'`[^1]|数字等宽|__1,234,567,890__{style="font-size:1.5em; font-feature-settings: 'tnum' off,'ss01' on" }|__1,234,567,890__{style="font-size:1.5em;font-feature-settings: var(--features), 'tnum' on, 'ss01' on"}|
 
     [^1]: [__M__{style="font-feature-settings: 'ss05' on"} **MiSans**](https://hyperos.mi.com/font) 官网写错了, 他写的 **`thum`**
     
