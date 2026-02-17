@@ -39,6 +39,7 @@ nav = [
         "blog/posts/jetbrains-active-free.md",
         "blog/posts/dual-boot-time-sync.md",
         "blog/posts/usb-secure-boot.md",
+        "blog/posts/remove-win-v-shortcut.md",
     ] },
     { "Recom" =  [
         "recom/epic-open-source-project.md",
@@ -198,6 +199,7 @@ Bash = [".s2"]
 Git = "Git"
 Server = "Server"
 Network = "Network"
+Windows = "Windows"
 Minecraft = "Minecraft"
 
 [project.extra.consent]                 # Cookie 标题和内容描述
