@@ -1,5 +1,5 @@
 ---
-icon: lucide/arrow-big-up-dash
+icon: lucide/group
 title: 删掉默认 win+v 快捷键
 tags:
   - Windows
