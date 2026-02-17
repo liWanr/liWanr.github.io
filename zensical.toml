@@ -54,9 +54,9 @@ extra_css = [
 ]
 
 # 添加自定义 JavaScript 文件, 可添加任意数量的 JavaScript 文件
-extra_javascript = [
-    "assets/javascripts/extra.js",
-]
+[[project.extra_javascript]]
+path = "assets/javascripts/extra.js"
+async = true
 
 # 图标与 Logo 配置
 [project.theme.icon]
