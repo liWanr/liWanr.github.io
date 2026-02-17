@@ -78,14 +78,14 @@ hide:
 **`Med.` -**
 [**`Discord`**](https://discord.com/channels/@me)
 [**`YouTube`**](https://www.youtube.com/) 
-[**`TikTok`**](https://www.douyin.com/?recommend=1)
+[**`DouYin`**](https://www.douyin.com/?recommend=1)
 [**`Bilibili`**](https://www.bilibili.com/)
 [**`Apple Music`**](https://music.apple.com/)
 [**`Spotify`**](https://open.spotify.com)
 
 ---
 
-**`LLM.` -**
+**`LLMs` -**
 [**`GPT`**](https://chat.openai.com/chat)
 [**`Grok`**](https://grok.com/)
 [**`Gemini`**](https://gemini.google.com/app)
@@ -96,7 +96,7 @@ hide:
 [**`IT DOG`**](https://www.itdog.cn/ping/)
 [**`Analytics`**](https://analytics.google.com/analytics/web/)
 [**`Cloudflare`**](https://dash.cloudflare.com/)
-[**`南大测速`**](https://test.nju.edu.cn/)
+[**`CF Speed`**](https://speed.cloudflare.com/)
 [**`中科大测速`**](https://test.ustc.edu.cn/)
 
 </div>
