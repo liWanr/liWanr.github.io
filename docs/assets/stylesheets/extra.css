@@ -62,7 +62,7 @@ small {
 
 :root {
     --md-text-font: "MiSansVF", sans-serif;
-    --features: "tnum" on, "case" on, "ss04" on;
+    --features: "tnum" on, "case" on;
 }
 
 * {
