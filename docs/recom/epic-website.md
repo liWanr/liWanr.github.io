@@ -18,6 +18,18 @@ title: 屌爆了的网站
 
 <div class="grid cards" markdown>
 
+-   ### 网络 {id="Network"}
+
+    ---
+
+    :lucide-mouse-pointer-click: 
+    [**Down for Everyone or Just Me**](https://downforeveryoneorjustme.com/)
+    | [**Probeops**](https://probeops.com/tools)
+
+</div>
+
+<div class="grid cards" markdown>
+
 -   ### Minecraft
 
     ---
