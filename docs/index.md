@@ -22,7 +22,7 @@ hide:
 </style>
 
 <h2 style="margin-top:0; font-size:4em;">
-你好, 我是 liWanr!
+Hi, I'm liWanr!
 </h2>
 
 ## :lucide-circle-user-round: About Me
