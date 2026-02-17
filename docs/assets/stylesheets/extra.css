@@ -33,6 +33,19 @@ small {
     font-feature-settings: 'ss04' off;
 }
 
+/* 复制title */
+.md-dialog {
+    backdrop-filter: blur(.4rem);
+    background-color: var(--md-default-bg-color--light);
+    border-radius: 1.6rem;
+    box-shadow: var(--md-shadow-z2);
+}
+
+.md-dialog__inner {
+    color: var(--md-default-fg-color--light);
+    font-size: .7rem;
+}
+
 /* 页面最大宽度 */
 /* .md-grid {
     max-width: 1440px; 
