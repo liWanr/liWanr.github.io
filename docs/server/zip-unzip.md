@@ -97,7 +97,7 @@ updated: 2025-12-22
     
     <small>
     :octicons-light-bulb-16:
-    **安装方式 :** [**下载 rar**](https://www.rarlab.com/){target="_blank"}, 下载解压后将 **rar_static** 拷贝到 `/usr/bin` 目录, 其他由 **$PATH** 环境变量指定的目录也可以
+    **安装方式 :** [**下载 rar**](https://www.rarlab.com/), 下载解压后将 **rar_static** 拷贝到 `/usr/bin` 目录, 其他由 **$PATH** 环境变量指定的目录也可以
     </small>
 
 </div>

@@ -11,7 +11,7 @@ created: 2025-12-16
 updated: 2026-01-18
 </small>
 
-1. **找到激活导航地址**: 打开[激活网站](https://3.jetbra.in/){target="_blank"}，选择成功连接的地址。
+1. **找到激活导航地址**: 打开[激活网站](https://3.jetbra.in/)，选择成功连接的地址。
 
 2. **下载激活插件**: 进入网站后找到顶部点击下载最新版的激活插件压缩包
 
@@ -19,13 +19,13 @@ updated: 2026-01-18
 
     === ":fontawesome-brands-windows: Windows"
 
-        ``` bash title=""
+        ``` bash
         scripts/install-all-users.vbs
         ```
 
     === ":simple-apple: MacOS | :simple-linux: Linux"
 
-        ``` bash title=""
+        ``` bash
         scripts/install.sh
         ```
 

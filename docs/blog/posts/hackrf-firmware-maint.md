@@ -19,7 +19,7 @@ updated: 2026-02-15
 
 在终端中输入以下命令，查看 HackRF One 的驱动与固件信息。如果发现 hackrf_info version 和 libhackrf version 都 **显示为 "unknown"** ，这通常意味着系统安装的驱动版本与设备固件版本不匹配，此时需要进行驱动升级。
 
-```bash title=""
+```bash
 hackrf_info
 ```
 
@@ -30,7 +30,7 @@ hackrf_info
 
 !!! Quote "输出"
 
-    ```shell-session { .yaml .no-copy .no-select title="" }
+    ```shell-session { .yaml .no-copy .no-select }
     ubuntu@ubuntu:~$ hackrf_info
     hackrf info version:unknown
     libhackrf version: unknown (0.5)
@@ -45,14 +45,14 @@ hackrf_info
 |:-|:-|
 |系统|Ubuntu 20.04 (在 Windows 11 中的 VMware 虚拟机)|
 |HackRF One|初始版本 2018（存在兼容性问题）|
-|仓库地址|[HackRF From  :simple-github:  GitHub](https://github.com/greatscottgadgets/hackrf){target="_blank"}|
+|仓库地址|[HackRF From  :simple-github:  GitHub](https://github.com/greatscottgadgets/hackrf)|
 |目标固件版本|2021.03.1（根据设备版本选择合适版本）|
 
 ## 环境安装
 
 在安装 HackRF One 之前，需要安装以下相关的软件包和依赖项：
 
-```bash title=""
+```bash
 sudo apt-get install gnuradio hackrf libhackrf-dev \
     gqrx-sdr rtl-sdr gr-osmosdr osmo-sdr libusb-1.0
 ```
@@ -63,27 +63,27 @@ sudo apt-get install gnuradio hackrf libhackrf-dev \
 
 ## 下载发行版安装包
 
-推荐直接下载官方发布的稳定版本。我用的是 [**HackRF Release 2021.03.1**](https://github.com/greatscottgadgets/hackrf/releases/download/v2021.03.1/hackrf-2021.03.1.tar.xz) ，如果需要其他版本，可以在 [**GitHub 官方仓库**](https://github.com/greatscottgadgets/hackrf/releases){target="_blank"} 中选择合适版本。
+推荐直接下载官方发布的稳定版本。我用的是 [**HackRF Release 2021.03.1**](https://github.com/greatscottgadgets/hackrf/releases/download/v2021.03.1/hackrf-2021.03.1.tar.xz) ，如果需要其他版本，可以在 [**GitHub 官方仓库**](https://github.com/greatscottgadgets/hackrf/releases) 中选择合适版本。
 
 ## 解压与安装
 
 1. 解压发行包文件
 
-    ```bash title=""
+    ```bash
     xz -d hackrf-2021.03.1.tar.xz
     tar xvf hackrf-2021.03.1.tar
     ```
 
 2. 创建 `build` 目录并编译：
 
-    ```bash title=""
+    ```bash
     cd hackrf-2021.03.1/host
     mkdir build && cd build
     ```
 
 3. 使用 `cmake` 进行配置与编译：
 
-    ```bash title=""
+    ```bash
     cmake ../ -DINSTALL_UDEV_RULES=ON
     make
     sudo make install
@@ -101,7 +101,7 @@ sudo apt-get install gnuradio hackrf libhackrf-dev \
 
 如果 Firmware Version 版本过旧，需要进行 Flash 固件更新，在 firmware-bin 目录下执行以下命令：
 
-```bash title=""
+```bash
 hackrf_spiflash -w hackrf_one_usb.bin
 ```
 
@@ -109,7 +109,7 @@ hackrf_spiflash -w hackrf_one_usb.bin
 
 从 2021 版本开始，CPLD 已包含在固件中，并在加载固件时自动更新，因此通常无需单独更新。但若你的固件版本较旧，仍需手动更新 CPLD：
 
-```bash title=""
+```bash
 hackrf_cpldjtag -x hackrf_cpld_default.xsvf
 ```
 
@@ -122,7 +122,7 @@ hackrf_cpldjtag -x hackrf_cpld_default.xsvf
 
 在终端中输入以下命令，确认设备信息是否正确更新。如果信息显示完整且版本号正确，说明设备已成功配置和更新。
 
-```bash title=""
+```bash
 hackrf_info
 ```
 
@@ -130,7 +130,7 @@ hackrf_info
 
 !!! Quote "服务器输出"
 
-    ```shell-session { .yaml .no-copy .no-select title="" }
+    ```shell-session { .yaml .no-copy .no-select }
     ubuntu@ubuntu:~$ hackrf_info
     hackrf_info version: 2021.03.1
     libhackrf version: 2021.03.1 (0.6)

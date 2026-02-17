@@ -17,7 +17,7 @@ updated: 2026-01-18
 
 !!! quote "终端输出"
 
-    ```shell-session { .yaml .no-copy .no-select title="" }
+    ```shell-session { .yaml .no-copy .no-select }
     ubuntu@ubuntu:~/Desktop$ ip a
     1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
         link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -39,18 +39,18 @@ updated: 2026-01-18
 
 1. 启用网卡： 再次运行 `ip a` 检查网卡是否变为 UP 状态。
 
-    ```bash title=""
+    ```bash
     sudo ip link set ens33 up
     ```
 
 2. 获取 IP： 一般到这个时候只是将网卡启用了, 但是不会给网卡分配 IP, 所以要手动获取 IP 地址
 
-    ```bash title=""
+    ```bash
     sudo dhclient ens33
     ```
 
 3. 检查： 此时就能够使用网络了, 输入 `ip a` 查看是否有 IPv4 地址, 如果还是没有可以尝试重启网络服务就有了
 
-    ```bash title=""
+    ```bash
     sudo systemctl restart NetworkManager
     ```
