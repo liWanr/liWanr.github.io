@@ -18,7 +18,7 @@ updated: 2026-01-18
 !!! quote "终端输出"
 
     ```shell-session { .yaml .no-copy .no-select }
-    ubuntu@ubuntu:~/Desktop$ ip a
+    ubuntu@ubuntu:~$ ip a
     1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
         link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
         inet 127.0.0.1/8 scope host lo
