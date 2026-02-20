@@ -5,7 +5,6 @@ hide:
     - path
     - feedback
     - footer
-# icon: lucide/user-round
 ---
 
 <style>
