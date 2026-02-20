@@ -1,15 +1,12 @@
 ---
 icon: lucide/git-merge
 title: Git 基本知识
+# date:
+#     created: 2025-01-20
+#     updated: 2025-02-22
 tags:
-    - Knowledge
     - Git
 ---
-
-<small>
-created: 2025-01-20
-updated: 2025-02-22
-</small>
 
 ## 安装 Git {id="install-git"}
 

@@ -1,15 +1,12 @@
 ---
 icon: lucide/audio-waveform
 title: HackRF 固件维护
+# date:
+#     created: 2025-03-17
+#     updated: 2026-02-15
 tags:
-  - HackRF
-  - GitHub
+    - Tech
 ---
-
-<small>
-created: 2025-03-17
-updated: 2026-02-15
-</small>
 
 ## 引言 {id="introduction"}
 

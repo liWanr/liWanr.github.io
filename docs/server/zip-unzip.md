@@ -1,14 +1,12 @@
 ---
 icon: lucide/folder-archive
 title: 压缩与解压
+# date:
+#     created: 2024-10-26
+#     updated: 2025-12-22
 tags:
-    - Server
+    - Factoid
 ---
-
-<small>
-created: 2024-10-26
-updated: 2025-12-22
-</small>
 
 - **FileName** 代表压缩包的名称
 

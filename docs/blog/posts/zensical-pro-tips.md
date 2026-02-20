@@ -1,13 +1,12 @@
 ---
 icon: lucide/feather
 title: Zensical 的小技巧
-status: new
+# date:
+#     created: 2025-12-16
+#     updated: 2026-01-18
+tags:
+    - Factoid
 ---
-
-<small>
-created: 2025-12-16
-updated: 2026-01-18
-</small>
 
 <script src="../../../assets/javascripts/keys/keys.js"></script>
 

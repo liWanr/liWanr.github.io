@@ -1,13 +1,11 @@
 ---
 icon: lucide/group
 title: 删掉默认 win+v 快捷键
+# date:
+#     created: 2026-02-18
 tags:
-  - Windows
+    - Factoid
 ---
-
-<small>
-created: 2026-02-18
-</small>
 
 Win+V 这个快捷键是剪贴板用户服务注册的, 要强制禁用每用户服务:
 

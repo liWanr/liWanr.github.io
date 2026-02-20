@@ -1,14 +1,11 @@
 ---
 icon: simple/nginx
-title: Ubuntu 编译安装 Nginx 
+title: Ubuntu 编译安装 Nginx
+# date:
+#     created: 2026-02-17
 tags:
-  - Server
-  - Network
+    - Net
 ---
-
-<small>
-created: 2026-02-17
-</small>
 
 ## 准备环境与依赖库 {id="prep-env-deps"}
 

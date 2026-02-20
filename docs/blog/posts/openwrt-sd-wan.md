@@ -1,14 +1,13 @@
 ---
 icon: lucide/workflow
 title: OpenWrt 异地组网
+# date:
+#     created: 2025-01-20
+#     updated: 2025-02-22
 tags:
-  - Network
+    - Net
+    - Tech
 ---
-
-<small>
-created: 2025-01-20
-updated: 2025-02-22
-</small>
 
 ## 引言 {id="introduction"}
 

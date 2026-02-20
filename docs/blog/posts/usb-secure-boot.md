@@ -1,15 +1,12 @@
 ---
 icon: material/usb
 title: U 盘安全启动
+# date:
+#     created: 2025-01-20
+#     updated: 2026-01-12
 tags:
-  - Network
-  - GitHub
+    - Factoid
 ---
-
-<small>
-created: 2025-01-20
-updated: 2026-01-12
-</small>
 
 ## 解决方案 {id="solution"}
 

@@ -1,13 +1,11 @@
 ---
 icon: material/cloud-upload-outline
 title: Win 挂载 Ubuntu 目录
+# date:
+#     created: 2026-02-13
 tags:
-    - Server
+    - Factoid
 ---
-
-<small>
-created: 2026-02-13
-</small>
 
 ## :simple-linux: **Ubuntu 端配置** {id="ubuntu-config"}
 

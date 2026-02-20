@@ -1,15 +1,13 @@
 ---
 icon: lucide/server-crash
 title: 什么是 DNS
+# date:
+  # created: 2025-01-22
+  # updated: 2025-02-26
 tags:
-  - Network
-  - GitHub
+    - Net
+    - Factoid
 ---
-
-<small>
-created: 2025-01-22
-updated: 2025-02-26
-</small>
 
 DNS 是一种将域名解析为 IP 地址的系统, 可以比喻成电话簿, 将人名和对应的电话记录下来。因为浏览器不能直接访问域名, 必须通过 IP 地址进行访问, 但是一个文件甚至一台普通电脑肯定装不下全世界大部分的域名与 IP 地址的对应关系, 就好像你不可能将全世界 70 多亿人的手机号存进自己的电话簿里面一样。
 

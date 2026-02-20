@@ -1,15 +1,12 @@
 ---
 icon: simple/jetbrains
 title: 免费激活 JetBrains
+# date:
+    # created: 2025-12-16
+    # updated: 2026-01-18
 tags:
-  - Network
-  - GitHub
+    - Factoid
 ---
-
-<small>
-created: 2025-12-16
-updated: 2026-01-18
-</small>
 
 1. **找到激活导航地址**: 打开[激活网站](https://3.jetbra.in/)，选择成功连接的地址。
 
