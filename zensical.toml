@@ -41,7 +41,7 @@ nav = [
         "blog/posts/usb-secure-boot.md",
         "blog/posts/remove-win-v-shortcut.md",
         "blog/posts/nvidia-control-panel-fs-corrupt.md",
-        "blog/posts/concurrency-model.md",
+        "blog/posts/execution-breakdown.md",
     ] },
     { "Recom" =  [
         "recom/epic-open-source-project.md",
