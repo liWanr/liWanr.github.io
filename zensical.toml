@@ -84,8 +84,6 @@ features = [
 
     # ================= 导航体验 ================= https://zensical.org/docs/setup/navigation/
     "navigation.indexes",           # 启用章节索引页功能，允许文档直接挂载到章节下（适合概览页）
-    "navigation.instant",
-    "navigation.instant.progress",
     "navigation.path",              # 显示路径面包屑导航（在页面标题上方）
     "navigation.tabs",              # 在大屏幕下，将顶级章节渲染为头部下方的菜单标签页
     "navigation.tabs.sticky",       # 启用粘性标签页：向下滚动时标签页固定在头部下方始终可见
