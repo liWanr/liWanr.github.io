@@ -69,6 +69,12 @@ small {
     font-feature-settings: var(--features);
 }
 
+/* v0.0.23之前的bug修复代码 */
+html {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+
 .md-typeset small .twemoji {
     margin-top: 1.35px;
 }
