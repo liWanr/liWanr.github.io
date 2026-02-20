@@ -75,6 +75,10 @@ html {
     scrollbar-gutter: stable;
 }
 
+figcaption {
+    font-size: 80%;
+}
+
 .md-typeset small .twemoji {
     margin-top: 1.35px;
 }
