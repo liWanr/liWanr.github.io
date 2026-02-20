@@ -40,6 +40,8 @@ nav = [
         "blog/posts/dual-boot-time-sync.md",
         "blog/posts/usb-secure-boot.md",
         "blog/posts/remove-win-v-shortcut.md",
+        "blog/posts/nvidia-control-panel-fs-corrupt.md",
+        "blog/posts/concurrency-model.md",
     ] },
     { "Recom" =  [
         "recom/epic-open-source-project.md",
@@ -82,6 +84,8 @@ features = [
 
     # ================= 导航体验 ================= https://zensical.org/docs/setup/navigation/
     "navigation.indexes",           # 启用章节索引页功能，允许文档直接挂载到章节下（适合概览页）
+    "navigation.instant",
+    "navigation.instant.progress",
     "navigation.path",              # 显示路径面包屑导航（在页面标题上方）
     "navigation.tabs",              # 在大屏幕下，将顶级章节渲染为头部下方的菜单标签页
     "navigation.tabs.sticky",       # 启用粘性标签页：向下滚动时标签页固定在头部下方始终可见
@@ -196,11 +200,10 @@ note = """
 Bash = [".s2"]
 
 [project.extra.tags]                    # 使用标签对任何页面进行分类，标签将作为页面元数据的一部分
+Net = "Net"
+Tech = "Tech"
+Factoid = "Factoid"
 Git = "Git"
-Server = "Server"
-Network = "Network"
-Windows = "Windows"
-Minecraft = "Minecraft"
 
 [project.extra.consent]                 # Cookie 标题和内容描述
 title = "隐私与 Cookie 设置"
