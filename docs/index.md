@@ -62,7 +62,8 @@ Hello, I'm liWanr!
 
 **wanr 和他的朋友们 -**
 [:local-jiao:**Jiao**](https://dxlcq.cn/){ .no-color } <small>|</small>
-[:lucide-hat-glasses:**Sevenalist**](https://dczcq.cn/){ .no-color }
+[:lucide-hat-glasses:**Sevenalist**](https://dczcq.cn/){ .no-color } <small>|</small>
+[:fontawesome-solid-brain:**QVI**](https://qvidx.github.io){ .no-color }
 
 ---
 
