@@ -3,7 +3,7 @@ icon: lucide/workflow
 title: OpenWrt 异地组网
 # date:
 #     created: 2025-01-20
-#     updated: 2025-02-22
+#     updated: 2026-02-20
 tags:
     - Net
     - Tech
@@ -54,12 +54,10 @@ tags:
 
 :   R4S 存储固件的方式是用 TF 卡, 所以只需要将固件刷进 TF 卡就行了。 **设备** 选择 U 盘, **引导类型** 选择下好的 Wrt 固件, 然后 **点击开始**, 等待 **准备就绪** 变成绿色就可以将 TF 插到 R4S 的卡槽中了。
 
+    <figure markdown="span">
     ![1.png](../../assets/images/knowledge/openwrt/1.png)
-
-    <small>
-    :octicons-light-bulb-16:
-    图中 1 代表 U 盘名称, 2 代表固件名称
-    </small>
+    <figcaption>图中 1 代表 U 盘名称, 2 代表固件名称</figcaption>
+    </figure>
 
 ## 系统基本设置 {id="system-basic-settings"}
 
