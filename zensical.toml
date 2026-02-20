@@ -28,9 +28,9 @@ nav = [
         "server/ubuntu-build-nginx.md",
         "server/ubuntu-enable-net.md",
         "server/windows-mount-ubuntu-dir.md",
+        "server/use-openvpn-client.md",
     ] },
     { "Blog" = [
-        "blog/posts/use-openvpn-client.md",
         "blog/posts/openwrt-sd-wan.md",
         "blog/posts/hackrf-firmware-maint.md",
         "blog/posts/zensical-pro-tips.md",

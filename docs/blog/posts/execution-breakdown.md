@@ -1,5 +1,5 @@
 ---
-icon: octicons/ai-model-16
+icon: lucide/construction
 title: 拆解执行
 # date:
 #   created: 2024-11-07
