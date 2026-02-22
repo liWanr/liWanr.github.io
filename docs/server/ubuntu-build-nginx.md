@@ -31,7 +31,6 @@ tar -zxvf nginx-1.26.3.tar.gz
 cd nginx-1.26.3
 ```
 
-
 ## 配置编译参数 {id="config-build-opts"}
 
 接下来将所有的安装路径都指向刚才的目标目录, 并且当前用户拥有目录的所有权。
@@ -50,7 +49,6 @@ cd nginx-1.26.3
 </small>
 
 如果没有目录的所有权，就执行这个
-
 
 ```Bash
 sudo chown -R ubuntu:ubuntu ~/website/env/nginx-1.26.3
@@ -78,11 +76,9 @@ cd ~/website/nginx1.26.3
 ./sbin/nginx -V
 ```
 
-<div class="result" mardown>
+<div class="result" markdown>
 
-输出内容
-
-```Text { .yaml .no-copy}
+```Text { title="输出内容" .yaml .no-copy}
 nginx version: nginx/1.26.3
 built by gcc 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
 built with OpenSSL 3.0.2 15 Mar 2022
@@ -100,12 +96,14 @@ configure arguments: --prefix=/home/ubuntu/website/nginx1.26.3 --with-http_ssl_m
     .sbin/nginx -t
     ```
 
-    正常输出：
+    <div class="result" markdown>
 
-    ```Text { .yaml .no-copy }
+    ```Text { title="正常输出" .yaml .no-copy }
     nginx: the configuration file */conf/nginx.conf syntax is ok
     nginx: configuration file */conf/nginx.conf test is successful
     ```
+
+    </div>
 
 === "启动服务"
 
@@ -113,7 +111,11 @@ configure arguments: --prefix=/home/ubuntu/website/nginx1.26.3 --with-http_ssl_m
     .sbin/nginx
     ```
 
+    <div class="result" markdown>
+
     常规没输出
+
+    </div>
 
 === "热重载配置"
 
@@ -121,7 +123,11 @@ configure arguments: --prefix=/home/ubuntu/website/nginx1.26.3 --with-http_ssl_m
     .sbin/nginx -s reload
     ```
 
+    <div class="result" markdown>
+
     常规没输出
+
+    </div>
 
 === "终止服务"
 
@@ -129,4 +135,8 @@ configure arguments: --prefix=/home/ubuntu/website/nginx1.26.3 --with-http_ssl_m
     .sbin/nginx -s stop
     ```
 
+    <div class="result" markdown>
+
     常规没输出
+
+    </div>
