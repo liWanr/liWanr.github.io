@@ -63,7 +63,7 @@ Hello, I'm liWanr!
 **wanr 和他的朋友们 -**
 [:local-jiao:**Jiao**](https://dxlcq.cn/){ .no-color } <small>|</small>
 [:lucide-hat-glasses:**Sevenalist**](https://dczcq.cn/){ .no-color } <small>|</small>
-[:fontawesome-solid-brain:**QVI**](https://qvidx.github.io){ .no-color }
+[:lucide-bug:**Qvi**](https://qvidx.github.io){ .no-color }
 
 ---
 
@@ -157,7 +157,8 @@ Hello, I'm liWanr!
 </div>
 
 <small>
-:lucide-text-quote: 网站基于
+:material-format-quote-open-outline:
+网站基于
 [**Zensical**](https://zensical.org/){ .no-color }
 搭建，代码通过
 [**VS Code**](https://code.visualstudio.com/){ .no-color }
