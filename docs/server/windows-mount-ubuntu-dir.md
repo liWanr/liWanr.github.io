@@ -22,7 +22,7 @@ tags:
 
     ```conf title="挂载信息"
     [UbuntuShare]
-        path = # (1)!
+        path = /home/ubuntu/shareDir # (1)!
         available = yes
         browsable = yes
         public = yes
@@ -30,18 +30,18 @@ tags:
         read only = no
     ```
 
-    1. 要挂载的目录地址，最好是绝对地址, 比如 `/home/ubuntu/shareDir`
+    1. 要挂载的目录地址，最好是绝对地址
 
     添加完成之后按键盘左上角的 ++esc++ 退出编辑模式，再按 ++colon++ 进入命令模式后输入 `wq!` 保存并退出。
 
 2. 设置密码后 **重启 samba** 服务
 
     ``` Bash
-    sudo smbpasswd -a # (1)!
+    sudo smbpasswd -a ubuntu # (1)!
     sudo systemctl restart smbd
     ```
 
-    1. 用户名
+    1. ubuntu 代表用户名
 
 ## :fontawesome-brands-windows: **Windows 端挂载** {id="windows-mount"}
 
@@ -50,9 +50,9 @@ tags:
 2. 路径格式:
 
     ```st
-    \\"# (1)!"\UbuntuShare
+    \\192.168.1.2"# (1)!"\UbuntuShare
     ```
 
-    1. 需要挂载的 Ubuntu 的 IP, 比如 `\\192.168.1.2\UbuntuShare`
+    1. 需要挂载的 Ubuntu 的 IP
 
 3. 凭据登录: 输入设置的 **Ubuntu 用户名** 与 **Samba 密码** 就好了
