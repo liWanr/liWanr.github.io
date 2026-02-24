@@ -81,6 +81,7 @@ title: 屌爆了的网站
     :lucide-mouse-pointer-click: 
     [**风灵月影**](https://flingtrainer.com/)
     | [**BYRUTOR**](https://byrutgame.org/)
+    | [**CE 修改器**](https://www.cheatengine.org/)
 
 </div>
 
