@@ -36,12 +36,12 @@ Hello, I'm liWanr!
 [**OpenWrt**](https://openwrt.org/){ .no-color }<small> / </small>
 [**Nginx**](https://nginx.org/){ .no-color }<small> / </small>
 [**OpenVPN**](https://openvpn.net/){ .no-color }
-等网络技术与类似
+等网络技术与
 [**Figma**](https://www.figma.com/){ .no-color }<small> / </small>
 [**Axure**](https://www.figma.com/){ .no-color }
-的 UI<small>/</small>UX 设计感兴趣, 致力于将技术与设计完美结合。参与过蓝牙射频指纹、网联汽车巡航、物联网农业工程、生物特征电子签名等项目, 目前在用业余时间开发一款高质量的台球计分程序。
+等 UI<small>/</small>UX 设计感兴趣, 致力于将技术与设计完美结合。参与过蓝牙射频指纹、网联汽车巡航、物联网农业工程、生物特征电子签名等项目, 目前在用业余时间开发一款高质量的台球计分程序。
 
-爱好打台球和羽毛球, 台球线上可以在
+平时喜欢打台球和羽毛球, 台球线上可以在
 [**Shooterspool**](https://www.shooterspool.net/){ .no-color }
 找我玩。也比较喜欢听流行音乐, 歌手中意
 [**陈奕迅**](https://www.instagram.com/mreasonchan/){ .no-color },
