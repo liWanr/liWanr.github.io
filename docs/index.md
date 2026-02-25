@@ -52,7 +52,7 @@ Hello, I'm liWanr!
 等老香港作曲就能封神。
 
 :lucide-messages-square: **Let's Chat -**
-[**Email**](mailto:itsWanr@outlook.com) <small>|</small>
+[**Email**](mailto:li.wanr@outlook.com) <small>|</small>
 [**GitHub**](https://github.com/liWanr) <small>|</small>
 [**Telegram**](https://t.me/itsWanr)
 {style="margin: auto auto 0px auto"}
