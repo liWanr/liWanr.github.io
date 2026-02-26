@@ -3,7 +3,7 @@ icon: lucide/git-merge
 title: Git 基本知识
 # date:
 #     created: 2025-01-20
-#     updated: 2025-02-22
+#     updated: 2025-02-26
 tags:
     - Git
 ---
@@ -670,59 +670,57 @@ tags:
 
 4. 将 SSH 密钥添加到 GitHub, 进入 [**Add new SSH Key**](https://github.com/settings/ssh/new) 页面, Title 对应密钥名称, Key type 保持默认的认证加密, Key 就是对应密钥
 
-## 测试连接状态 {id="test-connect-status"}
-
-当密钥添加到 GitHub 且本地已经配置用户名和电子邮箱的完成后，就可以检测本地和 GitHub 的连接状态了
-
-```Bash
-ssh -T git@github.com
-```
-
-<div class="result" markdown>
-
-=== "成功状态 1"
-
-    ```Bash  {.yaml .no-copy .no-select}
-    This key is not known by any other names
-    Are you sure you want to continue connecting (yes/no/[fingerprint])? yes # (1)!
-    Hi ***! You've successfully authenticated, but GitHub does not provide shell access.
-    ```
-
-    1. 会让你输入 `yes` 确认
-
-=== "成功状态 2"
-
-    ```Bash  {.yaml .no-copy .no-select}
-    Hi ***! You've successfully authenticated, but GitHub does not provide shell access.
-    ```
-    
-</div>
-
-这期间可能存在会有问题, 特别是用了代理的玩家, 可能会出现 **远程主机已关闭连接** 的报错
-
-> **原问题内容 ssh_exchange_identification: Connection closed by remote host**
-
-通常 ssh 的端口是22, 开启代理之后 SSH 的连接被代理阻塞, 但是可以通过更改 SSH 设置文件, 将 GitHub 的 SSH 连接端口从 22 改为 443。
-
-1. 首先打开 config 文件
-
-    === "Linux"
-
-        ```Bash
-        vim ~/.ssh/config
-        ```
-
-    === "windows"
-
-        ```Text
-        C:\Users\{Username}\.ssh\config
-        ```
-
-2. 在文件中添加以下内容
+5. 当密钥添加到 GitHub 且本地已经配置用户名和电子邮箱的完成后，就可以检测本地和 GitHub 的连接状态了
 
     ```Bash
-    Host github.com
-        Hostname ssh.github.com
-        Port 443
-        User git
+    ssh -T git@github.com
     ```
+
+    <div class="result" markdown>
+
+    === "成功状态 1"
+
+        ```Bash  {.yaml .no-copy .no-select}
+        This key is not known by any other names
+        Are you sure you want to continue connecting (yes/no/[fingerprint])? yes # (1)!
+        Hi ***! You've successfully authenticated, but GitHub does not provide shell access.
+        ```
+
+        1. 会让你输入 `yes` 确认
+
+    === "成功状态 2"
+
+        ```Bash  {.yaml .no-copy .no-select}
+        Hi ***! You've successfully authenticated, but GitHub does not provide shell access.
+        ```
+        
+    </div>
+
+6. 这期间可能存在会有问题, 特别是用了代理的玩家, 可能会出现 **远程主机已关闭连接** 的报错
+
+    > **原问题内容 ssh_exchange_identification: Connection closed by remote host**
+
+    通常 ssh 的端口是22, 开启代理之后 SSH 的连接被代理阻塞, 但是可以通过更改 SSH 设置文件, 将 GitHub 的 SSH 连接端口从 22 改为 443。
+
+    1. 首先打开 config 文件
+
+        === "Linux"
+
+            ```Bash
+            vim ~/.ssh/config
+            ```
+
+        === "windows"
+
+            ```Text
+            C:\Users\{Username}\.ssh\config
+            ```
+
+    2. 在文件中添加以下内容
+
+        ```Bash
+        Host github.com
+            Hostname ssh.github.com
+            Port 443
+            User git
+        ```
