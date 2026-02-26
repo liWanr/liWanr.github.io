@@ -10,7 +10,7 @@ tags:
 
 ## 安装 Git {id="install-git"}
 
-若要在命令行上使用 Git, 需要在计算机上安装、安装和设置 Git。 [下载并安装最新版本的 Git](https://git-scm.com/downloads)
+若要在命令行上使用 Git, 需要在计算机上安装、安装和设置 Git。 [下载并安装最新版本的 Git](https://git-scm.com/install/windows)
 
 !!! warning "在 Chrome OS 上启用和安装 Git"
 
@@ -21,6 +21,614 @@ tags:
     1. 在 Chrome OS 设备上安装终端模拟器, 例如 Google Play 商店中的 Termux。
 
     2. 从您安装的终端模拟器安装 Git。 例如, 在 Termux 中, 输入 `pkg install git` 并在出现提示时键入 ++y++。
+
+## 速查表 {id="git-cheat-sheet"}
+
+=== "**Git 文件**"
+
+    <div class="grid cards" markdown>
+
+    - 本地 Git 配置文件
+
+        ```Bash
+        .git/config
+        ```
+
+    - 全局 Git 配置文件
+
+        ```Bash
+        ~/.gitconfig
+        ```
+
+    - 忽略文件规则
+
+        ```Bash
+        .gitignore
+        ```
+
+    </div>
+
+=== "**配置**"
+
+    <div class="grid cards" markdown>
+
+    - 设置用户信息
+
+        ```Bash
+        git config user.name "(1)"
+        git config user.email "(2)"
+        ```
+
+        1. 用户名
+        2. 电子邮箱
+
+    - 全局配置
+
+        ```Bash
+        git config --global ...
+        ```
+
+    - 添加别名
+
+        ```Bash
+        git config alias.st status
+        ```
+
+    - 查看所有配置选项
+
+        ```Bash
+        man git-config
+        ```
+    
+    </div>
+
+=== "**仓库**"
+
+    <div class="grid cards" markdown>
+
+    - 初始化一个新的仓库
+
+        ```Bash
+        git init
+        ```
+
+    - 克隆现有仓库
+
+        ```Bash
+        git clone <url>
+        ```
+
+    - 查看远程仓库
+
+        ```Bash
+        git remote -v
+        ```
+
+    - 添加远程仓库
+
+        ```Bash
+        git remote add origin <url>
+        ```
+
+    - 修改远程仓库地址
+
+        ```Bash
+        git remote set-url origin <url>
+        ```
+
+    - 删除远程仓库
+
+        ```Bash
+        git remote remove origin
+        ```
+
+    </div>
+
+=== "**暂存**"
+
+    <div class="grid cards" markdown>
+
+    - 添加未跟踪文件或修改到暂存区
+
+        ```Bash
+        git add <file>
+        ```
+
+    - 添加所有未跟踪文件和修改
+
+        ```Bash
+        git add .
+        ```
+
+    - 交互式选择要暂存的部分内容
+
+        ```Bash
+        git add -p
+        ```
+
+    - 移动或重命名文件
+
+        ```Bash
+        git mv <old> <new>
+        ```
+
+    - 删除文件
+
+        ```Bash
+        git rm <file>
+        ```
+
+    - 从版本控制中移除但保留本地文件
+
+        ```Bash
+        git rm --cached <file>
+        ```
+
+    - 取消暂存某个文件
+
+        ```Bash
+        git reset <file>
+        ```
+
+    - 取消暂存所有文件
+
+        ```Bash
+        git reset
+        ```
+
+    - 查看当前状态
+
+        ```Bash
+        git status
+        ```
+
+    </div>
+
+=== "**提交**"
+
+    <div class="grid cards" markdown>
+
+    - 提交更改
+
+        ```Bash
+        git commit
+        ```
+
+    - 提交并附带说明信息
+
+        ```Bash
+        git commit -m "message"
+        ```
+
+    - 提交所有已跟踪文件的修改
+
+        ```Bash
+        git commit -am "message"
+        ```
+
+    - 修改上一次提交
+
+        ```Bash
+        git commit --amend
+        ```
+
+    </div>
+
+=== "**推送**"
+
+    <div class="grid cards" markdown>
+
+    - 将 `main` 分支推送到远程仓库 `origin`
+
+        ```Bash
+        git push origin main
+        ```
+
+    - 推送当前分支到其远程跟踪分支
+
+        ```Bash
+        git push
+        ```
+
+    - 首次推送新分支并建立跟踪关系
+
+        ```Bash
+        git push -u origin <name>
+        ```
+
+    - 强制推送（更安全方式）
+
+        ```Bash
+        git push --force-with-lease
+        ```
+
+    - 推送所有标签
+
+        ```Bash
+        git push --tags
+        ```
+
+    </div>
+
+=== "**拉取**"
+
+    <div class="grid cards" markdown>
+
+    - 获取远程更新但不修改本地分支
+
+        ```Bash
+        git fetch origin main
+        ```
+
+    - 拉取并变基
+
+        ```Bash
+        git pull --rebase
+        ```
+
+    - 拉取并合并
+
+        ```Bash
+        git pull origin main
+        ```
+
+        ```Bash
+        git pull
+        ```
+
+    </div>
+
+=== "**差异**"
+
+    <div class="grid cards" markdown>
+
+    - 查看未暂存修改
+
+        ```Bash
+        git diff
+        ```
+
+    - 查看已暂存修改
+
+        ```Bash
+        git diff --staged
+        ```
+
+    - 比较两个分支
+
+        ```Bash
+        git diff branch1..branch2
+        ```
+
+    - 比较两个提交
+
+        ```Bash
+        git diff <commit1> <commit2>
+        ```
+
+    </div>
+
+=== "**分支**"
+
+    <div class="grid cards" markdown>
+
+    - 切换分支
+
+        ```Bash
+        git checkout <name>
+        ```
+
+        ```Bash
+        git switch <name>
+        ```
+
+    - 创建并切换到新分支
+
+        ```Bash
+        git checkout -b <name>
+        ```
+
+        ```Bash
+        git switch -c <name>
+        ```
+
+    - 列出分支
+
+        ```Bash
+        git branch
+        ```
+
+    - 按最近提交时间排序列出分支
+
+        ```Bash
+        git branch --sort=-committerdate
+        ```
+
+    - 删除分支
+
+        ```Bash
+        git branch -d <name>
+        ```
+
+    - 强制删除分支
+
+        ```Bash
+        git branch -D <name>
+        ```
+
+    </div>
+
+    <small>
+    :octicons-light-bulb-16:
+    Git `v2.23` 后新增了 `switch` 和`restore` 命令, 用于拆解原来多功能命令 `checkout`。以前的 `checkout` 同时在做切换分支、创建分支、恢复文件三件事, 现在 `switch` 用于切换分支、创建分支, `restore` 用于恢复文件 
+    </small>
+
+=== "**合并分叉分支**"
+
+    <div class="grid cards" markdown>
+
+    - 合并分支
+
+        ```Bash
+        git switch main
+        git merge <branch>
+        ```
+
+        ```mermaid
+        ---
+        config:
+            themeVariables:
+                'git0': '#FFCB5E'
+                'git1': '#77A3FF'
+        ---
+        gitGraph
+            commit id: "A"
+            commit id: "B"
+            branch banana
+            commit id: "D"
+            commit id: "E"
+            checkout main
+            commit id: "C"
+            merge banana
+        ```
+
+    - 与 `rebase` 结合使用
+
+        ```Bash
+        git switch <branch>
+        git rebase main
+        ```
+
+        ```mermaid
+        ---
+        config:
+            themeVariables:
+                    'git0': '#FFCB5E'
+                    'git1': '#ffb2b2ff'
+                    'git2': '#77A3FF'
+        ---
+        gitGraph
+            commit id: "A"
+            commit id: "B"
+
+            branch lost
+            commit id: "D" type: REVERSE
+            commit id: "E" type: REVERSE
+
+            checkout main
+            commit id: "C"
+
+            branch banana
+            checkout banana
+            commit id: "D'"
+            commit id: "E'"
+        ```
+
+    - 与 `squash` merge 合并
+
+        ```Bash
+        git merge --squash <branch>
+        ```
+
+        ```mermaid
+        ---
+        config:
+            themeVariables:
+                'git0': '#FFCB5E'
+                'git1': '#77A3FF'
+        ---
+        gitGraph
+            commit id: "A"
+            commit id: "B"
+            branch banana
+            commit id: "D"
+            commit id: "E"
+            checkout main
+            commit id: "D E"
+        ```
+
+    - 将一个提交复制到当前分支
+
+        ```Bash
+        git cherry-pick <commit>
+        ```
+
+        ```mermaid
+        ---
+        config:
+            themeVariables:
+                'git0': '#FFCB5E'
+                'git1': '#77A3FF'
+        ---
+        gitGraph
+            commit id: "A"
+            commit id: "B"
+            branch banana
+            commit id: "D"
+            commit id: "E"
+            checkout main
+            commit id: "C"
+            commit id: "D'"
+        ```
+
+    - 交互式变基
+
+        ```Bash
+        git rebase -i HEAD~3
+        ```
+
+        ```mermaid
+        ---
+        config:
+            themeVariables:
+                'git0': '#FFCB5E'
+                'git1': '#77A3FF'
+        ---
+        gitGraph
+            commit id: "A"
+            commit id: "B"
+            commit id: "C" type: REVERSE
+            commit id: "D" type: REVERSE
+            commit id: "E" type: REVERSE
+            commit id: "C'"
+            commit id: "DE'"
+        ```
+
+    </div>
+
+=== "**回退**"
+
+    <div class="grid cards" markdown>
+
+    - 回退到上一个提交（保留修改）
+
+        ```Bash
+        git reset --soft HEAD~1
+        ```
+
+    - 回退到上一个提交（丢弃修改）
+
+        ```Bash
+        git reset --hard HEAD~1
+        ```
+
+    - 生成新的回滚提交
+
+        ```Bash
+        git revert <commit>
+        ```
+
+    </div>
+
+=== "**放弃更改**"
+
+    <div class="grid cards" markdown>
+
+    - 丢弃某个文件的未暂存修改
+
+        ```Bash
+        git restore <file>
+        ```
+
+        ```Bash
+        git checkout <file>
+        ```
+
+    - 丢弃单个文件的所有修改
+
+        ```Bash
+        git restore --staged --worktree <file>
+        ```
+
+        ```Bash
+        git checkout HEAD <file>
+        ```
+
+    - 丢弃所有已暂存和未暂存的修改
+
+        ```Bash
+        git reset --hard
+        ```
+
+    - 删除未跟踪文件
+
+        ```Bash
+        git clean -f
+        ```
+
+    </div>
+
+=== "**标签**"
+
+    <div class="grid cards" markdown>
+
+    - 创建标签
+
+        ```Bash
+        git tag v1.0
+        ```
+
+    - 创建带说明的标签
+
+        ```Bash
+        git tag -a v1.0 -m "release"
+        ```
+
+    - 查看标签
+
+        ```Bash
+        git tag
+        ```
+
+    - 删除标签
+
+        ```Bash
+        git tag -d v1.0
+        ```
+
+    </div>
+
+=== "**日志**"
+
+    <div class="grid cards" markdown>
+
+    - 查看提交历史
+
+        ```Bash
+        git log
+        ```
+
+    - 单行简洁显示
+
+        ```Bash
+        git log --oneline
+        ```
+
+    - 图形化显示分支结构
+
+        ```Bash
+        git log --oneline --graph --decorate --all
+        ```
+
+    - 查看某个文件的提交历史
+
+        ```Bash
+        git log <file>
+        ```
+
+    - 查看文件每一行的修改者
+
+        ```Bash
+        git blame <file>
+        ```
+
+    - 查看引用记录（找回误删提交）
+
+        ```Bash
+        git reflog
+        ```
+
+    </div>
 
 ## 在 GitHub 验证身份 {id="authenticating-on-GitHub"}
 
@@ -61,54 +669,6 @@ tags:
     ```
 
 4. 将 SSH 密钥添加到 GitHub, 进入 [**Add new SSH Key**](https://github.com/settings/ssh/new) 页面, Title 对应密钥名称, Key type 保持默认的认证加密, Key 就是对应密钥
-
-## 配置用户名与电子邮箱 {id="configure-username-and-commit-email-address"}
-
-1. **配置信息**
-
-    === "配置用户名"
-
-        ```Bash
-        git config --global user.name "(1)"
-        ```
-
-        1. 里面填 git 账户名, 比如 **`"liWanr"`**
-
-    === "电子邮件"
-
-        ```Bash
-        git config --global user.email "(1)"
-        ```
-
-        1. 里面填 git 账号绑定的邮箱, 比如 **`"itsWanr@outlook.com"`**
-
-    <small>
-    :octicons-light-bulb-16:
-    如果想查看 **特定目录的 Git 设置** 就去掉 **`--global`** 参数即可
-    </small>
-
-2. **查看信息**
-
-    通过此命令可以查看 Git 的全局设置项, 如用户名、邮箱地址等, 帮助确保 Git 设置正确无误。
-
-    ```Bash
-    git config --global --list
-    ```
-
-    <div class="result" markdown>
-
-    ```Bash {.yaml .no-copy .no-select title="输出内容"}
-    user.name=liWanr
-    user.email=itsWanr@ooutlook.com
-    ```
-
-    </div>
-
-    <small>
-    :octicons-light-bulb-16:
-    如果想查看 **特定目录的 Git 设置** 就去掉 **`--global`** 参数即可
-    </small>
-
 
 ## 测试连接状态 {id="test-connect-status"}
 
@@ -166,54 +726,3 @@ ssh -T git@github.com
         Port 443
         User git
     ```
-
-## 常用的命令 {id="common-commands"}
-
-|命令|主要作用|常用参数|使用场景|
-|:-|:-|:-|:-|
-|`gitinit`|初始化仓库|`--bare`创建裸仓库|在新项目目录创建Git仓库|
-|`gitclone`|拷贝一份远程仓库|`-b<branch>`克隆指定分支<br>`--depth1`浅克隆|下载远程项目到本地|
-|`gitadd`|添加文件到暂存区|`.`添加所有文件<br>`-A`添加所有变更<br>`-p`交互式添加|准备提交前暂存修改|
-|`gitstatus`|查看仓库当前状态|`-s`简洁模式<br>`-b`显示分支信息|查看哪些文件被修改/暂存|
-|`gitcommit`|提交暂存区到本地仓库|`-m"message"`添加提交信息<br>`-a`自动暂存已跟踪文件<br>`--amend`修改上次提交|保存代码变更到本地历史|
-|`gitreset`|回退版本|`--soft`保留工作区和暂存区<br>`--mixed`保留工作区<br>`--hard`全部丢弃|撤销提交或取消暂存|
-|`gitrm`|删除文件|`-r`递归删除目录<br>`--cached`仅从暂存区删除|从版本控制中移除文件|
-|`gitmv`|移动或重命名文件|无特殊参数|重命名文件并保留历史|
-|`gitcheckout`|切换分支/恢复文件|`-b<branch>`创建并切换分支<br>`--<file>`恢复文件|切换工作分支或丢弃文件修改|
-|`gitswitch`|切换分支（新命令）|`-c<branch>`创建并切换分支|更清晰的分支切换操作|
-|`gitrestore`|恢复文件（新命令）|`--staged`取消暂存<br>`--source`指定来源|恢复工作区或暂存区文件|
-|`gitshow`|显示对象详细信息|`<commit>`查看指定提交<br>`<tag>`查看标签|查看提交内容或标签信息|
-|`gitlog`|查看提交历史|`--oneline`单行显示<br>`--graph`图形化<br>`-n<num>`限制数量|浏览项目历史记录|
-|`gitremote`|管理远程仓库|`add<name><url>`添加远程库<br>`-v`查看详细信息|配置远程仓库地址|
-|`gitfetch`|获取远程更新|`--all`获取所有远程库<br>`--prune`清理远程已删除分支|下载远程更新但不合并|
-|`gitpull`|拉取并合并远程代码|`--rebase`使用变基方式<br>`origin<branch>`指定分支|同步远程分支到本地|
-|`gitpush`|推送到远程仓库|`-uorigin<branch>`设置上游<br>`--force`强制推送<br>`--tags`推送标签|上传本地提交到远程|
-|`gitbranch`|分支管理|`-a`查看所有分支<br>`-d`删除分支<br>`-m`重命名|创建/查看/删除分支|
-|`gitmerge`|合并分支|`--no-ff`禁用快进<br>`--squash`压缩提交|将其他分支合并到当前分支|
-|`gitrebase`|变基整理历史|`-i`交互式变基<br>`--continue`继续变基|整理提交历史或同步主分支|
-|`gitstash`|临时保存工作区|`save"message"`添加说明<br>`pop`恢复并删除<br>`list`查看列表|暂存当前修改切换任务|
-|`gittag`|标签管理|`-a<tag>`创建附注标签<br>`-d<tag>`删除标签|标记重要版本节点|
-|`gitdiff`|查看差异|`--cached`查看暂存区差异<br>`<commit1><commit2>`对比提交|对比文件或提交的变更|
-|`gitconfig`|配置Git|`--globaluser.name`设置用户名<br>`--list`查看配置|初始配置或修改Git设置|
-|`gitcherry-pick`|挑选提交|`<commit>`应用指定提交|将特定提交应用到当前分支|
-
-## Git 项目常见配置文件说明 {id="git-project-files"}
-
-|文件名|主要作用|备注/常见内容示例|
-|:-|:-|:-|
-|`.gitignore`|指定文件/目录不被Git跟踪|**最常用的配置文件**<br>- 忽略临时文件、构建产物、依赖包、敏感信息<br>- 使用glob模式，如`*.log`、`node_modules/`、`.env`<br>- 可用[gitignore.io](https://gitignore.io)生成模板|
-|`.gitattributes`|定义文件属性和处理规则|- 统一换行符：`*text=auto`或`*.shtexteol=lf`<br>- 标记二进制文件：`*.pngbinary`<br>- GitLFS配置：`*.psdfilter=lfs`<br>- 自定义diff驱动|
-|`.gitkeep`|跟踪空目录的占位文件|- Git默认不跟踪空目录，此文件可让目录进入版本控制<br>- 文件内容通常为空或一行注释<br>- 常用于`logs/`、`tmp/`、`uploads/`等目录|
-|`.gitmodules`|子模块(submodule)配置|- 执行`gitsubmoduleadd<url>`时自动生成<br>- 记录子模块路径、URL、分支信息<br>- 格式：`[submodule"name"]`<br>`path=xxx`<br>`url=xxx`|
-|`README.md`|项目说明文档|**必备文件**<br>- 包含：项目介绍、功能特性、安装步骤、使用示例、贡献方式<br>- GitHub/GitLab自动渲染为仓库首页<br>- 支持Markdown格式（标题、代码块、图片、徽章等）|
-|`LICENSE`<br>`LICENSE.md`|开源许可协议|- 常见协议：MIT（宽松）、Apache2.0、GPL（传染性）、BSD<br>- GitHub创建仓库时可自动添加<br>- 会显示在仓库侧边栏和文件列表顶部<br>- **没有LICENSE意味着默认版权保留**|
-|`CONTRIBUTING.md`|贡献者指南|- 包含：如何提交Issue/PR、代码规范、分支策略、测试要求<br>- GitHub在创建Issue/PR时会自动提示此文件|
-|`CHANGELOG.md`<br>`HISTORY.md`|版本变更日志|- 记录每个版本的新增功能、bug修复、破坏性变更<br>- 推荐格式：[KeepaChangelog](https://keepachangelog.com/)<br>- 分类：`Added`、`Changed`、`Deprecated`、`Removed`、`Fixed`、`Security`|
-|`SECURITY.md`|安全政策和漏洞报告指南|- 说明如何报告安全漏洞（通常是私密渠道）<br>- 列出支持的版本、修复时间表<br>- GitHub会在仓库安全标签页显示此文件|
-|`CODE_OF_CONDUCT.md`|社区行为准则|- 定义社区规范、期望行为、不可接受行为、执行措施<br>- 常用模板：[ContributorCovenant](https://www.contributor-covenant.org/)<br>- GitHub会在社区健康文件中显示|
-|`.editorconfig`|统一编辑器配置|- 跨编辑器统一代码风格（缩进、换行符、字符集等）<br>- 示例：`indent_style=space`、`indent_size=2`<br>- 主流编辑器（VSCode、IDEA）都支持|
-|`.env.example`<br>`.env.sample`|环境变量配置模板|- 提供环境变量示例（实际`.env`在`.gitignore`中）<br>- 包含：数据库连接、API密钥（占位符）、功能开关<br>- 开发者复制为`.env`后填入真实配置|
-|`package.json`|Node.js项目配置文件|- 定义依赖、脚本、版本、入口文件等<br>- npm/yarn/pnpm的核心配置<br>- 包含`dependencies`、`devDependencies`、`scripts`|
-|`requirements.txt`<br>`Pipfile`|Python项目依赖文件|- `requirements.txt`：pip依赖列表<br>- `Pipfile`：Pipenv依赖管理<br>- 用于`pipinstall-rrequirements.txt`安装依赖|
-|`Makefile`|自动化任务脚本|- 定义常用命令快捷方式（构建、测试、部署等）<br>- 使用`makebuild`、`maketest`等执行<br>- 跨平台兼容性需注意|
-|`Dockerfile`<br>`docker-compose.yml`|Docker容器化配置|- `Dockerfile`：镜像构建指令<br>- `docker-compose.yml`：多容器编排配置<br>- 用于统一开发、测试、生产环境|
