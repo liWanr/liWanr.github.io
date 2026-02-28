@@ -698,9 +698,11 @@ tags:
 
 6. 这期间可能存在会有问题, 特别是用了代理的玩家, 可能会出现 **远程主机已关闭连接** 的报错
 
-    > **原问题内容 ssh_exchange_identification: Connection closed by remote host**
+    > **原问题内容1** ssh_exchange_identification: Connection closed by remote host
 
-    通常 ssh 的端口是22, 开启代理之后 SSH 的连接被代理阻塞, 但是可以通过更改 SSH 设置文件, 将 GitHub 的 SSH 连接端口从 22 改为 443。
+    > **原问题内容2** Connection closed by x.x.x.x port 22
+
+    这两种情况通常都是由于 ssh 的端口是 22, 开启代理之后 SSH 的连接被代理阻塞, 但是可以通过更改 SSH 设置文件, 将 GitHub 的 SSH 连接端口从 22 改为 443。
 
     1. 首先打开 config 文件
 
