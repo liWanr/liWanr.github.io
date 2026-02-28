@@ -83,15 +83,18 @@ Vim 与普通编辑器的最大区别在于它有模式。
 
 Vim 的强大在于定制。你可以在 `home` 目录下创建 `.vimrc` 文件用于配置 vim 的一些基本内容
 
-```Vim
+```Bash
+vim ~/.vimrc
+```
+
+```
 syntax on           " 开启语法高亮
 set number          " 显示行号
 set cursorline      " 突出显示当前行
-set number          " 显示绝对行号（光标处）
 set relativenumber  " 其他行显示相对行号
 set tabstop=4       " 设置缩进为4个空格
-set shiftwidth=4
-set expandtab
+set shiftwidth=4    " 设置缩进宽度为4个空格
+set expandtab       " 将 Tab 转成空格
 ```
 
 ## 更多 {id="more"}
