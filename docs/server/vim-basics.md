@@ -93,7 +93,7 @@ set number          " 显示行号
 set cursorline      " 突出显示当前行
 set relativenumber  " 其他行显示相对行号
 set tabstop=4       " 设置缩进为4个空格
-set shiftwidth=4    " 设置缩进宽度为4个空格
+set shiftwidth=4    " 设置自动缩进宽度为4个空格
 set expandtab       " 将 Tab 转成空格
 ```
 
