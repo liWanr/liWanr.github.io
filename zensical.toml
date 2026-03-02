@@ -144,7 +144,7 @@ options.custom_icons = ["overrides/.icons"]             # 自定义 SVG 图标�
 
 [project.markdown_extensions.pymdownx.highlight]
 guess_lang = true
-# linenums = true                                         # 为所有代码块添加行号
+linenums = true                                         # 为所有代码块添加行号
 linenums_style = "pymdownx-inline"                      # 行号样式
 auto_title = false                                      # 自动为所有代码块添加标题 ，显示所用语言的名称
 line_spans = "__span"                                   # 用于行级高亮的 span 标识
