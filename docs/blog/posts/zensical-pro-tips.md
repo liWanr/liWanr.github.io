@@ -27,39 +27,21 @@ tags:
 查怎么改
 </small>
 
-=== "**`markdown 的使用方法`**"
+**使用方法**
 
-    ```md 
-    ++ctrl+alt+delete++
-    ```
+```md
+++tab++
 
-    ///html |div.result
-    ++ctrl+alt+delete++
-    ///
+++ctrl+alt+delete++
+```
 
-=== "**`HTML 的使用方法`**"
+<div class="result" markdown>
 
-    ```html
-    <span class="keys">
-        <kbd class="key-ctrl">Ctrl</kbd>
-        <span>+</span>
-        <kbd class="key-alt">Alt</kbd>
-        <span>+</span>
-        <kbd class="key-delete">Del</kbd>
-    </span>
-    ```
+++tab++
 
-    ///html |div.result
-    <span class="keys">
-        <kbd class="key-ctrl">Ctrl</kbd>
-        <span>+</span>
-        <kbd class="key-alt">Alt</kbd>
-        <span>+</span>
-        <kbd class="key-delete">Del</kbd>
-    </span>
-    ///
+++ctrl+alt+delete++
 
-
+</div>
 
 ## 使用 MiSans 字体 {id="use-MiSans-font"}
 
@@ -141,17 +123,6 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
         }
         ```
 
-        /// html | div.result
-        已开启:
-        <span style="font-size: 2em; font-weight:900; font-feature-settings: var(--features), 'ss01' on">
-        123,435,400
-        </span>
-        <br> 未开启:
-        <span style="font-size: 2em; font-weight:900;">
-        123,435,400
-        </span>
-        ///
-
     === "`HTML`"
 
         ```Html
@@ -159,13 +130,18 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
         已开启 __123,435,400__{style="font-feature-settings: 'ss01' on"}
         ```
 
-        <div class="result" markdown >
+    <div class="grid cards" markdown>
 
-        未开启 __123,435,400__{style="font-size:2em;"}<br>
-        已开启 __123,435,400__{style="font-size:2em; font-feature-settings: var(--features), 'ss01' on"}
-        
-        </div>
+    -   未开启
+                
+        __123<mark>,</mark>435<mark>,</mark>00__{style="font-size:2em;"}
+    
+    -   已开启
+           
+        __123<mark style="font-feature-settings: var(--features), 'ss01' on">,</mark>435<mark style="font-feature-settings: var(--features), 'ss01' on">,</mark>400__{style="font-size:2em;"}
 
+    </div>
+    
     这个特征是数字专用标点, 除了这个还有其他的特征:
 
     |CSS 底层配置|特征效果|未启用|已启用|
@@ -179,7 +155,7 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
     |`'ss07'`|西文式标点|__“Hi, it’s me”__{style="font-size:2em;"}|__“Hi, it’s me”__{style="font-size:2em; font-feature-settings: var(--features), 'ss07' on"}|
     |`'ss08'`|拨号专用符号|__*0#__{style="font-size:2em;"}|__*0#__{style="font-size:2em; font-feature-settings: var(--features), 'ss08' on"}|
     |`'SS09'`|小字面数字|__359264__{style="font-size:2em;"}|__359264__{style="font-size:2em; font-feature-settings: var(--features), 'ss09' on"}|
-    |`'case'`|大中小三个括号<br>与大写字母等高|__(HBCD)__{style="font-size:2em; font-feature-settings: var(--features), 'case' off"}|__(HBCD)__{style="font-size:2em;"}|
+    |`'case'`|英文括号与<br>大写字母等高|__{[(ABC)]}__{style="font-size:2em; font-feature-settings: var(--features), 'case' off"}|__{[(ABC)]}__{style="font-size:2em;"}|
     |`'frac'`|分数|__5/9__{style="font-size:2em;"}|__5/9__{style="font-size:2em; font-feature-settings: var(--features), 'frac' on"}|
     |`'sups'`|数字/小写字母<br>全部为上标|__12ABab__{style="font-size:2em;"}|__12ABab__{style="font-size:2em; font-feature-settings: var(--features), 'sups' on"}|
     |`'tnum'`[^1]|数字等宽|__1,234,567,890__{style="font-size:1.5em; font-feature-settings: 'tnum' off,'ss01' on" }|__1,234,567,890__{style="font-size:1.5em;font-feature-settings: var(--features), 'tnum' on, 'ss01' on"}|
@@ -192,7 +168,7 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
 
         ```css
         :root {
-            --features: "tnum" on, "case" on;
+            --features: "tnum" on, "ss04" on;
         }
 
         * {
@@ -203,21 +179,26 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
     === "`*.md`"
 
         ```html
-        <div style="font-feature-settings: var(--features), 'ss01' on">
+        <span style="font-feature-settings: var(--features), 'ss01' on">
         2026年4月21日 15:23
-        </div>
+        </span>
         ```
 
-        <div class="result" markdown>
-        前:
-        <span style="font-size: 2em; font-feature-settings: var(--features), 'ss01' on">
+    <div class="grid cards" markdown>
+
+    -   配置前
+
+        <span style="font-size: 2em; font-feature-settings: var(--features), 'ss04' off">
         26年4月21日 15:23
-        </span> <br>后:
-        <span style="font-size: 2em; font-feature-settings: 'tnum' off, 'ss04' off">
+        </span>
+        
+    -   配置后
+    
+        <span style="font-size: 2em; font-feature-settings: 'tnum' off, 'ss04' on, 'ss01' on">
         26年4月21日 15:23
         </span>
 
-        </div>
+    </div>
 
 ## 使用 Base64 编码 {id="encoded-using-base64"}
 
