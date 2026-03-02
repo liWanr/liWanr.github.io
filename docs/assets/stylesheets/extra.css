@@ -69,10 +69,17 @@ small {
     font-feature-settings: var(--features);
 }
 
-/* v0.0.23之前的bug修复代码 */
-html {
-    overflow-y: auto;
-    scrollbar-gutter: stable;
+[data-md-color-scheme=slate] {
+    /* 背景 */
+    --md-default-bg-color: hsla(var(--md-hue),5.88%, 13.33%,1);
+    /* 页眉 */
+    --md-default-bg-color--light: hsla(var(--md-hue), 5.88%, 13.33%, 0.54);
+    /* 代码块背景 */
+    --md-code-bg-color: hsla(var(--md-hue), 3.17%, 24.44%, 1);
+    /* 代码块按钮背景 */
+    --md-code-bg-color--lighter: hsla(var(--md-hue), 3.17%, 24.44%, 1);
+    /* 按键边框 */
+    --md-typeset-kbd-border-color: hsla(var(--md-hue), 3.87%, 30.42%, 1);
 }
 
 figcaption {
