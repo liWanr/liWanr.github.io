@@ -78,7 +78,7 @@ cd ~/website/nginx1.26.3
 
 <div class="result" markdown>
 
-```Text { title="输出内容" .yaml .no-copy}
+```Text { title="输出内容" .yaml .no-copy linenums="0" }
 nginx version: nginx/1.26.3
 built by gcc 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
 built with OpenSSL 3.0.2 15 Mar 2022
@@ -96,14 +96,10 @@ configure arguments: --prefix=/home/ubuntu/website/nginx1.26.3 --with-http_ssl_m
     .sbin/nginx -t
     ```
 
-    <div class="result" markdown>
-
-    ```Text { title="正常输出" .yaml .no-copy }
+    ``` { title="正常输出" .yaml .no-select .no-copy linenums="0"}
     nginx: the configuration file */conf/nginx.conf syntax is ok
     nginx: configuration file */conf/nginx.conf test is successful
     ```
-
-    </div>
 
 === "启动服务"
 
@@ -111,32 +107,14 @@ configure arguments: --prefix=/home/ubuntu/website/nginx1.26.3 --with-http_ssl_m
     .sbin/nginx
     ```
 
-    <div class="result" markdown>
-
-    常规没输出
-
-    </div>
-
 === "热重载配置"
 
     ```Bash
     .sbin/nginx -s reload
     ```
 
-    <div class="result" markdown>
-
-    常规没输出
-
-    </div>
-
 === "终止服务"
 
     ```Bash
     .sbin/nginx -s stop
     ```
-
-    <div class="result" markdown>
-
-    常规没输出
-
-    </div>
