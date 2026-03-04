@@ -30,6 +30,7 @@ nav = [
         "server/ubuntu-enable-net.md",
         "server/windows-mount-ubuntu-dir.md",
         "server/use-openvpn-client.md",
+        "server/cloud-server-reviews.md",
     ] },
     { "Blog" = [
         "blog/posts/openwrt-sd-wan.md",
