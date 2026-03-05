@@ -21,7 +21,7 @@ hide:
 </style>
 
 <h2 style="margin-top:0; font-size:4em;">
-Hello, I'm liWanr!
+<em>Hello, I'm liWanr!</em>
 </h2>
 
 ## :lucide-circle-user-round: About Me
@@ -102,8 +102,6 @@ Hello, I'm liWanr!
 </div>
 
 </div>
-
----
 
 ## :lucide-graduation-cap: Education
 
