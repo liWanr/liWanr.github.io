@@ -21,17 +21,17 @@ title: 安装
         sudo apt remove $(dpkg --get-selections docker.io docker-compose docker-compose-v2 docker-doc podman-docker containerd runc | cut -f1)
         ```
 
-### 安装方法 { id="installation-methods" }
+### 安装方法 { id="installation-methods-for-ubuntu" }
 
 在全新主机上首次安装 Docker 之前, 您需要设置 Docker apt 仓库。之后, 您可以从该仓库安装和更新 Docker。
 
-#### 方法一：使用 `apt` 安装 { id="install-using-the-repository" }
+#### 方法一：使用 `apt` 安装 { id="install-using-the-repository-for-ubuntu" }
 
 1. 设置 Docker 的 apt 仓库
 
     ```Bash { title="添加 Docker 官方 GPG 密钥" }
     sudo apt update
-    sudo apt install ca-certificates curl
+    sudo apt install -y ca-certificates curl
     sudo install -m 0755 -d /etc/apt/keyrings
     sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
     sudo chmod a+r /etc/apt/keyrings/docker.asc
@@ -56,7 +56,7 @@ title: 安装
     === "船新版本"
 
         ```Bash
-        sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+        sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
         ```
 
     === "指定版本"
@@ -75,10 +75,10 @@ title: 安装
 
         ```Bash
         VERSION_STRING=5:29.2.1-1~ubuntu.24.04~noble
-        sudo apt install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
+        sudo apt install -y docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
         ```
 
-#### 方法二：使用软件包安装 { id="install-from-a-package" }
+#### 方法二：使用软件包安装 { id="install-from-a-package-for-ubuntu" }
 
 如果无法使用 `apt` 安装 Docker, 可以通过 `.deb` 文件安装。但是升级的时候就需要手动下载新文件。
 
@@ -94,7 +94,7 @@ title: 安装
     ./docker-compose-plugin_<version>_<arch>.deb
     ```
     
-#### 检查 { id="verify" }
+#### 检查 { id="verify-for-ubuntu" }
 
 1. 安装后, Docker 服务将自动启动。要验证 Docker 是否正在运行, 请使用：
 
@@ -114,7 +114,10 @@ title: 安装
     sudo docker run hello-world
     ```
 
-#### 卸载 { id="uninstall" }
+    > **能找到有这个就行了**<br>
+    > This message shows that your installation appears to be working correctly.
+
+#### 卸载 { id="uninstall-for-ubuntu" }
 
 1. 卸载软件包
 
@@ -154,11 +157,11 @@ title: 安装
         sudo apt remove $(dpkg --get-selections docker.io docker-compose docker-doc podman-docker containerd runc | cut -f1)
         ```
 
-### 安装方法 { id="installation-methods" }
+### 安装方法 { id="installation-methods-for-debian" }
 
 在全新主机上首次安装 Docker 之前, 您需要设置 Docker apt 仓库。之后, 您可以从该仓库安装和更新 Docker。
 
-#### 方法一：使用 `apt` 安装 { id="install-using-the-repository" }
+#### 方法一：使用 `apt` 安装 { id="install-using-the-repository-for-debian" }
 
 1. 设置 Docker 的 apt 仓库
 
@@ -219,7 +222,7 @@ title: 安装
         sudo apt install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
         ```
 
-#### 方法二：使用软件包安装 { id="install-from-a-package" }
+#### 方法二：使用软件包安装 { id="install-from-a-package-for-debian" }
 
 如果无法使用 `apt` 安装 Docker, 可以通过 `.deb` 文件安装。但是升级的时候就需要手动下载新文件。
 
@@ -235,7 +238,7 @@ title: 安装
     ./docker-compose-plugin_<version>_<arch>.deb
     ```
     
-#### 检查 { id="verify" }
+#### 检查 { id="verify-for-debian" }
 
 1. 安装后, Docker 服务将自动启动。要验证 Docker 是否正在运行, 请使用：
 
@@ -255,7 +258,7 @@ title: 安装
     sudo docker run hello-world
     ```
 
-#### 卸载 { id="uninstall" }
+#### 卸载 { id="uninstall-for-debian" }
 
 1. 卸载软件包
 
@@ -298,11 +301,11 @@ title: 安装
                   docker-engine
         ```
 
-### 安装方法 { id="installation-methods" }
+### 安装方法 { id="installation-methods-for-centos" }
 
 在全新主机上首次安装 Docker 之前, 您需要设置 Docker apt 仓库。之后, 您可以从该仓库安装和更新 Docker。
 
-#### 方法一：使用 `rpm` 安装 { id="install-using-the-repository" }
+#### 方法一：使用 `rpm` 安装 { id="install-using-the-repository-for-centos" }
 
 1. 安装 `dnf-plugins-core`（用于管理 DNF 仓库）并添加 Docker 仓库。
 
@@ -345,7 +348,7 @@ title: 安装
 
     这个命令安装了 Docker, 但它不会启动 Docker。它还会创建 docker 组, 但是, 默认情况下不会将任何用户添加到该组。
 
-#### 方法二：使用软件包安装 { id="install-from-a-package" }
+#### 方法二：使用软件包安装 { id="install-from-a-package-for-centos" }
 
 如果无法使用 `rpm` 安装 Docker, 可以通过 `.rpm` 文件安装。但是升级的时候就需要手动下载新文件。
 
@@ -357,7 +360,7 @@ title: 安装
     sudo dnf install /path/to/package.rpm
     ```
     
-#### 检查 { id="verify" }
+#### 检查 { id="verify-for-centos" }
 
 1. 安装后, Docker 服务将自动启动。要验证 Docker 是否正在运行, 请使用：
 
@@ -373,7 +376,7 @@ title: 安装
     sudo docker run hello-world
     ```
 
-#### 卸载 { id="uninstall" }
+#### 卸载 { id="uninstall-for-centos" }
 
 1. 卸载软件包
 
