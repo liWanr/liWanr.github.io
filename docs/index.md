@@ -75,16 +75,6 @@ Hello, I'm liWanr!
 [**`Apple`**](https://account.apple.com/account/manage/section/information)
 [**`iCloud`**](https://www.icloud.com.cn/)
 
-**`Med.` -**
-[**`Discord`**](https://discord.com/channels/@me)
-[**`YouTube`**](https://www.youtube.com/) 
-[**`DouYin`**](https://www.douyin.com/?recommend=1)
-[**`Bilibili`**](https://www.bilibili.com/)
-[**`Apple Music`**](https://music.apple.com/)
-[**`Spotify`**](https://open.spotify.com)
-
----
-
 **`LLMs` -**
 [**`GPT`**](https://chat.openai.com/chat)
 [**`Grok`**](https://grok.com/)
@@ -92,12 +82,22 @@ Hello, I'm liWanr!
 [**`Claude`**](https://claude.ai/)
 [**`Perplexity`**](https://www.perplexity.ai/)
 
+---
+
 **`Net.` -**
 [**`IT DOG`**](https://www.itdog.cn/ping/)
 [**`Analytics`**](https://analytics.google.com/analytics/web/)
 [**`Cloudflare`**](https://dash.cloudflare.com/)
 [**`CF Speed`**](https://speed.cloudflare.com/)
 [**`中科大测速`**](https://test.ustc.edu.cn/)
+
+**`Med.` -**
+[**`Discord`**](https://discord.com/channels/@me)
+[**`YouTube`**](https://www.youtube.com/) 
+[**`DouYin`**](https://www.douyin.com/?recommend=1)
+[**`Bilibili`**](https://www.bilibili.com/)
+[**`Apple Music`**](https://music.apple.com/)
+[**`Spotify`**](https://open.spotify.com)
 
 </div>
 
