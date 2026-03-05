@@ -10,9 +10,11 @@ site_url = "https://liWanr.com/"    # 站点的规范 URL, 用于 SEO 和生成 
 # 站点的简短描述，通常用于 SEO 和社交媒体预览
 site_description = "极客向个人技术站点，内容涵盖编程、网络以及真实项目实践，关注技术落地与设计体验，记录持续探索与长期创作。" 
 
+# dev_addr = "0.0.0.0:8000"
+
 copyright = """
 <div style="font-feature-settings: 'ss04' off;">
-&copy; 2024-2026 <strong>liWanr</strong> All Rights Reserved.
+&copy; 2023-2026 <strong>liWanr</strong> All Rights Reserved.
 <small>
 |
 <a href="https://icp.gov.moe/?keyword=20260905" style="font-feature-settings: 'ss04' off;" target="_blank">萌ICP备 20260905 号</a>
@@ -26,6 +28,10 @@ nav = [
         "server/zip-unzip.md",
         "server/git-basics.md",
         "server/vim-basics.md",
+        { "Docker" = [
+            "server/docker/index.md",
+            "server/docker/install.md"
+        ] },
         "server/ubuntu-build-nginx.md",
         "server/ubuntu-enable-net.md",
         "server/windows-mount-ubuntu-dir.md",
