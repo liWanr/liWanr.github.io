@@ -10,10 +10,28 @@
     padding: 0;
 }
 
+/* .md-typeset a{
+    text-decoration: none;
+} */
+
+/* 链接的下划线只有鼠标移入才出现 */
 .md-typeset a {
     text-decoration: none;
 }
 
+.md-typeset a:not(label > a):not(:has(code, >svg)) {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.35s cubic-bezier(.4, 0, .2, 1);
+}
+
+.md-typeset a:not(label > a):not(:has(code, >svg)):hover {
+    background-size: 100% 2px;
+}
+
+/* 为了让链接没有颜色写的 */
 .no-color {
     color: var(--md-default-fg-color) !important;
 }
@@ -69,6 +87,7 @@ small {
     font-feature-settings: var(--features);
 }
 
+/* 深色主题改改颜色这些 */
 [data-md-color-scheme=slate] {
     /* 背景 */
     --md-default-bg-color: hsla(var(--md-hue),5.88%, 13.33%,1);
@@ -77,15 +96,19 @@ small {
     /* 代码块背景 */
     --md-code-bg-color: hsla(var(--md-hue), 3.17%, 24.44%, 1);
     /* 代码块按钮背景 */
-    --md-code-bg-color--lighter: hsla(var(--md-hue), 3.17%, 24.44%, 1);
+    --md-code-bg-color--lighter: hsla(var(--md-hue), 3.17%, 24.44%, 0.7);
+    /* 代码块按键背景hover */
+    --md-code-bg-color--light: hsla(var(--md-hue),3.17%, 24.44%, 0.8);
     /* 按键边框 */
     --md-typeset-kbd-border-color: hsla(var(--md-hue), 3.87%, 30.42%, 1);
 }
 
+/* 题注的字体比例 */
 figcaption {
     font-size: 80%;
 }
 
+/* 图标位置的调整，尽量保证水平居中 */
 .md-typeset small .twemoji {
     margin-top: 1.35px;
 }
@@ -94,6 +117,7 @@ figcaption {
     margin-top: 2.7px;
 }
 
+/* 底部那一条改改样式，尺寸小的时候只显示快捷图标并居中 */
 @media (max-width: 750px) {
     .md-social {
         padding: 0;
