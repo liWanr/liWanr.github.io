@@ -181,6 +181,8 @@ tags:
     **提示:** *非 Wrt 路由下* 表示不要连接 Wrt 以及它下级的所有设备。
     </small>
 
+如果想在 Windows / Mac / Linux 的设备上使用 OpenVPN 请查看 [**使用 OpenVPN Client**](openvpn-client/){ data-preview } 文章
+
 ## 防火墙地址伪装 {id="firewall-address-spoofing"}
 
 但是现在只能访问 OpenWrt, 无法访问内网的其他设备。因为 Wrt 没有做外网地址的内网转换, 这时候就需要对防火墙的 NAT 进行设置, 将来自内网且经过防火墙的流量进行地址转换, 使其能够正确地通过外网进行通信。
