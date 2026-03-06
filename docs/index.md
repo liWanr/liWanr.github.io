@@ -51,12 +51,16 @@ hide:
 [**郭伟亮**](https://www.instagram.com/eric.kwok/){ .no-color }
 等老香港作曲就能封神。
 
-:lucide-messages-square: **Let's Chat -**
-[**Email**](mailto:itsWanr@outlook.com) <small>|</small>
-[**GitHub**](https://github.com/liWanr) <small>|</small>
+:lucide-messages-square: **Let's Connect -**
+[**Email**](mailto:itsWanr@outlook.com)
+<small>|</small>
+[**GitHub**](https://github.com/liWanr)
+<small>|</small>
 [**Telegram**](https://t.me/itsWanr)
 {style="margin: auto auto 0px auto"}
 </div>
+<!-- <small>|</small>
+[**Tunes**](https://music.apple.com/cn/playlist/deep-soul/pl.u-GgA5kvzIoEY1K9x) -->
 
 <div class="card" markdown>
 
