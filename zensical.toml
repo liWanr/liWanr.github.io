@@ -36,6 +36,7 @@ nav = [
         { "VPN" = [
             "dev/vpn/index.md",
             "dev/vpn/bleachwrt.md",
+            "dev/vpn/immortalWrt.md",
             "dev/vpn/openvpn-client.md",
         ] },
         "dev/build-nginx.md",
