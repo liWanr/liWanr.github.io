@@ -15,7 +15,7 @@ title: Docker
 | [**Debian 11+**](/dev/docker/install/#debian){ data-preview } | ✅ | ✅ | ✅ | ✅ | - |
 | [**CentOS 9+**](/dev/docker/install/#centos){ data-preview } | ✅ | ✅ | - | ✅ | - |
 | [二进制包](https://docs.docker.com/engine/install/binaries/) | ✅ | ✅ | ✅ | - | - |
-| [Fedora](https://docs.docker.com/engine/install/fedora/) |✅|✅| - |✅||
+| [Fedora](https://docs.docker.com/engine/install/fedora/) |✅|✅| - |✅| - |
 | [Raspberry Pi OS<br>(32-bit)](https://docs.docker.com/engine/install/raspberry-pi-os/) | - | - | - | ⚠️ | - | 
 | [RHEL](https://docs.docker.com/engine/install/rhel/) | - | ✅ | ✅ | - | - | ✅ |
 | [SLES](https://docs.docker.com/engine/install/sles/) | - | - | - | - | ❌ |
