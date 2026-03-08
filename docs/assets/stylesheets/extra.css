@@ -46,6 +46,13 @@
     border-bottom: 0.125rem solid var(--md-accent-fg-color);
 }
 
+/* 表头和表体都垂直居中 */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  vertical-align: middle;
+}
+
+
 /* small */
 small {
     font-feature-settings: 'ss04' off;
