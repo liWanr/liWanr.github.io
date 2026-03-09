@@ -19,7 +19,7 @@
     text-decoration: none;
 }
 
-.md-typeset a:not(label > a):not(:has(code, >svg)) {
+.md-typeset a:not(label > a):not(:has(code, >svg, >span)) {
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@
     transition: background-size 0.35s cubic-bezier(.4, 0, .2, 1);
 }
 
-.md-typeset a:not(label > a):not(:has(code, >svg)):hover {
+.md-typeset a:not(label > a):not(:has(code, >svg, >span)):hover {
     background-size: 100% 2px;
 }
 
