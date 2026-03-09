@@ -1,18 +1,10 @@
-
+# 缓存目录 & 静态页面目录
 .cache/*
-
 site/*
 
-.venv/*
+# 最小化复现目录
+reproduction/*
 
-.github/*
-
-node_modules/*
-
-nginx.conf
-
+# 本地部署文件
 local-build.sh
-
-generate_icon_index.py
-
-index_old.md
+nginx.conf
