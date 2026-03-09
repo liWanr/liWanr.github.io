@@ -20,9 +20,13 @@ hide:
     }
 </style>
 
-<h2 style="margin-top:0; font-size:4em;">
-<em>Hello, I'm liWanr!</em>
+<h2 style="margin-top:0px; font-size:4em;">
+    <p style="margin:0 auto 0 auto;font-weight: 100;font-size:25px;">
+        Every nobody is somebody.
+    </p>
+    <em style="margin-top:0px;">Hello, I'm liWanr!</em>
 </h2>
+
 
 ## :lucide-circle-user-round: About Me
 
@@ -53,6 +57,8 @@ hide:
 
 :lucide-messages-square: **Let's Connect -**
 [**Email**](mailto:itsWanr@outlook.com)
+<small>|</small>
+[**Gravatar**](https://gravatar.com/liwanr)
 <small>|</small>
 [**GitHub**](https://github.com/liWanr)
 <small>|</small>
