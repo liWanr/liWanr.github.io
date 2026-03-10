@@ -136,6 +136,10 @@ toggle.name = "深色模式"
 permalink = "⚓︎"
 permalink_title = "锚点"
 
+[project.markdown_extensions.toc.slugify]
+object = "pymdownx.slugs.slugify"
+kwds = { case = "lower" }
+
 [project.markdown_extensions.pymdownx.blocks.caption]   # 图片标题与对齐支持
 [project.markdown_extensions.pymdownx.caret]            # 启用上标/下标语法
 [project.markdown_extensions.pymdownx.details]          # 允许提示块折叠
