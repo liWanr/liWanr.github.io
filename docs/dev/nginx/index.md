@@ -23,7 +23,7 @@ sudo apt install build-essential libpcre3 libpcre3-dev zlib1g zlib1g-dev openssl
 
 ## 下载 Nginx 源码 {id="download-nginx-src"}
 
-我选定的版本是 1.26.3, 前往自己喜欢的目录去拉取对应版本的源码包。比如我这里去 `~/website/nginx1.26.3` 这个目录
+我选定的版本是 1.26.3, 前往自己喜欢的目录去拉取对应版本的源码包。比如我这里去 `/usr/local/nginx` 这个目录
 
 ```Bash
 wget https://nginx.org/download/nginx-1.26.3.tar.gz
@@ -36,8 +36,7 @@ cd nginx-1.26.3
 接下来将所有的安装路径都指向刚才的目标目录, 并且当前用户拥有目录的所有权。
 
 ```Bash
-./configure \
---prefix=$HOME/website/nginx1.26.3 \
+./configure --prefix=/usr/local/nginx \
 --with-http_ssl_module \
 --with-http_v2_module \
 --with-cc-opt="-I/usr/include" \
@@ -48,7 +47,7 @@ cd nginx-1.26.3
 关于 TLS SNI Support: 只要你的系统 openssl 版本不低于 0.9.8f（Ubuntu 20.04+ 通常是 1.1.1 或 3.0+），在 configure 阶段会自动检测并显示 TLS SNI support enabled。
 </small>
 
-如果没有目录的所有权，就执行这个
+<!-- 如果没有目录的所有权，就执行这个
 
 ```Bash
 sudo chown -R ubuntu:ubuntu ~/website/env/nginx-1.26.3
@@ -59,7 +58,7 @@ sudo chmod -R 755 ~/website/env/nginx-1.26.3
 
 第一个 ubuntu 是**用户名**, 第二个 ubuntu 是**用户组名**
 
-</div>
+</div> -->
 
 ## 编译/安装/验证 {id="build-install-verify"}
 
@@ -69,24 +68,18 @@ sudo chmod -R 755 ~/website/env/nginx-1.26.3
 make && make install
 ```
 
-进入安装后的目录并检查
+**进入安装目录**并检查
 
 ```Bash
-cd ~/website/nginx1.26.3
 ./sbin/nginx -V
 ```
 
-<div class="result" markdown>
+:   > nginx version: nginx/1.26.3<br>
+    > built by gcc 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3)<br>
+    > built with OpenSSL 3.0.2 15 Mar 2022<br>
+    > TLS SNI support enabled<br>
+    > configure arguments: --prefix=/usr/local/nginx --with-http_ssl_module --with-http_v2_module --with-cc-opt=-I/usr/include --with-ld-opt=-L/usr/lib
 
-```Text { title="输出内容" .yaml .no-copy linenums="0" }
-nginx version: nginx/1.26.3
-built by gcc 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
-built with OpenSSL 3.0.2 15 Mar 2022
-TLS SNI support enabled
-configure arguments: --prefix=/home/ubuntu/website/nginx1.26.3 --with-http_ssl_module --with-http_v2_module
-```
-
-</div>
 
 ## 基本命令
 
