@@ -1,6 +1,6 @@
 ---
 icon: simple/nginx
-title: Ubuntu 编译安装 Nginx
+title: Nginx
 # date:
 #     created: 2026-02-17
 tags:
