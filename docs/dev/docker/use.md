@@ -1,11 +1,9 @@
 ---
-icon: lucide/terminal
-title: 使用
+icon: material/application-import
+title: 服务与架构
 # date:
 #     craeted: 2026-03-05
 ---
-
-## 前情提要 { id="context" }
 
 由于一般都是用 `sudo` 安装的 docker，所以使用 docker 的时候也需要用管理员权限运行命令，一般开发 / 测试 / 个人服务器环境下推荐将非 root 用户添加进 docker 组里面，这样就不用重复输入 `sudo` 提升权限了。
 
@@ -37,45 +35,81 @@ title: 使用
 
 **但是在生产环境中不建议这样使用**，因为 docker 组的权限几乎等价于“能以 root 权限运行容器”。攻击者只要拿到这个用户的 shell，就可以通过 `docker run -v /:/host ...` 等方式逃逸到宿主机，读写任意文件，甚至提权为 root。
 
+=== "启停服务"
 
+    <div class="grid cards" markdown>
 
-## 服务 { id="servers" }
+    -   启动服务
 
-<div class="grid cards" markdown>
+        ```Bash
+        systemctl start docker
+        ```
 
--   **启动服务**
+    -   停止服务
 
-    ```Bash
-    systemctl start docker
-    ```
+        ```Bash
+        systemctl stop docker
+        ```
+    
+    </div>
 
--   **停止服务**
+=== "重启&重载"
 
-    ```Bash
-    systemctl stop docker
-    ```
+    <div class="grid cards" markdown>
 
--   **查看状态**
+    -   重启服务
 
-    ```Bash
-    systemctl status docker
-    ```
+        ```Bash
+        systemctl restart docker
+        ```
 
--   **重启服务**
+    -   重载服务
 
-    ```Bash
-    systemctl restart docker
-    ```
+        ```Bash
+        systemctl reload docker
+        ```
+    
+    </div>
 
--   **开启自启服务**
+=== "查看状态"
 
-    ```Bash
-    systemctl enable docker
-    ```
+    <div class="grid cards" markdown>
 
-</div>
+    -   查看运行状态
+
+        ```Bash
+        systemctl status docker
+        ```
+
+    -   查看依赖关系
+
+        ```Bash
+        systemctl list-dependencies docker.service
+        ```
+
+    </div>
+
+=== "开启自启"
+
+    <div class="grid cards" markdown>
+
+    -   开启开机自启服务
+
+        ```Bash
+        systemctl enable docker
+        ```
+
+    -   关闭开机自启服务
+
+        ```Bash
+        systemctl disable docker
+        ```
+
+    </div>
 
 ## 镜像 { id="images" }
+
+Docker 镜像包含了运行应用所需的所有文件、库和配置，但它是**只读的**。基于镜像就能快速创建容器实例，实现「**一次打包，到处运行**」。
 
 <div class="grid cards" markdown>
 
@@ -112,6 +146,8 @@ title: 使用
 </div>
 
 ## 容器 { id="container" }
+
+容器是「镜像的运行实例」，是一个轻量级、可移植的执行环境。它**共享主机内核，但文件系统、网络和进程空间完全隔离**，轻便高效（秒级启动），无需完整虚拟机。
 
 <div class="grid cards" markdown>
 
@@ -193,31 +229,3 @@ title: 使用
 
 </div>
 
-
-| 命令 | 功能 | 示例 |
-|-|-|-|
-| docker run | 启动一个新的容器并运行命令 | docker run -d ubuntu |
-| docker ps | 列出当前正在运行的容器 | docker ps |
-| docker ps -a | 列出所有容器（包括已停止的容器） | docker ps -a |
-| docker build | 使用 Dockerfile 构建镜像 | docker build -t my-image . |
-| docker images | 列出本地存储的所有镜像 | docker images |
-| docker pull | 从 Docker 仓库拉取镜像 | docker pull ubuntu |
-| docker push | 将镜像推送到 Docker 仓库 | docker push my-image |
-| docker exec | 在运行的容器中执行命令 | docker exec -it container_name bash |
-| docker stop | 停止一个或多个容器 | docker stop container_name |
-| docker start | 启动已停止的容器 | docker start container_name |
-| docker restart | 重启一个容器 | docker restart container_name |
-| docker rm | 删除一个或多个容器 | docker rm container_name |
-| docker rmi | 删除一个或多个镜像 | docker rmi my-image |
-| docker logs | 查看容器的日志 | docker logs container_name |
-| docker inspect | 获取容器或镜像的详细信息 | docker inspect container_name |
-| docker exec -it | 进入容器的交互式终端 | docker exec -it container_name /bin/bash |
-| docker network ls | 列出所有 Docker 网络 | docker network ls |
-| docker volume ls | 列出所有 Docker 卷 | docker volume ls |
-| docker-compose up | 启动多容器应用（从 docker-compose.yml 文件） | docker-compose up |
-| docker-compose down | 停止并删除由 docker-compose 启动的容器、网络等 | docker-compose down |
-| docker info | 显示 Docker 系统的详细信息 | docker info |
-| docker version | 显示 Docker 客户端和守护进程的版本信息 | docker version |
-| docker stats | 显示容器的实时资源使用情况 | docker stats |
-| docker login | 登录 Docker 仓库 | docker login |
-| docker logout | 登出 Docker 仓库 | docker logout |
