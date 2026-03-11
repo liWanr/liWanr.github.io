@@ -28,6 +28,7 @@ nav = [
         "dev/zip-unzip.md",
         "dev/git.md",
         "dev/vim.md",
+        "dev/tools.md",
         { "Docker" = [
             "dev/docker/index.md",
             "dev/docker/install.md",
@@ -61,9 +62,9 @@ nav = [
         "blog/posts/execution-breakdown.md",
     ] },
     { "Recom" =  [
-        "recom/epic-open-source-project.md",
-        "recom/epic-tools.md",
-        "recom/epic-website.md",
+        "recom/open-source.md",
+        "recom/tools.md",
+        "recom/website.md",
     ]}
 ]
 
