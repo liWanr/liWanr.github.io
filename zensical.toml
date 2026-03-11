@@ -42,6 +42,7 @@ nav = [
         ] },
         { "Nginx" = [
             "dev/nginx/index.md",
+            "dev/nginx/reverse-proxy.md",
         ] },
         "dev/ubuntu-enable-net.md",
         "dev/mount-ubuntu-dir.md",
