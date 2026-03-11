@@ -28,7 +28,6 @@ nav = [
         "dev/zip-unzip.md",
         "dev/git.md",
         "dev/vim.md",
-        "dev/tools.md",
         { "Docker" = [
             "dev/docker/index.md",
             "dev/docker/install.md",
