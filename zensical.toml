@@ -32,6 +32,7 @@ nav = [
             "dev/docker/index.md",
             "dev/docker/install.md",
             "dev/docker/use.md",
+            "dev/docker/app-deploy.md",
         ] },
         { "VPN" = [
             "dev/vpn/index.md",
@@ -39,7 +40,9 @@ nav = [
             "dev/vpn/immortalWrt.md",
             "dev/vpn/openvpn-client.md",
         ] },
-        "dev/build-nginx.md",
+        { "Nginx" = [
+            "dev/nginx/index.md",
+        ] },
         "dev/ubuntu-enable-net.md",
         "dev/mount-ubuntu-dir.md",
         "dev/cloud-server-reviews.md",
