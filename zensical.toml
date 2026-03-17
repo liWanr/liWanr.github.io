@@ -38,6 +38,7 @@ nav = [
             "dev/vpn/index.md",
             "dev/vpn/bleachwrt.md",
             "dev/vpn/immortalWrt.md",
+            "dev/vpn/wire-guard.md",
             "dev/vpn/openvpn-client.md",
         ] },
         { "Nginx" = [
