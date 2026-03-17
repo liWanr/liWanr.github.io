@@ -119,8 +119,8 @@ hide:
 
 -   **2024年9月 - 2025年7月**
 
-    ![CQU-EIE](/assets/images/about/CQU-EIE-light.svg#only-light){ loading=lazy }
-    ![CQU-EIE](/assets/images/about/CQU-EIE-dark.svg#only-dark){ loading=lazy }
+    ![CQU-EIE](/assets/images/index/CQU-EIE-light.svg#only-light){ loading=lazy }
+    ![CQU-EIE](/assets/images/index/CQU-EIE-dark.svg#only-dark){ loading=lazy }
     
     ---
 
@@ -135,8 +135,8 @@ hide:
 
 -   **2023年9月 - 2025年7月**
 
-    ![CQUE](/assets/images/about/CQUE-light.svg#only-light){ loading=lazy }
-    ![CQUE](/assets/images/about/CQUE-dark.svg#only-dark){ loading=lazy }
+    ![CQUE](/assets/images/index/CQUE-light.svg#only-light){ loading=lazy }
+    ![CQUE](/assets/images/index/CQUE-dark.svg#only-dark){ loading=lazy }
 
     ---
 
@@ -150,8 +150,8 @@ hide:
 -   **2020年9月 - 2023年7月**
 
 
-    ![CQUE](/assets/images/about/CQNY-light.svg#only-light){ loading=lazy }
-    ![CQNY](/assets/images/about/CQNY-dark.svg#only-dark){ loading=lazy }
+    ![CQUE](/assets/images/index/CQNY-light.svg#only-light){ loading=lazy }
+    ![CQNY](/assets/images/index/CQNY-dark.svg#only-dark){ loading=lazy }
 
     ---
 
