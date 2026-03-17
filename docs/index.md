@@ -172,7 +172,7 @@ hide:
 [**VS Code**](https://code.visualstudio.com/){ .no-color }
 编写并存储于
 [**GitHub**](https://github.com/github){ .no-color }
-私人仓库中。除本地外还通过
+仓库中。除本地外还通过
 [**Vercel**](https://vercel.com/){ .no-color }
 和 **GitHub Page** 发布, 常规文字采用
 [**MiSans**](https://hyperos.mi.com/font){ .no-color }
