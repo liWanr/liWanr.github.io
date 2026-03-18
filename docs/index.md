@@ -124,7 +124,7 @@ hide:
     
     ---
 
-    **国家卓越工程师计划**
+    [**国家卓越工程师教育培养计划**](http://www.moe.gov.cn/srcsite/A08/moe_742/s3860/){ .no-color }
     <small>|</small>
     **智能网联汽车**
 
