@@ -27,12 +27,6 @@ title: Wire Guard
 
 首先去『**系统 - 软件包 - 过滤器**』中搜索 `wireguard`, 一共有 wireguard-tools / kmod-wireguard / luci-proto-wireguard 三个包, 然后分别安装就行了, 他会自动下载安装各自所需的依赖, 下载完成之后重启一下路由器就行了。
 
-### 新建 NAT 规则
-
-去『**网络 - 防火墙 - NAT 规则**』中按照以下创建保存完成注意右上角的「**未保存的配置为 4**」。没什么问题就『**保存并应用**』。
-
-![1.png](../../assets/images/dev/vpn/wire-guard/1.png)
-
 ### 创建接口
 
 1. 去『**网络 - 接口 - 接口**』的底部点击『**添加新接口…**』, 去创建一个新接口, 名称随便取, 主要是协议为「**WireGuard VPN**」。
@@ -46,11 +40,11 @@ title: Wire Guard
     | 监听端口 | 这个找一个没用过的端口就行了, 我配置 `11944` 是因为 OpenVPN 的端口是 `1194` |
     | IP 地址 | 这个就是 VPN 的网关 IP, 只要避开路由器 IP 就行了, 但是得注意掩码位是 `24` |
     
-    ![2.png](../../assets/images/dev/vpn/wire-guard/2.png)
+    ![1.png](../../assets/images/dev/vpn/wire-guard/1.png)
 
 3. 再次编辑这个接口, 去『**防火墙设置**』中将『**创建/分配防火墙区域**』配置为「**lan口**」。然后点击『**保存**』, 此时右上角的「**未保存的配置为 4**」, 接着点击右下角的『**保存并应用**』。
 
-    ![3.png](../../assets/images/dev/vpn/wire-guard/3.png)
+    ![2.png](../../assets/images/dev/vpn/wire-guard/2.png)
 
 4. 最后再次编辑这个接口, 去『**对端**』中『**添加对端**』。按照下图内容进行配置, 其中表格中的内容需要注意一下,  其他默认。
 
@@ -60,15 +54,15 @@ title: Wire Guard
     | 预共享密钥 | 这个点击『**生成预共享密钥**』就行了 |
     | 允许的 IP | 填一个没用过的 IP 就行, 但是网段必须是刚才填的 VPN 网关下的网段, 注意掩码位是 `32` |
 
-    ![4.png](../../assets/images/dev/vpn/wire-guard/4.png)
+    ![3.png](../../assets/images/dev/vpn/wire-guard/3.png)
 
     然后点击『**生成配置...**』, 将连接端点改成动态解析的域名, 或者固定 IP, 否则 IP 一变就用不了了。配置完之后点击『**保存**』, 此时右上角的「**未保存的配置为 6**」, 然后点击右下角的『**保存并应用**』。
 
-    ![5.png](../../assets/images/dev/vpn/wire-guard/5.png)
+    ![4.png](../../assets/images/dev/vpn/wire-guard/4.png)
 
 5. 完成之后『**重启**』一下这个接口
 
-    ![6.png](../../assets/images/dev/vpn/wire-guard/6.png)
+    ![5.png](../../assets/images/dev/vpn/wire-guard/5.png)
 
 ## 连接
 
