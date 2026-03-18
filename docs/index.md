@@ -27,8 +27,7 @@ hide:
     <em style="margin-top:0px;">Hello, I'm liWanr!</em>
 </h2>
 
-
-## :lucide-circle-user-round: About Me
+## :lucide-circle-user-round: About Me { .no-anchor }
 
 <div class="grid" markdown>
 
@@ -113,7 +112,7 @@ hide:
 
 </div>
 
-## :lucide-graduation-cap: Education
+## :lucide-graduation-cap: Education { .no-anchor }
 
 <div class="grid cards" markdown>
 
@@ -178,3 +177,11 @@ hide:
 [**MiSans**](https://hyperos.mi.com/font){ .no-color }
 字体。
 </small>
+
+<script>
+    document.querySelectorAll('h2').forEach(h => {
+        h.removeAttribute('id');
+        const link = h.querySelector('.headerlink');
+        if (link) link.remove();
+    });
+</script>
