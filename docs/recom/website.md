@@ -28,6 +28,8 @@ title: 屌爆了的网站
     :lucide-mouse-pointer-click: 
     [**Down for Everyone or Just Me**](https://downforeveryoneorjustme.com/)
     | [**Probeops**](https://probeops.com/tools)
+    | [**DigitalOcean**](https://www.digitalocean.com/)
+    | [**dynadot**](https://www.dynadot.com/)
 
 </div>
 
