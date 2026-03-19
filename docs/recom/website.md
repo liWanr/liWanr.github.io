@@ -8,7 +8,7 @@ title: 屌爆了的网站
 
 <div class="grid cards" markdown>
 
--   ### 科学上网 {id="circumventing-censorship"}
+-   ### 科学上网
 
     ---
 
@@ -21,14 +21,24 @@ title: 屌爆了的网站
 
 <div class="grid cards" markdown>
 
--   ### 网络 {id="Network"}
+-   ### Net.
 
     ---
 
     :lucide-mouse-pointer-click: 
     [**Down for Everyone or Just Me**](https://downforeveryoneorjustme.com/)
     | [**Probeops**](https://probeops.com/tools)
-    | [**DigitalOcean**](https://www.digitalocean.com/)
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   ### Web Dev
+
+    ---
+
+    :lucide-mouse-pointer-click: 
+    [**DigitalOcean**](https://www.digitalocean.com/)
     | [**dynadot**](https://www.dynadot.com/)
 
 </div>
@@ -51,7 +61,7 @@ title: 屌爆了的网站
 
 <div class="grid cards" markdown>
 
--   ### 影音 {id="film-and-music"}
+-   ### 影音
 
     ---
 
@@ -64,7 +74,7 @@ title: 屌爆了的网站
 
 <div class="grid cards" markdown>
 
--   ### 科技 {id="film-and-music"}
+-   ### Tec.
 
     ---
 
@@ -76,7 +86,7 @@ title: 屌爆了的网站
 
 <div class="grid cards" markdown>
 
--   ### 游戏资源 {id="game-resource"}
+-   ### Game
 
     ---
 
@@ -89,7 +99,7 @@ title: 屌爆了的网站
 
 <div class="grid cards" markdown>
 
--   ### 设计素材 {id="design-assets"}
+-   ### 设计素材
 
     ---
 
@@ -103,7 +113,7 @@ title: 屌爆了的网站
 
 <div class="grid cards" markdown>
 
--   ### 镜像系统 {id="mirror-system"}
+-   ### 镜像系统
 
     ---
 
