@@ -62,9 +62,9 @@ nav = [
         "blog/posts/execution-breakdown.md",
     ] },
     { "Recom" =  [
+        "recom/website.md",
         "recom/open-source.md",
         "recom/tools.md",
-        "recom/website.md",
     ]}
 ]
 
