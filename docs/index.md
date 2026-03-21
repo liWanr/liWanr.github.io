@@ -8,6 +8,9 @@ hide:
 ---
 
 <style>
+    .md-main__inner {
+        margin-top: 1rem
+    }
     .md-typeset h1,
     .md-content__button {
         font-size: 0px;
@@ -18,16 +21,16 @@ hide:
     .md-typeset .twemoji{
         margin: 1px 1px 0 0;
     }
+    .md-typeset a code{
+        color: var(--md-default-fg-color) !important;
+    }
 </style>
 
-<h2 style="margin-top:0px; font-size:4em;">
-    <p style="margin:0 auto 0 auto;font-weight: 100;font-size:25px;">
-        Every nobody is somebody.
-    </p>
-    <em style="margin-top:0px;">Hello, I'm liWanr!</em>
+<h2 style="margin: 0 auto 0 auto; font-size:4em;">
+    <em>Hello, I'm liWanr!</em>
 </h2>
 
-## :lucide-circle-user-round: About Me { .no-anchor }
+## :lucide-circle-user-round: About Me { .no-anchor style="margin-top: 10px;"}
 
 <div class="grid" markdown>
 
@@ -54,18 +57,15 @@ hide:
 [**郭伟亮**](https://www.instagram.com/eric.kwok/){ .no-color }
 等老香港作曲就能封神。
 
-:lucide-messages-square: **Let's Connect -**
+:lucide-messages-square: **Let's Chat -**
 [**Email**](mailto:itsWanr@outlook.com)
-<small>|</small>
-[**Gravatar**](https://gravatar.com/liwanr)
 <small>|</small>
 [**GitHub**](https://github.com/liWanr)
 <small>|</small>
 [**Telegram**](https://t.me/itsWanr)
-{style="margin: auto auto 0px auto"}
+<small>|</small>
+[**Gravatar**](https://gravatar.com/liwanr)
 </div>
-<!-- <small>|</small>
-[**Tunes**](https://music.apple.com/cn/playlist/deep-soul/pl.u-GgA5kvzIoEY1K9x) -->
 
 <div class="card" markdown>
 
