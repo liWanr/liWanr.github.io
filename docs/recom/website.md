@@ -96,6 +96,7 @@ title: 屌爆了的网站
     [**风灵月影**](https://flingtrainer.com/)
     | [**BYRUTOR**](https://byrutgame.org/)
     | [**CE 修改器**](https://www.cheatengine.org/)
+    | [**麻将理牌**](https://tenhou.net/2/)
 
 </div>
 
