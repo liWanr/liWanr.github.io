@@ -3,6 +3,7 @@ icon: simple/wireguard
 title: Wire Guard
 # date:
 #     created: 2026-03-17
+#     updated: 2026-03-21
 ---
 
 ## 引言
@@ -56,7 +57,7 @@ title: Wire Guard
 
     ![3.png](../../assets/images/dev/vpn/wire-guard/3.png)
 
-    然后点击『**生成配置...**』, 将连接端点改成动态解析的域名, 或者固定 IP, 否则 IP 一变就用不了了。配置完之后点击『**保存**』, 此时右上角的「**未保存的配置为 6**」, 然后点击右下角的『**保存并应用**』。
+    然后点击『**生成配置...**』, 将『连接端点』改成 DDNS 的域名, 或者固定 IP, 否则 IP 一变就用不了了。配置完之后点击『**保存**』, 此时右上角的「**未保存的配置为 6**」, 然后点击右下角的『**保存并应用**』。
 
     ![4.png](../../assets/images/dev/vpn/wire-guard/4.png)
 
