@@ -40,6 +40,9 @@ title: 屌爆了的网站
     :lucide-mouse-pointer-click: 
     [**DigitalOcean**](https://www.digitalocean.com/)
     | [**dynadot**](https://www.dynadot.com/)
+    | [**Figma**](https://www.figma.com/)
+    | [**Icons8**](https://icons8.com/)
+    | [**阿里图库**](https://www.iconfont.cn/)
 
 </div>
 
@@ -57,7 +60,6 @@ title: 屌爆了的网站
     | [**区块查询工具**](https://www.chunkbase.com/)
 
 </div>
-
 
 <div class="grid cards" markdown>
 
