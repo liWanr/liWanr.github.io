@@ -6,6 +6,12 @@ title: 屌爆了的网站
 #     updated: 2026-01-18
 ---
 
+<style>
+.md-typeset a{
+    color: var(--md-default-fg-color) !important;
+}
+</style>
+
 <div class="grid cards" markdown>
 
 -   ### 科学上网
