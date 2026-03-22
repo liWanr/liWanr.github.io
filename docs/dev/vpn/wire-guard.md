@@ -4,6 +4,8 @@ title: Wire Guard
 # date:
 #     created: 2026-03-17
 #     updated: 2026-03-21
+tags:
+    - Net
 ---
 
 ## 引言

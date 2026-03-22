@@ -5,6 +5,8 @@ title: 删掉默认 win+v 快捷键
 #     created: 2026-02-18
 tags:
     - Factoid
+hide:
+    - toc
 ---
 
 Win+V 这个快捷键是剪贴板用户服务注册的, 要强制禁用每用户服务:

@@ -6,6 +6,8 @@ title: 免费激活 JetBrains
     # updated: 2026-01-18
 tags:
     - Factoid
+hide:
+    - toc
 ---
 
 1. **找到激活导航地址**: 打开[网站](https://jetbrakey.pages.dev/)，选择想要的服务找并下载的激活插件压缩包
