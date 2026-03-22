@@ -3,7 +3,7 @@ icon: lucide/git-merge
 title: Git 基本知识
 # date:
 #     created: 2025-01-20
-#     updated: 2025-02-26
+#     updated: 2025-03-23
 tags:
     - Git
 comments: true
@@ -699,31 +699,25 @@ comments: true
 
 6. 这期间可能存在会有问题, 特别是用了代理的玩家, 可能会出现 **远程主机已关闭连接** 的报错
 
-    > **原问题内容1** ssh_exchange_identification: Connection closed by remote host
+    !!! bug "原问题内容"
+        
+        - ssh_exchange_identification: Connection closed by remote host
 
-    > **原问题内容2** Connection closed by x.x.x.x port 22
+        - Connection closed by x.x.x.x port 22
 
     这两种情况通常都是由于 ssh 的端口是 22, 开启代理之后 SSH 的连接被代理阻塞, 但是可以通过更改 SSH 设置文件, 将 GitHub 的 SSH 连接端口从 22 改为 443。
 
-    1. 首先打开 config 文件
+    <div class="grid" markdown>
 
-        === "Linux"
+    ```Bash { title="Linux" }
+    vim ~/.ssh/config
+    ```
 
-            ```Bash
-            vim ~/.ssh/config
-            ```
+    ```Bash 
+    Host github.com
+        Hostname ssh.github.com
+        Port 443
+        User git
+    ```
 
-        === "windows"
-
-            ```Text
-            C:\Users\{Username}\.ssh\config
-            ```
-
-    2. 在文件中添加以下内容
-
-        ```Bash
-        Host github.com
-            Hostname ssh.github.com
-            Port 443
-            User git
-        ```
+    </div>
