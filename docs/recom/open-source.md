@@ -53,6 +53,16 @@ nexttrace google.com
 
 - 开源协议: MIT license
 
+### MyIP
+
+:lucide-mouse-pointer-click: [**GitHub 仓库地址**](https://github.com/jason5ng32/MyIP) | [**Releases**](https://github.com/jason5ng32/MyIP/releases) | [**官网**](https://ipcheck.ing/#/)
+
+全能 IP 工具箱，可以查看 IP 信息，检测网站的可用性，查看 DNS 出口信息，进行网速测试，全球延迟测试，MTR 测试等。
+
+他是一位[故人](https://wujiaxian.com/)开发的, 当然他今天还健在哈, 他最著名的文章是[Google退出**成定局，抹黑行动开始](https://kenengba.com/post/2821.html)
+
+- 开源协议: Security policy / MIT license
+
 ---
 
 ## AI 工具
@@ -65,7 +75,7 @@ nexttrace google.com
 
 Vibe Coding = 规划驱动 + 上下文固定 + AI 结对执行, 让「从想法到可维护代码」变成一条可审计的流水线, 而不是一团无法迭代的巨石文件。旨在帮助开发者丝滑地将想法变为现实。本指南详细介绍了从项目构思、技术选型、实施规划到具体开发、调试和扩展的全过程, 强调以规划驱动和模块化为核心, 避免让 AI 失控导致项目混乱。
 
-- 开源协议: Security & MIT license
+- 开源协议: Security / MIT license
 
 ---
 
