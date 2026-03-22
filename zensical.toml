@@ -200,23 +200,6 @@ generator = false                                       # 移除 “Made with Ze
 provider = "google"
 property = "G-JJZ9XN4L96"
 
-[project.extra.analytics.feedback]
-title = "这页内容对你有帮助吗？"
-
-[[project.extra.analytics.feedback.ratings]]
-icon = "material/emoticon-happy-outline"
-name = "有帮助"
-data = 1
-note = "感谢你的反馈！我很开心这篇文章对你有用(^_^)"
-
-[[project.extra.analytics.feedback.ratings]]
-icon = "material/emoticon-sad-outline"
-name = "没太大帮助"
-data = 0
-note = """
-感谢你的反馈！我会继续改进的/(ㄒoㄒ)/~~
-"""
-
 [project.extra.annotate]
 Bash = [".s2"]
 
