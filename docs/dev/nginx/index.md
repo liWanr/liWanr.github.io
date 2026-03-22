@@ -5,6 +5,7 @@ title: Nginx
 #     created: 2026-02-17
 tags:
     - Net
+comments: true
 ---
 
 ## 准备环境与依赖库 {id="prep-env-deps"}

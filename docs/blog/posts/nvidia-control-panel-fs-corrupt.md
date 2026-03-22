@@ -5,6 +5,7 @@ title: N卡面板文件损坏
 #   created: 2023-02-18
 tags:
     - Factoid
+comments: true
 ---
  
 ##  前言

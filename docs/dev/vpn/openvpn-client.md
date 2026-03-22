@@ -5,6 +5,7 @@ title: 使用 OpenVPN Client
 #     created: 2025-03-16
 tags:
     - Factoid
+comments: true
 ---
 
 ## :simple-linux: **Linux**

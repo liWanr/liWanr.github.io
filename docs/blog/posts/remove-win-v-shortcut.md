@@ -7,6 +7,7 @@ tags:
     - Factoid
 hide:
     - toc
+comments: true
 ---
 
 Win+V 这个快捷键是剪贴板用户服务注册的, 要强制禁用每用户服务:

@@ -6,6 +6,7 @@ title: HackRF 固件维护
 #     updated: 2026-02-15
 tags:
     - Tech
+comments: true
 ---
 
 ## 引言 {id="introduction"}

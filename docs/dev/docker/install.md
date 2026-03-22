@@ -3,6 +3,7 @@ icon: octicons/desktop-download-16
 title: 安装
 # date:
 #     craeted: 2026-03-04
+comments: true
 ---
 
 在**开发阶段**使用 Windows 或 macOS 运行 Docker 是完全可行的，但在**部署或生产环境中**，一般还是更推荐直接在 Linux 服务器上运行 Docker。

@@ -5,6 +5,7 @@ title: 激活 Typora
 #   created: 2026-03-21
 hide:
     - toc
+comments: true
 ---
 
 !!! warning "仅适用于 `1.0.3` 版本的 Typora"

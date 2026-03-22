@@ -6,6 +6,7 @@ title: Zensical 的小技巧
 #     updated: 2026-01-18
 tags:
     - Factoid
+comments: true
 ---
 
 <script src="../../../assets/javascripts/keys/keys.js"></script>

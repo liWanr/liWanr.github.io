@@ -6,6 +6,7 @@ title: 压缩与解压
 #     updated: 2025-12-22
 tags:
     - Factoid
+comments: true
 ---
 
 - **FileName** 代表压缩包的名称

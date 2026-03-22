@@ -6,6 +6,7 @@ title: Git 基本知识
 #     updated: 2025-02-26
 tags:
     - Git
+comments: true
 ---
 
 ## 安装 Git {id="install-git"}

@@ -5,6 +5,7 @@ title: vim 基本知识
 #     created: 2026-02-22
 tags:
     - Factoid
+comments: true
 ---
 
 ## 模式类型 {id="mode-types"}

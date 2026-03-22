@@ -6,6 +6,7 @@ title: U 盘安全启动
 #     updated: 2026-01-12
 tags:
     - Factoid
+comments: true
 ---
 
 ## 解决方案 {id="solution"}

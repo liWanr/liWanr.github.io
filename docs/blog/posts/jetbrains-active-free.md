@@ -8,6 +8,7 @@ tags:
     - Factoid
 hide:
     - toc
+comments: true
 ---
 
 1. **找到激活导航地址**: 打开[网站](https://jetbrakey.pages.dev/)，选择想要的服务找并下载的激活插件压缩包

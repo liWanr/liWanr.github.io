@@ -6,6 +6,7 @@ title: 激活 Ubuntu 网卡
 #     updated: 2026-01-18
 tags:
     - Net
+comments: true
 ---
 
 ## 检查网络接口状态 {id="check-network-interface-status"}
