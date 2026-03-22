@@ -27,7 +27,7 @@ ImmortalWrt
 | 固件版本 | ImmortalWrt 24.10.5 r33805-7c4e882aaf6f / LuCI openwrt-24.10 branch 26.042.32088~3dc9a84 |
 | 内核版本 | 6.6.122 |
 
-以下是我加装的软件包, 可以是其他版本。**「上传」**要按照表从上往下的顺序上传, 比如 `lucky` > `luci-app-lucky` > `luci-i18n-lucky-zh-cn`
+以下是我加装的软件包, 可以是其他版本。**「上传」**要按照表从上往下的顺序上传, 比如 `lucky` --> `luci-app-lucky` --> `luci-i18n-lucky-zh-cn`
 
 |软件包|版本|安装方式|备注|
 |-|-|:-:|:-:|
