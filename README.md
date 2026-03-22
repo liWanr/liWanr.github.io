@@ -1,8 +1,8 @@
 ## 地址
 
-[**Myself**](https://liwanr.com)
-[**GitHub Page**](https://liwanr.com/)
-[**Vercel**](https://liwanr.vercel.app/)
+[**Myself**](https://liwanr.com) ｜
+[**GitHub Page**](https://liwanr.com/) ｜
+[**Vercel**](https://liwanr.vercel.app/) ｜
 
 ## 部署方式
 
