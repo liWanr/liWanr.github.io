@@ -80,10 +80,10 @@ hide:
 ---
 
 **`Net.` -**
+[**`IPCheck`**](https://ipcheck.ing/#/)
 [**`IT DOG`**](https://www.itdog.cn/ping/)
 [**`Analytics`**](https://analytics.google.com/analytics/web/)
 [**`Cloudflare`**](https://dash.cloudflare.com/)
-[**`IPCheck`**](https://ipcheck.ing/#/)
 [**`中科大测速`**](https://test.ustc.edu.cn/)
 
 **`Med.` -**
