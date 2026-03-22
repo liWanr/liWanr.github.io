@@ -2,7 +2,7 @@
 
 [**Myself**](https://liwanr.com) ｜
 [**GitHub Page**](https://liwanr.com/) ｜
-[**Vercel**](https://liwanr.vercel.app/) ｜
+[**Vercel**](https://liwanr.vercel.app/)
 
 ## 部署方式
 
