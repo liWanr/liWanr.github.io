@@ -33,7 +33,6 @@
   background-size: 100% 2px;
 }
 
-
 /* 为了让链接没有颜色写的 */
 .no-color {
     color: var(--md-default-fg-color) !important;
@@ -124,12 +123,12 @@ small {
 
 /* 文字相关的主题色 */
 [data-md-color-accent="liwanr"] {
-    --md-accent-fg-color: #706757;
+    --md-accent-fg-color: #958367;
     --md-accent-fg-color--transparent: #8378661a;
 }
 
 [data-md-color-primary="liwanr"] {
-    --md-primary-fg-color: #706757;
+    --md-primary-fg-color: #958367;
     --md-primary-fg-color--light: #ff0000;
     --md-primary-fg-color--dark: #ff0000;
     --md-primary-bg-color: #f1eee9;
