@@ -159,9 +159,6 @@ key_map = {"a"= "a", "b"= "b", "c"= "c", "d"= "d", "e"= "e", "f"= "f", "g"= "g",
 [project.markdown_extensions.pymdownx.tilde]            # 启用删除线与下标语法
 [project.markdown_extensions.pymdownx.smartsymbols]     # 将某些字符序列转换为相应的符号，例如版权符号或分数
 
-[project.markdown_extensions.pymdownx.arithmatex]
-generic = true                                          # 启用数学公式渲染（Arithmatex）
-
 [project.markdown_extensions.pymdownx.emoji]
 emoji_index = "zensical.extensions.emoji.twemoji"       # 使用 Twemoji 表情集
 emoji_generator = "zensical.extensions.emoji.to_svg"    # 将 emoji 渲染为 SVG
