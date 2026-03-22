@@ -83,7 +83,7 @@ hide:
 [**`IT DOG`**](https://www.itdog.cn/ping/)
 [**`Analytics`**](https://analytics.google.com/analytics/web/)
 [**`Cloudflare`**](https://dash.cloudflare.com/)
-[**`CF Speed`**](https://speed.cloudflare.com/)
+[**`IPCheck`**](https://ipcheck.ing/#/)
 [**`中科大测速`**](https://test.ustc.edu.cn/)
 
 **`Med.` -**
