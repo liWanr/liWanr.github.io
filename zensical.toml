@@ -37,7 +37,6 @@ nav = [
         { "VPN" = [
             "dev/vpn/index.md",
             "dev/vpn/bleachwrt.md",
-            "dev/vpn/immortalWrt.md",
             "dev/vpn/wire-guard.md",
             "dev/vpn/openvpn-client.md",
         ] },
@@ -50,8 +49,8 @@ nav = [
         "dev/cloud-server-reviews.md",
     ] },
     { "Blog" = [
-        "blog/posts/hackrf-firmware-maint.md",
         "blog/posts/zensical-pro-tips.md",
+        "blog/posts/hackrf-firmware-maint.md",
         "blog/posts/chrome-search-new-tab.md",
         "blog/posts/dns-explain.md",
         "blog/posts/jetbrains-active-free.md",
@@ -159,8 +158,8 @@ key_map = {"a"= "a", "b"= "b", "c"= "c", "d"= "d", "e"= "e", "f"= "f", "g"= "g",
 [project.markdown_extensions.pymdownx.tilde]            # 启用删除线与下标语法
 [project.markdown_extensions.pymdownx.smartsymbols]     # 将某些字符序列转换为相应的符号，例如版权符号或分数
 
-# [project.markdown_extensions.pymdownx.arithmatex]
-# generic = true                                          # 启用数学公式渲染（Arithmatex）
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true                                          # 启用数学公式渲染（Arithmatex）
 
 [project.markdown_extensions.pymdownx.emoji]
 emoji_index = "zensical.extensions.emoji.twemoji"       # 使用 Twemoji 表情集
@@ -224,19 +223,10 @@ note = """
 Bash = [".s2"]
 
 [project.extra.tags]                    # 使用标签对任何页面进行分类，标签将作为页面元数据的一部分
-Net = "Net"
-Tech = "Tech"
+Net = "NetWork"
+Tech = "Technology"
 Factoid = "Factoid"
 Git = "Git"
-
-# [project.extra.consent]                 # Cookie 标题和内容描述
-# title = "隐私与 Cookie 设置"
-# description = """
-#     为了让你在这里的体验更加顺畅,
-#     我使用了 cookies 来记住你的喜好和浏览习惯,
-#     让你每次访问都能更轻松地找到需要的信息。
-#     感谢你的支持！
-# """
 
 [project.extra.status]
 new = "最新发布"
@@ -262,11 +252,6 @@ name = "Openwrt"
 icon = "lucide/hard-drive-upload"
 link = "http://10.0.0.1:16601"
 name = "Lucky"
-
-# [[project.extra.social]]
-# icon = "simple/emby"
-# link = "http://10.0.0.196:8096"
-# name = "Emby"
 
 [[project.extra.social]]
 icon = "material/google-translate"
