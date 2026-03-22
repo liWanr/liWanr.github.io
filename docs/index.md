@@ -36,6 +36,15 @@ hide:
 
 <div markdown>
 
+:lucide-messages-square: **Let's Chat -**
+[**Email**](mailto:itsWanr@outlook.com)
+<small>|</small>
+[**GitHub**](https://github.com/liWanr)
+<small>|</small>
+[**Telegram**](https://t.me/itsWanr)
+<small>|</small>
+[**Gravatar**](https://gravatar.com/liwanr)
+
 笨笨的极客玩家, 掌握 **C**<small><small>&</small></small>**C++**<small> / </small>**Java**<small> / </small>**Python** 等编程语言, 有 **STM32** 等嵌入式设备与
 [**Android**](https://developer.android.com/){ .no-color }
 数据传输与通信的经验。对
@@ -56,23 +65,14 @@ hide:
 的填词加
 [**郭伟亮**](https://www.instagram.com/eric.kwok/){ .no-color }
 等老香港作曲就能封神。
-
-:lucide-messages-square: **Let's Chat -**
-[**Email**](mailto:itsWanr@outlook.com)
-<small>|</small>
-[**GitHub**](https://github.com/liWanr)
-<small>|</small>
-[**Telegram**](https://t.me/itsWanr)
-<small>|</small>
-[**Gravatar**](https://gravatar.com/liwanr)
 </div>
 
 <div class="card" markdown>
 
-**wanr 和他的朋友们 -**
-[:local-jiao:**Jiao**](https://dxlcq.cn/){ .no-color } <small>|</small>
-[:lucide-hat-glasses:**Sevenalist**](https://dczcq.cn/){ .no-color } <small>|</small>
-[:lucide-bug:**Qvi**](https://qvidx.github.io){ .no-color }
+**Wanr's Friend -**
+[**Jiao**](https://dxlcq.cn/){ .no-color }^:local-jiao:^ <small>|</small>
+[**Sevenalist**](https://dczcq.cn/){ .no-color }^:lucide-chef-hat:^ <small>|</small>
+[**Qvi**](https://qvidx.github.io){ .no-color }^:lucide-squirrel:^
 
 ---
 
