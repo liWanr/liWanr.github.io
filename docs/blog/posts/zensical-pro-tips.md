@@ -79,7 +79,7 @@ tags:
 
 **字体选择与下载**
 
-:   首先去 [**MiSans 官网**](https://hyperos.mi.com/font) 下载字体, 有很多选项, 我选择的是第一个 [MiSans](https://hyperos.mi.com/font/details/sc), 下载解压之后有很多目录, 分别代表不同的格式, 选一种来用就行了, 我选的是可变字体, 文件是 [**MiSansVF.ttf**](/assets/fonts/MiSansVF.ttf)
+:   首先去 [**MiSans 官网**](https://hyperos.mi.com/font) 下载字体, 有很多选项, 我选择的是第一个 [MiSans](https://hyperos.mi.com/font/details/sc), 下载解压之后有很多目录, 分别代表不同的格式, 选一种来用就行了, 我选的是可变字体, 文件是 **MiSansVF.ttf**
 
     |目录名称|格式与特征|
     |-|-|
