@@ -139,15 +139,15 @@ small {
 }
 
 /* step */
-.md-typeset div.steps > ol {
+.md-typeset ol:not(ol ol):not(.footnote ol) {
     counter-reset: item;
 }
-.md-typeset div.steps > ol > li {
+.md-typeset ol:not(ol ol):not(.footnote ol) > li {
     position: relative;
     padding-left: 1em;
     list-style: none;
 }
-.md-typeset div.steps > ol > li::before {
+.md-typeset ol:not(ol ol):not(.footnote ol) > li::before {
     position: absolute;
     top: .9px;
     left: -1px;
@@ -166,7 +166,7 @@ small {
     content: counter(item);
     counter-increment: item;
 }
-.md-typeset div.steps > ol > li::after {
+.md-typeset ol:not(ol ol):not(.footnote ol) > li::after {
     position: absolute;
     top: 6px;
     bottom: 1px;
