@@ -90,6 +90,9 @@ small {
 :root {
     --md-text-font: "MiSansVF", sans-serif;
     --features: "tnum" on, "case" on;
+    --md-steps-bg-color: #ffffff00;
+    --md-steps-fg-color: var();
+    --md-steps-border-color: hsla(0, 0%, 75%, 1);
 }
 
 * {
@@ -133,6 +136,47 @@ small {
     --md-primary-fg-color--dark: #ff0000;
     --md-primary-bg-color: #f1eee9;
     --md-primary-bg-color--light: #ff0000;
+}
+
+/* step */
+.md-typeset div.steps > ol {
+    counter-reset: item;
+}
+.md-typeset div.steps > ol > li {
+    position: relative;
+    padding-left: 1em;
+    list-style: none;
+}
+.md-typeset div.steps > ol > li::before {
+    position: absolute;
+    top: .9px;
+    left: -1px;
+    z-index: -1;
+    display: block;
+    width: 1.9em;
+    height: 1.9em;
+    margin-left: -1.25em;
+    color: var(--md-default-fg-color);
+    font-weight: 600;
+    font-size: 0.9em;
+    text-align: center;
+    background-color: var(--md-default-bg-color);
+    border: 1px solid var(--md-default-fg-color);
+    border-radius: 100px;
+    content: counter(item);
+    counter-increment: item;
+}
+.md-typeset div.steps > ol > li::after {
+    position: absolute;
+    top: 6px;
+    bottom: 1px;
+    left: -0.36em;
+    display: block;
+    width: 1px;
+    margin-top: 2em;
+    border-left: 1px solid var(--md-steps-border-color);
+    content: "";
+    border-radius: 50px;
 }
 
 /* 题注的字体比例 */
