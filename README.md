@@ -1,7 +1,7 @@
 ## 地址
 
 [**Myself**](https://liwanr.com) ｜
-[**LocalSite**](https://local.liwanr.com) ｜
+[**LocalSite**](https://local.liwanr.com:24) ｜
 [**GitHub Page**](https://liwanr.com/) ｜
 [**Vercel**](https://liwanr.vercel.app/)
 
