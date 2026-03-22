@@ -46,7 +46,6 @@ nav = [
         ] },
         "dev/ubuntu-enable-net.md",
         "dev/samba.md",
-        "dev/cloud-server-reviews.md",
     ] },
     { "Blog" = [
         "blog/posts/zensical-pro-tips.md",
