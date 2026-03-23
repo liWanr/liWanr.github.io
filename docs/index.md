@@ -163,6 +163,7 @@ hide:
 [**MiSans**](https://hyperos.mi.com/font){ .no-color }
 字体。
 </small>
+[![lastCommit](https://img.shields.io/github/last-commit/liWanr/liWanr.github.io){ style="width: 96px; position: relative; top: 3.8px;" }](https://github.com/liWanr/liWanr.github.io)
 
 <script>
     document.querySelectorAll('h2').forEach(h => {
