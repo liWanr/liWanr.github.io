@@ -5,16 +5,23 @@ site_name = "liWanr"    # 页面头部和浏览器窗口标题中
 
 site_author = "liWanr"  # 站点作者
 
+repo_url = "https://github.com/liWanr"
+
+repo_name = "GitHub/liWanr"
+
 site_url = "https://liWanr.com/"    # 站点的规范 URL, 用于 SEO 和生成 RSS 源
 
 # 站点的简短描述，通常用于 SEO 和社交媒体预览
 site_description = "极客向个人技术站点，内容涵盖编程、网络以及真实项目实践，关注技术落地与设计体验，记录持续探索与长期创作。" 
 
-# dev_addr = "0.0.0.0:8000"
+dev_addr = "0.0.0.0:8000"
 
 copyright = """
 <div style="font-feature-settings: 'ss04' off;">
 &copy; 2023-2026 <strong>liWanr</strong> All Rights Reserved.
+<img src="https://views.whatilearened.today/views/github/liWanr/liWanr.svg"
+     alt="views"
+     style="width: 48px; position: relative; top: 3px;">
 <small>
 |
 <a href="https://icp.gov.moe/?keyword=20261874" style="font-feature-settings: 'ss04' off;" target="_blank">萌ICP备 20261874 号</a>
@@ -81,6 +88,7 @@ async = true
 # 图标与 Logo 配置
 [project.theme.icon]
 logo = "local/logo"
+repo = "lucide/github"
 
 # 主题相关配置部分
 [project.theme]
@@ -88,6 +96,7 @@ font.code = "JetBrains Mono"        # 代码块等宽字体
 custom_dir = "overrides"            # 模板覆盖目录，用于自定义主题模板
 favicon = "assets/favicon.png"      # 设置浏览器标签页或标题栏显示的图标
 language = "zh"                     # 设置语言,zh简中, en英文, zh-Hant繁中, zh-TW台湾
+
 features = [
     # ================= 搜索体验 =================
     "search.highlight",             # 搜索跳转后高亮匹配内容
