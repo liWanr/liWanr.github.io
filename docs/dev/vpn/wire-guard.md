@@ -3,7 +3,7 @@ icon: simple/wireguard
 title: Wire Guard
 # date:
 #     created: 2026-03-17
-#     updated: 2026-03-21
+#     updated: 2026-03-23
 tags:
     - Net
 comments: true
@@ -25,7 +25,7 @@ comments: true
 | 兼容性 | 几乎所有主流平台原生支持, 包括内核级 | 非常广泛, 老设备、路由器、企业设备支持更好 |
 | NAT 穿越<br>/ 断线重连 | 优秀, 内置 roaming 支持 | 一般, 需额外 keepalive 配置 |
 
-## 配置
+## 服务端配置
 
 ### 安装
 
@@ -68,7 +68,13 @@ comments: true
 
     ![5.png](../../assets/images/dev/vpn/wire-guard/5.png)
 
-## 连接
+### 端口转发
+
+去『网络 --> 防火墙 --> 端口转发』中添加一个转发。就是注意取消勾选 TCP 就行了。
+
+![6.png](../../assets/images/dev/vpn/wire-guard/6.png)
+
+## 客户端连接
 
 去 [**Wire Guard 官网**](https://www.wireguard.com/install/) 找到对应版本下载, 移动端可以通过配置时生成的二维码进行扫码连接。Apple 生态需要**外区账号**才能在 App Store 下载。
 
