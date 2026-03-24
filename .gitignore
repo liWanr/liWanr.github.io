@@ -8,6 +8,3 @@ reproduction/*
 # 本地部署文件
 local-build.sh
 nginx.conf
-
-# 字体文件
-docs/assets/fonts/*
