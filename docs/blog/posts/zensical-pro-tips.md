@@ -3,11 +3,14 @@ icon: lucide/feather
 title: Zensical 的小技巧
 # date:
 #     created: 2025-12-16
-#     updated: 2026-01-18
+#     updated: 2026-03-24
 tags:
     - Factoid
 comments: true
 ---
+
+[**Mermaid**](https://mermaid.ai/open-source/syntax/flowchart.html "图标")
+| [**PyMdown Extensions**](https://facelessuser.github.io/pymdown-extensions/extensions/keys/#extendingmodifying-key-map-index "python Markdown 扩展")
 
 <script src="../../../assets/javascripts/keys/keys.js"></script>
 
