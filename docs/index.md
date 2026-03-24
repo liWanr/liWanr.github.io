@@ -39,30 +39,25 @@ hide:
 
 :lucide-messages-square: **Let's Chat -**
 [**Email**](mailto:itsWanr@outlook.com)
-///html | small|///
-[**GitHub**](https://github.com/liWanr)
-///html | small|///
-[**Telegram**](https://t.me/itsWanr)
-///html | small|///
-[**Gravatar**](https://gravatar.com/liwanr)
+| [**GitHub**](https://github.com/liWanr)
+| [**Telegram**](https://t.me/itsWanr)
+| [**Gravatar**](https://gravatar.com/liwanr)
 
-笨笨的极客玩家, 掌握 **C**///html | small///html | small&//////**C++**///html | small / ///**Java**///html | small / ///**Python** 等编程语言, 有 **STM32** 等嵌入式设备与 **Android** 数据传输与通信的经验。对**OpenWrt**///html | small / ///**Nginx**///html | small / ///**OpenVPN** 等网络技术与 **Figma**///html | small / ///**Axure** 等 UI///html | small////UX 设计感兴趣, 致力于将技术与设计完美结合。参与过蓝牙射频指纹、网联汽车巡航、物联网农业工程、生物特征电子签名等项目。
+笨笨的极客玩家, 掌握 **C**&**C++** / **Java** / **Python** 等编程语言, 有 **STM32** 等嵌入式设备与 **Android** 数据传输与通信的经验。对 **OpenWrt** / **Nginx** / **OpenVPN** 等网络与 **Figma** / **Axure** 等 UI/UX 设计感兴趣, 致力于将技术与设计完美结合。参与过蓝牙射频指纹、网联汽车巡航、物联网农业工程、生物特征电子签名等项目。
 
 平时喜欢打台球和羽毛球, 台球线上可以在
 [**Shooterspool**](https://www.shooterspool.net/){ .no-color }
 找我玩。也比较喜欢听流行音乐, 歌手中意**陈奕迅**,
-觉得**林夕**///html | small/ ///**黄伟文**的填词加**郭伟亮**等老香港作曲就能封神。
+觉得**林夕** / **黄伟文**的填词加**郭伟亮**等老香港作曲就能封神。
 
 ///
 
 ///html | div.card
 
 :lucide-handshake: **Wanr's Friend -**
-[**Jiao**](https://dxlcq.cn/){ .no-color }^:local-jiao:^ ///html | small|///
-[**Sevenalist**](https://dczcq.cn/){ .no-color }^:lucide-chef-hat:^ ///html | small|///
-[**Qvi**](https://qvidx.github.io){ .no-color }^:lucide-squirrel:^
-
-<!-- --- -->
+[**Jiao**](https://dxlcq.cn/){ .no-color }^:local-jiao:^ 
+| [**Sevenalist**](https://dczcq.cn/){ .no-color }^:lucide-chef-hat:^ 
+| [**Qvi**](https://qvidx.github.io){ .no-color }^:lucide-squirrel:^
 
 **`Tec.` -**
 [**`Microsoft`**](https://account.microsoft.com/)
@@ -78,8 +73,6 @@ hide:
 [**`Gemini`**](https://gemini.google.com/app)
 [**`Claude`**](https://claude.ai/)
 [**`Perplexity`**](https://www.perplexity.ai/)
-
----
 
 **`Net.` -**
 [**`IPCheck`**](https://ipcheck.ing/#/)
@@ -112,8 +105,7 @@ hide:
     ---
 
     [**国家卓越工程师教育培养计划**](http://www.moe.gov.cn/srcsite/A08/moe_742/s3860/){ .no-color }
-    ///html | small|///
-    **智能网联汽车**
+    | **智能网联汽车**
 
     :lucide-mouse-pointer-click:
     [学校官网](https://cqu.edu.cn/){ .no-color }
@@ -128,8 +120,7 @@ hide:
     ---
 
     **全日制本科**
-    ///html | small|///
-    **数据科学与大数据技术**
+    | **数据科学与大数据技术**
 
     :lucide-mouse-pointer-click:
     [学校官网](https://www.cque.edu.cn/){ .no-color }
@@ -143,8 +134,7 @@ hide:
     ---
 
     **全日制专科**
-    ///html | small|///
-    **物联网应用技术**
+    | **物联网应用技术**
 
     :lucide-mouse-pointer-click:
     [学校官网](https://www.cqny.edu.cn/){ .no-color }
@@ -164,8 +154,8 @@ hide:
 和 **GitHub Page** 发布, 常规文字采用
 [**MiSans**](https://hyperos.mi.com/font){ .no-color }
 字体。
-///
 [![lastCommit](https://img.shields.io/github/last-commit/liWanr/liWanr.github.io){ style="width: 96px; position: relative; top: 3.8px;" }](https://github.com/liWanr/liWanr.github.io)
+///
 
 <script>
     document.querySelectorAll('h2').forEach(h => {
