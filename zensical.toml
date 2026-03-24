@@ -38,6 +38,7 @@ nav = [
             "dev/docker/install.md",
             "dev/docker/use.md",
             "dev/docker/app-deploy.md",
+            "dev/docker/custom-img.md",
         ] },
         { "VPN" = [
             "dev/vpn/index.md",
