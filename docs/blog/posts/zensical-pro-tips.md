@@ -77,6 +77,50 @@ comments: true
 
 </div>
 
+## 通用
+
+```markdown { linenums="0"}
+[Button](https://github.com/liWanr){ .md-button }
+[Button](https://github.com/liWanr){ .md-button .md-button--primary }
+```
+
+<div class="result" markdown>
+
+[Button](https://github.com/liWanr){ .md-button }
+[Button](https://github.com/liWanr){ .md-button .md-button--primary }
+
+</div>
+
+````markdown { linenums="0" }
+```py { title="这是代码块的所有配置" .yaml .no-copy .no-select hl_lines="2 3" linenums="0" }
+def bubble_sort(items): # (1)!
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+
+1. 这是注释内容
+
+`#!python range()` 函数用于生成数字序列。
+````
+
+<div class="result" markdown>
+
+```py { title="这是代码块的所有配置" .yaml .no-copy .no-select hl_lines="2 3" linenums="0" }
+def bubble_sort(items): # (1)!
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+
+1. 这是注释内容
+
+`#!python range()` 函数用于生成数字序列。
+
+</div>
+
 ## 使用 MiSans 字体
 
 ### 基础使用
