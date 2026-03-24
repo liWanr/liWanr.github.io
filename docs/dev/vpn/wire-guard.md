@@ -33,6 +33,8 @@ comments: true
 
 ### 创建接口
 
+///html | div.step
+
 1. 去『**网络 --> 接口 --> 接口**』的底部点击『**添加新接口…**』, 去创建一个新接口, 名称随便取, 主要是协议为「**WireGuard VPN**」。
 
 
@@ -79,3 +81,5 @@ comments: true
 去 [**Wire Guard 官网**](https://www.wireguard.com/install/) 找到对应版本下载, 移动端可以通过配置时生成的二维码进行扫码连接。Apple 生态需要**外区账号**才能在 App Store 下载。
 
 可以在 OpenWrt 的『**状态 --> WireGuard**』中查看握手状态。
+
+///

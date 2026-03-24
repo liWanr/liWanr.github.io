@@ -28,27 +28,31 @@ comments: true
         altname enp2s1
     ```
 
-<small>
+///html | small
 :octicons-light-bulb-16:
 这里有两张网卡, 第一张网卡是 `lo`, 表示的是本机, 并不是连接互联网的网卡。第二张 `ens33` 才是实际连接互联网的, 这个可能会根据网卡设备而有不同名称, 但一般是第二个。
-</small>
+///
 
 ## 激活网卡 {id="activate-network-card"}
 
+///html | div.step
+
 1. 启用网卡： 再次运行 `ip a` 检查网卡是否变为 UP 状态。
 
-    ```bash
+    ```bash { linenums="0" }
     sudo ip link set ens33 up
     ```
 
 2. 获取 IP： 一般到这个时候只是将网卡启用了, 但是不会给网卡分配 IP, 所以要手动获取 IP 地址
 
-    ```bash
+    ```bash { linenums="0" }
     sudo dhclient ens33
     ```
 
 3. 检查： 此时就能够使用网络了, 输入 `ip a` 查看是否有 IPv4 地址, 如果还是没有可以尝试重启网络服务就有了
 
-    ```bash
+    ```bash { linenums="0" }
     sudo systemctl restart NetworkManager
     ```
+
+///

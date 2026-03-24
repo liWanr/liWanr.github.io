@@ -1,7 +1,6 @@
 *[HTML]: Hyper Text Markup Language, 超文本标记语言
 *[W3C]: World Wide Web Consortium, 万维网联盟
 *[DNS]: Domain Name System, 域名系统
-*[Wrt]: wireless router, 无线路由器
 *[DDNS]: Dynamic DNS, 动态域名解析
 *[VPN]: Virtual Private Network, 虚拟私人网络
 *[SC]: System Clock, 在操作系统中看到的时间

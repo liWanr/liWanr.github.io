@@ -14,7 +14,7 @@ comments: true
 - **DirName** 代表目录的名称, 也就是准备压缩的文件夹的名称
 
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ## tar.gz / tgz
     
@@ -30,9 +30,9 @@ comments: true
         tar -zcvf FileName.tar.gz DirName
         ```
         
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ## zip
     
@@ -48,14 +48,14 @@ comments: true
         zip FileName.zip DirName
         ```
 
-    <small>
+    ///html | small
     :octicons-light-bulb-16:
     **安装命令:** `sudo apt install zip unzip`
-    </small>
+    ///
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ## 7z
     
@@ -71,14 +71,14 @@ comments: true
         7z -a FileName.7z DirName
         ```
     
-    <small>
+    ///html | small
     :octicons-light-bulb-16:
     **安装命令:** `sudo apt update & sudo apt install p7zip-full`
-    </small>
+    ///
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ## rar
     
@@ -94,14 +94,14 @@ comments: true
         rar -a FileName.rar DirName
         ```
     
-    <small>
+    ///html | small
     :octicons-light-bulb-16:
     **安装方式 :** [**下载 rar**](https://www.rarlab.com/), 下载解压后将 **rar_static** 拷贝到 `/usr/bin` 目录, 其他由 **$PATH** 环境变量指定的目录也可以
-    </small>
+    ///
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ## tar
     
@@ -117,14 +117,14 @@ comments: true
         tar -cvf FileName.tar DirName
         ```
     
-    <small>
+    ///html | small
     :octicons-light-bulb-16:
     **安装命令:** `sudo apt update & sudo apt install p7zip-full`
-    </small>
+    ///
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ## tar.xz
     
@@ -156,14 +156,14 @@ comments: true
             xz -z FileName.tar
             ```
     
-    <small>
+    ///html | small
     :octicons-light-bulb-16:
     **安装命令:** `sudo apt update & sudo apt install p7zip-full`
-    </small>
+    ///
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ## deb
     
@@ -173,4 +173,4 @@ comments: true
         sudo dpkg -i FileName.deb
         ```
 
-</div>
+///

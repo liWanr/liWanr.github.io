@@ -14,6 +14,8 @@ comments: true
 
 ## 技术栈徽
 
+///html | div.step
+
 1.  
 
     ```markdown { linenums="0" }
@@ -26,14 +28,14 @@ comments: true
     ![OpenWrt](https://img.shields.io/badge/OpenWrt-Supported-green)
     ```
 
-    <div class="result" markdown>
+    ///html | div.result
 
     ![Docker](https://img.shields.io/badge/Docker-Ready-blue)
     ![Nginx](https://img.shields.io/badge/Nginx-ReverseProxy-green)
     ![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange)
     ![OpenWrt](https://img.shields.io/badge/OpenWrt-Supported-green)
 
-    </div>
+    ///
 
 1.  
 
@@ -41,11 +43,15 @@ comments: true
     <img src="https://skillicons.dev/icons?i=linux,apple,windows,markdown,docker,nginx,git,python,cloudflare">
     ```
 
-    <div class="result" markdown>
+    ///html | div.result
 
     <img src="https://skillicons.dev/icons?i=linux,apple,windows,markdown,docker,nginx,git,python,cloudflare">
 
-    </div>
+    ///
+
+///
+
+///html | div.step
 
 ## 实用组
 
@@ -69,7 +75,7 @@ comments: true
     ![Contributors](https://img.shields.io/github/contributors/用户名/仓库名)
     ```
 
-    <div class="result" markdown>
+    ///html | div.result
 
     ![Stars](https://img.shields.io/github/stars/krahets/hello-algo)
     ![Forks](https://img.shields.io/github/forks/krahets/hello-algo)
@@ -88,7 +94,7 @@ comments: true
     ![Tags](https://img.shields.io/github/v/tag/krahets/hello-algo)
     ![Contributors](https://img.shields.io/github/contributors/krahets/hello-algo)
 
-    </div>
+    ///
 
 2. 代码行数，会显示：commits / repos / stars / PR
 
@@ -96,11 +102,11 @@ comments: true
     ![Stats](https://github-readme-stats.vercel.app/api?username=用户名)
     ```
 
-    <div class="result" markdown>
+    ///html | div.result
 
     ![Stats](https://github-readme-stats.vercel.app/api?username=liWanr)
 
-    </div>
+    ///
 
 3. 最常用语言，会生成语言统计图。
 
@@ -108,11 +114,11 @@ comments: true
     ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=用户名)
     ```
 
-    <div class="result" markdown>
+    ///html | div.result
 
     ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=liWanr)
 
-    </div>
+    ///
 
 4. 连续提交统计，显示连续提交天数
 
@@ -120,11 +126,11 @@ comments: true
     ![Streak](https://streak-stats.demolab.com/?user=用户名)
     ```
 
-    <div class="result" markdown>
+    ///html | div.result
 
     ![Streak](https://streak-stats.demolab.com/?user=liWanr)
 
-    </div>
+    ///
 
 5. 贪吃蛇吃贡献图, 这个需要在 `用户名仓库/.github/workflows/snake.yml` 中使用 Action 生成
 
@@ -132,11 +138,11 @@ comments: true
     ![snake](https://raw.githubusercontent.com/用户名/用户名/output/github-contribution-grid-snake.svg)
     ```
 
-    <div class="result" markdown>
+    ///html | div.result
 
     ![snake](https://raw.githubusercontent.com/liWanr/liWanr/output/github-contribution-grid-snake.svg)
 
-    </div>
+    ///
 
     ```yml
     name: Generate Snake
@@ -168,6 +174,10 @@ comments: true
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     ```
 
+///
+
+///html | div.step
+
 ## 好玩组
 
 1.  
@@ -178,13 +188,13 @@ comments: true
     ![Website](https://img.shields.io/badge/Website-Online-brightgreen)
     ```
 
-    <div class="result" markdown>
+    ///html | div.result
 
     ![views](https://views.whatilearened.today/views/github/liWanr/liWanr.svg)
     ![Coffee](https://img.shields.io/badge/Buy%20Me%20a-Coffee-yellow)
     ![Website](https://img.shields.io/badge/Website-Online-brightgreen)
 
-    </div>
+    ///
 
 2. 打字动画
 
@@ -192,11 +202,11 @@ comments: true
     ![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Heelo,+I'm+liWanr!;Welcome+to+my+Website.;Every+nobody+is+somebody.)
     ```
 
-    <div class="result" markdown>
+    ///html | div.result
 
     ![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Heelo,+I'm+liWanr!;Welcome+to+my+Website.;Every+nobody+is+somebody.)
 
-    </div>
+    ///
 
 3. 活动图
 
@@ -204,8 +214,10 @@ comments: true
     ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=用户名)
     ```
 
-    <div class="result" markdown>
+    ///html | div.result
 
     ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=liWanr)
 
-    </div>
+    ///
+
+///

@@ -14,14 +14,14 @@ comments: true
 
 ## 引言
 
-<small>
+///html | small
 :octicons-light-bulb-16:
 灵感来自 YouTube 上的 UP 主:
 [**24K钢丝**](https://www.youtube.com/watch?v=yb-g4ZaNm9Y), 
 也要感谢
 [**世界上最好的奶龙**](https://dxlcq.cn/)
 提供帮助
-</small>
+///
 
 **首先说明本次用到的装备**
 
@@ -34,6 +34,8 @@ comments: true
 |rufus|刷固件的软件, 也可以用其他的软件, 我用的是rufus-v4.6, [下载地址](https://github.com/pbatard/rufus/releases/download/v4.6/rufus-4.6.exe)|
 
 ## 下载并安装固件
+
+///html | div.step
 
 1. **路由结构**
 
@@ -48,12 +50,12 @@ comments: true
     C --> F[其他设备]
     ```
 
-    <small>
+    ///html | small
     :octicons-light-bulb-16:
     **光猫改桥接：** 我本来想自己找光猫的超级管理员账户和密码, 结果找了半天没找到, 就给宽带师傅打电话, 让他远程给我改的。发现找宽带师傅更快, 一个电话就搞好了, 都不用自己在网上慢慢找慢慢测试
-    </small>
+    ///
 
-1. **将固件刷到软路由中**
+2. **将固件刷到软路由中**
 
     R4S 存储固件的方式是用 TF 卡, 所以只需要将固件刷进 TF 卡就行了。 **设备** 选择 U 盘, **引导类型** 选择下好的 Wrt 固件, 然后 **点击开始**, 等待 **准备就绪** 变成绿色就可以将 TF 插到 R4S 的卡槽中了。
 
@@ -62,20 +64,21 @@ comments: true
     <figcaption>图中 1 代表 U 盘名称, 2 代表固件名称</figcaption>
     </figure>
 
+///
+
 ## 系统基本设置
 
 ### 登录页面
 
-R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了
+R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了。如果你发现你没有网络存储、VPN 这些内容的话, 你下的就是mini的精简版, 请重新找一下 plus 的高大全版。
 
-|地址|默认用户名|默认密码|
-|:-:|:-:|:-:|
-|[192.168.1.1](http://192.168.1.1)|root|password|
-
-:octicons-light-bulb-16:
-如果你发现你没有网络存储、VPN 这些内容的话, 你下的就是mini的精简版, 请重新找一下 plus 的高大全版。
+- 地址：[192.168.1.1](http://192.168.1.1)
+- 默认用户名：`root`
+- 默认密码：`password`
 
 ### 设置 PPPoE 拨号
+
+///html | div.step
 
 1. 在 **网络 --> 接口** 中将全局网络选项中的 IPv6 前缀删掉。
 
@@ -85,9 +88,13 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了
 
     ![3.png](../../assets/images/dev/vpn/bleachwrt/3.png)
 
+///
+
 ## 配置 Lucky
 
 ### **前期准备**
+
+///html | div.step
 
 1. 在 **iStore** 中搜索并下载 **Lucky** 插件, 下载的终端弹窗边缘变成绿色就代表完成
 
@@ -97,9 +104,13 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了
 
     ![5.png](../../assets/images/dev/vpn/bleachwrt/5.png)
 
+///
+
 ### 设置 DDNS 动态域名
 
-1. 点击 **动态域名** :octicons-arrow-right-24: **添加 DDNS 任务**, 以下内容没写的都是默认, 不用改
+///html | div.step
+
+1. 点击 **动态域名 --> 添加 DDNS 任务**, 以下内容没写的都是默认, 不用改
 
     |项目|设置详情|
     |:-|:-|
@@ -120,6 +131,8 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了
     如果同步情况是 **公网 IP 未改变** / **托管商记录一致** 都表示通过了
 
     ![7.png](../../assets/images/dev/vpn/bleachwrt/7.png)
+
+///
 
 ## 配置 OpenVPN
 
@@ -145,16 +158,18 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了
 
 为了允许多台设备在同一时间段连接服务器, 就要在 OpenVPN 的 Server 端修改配置文件, 有 **所有设备共享同一个证书连接接 VPN** 和 **给每个设备单独颁发证书** 两种方法, 我这里偷个懒用第一种简单的方法, 但是不是很安全。
 
+///html | div.step
+
 1. 通过 SSH 远程连接 Wrt 设备并修改 OpenVPN 的配置文件
 
     ```Bash
     vim /etc/config/openvpn
     ```
 
-    <small>
+    ///html | small
     :octicons-light-bulb-16:
     **提示:** 登录的用户名为`root`, 密码为`password`
-    </small>
+    ///
 
 2. 按 ++i++ 进入编辑模式, 在配置文件最后面添加参数
 
@@ -170,16 +185,22 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了
     /etc/init.d/openvpn restart
     ``` 
 
+///
+
 ## 在手机上测试
+
+///html | div.step
 
 1. 在 Wrt 中的 **VPN --> OpenVPN** 上面导出自己的 ***.ovpn** 文件。
 
 2. 然后在手机上下载 [**OpenVPN Connect**](https://openvpn.net/client/) 的软件并导入到手机。一般文件可以选择打开方式, 打开方式就选择 **OpenVPN Connect** 打开。然后在非 Wrt 路由下打开 Wrt 地址, 如果是 Wrt 登录页说明没问题了。
 
-    <small>
+    ///html | small
     :octicons-light-bulb-16:
     **提示:** *非 Wrt 路由下* 表示不要连接 Wrt 以及它下级的所有设备。
-    </small>
+    ///
+
+///
 
 如果想在 Windows / Mac / Linux 的设备上使用 OpenVPN 请查看 [**使用 OpenVPN Client**](openvpn-client/){ data-preview } 文章
 
@@ -191,18 +212,20 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了
 
 在 Wrt 中的 **网络 --> 防火墙 --> 自定义规则** 的末尾添加以下参数, 然后重启防火墙即可。
 
-```Bash
+```Bash { linenums="0" }
 iptables -t nat -A POSTROUTING -o br-lan -j MASQUERADE
 ```
 
-<small>
+///html | small
 :octicons-light-bulb-16:
 **提示:** 参数的含义就是对于从 br-lan 接口发出的所有数据包, 将它们的源 IP 地址修改为 br-lan 接口的 IP 地址, 使内网主机能够通过 NAT 访问外部网络。
-</small>
+///
 
 ![10.png](../../assets/images/dev/vpn/bleachwrt/10.png)
 
 ### 远程访问内网设备测试
+
+///html | div.step
 
 1. 这里通过手机使用流量在 **Windows App** 软件远程连接内网 PC 进行测试。但是首先打开电脑的远程连接功能。
 
@@ -212,6 +235,7 @@ iptables -t nat -A POSTROUTING -o br-lan -j MASQUERADE
 
     ![12.png](../../assets/images/dev/vpn/bleachwrt/12.png)
 
+///
 
 *[TF]: microSD
 *[Windows App]: 微软官方的远程 Windows 工具

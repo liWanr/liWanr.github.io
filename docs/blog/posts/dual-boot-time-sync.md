@@ -11,15 +11,19 @@ comments: true
 
 在装完 Linux 和 Windows 两个系统后大概率会出现时间差异, 但是不必担心, 这是一个很常见的问题, **可以在 Linux 终端中使用这个命令修复这个问题**。
 
-```Bash
+```Bash { linenums="0" }
 sudo timedatectl set-local-rtc 1
 ```
 
 ## 成因解析 {id="cause-analysis"}
 
-出现这种情况的原因是 Windows 和 Linux 它们在默认情况下**看待硬件时间的方式是不一样的**, 计算机有两个主要时间：系统时间[^1] 和硬件时间[^2]。<small>:octicons-light-bulb-16: 除了此之外还有常见的 GMT[^3] 和 UTC[^4] 等时间概念。</small>
+出现这种情况的原因是 Windows 和 Linux 它们在默认情况下**看待硬件时间的方式是不一样的**, 计算机有两个主要时间：系统时间[^1] 和硬件时间[^2]。
 
 当计算机开机时, 首先会读取硬件时间并用于设置系统时间，然后系统时间用于跟踪时间。如果操作系统对系统时间进行任何更改, 例如更改时区等, 它会尝试将此信息同步到硬件时间中。**但默认情况下, Linux 会认为硬件时间中存储的时间是 UTC 时间, 而不是本地时间, 但 Windows 认为硬件时间上存储的时间是本地时间, 这就是问题所在。**
+
+///html | small
+:octicons-light-bulb-16: 除了此之外还有常见的 GMT[^3] 和 UTC[^4] 等时间概念。
+///
 
 ## 举个例子 {id="for-example"}
 
@@ -35,7 +39,7 @@ sudo timedatectl set-local-rtc 1
 
     如果系统都能连网, 就可以自动设置时间，比如要使 Ubuntu 系统自动检查日期和时间, 就可以到 ^^设置(Settings)^^ :octicons-arrow-right-24: ^^系统(System)^^ :octicons-arrow-right-24: ^^日期和时间(Date & Time)^^ 启用 *自动设置日期和时间(Automatic Date & Time)* 和 *自动设置时区(Automatic Time Zone)* 这两个选项, Windows 类似。
    
-2. **让 Linux 使用本地时间作为硬件时间** <small>或者 Windows 反过来</small>
+2. **让 Linux 或者 Windows 使用本地时间作为硬件时间** 
 
     也就是文章开篇说的方法, 因为在 Linux 中进行更改更容易, Ubuntu 和大多数其他 Linux 发行版现在都使用 systemd, 因此可以使用 `timedatectl` 命令来更改设置。
     

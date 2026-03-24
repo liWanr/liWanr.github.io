@@ -12,11 +12,11 @@ comments: true
 
 问题描述：
 
-```Bash { .yaml .no-copy}
-C:\Program Files\WindowsApps\NVIDIACorp.NVIDIAControlPanel_8.1.959.0_x64_5...\nvcplui.exe
+!!! quote
+    C:\Program Files\WindowsApps\NVIDIACorp.NVIDIAControlPanel_8.1.959.0_x64_5...\nvcplui.exe
 
-参数错误
-```
+    参数错误
+
 
 ## 怀疑
 
@@ -36,8 +36,8 @@ sfc /SCANNOW
 
 然后等待这段内容显示出来就好了
 
-```Bash { .yaml .no-copy }
-开始系统扫描。此过程将需要一些时间。
-开始系统扫描的验证阶段。
-验证3%已完成。
-```
+!!! Quote ""
+    开始系统扫描。此过程将需要一些时间。<br>
+    开始系统扫描的验证阶段。<br>
+    验证3%已完成。
+

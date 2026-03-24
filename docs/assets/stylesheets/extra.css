@@ -98,7 +98,7 @@ small {
 @font-face {
     font-family: "MiSans";
     src: url("../fonts/MiSans-Bold.woff2") format("woff2");
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -153,15 +153,17 @@ small {
 }
 
 /* step */
-.md-typeset ol:not(ol ol):not(.footnote ol) {
+.md-typeset .step > ol {
     counter-reset: item;
 }
-.md-typeset ol:not(ol ol):not(.footnote ol) > li {
+
+.md-typeset .step > ol > li {
     position: relative;
     padding-left: 1em;
     list-style: none;
 }
-.md-typeset ol:not(ol ol):not(.footnote ol) > li::before {
+
+.md-typeset .step > ol > li::before {
     position: absolute;
     top: .9px;
     left: -1px;
@@ -180,7 +182,8 @@ small {
     content: counter(item);
     counter-increment: item;
 }
-.md-typeset ol:not(ol ol):not(.footnote ol) > li::after {
+
+.md-typeset .step > ol > li::after {
     position: absolute;
     top: 6px;
     bottom: 1px;

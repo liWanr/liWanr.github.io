@@ -33,32 +33,33 @@ hide:
 
 ## :lucide-circle-user-round: About Me { .no-anchor style="margin-top: 10px;"}
 
-<div class="grid" markdown>
+///html | div.grid
 
-<div markdown>
+///html |div
 
 :lucide-messages-square: **Let's Chat -**
 [**Email**](mailto:itsWanr@outlook.com)
-<small>|</small>
+///html | small|///
 [**GitHub**](https://github.com/liWanr)
-<small>|</small>
+///html | small|///
 [**Telegram**](https://t.me/itsWanr)
-<small>|</small>
+///html | small|///
 [**Gravatar**](https://gravatar.com/liwanr)
 
-笨笨的极客玩家, 掌握 **C**<small><small>&</small></small>**C++**<small> / </small>**Java**<small> / </small>**Python** 等编程语言, 有 **STM32** 等嵌入式设备与 **Android** 数据传输与通信的经验。对**OpenWrt**<small> / </small>**Nginx**<small> / </small>**OpenVPN** 等网络技术与 **Figma**<small> / </small>**Axure** 等 UI<small>/</small>UX 设计感兴趣, 致力于将技术与设计完美结合。参与过蓝牙射频指纹、网联汽车巡航、物联网农业工程、生物特征电子签名等项目。
+笨笨的极客玩家, 掌握 **C**///html | small///html | small&//////**C++**///html | small / ///**Java**///html | small / ///**Python** 等编程语言, 有 **STM32** 等嵌入式设备与 **Android** 数据传输与通信的经验。对**OpenWrt**///html | small / ///**Nginx**///html | small / ///**OpenVPN** 等网络技术与 **Figma**///html | small / ///**Axure** 等 UI///html | small////UX 设计感兴趣, 致力于将技术与设计完美结合。参与过蓝牙射频指纹、网联汽车巡航、物联网农业工程、生物特征电子签名等项目。
 
 平时喜欢打台球和羽毛球, 台球线上可以在
 [**Shooterspool**](https://www.shooterspool.net/){ .no-color }
 找我玩。也比较喜欢听流行音乐, 歌手中意**陈奕迅**,
-觉得**林夕**<small>/ </small>**黄伟文**的填词加**郭伟亮**等老香港作曲就能封神。
-</div>
+觉得**林夕**///html | small/ ///**黄伟文**的填词加**郭伟亮**等老香港作曲就能封神。
 
-<div class="card" markdown>
+///
+
+///html | div.card
 
 :lucide-handshake: **Wanr's Friend -**
-[**Jiao**](https://dxlcq.cn/){ .no-color }^:local-jiao:^ <small>|</small>
-[**Sevenalist**](https://dczcq.cn/){ .no-color }^:lucide-chef-hat:^ <small>|</small>
+[**Jiao**](https://dxlcq.cn/){ .no-color }^:local-jiao:^ ///html | small|///
+[**Sevenalist**](https://dczcq.cn/){ .no-color }^:lucide-chef-hat:^ ///html | small|///
 [**Qvi**](https://qvidx.github.io){ .no-color }^:lucide-squirrel:^
 
 <!-- --- -->
@@ -95,13 +96,13 @@ hide:
 [**`Apple Music`**](https://music.apple.com/)
 [**`Spotify`**](https://open.spotify.com)
 
-</div>
+///
 
-</div>
+///
 
 ## :lucide-graduation-cap: Education { .no-anchor }
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   **2024年9月 - 2025年7月**
 
@@ -111,7 +112,7 @@ hide:
     ---
 
     [**国家卓越工程师教育培养计划**](http://www.moe.gov.cn/srcsite/A08/moe_742/s3860/){ .no-color }
-    <small>|</small>
+    ///html | small|///
     **智能网联汽车**
 
     :lucide-mouse-pointer-click:
@@ -127,7 +128,7 @@ hide:
     ---
 
     **全日制本科**
-    <small>|</small>
+    ///html | small|///
     **数据科学与大数据技术**
 
     :lucide-mouse-pointer-click:
@@ -142,15 +143,15 @@ hide:
     ---
 
     **全日制专科**
-    <small>|</small>
+    ///html | small|///
     **物联网应用技术**
 
     :lucide-mouse-pointer-click:
     [学校官网](https://www.cqny.edu.cn/){ .no-color }
 
-</div>
+///
 
-<small>
+///html | small
 :material-format-quote-open-outline:
 网站基于
 [**Zensical**](https://zensical.org/){ .no-color }
@@ -163,7 +164,7 @@ hide:
 和 **GitHub Page** 发布, 常规文字采用
 [**MiSans**](https://hyperos.mi.com/font){ .no-color }
 字体。
-</small>
+///
 [![lastCommit](https://img.shields.io/github/last-commit/liWanr/liWanr.github.io){ style="width: 96px; position: relative; top: 3.8px;" }](https://github.com/liWanr/liWanr.github.io)
 
 <script>

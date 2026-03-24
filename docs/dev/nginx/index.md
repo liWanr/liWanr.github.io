@@ -17,10 +17,10 @@ sudo apt update
 sudo apt install build-essential libpcre3 libpcre3-dev zlib1g zlib1g-dev openssl libssl-dev curl -y
 ```
 
-<small>
+///html | small
 :octicons-light-bulb-16:
 注意：安装 `libssl-dev` 是确保 TLS SNI support enabled 的关键，因为它提供了编译所需的 OpenSSL 开发头文件。
-</small>
+///
 
 ## 下载 Nginx 源码 {id="download-nginx-src"}
 
@@ -44,34 +44,21 @@ cd nginx-1.26.3
 --with-ld-opt="-L/usr/lib"
 ```
 
-<small>
+///html | small
 关于 TLS SNI Support: 只要你的系统 openssl 版本不低于 0.9.8f（Ubuntu 20.04+ 通常是 1.1.1 或 3.0+），在 configure 阶段会自动检测并显示 TLS SNI support enabled。
-</small>
-
-<!-- 如果没有目录的所有权，就执行这个
-
-```Bash
-sudo chown -R ubuntu:ubuntu ~/website/env/nginx-1.26.3
-sudo chmod -R 755 ~/website/env/nginx-1.26.3
-```
-
-<div class="result" markdown>
-
-第一个 ubuntu 是**用户名**, 第二个 ubuntu 是**用户组名**
-
-</div> -->
+///
 
 ## 编译/安装/验证 {id="build-install-verify"}
 
 首先编译和安装
 
-```Bash
+```Bash { linenums="0" }
 make && make install
 ```
 
 **进入安装目录**并检查
 
-```Bash
+```Bash { linenums="0" }
 ./sbin/nginx -V
 ```
 
@@ -86,29 +73,24 @@ make && make install
 
 === "测试配置"
 
-    ```Bash
+    ```Bash { linenums="0" }
     .sbin/nginx -t
-    ```
-
-    ``` { title="正常输出" .yaml .no-select .no-copy linenums="0"}
-    nginx: the configuration file */conf/nginx.conf syntax is ok
-    nginx: configuration file */conf/nginx.conf test is successful
     ```
 
 === "启动服务"
 
-    ```Bash
+    ```Bash { linenums="0" }
     .sbin/nginx
     ```
 
 === "热重载配置"
 
-    ```Bash
+    ```Bash { linenums="0" }
     .sbin/nginx -s reload
     ```
 
 === "终止服务"
 
-    ```Bash
+    ```Bash { linenums="0" }
     .sbin/nginx -s stop
     ```

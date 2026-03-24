@@ -5,16 +5,16 @@ title: 删掉默认 win+v 快捷键
 #     created: 2026-02-18
 tags:
     - Factoid
-hide:
-    - toc
 comments: true
 ---
+
+///html | div.step
 
 1. Win+V 这个快捷键是剪贴板用户服务注册的, 要强制禁用每用户服务:
 
     首先去 **注册表** 定位到这个目录, 将对应的服务 **Start** 键调至 **4**, **UserServiceFlags** 键调至 **0**
 
-    ```Text
+    ```Text { linenums="0" }
     计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
     ```
 
@@ -32,3 +32,5 @@ comments: true
     -   组策略-计算机配置-管理模板-系统-OS 策略-允许使用剪贴板历史记录：已禁用
 
     -   组策略-计算机配置-管理模板-系统-OS 策略-允许剪贴板在设备间同步：已禁用
+
+///

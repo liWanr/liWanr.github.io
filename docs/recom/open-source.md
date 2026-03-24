@@ -7,24 +7,19 @@ title: 屌爆了的开源项目
 comments: true
 ---
 
-<style>
-hr {
-    height: 0.125rem;
-    border-radius: 5px;
-    background-color: var(--md-accent-fg-color);
-}
-</style>
-
 ![snake](https://raw.githubusercontent.com/liWanr/liWanr/output/github-contribution-grid-snake.svg#only-light)
 ![snake dark](https://raw.githubusercontent.com/liWanr/liWanr/output/github-contribution-grid-snake-dark.svg#only-dark)
 
 ## 网络
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### Nexttrace
 
-    :lucide-mouse-pointer-click: [**GitHub地址**](https://github.com/nxtrace/NTrace-core) | [**发布页**](https://github.com/nxtrace/NTrace-core/releases) | [**官网地址**](https://www.nxtrace.org/)
+    :lucide-mouse-pointer-click:
+    [**GitHub地址**](https://github.com/nxtrace/NTrace-core)
+    | [**发布页**](https://github.com/nxtrace/NTrace-core/releases)
+    | [**官网地址**](https://www.nxtrace.org/)
 
     现代化的**网络路径追踪**工具, 主要用来查看数据包从你的设备到目标服务器之间经过了哪些节点, 以及每一跳的延迟情况。
 
@@ -32,13 +27,14 @@ hr {
 
     - 开源协议: GPL-3.0 license
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### enhanced-FaaS-in-China
 
-    :lucide-mouse-pointer-click: [**GitHub 仓库地址**](https://github.com/xingpingcn/enhanced-FaaS-in-China)
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/xingpingcn/enhanced-FaaS-in-China)
 
     只需将 CNAME 记录从官方记录更改为我制作的记录, 即可提高托管在 Cloudflare、Vercel 或 Netlify 上的网页在中国的访问速度和稳定性。
 
@@ -46,27 +42,31 @@ hr {
 
     - 开源协议: MIT license
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 - ### MyIP
 
-    :lucide-mouse-pointer-click: [**GitHub 仓库地址**](https://github.com/jason5ng32/MyIP) | [**Releases**](https://github.com/jason5ng32/MyIP/releases) | [**官网**](https://ipcheck.ing/#/)
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/jason5ng32/MyIP)
+    | [**Releases**](https://github.com/jason5ng32/MyIP/releases)
+    | [**官网**](https://ipcheck.ing/#/)
 
     全能 IP 工具箱，可以查看 IP 信息，检测网站的可用性，查看 DNS 出口信息，进行网速测试，全球延迟测试，MTR 测试等。他是由一位[**故人**](https://wujiaxian.com/)开发的, 当然他今天还健在哈。
 
     - 开源协议: Security policy / MIT license
 
-</div>
+///
 
 ## AI 工具
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### Vibe Coding cn
 
-    :lucide-mouse-pointer-click: [**GitHub 仓库地址**](https://github.com/2025Emma/vibe-coding-cn)
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/2025Emma/vibe-coding-cn)
     | [**TG 交流群**](https://t.me/glue_coding)
     | [**TG 频道**](https://t.me/tradecat_ai_channel)
 
@@ -74,27 +74,29 @@ hr {
 
     - 开源协议: Security / MIT license
 
-</div>
+///
 
 ## 代理
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### gh-proxy
 
-    :lucide-mouse-pointer-click: [**GitHub 仓库地址**](https://github.com/hunshcn/gh-proxy)
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/hunshcn/gh-proxy)
 
     用于加速 GitHub 资源访问和下载的开源代理项目, 主要通过代理或缓存 GitHub 的文件、发布包、源码归档等内容来提升访问速度和稳定性。
 
     - 开源协议: MIT license
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### sing-box 一键安装 & 管理脚本
 
-    :lucide-mouse-pointer-click: [**GitHub 仓库地址**](https://github.com/233boy/sing-box) ｜ [**作者教程**](https://233boy.com/sing-box/sing-box-script/)
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/233boy/sing-box) ｜ [**作者教程**](https://233boy.com/sing-box/sing-box-script/)
 
     基于 sing-box 的「一键安装 & 管理脚本」, 自动完成安装、更新、配置等工作。脚本会自动创建 REALITY 配置, 适合新手快速搭建多协议并存的科学上网节点。
 
@@ -104,13 +106,14 @@ hr {
 
     - 支持协议: Vless / Hysteria2 / Shadowsocks / Socks 等20个协议
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### Clash Verge Rev
 
-    :lucide-mouse-pointer-click: [**GitHub 仓库地址**](https://github.com/clash-verge-rev/clash-verge-rev)
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/clash-verge-rev/clash-verge-rev)
     | [**发布页**](https://github.com/clash-verge-rev/clash-verge-rev/releases)
     | [**TG 频道**](https://t.me/clash_verge_re)
 
@@ -124,13 +127,14 @@ hr {
 
     - 支持协议: 兼容主流代理协议, 包括 Shadowsocks（SS）、ShadowsocksR（SSR）、SOCKS、Snell、V2Ray（VMess/VLESS）、Trojan 等；具体支持视内核版本和构建而定
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### Clash Meta for Android
     
-    :lucide-mouse-pointer-click: [**GitHub 仓库地址**](https://github.com/MetaCubeX/ClashMetaForAndroid)
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/MetaCubeX/ClashMetaForAndroid)
     | [**发布页**](https://github.com/MetaCubeX/ClashMetaForAndroid/releases)
 
 
@@ -144,15 +148,16 @@ hr {
 
     - 支持协议: 兼容包括 V2Ray（VMess/VLESS）、Shadowsocks / ShadowsocksR、Trojan、SOCKS 以及其它现代或扩展协议（如 Hysteria 等）。具体支持情况取决于内核版本和构建配置
 
-</div>
+///
 
 ## 通信
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### LocalSend
 
-    :lucide-mouse-pointer-click: [**GitHub 仓库地址**](https://github.com/localsend/localsend)
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/localsend/localsend)
     | [**官网地址**](https://localsend.org/)
     | [**发布页**](https://github.com/localsend/localsend/releases)
     | [**Discord**](https://discord.gg/GSRWmQNP87)
@@ -163,15 +168,16 @@ hr {
 
     - 支持平台: Android / iOS / macOS / Windows / Linux（跨平台）
 
-</div>
+///
 
 ## 娱乐
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### XiaoMusic
 
-    :lucide-mouse-pointer-click: [**GitHub 仓库地址**](https://github.com/hanxi/xiaomusic)
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/hanxi/xiaomusic)
     | [**官方网站**](http://xdocs.hanxi.cc/)
     | [**发布页**](https://github.com/hanxi/xiaomusic/releases)
 
@@ -183,4 +189,4 @@ hr {
 
     - 支持格式: mp3 / flac / wav / ape / ogg / m4a
 
-</div>
+///

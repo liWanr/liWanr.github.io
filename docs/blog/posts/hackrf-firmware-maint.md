@@ -17,27 +17,29 @@ comments: true
 
 在终端中输入以下命令，查看 HackRF One 的驱动与固件信息。如果发现 hackrf_info version 和 libhackrf version 都 **显示为 "unknown"** ，这通常意味着系统安装的驱动版本与设备固件版本不匹配，此时需要进行驱动升级。
 
-```bash
+```bash { linenums="0" }
 hackrf_info
 ```
 
-<small>
+///html| div.result
+
+```shell-session { linenums="0" .yaml .no-copy .no-select }
+ubuntu@ubuntu:~$ hackrf_info
+hackrf info version:unknown
+libhackrf version: unknown (0.5)
+Found HackRF
+Index: 0
+Serial number: 000000000000000026b468dc3464498f
+Board ID Number: 2 (HackRF One)
+Firmware Version: 2018.01.1 (API:1.02)
+```
+
+///
+
+///html | small
 :octicons-light-bulb-16:
 **提示：** 在升级前，建议先确认当前固件版本与驱动版本是否兼容，避免因版本冲突引发问题。
-</small>
-
-!!! Quote "输出"
-
-    ```shell-session { .yaml .no-copy .no-select }
-    ubuntu@ubuntu:~$ hackrf_info
-    hackrf info version:unknown
-    libhackrf version: unknown (0.5)
-    Found HackRF
-    Index: 0
-    Serial number: 000000000000000026b468dc3464498f
-    Board ID Number: 2 (HackRF One)
-    Firmware Version: 2018.01.1 (API:1.02)
-    ```
+///
 
 |环境内容|版本|
 |:-|:-|
@@ -54,16 +56,18 @@ hackrf_info
 sudo apt-get install gnuradio hackrf libhackrf-dev \
     gqrx-sdr rtl-sdr gr-osmosdr osmo-sdr libusb-1.0
 ```
-<small>
+///html | small
 :octicons-light-bulb-16:
 **提示：** 确保所有包都能正常安装，避免因缺失依赖导致安装失败。
-</small>
+///
 
 ## 下载发行版安装包
 
 推荐直接下载官方发布的稳定版本。我用的是 [**HackRF Release 2021.03.1**](https://github.com/greatscottgadgets/hackrf/releases/download/v2021.03.1/hackrf-2021.03.1.tar.xz) ，如果需要其他版本，可以在 [**GitHub 官方仓库**](https://github.com/greatscottgadgets/hackrf/releases) 中选择合适版本。
 
 ## 解压与安装
+
+///html | div.step
 
 1. 解压发行包文件
 
@@ -88,10 +92,12 @@ sudo apt-get install gnuradio hackrf libhackrf-dev \
     sudo ldconfig
     ```
 
-<small>
+///
+
+///html | small
 :octicons-light-bulb-16:
 **注意：** 如果出现编译错误，建议检查 cmake 版本和依赖包是否完整。
-</small>
+///
 
 ## 固件升级
 
@@ -99,7 +105,7 @@ sudo apt-get install gnuradio hackrf libhackrf-dev \
 
 如果 Firmware Version 版本过旧，需要进行 Flash 固件更新，在 firmware-bin 目录下执行以下命令：
 
-```bash
+```bash { linenums="0" }
 hackrf_spiflash -w hackrf_one_usb.bin
 ```
 
@@ -107,35 +113,33 @@ hackrf_spiflash -w hackrf_one_usb.bin
 
 从 2021 版本开始，CPLD 已包含在固件中，并在加载固件时自动更新，因此通常无需单独更新。但若你的固件版本较旧，仍需手动更新 CPLD：
 
-```bash
+```bash { linenums="0" }
 hackrf_cpldjtag -x hackrf_cpld_default.xsvf
 ```
 
-<small>
+///html | small
 :octicons-light-bulb-16:
 **提示：** 仅适用于 2018.01.1 版本以上
-</small>
+///
 
 ## 安装结果验证
 
 在终端中输入以下命令，确认设备信息是否正确更新。如果信息显示完整且版本号正确，说明设备已成功配置和更新。
 
-```bash
+```bash { linenums="0" }
 hackrf_info
 ```
 
-### 最终效果展示
+///html | div.result
 
-!!! Quote "服务器输出"
-
-    ```shell-session { .yaml .no-copy .no-select }
-    ubuntu@ubuntu:~$ hackrf_info
-    hackrf_info version: 2021.03.1
-    libhackrf version: 2021.03.1 (0.6)
-    Found HackRF
-    Index: 0
-    Serial number: 0000000000000000f77c60dc255a78c3
-    Board ID Number: 2 (HackRF One)
-    Firmware Version: 2021.03.1 (API:1.04)
-    Part ID Number: 0xa000cb3c 0x004f4359
-    ```
+```shell-session { linenums="0" .yaml .no-copy .no-select }
+ubuntu@ubuntu:~$ hackrf_info
+hackrf_info version: 2021.03.1
+libhackrf version: 2021.03.1 (0.6)
+Found HackRF
+Index: 0
+Serial number: 0000000000000000f77c60dc255a78c3
+Board ID Number: 2 (HackRF One)
+Firmware Version: 2021.03.1 (API:1.04)
+Part ID Number: 0xa000cb3c 0x004f4359
+```

@@ -6,13 +6,7 @@ title: 屌爆了的网站
 #     updated: 2026-01-18
 ---
 
-<style>
-.md-typeset a{
-    color: var(--md-default-fg-color) !important;
-}
-</style>
-
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### 科学上网
 
@@ -23,9 +17,9 @@ title: 屌爆了的网站
     | [**赔钱机场(村外)**](https://xn--mes358aby2apfg.com/register?code=Hw7cqluV)
     | [**Hero SMS**](https://hero-sms.com/services)
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### Net.
 
@@ -35,9 +29,9 @@ title: 屌爆了的网站
     [**Down for Everyone or Just Me**](https://downforeveryoneorjustme.com/)
     | [**Probeops**](https://probeops.com/tools)
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### Web Dev
 
@@ -50,9 +44,9 @@ title: 屌爆了的网站
     | [**Icons8**](https://icons8.com/)
     | [**阿里图库**](https://www.iconfont.cn/)
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### Minecraft
 
@@ -65,9 +59,9 @@ title: 屌爆了的网站
     | [**皮肤站**](https://littleskin.cn/)
     | [**区块查询工具**](https://www.chunkbase.com/)
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### 影音
 
@@ -78,9 +72,9 @@ title: 屌爆了的网站
     | [**大米星球**](https://dmr0x2.com/)
     | [**Spotify 下载器**](https://spotimate.io/#)
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### Tec.
 
@@ -90,9 +84,9 @@ title: 屌爆了的网站
     [**果核剥壳**](https://www.ghxi.com/)
     | [**电子印章**](http://web.aa6666.com/)
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### Game
 
@@ -104,9 +98,9 @@ title: 屌爆了的网站
     | [**CE 修改器**](https://www.cheatengine.org/)
     | [**麻将理牌**](https://tenhou.net/2/)
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### 设计素材
 
@@ -118,9 +112,9 @@ title: 屌爆了的网站
     | [**Anime.js**](https://animejs.com/documentation/events/onscroll/scrollobserver-settings/target)
     | [**Awwwards**](https://www.awwwards.com/websites/sites_of_the_day/)
 
-</div>
+///
 
-<div class="grid cards" markdown>
+///html | div.grid.cards
 
 -   ### 镜像系统
 
@@ -132,6 +126,6 @@ title: 屌爆了的网站
     | [**CentOS**](https://vault.centos.org/)
     | [**Debian**](http://cdimage.debian.org/cdimage/archive/)
 
-</div>
+///
 
 

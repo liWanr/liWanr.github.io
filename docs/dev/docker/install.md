@@ -22,7 +22,7 @@ comments: true
 
         需要卸载的软件包：`docker.io` / `docker-compose` / `docker-compose-v2` / `docker-doc` / `podman-docker` / `containerd` / `runc`
 
-        ```Bash { title="一次性解决所有冲突" }
+        ```Bash { linenums="0" title="一次性解决所有冲突" }
         sudo apt remove $(dpkg --get-selections docker.io docker-compose docker-compose-v2 docker-doc podman-docker containerd runc | cut -f1)
         ```
 
@@ -31,6 +31,8 @@ comments: true
 在全新主机上首次安装 Docker 之前, 您需要设置 Docker apt 仓库。之后, 您可以从该仓库安装和更新 Docker。
 
 #### 方法一：使用 `apt` 安装 { id="install-using-the-repository" }
+
+///html | div.step
 
 1. 设置 Docker 的 apt 仓库
 
@@ -83,9 +85,13 @@ comments: true
         sudo apt install -y docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
         ```
 
+///
+
 #### 方法二：使用软件包安装 { id="install-from-a-package" }
 
 如果无法使用 `apt` 安装 Docker, 可以通过 `.deb` 文件安装。但是升级的时候就需要手动下载新文件。
+
+///html | div.step
 
 1. 去[**官网列表**](https://download.docker.com/linux/ubuntu/dists/)中选择 Ubuntu 版本, 并下载安装 `pool/stable/` 目录下对应架构软件包的 `.deb` 文件。
 
@@ -99,7 +105,11 @@ comments: true
     ./docker-compose-plugin_<version>_<arch>.deb
     ```
     
+///
+
 #### 检查 { id="verify" }
+
+///html | div.step
 
 1. 安装后, Docker 服务将自动启动。要验证 Docker 是否正在运行, 请使用：
 
@@ -122,7 +132,11 @@ comments: true
     > **能找到有这个就行了**<br>
     > This message shows that your installation appears to be working correctly.
 
+///
+
 #### 卸载 { id="uninstall" }
+
+///html | div.step
 
 1. 卸载软件包
 
@@ -146,3 +160,4 @@ comments: true
 
 !!! tip "如果你修改过配置文件, 需要手动删除。"
 
+///

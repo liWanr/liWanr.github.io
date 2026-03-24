@@ -9,6 +9,8 @@ comments: true
 
 ## 部署 Nginx
 
+///html | div.step
+
 1. 搜索并拉取 Nginx 镜像
 
     ```Bash { linenums="0" }
@@ -92,3 +94,5 @@ comments: true
 
     1. 端口映射，让本机的 80 端口映射到 nginx 容器的 80 端口
     2. 数据卷，让本地当前目录(`$PWD`)下的 `/conf/nginx.conf` Nginx 配置文件映挂载到容器中，其余的数据卷是同样的道理，「**配置文件要提前准备好**」
+
+///

@@ -20,9 +20,9 @@ Vim 与普通编辑器的最大区别在于它有模式。
 
 - **可视模式**: 按 ++v++ 进入。用于选中文本块。
 
-<small>
+///html | small
 :octicons-light-bulb-16:
-提示：无论你在哪, 按 ++esc++ 键永远能带你回到普通模式。</small>
+提示：无论你在哪, 按 ++esc++ 键永远能带你回到普通模式。///
 
 ## 基础操作 {id="basic-operations"}
 
@@ -84,7 +84,7 @@ Vim 与普通编辑器的最大区别在于它有模式。
 
 Vim 的强大在于定制。你可以在 `home` 目录下创建 `.vimrc` 文件用于配置 vim 的一些基本内容
 
-```Bash
+```Bash { linenums="0" }
 vim ~/.vimrc
 ```
 
