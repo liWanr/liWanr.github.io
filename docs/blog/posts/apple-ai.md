@@ -1,6 +1,6 @@
 ---
 icon: local/apple-ai
-title: Mac 强开 Apple 智能
+title: Mac 强开 Apple AI
 # date:
 #   created: 2026-03-26
 comments: true
