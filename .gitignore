@@ -8,3 +8,6 @@ reproduction/*
 # 本地部署文件
 local-build.sh
 nginx.conf
+
+# 原始的配置文件
+zensical_old.toml
