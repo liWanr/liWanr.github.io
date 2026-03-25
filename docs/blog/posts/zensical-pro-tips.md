@@ -152,15 +152,15 @@ def bubble_sort(items): # (1)!
 
 #### 字体选择与下载
 
-首先去 [**MiSans 官网**](https://hyperos.mi.com/font) 下载字体, 有很多选项, 我选择的是第一个 [MiSans](https://hyperos.mi.com/font/details/sc), 下载解压之后有很多目录, 分别代表不同的格式, 选一种来用就行了, 我选的是可变字体, 文件是 **MiSansVF.ttf**
+首先去 [**MiSans 官网**](https://hyperos.mi.com/font) 下载字体, 有很多选项, 我选择的是第一个 [MiSans](https://hyperos.mi.com/font/details/sc), 下载解压之后有很多目录, 分别代表不同的格式, 选一种来用就行了, 我用的是 **woff2**。
 
 |目录名称|格式与特征|
 |-|-|
 |ttf|经典桌面字体格式, 兼容性最强, 几乎所有系统都能直接用, 适合本地安装, 但文件大、没压缩、网页加载慢, 不推荐做网页主字体。|
 |otf|TTF 的升级版, 支持更多高级排版特性, 如连字、SS01、上标、分式等, 质量更高, macOS 表现优秀, 但体积同样大、网页效率低, 主要用于设计和印刷。|
 |woff|网页专用格式, 对 TTF/OTF 进行 zlib 压缩, 体积小 30–50%、保留所有特性、兼容 IE9+, 但压缩不如 WOFF2, 现在多做 fallback。|
-|woff2|WOFF 的升级版, 用 Brotli 压缩, 体积再小 20–30%、加载最快、特性完整、现代浏览器全支持, 是当前网页字体的首选。|
-|**可变字体**|**现代技术, 一个文件就能控制所有字重、宽度、斜体等变化, 体积最小、加载高效、过渡平滑, 适合字重多的字体族, 是简化配置的好选择。**|
+|**woff2**|**WOFF 的升级版, 用 Brotli 压缩, 体积再小 20–30%、加载最快、特性完整、现代浏览器全支持, 是当前网页字体的首选。**|
+|可变字体|现代技术, 一个文件就能控制所有字重、宽度、斜体等变化, 体积最小、加载高效、过渡平滑, 适合字重多的字体族, 是简化配置的好选择。|
 |.DS_Store|这不是字体文件, 是 macOS 系统自动生成的隐藏文件（桌面设置缓存）, 完全无用。直接忽略或删除它即可, 不会影响字体使用。|
 
 #### 装载与配置
@@ -182,11 +182,11 @@ def bubble_sort(items): # (1)!
 
     ```css
     @font-face {
-        font-family: "MiSansVF";
-        src: url("../assets/fonts/MiSansVF.ttf") format("truetype");
-        font-weight: 100 900;
-        font-style: normal;
-        font-display: swap;
+    font-family: "MiSans";
+    src: url("../fonts/MiSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
     }
     ```
 
@@ -207,7 +207,7 @@ def bubble_sort(items): # (1)!
 
     ```css
     :root {
-        --md-text-font: "MiSansVF", sans-serif; 
+        --md-text-font: "MiSans", sans-serif; 
         /* 尽量使用 --md-text-font 等内置变量去定义字体,
             而不是直接使用 font-family,
             因为这样做会禁用系统字体的回退。 */
@@ -220,7 +220,7 @@ def bubble_sort(items): # (1)!
 
     ```css
     :root {
-        --md-code-font: "MiSansVF", sans-serif;
+        --md-code-font: "MiSans", sans-serif;
     }
     ```
 
