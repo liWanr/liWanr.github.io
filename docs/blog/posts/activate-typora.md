@@ -8,11 +8,10 @@ hide:
 comments: true
 ---
 
-!!! warning "仅适用于 `#!text 1.0.3` 版本的 Typora"
-
-    - [**通用激活文件**](https://liwanr.com/public/Tec/app.asar) | [**Typora v1.0.3 For Ubuntu/Debian**](https://liwanr.com/public/Tec/typora_1.0.3_amd64.deb) | [官网下载地址](https://typora.io/releases/all) | [Windows 绿色版](https://liwanr.com/public/Tec/Typora%201.4.8.7z)
-
-    - 本教程 Ubuntu/Debian 可以无脑 CV，其他 Linux/Mac 按流程激活, Windows 直接下载即可使用
+> [!warning] 仅适用于 `#!text 1.0.3` 版本的 Typora
+> - [**通用激活文件**](https://liwanr.com/public/Tec/app.asar) | [**Typora v1.0.3 For Ubuntu/Debian**](https://liwanr.com/public/Tec/typora_1.0.3_amd64.deb) | [官网下载地址](https://typora.io/releases/all) | [Windows 绿色版](https://liwanr.com/public/Tec/Typora%201.4.8.7z)
+>
+> - 本教程 Ubuntu/Debian 可以无脑 CV，其他 Linux/Mac 按流程激活, Windows 直接下载即可使用
 
 ///html | div.step
 

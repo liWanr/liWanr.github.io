@@ -19,10 +19,10 @@ comments: true
 
 今天用 U 盘给笔记本重新刷 Ubuntu 系统的时候, 死活进不去, 一直显示这个内容
 
-!!! bug "错误内容"
-    
-    **Verifiying shim SBAT data failed: Security Policy Violation
-    Something has gone seriously wrong: SBAT self-check failed: Security Policy Violation**
+> [!bug]
+> Verifiying shim SBAT data failed: Security Policy Violation
+>
+> Something has gone seriously wrong: SBAT self-check failed: Security Policy Violation
 
 然后去网上找方法, 就是进入 Bios 之后, 关闭 security boot 就好了, 一般在高级设置中。
 我是 ROG 的电脑, 进入 Bios 之后按 `F7` 进入高级设置后有一栏 `security`, 进去之后有一个 `security boot`, 将选项设置为 `Disabled` 即关闭状态然后按 `F10` 保存重启就好了。

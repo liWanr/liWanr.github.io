@@ -10,13 +10,10 @@ comments: true
  
 ##  前言
 
-问题描述：
-
-!!! quote
-    C:\Program Files\WindowsApps\NVIDIACorp.NVIDIAControlPanel_8.1.959.0_x64_5...\nvcplui.exe
-
-    参数错误
-
+> [!quete] 问题描述
+> C:\Program Files\WindowsApps\NVIDIACorp.NVIDIAControlPanel_8.1.959.0_x64_5...\nvcplui.exe
+>
+> 参数错误
 
 ## 怀疑
 
@@ -36,8 +33,10 @@ sfc /SCANNOW
 
 然后等待这段内容显示出来就好了
 
-!!! Quote ""
-    开始系统扫描。此过程将需要一些时间。<br>
-    开始系统扫描的验证阶段。<br>
-    验证3%已完成。
-
+> [!quote]
+>
+> 开始系统扫描。此过程将需要一些时间。
+>
+> 开始系统扫描的验证阶段。
+>
+> 验证3%已完成。
