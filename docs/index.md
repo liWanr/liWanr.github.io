@@ -31,7 +31,7 @@ hide:
     <em>Hello, I'm liWanr!</em>
 </h2>
 
-## :lucide-circle-user-round: About Me { .no-anchor style="margin-top: 10px;"}
+## :local-user: About Me { .no-anchor style="margin-top: 10px;"}
 
 ///html | div.grid
 
@@ -93,7 +93,7 @@ hide:
 
 ///
 
-## :lucide-graduation-cap: Education { .no-anchor }
+## :local-student: Education { .no-anchor }
 
 ///html | div.grid.cards
 
@@ -142,7 +142,7 @@ hide:
 ///
 
 ///html | small
-:material-format-quote-open-outline:
+:local-quote:
 网站基于
 [**Zensical**](https://zensical.org/){ .no-color }
 搭建，代码通过

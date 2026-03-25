@@ -1,5 +1,5 @@
 ---
-icon: lucide/audio-waveform
+icon: local/hackrf
 title: HackRF 固件维护
 # date:
 #     created: 2025-03-17

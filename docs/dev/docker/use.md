@@ -1,5 +1,5 @@
 ---
-icon: material/application-import
+icon: octicons/terminal-16
 title: 服务与架构
 # date:
 #     craeted: 2026-03-05

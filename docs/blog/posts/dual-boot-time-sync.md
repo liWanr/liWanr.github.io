@@ -1,5 +1,5 @@
 ---
-icon: lucide/hourglass
+icon: local/time-sync
 title: 双系统时间同步
 # date:
 #   created: 2024-12-25

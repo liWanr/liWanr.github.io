@@ -1,5 +1,5 @@
 ---
-icon: lucide/workflow
+icon: local/connect
 title: 异地组网
 # date:
 #     created: 2025-01-20

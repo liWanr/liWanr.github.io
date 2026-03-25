@@ -1,5 +1,5 @@
 ---
-icon: octicons/desktop-download-16
+icon: octicons/download-16
 title: 安装
 # date:
 #     craeted: 2026-03-04
