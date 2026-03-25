@@ -77,7 +77,7 @@ comments: true
 1. 在 Linux 上可以从 [GitHub](https://github.com/docker/compose/releases) 中下载二进制文件包进行安装:
 
     ```Bash { linenums="0" }
-    sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    sudo curl -SL https://github.com/docker/compose/releases/download/v5.0.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
     ```
 
 2. 将可执行权限给这个二进制文件
