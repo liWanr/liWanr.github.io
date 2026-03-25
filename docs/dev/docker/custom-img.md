@@ -58,7 +58,7 @@ comments: true
 | STOPSIGNAL | 设置发送给容器用于退出的系统调用信号。 |
 | SHELL | 覆盖 Docker 中默认的 shell，在 `RUN | CMD | ENTERPOINT` 执行命令的时候使用。 |
 
-## 服务编排
+## 服务编排 `dockercompose`
 
 简单说，就是「**让一堆服务像团队一样协作工作**」的规则和工具。
 
@@ -105,3 +105,7 @@ sudo rm /usr/local/bin/docker-compose
 ```
 
 ### 使用
+
+先留空等着写 `vue` + `springboot` + `mysql` 的 `docker-compose.yml` 示例，后续再写一些 `docker-compose` 的使用细节。
+
+## 私有仓库
