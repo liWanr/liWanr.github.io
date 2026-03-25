@@ -43,8 +43,8 @@ comments: true
 
     ``` mermaid
     graph LR
-    A[**光猫**<br>桥接模式] -->|2.5G --> WAN| B[**R4S**<br>PPPoE拨号];
-    B -->|LAN --> WAN| C[**路由器/交换机**<br>路由器为桥接模式]
+    A[<strong>光猫</strong><br>桥接模式] -->|2.5G --> WAN| B[<strong>R4S</strong><br>PPPoE拨号];
+    B -->|LAN --> WAN| C[<strong>路由器/交换机</strong><br>路由器为桥接模式]
     C --> D[手机]
     C --> E[电脑]
     C --> F[其他设备]
@@ -61,7 +61,9 @@ comments: true
 
     <figure markdown="span">
     ![1.png](../../assets/images/dev/vpn/bleachwrt/1.png)
-    <figcaption>图中 1 代表 U 盘名称, 2 代表固件名称</figcaption>
+    ///caption
+    图中 1 代表 U 盘名称, 2 代表固件名称
+    ///
     </figure>
 
 ///
