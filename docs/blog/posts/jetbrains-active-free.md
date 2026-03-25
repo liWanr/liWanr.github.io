@@ -17,17 +17,21 @@ comments: true
 
 3. **运行插件**: 打开解压的目录
 
-    === ":fontawesome-brands-windows: Windows"
+    ///tab | :fontawesome-brands-windows: Windows
 
-        ``` bash { linenums="0" }
-        scripts/install-all-users.vbs
-        ```
+    ``` bash { linenums="0" }
+    scripts/install-all-users.vbs
+    ```
 
-    === ":simple-apple: MacOS | :simple-linux: Linux"
+    ///
 
-        ``` bash { linenums="0" }
-        scripts/install.sh
-        ```
+    ///tab | :simple-apple: MacOS | :simple-linux: Linux
+
+    ``` bash { linenums="0" }
+    scripts/install.sh
+    ```
+
+    ///
 
 4. **激活**: 打开要激活的产品，届时会提示你激活
 
