@@ -24,7 +24,7 @@ comments: true
 
 ### 其他 Linux 发行版 { id="other-linux-distributions" }
 
-> [!note} 这些方法在某些情况下可能可用, 但 Docker 并不会对这些衍生发行版进行专门测试或验证。
+> [!note] 这些方法在某些情况下可能可用, 但 Docker 并不会对这些衍生发行版进行专门测试或验证。
 > - **如果是 Debian 的衍生版本**, 例如 「BunsenLabs Linux」、「Kali Linux」 或 「LMDE」（基于 Debian 的 Linux Mint）, 可以参考 Debian 的安装说明。安装时, 将文档中的 Debian 版本替换为你当前发行版所对应的 Debian 版本, 具体对应关系可查阅你所用发行版的官方文档。
 > - 同样地, **如果是 Ubuntu 的衍生版本**, 例如 「Kubuntu」、「Lubuntu」 或 「Xubuntu」, 可以参考 Ubuntu 的安装说明, 并将版本号替换为与你发行版对应的 Ubuntu 版本。对应关系请查看发行版文档。
 > - 有些 Linux 发行版会在自己的软件仓库中提供 Docker 软件包。这些软件包由发行版的维护者构建和维护, 可能在配置上有所不同, 或基于修改过的源码构建。Docker 官方不参与这些软件包的发布与维护。如果遇到相关问题, 请向对应发行版的 issue 跟踪系统反馈。
