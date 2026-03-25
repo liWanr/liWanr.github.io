@@ -170,7 +170,7 @@ extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/search.css
 
-javascript:
+extra_javascript:
   - path: assets/javascripts/extra.js
     async: true
 
