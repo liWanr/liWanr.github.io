@@ -95,3 +95,13 @@ comments: true
     1. `--version` 也可以
 
 ///
+
+### 卸载
+
+卸载二进制文件即可
+
+```Bash { linenums="0" }
+sudo rm /usr/local/bin/docker-compose
+```
+
+### 使用
