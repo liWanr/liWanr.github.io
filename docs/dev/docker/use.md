@@ -6,111 +6,117 @@ title: 服务与架构
 comments: true
 ---
 
-由于一般都是用 `sudo` 安装的 docker，所以使用 docker 的时候也需要用管理员权限运行命令，一般开发 / 测试 / 个人服务器环境下推荐将非 root 用户添加进 docker 组里面，这样就不用重复输入 `sudo` 提升权限了。
+由于一般都是用 `sudo` 安装的 docker，所以使用 docker 的时候也需要用管理员权限运行命令，一般开发 / 测试 / 个人服务器环境下推荐将非 root 用户添加进 docker 组里面，这样就不用重复输入 `sudo` 提升权限了。将非 root 用户添加进 docker 组按照这个流程：
 
-??? note "将非 root 用户添加进 docker 组"
+///html | div.step
 
-    ///html | div.step
+1. 把用户加入 docker 组
 
-    1. 把用户加入 docker 组
+    ```Bash { linenums="0" }
+    sudo usermod -aG docker $USER
+    ```
 
-        ```Bash { linenums="0" }
-        sudo usermod -aG docker $USER
-        ```
+2. 重新登录
 
-    2. 重新登录
+    ```Bash { linenums="0" }
+    exit
+    ```
 
-        ```Bash { linenums="0" }
-        exit
-        ```
+3. 重启 Docker
 
-    3. 重启 Docker
+    ```Bash { linenums="0" }
+    sudo systemctl restart docker
+    ```
 
-        ```Bash { linenums="0" }
-        sudo systemctl restart docker
-        ```
+4. 再试一下命令
+    
+    ```Bash { linenums="0" }
+    docker images
+    ```
 
-    4. 再试一下命令
-        
-        ```Bash { linenums="0" }
-        docker images
-        ```
-
-    ///
+///
 
 **但是在生产环境中不建议这样使用**，因为 docker 组的权限几乎等价于“能以 root 权限运行容器”。攻击者只要拿到这个用户的 shell，就可以通过 `docker run -v /:/host ...` 等方式逃逸到宿主机，读写任意文件，甚至提权为 root。
 
-=== "启停服务"
+///tab | 启停服务
 
-    ///html | div.grid.cards
+///html | div.grid.cards
 
-    -   启动服务
+-   启动服务
 
-        ```Bash { linenums="0" }
-        systemctl start docker
-        ```
+    ```Bash { linenums="0" }
+    systemctl start docker
+    ```
 
-    -   停止服务
+-   停止服务
 
-        ```Bash { linenums="0" }
-        systemctl stop docker
-        ```
-    
-    ///
+    ```Bash { linenums="0" }
+    systemctl stop docker
+    ```
 
-=== "重启&重载"
+///
 
-    ///html | div.grid.cards
+///
 
-    -   重启服务
+///tab | 重启&重载
 
-        ```Bash { linenums="0" }
-        systemctl restart docker
-        ```
+///html | div.grid.cards
 
-    -   重载服务
+-   重启服务
 
-        ```Bash { linenums="0" }
-        systemctl reload docker
-        ```
-    
-    ///
+    ```Bash { linenums="0" }
+    systemctl restart docker
+    ```
 
-=== "查看状态"
+-   重载服务
 
-    ///html | div.grid.cards
+    ```Bash { linenums="0" }
+    systemctl reload docker
+    ```
 
-    -   查看运行状态
+///
 
-        ```Bash { linenums="0" }
-        systemctl status docker
-        ```
+///
 
-    -   查看依赖关系
+///tab | 查看状态
 
-        ```Bash { linenums="0" }
-        systemctl list-dependencies docker.service
-        ```
+///html | div.grid.cards
 
-    ///
+-   查看运行状态
 
-=== "开启自启"
+    ```Bash { linenums="0" }
+    systemctl status docker
+    ```
 
-    ///html | div.grid.cards
+-   查看依赖关系
 
-    -   开启开机自启服务
+    ```Bash { linenums="0" }
+    systemctl list-dependencies docker.service
+    ```
 
-        ```Bash { linenums="0" }
-        systemctl enable docker
-        ```
+///
 
-    -   关闭开机自启服务
+///
 
-        ```Bash { linenums="0" }
-        systemctl disable docker
-        ```
+///tab | 开启自启
 
-    ///
+///html | div.grid.cards
+
+-   开启开机自启服务
+
+    ```Bash { linenums="0" }
+    systemctl enable docker
+    ```
+
+-   关闭开机自启服务
+
+    ```Bash { linenums="0" }
+    systemctl disable docker
+    ```
+
+///
+
+///
 
 ## 镜像 { id="images" }
 

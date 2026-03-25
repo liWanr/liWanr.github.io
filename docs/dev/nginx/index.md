@@ -50,47 +50,61 @@ cd nginx-1.26.3
 
 ## 编译/安装/验证 {id="build-install-verify"}
 
-首先编译和安装
+///html | div.step
 
-```Bash { linenums="0" }
-make && make install
-```
+1. 首先编译和安装
 
-**进入安装目录**并检查
+    ```Bash { linenums="0" }
+    make && make install
+    ```
 
-```Bash { linenums="0" }
-./sbin/nginx -V
-```
+2. **进入安装目录**并检查
 
-:   > nginx version: nginx/1.26.3<br>
-    > built by gcc 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3)<br>
-    > built with OpenSSL 3.0.2 15 Mar 2022<br>
-    > TLS SNI support enabled<br>
-    > configure arguments: --prefix=/usr/local/nginx --with-http_ssl_module --with-http_v2_module --with-cc-opt=-I/usr/include --with-ld-opt=-L/usr/lib
+    ```Bash { linenums="0" }
+    ./sbin/nginx -V
+    ```
+
+    ///html | div.result
+
+    nginx version: nginx/1.26.3<br>
+    built by gcc 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.3)<br>
+    built with OpenSSL 3.0.2 15 Mar 2022<br>
+    TLS SNI support enabled<br>
+    configure arguments: --prefix=/usr/local/nginx --with-http_ssl_module --with-http_v2_module --with-cc-opt=-I/usr/include --with-ld-opt=-L/usr/lib
+
+    ///
 
 
 ## 基本命令
 
-=== "测试配置"
+///tab | 测试配置
 
-    ```Bash { linenums="0" }
-    .sbin/nginx -t
-    ```
+```Bash { linenums="0" }
+.sbin/nginx -t
+```
 
-=== "启动服务"
+///
 
-    ```Bash { linenums="0" }
-    .sbin/nginx
-    ```
+///tab | 启动服务
 
-=== "热重载配置"
+```Bash { linenums="0" }
+.sbin/nginx
+```
 
-    ```Bash { linenums="0" }
-    .sbin/nginx -s reload
-    ```
+///
 
-=== "终止服务"
+///tab | 热重载配置
 
-    ```Bash { linenums="0" }
-    .sbin/nginx -s stop
-    ```
+```Bash { linenums="0" }
+.sbin/nginx -s reload
+```
+
+///
+
+///tab | 终止服务
+
+```Bash { linenums="0" }
+.sbin/nginx -s stop
+```
+
+///

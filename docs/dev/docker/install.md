@@ -12,19 +12,18 @@ comments: true
 
 ## Ubuntu
 
-!!! failure "前提"
-
-    1. 容器暴露端口的时候会绕过 ufw 或 firewalld 管理的防火墙规则。所以建议使用 iptables-nft 和 iptables-legacy 来管理服务器的防火墙规则。
-    
-    2. 仅支持 Ubuntu 22.04 / 24.04 / 25.10。并且都兼容 x86_64/amd64、armhf、arm64、s390x 和 ppc64le(ppc64el)架构。
-
-    3. Linux 可能会自带非官方的 Docker 软件包, 可能会和官方的软件包有冲突, 所以最好卸载官方的软件包。并且 Docker 依赖于 `containerd` 和 `runc`, 并捆绑为 `containerd.io` 包, 如果之前安装过尽量卸载, 一面版本冲突。
-
-        需要卸载的软件包：`docker.io` / `docker-compose` / `docker-compose-v2` / `docker-doc` / `podman-docker` / `containerd` / `runc`
-
-        ```Bash { linenums="0" title="一次性解决所有冲突" }
-        sudo apt remove $(dpkg --get-selections docker.io docker-compose docker-compose-v2 docker-doc podman-docker containerd runc | cut -f1)
-        ```
+> [!failure] 前提
+> 1. 容器暴露端口的时候会绕过 ufw 或 firewalld 管理的防火墙规则。所以建议使用 iptables-nft 和 iptables-legacy 来管理服务器的防火墙规则。
+>
+> 2. 仅支持 Ubuntu 22.04 / 24.04 / 25.10。并且都兼容 x86_64/amd64、armhf、arm64、s390x 和 ppc64le(ppc64el)架构。
+> 
+> 3. Linux 可能会自带非官方的 Docker 软件包, 可能会和官方的软件包有冲突, 所以最好卸载官方的软件包。并且 Docker 依赖于 `containerd` 和 `runc`, 并捆绑为 `containerd.io` 包, 如果之前安装过尽量卸载, 一面版本冲突。
+> 
+>   需要卸载的软件包：`docker.io` / `docker-compose` / `docker-compose-v2` / `docker-doc` / `podman-docker` / `containerd` / `runc`
+>
+>   ```Bash { linenums="0" title="一次性解决所有冲突" }
+>   sudo apt remove $(dpkg --get-selections docker.io docker-compose docker-compose-v2 docker-doc podman-docker containerd runc | cut -f1)
+>   ```
 
 ### 安装方法 { id="installation-methods" }
 
@@ -60,30 +59,34 @@ comments: true
 
 2. 安装 Docker 软件包。
 
-    === "船新版本"
+    ///tab | 船新版本
 
-        ```Bash
-        sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-        ```
+    ```Bash
+    sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    ```
 
-    === "指定版本"
+    ///
 
-        要安装指定版本的 Docker, 首先在仓库中列出可用的版本：
+    ///tab | 指定版本
 
-        ```Bash
-        apt list --all-versions docker-ce
-        ```
+    要安装指定版本的 Docker, 首先在仓库中列出可用的版本：
 
-        :   >   docker-ce/noble 5:29.2.1-1\~ubuntu.24.04~noble <arch\> <br>
-            >   docker-ce/noble 5:29.2.0-1\~ubuntu.24.04~noble <arch\> <br>
-            >   ...
+    ```Bash
+    apt list --all-versions docker-ce
+    ```
 
-        选择所需版本并安装：
+    :   >   docker-ce/noble 5:29.2.1-1\~ubuntu.24.04~noble <arch\> <br>
+        >   docker-ce/noble 5:29.2.0-1\~ubuntu.24.04~noble <arch\> <br>
+        >   ...
 
-        ```Bash
-        VERSION_STRING=5:29.2.1-1~ubuntu.24.04~noble
-        sudo apt install -y docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
-        ```
+    选择所需版本并安装：
+
+    ```Bash
+    VERSION_STRING=5:29.2.1-1~ubuntu.24.04~noble
+    sudo apt install -y docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
+    ```
+
+    ///
 
 ///
 
@@ -158,6 +161,6 @@ comments: true
     sudo rm /etc/apt/keyrings/docker.asc
     ```
 
-!!! tip "如果你修改过配置文件, 需要手动删除。"
+> [!tip] 如果你修改过配置文件, 需要手动删除。
 
 ///

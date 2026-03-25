@@ -13,20 +13,24 @@ comments: true
 
 在终端输入 `ip a` , 如果网卡信息是这样, 表示网卡状态是 `DOWN` , 说明网卡没有启用, 需要以下方法激活它。
 
-!!! quote "终端输出"
+```Bash
+ip a
+```
 
-    ```shell-session { .yaml .no-copy .no-select }
-    ubuntu@ubuntu:~$ ip a
-    1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
-        link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-        inet 127.0.0.1/8 scope host lo
-            valid_lft forever preferred_lft forever
-        inet6 ::1/128 scope host 
-            valid_lft forever preferred_lft forever
-    2: ens33: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
-        link/ether 00:0c:29:21:c6:8c brd ff:ff:ff:ff:ff:ff
-        altname enp2s1
-    ```
+///html | div.result
+```shell-session { linenums="0" .yaml .no-copy .no-select }
+ubuntu@ubuntu:~$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+   link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+        valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+        valid_lft forever preferred_lft forever
+2: ens33: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:0c:29:21:c6:8c brd ff:ff:ff:ff:ff:ff
+    altname enp2s1
+```
+///
 
 ///html | small
 :octicons-light-bulb-16:

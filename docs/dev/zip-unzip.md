@@ -9,117 +9,129 @@ tags:
 comments: true
 ---
 
-- **FileName** 代表压缩包的名称
+///html | div.grid.cards
 
-- **DirName** 代表目录的名称, 也就是准备压缩的文件夹的名称
+-   **FileName**
 
+    代表压缩包的名称
+
+-   **DirName**
+    
+    目录名, 也就是准备压缩的文件夹
+
+///
 
 ///html | div.grid.cards
 
 -   ## tar.gz / tgz
     
-    === ":material-folder-open-outline: **解压**"
+    ///tab | :material-folder-open-outline: **解压**
+    ```Bash { linenums="0" }
+    tar -zxvf FileName.tar.gz
+    ```
+    ///
 
-        ```Bash
-        tar -zxvf FileName.tar.gz
-        ```
-
-    === ":material-folder-zip-outline: **压缩**"
-
-        ```Bash
-        tar -zcvf FileName.tar.gz DirName
-        ```
-        
-///
-
-///html | div.grid.cards
-
--   ## zip
-    
-    === ":material-folder-open-outline: **解压**"
-
-        ```bash
-        unzip FileName.zip -d DirName
-        ```
-
-    === ":material-folder-zip-outline: **压缩**"
-
-        ```bash
-        zip FileName.zip DirName
-        ```
-
-    ///html | small
-    :octicons-light-bulb-16:
-    **安装命令:** `sudo apt install zip unzip`
+    ///tab | :material-folder-zip-outline: **压缩**
+    ```Bash { linenums="0" }
+    tar -zcvf FileName.tar.gz DirName
+    ```
     ///
 
 ///
 
 ///html | div.grid.cards
+-   ## zip
+    
+    ///tab | :material-folder-open-outline: **解压**
+
+    ```Bash { linenums="0" }
+    unzip FileName.zip -d DirName
+    ```
+
+    ///
+
+    ///tab | :material-folder-zip-outline: **压缩**
+
+    ```Bash { linenums="0" }
+    zip FileName.zip DirName
+    ```
+
+    ///
+
+    ///html | small
+
+    :octicons-light-bulb-16:
+    `sudo apt install zip unzip`
+
+    ///
 
 -   ## 7z
     
-    === ":material-folder-open-outline: **解压**"
+    ///tab | :material-folder-open-outline: **解压**
 
-        ```bash
-        7z -x FileName.7z -o/
-        ```
+    ```Bash { linenums="0" }
+    7z -x FileName.7z -o/
+    ```
 
-    === ":material-folder-zip-outline: **压缩**"
+    ///
 
-        ```bash
-        7z -a FileName.7z DirName
-        ```
+    ///tab | :material-folder-zip-outline: **压缩**
+
+    ```Bash { linenums="0" }
+    7z -a FileName.7z DirName
+    ```
+
+    ///
     
     ///html | small
     :octicons-light-bulb-16:
-    **安装命令:** `sudo apt update & sudo apt install p7zip-full`
+    `sudo apt update & sudo apt install p7zip-full`
     ///
-
-///
-
-///html | div.grid.cards
 
 -   ## rar
     
-    === ":material-folder-open-outline: **解压**"
+    ///tab | :material-folder-open-outline: **解压**
 
-        ```bash
-        rar -x FileName.rar
-        ```
+    ```Bash { linenums="0" }
+    rar -x FileName.rar
+    ```
 
-    === ":material-folder-zip-outline: **压缩**"
+    ///
 
-        ```bash
-        rar -a FileName.rar DirName
-        ```
+    ///tab | :material-folder-zip-outline: **压缩**
+
+    ```Bash { linenums="0" }
+    rar -a FileName.rar DirName
+    ```
+    
+    ///
     
     ///html | small
     :octicons-light-bulb-16:
-    **安装方式 :** [**下载 rar**](https://www.rarlab.com/), 下载解压后将 **rar_static** 拷贝到 `/usr/bin` 目录, 其他由 **$PATH** 环境变量指定的目录也可以
+    [**下载 rar**](https://www.rarlab.com/), 教程自己找。
     ///
-
-///
-
-///html | div.grid.cards
 
 -   ## tar
     
-    === ":material-folder-open-outline: **解压**"
+    ///tab | :material-folder-open-outline: **解压**
 
-        ```bash
-        tar -xvf FileName.tar
-        ```
+    ```Bash { linenums="0" }
+    tar -xvf FileName.tar
+    ```
 
-    === ":material-folder-zip-outline: **压缩**"
+    ///
 
-        ```bash
-        tar -cvf FileName.tar DirName
-        ```
+    ///tab | :material-folder-zip-outline: **压缩**
+
+    ```Bash { linenums="0" }
+    tar -cvf FileName.tar DirName
+    ```
+    
+    ///
     
     ///html | small
     :octicons-light-bulb-16:
-    **安装命令:** `sudo apt update & sudo apt install p7zip-full`
+    `sudo apt update & sudo apt install p7zip-full`
     ///
 
 ///
@@ -128,49 +140,51 @@ comments: true
 
 -   ## tar.xz
     
-    === ":material-folder-open-outline: **解压**"
+    ///tab | :material-folder-open-outline: **解压**
 
-        - 先解压 `.xz` 文件
+    ///html | div.step
 
-            ```Bash
-            xz -d FileName.tar.xz
-            ```
+    1. 先解压 `.xz` 文件
 
-        - 再先解压 `.tar.xz` 文件解压出来的 `.tar`
+        ```Bash { linenums="0" }
+        xz -d FileName.tar.xz
+        ```
 
-            ```Bash
-            tar -xvf FileName.tar
-            ```
+    2. 再先解压 `.tar.xz` 文件解压出来的 `.tar`
 
-    === ":material-folder-zip-outline: **压缩**"
+        ```Bash { linenums="0" }
+        tar -xvf FileName.tar
+        ```
 
-        - 先创建 `.tar` 文件
-
-            ```Bash
-            tar -cvf FileName.tar DirName
-            ```
-
-        - 再创建 `.tar.xz` 文件
-
-            ```Bash
-            xz -z FileName.tar
-            ```
+    ///
     
-    ///html | small
-    :octicons-light-bulb-16:
-    **安装命令:** `sudo apt update & sudo apt install p7zip-full`
     ///
 
-///
+    ///tab | :material-folder-zip-outline: **压缩**
 
-///html | div.grid.cards
+    ///html | div.step
 
--   ## deb
-    
-    === ":material-folder-open-outline: **解压**"
+    1. 先创建 `.tar` 文件
 
-        ```bash
-        sudo dpkg -i FileName.deb
+        ```Bash { linenums="0" }
+        tar -cvf FileName.tar DirName
         ```
+
+    2. 再创建 `.tar.xz` 文件
+
+        ```Bash { linenums="0" }
+        xz -z FileName.tar
+        ```
+
+    ///
+
+    ///
+    
+    ///html | small
+
+    :octicons-light-bulb-16:
+    `sudo apt update & sudo apt install p7zip-full`
+
+    ///
 
 ///
