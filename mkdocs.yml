@@ -194,6 +194,7 @@ nav:
       - Nginx:
           - dev/nginx/index.md
           - dev/nginx/reverse-proxy.md
+      - dev/mysql.md
       - dev/ubuntu-enable-net.md
       - dev/samba.md
   - Blog:
