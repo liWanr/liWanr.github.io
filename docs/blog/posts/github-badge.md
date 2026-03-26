@@ -1,5 +1,5 @@
 ---
-icon: lucide/badge
+icon: local/badge
 title: GitHub 徽章
 # date:
 #     created: 2025-03-23
