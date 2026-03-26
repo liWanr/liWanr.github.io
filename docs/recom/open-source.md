@@ -7,8 +7,8 @@ title: 屌爆了的开源项目
 comments: true
 ---
 
-![snake](https://raw.githubusercontent.com/liWanr/liWanr/output/github-contribution-grid-snake.svg#only-light)
-![snake dark](https://raw.githubusercontent.com/liWanr/liWanr/output/github-contribution-grid-snake-dark.svg#only-dark)
+![snake](https://raw.githubusercontent.com/liWanr/liWanr/output/snake.svg#only-light)
+![snake dark](https://raw.githubusercontent.com/liWanr/liWanr/output/snake-dark.svg#only-dark)
 
 ## 网络
 
