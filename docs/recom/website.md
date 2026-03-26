@@ -44,7 +44,7 @@ title: 屌爆了的网站
     ---
 
     :lucide-mouse-pointer-click: 
-    [**DigitalOcean**](https://www.digitalocean.com/)
+    [**DigitalOcean**](https://m.do.co/c/b4ddfa7be0e7)
     | [**dynadot**](https://www.dynadot.com/)
     | [**Figma**](https://www.figma.com/)
     | [**Icons8**](https://icons8.com/)
