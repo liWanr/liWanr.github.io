@@ -54,11 +54,14 @@ comments: true
 > [!tip]
 > tip
 
-> [!info]-
+> [!info | inline | end] 
 > info
 
-> [!success]+
+> [!success]-
 > success
+
+> [!note]+
+> note
 ```
 
 ///html | div.result
