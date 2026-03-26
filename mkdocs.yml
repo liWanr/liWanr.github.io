@@ -48,6 +48,7 @@ theme:
         name: 深色模式
     
   features:
+    - announce.dismiss
     - content.code.annotate       # 在代码关键位置添加图标 + 鼠标悬停提示
     - content.code.copy           # 在代码块中添加一键复制按钮，无需先选中内容
     - content.footnote.tooltips   # 将脚注渲染为行内工具提示（tooltip），无需跳转即可阅读
@@ -55,7 +56,6 @@ theme:
     - content.tooltips            # 美化 title 提示渲染
     - navigation.indexes          # 章节索引页功能，允许文档直接挂载到章节下（适合概览页）
     - navigation.path             # 显示路径面包屑导航（在页面标题上方）
-    - navigation.prune            # 目录修剪：仅显示当前页面相关的目录树分支，隐藏无关章节
     - navigation.tabs             # 在大屏幕下，将顶级章节渲染为头部下方的菜单标签页
     - navigation.tabs.sticky      # 粘性标签页：向下滚动时标签页固定在头部下方始终可见
     - navigation.top              # 当用户向下滚动后开始向上滚动时，显示“返回顶部”按钮
