@@ -5,6 +5,8 @@
 [**GitHub Page**](https://liwanr.com/) ｜
 [**Vercel**](https://liwanr.vercel.app/)
 
+![views](https://views.whatilearened.today/views/github/liWanr/liWanr.github.io.svg)
+
 ## 部署方式
 
 ### 启动方式
