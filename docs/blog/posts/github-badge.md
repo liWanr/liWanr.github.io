@@ -96,31 +96,75 @@ comments: true
 
     ///
 
-2. 代码行数，会显示：commits / repos / stars / PR
+2. 代码行数，会显示：commits / repos / stars / PR。[**GitHub 仓库地址**](https://github.com/anuraghazra/github-readme-stats)
 
-    ```markdown { linenums="0" }
-    ![Stats](https://github-readme-stats.vercel.app/api?username=用户名)
+    ```yaml
+    name: Generate stats card
+
+    on:
+    schedule:
+      - cron: "0 */01 * * *"      # 每 1 小时运行一次
+    workflow_dispatch:            # 允许手动运行
+
+    jobs:
+    generate:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Checkout repo
+          uses: actions/checkout@v4
+
+        - name: Create dist folder
+          run: mkdir -p dist
+
+        - name: Generate stats card
+          uses: readme-tools/github-readme-stats-action@v1
+          with:
+            card: stats
+            options: username=liWanr&show_icons=true
+            path: dist/stats.svg
+            token: ${{ secrets.GITHUB_TOKEN }}
+
+        # 输出到仓库
+        - name: Push to output branch
+          uses: crazy-max/ghaction-github-pages@v3
+          with:
+            target_branch: output
+            build_dir: dist
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     ```
 
     ///html | div.result
 
-    ![Stats](https://github-readme-stats.vercel.app/api?username=liWanr)
+    ![Stats](https://raw.githubusercontent.com/liWanr/liWanr/output/stats.svg)
 
     ///
 
 3. 最常用语言，会生成语言统计图。
 
-    ```markdown { linenums="0" }
-    ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=用户名)
+    ```yaml
+    # ...
+
+      steps:
+        - name: Generate languages card
+          uses: readme-tools/github-readme-stats-action@v1
+          with:
+            card: top-langs
+            github_user_name: username=liWanr&layout=compact
+            path: dist/top-langs.svg
+            token: ${{ secrets.GITHUB_TOKEN }}
+
+        # ... 输出到仓库
     ```
 
     ///html | div.result
 
-    ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=liWanr)
+    ![Top Langs](https://raw.githubusercontent.com/liWanr/liWanr/output/language.svg)
 
     ///
 
-4. 连续提交统计，显示连续提交天数
+4. 连续提交统计，显示连续提交天数。 [**GitHub 仓库地址**](https://github.com/DenverCoder1/github-readme-streak-stats)
 
     ```markdown { linenums="0" }
     ![Streak](https://streak-stats.demolab.com/?user=用户名)
@@ -128,51 +172,34 @@ comments: true
 
     ///html | div.result
 
-    ![Streak](https://streak-stats.demolab.com/?user=liWanr)
+    ![GitHub Streak](https://raw.githubusercontent.com/liWanr/liWanr/output/streak.svg)
 
     ///
 
 5. 贪吃蛇吃贡献图, 这个需要在 `用户名仓库/.github/workflows/snake.yml` 中使用 Action 生成
 
-    ```markdown { linenums="0" }
-    ![snake](https://raw.githubusercontent.com/用户名/用户名/output/github-contribution-grid-snake.svg)
+    ```yaml
+    # ...
+
+      steps:
+        - name: Generate snake
+          uses: Platane/snk@v3
+          with:
+            github_user_name: liWanr
+            outputs: |
+              dist/snake.svg
+              dist/snake-dark.svg?palette=github-dark
+
+        # ... 输出到仓库
     ```
 
     ///html | div.result
 
-    ![snake](https://raw.githubusercontent.com/liWanr/liWanr/output/github-contribution-grid-snake.svg)
+    ![snake](https://raw.githubusercontent.com/liWanr/liWanr/output/snake.svg#only-light)
+    ![snake](https://raw.githubusercontent.com/liWanr/liWanr/output/snake-dark.svg#only-dark)
 
     ///
 
-    ```yml
-    name: Generate Snake
-
-    on:
-    schedule:
-        - cron: "0 */01 * * *"      # 每 1 小时运行一次
-    workflow_dispatch:              # 允许手动运行
-
-    jobs:
-    generate:
-        runs-on: ubuntu-latest
-
-        steps:
-        - name: Generate snake
-            uses: Platane/snk@v3
-            with:
-            github_user_name:       # 用户名
-            outputs: |
-                dist/github-contribution-grid-snake.svg
-                dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-        - name: Push to output branch
-            uses: crazy-max/ghaction-github-pages@v3
-            with:
-            target_branch: output   # 分支
-            build_dir: dist
-            env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    ```
 
 ///
 
