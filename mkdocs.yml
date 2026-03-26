@@ -1,7 +1,7 @@
 site_name: liWanr
 site_url: https://liWanr.com
 repo_name: GitHub/liWanr
-repo_url: https://github.com/liWanr
+repo_url: https://github.com/liWanr/liWanr.github.io
 dev_addr: 0.0.0.0:8000
 
 site_description: "极客向个人技术站点，内容涵盖编程、网络以及真实项目实践，关注技术落地与设计体验，记录持续探索与长期创作。" 
@@ -49,6 +49,7 @@ theme:
     
   features:
     - announce.dismiss
+    - content.action.view         # 在页面顶部添加查看链接，指向 GitHub 上的对应文件，方便读者查看源内容
     - content.code.annotate       # 在代码关键位置添加图标 + 鼠标悬停提示
     - content.code.copy           # 在代码块中添加一键复制按钮，无需先选中内容
     - content.footnote.tooltips   # 将脚注渲染为行内工具提示（tooltip），无需跳转即可阅读
