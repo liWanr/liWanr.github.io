@@ -8,7 +8,7 @@ reproduction/*
 # 本地部署文件
 local-build.sh
 run.sh
-clean.sh
+change.py
 nginx.conf
 
 # 原始的配置文件
