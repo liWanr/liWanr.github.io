@@ -9,7 +9,7 @@ comments: true
 
 <style>
 hr {
-    height: 0.125rem;
+    height: 0rem;
     border-radius: 5px;
     background-color: var(--md-accent-fg-color);
 }
@@ -24,6 +24,8 @@ hr {
     [:lucide-mouse-pointer-click: **官方网站**](https://termius.com/) |
     [**下载链接**](https://termius.com/download/) |
     [**GitHub 地址**](https://github.com/termius)
+
+    ---
 
     现代化的 SSH 客户端，旨在提升工作效率和促进团队协作。能够在加密的云端空间中团队协作，并可从任何设备一键连接，显著减少连接和故障排除所需的时间。
 
@@ -45,6 +47,8 @@ hr {
 
     [:lucide-mouse-pointer-click: **官方网站**](https://pixpin.cn/) |
     [**下载链接**](https://pixpin.cn/download/)
+
+    ---
 
     名字来源于“Pixel Pin”，PixPin 为截图和贴图两大功能为核心做了大量的优化功能，目标是提升用户在工作时的工作效率，无论用户使用电脑做何种工作，都可以使用PixPin提高工作效率。
 
