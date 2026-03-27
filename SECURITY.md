@@ -1,6 +1,4 @@
-# Security Policy / 安全策略
-
-## Reporting a Vulnerability / 报告漏洞
+# Reporting a Vulnerability / 报告漏洞
 
 - If you discover a security vulnerability in this project, please email [itsWanr@iCloud.com](mailto:itsWanr@iCloud.com).  
   如果您在本项目中发现了安全漏洞，请发送电子邮件至 [itsWanr@iCloud.com](mailto:itsWanr@iCloud.com)。
