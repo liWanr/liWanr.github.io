@@ -13,11 +13,16 @@
 
 ### Vercel
 
-- Vercel 的构建命令: `python -m venv .venv && . .venv/bin/activate && pip install zensical && zensical build --clean && python change.py`
+- Vercel 的构建命令
+  
+  ```Bash
+  python -m venv .venv && . .venv/bin/activate && pip install zensical && zensical build --clean && python change.py
+  ```
 
 ### 本地构建
 
 - 激活方式 `source ../.env/zensical/bin/activate`
+  
   退出激活 `deactivate`
 
 - 边写边预览 `zensical serve`
@@ -25,6 +30,7 @@
 - 编译 `zensical build`
 
   - 清除缓存并编译 `zensical build -c`
+    
   - 指定编译目录 `zensical build -f`
 
 ## 版本控制
