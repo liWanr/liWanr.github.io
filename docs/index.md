@@ -154,7 +154,7 @@ hide:
 和 **GitHub Page** 发布, 常规文字采用
 [**MiSans**](https://hyperos.mi.com/font){ .no-color }
 字体。
-[![lastCommit](https://img.shields.io/github/last-commit/liWanr/liWanr.github.io){ style="width: 96px; position: relative; top: 1.6px;" }](https://github.com/liWanr/liWanr.github.io)
+[![lastCommit](https://img.shields.io/github/last-commit/liWanr/liWanr.github.io){ style="width: 96px; position: relative; top: 2.8px;" }](https://github.com/liWanr/liWanr.github.io)
 ///
 
 <script>
