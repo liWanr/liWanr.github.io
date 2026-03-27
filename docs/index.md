@@ -40,12 +40,11 @@ hide:
 :lucide-messages-square: **Let's Chat -**
 [**Email**](mailto:itsWanr@outlook.com)
 | [**GitHub**](https://github.com/liWanr)
-| [**Telegram**](https://t.me/itsWanr)
 | [**Gravatar**](https://gravatar.com/liwanr)
 
 笨笨的极客玩家, 掌握 **C**&**C++** / **Java** / **Python** 等编程语言, 有 **STM32** 等嵌入式设备与 **Android** 数据传输与通信的经验。对 **OpenWrt** / **Nginx** / **OpenVPN** 等网络与 **Figma** / **Axure** 等 UI/UX 设计感兴趣, 致力于将技术与设计完美结合。参与过蓝牙射频指纹、网联汽车巡航、物联网农业工程、生物特征电子签名等项目。
 
-平时喜欢打台球和羽毛球, 台球线上可以在
+平时喜欢打台球, 线上可以在
 [**Shooterspool**](https://www.shooterspool.net/){ .no-color }
 找我玩。也比较喜欢听流行音乐, 歌手中意**陈奕迅**,
 觉得**林夕** / **黄伟文**的填词加**郭伟亮**等老香港作曲就能封神。
@@ -54,7 +53,7 @@ hide:
 
 ///html | div.card
 
-:lucide-handshake: **Wanr's Friend -**
+:lucide-handshake: **Friend -**
 [**Jiao**](https://dxlcq.cn/){ .no-color }^:local-jiao:^ 
 | [**Sevenalist**](https://dczcq.cn/){ .no-color }^:lucide-chef-hat:^ 
 | [**Qvi**](https://qvidx.github.io){ .no-color }^:lucide-squirrel:^
