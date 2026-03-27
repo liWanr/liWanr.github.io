@@ -150,7 +150,9 @@ hide:
 [**GitHub**](https://github.com/github){ .no-color }
 仓库中。除本地外还通过
 [**Vercel**](https://vercel.com/){ .no-color }
-和 **GitHub Page** 发布, 常规文字采用
+和
+[**GitHub Page**](https://github.com/liWanr/liWanr.github.io/blob/main/.github/workflows/docs.yml)
+发布, 常规文字采用
 [**MiSans**](https://hyperos.mi.com/font){ .no-color }
 字体。
 [![lastCommit](https://img.shields.io/github/last-commit/liWanr/liWanr.github.io){ style="width: 96px; position: relative; top: 2.8px;" }](https://github.com/liWanr/liWanr.github.io)
