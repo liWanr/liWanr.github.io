@@ -2,7 +2,7 @@
 
 [**Myself**](https://liwanr.com) ｜
 [**LocalSite**](http://local.liwanr.com:24) ｜
-[**GitHub Page**](https://liwanr.com/) ｜
+[**GitHub Page**](https://liwanr.github.io/) ｜
 [**Vercel**](https://liwanr.vercel.app/)
 
 ![views](https://views.whatilearened.today/views/github/liWanr/liWanr.github.io.svg)
