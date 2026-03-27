@@ -18,7 +18,7 @@ hr {
 ![snake](https://raw.githubusercontent.com/liWanr/liWanr/output/snake.svg#only-light)
 ![snake dark](https://raw.githubusercontent.com/liWanr/liWanr/output/snake-dark.svg#only-dark)
 
-## 网络
+## 网络类
 
 ///html | div.grid.cards
 
@@ -73,26 +73,6 @@ hr {
 
 ///
 
-## AI 工具
-
-///html | div.grid.cards
-
--   ### Vibe Coding cn
-
-    :lucide-mouse-pointer-click:
-    [**GitHub 仓库地址**](https://github.com/2025Emma/vibe-coding-cn)
-    | [**TG 交流群**](https://t.me/glue_coding)
-    | [**TG 频道**](https://t.me/tradecat_ai_channel)
-
-    ---
-
-    Vibe Coding = 规划驱动 + 上下文固定 + AI 结对执行, 让「从想法到可维护代码」变成一条可审计的流水线, 而不是一团无法迭代的巨石文件。旨在帮助开发者丝滑地将想法变为现实。
-
-    - 开源协议: Security / MIT license
-
-///
-
-## 代理
 
 ///html | div.grid.cards
 
@@ -111,7 +91,7 @@ hr {
 
 ///html | div.grid.cards
 
--   ### sing-box 一键安装 & 管理脚本
+-   ### sing-box 一键安装脚本
 
     :lucide-mouse-pointer-click:
     [**GitHub 仓库地址**](https://github.com/233boy/sing-box) ｜ [**作者教程**](https://233boy.com/sing-box/sing-box-script/)
@@ -174,7 +154,24 @@ hr {
 
 ///
 
-## 通信
+## 工具类
+
+///html | div.grid.cards
+
+-   ### Vibe Coding cn
+
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/2025Emma/vibe-coding-cn)
+    | [**TG 交流群**](https://t.me/glue_coding)
+    | [**TG 频道**](https://t.me/tradecat_ai_channel)
+
+    ---
+
+    Vibe Coding = 规划驱动 + 上下文固定 + AI 结对执行, 让「从想法到可维护代码」变成一条可审计的流水线, 而不是一团无法迭代的巨石文件。旨在帮助开发者丝滑地将想法变为现实。
+
+    - 开源协议: Security / MIT license
+
+///
 
 ///html | div.grid.cards
 
@@ -196,7 +193,31 @@ hr {
 
 ///
 
-## 娱乐
+///html | div.grid.cards
+
+-   ### Boring Notch
+
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/TheBoredTeam/boring.notch)
+    | [**官方网站**](https://theboring.name/)
+    | [**发布页**](https://github.com/TheBoredTeam/boring.notch/releases)
+    | [**翻译库**](https://zh.crowdin.com/project/boring-notch)
+
+    ---
+
+    一个将 macOS 刘海转变为「动态交互区域」的开源工具, 灵感来源于 iPhone 的灵动岛。它可以在刘海位置提供音乐控制、文件暂存、系统状态显示等功能, 让原本无用的刘海变成一个实用的多功能中心。
+
+    - 开源协议: GPL-3.0 license / Security policy
+    
+    - 支持平台: macOS
+        
+    - 特点: 原生 SwiftUI 开发、界面动画流畅、社区活跃、持续更新
+
+    - 看看我的贡献:
+    [**GitHub PR**](https://github.com/TheBoredTeam/boring.notch/pull/1075)
+    | [**Crowdin**](https://zh.crowdin.com/project/boring-notch/activity-stream)
+
+///
 
 ///html | div.grid.cards
 
