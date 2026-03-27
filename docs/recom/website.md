@@ -48,7 +48,7 @@ hr {
     ---
 
     ///html | div.grid
-    [dynadot](https://www.dynadot.com/)
+    [Dynadot](https://www.dynadot.com/)
     
     [Figma](https://www.figma.com/)
     
@@ -77,8 +77,6 @@ hr {
     [厂长资源](https://www.czzy.site/)
     
     [大米星球](https://dmr0x2.com/)
-    
-    [Spotify 下载器](https://spotimate.io/#)
     ///
 
 ///
@@ -93,6 +91,8 @@ hr {
     [果核剥壳](https://www.ghxi.com/)
     
     [电子印章](http://web.aa6666.com/)
+
+    [Spotify 下载器](https://spotimate.io/#)
     ///
 
 ///
@@ -104,23 +104,23 @@ hr {
     ---
 
     ///html | div.grid
-    [风灵月影](https://flingtrainer.com/)
-    
     [BYRUTOR](https://byrutgame.org/)
+    
+    [风灵月影](https://flingtrainer.com/)
     
     [CE 修改器](https://www.cheatengine.org/)
     
     [麻将理牌](https://tenhou.net/2/)
 
-    [官方网站](https://www.minecraft.net/)
+    [Minecraft](https://www.minecraft.net/)
     
     [PCL2](https://afdian.com/p/0164034c016c11ebafcb52540025c377)
     
     [MC 百科](https://www.mcmod.cn/)
     
-    [皮肤站](https://littleskin.cn/)
+    [MC 皮肤站](https://littleskin.cn/)
     
-    [区块查询工具](https://www.chunkbase.com/)
+    [MC 区块查询工具](https://www.chunkbase.com/)
     ///
 
 ///
@@ -136,9 +136,9 @@ hr {
     
     [Ubuntu](https://releases.ubuntu.com/)
     
-    [CentOS](https://vault.centos.org/)
-    
     [Debian](http://cdimage.debian.org/cdimage/archive/)
+    
+    [CentOS](https://vault.centos.org/)
     ///
 
 ///
