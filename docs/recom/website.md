@@ -3,120 +3,125 @@ icon: lucide/app-window-mac
 title: 屌爆了的网站
 # date:
 #     created: 2025-12-16
-#     updated: 2026-01-18
+#     updated: 2026-03-28
 ---
 
 <style>
 .md-typeset a{
     color: var(--md-default-fg-color) !important;
 }
+hr {
+    height: 0rem;
+    border-radius: 5px;
+    background-color: var(--md-accent-fg-color);
+}
 </style>
 
 ///html | div.grid.cards
 
--   ### 科学上网
+-   ### 网络黑客
 
     ---
 
-    :lucide-mouse-pointer-click: 
-    [**赔钱机场(村内)**](https://xn--cp3a08l.com/#/register?code=Hw7cqluV) 
-    | [**赔钱机场(村外)**](https://xn--mes358aby2apfg.com/register?code=Hw7cqluV)
-    | [**Hero SMS**](https://hero-sms.com/services)
+    ///html | div.grid
+
+    [赔钱机场(村内)](https://xn--cp3a08l.com/#/register?code=Hw7cqluV) 
+
+    [赔钱机场(村外)](https://xn--mes358aby2apfg.com/register?code=Hw7cqluV)
+    
+    [Hero SMS](https://hero-sms.com/services)
+
+    [Down for Everyone or Just Me](https://downforeveryoneorjustme.com/)
+    
+    [Probeops](https://probeops.com/tools)
+
+    ///
 
 ///
 
 ///html | div.grid.cards
 
--   ### Net.
+-   ### 网站设计
 
     ---
 
-    :lucide-mouse-pointer-click: 
-    [**Down for Everyone or Just Me**](https://downforeveryoneorjustme.com/)
-    | [**Probeops**](https://probeops.com/tools)
+    ///html | div.grid
+    [DigitalOcean](https://m.do.co/c/b4ddfa7be0e7)
+    
+    [dynadot](https://www.dynadot.com/)
+    
+    [Figma](https://www.figma.com/)
+    
+    [Icons8](https://icons8.com/)
+    
+    [阿里图库](https://www.iconfont.cn/)
+
+    [Figma](https://www.figma.com/)
+    
+    [Uiverse](https://uiverse.io/elements)
+    
+    [Anime.js](https://animejs.com/documentation/events/onscroll/scrollobserver-settings/target)
+    
+    [Awwwards](https://www.awwwards.com/websites/sites_of_the_day/)
+    ///
 
 ///
 
 ///html | div.grid.cards
 
--   ### Web Dev
+-   ### 影音娱乐
 
     ---
 
-    :lucide-mouse-pointer-click: 
-    [**DigitalOcean**](https://m.do.co/c/b4ddfa7be0e7)
-    | [**dynadot**](https://www.dynadot.com/)
-    | [**Figma**](https://www.figma.com/)
-    | [**Icons8**](https://icons8.com/)
-    | [**阿里图库**](https://www.iconfont.cn/)
+    ///html | div.grid
+    [厂长资源](https://www.czzy.site/)
+    
+    [大米星球](https://dmr0x2.com/)
+    
+    [Spotify 下载器](https://spotimate.io/#)
+    ///
 
 ///
 
 ///html | div.grid.cards
 
--   ### Minecraft
+-   ### 生产工具
 
     ---
 
-    :lucide-mouse-pointer-click: 
-    [**官方网站**](https://www.minecraft.net/)
-    | [**PCL2**](https://afdian.com/p/0164034c016c11ebafcb52540025c377)
-    | [**MC 百科**](https://www.mcmod.cn/)
-    | [**皮肤站**](https://littleskin.cn/)
-    | [**区块查询工具**](https://www.chunkbase.com/)
+    ///html | div.grid
+    [果核剥壳](https://www.ghxi.com/)
+    
+    [电子印章](http://web.aa6666.com/)
+    ///
 
 ///
 
 ///html | div.grid.cards
 
--   ### 影音
+-   ### 一生归属
 
     ---
 
-    :lucide-mouse-pointer-click: 
-    [**厂长资源**](https://www.czzy.site/)
-    | [**大米星球**](https://dmr0x2.com/)
-    | [**Spotify 下载器**](https://spotimate.io/#)
+    ///html | div.grid
+    [风灵月影](https://flingtrainer.com/)
+    
+    [BYRUTOR](https://byrutgame.org/)
+    
+    [CE 修改器](https://www.cheatengine.org/)
+    
+    [麻将理牌](https://tenhou.net/2/)
 
-///
-
-///html | div.grid.cards
-
--   ### Tec.
-
-    ---
-
-    :lucide-mouse-pointer-click: 
-    [**果核剥壳**](https://www.ghxi.com/)
-    | [**电子印章**](http://web.aa6666.com/)
-
-///
-
-///html | div.grid.cards
-
--   ### Game
-
-    ---
-
-    :lucide-mouse-pointer-click: 
-    [**风灵月影**](https://flingtrainer.com/)
-    | [**BYRUTOR**](https://byrutgame.org/)
-    | [**CE 修改器**](https://www.cheatengine.org/)
-    | [**麻将理牌**](https://tenhou.net/2/)
-
-///
-
-///html | div.grid.cards
-
--   ### 设计素材
-
-    ---
-
-    :lucide-mouse-pointer-click:
-    [**Figma**](https://www.figma.com/)
-    | [**Uiverse**](https://uiverse.io/elements)
-    | [**Anime.js**](https://animejs.com/documentation/events/onscroll/scrollobserver-settings/target)
-    | [**Awwwards**](https://www.awwwards.com/websites/sites_of_the_day/)
+    [官方网站](https://www.minecraft.net/)
+    
+    [PCL2](https://afdian.com/p/0164034c016c11ebafcb52540025c377)
+    
+    [MC 百科](https://www.mcmod.cn/)
+    
+    [皮肤站](https://littleskin.cn/)
+    
+    [区块查询工具](https://www.chunkbase.com/)
+    ///
 
 ///
 
@@ -126,11 +131,15 @@ title: 屌爆了的网站
 
     ---
 
-    :lucide-mouse-pointer-click: 
-    [**Windows**](https://www.xitongku.com)
-    | [**Ubuntu**](https://releases.ubuntu.com/)
-    | [**CentOS**](https://vault.centos.org/)
-    | [**Debian**](http://cdimage.debian.org/cdimage/archive/)
+    ///html | div.grid
+    [Windows](https://www.xitongku.com)
+    
+    [Ubuntu](https://releases.ubuntu.com/)
+    
+    [CentOS](https://vault.centos.org/)
+    
+    [Debian](http://cdimage.debian.org/cdimage/archive/)
+    ///
 
 ///
 
