@@ -20,7 +20,7 @@
 }
 
 /* 普通链接（排除按钮） */
-.md-typeset a:not(.md-button):not(label > a):not(:has(code, >svg, >span)) {
+.md-typeset a:not(.md-button):not(label > a):not(:has(code, >svg, >span, >img)) {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -28,8 +28,7 @@
   transition: background-size 0.35s cubic-bezier(.4, 0, .2, 1);
 }
 
-/* hover 效果（同样排除按钮） */
-.md-typeset a:not(.md-button):not(label > a):not(:has(code, >svg, >span)):hover {
+.md-typeset a:not(.md-button):not(label > a):not(:has(code, >svg, >span, >img)):hover {
   background-size: 100% 2px;
 }
 
