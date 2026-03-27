@@ -151,7 +151,7 @@ hide:
 仓库中。除本地外还通过
 [**Vercel**](https://vercel.com/){ .no-color }
 和
-[**GitHub Page**](https://github.com/liWanr/liWanr.github.io/blob/main/.github/workflows/docs.yml)
+[**GitHub Page**](https://github.com/liWanr/liWanr.github.io/blob/main/.github/workflows/docs.yml){ .no-color }
 发布, 常规文字采用
 [**MiSans**](https://hyperos.mi.com/font){ .no-color }
 字体。
