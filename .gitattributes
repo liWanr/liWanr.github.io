@@ -1,0 +1,4 @@
+# 强制把 .css 和 .js 文件计入统计
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
+*.md linguist-language=Markdown
