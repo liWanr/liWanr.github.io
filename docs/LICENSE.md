@@ -7,6 +7,12 @@ hide:
     - footer
 ---
 
+<style>
+h2, p {
+  font-family: JetBrains Mono;
+}
+</style>
+
 ## MIT License
 
 Copyright (c) 2026 liWanr
