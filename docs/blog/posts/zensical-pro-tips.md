@@ -109,19 +109,19 @@ comments: true
 ## 通用
 
 ```markdown { linenums="0"}
-[Button](https://github.com/liWanr){ .md-button }
-[Button](https://github.com/liWanr){ .md-button .md-button--primary }
+[Button](#警告框){ .md-button }
+[Button](#警告框){ .md-button .md-button--primary }
 ```
 
 ///html | div.result
 
-[Button](https://github.com/liWanr){ .md-button }
-[Button](https://github.com/liWanr){ .md-button .md-button--primary }
+[Button](#警告框){ .md-button }
+[Button](#警告框){ .md-button .md-button--primary }
 
 ///
 
 ````markdown { linenums="0" }
-```py { title="这是代码块的所有配置" .yaml .no-copy .no-select hl_lines="2 3" linenums="0" }
+```py { title="代码块的所有配置" .yaml .no-copy .no-select hl_lines="2 3" linenums="0" }
 def bubble_sort(items): # (1)!
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):
@@ -136,7 +136,7 @@ def bubble_sort(items): # (1)!
 
 ///html | div.result
 
-```py { title="这是代码块的所有配置" .yaml .no-copy .no-select hl_lines="2 3" linenums="0" }
+```py { title="代码块的所有配置" .yaml .no-copy .no-select hl_lines="2 3" linenums="0" }
 def bubble_sort(items): # (1)!
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):
@@ -170,7 +170,7 @@ def bubble_sort(items): # (1)!
 
 ///html | div.step
 
-1. 创建 `docs/assets/fonts` 这个目录, 将 `MiSansVF.ttf` 文件放进去。
+1. 创建 `docs/assets/fonts` 这个目录, 将 `MiSans-*.woff2` 文件放进去。
 
 2. 在自定义 CSS 文件中添加规则, 让自定义字体覆盖项目字体。
 

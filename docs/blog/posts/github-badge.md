@@ -40,12 +40,12 @@ comments: true
 1.  
 
     ```markdown { linenums="0" }
-    <img src="https://skillicons.dev/icons?i=linux,apple,windows,markdown,docker,nginx,git,python,cloudflare">
+    ![Skills](https://skillicons.dev/icons?i=linux,apple,windows,markdown,docker,nginx,git,python,cloudflare)
     ```
 
     ///html | div.result
 
-    <img src="https://skillicons.dev/icons?i=linux,apple,windows,markdown,docker,nginx,git,python,cloudflare">
+    ![Skills](https://skillicons.dev/icons?i=linux,apple,windows,markdown,docker,nginx,git,python,cloudflare)
 
     ///
 
@@ -103,8 +103,8 @@ comments: true
 
     on:
     schedule:
-      - cron: "0 */01 * * *"      # 每 1 小时运行一次
-    workflow_dispatch:            # 允许手动运行
+      - cron: "55 23 * * *" # 每天运行一次（UTC 23:55点）
+    workflow_dispatch:      # 允许手动运行
 
     jobs:
     generate:
@@ -121,7 +121,7 @@ comments: true
           uses: readme-tools/github-readme-stats-action@v1
           with:
             card: stats
-            options: username=liWanr&show_icons=true
+            options: username=用户名&show_icons=true
             path: dist/stats.svg
             token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -151,11 +151,11 @@ comments: true
           uses: readme-tools/github-readme-stats-action@v1
           with:
             card: top-langs
-            github_user_name: username=liWanr&layout=compact
+            github_user_name: username=用户名&layout=compact
             path: dist/top-langs.svg
             token: ${{ secrets.GITHUB_TOKEN }}
 
-        # ... 输出到仓库
+        # 输出到仓库... 
     ```
 
     ///html | div.result
@@ -185,12 +185,12 @@ comments: true
         - name: Generate snake
           uses: Platane/snk@v3
           with:
-            github_user_name: liWanr
+            github_user_name: 用户名
             outputs: |
               dist/snake.svg
               dist/snake-dark.svg?palette=github-dark
 
-        # ... 输出到仓库
+        # 输出到仓库... 
     ```
 
     ///html | div.result

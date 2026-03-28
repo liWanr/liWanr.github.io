@@ -74,9 +74,13 @@ comments: true
 
 R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了。如果你发现你没有网络存储、VPN 这些内容的话, 你下的就是mini的精简版, 请重新找一下 plus 的高大全版。
 
+///html | div.grid.cards
 - 地址：[192.168.1.1](http://192.168.1.1)
+///
+///html | div.grid.cards
 - 默认用户名：`root`
 - 默认密码：`password`
+///
 
 ### 设置 PPPoE 拨号
 
