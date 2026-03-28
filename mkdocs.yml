@@ -74,7 +74,7 @@ markdown_extensions:
   - tables                        # Markdown 表格支持
 
   - toc:                          # 目录锚点
-      permalink: ⚓︎
+      permalink: §
       permalink_title: 锚点
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
 
