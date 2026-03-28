@@ -137,7 +137,6 @@ hide:
 
     :lucide-mouse-pointer-click:
     [学校官网](https://www.cqny.edu.cn/){ .no-color }
-
 ///
 
 ///html | small
@@ -159,11 +158,3 @@ hide:
 / [GitHub Page](https://docs.github.com/en/pages){ .no-color }
 平台。
 ///
-
-<script>
-    document.querySelectorAll('h2').forEach(h => {
-        h.removeAttribute('id');
-        const link = h.querySelector('.headerlink');
-        if (link) link.remove();
-    });
-</script>
