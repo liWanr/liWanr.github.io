@@ -37,6 +37,11 @@
     color: var(--md-default-fg-color) !important;
 }
 
+.font-w {
+    font-family: JetBrains Mono;
+    color: var(--md-default-fg-color) !important;
+}
+
 /* 表格的分界线 */
 .md-typeset table:not([class]) {
     background: none;

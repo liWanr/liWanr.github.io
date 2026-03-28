@@ -55,44 +55,44 @@ hide:
 
 :lucide-handshake: **Friend -**
 [**Jiao**](https://dxlcq.cn/){ .no-color }^:local-jiao:^ 
-| [**Sevenalist**](https://dczcq.cn/){ .no-color }^:lucide-chef-hat:^ 
-| [**Qvi**](https://qvidx.github.io){ .no-color }^:lucide-squirrel:^
+/ [**Sevenalist**](https://dczcq.cn/){ .no-color }^:lucide-chef-hat:^ 
+/ [**Qvi**](https://qvidx.github.io){ .no-color }^:lucide-squirrel:^
 
-**`Tec.` -**
-[**`Microsoft`**](https://account.microsoft.com/)
-[**`Outlook`**](https://outlook.live.com/mail)
-[**`Google`**](https://myaccount.google.com/)
-[**`Gmail`**](https://mail.google.com/mail)
-[**`Apple`**](https://account.apple.com/account/manage/section/information)
-[**`iCloud`**](https://www.icloud.com.cn/)
+<hr style="height: 0rem;border-radius: 5px;background-color: var(--md-accent-fg-color);">
 
-**`LLMs` -**
-[**`GPT`**](https://chat.openai.com/chat)
-[**`Grok`**](https://grok.com/)
-[**`Gemini`**](https://gemini.google.com/app)
-[**`Claude`**](https://claude.ai/)
-[**`Perplexity`**](https://www.perplexity.ai/)
+**Tec. -**{ .font-w }
+[Microsoft](https://account.microsoft.com/){ .font-w }
+**/ **[Outlook](https://outlook.live.com/mail){ .font-w }
+**/ **[Gmail](https://mail.google.com/mail){ .font-w }
+**/ **[Apple](https://account.apple.com/account/manage/section/information){ .font-w }
+**/ **[iCloud](https://www.icloud.com.cn/){ .font-w }
 
-**`Net.` -**
-[**`IPCheck`**](https://ipcheck.ing/#/)
-[**`IT DOG`**](https://www.itdog.cn/ping/)
-[**`Analytics`**](https://analytics.google.com/analytics/web/)
-[**`Cloudflare`**](https://dash.cloudflare.com/)
-[**`中科大测速`**](https://test.ustc.edu.cn/)
+**LLMs -**{ .font-w }
+[GPT](https://chat.openai.com/chat){ .font-w }
+**/ **[Grok](https://grok.com/){ .font-w }
+**/ **[Gemini](https://gemini.google.com/app){ .font-w }
+**/ **[Claude](https://claude.ai/){ .font-w }
+**/ **[Perplexity](https://www.perplexity.ai/){ .font-w }
 
-**`Med.` -**
-[**`Discord`**](https://discord.com/channels/@me)
-[**`YouTube`**](https://www.youtube.com/) 
-[**`DouYin`**](https://www.douyin.com/?recommend=1)
-[**`Bilibili`**](https://www.bilibili.com/)
-[**`Apple Music`**](https://music.apple.com/)
-[**`Spotify`**](https://open.spotify.com)
+**Net. -**{ .font-w }
+[IPCheck](https://ipcheck.ing/#/){ .font-w }
+**/ **[IT DOG](https://www.itdog.cn/ping/){ .font-w }
+**/ **[Analytics](https://analytics.google.com/analytics/web/){ .font-w }
+**/ **[Cloudflare](https://dash.cloudflare.com/){ .font-w }
+**/ **[中科大测速](https://test.ustc.edu.cn/){ .font-w }
 
-///
+**Med. -**{ .font-w }
+[Discord](https://discord.com/channels/@me){ .font-w }
+**/ **[YouTube](https://www.youtube.com/){ .font-w }
+**/ **[DouYin](https://www.douyin.com/?recommend=1){ .font-w }
+**/ **[Bilibili](https://www.bilibili.com/){ .font-w }
+**/ **[Spotify](https://open.spotify.com){ .font-w }
 
 ///
 
-## :local-student: Education { .no-anchor }
+///
+
+## :local-education: Education { .no-anchor }
 
 ///html | div.grid.cards
 
@@ -143,19 +143,21 @@ hide:
 ///html | small
 :local-quote:
 网站基于
-[**Zensical**](https://zensical.org/){ .no-color }
+[Zensical](https://zensical.org/){ .no-color }
 搭建，代码通过
-[**VS Code**](https://code.visualstudio.com/){ .no-color }
+[VSCode](https://code.visualstudio.com/){ .no-color }
 编写并存储于
-[**GitHub**](https://github.com/github){ .no-color }
-仓库中。除本地外还通过
-[**Vercel**](https://vercel.com/){ .no-color }
-和
-[**GitHub Page**](https://github.com/liWanr/liWanr.github.io/blob/main/.github/workflows/docs.yml){ .no-color }
-发布, 常规文字采用
-[**MiSans**](https://hyperos.mi.com/font){ .no-color }
-字体。
-[![lastCommit](https://img.shields.io/github/last-commit/liWanr/liWanr.github.io){ style="width: 96px; position: relative; top: 2.8px;" }](https://github.com/liWanr/liWanr.github.io)
+[GitHub](https://github.com/github){ .no-color }
+公开仓库中。
+常规文字为
+[MiSans](https://hyperos.mi.com/font){ .no-color }
+, 等宽为
+[JetBrains Mono](https://www.jetbrains.com/lp/mono/){ .no-color }
+字体。托管于
+[Netlify](https://www.netlify.com/){ .no-color }
+/ [Vercel](https://vercel.com/){ .no-color }
+/ [GitHub Page](https://docs.github.com/en/pages){ .no-color }
+平台。
 ///
 
 <script>
