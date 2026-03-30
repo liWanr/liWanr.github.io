@@ -103,7 +103,7 @@ comments: true
 
     on:
     schedule:
-      - cron: "55 23 * * *" # 每天运行一次（UTC 23:55点）
+      - cron: "55 15 * * *"   # 每天运行一次（UTC+8 23:55点）
     workflow_dispatch:      # 允许手动运行
 
     jobs:
