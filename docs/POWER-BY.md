@@ -13,7 +13,7 @@ hide:
     [**Zensical**](https://zensical.org/)
     搭建, 该项目是由
     [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
-    的创建团队打造的静态网站生成框架器。
+    团队开发的现代静态网站生成器。
     
 -   **编码存储**: 代码通过
     [Visual Studio Code](https://code.visualstudio.com/)
@@ -24,7 +24,7 @@ hide:
 -   **字体样式**: 常规文字采用
     [MiSans](https://hyperos.mi.com/font)
     , 等宽文字采用
-    [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+    [JetBrains Mono](https://www.jetbrains.com/lp/mono/)。
 
 -   **托管平台**: [Local](http://local.liwanr.com:24) / [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/) / [GitHub Pages](https://docs.github.com/en/pages)  / [Vercel](https://vercel.com/) / [Netlify](https://www.netlify.com/)
 
