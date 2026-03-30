@@ -3,8 +3,8 @@ site_url: https://liWanr.com
 repo_name: GitHub/liWanr
 repo_url: https://github.com/liWanr/liWanr.github.io
 dev_addr: 0.0.0.0:8000
-
 site_description: "极客向个人技术站点，内容涵盖编程、网络以及真实项目实践，关注技术落地与设计体验，记录持续探索与长期创作。" 
+
 copyright: |
   <div style="font-feature-settings: 'ss04' off;">
     &copy; 2024-2026
@@ -75,11 +75,6 @@ markdown_extensions:
   - md_in_html                    # 允许在 HTML 中写 Markdown
   - tables                        # Markdown 表格支持
 
-  - toc:                          # 目录锚点
-      permalink: §
-      permalink_title: 锚点
-      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-
   - pymdownx.blocks.admonition    # 新，警示块
   - pymdownx.blocks.caption       # 新，图片标题与对齐支持
   - pymdownx.blocks.definition    # 新，定义块
@@ -92,6 +87,11 @@ markdown_extensions:
   - pymdownx.progressbar          # 进度条语法
   - pymdownx.smartsymbols         # 将某些字符序列转换为相应的符号，例如版权符号或分数
   - pymdownx.tilde                # 删除线与下标语法
+
+  - toc:                          # 目录锚点
+      permalink: §
+      permalink_title: 锚点
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
 
   - pymdownx.blocks.tab:          # 新，内容标签页
       alternate_style: True
