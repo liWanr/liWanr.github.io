@@ -8,30 +8,9 @@ hide:
     - footer
 ---
 
-<style>
-    .md-main__inner {
-        margin-top: 1rem
-    }
-    .md-typeset h1,
-    .md-content__button {
-        font-size: 0px;
-        color: rgb(0,0,0,0);
-        line-height: 0;
-        margin: 0 0 0 0;
-    }
-    .md-typeset .twemoji{
-        margin: 1px 1px 0 0;
-    }
-    .md-typeset a code{
-        color: var(--md-default-fg-color) !important;
-    }
-</style>
+## Hello, I'm liWanr! { style="margin: 0 auto 0 auto; font-size:4em; font-style: italic;" }
 
-<h2 style="margin: 0 auto 0 auto; font-size:4em;">
-    <em>Hello, I'm liWanr!</em>
-</h2>
-
-## :local-user: About Me { .no-anchor style="margin-top: 10px;"}
+## :local-user: About Me { style="margin-top: 10px;"}
 
 ///html | div.grid
 
@@ -54,45 +33,51 @@ hide:
 ///html | div.card
 
 :lucide-handshake: **Friend -**
-[**Jiao**](https://dxlcq.cn/){ .no-color }^:local-jiao:^ 
-/ [**Sevenalist**](https://dczcq.cn/){ .no-color }^:lucide-chef-hat:^ 
-/ [**Qvi**](https://qvidx.github.io){ .no-color }^:lucide-squirrel:^
+[**Jiao**](https://dxlcq.cn/)^:local-jiao:^ 
+/ [**Sevenalist**](https://dczcq.cn/)^:lucide-chef-hat:^ 
+/ [**Qvi**](https://qvidx.github.io)^:lucide-squirrel:^
 
-<hr style="height: 0rem;border-radius: 5px;background-color: var(--md-accent-fg-color);">
+<hr style="height: 0rem;border-radius: 5px; background-color: var(--md-accent-fg-color);">
+///html | div[style='font-family: JetBrains Mono; color: var(--md-default-fg-color) !important;']
+**Tec. -**
+[Microsoft](https://account.microsoft.com/)
+**/ **[Outlook](https://outlook.live.com/mail)
+**/ **[Gmail](https://mail.google.com/mail)
+**/ **[Apple](https://account.apple.com/account/manage/section/information)
+**/ **[iCloud](https://www.icloud.com.cn/)
 
-**Tec. -**{ .font-w }
-[Microsoft](https://account.microsoft.com/){ .font-w }
-**/ **[Outlook](https://outlook.live.com/mail){ .font-w }
-**/ **[Gmail](https://mail.google.com/mail){ .font-w }
-**/ **[Apple](https://account.apple.com/account/manage/section/information){ .font-w }
-**/ **[iCloud](https://www.icloud.com.cn/){ .font-w }
+**LLMs -**
+[GPT](https://chat.openai.com/chat)
+**/ **[Grok](https://grok.com/)
+**/ **[Gemini](https://gemini.google.com/app)
+**/ **[Claude](https://claude.ai/)
+**/ **[Perplexity](https://www.perplexity.ai/)
 
-**LLMs -**{ .font-w }
-[GPT](https://chat.openai.com/chat){ .font-w }
-**/ **[Grok](https://grok.com/){ .font-w }
-**/ **[Gemini](https://gemini.google.com/app){ .font-w }
-**/ **[Claude](https://claude.ai/){ .font-w }
-**/ **[Perplexity](https://www.perplexity.ai/){ .font-w }
+**Net. -**
+[IPCheck](https://ipcheck.ing/#/)
+**/ **[IT DOG](https://www.itdog.cn/ping/)
+**/ **[Analytics](https://analytics.google.com/analytics/web/)
+**/ **[Cloudflare](https://dash.cloudflare.com/)
+**/ **[中科大测速](https://test.ustc.edu.cn/)
 
-**Net. -**{ .font-w }
-[IPCheck](https://ipcheck.ing/#/){ .font-w }
-**/ **[IT DOG](https://www.itdog.cn/ping/){ .font-w }
-**/ **[Analytics](https://analytics.google.com/analytics/web/){ .font-w }
-**/ **[Cloudflare](https://dash.cloudflare.com/){ .font-w }
-**/ **[中科大测速](https://test.ustc.edu.cn/){ .font-w }
-
-**Med. -**{ .font-w }
-[Discord](https://discord.com/channels/@me){ .font-w }
-**/ **[YouTube](https://www.youtube.com/){ .font-w }
-**/ **[DouYin](https://www.douyin.com/?recommend=1){ .font-w }
-**/ **[Bilibili](https://www.bilibili.com/){ .font-w }
-**/ **[Spotify](https://open.spotify.com){ .font-w }
-
-///
+**Med. -**
+[Discord](https://discord.com/channels/@me)
+**/ **[YouTube](https://www.youtube.com/)
+**/ **[DouYin](https://www.douyin.com/?recommend=1)
+**/ **[Bilibili](https://www.bilibili.com/)
+**/ **[Spotify](https://open.spotify.com)
 
 ///
+///
+///
 
-## :local-education: Education { .no-anchor }
+
+
+
+
+
+
+## :local-education: Education
 
 ///html | div.grid.cards
 
