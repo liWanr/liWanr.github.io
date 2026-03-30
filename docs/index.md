@@ -138,8 +138,3 @@ hide:
     :lucide-mouse-pointer-click:
     [学校官网](https://www.cqny.edu.cn/){ .no-color }
 ///
-
-///html | small
-:local-quote:
-网站基于[**Zensical**](https://zensical.org/){ .no-color }搭建, 托管于[**Netlify**](https://www.netlify.com/){ .no-color }等平台, 详细信息请参阅[**POWER-BY**](/POWER-BY){ .no-color }。
-///

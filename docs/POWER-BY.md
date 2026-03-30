@@ -9,31 +9,28 @@ hide:
 
 ## 关于网站
 
--   网站基于
+-   **框架生成**: 网站基于
     [**Zensical**](https://zensical.org/)
     搭建, 该项目是由
     [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
-    的创建团队打造的构建静态网站的新颖方案。
+    的创建团队打造的静态网站生成框架器。
     
 -   **编码存储**: 代码通过
-    [**Visual Studio Code**](https://code.visualstudio.com/)
+    [Visual Studio Code](https://code.visualstudio.com/)
     编写并存储于
-    [**GitHub**](https://github.com/github)
+    [GitHub](https://github.com/github)
     公开仓库中。
 
--   **字体**: 常规文字采用
-    [**MiSans**](https://hyperos.mi.com/font)
+-   **字体样式**: 常规文字采用
+    [MiSans](https://hyperos.mi.com/font)
     , 等宽文字采用
-    [**JetBrains Mono**](https://www.jetbrains.com/lp/mono/)
+    [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 
--   **托管平台**:
-    [**Netlify Open Source program**](https://www.netlify.com/)
-    / [**Vercel**](https://vercel.com/)
-    / [**GitHub Page**](https://docs.github.com/en/pages)
+-   **托管平台**: [Local](http://local.liwanr.com:24) / [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/) / [GitHub Pages](https://docs.github.com/en/pages)  / [Vercel](https://vercel.com/) / [Netlify](https://www.netlify.com/)
 
 ## 编程电脑
 
-- M3Pro MacBook Pro 14" 2023, 18GB RAM
+- M3 Pro MacBook Pro 14" 2023, 18GB RAM
 
 ## 游戏电脑
     
