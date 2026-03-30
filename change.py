@@ -19,6 +19,21 @@ if os.path.exists(index_path):
 
     new_index_content = re.sub(pattern, '', index_content, flags=re.DOTALL)
 
+    # 再删除 h2 标签上的 id 属性：<h2 class="no-anchor" id="..."> -> 去掉 id="..."
+    new_index_content = re.sub(
+    r'(<h2\b[^>]*?)\s+id="[^"]*"([^>]*>)',
+        r'\1\2',
+        new_index_content
+    )
+
+    # 删除所有 h1 元素（包括内容）
+    new_index_content = re.sub(
+        r'<h1\b[^>]*>.*?</h1>',
+        '',
+        new_index_content,
+        flags=re.DOTALL | re.IGNORECASE
+    )
+
     if new_index_content != index_content:
         with open(index_path, 'w', encoding='utf-8') as f:
             f.write(new_index_content)
