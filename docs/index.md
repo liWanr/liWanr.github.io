@@ -141,20 +141,5 @@ hide:
 
 ///html | small
 :local-quote:
-网站基于
-[Zensical](https://zensical.org/){ .no-color }
-搭建，代码通过
-[VSCode](https://code.visualstudio.com/){ .no-color }
-编写并存储于
-[GitHub](https://github.com/github){ .no-color }
-公开仓库中。
-常规文字为
-[MiSans](https://hyperos.mi.com/font){ .no-color }
-, 等宽为
-[JetBrains Mono](https://www.jetbrains.com/lp/mono/){ .no-color }
-字体。托管于
-[Netlify](https://www.netlify.com/){ .no-color }
-/ [Vercel](https://vercel.com/){ .no-color }
-/ [GitHub Page](https://docs.github.com/en/pages){ .no-color }
-平台。
+网站基于[**Zensical**](https://zensical.org/){ .no-color }搭建, 托管于[**Netlify**](https://www.netlify.com/){ .no-color }等平台, 详细信息请参阅[**POWER-BY**](/POWER-BY){ .no-color }。
 ///
