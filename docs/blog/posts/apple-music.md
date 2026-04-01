@@ -1,6 +1,6 @@
 ---
 icon: simple/applemusic
-title: 更改 AM 播放列表所有者
+title: Apple Music
 # date:
 #   created: 2026-03-25
 comments: true
