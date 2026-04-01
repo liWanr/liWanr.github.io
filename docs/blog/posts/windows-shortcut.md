@@ -1,12 +1,14 @@
 ---
 icon: lucide/group
-title: 删掉默认 win+v 快捷键
+title: Windows 快捷键
 # date:
 #     created: 2026-02-18
 tags:
     - Factoid
 comments: true
 ---
+
+## 删除 Win+V 快捷键
 
 ///html | div.step
 
