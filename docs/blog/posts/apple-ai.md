@@ -4,7 +4,6 @@ title: Mac 强开 Apple AI
 # date:
 #   created: 2026-03-26
 comments: true
-status: new
 ---
 
 <h1>
