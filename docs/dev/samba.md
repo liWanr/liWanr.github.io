@@ -1,5 +1,5 @@
 ---
-icon: material/cloud-upload-outline
+icon: lucide/database
 title: Samba
 # date:
 #     created: 2026-02-13

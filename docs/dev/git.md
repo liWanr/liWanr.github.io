@@ -1,5 +1,5 @@
 ---
-icon: lucide/git-merge
+icon: lucide/git-graph
 title: Git 基本知识
 # date:
 #     created: 2025-01-20

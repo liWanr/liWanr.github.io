@@ -1,5 +1,5 @@
 ---
-icon: material/arrow-u-right-bottom
+icon: lucide/square-arrow-out-up-right
 title: 反向代理
 # date:
 #     created: 2026-03-11
