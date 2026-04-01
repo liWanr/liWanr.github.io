@@ -27,7 +27,7 @@ hide:
     [JetBrains Mono](https://www.jetbrains.com/lp/mono/)。
 
 -   **托管平台**:
-    [Local](http://local.liwanr.com:24)
+    [Local Server](http://local.liwanr.com:24)
     / [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/)
     / [GitHub Pages](https://docs.github.com/en/pages)
     / [Vercel](https://vercel.com/)
