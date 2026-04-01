@@ -29,7 +29,7 @@ hide:
 -   **托管平台**:
     [Local Server](http://local.liwanr.com:24)
     / [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/)
-    / [GitHub Pages](https://docs.github.com/en/pages)
+    / [GitHub Pages](https://docs.github.com/pages)
     / [Vercel](https://vercel.com/)
     / [Netlify](https://www.netlify.com/)
 
