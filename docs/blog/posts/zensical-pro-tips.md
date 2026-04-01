@@ -12,6 +12,7 @@ comments: true
 [**Mermaid**](https://mermaid.ai/open-source/syntax/flowchart.html "图标")
 | [**PyMdown Extensions**](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/ "python Markdown 扩展")
 | [**Icons**](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/ "图标和表情")
+| [**Lucide**](https://lucide.dev/icons/ "图标")
 
 <script src="../../../assets/javascripts/keys/keys.js"></script>
 
