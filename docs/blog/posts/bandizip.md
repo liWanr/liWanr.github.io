@@ -1,7 +1,18 @@
 ---
-icon: simple/applemusic
-title: Bandizip 最后的辉煌
+icon: lucide/file-archive
+title: Bandizip
 # date:
 #   created: 2026-03-25
+#   updated: 2026-04-02
 comments: true
+status: new
 ---
+
+<h1>
+Bandizip - 最后的辉煌
+</h1>
+
+///html | div.step
+1. 点击下载安装包 [:lucide-mouse-pointer-click: **Bandizip**](/public/Tools/Bandizip_v7.06.zip), 解压密码 `#!text 1111`
+
+///
