@@ -1,5 +1,5 @@
 ---
-icon: local/mysql
+icon: simple/dolphin
 title: MySQL
 # date:
 #     created: 2026-03-25

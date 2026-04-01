@@ -1,5 +1,5 @@
 ---
-icon: local/blog
+icon: lucide/shredder
 title: 一些不错的博客
 # date:
 #     created: 2026-03-26

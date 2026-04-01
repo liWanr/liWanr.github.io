@@ -1,5 +1,5 @@
 ---
-icon: local/connect
+icon: lucide/satellite
 title: 异地组网
 # date:
 #     created: 2025-01-20

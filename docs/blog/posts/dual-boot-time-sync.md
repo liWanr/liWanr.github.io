@@ -1,5 +1,5 @@
 ---
-icon: local/time-sync
+icon: lucide/calendars
 title: 双系统时间同步
 # date:
 #   created: 2024-12-25

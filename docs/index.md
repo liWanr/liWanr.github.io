@@ -10,7 +10,7 @@ hide:
 
 ## Hello, I'm liWanr! { style="margin: 0 auto 0 auto; font-size:4em; font-style: italic;" }
 
-## :local-user: About Me { style="margin-top: 10px;"}
+## :lucide-scan-face: About Me { style="margin-top: 10px;"}
 
 ///html | div.grid
 
@@ -77,7 +77,7 @@ hide:
 
 
 
-## :local-education: Education
+## :lucide-graduation-cap: Education
 
 ///html | div.grid.cards
 

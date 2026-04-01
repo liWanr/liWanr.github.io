@@ -1,5 +1,5 @@
 ---
-icon: local/hackrf
+icon: lucide/radio-tower
 title: HackRF 固件维护
 # date:
 #     created: 2025-03-17
