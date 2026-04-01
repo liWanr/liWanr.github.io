@@ -71,12 +71,6 @@ hide:
 ///
 ///
 
-
-
-
-
-
-
 ## :lucide-graduation-cap: Education
 
 ///html | div.grid.cards
