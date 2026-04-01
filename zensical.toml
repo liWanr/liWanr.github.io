@@ -9,15 +9,15 @@ dev_addr = "0.0.0.0:8000"
 
 copyright = """
 <div style="font-feature-settings: 'ss04' off;">
-&copy; 2024-2026
-<a href="/LICENSE" style="font-feature-settings: 'ss04' off; font-weight: 500;" >liWanr</a>
-All Rights Reserved.
-<img src="https://views.whatilearened.today/views/github/liWanr/liWanr.github.io.svg" alt="views" style="width: 56px; position: relative; top: 2.8px;">
-<small>
-<a href="https://icp.gov.moe/?keyword=20261874" style="font-feature-settings: 'ss04' off;" target="_blank">萌ICP备 20261874 号</a>
-|
-<a href="/POWER-BY" style="font-feature-settings: 'ss04' off;">POWER-BY</a>
-</small>
+    &copy; 2024-2026 liWanr All Rights Reserved.
+    <img src="https://views.whatilearened.today/views/github/liWanr/liWanr.github.io.svg" alt="views" style="width: 56px; position: relative; top: 2.8px;">
+    <small>
+        <a href="https://icp.gov.moe/?keyword=20261874" style="font-feature-settings: 'ss04' off;" target="_blank">萌ICP备 20261874 号</a>
+        /
+        <a href="/LICENSE/" style="font-feature-settings: 'ss04' off;" >LICENSE</a>
+        /
+        <a href="/POWERBY/" style="font-feature-settings: 'ss04' off;">POWERBY</a>
+    </small>
 </div>
 """
 
