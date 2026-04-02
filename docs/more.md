@@ -20,7 +20,7 @@ hide:
 
 ## :lucide-graduation-cap: Education
 
-///html | div.grid.cards[style='grid-template-columns: repeat(auto-fit, minmax(min(30%, 16rem), 1fr));']
+///html | div.grid.cards[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));']
 -   **2024年9月 - 2025年7月**
 
     ![CQU-EIE](/assets/images/index/CQU-EIE-light.svg#only-light){ loading=lazy }
@@ -64,7 +64,7 @@ hide:
     [学校官网](https://www.cqny.edu.cn/){ .no-color }
 ///
 
-## :lucide-ev-charger: PowerBy
+## :lucide-ev-charger: Powered By
 
 -   **框架生成**: 网站基于
     [Zensical](https://zensical.org/)
