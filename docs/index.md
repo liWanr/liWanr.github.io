@@ -8,34 +8,29 @@ hide:
     - footer
 ---
 
-## Hello, I'm liWanr! { style="margin: 0 auto 0 auto; font-size:4em; font-style: italic;" }
-
-## :lucide-scan-face: About Me { style="margin-top: 10px;"}
+## Hello, I'm liWanr! { style="margin: 0.6em auto 0 auto; font-size:4em; font-style: italic;" }
 
 ///html | div.grid
 
 ///html |div
 
-:lucide-messages-square: **Let's Chat -**
-[**Email**](mailto:itsWanr@outlook.com)
-| [**GitHub**](https://github.com/liWanr)
-| [**Gravatar**](https://gravatar.com/liwanr)
+记录「**技术、思考与实践**」的个人空间，也是我在数字世界中留下的一条长期轨迹。
 
-笨笨的极客玩家, 掌握 **C**&**C++** / **Java** / **Python** 等编程语言, 有 **STM32** 等嵌入式设备与 **Android** 数据传输与通信的经验。对 **OpenWrt** / **Nginx** / **OpenVPN** 等网络与 **Figma** / **Axure** 等 UI/UX 设计感兴趣, 致力于将技术与设计完美结合。参与过蓝牙射频指纹、网联汽车巡航、物联网农业工程、生物特征电子签名等项目。
+最开始建立这个站点是为了避免重复踩坑。很多问题第一次解决时需要耗费大量时间，而再次遇到类似问题时，却仍可能从头开始。
 
-平时喜欢打台球, 线上可以在
-[**Shooterspool**](https://www.shooterspool.net/){ .no-color }
-找我玩。也比较喜欢听流行音乐, 歌手中意**陈奕迅**,
-觉得**林夕** / **黄伟文**的填词加**郭伟亮**等老香港作曲就能封神。
+因此，我选择把这些过程记录下来，**让经验留下可回溯的路径，而不是被遗忘**。
+
+随着内容不断积累，我也逐渐意识到仅仅记录是不够的。零散的笔记如果长期保持碎片状态，依然难以真正复用。因此这个站点的目标也在慢慢改变，不只是记录问题，而是尝试打破碎片，把零散的经验重新整理成结构，把模糊的理解沉淀为清晰的认知，
+
+**让每一次探索都成为未来行动的参考，而不是消逝的片段**。[更多](/about/)
 
 ///
 
 ///html | div.card
-
-:lucide-handshake: **Friend -**
-[**Jiao**](https://dxlcq.cn/)^:local-jiao:^ 
-/ [**Sevenalist**](https://dczcq.cn/)^:lucide-chef-hat:^ 
-/ [**Qvi**](https://qvidx.github.io)^:lucide-squirrel:^
+:lucide-messages-square: **Let's Chat -**
+[**Email**](mailto:itsWanr@outlook.com)
+| [**GitHub**](https://github.com/liWanr)
+| [**Gravatar**](https://gravatar.com/liwanr)
 
 <hr style="height: 0rem;border-radius: 5px; background-color: var(--md-accent-fg-color);">
 ///html | div[style='font-family: JetBrains Mono; color: var(--md-default-fg-color) !important;']
@@ -68,52 +63,4 @@ hide:
 **/ **[Spotify](https://open.spotify.com)
 
 ///
-///
-///
-
-## :lucide-graduation-cap: Education
-
-///html | div.grid.cards
-
--   **2024年9月 - 2025年7月**
-
-    ![CQU-EIE](/assets/images/index/CQU-EIE-light.svg#only-light){ loading=lazy }
-    ![CQU-EIE](/assets/images/index/CQU-EIE-dark.svg#only-dark){ loading=lazy }
-    
-    ---
-
-    [**国家卓越工程师教育培养计划**](http://www.moe.gov.cn/srcsite/A08/moe_742/s3860/){ .no-color }
-    | **智能网联汽车**
-
-    :lucide-mouse-pointer-click:
-    [学校官网](https://cqu.edu.cn/){ .no-color }
-    [卓工官网](https://eie.cqu.edu.cn/){ .no-color }
-
-
--   **2023年9月 - 2025年7月**
-
-    ![CQUE](/assets/images/index/CQUE-light.svg#only-light){ loading=lazy }
-    ![CQUE](/assets/images/index/CQUE-dark.svg#only-dark){ loading=lazy }
-
-    ---
-
-    **全日制本科**
-    | **数据科学与大数据技术**
-
-    :lucide-mouse-pointer-click:
-    [学校官网](https://www.cque.edu.cn/){ .no-color }
-
--   **2020年9月 - 2023年7月**
-
-
-    ![CQUE](/assets/images/index/CQNY-light.svg#only-light){ loading=lazy }
-    ![CQNY](/assets/images/index/CQNY-dark.svg#only-dark){ loading=lazy }
-
-    ---
-
-    **全日制专科**
-    | **物联网应用技术**
-
-    :lucide-mouse-pointer-click:
-    [学校官网](https://www.cqny.edu.cn/){ .no-color }
-///
+<!-- /// -->
