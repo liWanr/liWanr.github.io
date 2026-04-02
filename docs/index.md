@@ -14,15 +14,16 @@ hide:
 
 ///html |div
 
-记录「**技术、思考与实践**」的个人空间，也是我在数字世界中留下的一条长期轨迹。
+记录「**技术、思考与实践**」的个人空间，也是我在数字世界中缓慢延伸的一条时间轨迹。
 
-最开始建立这个站点是为了避免重复踩坑。很多问题第一次解决时需要耗费大量时间，而再次遇到类似问题时，却仍可能从头开始。
+最开始建立这个站点是为了避免重复踩坑。很多问题在首次遇到时，往往需要花费大量时间查资料、反复尝试各种方案，而当再次遇到类似问题时，却仍可能不得不从头开始，因此我选择把这些过程记录下来，
 
-因此，我选择把这些过程记录下来，**让经验留下可回溯的路径，而不是被遗忘**。
+「**让经验留下可以回望的路径，而不是悄然消散在时间里**」
 
-随着内容不断积累，我也逐渐意识到仅仅记录是不够的。零散的笔记如果长期保持碎片状态，依然难以真正复用。因此这个站点的目标也在慢慢改变，不只是记录问题，而是尝试打破碎片，把零散的经验重新整理成结构，把模糊的理解沉淀为清晰的认知，
+随着内容不断积累，我也逐渐意识到记录并不足够。零散的笔记长期停留在碎片状态，依然难以真正复用。故而这个站点的目标也在慢慢发生变化。不只是记录问题，而是尝试打破碎片，将零散的经验重新整理成结构，把模糊的理解沉淀为清晰的认知，
 
-**让每一次探索都成为未来行动的参考，而不是消逝的片段**。[更多](/about/)
+「**让每一次探索都不止当下，而是在未来的某个时刻，再次成为前行时的依靠**」[More](/about/)
+
 
 ///
 
@@ -33,34 +34,49 @@ hide:
 | [**Gravatar**](https://gravatar.com/liwanr)
 
 <hr style="height: 0rem;border-radius: 5px; background-color: var(--md-accent-fg-color);">
-///html | div[style='font-family: JetBrains Mono; color: var(--md-default-fg-color) !important;']
-**Tec. -**
+
+///html | div.grid[style='grid-template-columns: repeat(auto-fit, minmax(min(30%, 16rem), 1fr));']
+
 [Microsoft](https://account.microsoft.com/)
-**/ **[Outlook](https://outlook.live.com/mail)
-**/ **[Gmail](https://mail.google.com/mail)
-**/ **[Apple](https://account.apple.com/account/manage/section/information)
-**/ **[iCloud](https://www.icloud.com.cn/)
 
-**LLMs -**
+[Outlook](https://outlook.live.com/mail)
+
+[Google](https://myaccount.google.com/)
+
+[Apple](https://account.apple.com/account/manage/section/information)
+
+[iCloud](https://www.icloud.com.cn/)
+
+[Gmail](https://mail.google.com/mail)
+
 [GPT](https://chat.openai.com/chat)
-**/ **[Grok](https://grok.com/)
-**/ **[Gemini](https://gemini.google.com/app)
-**/ **[Claude](https://claude.ai/)
-**/ **[Perplexity](https://www.perplexity.ai/)
 
-**Net. -**
+[Grok](https://grok.com/)
+
+[Gemini](https://gemini.google.com/app)
+
+[Claude](https://claude.ai/)
+
+[Perplexity](https://www.perplexity.ai/)
+
+[Xiaomi MiMo](https://aistudio.xiaomimimo.com/#/)
+
 [IPCheck](https://ipcheck.ing/#/)
-**/ **[IT DOG](https://www.itdog.cn/ping/)
-**/ **[Analytics](https://analytics.google.com/analytics/web/)
-**/ **[Cloudflare](https://dash.cloudflare.com/)
-**/ **[中科大测速](https://test.ustc.edu.cn/)
 
-**Med. -**
+[IT DOG](https://www.itdog.cn/ping/)
+
+[Cloudflare](https://dash.cloudflare.com/)
+
 [Discord](https://discord.com/channels/@me)
-**/ **[YouTube](https://www.youtube.com/)
-**/ **[DouYin](https://www.douyin.com/?recommend=1)
-**/ **[Bilibili](https://www.bilibili.com/)
-**/ **[Spotify](https://open.spotify.com)
+
+[YouTube](https://www.youtube.com/)
+
+[Reddit](https://www.reddit.com/)
+
+[DouYin](https://www.douyin.com/?recommend=1)
+
+[Bilibili](https://www.bilibili.com/)
+
+[Spotify](https://open.spotify.com)
 
 ///
-<!-- /// -->
