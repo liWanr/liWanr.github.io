@@ -6,6 +6,16 @@ title: 一些不错的博客
 comments: true
 ---
 
+## Friends
+///html | div.grid.cards
+-   [**Jiao**](https://dxlcq.cn/)
+
+-   [**Sevenalist**](https://dczcq.cn/)
+
+-   [**Qvi**](https://qvidx.github.io)
+///
+
+## Andere
 ///html | div.grid.cards
 
 -   [**Brittany Chiang**](https://brittanychiang.com/)
