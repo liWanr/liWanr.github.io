@@ -10,26 +10,15 @@
     padding: 0;
 }
 
-/* .md-typeset a{
-    text-decoration: none;
-} */
-
-/* 链接的下划线只有鼠标移入才出现 */
-.md-typeset a {
-    text-decoration: none;
+/* 链接的下划线只有鼠标移入才缓慢出现 */
+.md-typeset a:not(.md-button):not(.headerlink) {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s ease;
 }
 
-/* 普通链接（排除按钮） */
-.md-typeset a:not(.md-button):not(.headerlink):not(label > a):not(:has(code, >svg, >span, >img)) {
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 1px;
-  transition: background-size 0.35s cubic-bezier(.4, 0, .2, 1);
-}
-
-.md-typeset a:not(.md-button):not(.headerlink):not(label > a):not(:has(code, >svg, >span, >img)):hover {
-  background-size: 100% 1px;
+.md-typeset a:not(.md-button):not(.headerlink):hover {
+  text-decoration-color: currentColor;
 }
 
 /* 为了让链接没有颜色写的 */
@@ -111,6 +100,11 @@ small {
     --md-text-font: "MiSans";
     --features: "tnum" on, "case" on;
     --md-steps-border-color: hsla(0, 0%, 75%, 1);
+}
+
+/* 图标大小 */
+.md-typeset .emojione, .md-typeset .gemoji, .md-typeset .twemoji {
+    --md-icon-size: 1.22em;
 }
 
 * {
