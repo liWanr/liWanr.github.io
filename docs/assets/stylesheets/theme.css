@@ -1,0 +1,32 @@
+/* 深色主题改改颜色:背景/页眉/代码块背景/代码块按钮背景/代码块按键背景hover/按键边框 */
+[data-md-color-scheme=slate] {
+    --md-default-bg-color: oklch(20.09% .003 67.68);
+    --md-default-bg-color--light: hsla(var(--md-default-bg-color), 5.88%, 13.33%, 0.54);
+    --md-code-bg-color: #242424;
+    --md-code-bg-color--lighter: hsla(var(--md-code-bg-color), 3.17%, 24.44%, 0.7);
+    --md-code-bg-color--light: hsla(var(--md-code-bg-color),3.17%, 24.44%, 0.8);
+    --md-typeset-kbd-border-color: #494848;
+}
+
+/* 浅色主题改改颜色这些 */
+[data-md-color-scheme=default] {
+    --md-default-bg-color: #faf8f5;
+    --md-default-bg-color--light: hsla(var(--md-default-bg-color), 5.88%, 13.33%, 0.54);
+    --md-code-bg-color: #f4f0ed;
+    --md-code-bg-color--lighter: hsla(var(--md-code-bg-color), 3.17%, 24.44%, 0.7);
+    --md-code-bg-color--light: hsla(var(--md-code-bg-color),3.17%, 24.44%, 0.8);
+}
+
+/* 文字相关的主题色 */
+[data-md-color-accent="myTheme"] {
+    --md-accent-fg-color: #958367;
+    --md-accent-fg-color--transparent: #95836720;
+}
+
+[data-md-color-primary="myTheme"] {
+    --md-primary-fg-color: #958367;
+    --md-primary-fg-color--light: #ff0000;
+    --md-primary-fg-color--dark: #ff0000;
+    --md-primary-bg-color: #f1eee9;
+    --md-primary-bg-color--light: #ff0000;
+}
