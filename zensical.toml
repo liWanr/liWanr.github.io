@@ -41,6 +41,7 @@ nav = [
         { "Nginx" = [
             "dev/nginx/index.md",
             "dev/nginx/reverse-proxy.md",
+            "dev/nginx/config.md",
         ] },
         "dev/mysql.md",
     ] },
@@ -85,6 +86,11 @@ nav = [
 extra_css = [
     "assets/stylesheets/extra.css",
     "assets/stylesheets/search.css",
+    "assets/stylesheets/theme.css",
+    "assets/stylesheets/step.css",
+    "assets/stylesheets/link.css",
+    "assets/stylesheets/table.css",
+    "assets/stylesheets/progress.css",
 ]
 
 [[project.extra_javascript]]
@@ -127,16 +133,16 @@ media = "(prefers-color-scheme: light)"
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "浅色模式"
-accent = "liwanr"
-primary = "liwanr"
+accent = "myTheme"
+primary = "myTheme"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "深色模式"
-accent = "liwanr"
-primary = "liwanr"
+accent = "myTheme"
+primary = "myTheme"
 
 # Markdown 扩展
 [project.markdown_extensions.abbr]                          # 启用缩写支持
