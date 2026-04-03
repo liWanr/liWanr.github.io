@@ -110,14 +110,14 @@ comments: true
 ## 通用
 
 ```markdown { linenums="0"}
-[Button](#警告框){ .md-button }
-[Button](#警告框){ .md-button .md-button--primary }
+[Button](#通用){ .md-button }
+[Button](#通用){ .md-button .md-button--primary }
 ```
 
 ///html | div.result
 
-[Button](#警告框){ .md-button }
-[Button](#警告框){ .md-button .md-button--primary }
+[Button](#通用){ .md-button }
+[Button](#通用){ .md-button .md-button--primary }
 
 ///
 
