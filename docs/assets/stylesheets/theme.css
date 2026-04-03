@@ -30,3 +30,7 @@
     --md-primary-bg-color: #f1eee9;
     --md-primary-bg-color--light: #ff0000;
 }
+
+.no-color{
+    color: var(--md-default-fg-color) !important;
+}
