@@ -8,11 +8,11 @@ hide:
     - footer
 ---
 
-<style>
+///html | style
 .nocolor p>a {
     color: var(--md-default-fg-color);
 }
-</style>
+///
 
 ## Hello, I'm liWanr! { style="margin: 0.6em auto 0 auto; font-size:4em; font-style: italic;" }
 
@@ -81,7 +81,7 @@ hide:
 
 [DouYin](https://www.douyin.com/?recommend=1)
 
-[Bilibili](https://www.bilibili.com/)
+[Bilibili](https://www.bilibili.com/)[text](message:%3CliWanr/liWanr.github.io/commit/cdb0b41326d40cae33e3c68a534190df6dae910d/181428045%40github.com%3E)
 
 [Spotify](https://open.spotify.com)
 
