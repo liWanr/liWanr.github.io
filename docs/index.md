@@ -35,7 +35,7 @@ hide:
 
 <hr style="height: 0rem;border-radius: 5px; background-color: var(--md-accent-fg-color);">
 
-///html | div.grid[style='grid-template-columns: repeat(auto-fit, minmax(min(30%, 16rem), 1fr));']
+///html | div.grid[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));']
 
 [Microsoft](https://account.microsoft.com/)
 
