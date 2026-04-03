@@ -8,6 +8,12 @@ hide:
     - footer
 ---
 
+<style>
+.nocolor p>a {
+    color: var(--md-default-fg-color);
+}
+</style>
+
 ## Hello, I'm liWanr! { style="margin: 0.6em auto 0 auto; font-size:4em; font-style: italic;" }
 
 ///html | div.grid
@@ -33,9 +39,9 @@ hide:
 | [**GitHub**](https://github.com/liWanr)
 | [**Gravatar**](https://gravatar.com/liwanr)
 
-<hr style="height: 0rem;border-radius: 5px; background-color: var(--md-accent-fg-color);">
+<hr style="height: 0rem;border-radius: 5px; background-color: var(--md-primary-fg-color);">
 
-///html | div.grid[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));']
+///html | div.grid[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));'class='nocolor']
 
 [Microsoft](https://account.microsoft.com/)
 
