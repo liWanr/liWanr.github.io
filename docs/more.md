@@ -28,7 +28,7 @@ hide:
     
     ---
 
-    [**国家卓越工程师计划**](http://www.moe.gov.cn/srcsite/A08/moe_742/s3860/){ .no-color }
+    **国家卓越工程师计划**
     | **智能网联汽车**
 
     :lucide-mouse-pointer-click:
