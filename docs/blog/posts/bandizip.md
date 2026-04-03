@@ -5,7 +5,6 @@ title: Bandizip
 #   created: 2026-03-25
 #   updated: 2026-04-02
 comments: true
-status: new
 ---
 
 <h1>
