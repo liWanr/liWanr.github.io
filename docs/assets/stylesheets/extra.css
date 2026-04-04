@@ -60,8 +60,6 @@ small {
 
 :root {
     --md-text-font: "MiSans";
-    /* --features: "tnum" on, "case" on; */
-    /* font-feature-settings: var(--features); */
 }
 
 /* 二级无序嵌套列表为空心圆 */
@@ -103,4 +101,8 @@ figcaption {
         justify-content: center;
         height: 100%;
     }
+}
+
+.no-color{
+    color: var(--md-default-fg-color) !important;
 }
