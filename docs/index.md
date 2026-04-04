@@ -55,7 +55,7 @@ hide:
 
 [iCloud](https://www.icloud.com.cn/)
 
-[GPT](https://chat.openai.com/chat)
+[Chat GPT](https://chat.openai.com/chat)
 
 [Grok](https://grok.com/)
 
