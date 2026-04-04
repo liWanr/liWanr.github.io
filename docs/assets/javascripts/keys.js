@@ -20,7 +20,7 @@
 
         let data = {};
         const t = $('script[src*="keys.js"]');
-        fetch(t ? t.src.replace('.js', '.json') : '/javascripts/keys/keys.json').then(r => r.json()).then(d => data = d);
+        fetch(t ? t.src.replace('.js', '.json') : '/javascripts/keys.json').then(r => r.json()).then(d => data = d);
 
         const render = (val) => {
             const q = val.toLowerCase(), isSym = val.length === 1 && !/[a-z0-9]/i.test(val);
@@ -39,7 +39,6 @@
                 </div>`).join('');
             res.scrollTop = 0;
 
-            // 保持 data-clipboard-text 属性，MkDocs 监听器会自动处理复制弹窗
             res.querySelectorAll('.mdx-copy-target').forEach(e => {
                 e.onclick = () => navigator.clipboard.writeText(e.getAttribute('data-clipboard-text'));
             });
