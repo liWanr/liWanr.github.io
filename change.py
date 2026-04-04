@@ -10,7 +10,6 @@ if os.path.exists(index_path):
     with open(index_path, 'r', encoding='utf-8') as f:
         index_content = f.read()
 
-    # 同时匹配 class 含有 "md-content__button md-icon" 或 "headerlink" 的 a 标签
     pattern = (
         r'<a\s+[^>]*class=["\'][^"\']*?md-content__button\s+md-icon[^"\']*?["\'][^>]*>.*?</a>'
         r'|'
@@ -19,14 +18,12 @@ if os.path.exists(index_path):
 
     new_index_content = re.sub(pattern, '', index_content, flags=re.DOTALL)
 
-    # 再删除 h2 标签上的 id 属性：<h2 class="no-anchor" id="..."> -> 去掉 id="..."
     new_index_content = re.sub(
-    r'(<h2\b[^>]*?)\s+id="[^"]*"([^>]*>)',
+        r'(<h2\b[^>]*?)\s+id="[^"]*"([^>]*>)',
         r'\1\2',
         new_index_content
     )
 
-    # 删除所有 h1 元素（包括内容）
     new_index_content = re.sub(
         r'<h1\b[^>]*>.*?</h1>',
         '',
@@ -43,73 +40,45 @@ for root, _, files in os.walk(site_dir):
     for file in files:
         if file.endswith('.html'):
             file_path = os.path.join(root, file)
-            
+
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
-            
+
             old_str, new_str = 'raw/master/docs', 'raw/main/docs'
-            
+
             if old_str in content:
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(content.replace(old_str, new_str))
-                # print(f"已处理路径替换: {file_path}")
 
-import os
-import re
+# 3. 压缩 JS 和 CSS 文件
+def minify_js(content):
+    # 只合并空白和换行，不删注释，避免误伤变量名和逻辑
+    content = re.sub(r'\n+', ' ', content)
+    content = re.sub(r'[ \t]+', ' ', content)
+    return content.strip()
 
 def minify_css(content):
-    # 删除多行注释
-    content = re.sub(r'/\*.*?\*/', '', content, flags=re.DOTALL)
-
-    # 压缩空白
-    content = re.sub(r'\s+', ' ', content)
-
-    # 删除符号两边空格
-    content = re.sub(r'\s*([{};:,])\s*', r'\1', content)
-
+    # CSS 注释不影响逻辑，可以安全删除
+    content = re.sub(r'/\*(?!!)([\s\S]*?)\*/', '', content)
+    content = re.sub(r'\n+', ' ', content)
+    content = re.sub(r'[ \t]+', ' ', content)
+    content = re.sub(r'\s*([{}:;,>~+])\s*', r'\1', content)
+    content = re.sub(r';+\}', '}', content)
     return content.strip()
 
-
-def minify_js(content):
-    # 只删除 /* */ 注释，避免误删 URL
-    content = re.sub(r'/\*.*?\*/', '', content, flags=re.DOTALL)
-
-    # 压缩连续空白
-    content = re.sub(r'\s+', ' ', content)
-
-    # 删除常见符号两边空格
-    content = re.sub(r'\s*([{};:,=+\-*/()<>])\s*', r'\1', content)
-
-    return content.strip()
-
-
-# 只处理一级目录 JS
-js_dir = os.path.join(site_dir, 'assets', 'javascripts')
-if os.path.exists(js_dir):
-    for file in os.listdir(js_dir):
-        file_path = os.path.join(js_dir, file)
-
-        if os.path.isfile(file_path) and file.endswith('.js'):
-            with open(file_path, 'r', encoding='utf-8') as f:
-                content = f.read()
-
-            minified = minify_js(content)
-
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(minified)
-
-
-# 只处理一级目录 CSS
-css_dir = os.path.join(site_dir, 'assets', 'stylesheets')
-if os.path.exists(css_dir):
-    for file in os.listdir(css_dir):
-        file_path = os.path.join(css_dir, file)
-
-        if os.path.isfile(file_path) and file.endswith('.css'):
-            with open(file_path, 'r', encoding='utf-8') as f:
-                content = f.read()
-
-            minified = minify_css(content)
-
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(minified)
+for dir_path, ext, minify_fn in [
+    (os.path.join(site_dir, 'assets', 'javascripts'), '.js',  minify_js),
+    (os.path.join(site_dir, 'assets', 'stylesheets'), '.css', minify_css),
+]:
+    if not os.path.isdir(dir_path):
+        continue
+    for root, _, files in os.walk(dir_path):
+        for file in files:
+            if file.endswith(ext):
+                file_path = os.path.join(root, file)
+                with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                    original = f.read()
+                minified = minify_fn(original)
+                if minified != original:
+                    with open(file_path, 'w', encoding='utf-8') as f:
+                        f.write(minified)
