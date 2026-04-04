@@ -73,10 +73,6 @@ figcaption {
 }
 
 /* 图标位置的调整，尽量保证水平居中 */
-.md-typeset small .twemoji {
-    margin-top: 1.35px;
-}
-
 .md-typeset h2 .twemoji {
     margin-top: 2.7px;
 }
