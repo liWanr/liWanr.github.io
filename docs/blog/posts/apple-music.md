@@ -30,4 +30,4 @@ comments: true
 
 这是我的 Apple Music 播放列表，不接受批判🎵～
 
-<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/playlist/deep-soul/pl.u-GgA5kvzIoEY1K9x"></iframe>
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/tr/playlist/deep-soul/pl.u-XkD0vlEc2akAZ1r"></iframe>
