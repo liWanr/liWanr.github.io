@@ -1,6 +1,6 @@
 ---
 icon: simple/vim
-title: vim 基本知识
+title: vim
 # date:
 #     created: 2026-02-22
 tags:

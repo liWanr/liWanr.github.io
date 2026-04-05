@@ -1,6 +1,6 @@
 ---
 icon: lucide/git-graph
-title: Git 基本知识
+title: Git
 # date:
 #     created: 2025-01-20
 #     updated: 2025-03-23
