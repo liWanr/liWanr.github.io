@@ -81,7 +81,7 @@ hide:
 
 [DouYin](https://www.douyin.com/?recommend=1)
 
-[Bilibili](https://www.bilibili.com/)[text](message:%3CliWanr/liWanr.github.io/commit/cdb0b41326d40cae33e3c68a534190df6dae910d/181428045%40github.com%3E)
+[Bilibili](https://www.bilibili.com/)
 
 [Spotify](https://open.spotify.com)
 
