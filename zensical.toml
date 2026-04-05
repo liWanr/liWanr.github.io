@@ -167,6 +167,9 @@ permalink = "§"
 permalink_title = "锚点"
 slugify = {object = "pymdownx.slugs.slugify", kwds = { case = "lower" }}
 
+[project.markdown_extensions.pymdownx.b64]
+base_path = './docs/assets/images'
+
 [project.markdown_extensions.pymdownx.blocks.tab]           # 新，内容标签页
 alternate_style = true
 combine_header_slug = true
