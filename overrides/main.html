@@ -10,11 +10,6 @@
     关键词：公告栏announce
 #}
 
-{% block extrahead %}
-  {{ super() }}
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="ff41db80-70de-4904-a1bc-fac773196513"></script>
-{% endblock %}
-
 {% block htmltitle %}
   {% if page.meta and page.meta.title %}
     <title>{{ page.meta.title }}</title>
