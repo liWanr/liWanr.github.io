@@ -1,6 +1,6 @@
 .divider {
     font-family: 'Orbitron', monospace;
-    font-size: 10px;
+    font-size: 80%;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     margin: 1.25rem 0 1rem;
@@ -36,6 +36,7 @@
     border-radius: 20px;
     border: 0.5px solid #333;
     letter-spacing: 0.05em;
+    text-decoration: initial !important;
 }
 
 .badge.theme {

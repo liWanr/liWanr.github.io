@@ -14,7 +14,7 @@ copyright = """
     <small>
         <a href="https://icp.gov.moe/?keyword=20261874" style="font-feature-settings: 'ss04' off;" target="_blank">萌ICP备 20261874 号</a>
         |
-        <a href="/more/" style="font-feature-settings: 'ss04' off;">More</a>
+        <a href="https://cloud.umami.is/share/bOzIXzhGLLZShU2X" style="font-feature-settings: 'ss04' off;" target="_blank">数据统计</a>
     </small>
 </div>
 """
@@ -81,7 +81,8 @@ nav = [
         "recom/open-source.md",
         "recom/tools.md",
         "recom/blogs.md",
-    ]}
+    ]},
+    { "About" = "about.md" },
 ]
 
 extra_css = [

@@ -1,14 +1,12 @@
 ---
-title: More
+title: About Somethings
 hide:
     - navigation
     - path
     - feedback
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/more.css">
-
-## :lucide-scan-face: About
+<link rel="stylesheet" href="/assets/stylesheets/about.css">
 
 **哈喽👋，你可以叫我婉儿**。为什么叫这个名字呢？是因为我的本名不是很常见，但是比较像李宛，我怕别人读错就把网名改成了「不叫李宛」，然后发现叫李宛的更多了，甚至我进某些主播的直播间，他都说欢迎李宛😅？？？？放弃抵抗后逐渐变成婉儿了，脱敏后甚至直接改成婉儿或者李宛了（黑化成功）。
 
@@ -23,47 +21,30 @@ hide:
 ## :lucide-graduation-cap: Education
 
 ///html | div.grid.cards[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));']
--   **2024年9月 - 2025年7月**
+-   **2024.09 - 2025.07**
 
-    ![CQU-EIE](/assets/images/index/CQU-EIE-light.svg#only-light){ loading=lazy }
-    ![CQU-EIE](/assets/images/index/CQU-EIE-dark.svg#only-dark){ loading=lazy }
+    [![CQU-EIE](/assets/images/index/CQU-EIE-light.svg#only-light){ loading=lazy }](https://cqu.edu.cn/)
+    [![CQU-EIE](/assets/images/index/CQU-EIE-dark.svg#only-dark){ loading=lazy }](https://cqu.edu.cn/)
+
+    [国家卓越工程师计划](https://eie.cqu.edu.cn/){ .badge .theme }
+    <span class="badge">智能网联汽车</span>
+
+-   **2024.09 - 2025.07**
     
-    ---
+    [![CQUE](/assets/images/index/CQUE-light.svg#only-light){ loading=lazy }](https://www.cque.edu.cn/)
+    [![CQUE](/assets/images/index/CQUE-dark.svg#only-dark){ loading=lazy }](https://www.cque.edu.cn/)
+    
+    <span class="badge theme">全日制本科</span>
+    <span class="badge">数据科学与大数据技术</span>
 
-    **国家卓越工程师计划**
-    | **智能网联汽车**
+-   **2020.09 - 2023.07**
 
-    :lucide-mouse-pointer-click:
-    [学校官网](https://cqu.edu.cn/){ .no-color }
-    [卓工官网](https://eie.cqu.edu.cn/){ .no-color }
+    [![CQUE](/assets/images/index/CQNY-light.svg#only-light){ loading=lazy }](https://www.cqny.edu.cn/)
+    [![CQNY](/assets/images/index/CQNY-dark.svg#only-dark){ loading=lazy }](https://www.cqny.edu.cn/)
 
+    <span class="badge theme">全日制专科</span>
+    <span class="badge">物联网应用技术</span>
 
--   **2023年9月 - 2025年7月**
-
-    ![CQUE](/assets/images/index/CQUE-light.svg#only-light){ loading=lazy }
-    ![CQUE](/assets/images/index/CQUE-dark.svg#only-dark){ loading=lazy }
-
-    ---
-
-    **全日制本科**
-    | **数据科学与大数据技术**
-
-    :lucide-mouse-pointer-click:
-    [学校官网](https://www.cque.edu.cn/){ .no-color }
-
--   **2020年9月 - 2023年7月**
-
-
-    ![CQUE](/assets/images/index/CQNY-light.svg#only-light){ loading=lazy }
-    ![CQNY](/assets/images/index/CQNY-dark.svg#only-dark){ loading=lazy }
-
-    ---
-
-    **全日制专科**
-    | **物联网应用技术**
-
-    :lucide-mouse-pointer-click:
-    [学校官网](https://www.cqny.edu.cn/){ .no-color }
 ///
 
 ## :lucide-computer: Setup
@@ -176,29 +157,46 @@ System Specs
 
 ## :lucide-ev-charger: Powered By
 
--   **框架生成**: 网站基于
+///html | div.grid.cards
+-   :lucide-bug-play: **框架生成**
+
+    ---
+    
+    网站基于
     [Zensical](https://zensical.org/)
     搭建, 该项目是由
     [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
     团队开发的现代静态网站生成器。
     
--   **编码存储**: 代码通过
+-   :lucide-code-xml: **编码存储**
+
+    ---
+    
+    代码通过
     [Visual Studio Code](https://code.visualstudio.com/)
     编写并存储于
     [GitHub](https://github.com/github)
     公开仓库中。
 
--   **字体样式**: 常规文字采用
+-   :lucide-type-outline: **字体样式**
+
+    ---
+    
+    常规文字采用
     [MiSans](https://hyperos.mi.com/font)
     , 等宽文字采用
     [JetBrains Mono](https://www.jetbrains.com/lp/mono/)。
 
--   **托管平台**:
+-   :lucide-cloud-upload: **托管平台**
+
+    ---
+
     [Local Server](http://local.liwanr.com:24)
     / [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/)
     / [GitHub Pages](https://docs.github.com/pages)
     / [Vercel](https://vercel.com/)
     / [Netlify](https://www.netlify.com/)
+///
 
 ## :lucide-scale: License
 ///html | div[style='font-family: JetBrains Mono;']
@@ -215,12 +213,14 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ## :lucide-cookie: Privacy Policy
 
-网站本体是完全静态的，不会收集任何用户数据，但网站所依赖的外部服务可能会有收集数据，**但本站不对这些第三方服务商的隐私政策负责**，请用户自行查阅这些服务商的隐私政策。
+网站本体是完全静态的页面，不会收集任何用户数据，但网站所依赖的外部服务可能会有收集数据，**本站不对外部服务商的隐私政策负责**，请用户自行查阅这些服务商的隐私政策。
 
 -  **Cloudflare**: 该网站使用了 Cloudflare 的 CDN 服务来加速内容传输，Cloudflare 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以优化性能和安全性。详细信息请参阅 [Cloudflare隐私政策](https://www.cloudflare.com/privacypolicy/)。
 
 - **GitHub**: 该网站的源代码托管在 GitHub 上，GitHub 可能会收集用户的账户信息、访问日志等数据。详细信息请参阅 [GitHub 隐私政策](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement)。
 
 - **Google Analytics**: 该网站使用了 Google Analytics 来分析访问者的行为，Google Analytics 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以提供统计数据。详细信息请参阅 [Google Analytics 隐私政策](https://policies.google.com/privacy)。
+
+- **Umami**: 该网站使用了 Umami 来分析访问者的行为，Umami 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以提供统计数据。详细信息请参阅 [Umami 隐私政策](https://umami.is/privacy)。
 
 - **Giscus**: 该网站使用了 Giscus 来提供评论功能，giscus 可能会收集用户的 GitHub 账户信息、评论内容等数据。详细信息请参阅 [Giscus 隐私政策](https://giscus.app/privacy)。
