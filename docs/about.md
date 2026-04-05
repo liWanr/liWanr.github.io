@@ -23,24 +23,24 @@ hide:
 ///html | div.grid.cards[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));']
 -   **2024.09 - 2025.07**
 
-    [![CQU-EIE](/assets/images/index/CQU-EIE-light.svg#only-light){ loading=lazy }](https://cqu.edu.cn/)
-    [![CQU-EIE](/assets/images/index/CQU-EIE-dark.svg#only-dark){ loading=lazy }](https://cqu.edu.cn/)
+    [![CQU-EIE](./images/about/CQU-EIE-light.svg#only-light)](https://cqu.edu.cn/)
+    <!-- [![CQU-EIE](./images/about/CQU-EIE-dark.svg#only-dark)](https://cqu.edu.cn/) -->
 
     [国家卓越工程师计划](https://eie.cqu.edu.cn/){ .badge .theme }
     <span class="badge">智能网联汽车</span>
 
 -   **2024.09 - 2025.07**
     
-    [![CQUE](/assets/images/index/CQUE-light.svg#only-light){ loading=lazy }](https://www.cque.edu.cn/)
-    [![CQUE](/assets/images/index/CQUE-dark.svg#only-dark){ loading=lazy }](https://www.cque.edu.cn/)
+    [![CQUE](./images/about/CQUE-light.svg)](https://www.cque.edu.cn/)
+    <!-- [![CQUE](./images/about/CQUE-dark.svg#only-dark)](https://www.cque.edu.cn/) -->
     
     <span class="badge theme">全日制本科</span>
     <span class="badge">数据科学与大数据技术</span>
 
 -   **2020.09 - 2023.07**
 
-    [![CQUE](/assets/images/index/CQNY-light.svg#only-light){ loading=lazy }](https://www.cqny.edu.cn/)
-    [![CQNY](/assets/images/index/CQNY-dark.svg#only-dark){ loading=lazy }](https://www.cqny.edu.cn/)
+    [![CQUE](./images/about/CQNY-light.svg#only-light)](https://www.cqny.edu.cn/)
+    <!-- [![CQNY](./images/about/CQNY-dark.svg#only-dark)](https://www.cqny.edu.cn/) -->
 
     <span class="badge theme">全日制专科</span>
     <span class="badge">物联网应用技术</span>
@@ -146,7 +146,7 @@ System Specs
     **Bose QC35 II Gaming**<br>
     <span class="badge theme">降噪</span>
     <span class="badge">无线</span>
-    <small>[:lucide-mouse-pointer-click:去看看](https://www.amazon.com/Bose-QuietComfort-Gaming-Headset-Comfortable/dp/B08DVCNYJC?th=1)</small>
+    <small>[:lucide-mouse-pointer-click:去看看](https://support.bose.com/s/product/quietcomfort-35-ii-gaming-headset/01t8c00000OydAGAAZ?language=en_US)</small>
 
 -   <small>:lucide-mouse: 鼠标</small><br>
     **ROG Gladius III Wireless AimPoint**<br>
@@ -167,6 +167,16 @@ System Specs
     搭建, 该项目是由
     [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
     团队开发的现代静态网站生成器。
+
+-   :lucide-cloud-upload: **托管平台**
+
+    ---
+
+    [Local Server](http://local.liwanr.com:24)
+    / [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/)
+    / [GitHub Pages](https://docs.github.com/pages)
+    / [Vercel](https://vercel.com/)
+    / [Netlify](https://www.netlify.com/)
     
 -   :lucide-code-xml: **编码存储**
 
@@ -186,16 +196,6 @@ System Specs
     [MiSans](https://hyperos.mi.com/font)
     , 等宽文字采用
     [JetBrains Mono](https://www.jetbrains.com/lp/mono/)。
-
--   :lucide-cloud-upload: **托管平台**
-
-    ---
-
-    [Local Server](http://local.liwanr.com:24)
-    / [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/)
-    / [GitHub Pages](https://docs.github.com/pages)
-    / [Vercel](https://vercel.com/)
-    / [Netlify](https://www.netlify.com/)
 ///
 
 ## :lucide-scale: License
@@ -215,12 +215,12 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 网站本体是完全静态的页面，不会收集任何用户数据，但网站所依赖的外部服务可能会有收集数据，**本站不对外部服务商的隐私政策负责**，请用户自行查阅这些服务商的隐私政策。
 
--  **Cloudflare**: 该网站使用了 Cloudflare 的 CDN 服务来加速内容传输，Cloudflare 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以优化性能和安全性。详细信息请参阅 [Cloudflare隐私政策](https://www.cloudflare.com/privacypolicy/)。
+-  **Cloudflare**: 网站使用了 Cloudflare 的 CDN 服务来加速内容传输，Cloudflare 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以优化性能和安全性。详细信息请参阅 [Cloudflare隐私政策](https://www.cloudflare.com/privacypolicy/)。
 
-- **GitHub**: 该网站的源代码托管在 GitHub 上，GitHub 可能会收集用户的账户信息、访问日志等数据。详细信息请参阅 [GitHub 隐私政策](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement)。
+- **GitHub**: 网站的源代码托管在 GitHub 上，GitHub 可能会收集用户的账户信息、访问日志等数据。详细信息请参阅 [GitHub 隐私政策](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement)。
 
-- **Google Analytics**: 该网站使用了 Google Analytics 来分析访问者的行为，Google Analytics 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以提供统计数据。详细信息请参阅 [Google Analytics 隐私政策](https://policies.google.com/privacy)。
+- **Google Analytics**: 网站使用了 Google Analytics 来分析访问者的行为，Google Analytics 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以提供统计数据。详细信息请参阅 [Google Analytics 隐私政策](https://policies.google.com/privacy)。
 
-- **Umami**: 该网站使用了 Umami 来分析访问者的行为，Umami 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以提供统计数据。详细信息请参阅 [Umami 隐私政策](https://umami.is/privacy)。
+- **Umami**: 网站使用了 Umami 来分析访问者的行为，Umami 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以提供统计数据。详细信息请参阅 [Umami 隐私政策](https://umami.is/privacy)。
 
-- **Giscus**: 该网站使用了 Giscus 来提供评论功能，giscus 可能会收集用户的 GitHub 账户信息、评论内容等数据。详细信息请参阅 [Giscus 隐私政策](https://giscus.app/privacy)。
+- **Giscus**: 网站使用了 Giscus 来提供评论功能，giscus 可能会收集用户的 GitHub 账户信息、评论内容等数据。详细信息请参阅 [Giscus 隐私政策](https://giscus.app/privacy)。
