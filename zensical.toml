@@ -78,9 +78,9 @@ nav = [
         "recom/website.md",
         "recom/open-source.md",
         "recom/tools.md",
-        "recom/blogs.md",
     ]},
     { "About" = "about.md" },
+    { "Travelling" = "https://www.travellings.cn/go.html" },
 ]
 
 extra_css = [

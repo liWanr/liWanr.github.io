@@ -7,4 +7,10 @@ document$.subscribe(function() {
         link.setAttribute('target', '_blank');
         link.setAttribute('rel', 'noopener noreferrer');
     });
+
+    const travellingUrl = "https://www.travellings.cn/go.html";
+    document.querySelectorAll(`a[href="${travellingUrl}"]`).forEach(link => {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+    });
 });
