@@ -1,9 +1,11 @@
 ---
 icon: lucide/book-heart
 title: 爱国
+comments: true
 # date:
 #   created: 2026-04-04
-comments: true
+tags:
+    - Essays
 status: new
 ---
 

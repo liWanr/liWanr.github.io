@@ -210,10 +210,10 @@ analytics.property = "G-JJZ9XN4L96"
 annotate.Bash = [".s2"]
 
 [project.extra.tags]                    # 使用标签对任何页面进行分类，标签将作为页面元数据的一部分
-Net = "NetWork"
-Tech = "Technology"
-Factoid = "Factoid"
-Git = "Git"
+Tech = "技术"
+Ideas = "想法"
+Essays = "随笔"
+Share = "发现"
 
 [project.extra.status]
 new = "最新发布"

@@ -1,11 +1,11 @@
 ---
 icon: simple/markdown
 title: 激活 Typora
+comments: true
 # date:
 #   created: 2026-03-21
-hide:
-    - toc
-comments: true
+tags:
+    - Share
 ---
 
 > [!warning] 仅适用于 `#!text 1.0.3` 版本的 Typora

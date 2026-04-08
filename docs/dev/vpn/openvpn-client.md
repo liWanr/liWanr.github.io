@@ -1,11 +1,11 @@
 ---
 icon: simple/openvpn
 title: 使用 OpenVPN Client
+comments: true
 # date:
 #     created: 2025-03-16
 tags:
-    - Factoid
-comments: true
+    - Tech
 ---
 
 ## :simple-linux: Linux

@@ -1,12 +1,12 @@
 ---
 icon: lucide/feather
 title: Zensical 的小技巧
+comments: true
 # date:
 #     created: 2025-12-16
 #     updated: 2026-03-24
 tags:
-    - Factoid
-comments: true
+    - Share
 ---
 
 [**Mermaid**](https://mermaid.ai/open-source/syntax/flowchart.html "图标")

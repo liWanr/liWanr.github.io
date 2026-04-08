@@ -1,9 +1,11 @@
 ---
 icon: simple/docker
 title: Docker
+comments: true
 # date:
 #     craeted: 2026-03-04
-comments: true
+tags:
+    - Tech
 ---
 
 ## 支持系统的安装说明 { id="installation-procedures-for-supported-platforms" }

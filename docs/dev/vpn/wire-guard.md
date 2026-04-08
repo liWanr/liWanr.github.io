@@ -1,12 +1,12 @@
 ---
 icon: simple/wireguard
 title: Wire Guard
+comments: true
 # date:
 #     created: 2026-03-17
 #     updated: 2026-03-23
 tags:
-    - Net
-comments: true
+    - Tech
 ---
 
 ## 引言

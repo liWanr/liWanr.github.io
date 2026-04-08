@@ -1,13 +1,12 @@
 ---
 icon: lucide/satellite
 title: 异地组网
+comments: true
 # date:
 #     created: 2025-01-20
 #     updated: 2026-02-20
 tags:
-    - Net
     - Tech
-comments: true
 ---
 
 <h1>使用 OpenWrt 配置 IPv6 + DDNS + OpenVPN<br>实现远程访问及异地组网</h1>

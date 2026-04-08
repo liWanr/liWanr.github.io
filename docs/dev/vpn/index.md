@@ -1,15 +1,14 @@
 ---
 icon: simple/openwrt
 title: VPN
+comments: true
 # date:
 #     created: 2026-03-08
 #     uodated: 2026-03-22
 tags:
-    - Net
-    - Factoid
+    - Tech
 hide:
     - toc
-comments: true
 ---
 
 <h1>

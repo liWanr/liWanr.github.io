@@ -1,10 +1,12 @@
 ---
 icon: octicons/desktop-download-16
 title: 应用部署
+comments: true
 # date:
 #     craeted: 2026-03-10
 #     updated: 2026-03-24
-comments: true
+tags:
+    - Tech
 ---
 
 ## 部署 Nginx

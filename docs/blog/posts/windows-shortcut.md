@@ -1,11 +1,11 @@
 ---
 icon: lucide/group
 title: Windows 快捷键
+comments: true
 # date:
 #     created: 2026-02-18
 tags:
-    - Factoid
-comments: true
+    - Share
 ---
 
 ## 删除 Win+V 快捷键

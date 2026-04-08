@@ -1,10 +1,12 @@
 ---
 icon: lucide/star
 title: 屌爆了的开源
+comments: true
 # date:
 #     created: 2025-12-16
 #     updated: 2026-03-11
-comments: true
+tags:
+    - Share
 ---
 
 <style>

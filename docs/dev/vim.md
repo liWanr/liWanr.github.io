@@ -1,11 +1,11 @@
 ---
 icon: simple/vim
 title: vim
+comments: true
 # date:
 #     created: 2026-02-22
 tags:
-    - Factoid
-comments: true
+    - Tech
 ---
 
 ## 模式类型 {id="mode-types"}

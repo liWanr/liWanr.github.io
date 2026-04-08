@@ -1,9 +1,11 @@
 ---
 icon: octicons/terminal-16
 title: 服务与架构
+comments: true
 # date:
 #     craeted: 2026-03-05
-comments: true
+tags:
+    - Tech
 ---
 
 由于一般都是用 `sudo` 安装的 docker，所以使用 docker 的时候也需要用管理员权限运行命令，一般开发 / 测试 / 个人服务器环境下推荐将非 root 用户添加进 docker 组里面，这样就不用重复输入 `sudo` 提升权限了。将非 root 用户添加进 docker 组按照这个流程：

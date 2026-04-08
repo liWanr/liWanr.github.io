@@ -1,12 +1,12 @@
 ---
 icon: lucide/construction
 title: 拆解执行
+comments: true
 # date:
 #   created: 2024-11-07
 #   updated: 2025-02-19
 tags:
-    - Factoid
-comments: true
+    - Share
 ---
 
 ## 基本介绍 {id="intro"}

@@ -1,11 +1,11 @@
 ---
 icon: simple/dolphin
 title: MySQL
+comments: true
 # date:
 #     created: 2026-03-25
 tags:
-    - MySQL
-comments: true
+    - Tech
 ---
 
 ## 安装 / 卸载 / 服务管理

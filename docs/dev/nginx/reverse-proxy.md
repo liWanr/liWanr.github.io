@@ -1,9 +1,11 @@
 ---
 icon: lucide/square-arrow-out-up-right
 title: 反向代理
+comments: true
 # date:
 #     created: 2026-03-11
-comments: true
+tags:
+    - Tech
 ---
 
 最基础的反向代理配置

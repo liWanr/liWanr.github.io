@@ -1,12 +1,12 @@
 ---
 icon: lucide/folder-archive
 title: 压缩与解压
+comments: true
 # date:
 #     created: 2024-10-26
 #     updated: 2025-12-22
 tags:
-    - Factoid
-comments: true
+    - Tech
 ---
 
 ///html | div.grid.cards

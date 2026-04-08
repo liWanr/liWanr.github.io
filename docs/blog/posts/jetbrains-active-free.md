@@ -1,14 +1,12 @@
 ---
 icon: simple/jetbrains
 title: 免费激活 JetBrains
+comments: true
 # date:
     # created: 2025-12-16
     # updated: 2026-01-18
 tags:
-    - Factoid
-hide:
-    - toc
-comments: true
+    - Share
 ---
 
 ///html | div.step

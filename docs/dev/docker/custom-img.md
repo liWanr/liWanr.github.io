@@ -1,9 +1,11 @@
 ---
 icon: lucide/file-terminal
 title: 自制镜像
+comments: true
 # date:
 #     craeted: 2026-03-04
-comments: true
+tags:
+    - Tech
 ---
 
 ## 前言

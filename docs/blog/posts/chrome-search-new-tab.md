@@ -1,14 +1,12 @@
 ---
 icon: lucide/external-link
 title: Chrome 新标签页打开
+comments: true
 # date:
 #   created: 2024-11-07
 #   updated: 2025-02-19
 tags:
-    - Factoid
-hide:
-    - toc
-comments: true
+    - Share
 ---
 
 ///html | div.step

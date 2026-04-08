@@ -1,11 +1,11 @@
 ---
 icon: simple/nginx
 title: Nginx
+comments: true
 # date:
 #     created: 2026-02-17
 tags:
-    - Net
-comments: true
+    - Tech
 ---
 
 ## 准备环境与依赖库 {id="prep-env-deps"}

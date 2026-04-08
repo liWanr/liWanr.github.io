@@ -1,11 +1,11 @@
 ---
 icon: lucide/database
 title: Samba
+comments: true
 # date:
 #     created: 2026-02-13
 tags:
-    - Factoid
-comments: true
+    - Share
 ---
 
 ## :simple-linux: Ubuntu 端配置 {id="ubuntu-config"}
