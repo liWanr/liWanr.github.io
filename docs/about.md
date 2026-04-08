@@ -18,35 +18,6 @@ hide:
 
 在这么多次的站点搬运中，我遗失了很多很有意义的文章，比如以前我比赛中的笔记，直到现在我都认为那是我曾经的财富，当时没有备份的思想最后啥都没了。所以这个站点我不仅本地备份，还会定期上传到GitHub上，不想再丢失了。
 
-## :lucide-graduation-cap: Education
-
-///html | div.grid.cards[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));']
--   **2024.09 - 2025.07**
-
-    [![CQU-EIE](./images/about/CQU-EIE-light.svg#only-light)](https://cqu.edu.cn/)
-    <!-- [![CQU-EIE](./images/about/CQU-EIE-dark.svg#only-dark)](https://cqu.edu.cn/) -->
-
-    [国家卓越工程师计划](https://eie.cqu.edu.cn/){ .badge .theme }
-    <span class="badge">智能网联汽车</span>
-
--   **2024.09 - 2025.07**
-    
-    [![CQUE](./images/about/CQUE-light.svg)](https://www.cque.edu.cn/)
-    <!-- [![CQUE](./images/about/CQUE-dark.svg#only-dark)](https://www.cque.edu.cn/) -->
-    
-    <span class="badge theme">全日制本科</span>
-    <span class="badge">数据科学与大数据技术</span>
-
--   **2020.09 - 2023.07**
-
-    [![CQUE](./images/about/CQNY-light.svg#only-light)](https://www.cqny.edu.cn/)
-    <!-- [![CQNY](./images/about/CQNY-dark.svg#only-dark)](https://www.cqny.edu.cn/) -->
-
-    <span class="badge theme">全日制专科</span>
-    <span class="badge">物联网应用技术</span>
-
-///
-
 ## :lucide-computer: Setup
 
 <div class="divider">编程机 · Dev Machine</div>
