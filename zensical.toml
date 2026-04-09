@@ -220,7 +220,6 @@ Share = "发现"
 new = "最新发布"
 
 # ----  本地部署的底部链接  ----
-
 [[project.extra.social]]
 icon = "lucide/folder"
 link = "/public/"
