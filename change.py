@@ -35,7 +35,7 @@ if os.path.exists(index_path):
         with open(index_path, 'w', encoding='utf-8') as f:
             f.write(new_index_content)
 
-# 2. 全局递归处理：替换路径字符串 + 处理 only-dark/only-light 图片
+# 2. 全局递归处理：将GitHub仓库的 master 分支替换成 main + 处理 only-dark/only-light 图片
 def process_img_tags(content):
     def replace_img(m):
         tag = m.group(0)
