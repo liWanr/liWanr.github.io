@@ -11,7 +11,7 @@ tags:
 
 ## 安装 Git {id="install-git"}
 
-若要在命令行上使用 Git, 需要在计算机上安装、安装和设置 Git。 [下载并安装最新版本的 Git](https://git-scm.com/install/windows)
+若要在命令行上使用 Git, 需要在计算机上安装和设置 Git。 [下载并安装最新版本的 Git](https://git-scm.com/install/windows)
 
 > [!warning]
 > 从 2020 年开始大部分 Chrome OS 设备都内置 Git。 如果需要启用可以去 Launcher 搜索 Linux 并打开。
