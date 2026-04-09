@@ -173,8 +173,12 @@
 #       name: Translate
 
 # extra_css:
-#   - assets/stylesheets/extra.css
-#   - assets/stylesheets/search.css
+#     - assets/stylesheets/extra.css
+#     - assets/stylesheets/search.css
+#     - assets/stylesheets/step.css
+#     - assets/stylesheets/link.css
+#     - assets/stylesheets/table.css
+#     - assets/stylesheets/progress.css
 
 # extra_javascript:
 #   - path: assets/javascripts/extra.js
