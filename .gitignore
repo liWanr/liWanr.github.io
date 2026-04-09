@@ -6,7 +6,4 @@ site/*
 reproduction/*
 
 # 本地部署文件
-local-build.sh
-run.sh
-update.sh
 nginx.conf
