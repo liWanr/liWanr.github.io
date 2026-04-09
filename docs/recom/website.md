@@ -4,7 +4,7 @@ title: 屌爆了的网站
 comments: true
 # date:
 #     created: 2025-12-16
-#     updated: 2026-03-28
+#     updated: 2026-04-09
 tags:
     - Exper
 ---
@@ -98,6 +98,8 @@ hr {
 
     ///html | div.grid
     [厂长资源](https://www.czzy.site/)
+
+    [网飞猫](https://www.ncat26.com/)
     
     [大米星球](https://dmr0x2.com/)
     ///
