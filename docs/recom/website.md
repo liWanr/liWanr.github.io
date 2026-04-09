@@ -22,6 +22,26 @@ hr {
 
 ///html | div.grid.cards
 
+-   ### 友情链接
+
+    ---
+
+    ///html | div.grid
+    
+    [Jiao](https://dxlcq.cn/)
+
+    [Sevenalist](https://dczcq.cn/)
+
+    [Qvi](https://qvidx.github.io)
+
+    [Brittany Chiang](https://brittanychiang.com/)
+
+    [Tania Rascia](https://www.taniarascia.com/me/)
+    ///
+///
+
+///html | div.grid.cards
+
 -   ### 网络黑客
 
     ---
@@ -148,21 +168,11 @@ hr {
 
 ///html | div.grid.cards
 
--   ### 博客站点
+-   ### 精神慰藉
 
     ---
 
     ///html | div.grid
-    [Jiao](https://dxlcq.cn/)
-
-    [Sevenalist](https://dczcq.cn/)
-
-    [Qvi](https://qvidx.github.io)
-
     [S.H.I.T](https://shitjournal.org/)
-
-    [Brittany Chiang](https://brittanychiang.com/)
-
-    [Tania Rascia](https://www.taniarascia.com/me/)
     ///
 ///
