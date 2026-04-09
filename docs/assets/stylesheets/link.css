@@ -1,9 +1,9 @@
 /* 链接的下划线只有鼠标移入才缓慢出现 */
-.md-typeset a:not(.md-button):not(.headerlink):not(.badge) {
+.md-typeset a:not(.md-button):not(>label):not(.headerlink):not(.badge) {
   text-decoration: underline;
   text-decoration-color: transparent;
 }
 
-.md-typeset a:not(.md-button):not(.headerlink):not(.badge):hover {
+.md-typeset a:not(.md-button):not(>label):not(.headerlink):not(.badge):hover {
   text-decoration-color: currentColor;
 }
