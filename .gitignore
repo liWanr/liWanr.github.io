@@ -10,6 +10,3 @@ local-build.sh
 run.sh
 update.sh
 nginx.conf
-
-# 原始的配置文件
-zensical_old.toml
