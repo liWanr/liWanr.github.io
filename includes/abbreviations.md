@@ -3,7 +3,9 @@
 *[DNS]: Domain Name System, 域名系统
 *[DDNS]: Dynamic DNS, 动态域名解析
 *[VPN]: Virtual Private Network, 虚拟私人网络
-*[SC]: System Clock, 在操作系统中看到的时间
 *[RTC]: Real-time clock, 实时时间或 CMOS/BIOS 时间
 *[GMT]: Greenwich Mean Time, 格林尼治标准时间/世界时间
 *[UTC]: Universal Time Coordinated, 协调世界时间
+*[CDN]: Content Delivery Network, 内容分发网络
+*[SSL]: Secure Sockets Layer, 安全套接层
+*[TLS]: Transport Layer Security, 传输层安全协议
