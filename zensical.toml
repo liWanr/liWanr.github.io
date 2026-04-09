@@ -211,6 +211,7 @@ annotate.Bash = [".s2"]
 
 [project.extra.tags]                    # 使用标签对任何页面进行分类，标签将作为页面元数据的一部分
 Tech = "技术"
+Exper = "经验"
 Ideas = "想法"
 Essays = "随笔"
 Share = "发现"

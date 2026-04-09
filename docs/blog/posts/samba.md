@@ -5,7 +5,7 @@ comments: true
 # date:
 #     created: 2026-02-13
 tags:
-    - Share
+    - Exper
 ---
 
 ## :simple-linux: Ubuntu 端配置 {id="ubuntu-config"}

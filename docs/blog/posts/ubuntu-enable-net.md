@@ -6,7 +6,7 @@ comments: true
 #     created: 2025-03-30
 #     updated: 2026-01-18
 tags:
-    - Share
+    - Exper
 ---
 
 ## 检查网络接口状态 {id="check-network-interface-status"}
