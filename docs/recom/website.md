@@ -32,8 +32,6 @@ hr {
 
     [Sevenalist](https://dczcq.cn/)
 
-    [Qvi](https://qvidx.github.io)
-
     [Brittany Chiang](https://brittanychiang.com/)
 
     [Tania Rascia](https://www.taniarascia.com/me/)
