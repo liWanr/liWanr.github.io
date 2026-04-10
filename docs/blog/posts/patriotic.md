@@ -1,5 +1,5 @@
 ---
-icon: lucide/book-heart
+icon: lucide/notebook-pen
 title: 爱国
 comments: true
 # date:
