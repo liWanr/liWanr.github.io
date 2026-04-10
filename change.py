@@ -77,6 +77,6 @@ for root, _, files in os.walk(site_dir):
 
             new_content = process_img_tags(new_content)
 
-            if old_str in content:
+            if new_content != content:
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(new_content)
