@@ -7,3 +7,6 @@ reproduction/*
 
 # 本地部署文件
 nginx.conf
+
+# 不发布的文章
+docs/blog/posts/source-of-info.md
