@@ -9,4 +9,5 @@ reproduction/*
 nginx.conf
 
 # 不发布的文章
-docs/blog/posts/source-of-info.md
+docs/blog/posts/look-up-source.md
+docs/blog/posts/noidea.md
