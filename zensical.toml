@@ -58,7 +58,7 @@ nav = [
             "blog/posts/samba.md",
         ] },
         { "<strong>2025</strong>" = [
-            "blog/posts/zensical-pro-tips.md",
+            # "blog/posts/zensical-pro-tips.md",
             "blog/posts/jetbrains-active-free.md",
             "blog/posts/ubuntu-enable-net.md",
             "blog/posts/hackrf-firmware-maint.md",
