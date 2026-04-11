@@ -22,7 +22,7 @@ jobs:
       - run: pip install zensical
       - run: zensical build --clean
       - name: Post process site with Python
-        run: python build.py -y
+        run: python custom_fixes.py
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
