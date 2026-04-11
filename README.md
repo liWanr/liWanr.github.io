@@ -44,11 +44,19 @@
     
   - 指定编译目录 `zensical build -f`
 
-## 版本控制
+## 脚本说明
 
-- 升级 `pip install --upgrade --force-reinstall zensical`
+- **`build.sh`**: 预览、部署及更新架构三合一脚本，并且部署后允许将站点文件复制到 Nginx 指定目录
 
-- 显示当前版本 `pip show zensical`
+- **`change.py`** --> **`custom_fixes.py`**
+
+  - **功能1**: 删除主页面中的文档地址按钮、标题锚点以及一级标题
+ 
+  - **功能2**: 将所有页面中 GitHub 仓库地址的 `master` 分支路径统一替换为 `main` 分支
+
+  - **功能3**: 为所有带有 `class="only-dark"` 或 `class="only-light"` 的图片元素，在其 src 地址后追加对应的 `#only-dark` 或 `#only-light` 哈希值
+
+  - **功能4**: 根据 `.gitignore` 文件中列出的 Markdown 文件路径，删除对应生成页面，实现指定文章的隐藏功能
 
 ## 博客仓库提交说明
 
