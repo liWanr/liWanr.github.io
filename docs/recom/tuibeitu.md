@@ -425,7 +425,9 @@ tags:
 
 -   <small>颂曰</small>
 
-    
+    纳土姓钱并姓李，其馀相次朝天子
+
+    天将一统付真人，不杀人民更全嗣
 ///
 ///html | div[align="center"]
 ![推背图第16象](https://upload.wikimedia.org/wikipedia/commons/b/b2/Tbt-16.JPG){ style="max-height: 240px" }
@@ -433,7 +435,7 @@ tags:
 ///
 
 > **金圣叹**<br>
-> 
+> 此象主宋太祖受禅汴都，天下大定，钱李二氏相率归化，此一治也。
 
 ---
 
