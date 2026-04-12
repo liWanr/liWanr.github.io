@@ -76,7 +76,7 @@ deploy() {
     zensical build -c > /dev/null 2>&1
     echo -ne "构建完成... \r"
 
-    python3 change.py
+    python3 custom_fixes.py
 
     if [ "$NGINX_FLAG" = true ]; then
         echo -ne "部署到 Nginx... \r"
