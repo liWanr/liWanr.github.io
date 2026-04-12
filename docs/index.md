@@ -35,7 +35,7 @@ hide:
 
 ///html | div.card
 :lucide-messages-square: **Let's Chat -**
-[**Email**](mailto:itsWanr@outlook.com)
+[**Email**](mailto:itsWanr@iCloud.com)
 | [**GitHub**](https://github.com/liWanr)
 | [**Gravatar**](https://gravatar.com/liwanr)
 
