@@ -63,35 +63,6 @@ def process_img(content):
         content
     )
 
-
-def hide_articles():
-    if not os.path.exists(gitignore_path):
-        return
-
-    with open(gitignore_path, encoding='utf-8') as f:
-        md = [
-            l.strip()
-            for l in f
-            if l.strip() and not l.startswith('#') and l.endswith('.md')
-        ]
-
-    print('隐藏了以下文章：')
-    for p in md:
-        p = p.strip().lstrip('/')
-
-        if p.startswith('docs/'):
-            p = p[5:]
-        if p.endswith('.md'):
-            p = p[:-3]
-
-        t = os.path.join(site_dir, p)
-
-        if os.path.exists(t):
-            shutil.rmtree(t)
-            print(f'- docs/{p}.md')
-    print()
-
-
 def process():
     for r, _, fs in os.walk(site_dir):
         for f in fs:
@@ -108,6 +79,33 @@ def process():
             if nc != c:
                 with open(p, 'w', encoding='utf-8') as x:
                     x.write(nc)
+
+def hide_articles():
+    if not os.path.exists(gitignore_path):
+        return
+
+    with open(gitignore_path, encoding='utf-8') as f:
+        md = [
+            line
+            for l in f
+            if (line := l.strip()) and not line.startswith('#') and line.endswith('.md')
+        ]
+
+    print('隐藏了以下文章：')
+    for p in md:
+        p = p.lstrip('/')
+
+        if p.startswith('docs/'):
+            p = p[5:]
+        if p.endswith('.md'):
+            p = p[:-3]
+
+        t = os.path.join(site_dir, p)
+
+        if os.path.exists(t):
+            shutil.rmtree(t)
+            print(f'- docs/{p}.md')
+    print()
 
 if __name__ == '__main__':
     process_index()
