@@ -160,7 +160,7 @@ toggle.name = "深色模式"
 [project.markdown_extensions.pymdownx.tilde]                # 删除线与下标语法
 
 [project.markdown_extensions.toc]                           # 启用目录锚点永久链接
-permalink = "§"
+permalink = "#"
 permalink_title = "锚点"
 slugify = {object = "pymdownx.slugs.slugify", kwds = { case = "lower" }}
 
