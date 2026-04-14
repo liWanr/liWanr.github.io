@@ -48,6 +48,7 @@ nav = [
             "blog/posts/zensical-pro-tips.md",
         ] },
         { "<strong>2026</strong>" = [
+            "blog/posts/look-up-source.md",
             "blog/posts/patriotic.md",
             "blog/posts/bandizip.md",
             "blog/posts/apple-ai.md",
