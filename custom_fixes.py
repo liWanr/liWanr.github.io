@@ -1,9 +1,12 @@
 import os
 import re
+import json
 import shutil
+from pathlib import Path
 
 site_dir = 'site'
 gitignore_path = '.gitignore'
+search_json_path = os.path.join(site_dir, 'search.json')
 
 def process_index():
     index_path = os.path.join(site_dir, 'index.html')
@@ -85,27 +88,56 @@ def hide_articles():
         return
 
     with open(gitignore_path, encoding='utf-8') as f:
-        md = [
-            line
-            for l in f
-            if (line := l.strip()) and not line.startswith('#') and line.endswith('.md')
-        ]
+        md = []
+        for l in f:
+            line = l.strip()
+            if line and not line.startswith('#') and line.endswith('.md'):
+                md.append(line)
 
-    print('隐藏了以下文章：')
+    if not md:
+        return
+
+    hide_slugs = []
+    print('准备隐藏以下文章：')
     for p in md:
         p = p.lstrip('/')
-
         if p.startswith('docs/'):
             p = p[5:]
         if p.endswith('.md'):
             p = p[:-3]
 
-        t = os.path.join(site_dir, p)
-
-        if os.path.exists(t):
-            shutil.rmtree(t)
-            print(f'- docs/{p}.md')
+        slug = p.replace('\\', '/').rstrip('/')
+        hide_slugs.append(slug)
+        print(f'- docs/{slug}.md')
     print()
+
+    for slug in hide_slugs:
+        t = os.path.join(site_dir, slug)
+        if os.path.exists(t):
+            shutil.rmtree(t, ignore_errors=True)
+
+    if not os.path.exists(search_json_path):
+        return
+
+    with open(search_json_path, encoding='utf-8') as f:
+        data = json.load(f)
+
+    to_remove = set()
+    for slug in hide_slugs:
+        base = slug.rstrip('/') + '/'
+        to_remove.add(base)
+        to_remove.add(base + '#')
+
+    data["items"] = [
+        item for item in data.get("items", [])
+        if not any(
+            str(item.get("location", "")).startswith(prefix)
+            for prefix in to_remove
+        )
+    ]
+
+    with open(search_json_path, 'w', encoding='utf-8') as f: 
+        json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
 
 if __name__ == '__main__':
     process_index()
