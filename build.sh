@@ -108,9 +108,8 @@ update() {
     echo "========== Zensical 已更新 =========="
 
     pip freeze > requirements.txt
-    echo "======== 依赖文件更新完成 ========"
 
-    pip show zensical
+    deploy
 }
 
 # ====== 全局中断清理 ======
