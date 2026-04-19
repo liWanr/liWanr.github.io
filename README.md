@@ -19,7 +19,7 @@
 - Netlify 的构建命令
   
   ```Bash
-  pip install zensical && zensical build --clean && python change.py
+  pip install zensical && zensical build --clean && python custom_fixes.py
   ```
 
 ### Vercel
@@ -27,7 +27,7 @@
 - Vercel 的构建命令
   
   ```Bash
-  python -m venv .venv && . .venv/bin/activate && pip install zensical && zensical build --clean && python change.py
+  python -m venv .venv && . .venv/bin/activate && pip install zensical && zensical build --clean && python custom_fixes.py
   ```
 
 ### 本地构建
