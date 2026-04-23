@@ -160,14 +160,10 @@ toggle.name = "深色模式"
 [project.markdown_extensions.pymdownx.progressbar]          # 进度条语法
 [project.markdown_extensions.pymdownx.smartsymbols]         # 将某些字符序列转换为相应的符号，例如版权符号或分数
 [project.markdown_extensions.pymdownx.tilde]                # 删除线与下标语法
-
 [project.markdown_extensions.toc]                           # 启用目录锚点永久链接
 permalink = "#"
 permalink_title = "锚点"
 slugify = {object = "pymdownx.slugs.slugify", kwds = { case = "lower" }}
-
-[project.markdown_extensions.pymdownx.b64]
-base_path = './docs/assets/images'
 
 [project.markdown_extensions.pymdownx.blocks.tab]           # 新，内容标签页
 alternate_style = true
@@ -202,6 +198,8 @@ custom_fences = [{name = "mermaid", class = "mermaid", format = "pymdownx.superf
 
 [project.markdown_extensions.pymdownx.tasklist]             # 使用自定义复选框样式
 custom_checkbox = true
+
+[project.markdown_extensions.zensical.extensions.glightbox] # 启用 Glightbox 图像灯箱支持
 
 [project.extra]
 generator = false                                           # 移除 “Made with Zensical” 声明
