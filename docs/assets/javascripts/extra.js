@@ -1,5 +1,5 @@
 document$.subscribe(function() {
-    const content = document.querySelector(".md-typeset");
+    const content = document.querySelector(".md-content");
     if (!content) return;
     content.querySelectorAll('a[href^="http"], a[href^="https"]').forEach(link => {
         if (link.href.startsWith(window.location.origin)) return;
