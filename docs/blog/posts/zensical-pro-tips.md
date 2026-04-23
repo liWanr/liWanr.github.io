@@ -357,7 +357,7 @@ base_path = './docs/'
 ![1.png](/docs/images/.../*.png)
 ```
 
-要注意路径, 主要在 **\*.md**  文档和存放图像的 **images** 目录之间的关系上。如果文档和存放图像的目录不在同一目录, 比如 `/docs/blog/test.md`, 那引用就是 `![1.png](/docs/images/.../*.png)`。如果文图在同目录下, 比如 `/docs/index.md`, 那引用就是 `![1.png](./images/.../*.png)`
+要注意路径, 主要在 **\*.md**  文档和存放图像的 **images** 目录之间的关系上。如果文档和存放图像的目录不在同一目录, 比如 `/docs/blog/test.md`, 那引用就是 `![1.png](/docs/images/.../*.png)`。如果文图在同目录下, 比如 `/docs/index.md`, 那引用就是 `![1.png](/assets/images/.../*.png)`
 
 ///
 
