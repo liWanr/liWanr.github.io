@@ -38,7 +38,8 @@ def process_index():
         with open(index_path, 'w', encoding='utf-8') as f:
             f.write(new_index_content)
 
-def process_img(content):
+# 手动解决 base64 编码图片与 #only-dark/#only-light 冲突的问题
+def base64(content):
     def rep(m):
         tag = m.group(0)
         cls = re.search(r'class=["\']([^"\']*)["\']', tag)
@@ -77,11 +78,11 @@ def process():
             with open(p, encoding='utf-8') as x:
                 c = x.read()
 
-            nc = process_img(c.replace('raw/master/docs', 'raw/main/docs'))
+            # nc = base64(c.replace('raw/master/docs', 'raw/main/docs'))
 
-            if nc != c:
-                with open(p, 'w', encoding='utf-8') as x:
-                    x.write(nc)
+            # if nc != c:
+            #     with open(p, 'w', encoding='utf-8') as x:
+            #         x.write(nc)
 
 def hide_articles():
     if not os.path.exists(gitignore_path):
