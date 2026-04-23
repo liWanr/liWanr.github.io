@@ -222,12 +222,12 @@ new = "最新发布"
 # ----  本地部署的底部链接  ----
 [[project.extra.social]]
 icon = "lucide/folder"
-link = "/public/"
+link = "https://local.liwanr.com:24/public/"
 name = "Public"
 
 [[project.extra.social]]
 icon = "lucide/folder-lock"
-link = "/private/"
+link = "https://local.liwanr.com:24/private/"
 name = "Private"
 
 [[project.extra.social]]
