@@ -119,7 +119,7 @@ deploy() {
         ssh "$SERVER_USER@$SERVER_HOST" "$SERVER_PATH/sbin/nginx -s reload"  > /dev/null 2>&1
 
         
-        echo "远程服务器部署完成：$SERVER_USER@$SERVER_HOST:$SERVER_PATH \n"
+        echo "远程服务器部署完成：$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
     else
         echo "部署完成，访问地址: $DEPLOY_URL \n"
     fi
