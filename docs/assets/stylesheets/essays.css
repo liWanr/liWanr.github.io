@@ -30,7 +30,7 @@
   content: "";
   flex: 1;
     border-bottom: 1.5px dashed color-mix(in srgb, currentColor 15%, transparent);
-  margin: 0.17em 0.6em 0 0.6em;
+  margin: 0.18em 0.6em 0 0.6em;
   order: 2;
   align-self: center;
 }
