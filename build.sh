@@ -10,6 +10,12 @@ NGINX_HTML_DIR="../nginx1.26.3/html/zensical" # Nginx 站点目录
 NGINX_CONF_DIR="../nginx1.26.3/conf"        # Nginx 配置目录
 # 83 行有一个将本地 nginx.config 复制到 Nginx 配置目录的命令，不需要就删掉
 
+SERVER_FLAG=true                            # 是否启用远程服务器部署，true/false
+# if true ⬇
+SERVER_USER="root"                          # 远程服务器用户
+SERVER_HOST="209.38.76.244"                 # 远程服务器地址
+SERVER_PATH="/usr/local/nginx/html"  # 服务器 nginx 站点目录
+
 PY_ENV="../.env/zensical/bin/activate"      # Python 虚拟环境激活脚本路径
 CACHE_DIR="./.cache"                        # 构建缓存目录
 SITE_DIR="./site"                           # 构建输出目录
@@ -83,10 +89,40 @@ deploy() {
         run_sudo cp -r "$SITE_DIR"/* "$NGINX_HTML_DIR" > /dev/null 2>&1
         run_sudo cp ./nginx.conf "$NGINX_CONF_DIR" > /dev/null 2>&1
         check_nginx
-        rm -rf "$CACHE_DIR" "$SITE_DIR" > /dev/null 2>&1
+        if [ "$SERVER_FLAG" = false ]; then
+            rm -rf "$CACHE_DIR" "$SITE_DIR" > /dev/null 2>&1
+        fi
     fi
 
-    echo "部署完成：$DEPLOY_URL"
+    # 远程服务器部署
+    if [ "$SERVER_FLAG" = true ]; then
+        echo -ne "本地部署完成, 开始复制到远程服务器... \r"
+        SOURCE_DIR="$SITE_DIR"
+        if [ ! -d "$SOURCE_DIR" ]; then
+            SOURCE_DIR="$NGINX_HTML_DIR"
+        fi
+
+        if [ ! -d "$SOURCE_DIR" ]; then
+            echo "错误：未找到可上传目录（$SITE_DIR 或 $NGINX_HTML_DIR）"
+            exit 1
+        fi
+
+        tar -zcvf zensical.tar.gz site > /dev/null 2>&1
+
+        ssh "$SERVER_USER@$SERVER_HOST" "mkdir -p '$SERVER_PATH'" > /dev/null 2>&1
+        ssh "$SERVER_USER@$SERVER_HOST" "rm -rf $SERVER_PATH/*" > /dev/null 2>&1
+        scp -r zensical.tar.gz "$SERVER_USER@$SERVER_HOST:$SERVER_PATH/" > /dev/null 2>&1
+        rm -rf "$CACHE_DIR" "$SITE_DIR" zensical.tar.gz > /dev/null 2>&1
+        echo -ne "开始解压... \r"
+        ssh "$SERVER_USER@$SERVER_HOST" "tar -zxvf $SERVER_PATH/zensical.tar.gz -C $SERVER_PATH  --strip-components=1" > /dev/null 2>&1
+        ssh "$SERVER_USER@$SERVER_HOST" "rm -rf $SERVER_PATH/zensical.tar.gz" > /dev/null 2>&1
+        ssh "$SERVER_USER@$SERVER_HOST" "$SERVER_PATH/sbin/nginx -s reload"  > /dev/null 2>&1
+
+        
+        echo "远程服务器部署完成：$SERVER_USER@$SERVER_HOST:$SERVER_PATH \n"
+    else
+        echo "部署完成，访问地址: $DEPLOY_URL \n"
+    fi
 }
 
 # ====== 本地预览 ======
