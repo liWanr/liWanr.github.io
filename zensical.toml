@@ -12,6 +12,8 @@ copyright = """
     <strong>liWanr &copy; 2024-2026</strong>
     <img src="https://views.whatilearened.today/views/github/liWanr/liWanr.github.io.svg" alt="views" style="width: 56px; position: relative; top: 2.8px;">
     <small>
+        <a href="https://www.travellings.cn/go.html" style="font-feature-settings: 'ss04' off;" target="_blank">Travelling</a>
+        |
         <a href="https://icp.gov.moe/?keyword=20261874" style="font-feature-settings: 'ss04' off;" target="_blank">萌ICP备 20261874 号</a>
     </small>
 </div>
@@ -81,7 +83,6 @@ nav = [
         "recom/tuibeitu.md",
     ]},
     { "About" = "about.md" },
-    { "Travelling" = "https://www.travellings.cn/go.html" },
 ]
 
 extra_css = [
