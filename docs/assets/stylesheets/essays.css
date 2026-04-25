@@ -1,0 +1,44 @@
+.essays {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.essays ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.essays a[data-date] {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.essays a[data-date]:hover {
+  color: var(--md-accent-fg-color);
+}
+
+.essays a[data-date]::before {
+  content: "";
+  flex: 1;
+    border-bottom: 1.5px dashed color-mix(in srgb, currentColor 15%, transparent);
+  margin: 0.17em 0.6em 0 0.6em;
+  order: 2;
+  align-self: center;
+}
+
+.essays a[data-date]::after {
+  content: attr(data-date);
+  font-family: var(--md-code-font);
+  font-size: 0.85em;
+  white-space: nowrap;
+  order: 3;
+}
+
+.essays a[data-date] > * {
+  order: 1;
+}

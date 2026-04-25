@@ -48,8 +48,6 @@ nav = [
             "blog/posts/zensical-pro-tips.md",
         ] },
         { "<strong>2026</strong>" = [
-            "blog/posts/look-up-source.md",
-            "blog/posts/patriotic.md",
             "blog/posts/bandizip.md",
             "blog/posts/apple-ai.md",
             "blog/posts/apple-music.md",
@@ -75,6 +73,7 @@ nav = [
             "blog/posts/nvidia-control-panel-fs-corrupt.md",
         ] },
     ] },
+    { "Essays" = "essays/index.md" },
     { "Recom" =  [
         "recom/website.md",
         "recom/open-source.md",
@@ -92,6 +91,7 @@ extra_css = [
     "assets/stylesheets/link.css",
     "assets/stylesheets/table.css",
     "assets/stylesheets/progress.css",
+    "assets/stylesheets/essays.css",
 ]
 
 [[project.extra_javascript]]
