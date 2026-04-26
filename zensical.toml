@@ -21,6 +21,7 @@ copyright = """
 
 nav = [
     { "Home" = "index.md" },
+    { "Essays" = "essays/index.md" },
     { "DevOps" = [
         "dev/zip-unzip.md",
         "dev/git.md",
@@ -75,7 +76,6 @@ nav = [
             "blog/posts/nvidia-control-panel-fs-corrupt.md",
         ] },
     ] },
-    { "Essays" = "essays/index.md" },
     { "Recom" =  [
         "recom/website.md",
         "recom/open-source.md",
