@@ -105,7 +105,7 @@ custom_dir = "overrides"            # 模板覆盖目录，用于自定义主题
 font.code = "JetBrains Mono"        # 代码块等宽字体
 icon.logo = "local/logo"
 icon.repo = "simple/github"
-favicon = "assets/favicon.png"      # 设置浏览器标签页或标题栏显示的图标
+favicon = "favicon.png"             # 设置浏览器标签页或标题栏显示的图标
 
 features = [
     "announce.dismiss",
