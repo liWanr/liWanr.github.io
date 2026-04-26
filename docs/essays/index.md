@@ -1,5 +1,4 @@
 ---
-icon: lucide/star
 title: Essays
 hide:
     # - navigation
