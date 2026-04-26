@@ -32,6 +32,8 @@ hr {
 
     [Sevenalist](https://dczcq.cn/)
 
+    [fuXes](https://fuxes.cn/)
+
     [Brittany Chiang](https://brittanychiang.com/)
 
     [Tania Rascia](https://www.taniarascia.com/me/)
