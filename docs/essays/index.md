@@ -16,10 +16,10 @@ hide:
 
 /// html | div.essays
 
-- [**读后记之《动物庄园》**](./猪的镜子.md){data-date="2026-04-25"}
+- [**读后记之《动物庄园》**](./pigs-and-the-mirror.md){data-date="2026-04-25"}
 
-- [**资料**](./资料.md){data-date="2026-04-10"}
+- [**资料**](./about-sources.md){data-date="2026-04-10"}
 
-- [**爱吗？怎么爱**](./爱吗-怎么爱.md){data-date="2026-04-04"}
+- [**爱吗？怎么爱**](./on-loving.md){data-date="2026-04-04"}
 
 ///
