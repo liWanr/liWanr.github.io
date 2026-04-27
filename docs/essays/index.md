@@ -24,4 +24,6 @@ hide:
 
 - [**爱吗？怎么爱**](./on-loving.md){data-date="2026-04-04"}
 
+- [**思想自救**](./mind-salvage.md){data-date="2026-03-23"}
+
 ///
