@@ -1,7 +1,6 @@
 ---
 title: 资料
 comments: true
-status: new
 ---
 
 近段时间我刻意地留意过在互联网常见，但是或许越来越不被重视的话：
