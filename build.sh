@@ -108,11 +108,10 @@ deploy() {
         fi
 
         rm -rf zensical.tar.gz > /dev/null 2>&1
-        ssh "$SERVER_USER@$SERVER_HOST" "rm -rf $SERVER_PATH/zensical.tar.gz" > /dev/null 2>&1
+        ssh "$SERVER_USER@$SERVER_HOST" "rm -rf $SERVER_PATH/zensical.tar.gz $SERVER_PATH/*" > /dev/null 2>&1
         tar -zcvf zensical.tar.gz site > /dev/null 2>&1
-
+        echo -ne "开始传输...                          \r"
         ssh "$SERVER_USER@$SERVER_HOST" "mkdir -p '$SERVER_PATH'" > /dev/null 2>&1
-        ssh "$SERVER_USER@$SERVER_HOST" "rm -rf $SERVER_PATH/*" > /dev/null 2>&1
         scp -r zensical.tar.gz "$SERVER_USER@$SERVER_HOST:$SERVER_PATH/" > /dev/null 2>&1
         rm -rf "$CACHE_DIR" "$SITE_DIR" zensical.tar.gz > /dev/null 2>&1
         echo -ne "开始解压...                          \r"
