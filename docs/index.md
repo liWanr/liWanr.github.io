@@ -20,16 +20,13 @@ hide:
 
 ///html |div
 
-记录「**技术、思考与实践**」的个人空间，也是我在数字世界中缓慢延伸的一条时间轨迹。
+记录「**技术与思考**」的个人空间，也是我在数字世界中圈出的三分地。
 
-最开始建立这个站点是为了避免重复踩坑。很多问题在首次遇到时，往往需要花费大量时间查资料、反复尝试各种方案，而当再次遇到类似问题时，却仍可能不得不从头开始，因此我选择把这些过程记录下来，
+建立站点的初衷是为避免技术重复踩坑。很多复杂问题在初遇时往往需要耗费大量时间翻阅文档、反复尝试；若不及时记录，当再遇类似境遇时仍需从头开始。因此我选择在此标记我曾深耕过的坐标，把经验悉数种进这片地里，固化脚下的寸土。
 
-「**让经验留下可以回望的路径，而不是悄然消散在时间里**」
+随着站点的逐步完善，内容亦不再局限于冰冷的逻辑。那些万籁俱寂时的自省、现实的挣扎、乃至尚未成熟的偏见，也想贪心成文。虽凌乱，却也证明这片空间是有温度的活物。
 
-随着内容不断积累，我也逐渐意识到记录并不足够。零散的笔记长期停留在碎片状态，依然难以真正复用。故而这个站点的目标也在慢慢发生变化。不只是记录问题，而是尝试打破碎片，将零散的经验重新整理成结构，把模糊的理解沉淀为清晰的认知，
-
-「**让每一次探索都不止当下，而是在未来的某个时刻，再次成为前行时的依靠**」
-
+故搭建站点不仅是备份代码，更是在备份灵魂。在这个算法比我们更了解自己的时代，唯有亲手写下的文字，能在大数据的洪流中，拓出名为「**我**」的岛。
 
 ///
 
@@ -41,15 +38,11 @@ hide:
 
 <hr style="height: 0rem;border-radius: 5px; background-color: var(--md-primary-fg-color);">
 
-///html | div.grid[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));'class='nocolor']
+///html | div.grid[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr));'class='nocolor']
 
 [Microsoft](https://account.microsoft.com/)
 
 [Outlook](https://outlook.live.com/mail)
-
-[Apple](https://account.apple.com/account/manage/section/information)
-
-[Google](https://myaccount.google.com/)
 
 [Gmail](https://mail.google.com/mail)
 
@@ -64,8 +57,6 @@ hide:
 [Claude](https://claude.ai/)
 
 [Perplexity](https://www.perplexity.ai/)
-
-[Xiaomi MiMo](https://aistudio.xiaomimimo.com/#/)
 
 [IPCheck](https://ipcheck.ing/#/)
 
