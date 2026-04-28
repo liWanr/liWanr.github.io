@@ -139,7 +139,46 @@ def hide_articles():
     with open(search_json_path, 'w', encoding='utf-8') as f: 
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
 
+def activate_essays_tab():
+    essays_dir = os.path.join(site_dir, 'essays')
+    if not os.path.exists(essays_dir):
+        return
+
+    # 修改1: md-tabs__item 加 --active
+    tabs_pattern = re.compile(
+        r'(<li\s+class=")(md-tabs__item)(">\s*<a\s+href="\.\./"\s+class="md-tabs__link">[\s\S]*?Essays[\s\S]*?</a>\s*</li>)',
+        re.DOTALL
+    )
+
+    # 修改2: md-nav__item 里 Essays 的链接
+    nav_pattern = re.compile(
+        r'(<li\s+class=")(md-nav__item)(">)\s*(<a\s+href="\.\./"\s+class=")(md-nav__link)(">[\s\S]*?Essays[\s\S]*?</a>\s*</li>)',
+        re.DOTALL
+    )
+
+    nav_replacement = r'\1\2 md-nav__item--active\3\4\5 md-nav__link--active\6'
+
+    for slug in os.listdir(essays_dir):
+        slug_dir = os.path.join(essays_dir, slug)
+        if not os.path.isdir(slug_dir):
+            continue
+
+        html_path = os.path.join(slug_dir, 'index.html')
+        if not os.path.exists(html_path):
+            continue
+
+        with open(html_path, encoding='utf-8') as f:
+            content = f.read()
+
+        new_content = tabs_pattern.sub(r'\1\2 md-tabs__item--active\3', content)
+        new_content = nav_pattern.sub(nav_replacement, new_content)
+
+        if new_content != content:
+            with open(html_path, 'w', encoding='utf-8') as f:
+                f.write(new_content)
+
 if __name__ == '__main__':
     process_index()
     process()
     hide_articles()
+    activate_essays_tab()
