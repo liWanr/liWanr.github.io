@@ -80,5 +80,5 @@ comments: true
 而这种感觉，往往比真正的无知，更难被察觉。
 
 <p align="right" markdown>
-*2026-04-10*
+*于 2026-04-10 成文*
 </p>
