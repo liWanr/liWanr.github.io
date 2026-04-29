@@ -12,9 +12,10 @@ copyright = """
     <strong>liWanr &copy; 2024-2026</strong>
     <img src="https://views.whatilearened.today/views/github/liWanr/liWanr.github.io.svg" alt="views" style="width: 56px; position: relative; top: 2.8px;">
     <small>
-        <a href="https://www.travellings.cn/go.html" style="font-feature-settings: 'ss04' off;" target="_blank">Travelling</a>
-        |
-        <a href="https://www.foreverblog.cn/go.html" style="font-feature-settings: 'ss04' off;" target="_blank">十年之约</a>
+        <a href="https://www.foreverblog.cn/go.html" target="_blank">
+            <img src="https://www.foreverblog.cn/assets/logo/wormhole_2_tp.gif#only-dark" alt="foreverblog" style="width: 56px; position: relative; top: 4.2px;">
+            <img src="https://www.foreverblog.cn/assets/logo/wormhole_4_tp.gif#only-light" alt="foreverblog" style="width: 56px; position: relative; top: 4.2px;">
+        </a>
         |
         <a href="https://icp.gov.moe/?keyword=20261874" style="font-feature-settings: 'ss04' off;" target="_blank">萌ICP备 20261874 号</a>
     </small>
