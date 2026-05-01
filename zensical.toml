@@ -17,6 +17,8 @@ copyright = """
             <img src="https://www.foreverblog.cn/assets/logo/wormhole_4_tp.gif#only-light" alt="foreverblog" style="width: 56px; position: relative; top: 4.2px;">
         </a>
         |
+        <a href="https://www.travellings.cn/go.html" target="_blank" rel="Travelling" >Travelling</a>
+        |
         <a href="https://icp.gov.moe/?keyword=20261874" style="font-feature-settings: 'ss04' off;" target="_blank">萌ICP备 20261874 号</a>
     </small>
 </div>
@@ -95,7 +97,6 @@ extra_css = [
     "assets/stylesheets/link.css",
     "assets/stylesheets/table.css",
     "assets/stylesheets/progress.css",
-    "assets/stylesheets/essays.css",
 ]
 
 [[project.extra_javascript]]
