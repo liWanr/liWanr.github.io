@@ -3,6 +3,8 @@ title: 爱吗？怎么爱
 comments: true
 ---
 
+<link rel="stylesheet" href="../assets/stylesheets/essays.css">
+
 在今天的互联网语境里，爱国是不是畸形的？
 
 只要品牌、艺人、组织被贴上辱华的标签，舆论就会在极短时间内完成聚集，评论区沸腾，抵制声此起彼伏，此时表态即为必需动作。那一刻几乎所有人都站在同一阵线，立场清晰且情绪饱满。

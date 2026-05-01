@@ -1,12 +1,11 @@
 ---
 title: Essays
 hide:
-    # - navigation
-    # - toc
     - path
-    # - feedback
     - footer
 ---
+
+<link rel="stylesheet" href="../assets/stylesheets/essays.css">
 
 <h1 align="center">文</h1>
 

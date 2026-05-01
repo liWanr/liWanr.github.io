@@ -3,6 +3,8 @@ title: 资料
 comments: true
 ---
 
+<link rel="stylesheet" href="../assets/stylesheets/essays.css">
+
 近段时间我刻意地留意过在互联网常见，但是或许越来越不被重视的话：
 
 > *我查了资料*

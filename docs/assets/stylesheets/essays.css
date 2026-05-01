@@ -1,3 +1,8 @@
+.md-content {
+  --md-text-font: "Noto Serif SC", "Songti SC", serif;
+  font-family: var(--md-text-font);
+}
+
 .essays {
   display: flex;
   flex-direction: column;
