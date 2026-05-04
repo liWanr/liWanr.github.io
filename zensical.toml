@@ -104,6 +104,7 @@ async = true
 [project.theme]
 language = "zh"                     # 设置语言,zh简中, en英文, zh-Hant繁中, zh-TW台湾
 custom_dir = "overrides"            # 模板覆盖目录，用于自定义主题模板
+font.text = "Noto Serif SC"         # 正文字体
 font.code = "JetBrains Mono"        # 代码块等宽字体
 icon.logo = "local/logo"
 icon.repo = "simple/github"
