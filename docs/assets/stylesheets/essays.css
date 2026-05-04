@@ -1,6 +1,5 @@
 .md-content {
-  --md-text-font: "Noto Serif SC", "Songti SC", serif;
-  font-family: var(--md-text-font);
+  font-family: "Noto Serif SC", "Songti SC", serif;
 }
 
 .essays {
