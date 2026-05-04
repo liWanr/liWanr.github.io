@@ -35,31 +35,15 @@ small {
 
 /* 字体 */
 @font-face {
-    font-family: "MiSans";
-    src: url("../fonts/MiSans-ExtraLight.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "MiSans";
-    src: url("../fonts/MiSans-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "MiSans";
-    src: url("../fonts/MiSans-Bold.woff2") format("woff2");
-    font-weight: 500;
+    font-family: "MiSansVF";
+    src: url("../fonts/MiSansVF.ttf") format("truetype");
+    font-weight: 100 900;
     font-style: normal;
     font-display: swap;
 }
 
 :root {
-    --md-text-font: "MiSans";
+    --md-text-font: "MiSansVF";
 }
 
 /* 二级无序嵌套列表为空心圆 */
