@@ -6,6 +6,7 @@ repo_name = "GitHub/liWanr"
 site_url = "https://liWanr.com/"
 site_description = "极客向个人技术站点，内容涵盖编程、网络以及真实项目实践，关注技术落地与设计体验，记录持续探索与长期创作。" 
 dev_addr = "0.0.0.0:8000"
+validation = false
 
 copyright = """
 <div style="font-feature-settings: 'ss04' off;">
