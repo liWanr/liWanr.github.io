@@ -34,6 +34,12 @@ hr {
 
     [fuXes](https://fuxes.cn/)
 
+    [Sehnsucht](https://blog.sehnsucht.top/)
+
+    [双绞麻痹](https://numb.tech/)
+
+    [樗木行斋](http://www.laomu.net/)
+
     [Brittany Chiang](https://brittanychiang.com/)
 
     [Tania Rascia](https://www.taniarascia.com/me/)
