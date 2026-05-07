@@ -6,7 +6,7 @@ comments: true
 <link rel="stylesheet" href="../assets/stylesheets/essays.css">
 
 <p align="right" style="margin-bottom: 0px;" markdown>
-《动物庄园》[^1]读后记
+《动物庄园》[^1]阅记
 </p>
 
 ---

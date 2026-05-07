@@ -17,7 +17,7 @@ hide:
 
 - [**在孩子之前**](./before-the-child.md){data-date="2026-05-04"}
 
-- [**读后记之《动物庄园》**](./pigs-and-the-mirror.md){data-date="2026-04-25"}
+- [**阅记之《动物庄园》**](./pigs-and-the-mirror.md){data-date="2026-04-25"}
 
 - [**资料**](./about-sources.md){data-date="2026-04-10"}
 
