@@ -1,0 +1,77 @@
+.friend-links ul {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .friend-links ul {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .friend-links ul {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+[dir=ltr] .md-typeset ol li, [dir=ltr] .md-typeset ul li {
+  margin-left: 0em;
+}
+
+.friend-links li {
+  border-radius: 8px;
+  padding: 0.25rem .75rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  outline: 1px solid var(--md-default-fg-color--lightest);
+  transition: outline-color 0.15s, background 0.15s;
+  position: relative;
+  cursor: pointer;
+}
+
+.friend-links li:hover {
+  outline-color: var(--md-default-fg-color--light);
+  background: var(--md-code-bg-color);
+}
+
+.friend-links li > p {
+  margin: 0;
+}
+
+.friend-links li > p:first-child a {
+  pointer-events: none;
+  display: block;
+  line-height: 0;
+}
+
+.friend-links li img {
+  width: 36px !important;
+  height: 36px !important;
+  object-fit: cover;
+  display: block;
+  margin: 0 !important;
+}
+
+.friend-links li > p:nth-child(2) a {
+  font-size: 13px !important;
+  font-weight: 500;
+  color: var(--md-default-fg-color) !important;
+  text-decoration: none !important;
+}
+
+.friend-links li > p:nth-child(2) a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+hr {
+    height: 0rem;
+    border-radius: 5px;
+    background-color: var(--md-accent-fg-color);
+}

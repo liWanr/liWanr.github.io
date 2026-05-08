@@ -22,32 +22,6 @@ hr {
 
 ///html | div.grid.cards
 
--   ### 友情链接
-
-    ---
-
-    ///html | div.grid
-    
-    [Jiao](https://dxlcq.cn/)
-
-    [Sevenalist](https://dczcq.cn/)
-
-    [fuXes](https://fuxes.cn/)
-
-    [Sehnsucht](https://blog.sehnsucht.top/)
-
-    [双绞麻痹](https://numb.tech/)
-
-    [樗木行斋](http://www.laomu.net/)
-
-    [Brittany Chiang](https://brittanychiang.com/)
-
-    [Tania Rascia](https://www.taniarascia.com/me/)
-    ///
-///
-
-///html | div.grid.cards
-
 -   ### 网络黑客
 
     ---
