@@ -81,8 +81,10 @@ nav = [
     ] },
     { "Recom" =  [
         "recom/website.md",
+        "recom/links.md",
         "recom/open-source.md",
         "recom/tools.md",
+        "recom/movie.md",
         "recom/tuibeitu.md",
     ]},
     { "About" = "about.md" },
@@ -108,7 +110,7 @@ font.text = "Noto Serif SC"         # 正文字体
 font.code = "JetBrains Mono"        # 代码块等宽字体
 icon.logo = "local/logo"
 icon.repo = "simple/github"
-favicon = "favicon.png"             # 设置浏览器标签页或标题栏显示的图标
+favicon = "assets/favicon.png"             # 设置浏览器标签页或标题栏显示的图标
 
 features = [
     "announce.dismiss",
@@ -204,6 +206,8 @@ custom_fences = [{name = "mermaid", class = "mermaid", format = "pymdownx.superf
 custom_checkbox = true
 
 [project.markdown_extensions.zensical.extensions.glightbox] # 启用 Glightbox 图像灯箱支持
+skip_classes = ["movie-links"]
+
 
 [project.extra]
 generator = false                                           # 移除 “Made with Zensical” 声明
