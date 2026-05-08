@@ -1,0 +1,77 @@
+.movie-links ul {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 12px;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .movie-links ul {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-links ul {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+[dir=ltr] .md-typeset ol li, [dir=ltr] .md-typeset ul li {
+  margin-left: 0em;
+}
+
+.movie-links li {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.movie-links li > p {
+  margin: 0;
+}
+
+.movie-links li > p:first-child a {
+  display: block;
+  line-height: 0;
+}
+
+/* 整卡遮罩 */
+.movie-links li > p:first-child a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.movie-links li img {
+  width: 100% !important;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  display: block;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+.movie-links ul li > p{
+  margin-bottom: 0 !important;
+}
+
+.movie-links li > p:nth-child(2) {
+  margin: 0 !important;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--md-default-fg-color);
+}
+
+.movie-links li > p:nth-child(2)::before {
+  content: '《';
+}
+
+.movie-links li > p:nth-child(2)::after {
+  content: '》';
+}
