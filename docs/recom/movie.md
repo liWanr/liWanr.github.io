@@ -38,7 +38,7 @@ tags:
 
     星际穿越
 
--   [![寄生虫](https://www.themoviedb.org/t/p/w1280/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg)](https://www.themoviedb.org/movie/496243)
+-   [![寄生虫](https://image.tmdb.org/t/p/original/fLcDvPPoKtsBdkpRegemFGJR8KK.jpg)](https://www.themoviedb.org/movie/496243)
 
     寄生虫
 
@@ -114,4 +114,45 @@ tags:
 
     功夫
 
+-   [![少年派的奇幻漂流](https://www.themoviedb.org/t/p/w1280/iLgRu4hhSr6V1uManX6ukDriiSc.jpg)](https://www.themoviedb.org/movie/87827-life-of-pi)
+
+    少年派的奇幻漂流
+
+-   [![饮食男女](https://image.tmdb.org/t/p/original/j55sl9hODGyht190ghbTDcjoA9a.jpg)](https://www.themoviedb.org/movie/10451)
+
+    饮食男女
+
+-   [![剪刀手爱德华](https://www.themoviedb.org/t/p/w1280/e0FqKFvGPdQNWG8tF9cZBtev9Em.jpg)](https://www.themoviedb.org/movie/162-edward-scissorhands)
+
+    剪刀手爱德华
+
+-   [![阳光灿烂的日子](https://image.tmdb.org/t/p/original/1TybDLcNwlWx4ILGlnFFhxDS5nT.jpg)](https://www.themoviedb.org/movie/161285)
+
+    阳光灿烂的日子
+
+-   [![2001太空漫游](https://www.themoviedb.org/t/p/w1280/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg)](https://www.themoviedb.org/movie/62-2001-a-space-odyssey)
+
+    2001太空漫游
+
+-   [![何以为家](https://image.tmdb.org/t/p/original/3JIbdk0HpCt5xNG6s7X1QNfAqPW.jpg)](https://www.themoviedb.org/movie/517814)
+
+    何以为家
+
+-   [![触不可及](https://image.tmdb.org/t/p/original/8hZnsW4wGz3zuuwu9eniaoKIJnP.jpg)](https://www.themoviedb.org/movie/77338-intouchables)
+
+    触不可及
+
+-   [![死亡诗社](https://www.themoviedb.org/t/p/w1280/erzbMlcNHOdx24AXOcn2ZKA7R1q.jpg)](https://www.themoviedb.org/movie/207-dead-poets-society)
+
+    死亡诗社
+
 ///
+
+<!-- 
+
+-   [![]()]()
+
+
+
+-->
+
