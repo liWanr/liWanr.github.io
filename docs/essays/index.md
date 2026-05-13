@@ -15,6 +15,8 @@ hide:
 
 /// html | div.essays
 
+- [**乌河**](./the-black-river.md){data-date="2026-05-14"}
+
 - [**在孩子之前**](./before-the-child.md){data-date="2026-05-04"}
 
 - [**阅记之《动物庄园》**](./pigs-and-the-mirror.md){data-date="2026-04-25"}
