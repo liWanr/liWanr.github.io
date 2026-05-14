@@ -15,7 +15,7 @@ hide:
 
 /// html | div.essays
 
-- [**乌河**](./the-black-river.md){data-date="2026-05-14"}
+- [**短文之《乌河》**](./the-black-river.md){data-date="2026-05-14"}
 
 - [**在孩子之前**](./before-the-child.md){data-date="2026-05-04"}
 
