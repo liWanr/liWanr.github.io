@@ -44,4 +44,19 @@ tags:
 
     [**Tania Rascia**](https://www.taniarascia.com/me/)
 
+-   ![LMS](https://lms.im/images/favicon.ico)
+
+    [**LMS**](https://lms.im/)
+
+-   ![嘀咕](https://digu.plus/usr/themes/iris/images/favicon/64x64.png)
+
+    [**嘀咕**](https://digu.plus/)
+
+-   ![猪哥杂记](https://blog.dazhu1988.com/favicon.ico)
+
+    [**猪哥杂记**](https://blog.dazhu1988.com/1181.html)
+
+-   ![LanM](https://bluelanm.github.io//favicon.ico)
+
+    [**LanM**](https://bluelanm.github.io/)
 ///
