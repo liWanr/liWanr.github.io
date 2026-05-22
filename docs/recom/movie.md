@@ -66,10 +66,6 @@ tags:
 
     七宗罪
 
--   [![千与千寻](https://image.tmdb.org/t/p/original/muwILUmdehTGA9skYsfEwG3xV8B.jpg)](https://www.themoviedb.org/movie/129)
-
-    千与千寻
-
 -   [![机器人总动员](https://www.themoviedb.org/t/p/w1280/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg)](https://www.themoviedb.org/movie/10681-wall-e)
 
     机器人总动员
@@ -90,10 +86,6 @@ tags:
 
     寻梦环游记
 
--   [![小丑](https://www.themoviedb.org/t/p/w1280/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg)](https://www.themoviedb.org/movie/475557-joker)
-
-    小丑
-
 -   [![活着](https://image.tmdb.org/t/p/original/i91fSq435yPrv3FSKrKOx3YuA4.jpg)](https://www.themoviedb.org/movie/31439)
 
     活着
@@ -106,10 +98,6 @@ tags:
 
     浪潮
 
--   [![末代皇帝](https://image.tmdb.org/t/p/original/7CZSCaGxCD2HXo8LrdcW183moqJ.jpg)](https://www.themoviedb.org/movie/746-the-last-emperor)
-
-    末代皇帝
-
 -   [![功夫](https://image.tmdb.org/t/p/original/18BmJuz8LgY5GyiRO6H16hN7iWP.jpg)](https://www.themoviedb.org/movie/9470)
 
     功夫
@@ -121,10 +109,6 @@ tags:
 -   [![饮食男女](https://image.tmdb.org/t/p/original/j55sl9hODGyht190ghbTDcjoA9a.jpg)](https://www.themoviedb.org/movie/10451)
 
     饮食男女
-
--   [![剪刀手爱德华](https://www.themoviedb.org/t/p/w1280/e0FqKFvGPdQNWG8tF9cZBtev9Em.jpg)](https://www.themoviedb.org/movie/162-edward-scissorhands)
-
-    剪刀手爱德华
 
 -   [![阳光灿烂的日子](https://image.tmdb.org/t/p/original/1TybDLcNwlWx4ILGlnFFhxDS5nT.jpg)](https://www.themoviedb.org/movie/161285)
 
@@ -147,12 +131,3 @@ tags:
     死亡诗社
 
 ///
-
-<!-- 
-
--   [![]()]()
-
-
-
--->
-
