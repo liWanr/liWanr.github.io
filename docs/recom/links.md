@@ -60,3 +60,21 @@ tags:
 
     [**LanM**](https://bluelanm.github.io/)
 ///
+
+///html | div.grid.cards
+```{ title="名称" linenums="0" }
+liWanr
+```
+
+```{ title="网址" linenums="0" }
+https://liWanr.com
+```
+
+```{ title="图标" linenums="0" }
+https://2.gravatar.com/avatar/4cf248a4f4520f081101d70359ac97fb9a6895f6f48dd62c8fa16281b6f86cc4?size=512&d=initials
+```
+
+```{ title="描述" linenums="0" }
+记录「技术与思考」的个人空间，也是我在数字世界中圈出的三分地。
+```
+///
