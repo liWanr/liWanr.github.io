@@ -75,6 +75,6 @@ https://2.gravatar.com/avatar/4cf248a4f4520f081101d70359ac97fb9a6895f6f48dd62c8f
 ```
 
 ```{ title="描述" linenums="0" }
-记录「技术与思考」的个人空间，也是我在数字世界中圈出的三分地。
+Every nobody is somebody.
 ```
 ///
