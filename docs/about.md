@@ -8,22 +8,6 @@ hide:
 
 <link rel="stylesheet" href="/assets/stylesheets/about.css">
 
-```mermaid
----
-config:
-  logLevel: 'debug'
-  theme: 'base'
-  timeline:
-    disableMulticolor: true
----
-timeline
-    2021年初起<br>Notion : 官方云存档，但有会员 : 域名使用 liy666.cn : 记录比赛笔记与经验 : 会员过期不给看笔记 : 注销账号 : 客服不通人性，数据丢失
-    2023年初起<br>Halo : 阿里云上部署 : 网站取名 不叫李宛 : 懵懂探索相关技术 : 记录个人学习经验笔记 : 服务器过期没续费 : 数据全部丢失
-    2024年中起<br>Poetize : 阿里云上部署: 少量记录技术经验 : 域名更新为 liiiiy.cn : 主要更新网站书签 : 网站更名 "Yearn" : 不满框架日渐臃肿
-    2024年底起<br>Material for MkDocs : 本地服务器部署 : 迁移并整理之数据 : 大量记录技术内容 : 网站更名 "Easton" : 用 Ngxin 部署资源 : 后期个人原因较少写笔记
-    2026年初起<br>Zensical : 本地服务器部署 : 迁移并整理之数据  : 域名更为 liWanr.com : 网站更名 "liWanr" : 开始写文 : 增加评论功能
-```
-
 ## :lucide-ev-charger: Powered By
 
 ///html | div.grid.cards
@@ -51,7 +35,7 @@ timeline
     
     代码通过
     [Visual Studio Code](https://code.visualstudio.com/)
-    编写并存储于
+    编写并存储在本地服务器和
     [GitHub](https://github.com/github)
     公开仓库中。
 
@@ -60,9 +44,75 @@ timeline
     ---
     
     常规文字采用
-    [MiSans](https://hyperos.mi.com/font)
-    , 等宽文字采用
-    [JetBrains Mono](https://www.jetbrains.com/lp/mono/)。
+    [MiSans](https://hyperos.mi.com/font),
+    等宽文字采用
+    [JetBrains Mono](https://www.jetbrains.com/lp/mono/),
+    板块[文](http://localhost:8000/essays/)的常规字体采用
+    [Noto Serif SC](https://fonts.google.com/noto/specimen/Noto+Serif+SC?preview.layout=grid&query=Noto+Serif+SC&preview.script=Hans)。
+///
+
+## :lucide-history: TimeLine
+
+///tab | **2026年初**
+
+- 框架使用[**Zensical**](https://zensical.org/)，本地服务器部署 + [GitHub Pages](https://liwanr.github.io/) + [Vercel](https://liwanr.vercel.app/) + [Netlify](https://liwanr.netlify.app/)
+
+- 域名更为**liWanr.com**，网站更名**liWanr**
+
+- 迁移并整理之数据，继续写技术内容和经验分享
+
+- 26年3月22日增加评论功能，次日发表第一篇文
+
+///
+
+///tab | **2024年底**
+
+- 框架使用[**Material for MkDocs**](https://squidfunk.github.io/mkdocs-material/)，本地服务器部署 + [GitHub Pages](https://liwanr.github.io/mkdocs/)
+
+- 域名未做更改，但中期将网站更名为**Easton**
+
+- 迁移并整理之前的数据，开始大量记录技术内容
+
+- 用[**Ngxin**](https://nginx.org/)部署静态文件服务
+
+- 后期个人原因较少写笔记，但一直热衷于修改样式
+
+///
+
+///tab | **2024年中**
+
+- 框架使用[**Poetize**](https://poetize.cn/)(现在被开发者卖了)，在阿里云上部署
+
+- 域名更新为**liiiiy.cn**，后期网站更名**Yearn**
+
+- 少量记录技术经验，主要更新网站书签
+
+- 框架愈发臃肿，感觉偏离博客初衷，就放弃这个框架了，数据保留
+
+///
+
+///tab | **2023年初**
+
+- 框架使用[**Halo**](https://www.halo.run/)，主题使用过[Hao](https://www.halo.run/store/apps/app-MgZJX)、[PIX](https://www.halo.run/store/apps/app-TUSTB)，在腾讯云和阿里云均有部署使用
+
+- 域名依旧是**liy666.cn**，网站依旧为**LiY**
+
+- 主要用于记录个人学习经验笔记
+
+- 服务器过期没续费，数据全部丢失，主要是也没有多少东西
+
+///
+
+///tab | **2021年初**
+
+- 框架使用[**Notion**](https://www.notion.com/)，未使用服务器，使用的是官方云存档，有会员
+
+- 域名使用**liy666.cn**，网站取名为**LiY**
+
+- 主要用于记录比赛笔记与经验
+
+- 后续会员过期不给看笔记，跟客服沟通妄想导出，但客服不通人性，遂注销账号，属于是一怒之下怒了一下，数据全部丢失
+
 ///
 
 ## :lucide-computer: Setup
