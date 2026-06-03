@@ -79,6 +79,9 @@ nav = [
             "blog/posts/nvidia-control-panel-fs-corrupt.md",
         ] },
     ] },
+    { "Projects" = [
+        "projects/dossier.md",
+    ] },
     { "Recom" =  [
         "recom/website.md",
         "recom/links.md",
