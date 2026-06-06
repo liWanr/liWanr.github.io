@@ -81,6 +81,7 @@ nav = [
     ] },
     { "Projects" = [
         "projects/dossier.md",
+        "projects/FUCK.md",
     ] },
     { "Recom" =  [
         "recom/website.md",
