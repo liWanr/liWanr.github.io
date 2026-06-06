@@ -1,6 +1,9 @@
 ---
 icon: lucide/hat-glasses
 title: 侦探事务所 · Dossier
+# date:
+    # created: 2026-06-03
+    # updated: 2026-06-06
 comments: true
 ---
 
@@ -10,9 +13,9 @@ comments: true
 
 ///html | div.grid.cards
 
-- **在线试玩**：[Vercel](https://Dossier.liWanr.vercel.app)
+- **在线游玩**：[侦探事务所 · Dossier](https://Dossier.liWanr.vercel.app)
 
-- **开源地址**：[GitHub](https://github.com/liWanr/Dossier)
+- **开源地址**：[liWanr/Dossier](https://github.com/liWanr/Dossier)
 
 ///
 
