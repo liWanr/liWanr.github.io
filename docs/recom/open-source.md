@@ -228,9 +228,8 @@ hr {
 -   ### XiaoMusic
 
     :lucide-mouse-pointer-click:
-    [**GitHub 仓库地址**](https://github.com/hanxi/xiaomusic)
-    | [**官方网站**](http://xdocs.hanxi.cc/)
-    | [**发布页**](https://github.com/hanxi/xiaomusic/releases)
+    [**GitHub 仓库地址**](https://github.com/songloft-org/songloft)
+    | [**官方网站**](https://songloft.hanxi.cc/)
 
     ---
 
