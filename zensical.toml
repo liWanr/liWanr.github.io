@@ -51,6 +51,7 @@ nav = [
     ] },
     { "Blog" = [
         { "<strong>置顶文章</strong>" = [
+            "blog/posts/shalong.md",
             "blog/posts/zensical-pro-tips.md",
         ] },
         { "<strong>2026</strong>" = [
