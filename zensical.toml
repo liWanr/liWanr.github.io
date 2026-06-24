@@ -80,10 +80,6 @@ nav = [
             "blog/posts/nvidia-control-panel-fs-corrupt.md",
         ] },
     ] },
-    { "Projects" = [
-        "projects/dossier.md",
-        "projects/FUCK.md",
-    ] },
     { "Recom" =  [
         "recom/website.md",
         "recom/links.md",
@@ -91,6 +87,11 @@ nav = [
         "recom/tools.md",
         "recom/movie.md",
         "recom/tuibeitu.md",
+        { "Projects" = [
+            "recom/projects/index.md",
+            "recom/projects/dossier.md",
+            "recom/projects/FUCK.md",
+        ] },
     ]},
     { "About" = "about.md" },
 ]
