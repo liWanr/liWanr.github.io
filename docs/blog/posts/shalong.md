@@ -33,7 +33,7 @@ comments: true
 </figure>
 
 <figure markdown="span">
-  ![摘下怀念 记住美妙](https://dummyimage.com/600x400/)<figcaption>摘下怀念 记住美妙</figcaption>
+  ![摘下怀念 记住美妙](/assets/images/blog/shalong/摘下怀念 记住美妙.jpg)<figcaption>摘下怀念 记住美妙</figcaption>
 </figure>
 
 <figure markdown="span">
