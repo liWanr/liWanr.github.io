@@ -34,7 +34,7 @@ tags:
 
 3. 进入系统后登陆美区账户，然后将 Siri 的语言改为美国，并且在「通用 --> 语言与地区」中将地区改为美国，然后将「首选语言」改为英语（美国）但不要重启电脑，然后删掉简体中文。此时再重启电脑。
 
-4. 然后下载这个[脚本](/public/Tec/enable_ai.sh)，然后打开终端 terminal，将刚才这个脚本设置为可执行文件
+4. 然后下载这个[脚本](https://local.liwanr.com:24/public/Tec/enable_ai.sh)，然后打开终端 terminal，将刚才这个脚本设置为可执行文件
 
     ```Bash { linenums="0" }
     chmod +x ~/Downloads/enable_ai.sh
