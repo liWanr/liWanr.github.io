@@ -15,7 +15,7 @@ hide:
 
 /// html | div.essays
 
-- [**高考之《浮游一梦》**](./adrift.md){data-date="2026-06-26"}
+- [**高考之《蜉蝣一梦》**](./adrift.md){data-date="2026-06-26"}
 
 - [**风筝**](./kite.md){data-date="2026-06-24"}
 
