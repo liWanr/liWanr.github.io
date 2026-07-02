@@ -82,11 +82,8 @@ tags:
 
 ## 博客组织
 
-///html | div.friend-links
-
--   ![博友圈](https://www.boyouquan.com/assets/images/sites/logo/logo-small.svg#only-light)
-    ![博友圈](https://www.boyouquan.com/assets/images/sites/logo/logo-small-dark.svg#only-dark)
-
-    [**博友圈**](https://www.boyouquan.com/home)
-
-///
+[![Travelling](https://www.travellings.cn/assets/logo.svg){style="height:30px;vertical-align:middle;"}](https://list.travellings.cn/)
+|
+[![十年之约](https://foreverblog.cn/assets/logo/logo_en_default.png){style="height:30px;vertical-align:middle;"}](https://www.foreverblog.cn/)
+|
+[![博友圈](https://www.boyouquan.com/assets/images/sites/logo/logo.svg#only-light){style="height:30px;vertical-align:middle;"}![博友圈](https://www.boyouquan.com/assets/images/sites/logo/logo-dark.svg#only-dark){style="height:30px;vertical-align:middle;"}](https://www.boyouquan.com/home)
