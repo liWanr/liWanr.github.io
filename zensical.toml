@@ -4,7 +4,7 @@ site_author = "liWanr"
 repo_url = "https://github.com/liWanr/liWanr.github.io"
 repo_name = "GitHub/liWanr"
 site_url = "https://liWanr.com/"
-site_description = "记录「技术与思考」的个人空间，也是我在数字世界中圈出的三分地。" 
+site_description = "Every nobody is somebody." 
 dev_addr = "0.0.0.0:8000"
 validation = false
 
