@@ -78,9 +78,10 @@ tags:
 -   ![瓦解的生活记事](https://cdn2.hin.cool/pic/my/LonelyGod.ico)
 
     [**瓦解的生活记事**](https://hin.cool/)
+
 ///
 
-## 博客组织
+## 加入的博客组织
 
 ///html | div.grid.cards
 
