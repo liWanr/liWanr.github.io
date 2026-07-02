@@ -22,7 +22,7 @@ docs_dir = Path('docs')
 
 # RSS 生成时要忽略的 Markdown 路径，直接在这里改
 RSS_IGNORE_PATHS = [
-    # 'docs/index.md',
+    'docs/recom/projects/index.md',
 ]
 
 load_config = lambda: tomllib.load(open(config_path, 'rb'))
