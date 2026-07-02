@@ -2,11 +2,144 @@ import os
 import re
 import json
 import shutil
+import subprocess
+from datetime import datetime, timezone
+from email.utils import format_datetime
+from html import escape
+from urllib.parse import urljoin
 from pathlib import Path
+
+try:
+    import tomllib
+except ModuleNotFoundError:  # pragma: no cover
+    import tomli as tomllib
 
 site_dir = 'site'
 gitignore_path = '.gitignore'
 search_json_path = os.path.join(site_dir, 'search.json')
+config_path = 'zensical.toml'
+docs_dir = Path('docs')
+
+# RSS 生成时要忽略的 Markdown 路径，直接在这里改
+RSS_IGNORE_PATHS = [
+    # 'docs/index.md',
+]
+
+load_config = lambda: tomllib.load(open(config_path, 'rb'))
+read_text = lambda path: open(path, encoding='utf-8').read()
+
+
+def load_hidden_slugs():
+    if not os.path.exists(gitignore_path):
+        return set()
+    return {
+        l.lstrip('/')[5:] if l.lstrip('/').startswith('docs/') else l.lstrip('/')
+        for l in (
+            line.strip() for line in open(gitignore_path, encoding='utf-8')
+        )
+        if l and not l.startswith('#') and l.endswith('.md')
+    }
+
+def load_rss_ignore_slugs():
+    return {markdown_path_to_slug(p.replace('docs/', '', 1)) for p in RSS_IGNORE_PATHS if p}
+
+def flatten_nav(nav):
+    for node in nav:
+        if isinstance(node, str):
+            if node.endswith('.md'):
+                yield node
+        elif isinstance(node, list):
+            yield from flatten_nav(node)
+        elif isinstance(node, dict):
+            for v in node.values():
+                yield from flatten_nav(v)
+
+def markdown_path_to_slug(md_path):
+    slug = md_path.replace('\\', '/').strip().removeprefix('docs/').removesuffix('.md')
+    return '' if slug == 'index' else slug.removesuffix('/index').rstrip('/')
+
+slug_to_url = lambda site_url, slug: site_url.rstrip('/') + '/' if not slug else urljoin(site_url.rstrip('/') + '/', slug.rstrip('/') + '/')
+front_matter = lambda content: content.split('---', 2)[1] if content.startswith('---') and len(content.split('---', 2)) > 2 else ''
+parse_iso_datetime = lambda v: (datetime.fromisoformat(v.strip().strip("\"'").replace('Z', '+00:00')).astimezone(timezone.utc) if v.strip().strip("\"'") else None)
+
+def extract_title(content, fallback):
+    m = re.search(r'^\s*title\s*:\s*(.+?)\s*$', front_matter(content), re.M)
+    return m.group(1).strip().strip("\"'") if m and m.group(1).strip().strip("\"'") else fallback
+
+def extract_created_date(content):
+    m = re.search(r'^(?:\s*#\s*)?(?:date\s*:\s*)?(?:craeted|created)\s*:\s*(.+?)\s*$', front_matter(content), re.M | re.I)
+    return parse_iso_datetime(m.group(1)) if m else None
+
+def git_created_date(path):
+    try:
+        out = subprocess.run(['git', 'log', '--follow', '--format=%aI', '--reverse', '--', str(path)], capture_output=True, text=True, check=False).stdout.splitlines()
+        return parse_iso_datetime(out[0]) if out else None
+    except FileNotFoundError:
+        return None
+
+def local_created_date(path):
+    try:
+        st = path.stat()
+    except FileNotFoundError:
+        return None
+    bt = getattr(st, 'st_birthtime', None)
+    if bt:
+        return datetime.fromtimestamp(bt, tz=timezone.utc)
+    try:
+        w = subprocess.run(['stat', '-c', '%W', str(path)], capture_output=True, text=True, check=False).stdout.strip()
+        return datetime.fromtimestamp(int(w), tz=timezone.utc) if w not in {'', '0', '-1'} else datetime.fromtimestamp(st.st_ctime, tz=timezone.utc)
+    except (FileNotFoundError, ValueError):
+        return datetime.fromtimestamp(st.st_ctime, tz=timezone.utc)
+
+def resolve_pub_date(path, content):
+    if (d := extract_created_date(content)):
+        return d
+    if subprocess.run(['git', 'status', '--porcelain', '--', str(path)], capture_output=True, text=True, check=False).stdout.startswith('??'):
+        return local_created_date(path)
+    return git_created_date(path) or local_created_date(path)
+
+parse_date_only = lambda v: (d := parse_iso_datetime(v)) and d.replace(hour=0, minute=0, second=0, microsecond=0)
+
+def generate_rss():
+    cfg = load_config().get('project', {})
+    site_url, site_name, site_description = cfg.get('site_url', ''), cfg.get('site_name', 'RSS'), cfg.get('site_description', '')
+    ignore = load_hidden_slugs() | load_rss_ignore_slugs()
+
+    def add(entries, seen, title, link, pub_date, description):
+        if title and link and pub_date and link not in seen:
+            seen.add(link)
+            entries.append({'title': title, 'link': link, 'guid': link, 'description': description, 'pub_date': pub_date})
+
+    entries, seen = [], set()
+
+    for md_path in flatten_nav(cfg.get('nav', [])):
+        slug = markdown_path_to_slug(md_path)
+        if slug in ignore:
+            continue
+        p = docs_dir / md_path
+        if p.exists():
+            c = read_text(p)
+            add(entries, seen, extract_title(c, p.stem), slug_to_url(site_url, slug), resolve_pub_date(p, c), site_description)
+
+    index_path = docs_dir / 'essays' / 'index.md'
+    if index_path.exists():
+        c = read_text(index_path)
+        for m in re.finditer(r'\[\*\*(.+?)\*\*\]\((\./[^)]+?\.md)\)\{data-date="(\d{4}-\d{2}-\d{2})"\}', c):
+            p = index_path.parent / m.group(2).lstrip('./')
+            slug = markdown_path_to_slug(str(p.relative_to(docs_dir)))
+            if p.exists() and slug not in ignore:
+                add(entries, seen, m.group(1).strip(), slug_to_url(site_url, slug), parse_date_only(m.group(3)), site_description)
+
+    entries.sort(key=lambda i: (i['pub_date'], i['title']), reverse=True)
+
+    rss_lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0">', '  <channel>', f'    <title>{escape(site_name)}</title>', f'    <link>{escape(site_url)}</link>', f'    <description>{escape(site_description)}</description>', f'    <lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>']
+    for i in entries:
+        rss_lines += ['    <item>', f'      <title>{escape(i["title"])}</title>', f'      <link>{escape(i["link"])}</link>', f'      <guid>{escape(i["guid"])}</guid>', f'      <description>{escape(i["description"])}</description>', f'      <pubDate>{format_datetime(i["pub_date"])}</pubDate>', '    </item>']
+    rss_lines += ['  </channel>', '</rss>', '']
+
+    with open(os.path.join(site_dir, 'rss.xml'), 'w', encoding='utf-8') as f:
+        f.write('\n'.join(rss_lines))
+    print(f'RSS 已生成 {len(entries)} 条信息')
 
 def process_index():
     index_path = os.path.join(site_dir, 'index.html')
@@ -181,4 +314,5 @@ if __name__ == '__main__':
     process_index()
     process()
     hide_articles()
+    generate_rss()
     activate_essays_tab()
