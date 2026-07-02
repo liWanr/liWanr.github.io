@@ -255,6 +255,11 @@ link = "http://10.0.0.1:16601"
 name = "Lucky"
 
 [[project.extra.social]]
+icon = "lucide/rss"
+link = "/rss.xml"
+name = "RSS订阅"
+
+[[project.extra.social]]
 icon = "lucide/languages"
 link = "https://translate.google.com/?hl=zh-CN&sl=zh-CN&tl=en&op=translate"
 name = "Translate"
