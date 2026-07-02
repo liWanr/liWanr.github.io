@@ -82,8 +82,24 @@ tags:
 
 ## 博客组织
 
-[![Travelling](https://www.travellings.cn/assets/logo.svg){style="height:30px;vertical-align:middle;"}](https://list.travellings.cn/)
-|
-[![十年之约](https://foreverblog.cn/assets/logo/logo_en_default.png){style="height:30px;vertical-align:middle;"}](https://www.foreverblog.cn/)
-|
-[![博友圈](https://www.boyouquan.com/assets/images/sites/logo/logo.svg#only-light){style="height:30px;vertical-align:middle;"}![博友圈](https://www.boyouquan.com/assets/images/sites/logo/logo-dark.svg#only-dark){style="height:30px;vertical-align:middle;"}](https://www.boyouquan.com/home)
+///html | div.grid.cards
+
+-   **Travelling**
+
+    [官网](https://www.travellings.cn/) |
+    [申请](https://www.travellings.cn/docs/join.html) |
+    [开往](https://www.travellings.cn/go.html)
+
+-   **Forever Blog**
+
+    [官网](https://www.foreverblog.cn/) |
+    [申请](https://www.foreverblog.cn/treaty.html) |
+    [开往](https://www.foreverblog.cn/go.html)
+
+-   **博友圈**
+
+    [官网](https://www.boyouquan.com/) |
+    [申请](https://www.boyouquan.com/blog-requests/add/email-validation) |
+    [广场](https://www.boyouquan.com/blogs)
+
+///
