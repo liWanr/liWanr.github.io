@@ -10,6 +10,37 @@ tags:
 
 <link rel="stylesheet" href="../assets/stylesheets/links.css">
 
+## 我的信息
+
+///html | div.info-row
+
+-   名称
+
+    ```text {  linenums="0"  }
+    liWanr
+    ```
+
+-   网址
+
+    ```text {  linenums="0"  }
+    https://liWanr.com
+    ```
+
+-   描述
+
+    ```text {  linenums="0"  }
+    Every nobody is somebody.
+    ```
+
+-   头像
+
+    ```text {  linenums="0"  }
+    https://2.gravatar.com/avatar/4cf248a4f4520f081101d70359ac97fb9a6895f6f48dd62c8fa16281b6f86cc4?size=256&d=initials
+    ```
+///
+
+## 友情链接
+
 ///html | div.friend-links
 
 -   ![Jiao](https://dxlcq.cn/assets/head.png)
@@ -28,29 +59,13 @@ tags:
 
     [**双绞麻痹**](https://numb.tech/)
 
--   ![樗木行斋](http://www.laomu.net/skins/2025/static/picture/logo.jpg)
-
-    [**樗木行斋**](http://www.laomu.net/)
-
 -   ![Tony](https://lipeng.ac/favicon.ico)
 
     [**Tony**](https://lipeng.ac/)
 
--   ![Brittany Chiang](https://brittanychiang.com/favicon.ico)
-
-    [**Brittany Chiang**](https://brittanychiang.com/)
-
--   ![Tania Rascia](https://www.taniarascia.com//icons/icon-96x96.png?v=07f5a193c5a1357203c0389b1002fb71)
-
-    [**Tania Rascia**](https://www.taniarascia.com/me/)
-
 -   ![LMS](https://lms.im/images/favicon.ico)
 
     [**LMS**](https://lms.im/)
-
--   ![嘀咕](https://digu.plus/usr/themes/iris/images/favicon/64x64.png)
-
-    [**嘀咕**](https://digu.plus/)
 
 -   ![猪哥杂记](https://blog.dazhu1988.com/favicon.ico)
 
@@ -59,22 +74,19 @@ tags:
 -   ![LanM](https://bluelanm.github.io//favicon.ico)
 
     [**LanM**](https://bluelanm.github.io/)
+
+-   ![瓦解的生活记事](https://cdn2.hin.cool/pic/my/LonelyGod.ico)
+
+    [**瓦解的生活记事**](https://hin.cool/)
 ///
 
-///html | div.grid.cards
-```{ title="名称" linenums="0" }
-liWanr
-```
+## 博客组织
 
-```{ title="网址" linenums="0" }
-https://liWanr.com
-```
+///html | div.friend-links
 
-```{ title="图标" linenums="0" }
-https://2.gravatar.com/avatar/4cf248a4f4520f081101d70359ac97fb9a6895f6f48dd62c8fa16281b6f86cc4?size=512&d=initials
-```
+-   ![博友圈](https://www.boyouquan.com/assets/images/sites/logo/logo-small.svg#only-light)
+    ![博友圈](https://www.boyouquan.com/assets/images/sites/logo/logo-small-dark.svg#only-dark)
 
-```{ title="描述" linenums="0" }
-Every nobody is somebody.
-```
+    [**博友圈**](https://www.boyouquan.com/home)
+
 ///
