@@ -1,0 +1,38 @@
+name: 检测新文章并通知订阅者
+
+# 订阅系统仓库和博客仓库是两个独立仓库，无法直接用 workflow_run 跨仓库监听。
+# 采用的方案：博客仓库的构建 workflow 成功后，追加一步调用 GitHub API 向本仓库
+# 发送 repository_dispatch 事件（event_type: new-post-published），本 workflow 监听该事件。
+# 博客仓库那边需要新增的 workflow 见 blog-repo-addon/.github/workflows/notify-dispatch.yml，
+# 详细说明见 README「跨仓库触发说明」。
+on:
+  repository_dispatch:
+    types: [new-post-published]
+
+jobs:
+  notify-subscribers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖
+        run: pip install -r scripts/requirements.txt
+
+      - name: 检测新文章并发送通知
+        env:
+          RSS_URL: ${{ secrets.RSS_URL }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_DATABASE_ID: ${{ secrets.CF_DATABASE_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          ICLOUD_MAIL: ${{ secrets.ICLOUD_MAIL }}
+          ICLOUD_AUTH_CODE: ${{ secrets.ICLOUD_AUTH_CODE }}
+          BLOG_NAME: ${{ secrets.BLOG_NAME }}
+          BLOG_URL: ${{ secrets.BLOG_URL }}
+          WORKER_BASE_URL: ${{ secrets.WORKER_BASE_URL }}
+        run: python scripts/notify_new_posts.py
