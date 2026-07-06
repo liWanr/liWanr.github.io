@@ -110,6 +110,7 @@ parse_date_only = lambda v: (d := parse_iso_datetime(v)) and d.replace(hour=0, m
 def generate_rss():
     cfg = load_config().get('project', {})
     site_url, site_name, site_description = cfg.get('site_url', ''), cfg.get('site_name', 'RSS'), cfg.get('site_description', '')
+    site_icon = site_url.rstrip('/') + '/assets/favicon.png' if site_url else ''
     ignore = load_hidden_slugs() | load_rss_ignore_slugs()
 
     def add(entries, seen, title, link, pub_date, description):
@@ -140,14 +141,60 @@ def generate_rss():
 
     entries.sort(key=lambda i: (i['pub_date'], i['title']), reverse=True)
 
-    rss_lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0">', '  <channel>', f'    <title>{escape(site_name)}</title>', f'    <link>{escape(site_url)}</link>', f'    <description>{escape(site_description)}</description>', f'    <lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>']
+    rss_xsl_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">',
+        '  <xsl:output method="html" encoding="UTF-8" indent="yes"/>',
+        '  <xsl:template match="/rss">',
+        '    <html lang="zh-CN">',
+        '      <head>',
+        '        <meta charset="UTF-8"/>',
+        '        <title><xsl:value-of select="channel/title"/></title>',
+        f'        <link rel="icon" href="{site_icon}"/>',
+        '        <style>',
+        '          body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 40px auto; padding: 0 20px; line-height: 1.7; }',
+        '          h1 { margin-bottom: 0.25em; }',
+        '          .meta { color: #666; margin-bottom: 1.5em; }',
+        '          article { padding: 1rem 0; border-bottom: 1px solid #eee; }',
+        '          article:last-child { border-bottom: 0; }',
+        '          a { color: inherit; text-decoration: none; }',
+        '          a:hover { text-decoration: underline; }',
+        '          .date { color: #666; font-size: 0.95em; }',
+        '        </style>',
+        '      </head>',
+        '      <body>',
+        '        <h1><xsl:value-of select="channel/title"/></h1>',
+        '        <div class="meta"><xsl:value-of select="channel/description"/></div>',
+        '        <xsl:for-each select="channel/item">',
+        '          <article>',
+        '            <h2><a>',
+        '              <xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute>',
+        '              <xsl:value-of select="title"/>',
+        '            </a></h2>',
+        '            <div class="date"><xsl:value-of select="pubDate"/></div>',
+        '            <xsl:if test="description">',
+        '              <p><xsl:value-of select="description"/></p>',
+        '            </xsl:if>',
+        '          </article>',
+        '        </xsl:for-each>',
+        '      </body>',
+        '    </html>',
+        '  </xsl:template>',
+        '</xsl:stylesheet>',
+        ''
+    ]
+    rss_xsl = '\n'.join(rss_xsl_lines)
+
+    rss_lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<?xml-stylesheet type="text/xsl" href="rss.xsl"?>', '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">', '  <channel>', f'    <atom:link href="{escape(site_url.rstrip("/") + "/rss.xml")}" rel="self" type="application/rss+xml" />', f'    <title>{escape(site_name)}</title>', f'    <link>{escape(site_url)}</link>', f'    <description>{escape(site_description)}</description>', f'    <lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>']
     for i in entries:
         rss_lines += ['    <item>', f'      <title>{escape(i["title"])}</title>', f'      <link>{escape(i["link"])}</link>', f'      <guid>{escape(i["guid"])}</guid>']
         if i['description']:
             rss_lines.append(f'      <description>{escape(i["description"])}</description>')
-        rss_lines += [f'      <pubDate>{i["pub_date"].strftime("%a, %d %b %Y")}</pubDate>', '    </item>']
+        rss_lines += [f'      <pubDate>{format_datetime(i["pub_date"])}</pubDate>', '    </item>']
     rss_lines += ['  </channel>', '</rss>', '']
 
+    with open(os.path.join(site_dir, 'rss.xsl'), 'w', encoding='utf-8') as f:
+        f.write(rss_xsl)
     with open(os.path.join(site_dir, 'rss.xml'), 'w', encoding='utf-8') as f:
         f.write('\n'.join(rss_lines))
     print(f'RSS 已生成 {len(entries)} 条信息')
