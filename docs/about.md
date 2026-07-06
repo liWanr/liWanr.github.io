@@ -12,25 +12,16 @@ hide:
 
 ///html | div.grid.cards
 -   :lucide-bug-play: **框架生成**
-
-    ---
-    
     网站基于现代静态网站生成器
     [Zensical](https://zensical.org/)
     搭建而成。
 
 -   :lucide-cloud-upload: **托管平台**
-
-    ---
-
     [Local Server](https://local.liwanr.com:24)
     / [Cloudflare](https://www.cloudflare.com)
     / [GitHub Pages](https://docs.github.com/pages)
     
 -   :lucide-code-xml: **编码存储**
-
-    ---
-    
     代码通过
     [Visual Studio Code](https://code.visualstudio.com/)
     编写并存储在本地服务器和
@@ -38,9 +29,6 @@ hide:
     公开仓库中。
 
 -   :lucide-type-outline: **字体样式**
-
-    ---
-    
     常规文字采用
     [MiSans](https://hyperos.mi.com/font),
     等宽文字采用
@@ -51,7 +39,7 @@ hide:
 
 ## :lucide-newspaper: Newsletter
 
-这片地里种的东西不多，但每一垄都是自己刨的。留个邮箱，下次翻地时第一时间通知你。
+内容更新不会等你，但订阅可以。
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
