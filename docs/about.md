@@ -77,7 +77,7 @@ document.getElementById('rss-ring-form').addEventListener('submit', async functi
   messageEl.textContent = '提交中...';
 
   try {
-    const resp = await fetch('https://YOUR_WORKER_URL/subscribe', {
+    const resp = await fetch('https://rss-ring.itswanr.workers.dev/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, turnstileToken }),
