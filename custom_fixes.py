@@ -145,7 +145,7 @@ def generate_rss():
         rss_lines += ['    <item>', f'      <title>{escape(i["title"])}</title>', f'      <link>{escape(i["link"])}</link>', f'      <guid>{escape(i["guid"])}</guid>']
         if i['description']:
             rss_lines.append(f'      <description>{escape(i["description"])}</description>')
-        rss_lines += [f'      <pubDate>{format_datetime(i["pub_date"])}</pubDate>', '    </item>']
+        rss_lines += [f'      <pubDate>{i["pub_date"].strftime("%a, %d %b %Y")}</pubDate>', '    </item>']
     rss_lines += ['  </channel>', '</rss>', '']
 
     with open(os.path.join(site_dir, 'rss.xml'), 'w', encoding='utf-8') as f:
