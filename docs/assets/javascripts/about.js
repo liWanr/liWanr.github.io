@@ -1,13 +1,25 @@
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 let rssRingTurnstileToken = '';
+let rssRingEmailValid = false;
+
+function rssRingUpdateSubmitState() {
+  document.getElementById('rss-ring-submit').disabled = !(rssRingEmailValid && rssRingTurnstileToken);
+}
+
+document.getElementById('bd-email').addEventListener('input', function (e) {
+  rssRingEmailValid = EMAIL_REGEX.test(e.target.value.trim());
+  rssRingUpdateSubmitState();
+});
 
 function rssRingOnVerified(token) {
   rssRingTurnstileToken = token;
-  document.getElementById('rss-ring-submit').disabled = false;
+  rssRingUpdateSubmitState();
 }
 
 function rssRingOnExpired() {
   rssRingTurnstileToken = '';
-  document.getElementById('rss-ring-submit').disabled = true;
+  rssRingUpdateSubmitState();
 }
 
 document.getElementById('rss-ring-form').addEventListener('submit', async function (e) {
@@ -15,8 +27,13 @@ document.getElementById('rss-ring-form').addEventListener('submit', async functi
   const email = document.getElementById('bd-email').value;
   const messageEl = document.getElementById('rss-ring-message');
 
+  if (!rssRingEmailValid) {
+    messageEl.textContent = '邮箱格式不正确，请检查后重试';
+    return;
+  }
+
   if (!rssRingTurnstileToken) {
-    messageEl.textContent = '请先完成人机验证';
+    messageEl.textContent = '请等待人机验证...';
     return;
   }
 
