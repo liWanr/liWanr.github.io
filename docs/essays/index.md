@@ -15,8 +15,6 @@ hide:
 
 /// html | div.essays
 
-- [**测试文章**](./test.md){data-date="2026-07-06"}
-
 - [**高考之《蜉蝣一梦》**](./adrift.md){data-date="2026-06-26"}
 
 - [**风筝**](./kite.md){data-date="2026-06-24"}
