@@ -67,7 +67,7 @@ tags:
 
     [**LMS**](https://lms.im/)
 
--   ![猪哥杂记](https://blog.dazhu1988.com/favicon.ico)
+-   ![猪哥杂记](https://gravatar.loli.net/avatar/459a0b9f775f791d461b06612198e200)
 
     [**猪哥杂记**](https://blog.dazhu1988.com/1181.html)
 
@@ -91,16 +91,22 @@ tags:
     [申请](https://www.travellings.cn/docs/join.html) |
     [开往](https://www.travellings.cn/go.html)
 
--   **Forever Blog**
+<!-- -   **Forever Blog**
 
     [官网](https://www.foreverblog.cn/) |
     [申请](https://www.foreverblog.cn/treaty.html) |
-    [开往](https://www.foreverblog.cn/go.html)
+    [开往](https://www.foreverblog.cn/go.html) -->
 
 -   **博友圈**
 
     [官网](https://www.boyouquan.com/) |
     [申请](https://www.boyouquan.com/blog-requests/add/email-validation) |
     [广场](https://www.boyouquan.com/blogs)
+
+-   **集博栈**
+
+    [官网](https://www.zhblogs.net/) |
+    [申请](https://www.zhblogs.net/site/submit) |
+    [开往](https://www.zhblogs.net/site/go)
 
 ///
