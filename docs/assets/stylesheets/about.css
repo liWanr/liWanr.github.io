@@ -44,3 +44,17 @@
     color: var(--md-accent-fg-color);
     background: var(--md-accent-fg-color--transparent);
 }
+
+.mdx-form__input--stretch {
+    width: 50%;
+}
+
+.mdx-form__input {
+    background-color: var(--md-default-fg-color--lightest);
+    border-radius: .5rem;
+    flex: 1 1 50%;
+    font-size: 14px;
+    line-height: 1.4;
+    min-width: 0;
+    padding: .5rem 1rem;
+}
