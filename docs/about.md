@@ -279,12 +279,12 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ## :lucide-cookie: Privacy Policy
 
-网站本体是完全静态的页面，不会收集任何用户数据，但网站所依赖的外部服务可能会有收集数据，**本站不对外部服务商的隐私政策负责**，请用户自行查阅这些服务商的隐私政策。
+本站最终呈现的是静态网站，不会收集任何用户数据，但依赖的外部服务可能会有收集数据，**本站不对外部服务商的隐私政策负责**，请用户自行查阅这些服务商的隐私政策。
 
--  **Cloudflare**: 网站使用了 Cloudflare 的 CDN 服务来加速内容传输，Cloudflare 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以优化性能和安全性。详细信息请参阅 [Cloudflare隐私政策](https://www.cloudflare.com/privacypolicy/)。
+-  **Cloudflare**: 本站使用了 Cloudflare 的 CDN 服务来加速内容传输和 Turnstile 服务来防止垃圾邮件和滥用行为，可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以优化性能和安全性。详细信息请参阅 [Cloudflare 隐私政策](https://www.cloudflare.com/privacypolicy/) / [Turnstile 隐私政策](https://www.cloudflare.com/turnstile-privacy-policy/)。
 
-- **GitHub**: 网站的源代码托管在 GitHub 上，GitHub 可能会收集用户的账户信息、访问日志等数据。详细信息请参阅 [GitHub 隐私政策](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement)。
+- **GitHub**: 本站的源代码托管在 GitHub 上，GitHub 可能会收集用户的账户信息、访问日志等数据。详细信息请参阅 [GitHub 隐私政策](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement)。
 
-- **Google Analytics**: 网站使用了 Google Analytics 来分析访问者的行为，Google Analytics 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以提供统计数据。详细信息请参阅 [Google Analytics 隐私政策](https://policies.google.com/privacy)。
+- **Google Analytics**: 本站使用了 Google Analytics 来分析访问者的行为，Google Analytics 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以提供统计数据。详细信息请参阅 [Google Analytics 隐私政策](https://policies.google.com/privacy)。
 
-- **Giscus**: 网站使用了 Giscus 来提供评论功能，giscus 可能会收集用户的 GitHub 账户信息、评论内容等数据。详细信息请参阅 [Giscus 隐私政策](https://giscus.app/privacy)。
+- **Giscus**: 本站使用了 Giscus 来提供评论功能，giscus 可能会收集用户的 GitHub 账户信息、评论内容等数据。详细信息请参阅 [Giscus 隐私政策](https://giscus.app/privacy)。
