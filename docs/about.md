@@ -58,7 +58,7 @@ hide:
 <form id="rss-ring-form">
   <input class="mdx-form__input mdx-form__input--stretch" type="email" name="email" id="bd-email" placeholder="your-email@example.com" required/>
   <button class="md-button md-button--primary" type="submit">订阅</button>
-  <div class="cf-turnstile" data-sitekey="0x4AAAAAADwTjT7R3l5jFla7"></div>
+  <div class="cf-turnstile" data-sitekey="0x4AAAAAADwZnEQiPgcV_V17"></div>
 </form>
 <p id="rss-ring-message"></p>
 
