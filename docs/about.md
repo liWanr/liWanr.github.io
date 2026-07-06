@@ -26,8 +26,6 @@ hide:
     [Local Server](https://local.liwanr.com:24)
     / [Cloudflare](https://www.cloudflare.com)
     / [GitHub Pages](https://docs.github.com/pages)
-    / [Vercel](https://vercel.com/)
-    / [Netlify](https://www.netlify.com/)
     
 -   :lucide-code-xml: **编码存储**
 
@@ -50,6 +48,49 @@ hide:
     板块[文](http://localhost:8000/essays/)的常规字体采用
     [Noto Serif SC](https://fonts.google.com/noto/specimen/Noto+Serif+SC?preview.layout=grid&query=Noto+Serif+SC&preview.script=Hans)。
 ///
+
+## :lucide-newspaper: Newsletter
+
+这片地里种的东西不多，但每一垄都是自己刨的。留个邮箱，下次翻地时第一时间通知你。
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+<form id="rss-ring-form">
+  <input class="mdx-form__input mdx-form__input--stretch" type="email" name="email" id="bd-email" placeholder="your-email@example.com" required/>
+  <button class="md-button md-button--primary" type="submit">订阅</button>
+  <div class="cf-turnstile" data-sitekey="0x4AAAAAADwTjT7R3l5jFla7"></div>
+</form>
+<p id="rss-ring-message"></p>
+
+<script>
+document.getElementById('rss-ring-form').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const email = document.getElementById('bd-email').value;
+  const turnstileToken = turnstile.getResponse();
+  const messageEl = document.getElementById('rss-ring-message');
+
+  if (!turnstileToken) {
+    messageEl.textContent = '请先完成人机验证';
+    return;
+  }
+
+  messageEl.textContent = '提交中...';
+
+  try {
+    const resp = await fetch('https://YOUR_WORKER_URL/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, turnstileToken }),
+    });
+    const data = await resp.json();
+    messageEl.textContent = data.message;
+  } catch (err) {
+    messageEl.textContent = '提交失败，请稍后重试';
+  } finally {
+    turnstile.reset();
+  }
+});
+</script>
 
 ## :lucide-history: TimeLine
 
