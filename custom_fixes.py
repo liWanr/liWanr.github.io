@@ -70,6 +70,13 @@ def extract_created_date(content):
     m = re.search(r'^(?:\s*#\s*)?(?:date\s*:\s*)?(?:craeted|created)\s*:\s*(.+?)\s*$', front_matter(content), re.M | re.I)
     return parse_iso_datetime(m.group(1)) if m else None
 
+def extract_description(content):
+    fm = front_matter(content)
+    m = re.search(r'^\s*description\s*:\s*(.+?)\s*$', fm, re.M | re.I)
+    if m:
+        return m.group(1).strip().strip("\"'")
+    return ''
+
 def git_created_date(path):
     try:
         out = subprocess.run(['git', 'log', '--follow', '--format=%aI', '--reverse', '--', str(path)], capture_output=True, text=True, check=False).stdout.splitlines()
@@ -119,7 +126,7 @@ def generate_rss():
         p = docs_dir / md_path
         if p.exists():
             c = read_text(p)
-            add(entries, seen, extract_title(c, p.stem), slug_to_url(site_url, slug), resolve_pub_date(p, c), site_description)
+            add(entries, seen, extract_title(c, p.stem), slug_to_url(site_url, slug), resolve_pub_date(p, c), extract_description(c))
 
     index_path = docs_dir / 'essays' / 'index.md'
     if index_path.exists():
@@ -128,13 +135,17 @@ def generate_rss():
             p = index_path.parent / m.group(2).lstrip('./')
             slug = markdown_path_to_slug(str(p.relative_to(docs_dir)))
             if p.exists() and slug not in ignore:
-                add(entries, seen, m.group(1).strip(), slug_to_url(site_url, slug), parse_date_only(m.group(3)), site_description)
+                essay_content = read_text(p)
+                add(entries, seen, m.group(1).strip(), slug_to_url(site_url, slug), parse_date_only(m.group(3)), extract_description(essay_content))
 
     entries.sort(key=lambda i: (i['pub_date'], i['title']), reverse=True)
 
     rss_lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0">', '  <channel>', f'    <title>{escape(site_name)}</title>', f'    <link>{escape(site_url)}</link>', f'    <description>{escape(site_description)}</description>', f'    <lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>']
     for i in entries:
-        rss_lines += ['    <item>', f'      <title>{escape(i["title"])}</title>', f'      <link>{escape(i["link"])}</link>', f'      <guid>{escape(i["guid"])}</guid>', f'      <description>{escape(i["description"])}</description>', f'      <pubDate>{format_datetime(i["pub_date"])}</pubDate>', '    </item>']
+        rss_lines += ['    <item>', f'      <title>{escape(i["title"])}</title>', f'      <link>{escape(i["link"])}</link>', f'      <guid>{escape(i["guid"])}</guid>']
+        if i['description']:
+            rss_lines.append(f'      <description>{escape(i["description"])}</description>')
+        rss_lines += [f'      <pubDate>{format_datetime(i["pub_date"])}</pubDate>', '    </item>']
     rss_lines += ['  </channel>', '</rss>', '']
 
     with open(os.path.join(site_dir, 'rss.xml'), 'w', encoding='utf-8') as f:

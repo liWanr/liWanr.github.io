@@ -1,6 +1,7 @@
 ---
 title: 猪的镜子
 comments: true
+description: 动物们透过窗户，看着猪和人类坐在一起打牌、谈笑风生。他们的目光从猪移向人，再从人移向猪，最后，他们再也分不清哪个是哪个。
 ---
 
 <link rel="stylesheet" href="../assets/stylesheets/essays.css">

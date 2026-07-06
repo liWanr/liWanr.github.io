@@ -1,6 +1,7 @@
 ---
 title: 风筝
 comments: true
+description: 公园里有一只风筝在高空飘荡。它离地三百米，俯瞰着公园里嬉闹的人群，那是它够得着的天空，白云为底，风为伴。底下的人仰头望去，都觉得那只风筝是自由的。
 ---
 
 <link rel="stylesheet" href="../assets/stylesheets/essays.css">

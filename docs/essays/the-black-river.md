@@ -1,6 +1,7 @@
 ---
 title: 乌河
 comments: true
+description: 那一年的春天来得很早，乌河两岸的草是青的，新来的孩子哭声很响。乌河还是那条乌河，上游的人死了，这里的人还在争，下游的人还没出生。
 ---
 
 <link rel="stylesheet" href="../assets/stylesheets/essays.css">
