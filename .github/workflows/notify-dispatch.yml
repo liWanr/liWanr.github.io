@@ -1,0 +1,37 @@
+name: 通知订阅系统有新文章发布
+
+# 这个文件需要复制到【博客仓库】的 .github/workflows/ 目录下，不是订阅系统仓库的文件。
+# 它不会影响你博客仓库现有的 "Build & Deploy Docs" 构建部署 workflow。
+#
+# 原理：workflow_run 只能监听“同一个仓库”里的其他 workflow，无法跨仓库监听。
+# 订阅系统仓库和博客仓库是两个独立仓库，所以正确做法是：
+#   1. 在博客仓库内，用 workflow_run 监听本仓库的 "Build & Deploy Docs" 构建 workflow
+#   2. 构建成功后，本 workflow 再通过 GitHub API 向订阅系统仓库发送
+#      repository_dispatch 事件（event_type: new-post-published）
+#   3. 订阅系统仓库的 notify-subscribers.yml 监听到这个事件后，去抓取 RSS 并发送通知邮件
+#
+# 需要在【博客仓库】的 Settings → Secrets and variables → Actions 里配置：
+#   DISPATCH_TOKEN   一个有权限对订阅系统仓库发起 repository_dispatch 的 GitHub PAT
+#   SUBSCRIBE_REPO   订阅系统仓库，格式 "你的GitHub用户名/rss-ring"
+
+on:
+  workflow_run:
+    workflows: ["Build & Deploy Docs"]   # 必须和博客仓库里那个构建 workflow 的 name 完全一致
+    types: [completed]
+
+jobs:
+  dispatch-to-subscribe-system:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 触发订阅系统仓库的通知 workflow
+        env:
+          DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+          SUBSCRIBE_REPO: ${{ secrets.SUBSCRIBE_REPO }}
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer ${DISPATCH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "Content-Type: application/json" \
+            "https://api.github.com/repos/${SUBSCRIBE_REPO}/dispatches" \
+            -d '{"event_type": "new-post-published"}'
