@@ -58,22 +58,21 @@ hide:
 <form id="rss-ring-form">
   <input class="mdx-form__input mdx-form__input--stretch" type="email" name="email" id="bd-email" placeholder="your-email@example.com" required/>
   <button class="md-button md-button--primary" type="submit">订阅</button>
-  <div class="cf-turnstile" data-sitekey="0x4AAAAAADwZnEQiPgcV_V17"></div>
+  <div class="cf-turnstile"
+       data-sitekey="0x4AAAAAADwZnEQiPgcV_V17"
+       data-callback="rssRingOnVerified"
+       data-execution="execute"></div>
 </form>
 <p id="rss-ring-message"></p>
 
 <script>
-document.getElementById('rss-ring-form').addEventListener('submit', async function (e) {
-  e.preventDefault();
+function rssRingOnVerified(turnstileToken) {
+  rssRingSubmit(turnstileToken);
+}
+
+async function rssRingSubmit(turnstileToken) {
   const email = document.getElementById('bd-email').value;
-  const turnstileToken = turnstile.getResponse();
   const messageEl = document.getElementById('rss-ring-message');
-
-  if (!turnstileToken) {
-    messageEl.textContent = '请先完成人机验证';
-    return;
-  }
-
   messageEl.textContent = '提交中...';
 
   try {
@@ -89,6 +88,13 @@ document.getElementById('rss-ring-form').addEventListener('submit', async functi
   } finally {
     turnstile.reset();
   }
+}
+
+document.getElementById('rss-ring-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const email = document.getElementById('bd-email').value;
+  if (!email) return;
+  turnstile.execute();
 });
 </script>
 
