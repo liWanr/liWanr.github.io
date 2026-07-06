@@ -55,42 +55,26 @@ hide:
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
+<style>
+#rss-ring-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+</style>
+
 <form id="rss-ring-form">
-  <input class="mdx-form__input mdx-form__input--stretch" type="email" name="email" id="bd-email" placeholder="your-email@example.com" required/>
-  <button class="md-button md-button--primary" type="submit">订阅</button>
-  <div class="cf-turnstile" data-sitekey="0x4AAAAAADwZnEQiPgcV_V17"></div>
+  <input class="mdx-form__input mdx-form__input--stretch" type="email" name="email" id="bd-email" placeholder="your-email@example.com" autocomplete="email" required/>
+  <button class="md-button md-button--primary" type="submit" id="rss-ring-submit" disabled>订阅</button>
+  <div class="cf-turnstile"
+       data-sitekey="0x4AAAAAADwZnEQiPgcV_V17"
+       data-callback="rssRingOnVerified"
+       data-expired-callback="rssRingOnExpired"
+       data-error-callback="rssRingOnExpired"></div>
 </form>
 <p id="rss-ring-message"></p>
 
-<script>
-document.getElementById('rss-ring-form').addEventListener('submit', async function (e) {
-  e.preventDefault();
-  const email = document.getElementById('bd-email').value;
-  const turnstileToken = turnstile.getResponse();
-  const messageEl = document.getElementById('rss-ring-message');
+<script src="../assets/javascripts/about.js"></script>
 
-  if (!turnstileToken) {
-    messageEl.textContent = '请先完成人机验证';
-    return;
-  }
-
-  messageEl.textContent = '提交中...';
-
-  try {
-    const resp = await fetch('https://rss-ring.itswanr.workers.dev/subscribe', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, turnstileToken }),
-    });
-    const data = await resp.json();
-    messageEl.textContent = data.message;
-  } catch (err) {
-    messageEl.textContent = '提交失败，请稍后重试';
-  } finally {
-    turnstile.reset();
-  }
-});
-</script>
 
 ## :lucide-history: TimeLine
 
@@ -102,7 +86,9 @@ document.getElementById('rss-ring-form').addEventListener('submit', async functi
 
 - 迁移并整理之数据，继续写技术内容和经验分享
 
-- 26年3月22日增加评论功能，次日发表第一篇文
+- 26年03月22日增加评论功能，次日发表第一篇文
+
+- 26年07月06日增加订阅功能，并移除了 Vercel 和 Netlify 部署
 
 ///
 
