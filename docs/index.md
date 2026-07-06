@@ -18,7 +18,7 @@ hide:
 
 ///html | div.grid
 
-///html |div
+////html |div
 
 记录「**技术与思考**」的个人空间，也是我在数字世界中圈出的三分地。
 
@@ -28,9 +28,9 @@ hide:
 
 故搭建站点不仅是备份代码，更是在备份灵魂。在这个算法比我们更了解自己的时代，唯有亲手写下的文字，能在大数据的洪流中，拓出名为「**我**」的岛。
 
-///
+////
 
-///html | div.card
+////html | div.card
 :lucide-messages-square: **Let's Chat -**
 [**Email**](mailto:itsWanr@iCloud.com)
 | [**GitHub**](https://github.com/liWanr)
@@ -38,7 +38,7 @@ hide:
 
 <hr style="height: 0rem;border-radius: 5px; background-color: var(--md-primary-fg-color);">
 
-///html | div.grid[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr));'class='nocolor']
+/////html | div.grid[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr));'class='nocolor']
 
 [Microsoft](https://account.microsoft.com/)
 
@@ -68,12 +68,11 @@ hide:
 
 [YouTube](https://www.youtube.com/)
 
-[Reddit](https://www.reddit.com/)
-
 [DouYin](https://www.douyin.com/?recommend=1)
 
 [Bilibili](https://www.bilibili.com/)
 
-[Spotify](https://open.spotify.com)
+/////
 
+////
 ///
