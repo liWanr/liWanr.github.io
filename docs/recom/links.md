@@ -91,11 +91,11 @@ tags:
     [申请](https://www.travellings.cn/docs/join.html) |
     [开往](https://www.travellings.cn/go.html)
 
-<!-- -   **Forever Blog**
+-   **BlogFinder**
 
-    [官网](https://www.foreverblog.cn/) |
-    [申请](https://www.foreverblog.cn/treaty.html) |
-    [开往](https://www.foreverblog.cn/go.html) -->
+    [官网](https://bf.zzxworld.com/) |
+    [申请](https://bf.zzxworld.com/share) |
+    [我](https://bf.zzxworld.com/s/1868)
 
 -   **博友圈**
 
