@@ -97,12 +97,6 @@ tags:
     [申请](https://bf.zzxworld.com/share) |
     [我](https://bf.zzxworld.com/s/1868)
 
--   **博友圈**
-
-    [官网](https://www.boyouquan.com/) |
-    [申请](https://www.boyouquan.com/blog-requests/add/email-validation) |
-    [广场](https://www.boyouquan.com/blogs)
-
 -   **BlogsClub**
 
     [官网](https://www.blogsclub.org/) |
@@ -116,5 +110,11 @@ tags:
     [申请](https://www.zhblogs.net/site/submit) |
     [开往](https://www.zhblogs.net/site/go) |
     [我](https://www.zhblogs.net/site/019f3bd2-350e-777c-99ae-74f2fd7df954)
+
+<!-- -   **博友圈**
+
+    [官网](https://www.boyouquan.com/) |
+    [申请](https://www.boyouquan.com/blog-requests/add/email-validation) |
+    [广场](https://www.boyouquan.com/blogs) -->
 
 ///
