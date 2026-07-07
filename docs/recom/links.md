@@ -71,9 +71,9 @@ tags:
 
     [**猪哥杂记**](https://blog.dazhu1988.com/1181.html)
 
--   ![LanM](https://bluelanm.github.io//favicon.ico)
+-   ![莫比乌斯](https://i0.wp.com/mobius.blog/wp-content/uploads/2022/12/MobiusBlogLogo.png?w=1000&ssl=1)
 
-    [**LanM**](https://bluelanm.github.io/)
+    [**莫比乌斯**](https://mobius.blog/)
 
 -   ![瓦解的生活记事](https://cdn2.hin.cool/pic/my/LonelyGod.ico)
 
@@ -107,6 +107,7 @@ tags:
 
     [官网](https://www.zhblogs.net/) |
     [申请](https://www.zhblogs.net/site/submit) |
-    [开往](https://www.zhblogs.net/site/go)
+    [开往](https://www.zhblogs.net/site/go) |
+    [我](https://www.zhblogs.net/site/019f3bd2-350e-777c-99ae-74f2fd7df954)
 
 ///
