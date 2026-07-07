@@ -19,3 +19,10 @@
     <title>{{ config.site_name }}</title>
   {% endif %}
 {% endblock %}
+
+{% block extrahead %}
+  {{ super() }}
+
+  <meta name="blogsclub-verify" content="2add1d537e9341e19060c2423286d265">
+  <link rel="prefetch" as="image" href="https://www.blogsclub.org/badge/liwanr.com">
+{% endblock %}
