@@ -3,7 +3,7 @@ import re
 import json
 import shutil
 import subprocess
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 from html import escape
 from urllib.parse import urljoin
@@ -98,12 +98,18 @@ def local_created_date(path):
     except (FileNotFoundError, ValueError):
         return datetime.fromtimestamp(st.st_ctime, tz=timezone.utc)
 
+BEIJING_TZ = timezone(timedelta(hours=8))
+GIT_PUBDATE_CUTOFF = datetime(2026, 1, 26, 23, 46, tzinfo=BEIJING_TZ)
+format_rss_date = lambda dt: dt.astimezone(BEIJING_TZ).strftime('%a, %d %b %Y %H:%M:%S %z')
+
 def resolve_pub_date(path, content):
-    if (d := extract_created_date(content)):
-        return d
-    if subprocess.run(['git', 'status', '--porcelain', '--', str(path)], capture_output=True, text=True, check=False).stdout.startswith('??'):
-        return local_created_date(path)
-    return git_created_date(path) or local_created_date(path)
+    created = extract_created_date(content)
+    first_commit = git_created_date(path)
+    if created and created.astimezone(BEIJING_TZ) <= GIT_PUBDATE_CUTOFF:
+        return created
+    if first_commit:
+        return first_commit
+    return created or local_created_date(path)
 
 parse_date_only = lambda v: (d := parse_iso_datetime(v)) and d.replace(hour=0, minute=0, second=0, microsecond=0)
 
@@ -137,7 +143,7 @@ def generate_rss():
             slug = markdown_path_to_slug(str(p.relative_to(docs_dir)))
             if p.exists() and slug not in ignore:
                 essay_content = read_text(p)
-                add(entries, seen, m.group(1).strip(), slug_to_url(site_url, slug), parse_date_only(m.group(3)), extract_description(essay_content))
+                add(entries, seen, m.group(1).strip(), slug_to_url(site_url, slug), resolve_pub_date(p, essay_content), extract_description(essay_content))
 
     entries.sort(key=lambda i: (i['pub_date'], i['title']), reverse=True)
 
@@ -190,7 +196,7 @@ def generate_rss():
         rss_lines += ['    <item>', f'      <title>{escape(i["title"])}</title>', f'      <link>{escape(i["link"])}</link>', f'      <guid>{escape(i["guid"])}</guid>']
         if i['description']:
             rss_lines.append(f'      <description>{escape(i["description"])}</description>')
-        rss_lines += [f'      <pubDate>{format_datetime(i["pub_date"])}</pubDate>', '    </item>']
+        rss_lines += [f'      <pubDate>{format_rss_date(i["pub_date"])}</pubDate>', '    </item>']
     rss_lines += ['  </channel>', '</rss>', '']
 
     with open(os.path.join(site_dir, 'rss.xsl'), 'w', encoding='utf-8') as f:

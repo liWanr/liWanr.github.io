@@ -103,6 +103,13 @@ tags:
     [申请](https://www.boyouquan.com/blog-requests/add/email-validation) |
     [广场](https://www.boyouquan.com/blogs)
 
+-   **BlogsClub**
+
+    [官网](https://www.blogsclub.org/) |
+    [申请](https://www.blogsclub.org/apply.html?inviteCode=6a8532bb) |
+    [广场](https://www.cnblogs.com/) |
+    [我](https://www.blogsclub.org/blog/792.html)
+
 -   **集博栈**
 
     [官网](https://www.zhblogs.net/) |
