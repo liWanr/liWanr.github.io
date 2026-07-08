@@ -19,7 +19,7 @@ hide:
 
 -   :lucide-cloud-upload: **托管平台**
     [Local Server](https://local.liwanr.com:24)
-    / [Cloudflare](https://www.cloudflare.com)
+    / [OuluCloud](https://yun.oulucloud.com/aff/WMOMVMPX)
     / [GitHub Pages](https://docs.github.com/pages)
     
 -   :lucide-code-xml: **编码存储**
