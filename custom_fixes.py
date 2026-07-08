@@ -317,27 +317,23 @@ def activate_essays_tab():
 
     # 修改1: md-tabs__item 加 --active
     tabs_pattern = re.compile(
-        r'(<li\s+class=")(md-tabs__item)(">\s*<a\s+href="\.\./"\s+class="md-tabs__link">[\s\S]*?Essays[\s\S]*?</a>\s*</li>)',
+        r'(<li\s+class=")(md-tabs__item)(">\s*<a\s+href="(?:\.\./)+"\s+class="md-tabs__link">[\s\S]*?Essays[\s\S]*?</a>\s*</li>)',
         re.DOTALL
     )
 
     # 修改2: md-nav__item 里 Essays 的链接
     nav_pattern = re.compile(
-        r'(<li\s+class=")(md-nav__item)(">)\s*(<a\s+href="\.\./"\s+class=")(md-nav__link)(">[\s\S]*?Essays[\s\S]*?</a>\s*</li>)',
+        r'(<li\s+class=")(md-nav__item)(">)\s*(<a\s+href="(?:\.\./)+"\s+class=")(md-nav__link)(">[\s\S]*?Essays[\s\S]*?</a>\s*</li>)',
         re.DOTALL
     )
 
     nav_replacement = r'\1\2 md-nav__item--active\3\4\5 md-nav__link--active\6'
 
-    for slug in os.listdir(essays_dir):
-        slug_dir = os.path.join(essays_dir, slug)
-        if not os.path.isdir(slug_dir):
+    for r, _, fs in os.walk(essays_dir):
+        if 'index.html' not in fs:
             continue
 
-        html_path = os.path.join(slug_dir, 'index.html')
-        if not os.path.exists(html_path):
-            continue
-
+        html_path = os.path.join(r, 'index.html')
         with open(html_path, encoding='utf-8') as f:
             content = f.read()
 
