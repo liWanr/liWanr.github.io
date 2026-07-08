@@ -4,7 +4,7 @@ comments: true
 description: 当决定把一个生命带到这个世界上时，真正重要的不是证明自己不自私，而是尽可能减少那份自私对孩子造成的伤害。
 ---
 
-<link rel="stylesheet" href="../assets/stylesheets/essays.css">
+<link rel="stylesheet" href="../../assets/stylesheets/essays.css">
 
 前段时间看到综艺的切片，以防营销号制造矛盾，我特地去看了原综艺：《我家那小子 第二季》第三期(20190516)12分钟左右，故写下此文。
 

@@ -4,7 +4,7 @@ comments: true
 description: 有时我们得到的并不是知识本身，而是一种拥有知识的感觉。而这种感觉，往往比真正的无知，更难被察觉。
 ---
 
-<link rel="stylesheet" href="../assets/stylesheets/essays.css">
+<link rel="stylesheet" href="../../assets/stylesheets/essays.css">
 
 近段时间我刻意地留意过在互联网常见，但是或许越来越不被重视的话：
 

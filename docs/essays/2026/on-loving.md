@@ -4,7 +4,7 @@ comments: true
 description: 如果有一天这种循环真的成为一种常态，那么也许我们需要重新理解爱国的含义，不是它在最响亮的时候意味着什么，而是它在最安静的时候，还剩下多少。
 ---
 
-<link rel="stylesheet" href="../assets/stylesheets/essays.css">
+<link rel="stylesheet" href="../../assets/stylesheets/essays.css">
 
 在今天的互联网语境里，爱国是不是畸形的？
 

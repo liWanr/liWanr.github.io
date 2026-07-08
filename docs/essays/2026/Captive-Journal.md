@@ -4,7 +4,7 @@ comments: true
 description: 文字在牢里引燃火柴，照不亮谁的路，但能让那些看得见的明白：此地亦有人。
 ---
 
-<link rel="stylesheet" href="../assets/stylesheets/essays.css">
+<link rel="stylesheet" href="../../assets/stylesheets/essays.css">
 
 这篇文的雏形始于年初的随笔，当时与《[爱吗？怎么爱](./on-loving.md)》归置在 [Blog](../blog/posts/zensical-pro-tips.md) 分类中，只因内容零散就一直束之高阁。最近又觉迷茫，想让自己清醒一下，故而回看并整理成文，公开于此。
 
