@@ -1,5 +1,6 @@
 ---
 title: liWanr
+rss: no
 hide:
     - navigation
     - toc

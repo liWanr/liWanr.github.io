@@ -1,5 +1,6 @@
 ---
 title: About Somethings
+rss: no
 hide:
     - navigation
     - path

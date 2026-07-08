@@ -1,5 +1,6 @@
 ---
 title: Essays
+rss: no
 hide:
     - path
     - footer

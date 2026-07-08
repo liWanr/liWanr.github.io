@@ -5,6 +5,7 @@ comments: true
 # date:
 #     created: 2025-12-16
 #     updated: 2026-01-18
+rss: no
 tags:
     - Exper
 ---

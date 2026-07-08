@@ -77,6 +77,13 @@ def extract_description(content):
         return m.group(1).strip().strip("\"'")
     return ''
 
+def extract_rss_enabled(content):
+    m = re.search(r'^\s*rss\s*:\s*(.+?)\s*$', front_matter(content), re.M | re.I)
+    if not m:
+        return True
+    val = m.group(1).strip().strip("\"'").lower()
+    return val not in {'no', 'false', 'off', '0'}
+
 def git_created_date(path):
     try:
         out = subprocess.run(['git', 'log', '--follow', '--format=%aI', '--reverse', '--', str(path)], capture_output=True, text=True, check=False).stdout.splitlines()
@@ -133,6 +140,8 @@ def generate_rss():
         p = docs_dir / md_path
         if p.exists():
             c = read_text(p)
+            if not extract_rss_enabled(c):
+                continue
             add(entries, seen, extract_title(c, p.stem), slug_to_url(site_url, slug), resolve_pub_date(p, c), extract_description(c))
 
     index_path = docs_dir / 'essays' / 'index.md'
@@ -143,6 +152,8 @@ def generate_rss():
             slug = markdown_path_to_slug(str(p.relative_to(docs_dir)))
             if p.exists() and slug not in ignore:
                 essay_content = read_text(p)
+                if not extract_rss_enabled(essay_content):
+                    continue
                 add(entries, seen, m.group(1).strip(), slug_to_url(site_url, slug), resolve_pub_date(p, essay_content), extract_description(essay_content))
 
     entries.sort(key=lambda i: (i['pub_date'], i['title']), reverse=True)
@@ -333,7 +344,7 @@ def hide_articles():
         )
     ]
 
-    with open(search_json_path, 'w', encoding='utf-8') as f: 
+    with open(search_json_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
 
 def activate_essays_tab():
