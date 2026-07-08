@@ -2,9 +2,9 @@ import os
 import re
 import json
 import shutil
+import hashlib
 import subprocess
 from datetime import datetime, timedelta, timezone
-from email.utils import format_datetime
 from html import escape
 from urllib.parse import urljoin
 from pathlib import Path
@@ -59,12 +59,18 @@ def extract_rss_enabled(content):
     val = m.group(1).strip().strip("\"'").lower()
     return val not in {'no', 'false', 'off', '0'}
 
-def git_created_date(path):
+def git_first_commit(path):
     try:
-        out = subprocess.run(['git', 'log', '--follow', '--format=%aI', '--', str(path)], capture_output=True, text=True, check=False).stdout.splitlines()
-        return parse_iso_datetime(out[-1]) if out else None
+        out = subprocess.run(['git', 'log', '--follow', '--raw', '--no-abbrev', '--format=%H%x00%aI', '--', str(path)], capture_output=True, text=True, check=False).stdout
     except FileNotFoundError:
-        return None
+        return None, None
+    blocks = [b for b in out.strip().split('\n\n') if b.strip()]
+    if len(blocks) < 2:
+        return None, None
+    head, raw = blocks[-2], blocks[-1]
+    _, _, date_str = head.partition('\x00')
+    m = re.search(r'^:\S+ \S+ \S+ ([0-9a-f]{40}) ', raw)
+    return (m.group(1) if m else None), parse_iso_datetime(date_str)
 
 def local_created_date(path):
     try:
@@ -84,55 +90,11 @@ BEIJING_TZ = timezone(timedelta(hours=8))
 GIT_PUBDATE_CUTOFF = datetime(2026, 1, 26, 23, 46, tzinfo=BEIJING_TZ)
 format_rss_date = lambda dt: dt.astimezone(BEIJING_TZ).strftime('%a, %d %b %Y %H:%M:%S %z')
 
-def resolve_pub_date(path, content):
+def resolve_pub_date(path, content, first_commit_date):
     created = extract_created_date(content)
     if created and created.astimezone(BEIJING_TZ) <= GIT_PUBDATE_CUTOFF:
         return created
-    first_commit = git_created_date(path)
-    if first_commit:
-        return first_commit
-    return created or local_created_date(path)
-
-RSS_XSL_TEMPLATE = '''<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:output method="html" encoding="UTF-8" indent="yes"/>
-  <xsl:template match="/rss">
-    <html lang="zh-CN">
-      <head>
-        <meta charset="UTF-8"/>
-        <title><xsl:value-of select="channel/title"/></title>
-        <link rel="icon" href="__SITE_ICON__"/>
-        <style>
-          body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 40px auto; padding: 0 20px; line-height: 1.7; }
-          h1 { margin-bottom: 0.25em; }
-          .meta { color: #666; margin-bottom: 1.5em; }
-          article { padding: 1rem 0; border-bottom: 1px solid #eee; }
-          article:last-child { border-bottom: 0; }
-          a { color: inherit; text-decoration: none; }
-          a:hover { text-decoration: underline; }
-          .date { color: #666; font-size: 0.95em; }
-        </style>
-      </head>
-      <body>
-        <h1><xsl:value-of select="channel/title"/></h1>
-        <div class="meta"><xsl:value-of select="channel/description"/></div>
-        <xsl:for-each select="channel/item">
-          <article>
-            <h2><a>
-              <xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute>
-              <xsl:value-of select="title"/>
-            </a></h2>
-            <div class="date"><xsl:value-of select="pubDate"/></div>
-            <xsl:if test="description">
-              <p><xsl:value-of select="description"/></p>
-            </xsl:if>
-          </article>
-        </xsl:for-each>
-      </body>
-    </html>
-  </xsl:template>
-</xsl:stylesheet>
-'''
+    return first_commit_date or created or local_created_date(path)
 
 def render_rss_item(i):
     desc = f'\n      <description>{escape(i["description"])}</description>' if i['description'] else ''
@@ -140,7 +102,7 @@ def render_rss_item(i):
         f'    <item>\n'
         f'      <title>{escape(i["title"])}</title>\n'
         f'      <link>{escape(i["link"])}</link>\n'
-        f'      <guid>{escape(i["guid"])}</guid>{desc}\n'
+        f'      <guid isPermaLink="false">{i["guid"]}</guid>{desc}\n'
         f'      <pubDate>{format_rss_date(i["pub_date"])}</pubDate>\n'
         f'    </item>'
     )
@@ -148,7 +110,6 @@ def render_rss_item(i):
 def generate_rss():
     cfg = load_config().get('project', {})
     site_url, site_name, site_description = cfg.get('site_url', ''), cfg.get('site_name', 'RSS'), cfg.get('site_description', '')
-    site_icon = site_url.rstrip('/') + '/assets/favicon.png' if site_url else ''
 
     entries = []
     for p in sorted(docs_dir.rglob('*.md')):
@@ -158,32 +119,30 @@ def generate_rss():
         if not extract_rss_enabled(content):
             continue
         title = extract_title(content, p.stem)
-        pub_date = resolve_pub_date(p, content)
+        blob_hash, first_commit_date = git_first_commit(p)
+        pub_date = resolve_pub_date(p, content, first_commit_date)
         if not (title and pub_date):
             continue
         link = slug_to_url(site_url, markdown_path_to_slug(str(p.relative_to(docs_dir))))
-        entries.append({'title': title, 'link': link, 'guid': link, 'description': extract_description(content), 'pub_date': pub_date})
+        pub_second = pub_date.astimezone(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S')
+        guid = hashlib.md5((blob_hash or f'{pub_second}{link}').encode()).hexdigest()
+        entries.append({'title': title, 'link': link, 'guid': guid, 'description': extract_description(content), 'pub_date': pub_date})
 
     entries.sort(key=lambda i: (i['pub_date'], i['title']), reverse=True)
 
     rss_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
-        '<?xml-stylesheet type="text/xsl" href="rss.xsl"?>',
-        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
+        '<rss version="2.0">',
         '  <channel>',
-        f'    <atom:link href="{escape(site_url.rstrip("/") + "/rss.xml")}" rel="self" type="application/rss+xml" />',
         f'    <title>{escape(site_name)}</title>',
         f'    <link>{escape(site_url)}</link>',
         f'    <description>{escape(site_description)}</description>',
-        f'    <lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>',
         *[render_rss_item(i) for i in entries],
         '  </channel>',
         '</rss>',
         '',
     ]
 
-    with open(os.path.join(site_dir, 'rss.xsl'), 'w', encoding='utf-8') as f:
-        f.write(RSS_XSL_TEMPLATE.replace('__SITE_ICON__', site_icon))
     with open(os.path.join(site_dir, 'rss.xml'), 'w', encoding='utf-8') as f:
         f.write('\n'.join(rss_lines))
     print(f'RSS 已生成 {len(entries)} 条信息')
@@ -315,13 +274,11 @@ def activate_essays_tab():
     if not os.path.exists(essays_dir):
         return
 
-    # 修改1: md-tabs__item 加 --active
     tabs_pattern = re.compile(
         r'(<li\s+class=")(md-tabs__item)(">\s*<a\s+href="(?:\.\./)+"\s+class="md-tabs__link">[\s\S]*?Essays[\s\S]*?</a>\s*</li>)',
         re.DOTALL
     )
 
-    # 修改2: md-nav__item 里 Essays 的链接
     nav_pattern = re.compile(
         r'(<li\s+class=")(md-nav__item)(">)\s*(<a\s+href="(?:\.\./)+"\s+class=")(md-nav__link)(">[\s\S]*?Essays[\s\S]*?</a>\s*</li>)',
         re.DOTALL
