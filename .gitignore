@@ -9,5 +9,5 @@ reproduction/*
 nginx.conf
 
 # 不发布的文章
-docs/essays/aaa.md
-docs/essays/18.md
+aaa.md
+18.md
