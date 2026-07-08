@@ -1,7 +1,7 @@
 ---
 title: 爱吗？怎么爱
 comments: true
-description: 如果立场只存在于热点期间，那它更像是一种反应。如果从前直到现在保持一致，那么它才真正具备意义。有时候我会想，也许真正稳定的并不是某种立场。
+description: 如果有一天这种循环真的成为一种常态，那么也许我们需要重新理解爱国的含义，不是它在最响亮的时候意味着什么，而是它在最安静的时候，还剩下多少。
 ---
 
 <link rel="stylesheet" href="../assets/stylesheets/essays.css">

@@ -1,7 +1,7 @@
 ---
 title: 下一条
 comments: true
-description: 想起来是粉色头发，想起来是"陪酒的吧"那几个字，想不起来她姓什么叫什么，想不起来她说话是什么样子，只记得视频里她笑着举着那张通知书，念给爷爷听，声音不大。搜了搜那条视频，想再看一眼，但已经找不到原作者了。退出，继续下一条。
+description: 搜了搜那条视频，想再看一眼，但已经找不到原作者了。退出，继续下一条。
 ---
 
 <link rel="stylesheet" href="../assets/stylesheets/essays.css">
