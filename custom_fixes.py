@@ -20,39 +20,13 @@ search_json_path = os.path.join(site_dir, 'search.json')
 config_path = 'zensical.toml'
 docs_dir = Path('docs')
 
-# RSS 生成时要忽略的 Markdown 路径，直接在这里改
-RSS_IGNORE_PATHS = [
-    'docs/recom/projects/index.md',
-]
+def load_config():
+    with open(config_path, 'rb') as f:
+        return tomllib.load(f)
 
-load_config = lambda: tomllib.load(open(config_path, 'rb'))
-read_text = lambda path: open(path, encoding='utf-8').read()
-
-
-def load_hidden_slugs():
-    if not os.path.exists(gitignore_path):
-        return set()
-    return {
-        l.lstrip('/')[5:] if l.lstrip('/').startswith('docs/') else l.lstrip('/')
-        for l in (
-            line.strip() for line in open(gitignore_path, encoding='utf-8')
-        )
-        if l and not l.startswith('#') and l.endswith('.md')
-    }
-
-def load_rss_ignore_slugs():
-    return {markdown_path_to_slug(p.replace('docs/', '', 1)) for p in RSS_IGNORE_PATHS if p}
-
-def flatten_nav(nav):
-    for node in nav:
-        if isinstance(node, str):
-            if node.endswith('.md'):
-                yield node
-        elif isinstance(node, list):
-            yield from flatten_nav(node)
-        elif isinstance(node, dict):
-            for v in node.values():
-                yield from flatten_nav(v)
+def read_text(path):
+    with open(path, encoding='utf-8') as f:
+        return f.read()
 
 def markdown_path_to_slug(md_path):
     slug = md_path.replace('\\', '/').strip().removeprefix('docs/').removesuffix('.md')
@@ -111,107 +85,104 @@ format_rss_date = lambda dt: dt.astimezone(BEIJING_TZ).strftime('%a, %d %b %Y %H
 
 def resolve_pub_date(path, content):
     created = extract_created_date(content)
-    first_commit = git_created_date(path)
     if created and created.astimezone(BEIJING_TZ) <= GIT_PUBDATE_CUTOFF:
         return created
+    first_commit = git_created_date(path)
     if first_commit:
         return first_commit
     return created or local_created_date(path)
 
-parse_date_only = lambda v: (d := parse_iso_datetime(v)) and d.replace(hour=0, minute=0, second=0, microsecond=0)
+RSS_XSL_TEMPLATE = '''<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:output method="html" encoding="UTF-8" indent="yes"/>
+  <xsl:template match="/rss">
+    <html lang="zh-CN">
+      <head>
+        <meta charset="UTF-8"/>
+        <title><xsl:value-of select="channel/title"/></title>
+        <link rel="icon" href="__SITE_ICON__"/>
+        <style>
+          body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 40px auto; padding: 0 20px; line-height: 1.7; }
+          h1 { margin-bottom: 0.25em; }
+          .meta { color: #666; margin-bottom: 1.5em; }
+          article { padding: 1rem 0; border-bottom: 1px solid #eee; }
+          article:last-child { border-bottom: 0; }
+          a { color: inherit; text-decoration: none; }
+          a:hover { text-decoration: underline; }
+          .date { color: #666; font-size: 0.95em; }
+        </style>
+      </head>
+      <body>
+        <h1><xsl:value-of select="channel/title"/></h1>
+        <div class="meta"><xsl:value-of select="channel/description"/></div>
+        <xsl:for-each select="channel/item">
+          <article>
+            <h2><a>
+              <xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute>
+              <xsl:value-of select="title"/>
+            </a></h2>
+            <div class="date"><xsl:value-of select="pubDate"/></div>
+            <xsl:if test="description">
+              <p><xsl:value-of select="description"/></p>
+            </xsl:if>
+          </article>
+        </xsl:for-each>
+      </body>
+    </html>
+  </xsl:template>
+</xsl:stylesheet>
+'''
+
+def render_rss_item(i):
+    desc = f'\n      <description>{escape(i["description"])}</description>' if i['description'] else ''
+    return (
+        f'    <item>\n'
+        f'      <title>{escape(i["title"])}</title>\n'
+        f'      <link>{escape(i["link"])}</link>\n'
+        f'      <guid>{escape(i["guid"])}</guid>{desc}\n'
+        f'      <pubDate>{format_rss_date(i["pub_date"])}</pubDate>\n'
+        f'    </item>'
+    )
 
 def generate_rss():
     cfg = load_config().get('project', {})
     site_url, site_name, site_description = cfg.get('site_url', ''), cfg.get('site_name', 'RSS'), cfg.get('site_description', '')
     site_icon = site_url.rstrip('/') + '/assets/favicon.png' if site_url else ''
-    ignore = load_hidden_slugs() | load_rss_ignore_slugs()
 
-    def add(entries, seen, title, link, pub_date, description):
-        if title and link and pub_date and link not in seen:
-            seen.add(link)
-            entries.append({'title': title, 'link': link, 'guid': link, 'description': description, 'pub_date': pub_date})
-
-    entries, seen = [], set()
-
-    for md_path in flatten_nav(cfg.get('nav', [])):
-        slug = markdown_path_to_slug(md_path)
-        if slug in ignore:
+    entries = []
+    for p in sorted(docs_dir.rglob('*.md')):
+        if 'assets' in p.relative_to(docs_dir).parts[:-1]:
             continue
-        p = docs_dir / md_path
-        if p.exists():
-            c = read_text(p)
-            if not extract_rss_enabled(c):
-                continue
-            add(entries, seen, extract_title(c, p.stem), slug_to_url(site_url, slug), resolve_pub_date(p, c), extract_description(c))
-
-    index_path = docs_dir / 'essays' / 'index.md'
-    if index_path.exists():
-        c = read_text(index_path)
-        for m in re.finditer(r'\[\*\*(.+?)\*\*\]\((\./[^)]+?\.md)\)\{data-date="(\d{4}-\d{2}-\d{2})"\}', c):
-            p = index_path.parent / m.group(2).lstrip('./')
-            slug = markdown_path_to_slug(str(p.relative_to(docs_dir)))
-            if p.exists() and slug not in ignore:
-                essay_content = read_text(p)
-                if not extract_rss_enabled(essay_content):
-                    continue
-                add(entries, seen, m.group(1).strip(), slug_to_url(site_url, slug), resolve_pub_date(p, essay_content), extract_description(essay_content))
+        content = read_text(p)
+        if not extract_rss_enabled(content):
+            continue
+        title = extract_title(content, p.stem)
+        pub_date = resolve_pub_date(p, content)
+        if not (title and pub_date):
+            continue
+        link = slug_to_url(site_url, markdown_path_to_slug(str(p.relative_to(docs_dir))))
+        entries.append({'title': title, 'link': link, 'guid': link, 'description': extract_description(content), 'pub_date': pub_date})
 
     entries.sort(key=lambda i: (i['pub_date'], i['title']), reverse=True)
 
-    rss_xsl_lines = [
+    rss_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
-        '<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">',
-        '  <xsl:output method="html" encoding="UTF-8" indent="yes"/>',
-        '  <xsl:template match="/rss">',
-        '    <html lang="zh-CN">',
-        '      <head>',
-        '        <meta charset="UTF-8"/>',
-        '        <title><xsl:value-of select="channel/title"/></title>',
-        f'        <link rel="icon" href="{site_icon}"/>',
-        '        <style>',
-        '          body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 860px; margin: 40px auto; padding: 0 20px; line-height: 1.7; }',
-        '          h1 { margin-bottom: 0.25em; }',
-        '          .meta { color: #666; margin-bottom: 1.5em; }',
-        '          article { padding: 1rem 0; border-bottom: 1px solid #eee; }',
-        '          article:last-child { border-bottom: 0; }',
-        '          a { color: inherit; text-decoration: none; }',
-        '          a:hover { text-decoration: underline; }',
-        '          .date { color: #666; font-size: 0.95em; }',
-        '        </style>',
-        '      </head>',
-        '      <body>',
-        '        <h1><xsl:value-of select="channel/title"/></h1>',
-        '        <div class="meta"><xsl:value-of select="channel/description"/></div>',
-        '        <xsl:for-each select="channel/item">',
-        '          <article>',
-        '            <h2><a>',
-        '              <xsl:attribute name="href"><xsl:value-of select="link"/></xsl:attribute>',
-        '              <xsl:value-of select="title"/>',
-        '            </a></h2>',
-        '            <div class="date"><xsl:value-of select="pubDate"/></div>',
-        '            <xsl:if test="description">',
-        '              <p><xsl:value-of select="description"/></p>',
-        '            </xsl:if>',
-        '          </article>',
-        '        </xsl:for-each>',
-        '      </body>',
-        '    </html>',
-        '  </xsl:template>',
-        '</xsl:stylesheet>',
-        ''
+        '<?xml-stylesheet type="text/xsl" href="rss.xsl"?>',
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
+        '  <channel>',
+        f'    <atom:link href="{escape(site_url.rstrip("/") + "/rss.xml")}" rel="self" type="application/rss+xml" />',
+        f'    <title>{escape(site_name)}</title>',
+        f'    <link>{escape(site_url)}</link>',
+        f'    <description>{escape(site_description)}</description>',
+        f'    <lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>',
+        *[render_rss_item(i) for i in entries],
+        '  </channel>',
+        '</rss>',
+        '',
     ]
-    rss_xsl = '\n'.join(rss_xsl_lines)
-
-    rss_lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<?xml-stylesheet type="text/xsl" href="rss.xsl"?>', '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">', '  <channel>', f'    <atom:link href="{escape(site_url.rstrip("/") + "/rss.xml")}" rel="self" type="application/rss+xml" />', f'    <title>{escape(site_name)}</title>', f'    <link>{escape(site_url)}</link>', f'    <description>{escape(site_description)}</description>', f'    <lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>']
-    for i in entries:
-        rss_lines += ['    <item>', f'      <title>{escape(i["title"])}</title>', f'      <link>{escape(i["link"])}</link>', f'      <guid>{escape(i["guid"])}</guid>']
-        if i['description']:
-            rss_lines.append(f'      <description>{escape(i["description"])}</description>')
-        rss_lines += [f'      <pubDate>{format_rss_date(i["pub_date"])}</pubDate>', '    </item>']
-    rss_lines += ['  </channel>', '</rss>', '']
 
     with open(os.path.join(site_dir, 'rss.xsl'), 'w', encoding='utf-8') as f:
-        f.write(rss_xsl)
+        f.write(RSS_XSL_TEMPLATE.replace('__SITE_ICON__', site_icon))
     with open(os.path.join(site_dir, 'rss.xml'), 'w', encoding='utf-8') as f:
         f.write('\n'.join(rss_lines))
     print(f'RSS 已生成 {len(entries)} 条信息')
@@ -296,26 +267,17 @@ def hide_articles():
         return
 
     with open(gitignore_path, encoding='utf-8') as f:
-        md = []
-        for l in f:
-            line = l.strip()
-            if line and not line.startswith('#') and line.endswith('.md'):
-                md.append(line)
+        md = [l for l in (line.strip() for line in f) if l and not l.startswith('#') and l.endswith('.md')]
 
     if not md:
         return
 
-    hide_slugs = []
-    print('准备隐藏以下文章：')
-    for p in md:
-        p = p.lstrip('/')
-        if p.startswith('docs/'):
-            p = p[5:]
-        if p.endswith('.md'):
-            p = p[:-3]
+    hide_slugs = [s for s in (markdown_path_to_slug(p.lstrip('/')) for p in md) if s]
+    if not hide_slugs:
+        return
 
-        slug = p.replace('\\', '/').rstrip('/')
-        hide_slugs.append(slug)
+    print('准备隐藏以下文章：')
+    for slug in hide_slugs:
         print(f'- docs/{slug}.md')
     print()
 
