@@ -20,6 +20,7 @@ search_json_path = os.path.join(site_dir, 'search.json')
 config_path = 'zensical.toml'
 docs_dir = Path('docs')
 
+
 def load_config():
     with open(config_path, 'rb') as f:
         return tomllib.load(f)
@@ -60,8 +61,8 @@ def extract_rss_enabled(content):
 
 def git_created_date(path):
     try:
-        out = subprocess.run(['git', 'log', '--follow', '--format=%aI', '--reverse', '--', str(path)], capture_output=True, text=True, check=False).stdout.splitlines()
-        return parse_iso_datetime(out[0]) if out else None
+        out = subprocess.run(['git', 'log', '--follow', '--format=%aI', '--', str(path)], capture_output=True, text=True, check=False).stdout.splitlines()
+        return parse_iso_datetime(out[-1]) if out else None
     except FileNotFoundError:
         return None
 
