@@ -3,7 +3,7 @@ icon: lucide/radio-tower
 title: HackRF 固件维护
 comments: true
 # date:
-#     created: 2025-03-17
+#     created: 2025-03-06 19:23:36
 #     updated: 2026-02-15
 tags:
     - Exper

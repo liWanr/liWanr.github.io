@@ -3,7 +3,7 @@ icon: lucide/shield-check
 title: 激活 Ubuntu 网卡
 comments: true
 # date:
-#     created: 2025-03-30
+#     created: 2025-03-30 16:09:00
 #     updated: 2026-01-18
 tags:
     - Exper

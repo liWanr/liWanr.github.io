@@ -3,7 +3,7 @@ icon: simple/nvidia
 title: N卡面板文件损坏
 comments: true
 # date:
-#   created: 2023-02-18
+#   created: 2023-02-18 12:05:55
 tags:
     - Exper
 ---
