@@ -13,8 +13,8 @@ NGINX_CONF_DIR="../nginx1.26.3/conf"        # Nginx 配置目录
 SERVER_FLAG=true                            # 是否启用远程服务器部署，true/false
 # if true ⬇
 SERVER_USER="root"                          # 远程服务器用户
-SERVER_HOST="209.38.76.244"                 # 远程服务器地址
-SERVER_PATH="/usr/local/nginx/html"  # 服务器 nginx 站点目录
+SERVER_HOST="172.247.244.38"                # 远程服务器地址
+SERVER_PATH="/usr/local/nginx/html"         # 服务器 nginx 站点目录
 
 PY_ENV="../.env/zensical/bin/activate"      # Python 虚拟环境激活脚本路径
 CACHE_DIR="./.cache"                        # 构建缓存目录
