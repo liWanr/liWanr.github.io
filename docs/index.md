@@ -47,7 +47,7 @@ hide:
 
 <hr style="height: 0rem;border-radius: 5px; background-color: var(--md-primary-fg-color);">
 
-:lucide-badge-alert: [新文章 - 《下一条》 退出，继续下一条。](http://localhost:8000/essays/2026/next/)
+:lucide-badge-alert: [新文章 - 《下一条》 退出，继续下一条。](/essays/2026/next/)
 
 ////
 ///
