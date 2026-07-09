@@ -25,13 +25,13 @@ jobs:
       - run: zensical build --clean
       - name: Post process site with Python
         run: python custom_fixes.py
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
-      - uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v5
         id: deployment
       - name: Deploy to GitHub Pages
-        uses: nick-fields/retry@v3
+        uses: nick-fields/retry@v4
         with:
           timeout_minutes: 5
           max_attempts: 3
