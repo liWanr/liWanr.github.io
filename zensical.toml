@@ -48,10 +48,8 @@ nav = [
         "dev/mysql.md",
     ] },
     { "Blog" = [
-        { "<strong>置顶文章</strong>" = [
-            "blog/posts/shalong.md",
-            "blog/posts/zensical-pro-tips.md",
-        ] },
+        { "<strong>沙龙</strong>" = "blog/posts/shalong.md" },
+        { "<strong>Zensical</strong>" = "blog/posts/zensical-pro-tips.md" },
         { "<strong>2026</strong>" = [
             "blog/posts/bandizip.md",
             "blog/posts/apple-ai.md",
