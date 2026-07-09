@@ -39,41 +39,15 @@ hide:
 
 <hr style="height: 0rem;border-radius: 5px; background-color: var(--md-primary-fg-color);">
 
-/////html | div.grid[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr));'class='nocolor']
+:lucide-sparkles: [**《乌河》** 上游的人死了，这里的人还在争，下游的人还没出生。](/essays/2026/the-black-river/)
 
-[Microsoft](https://account.microsoft.com/)
+:lucide-sparkle: [**《囚徒日记》** 我的囚徒起点。](/essays/2026/Captive-Journal/)
 
-[Outlook](https://outlook.live.com/mail)
+:lucide-sparkle: [**《沙龙》** 按歌词记录我的每一刻。](/blog/posts/shalong/)
 
-[Gmail](https://mail.google.com/mail)
+<hr style="height: 0rem;border-radius: 5px; background-color: var(--md-primary-fg-color);">
 
-[iCloud](https://www.icloud.com.cn/)
-
-[Chat GPT](https://chat.openai.com/chat)
-
-[Grok](https://grok.com/)
-
-[Gemini](https://gemini.google.com/app)
-
-[Claude](https://claude.ai/)
-
-[Perplexity](https://www.perplexity.ai/)
-
-[IPCheck](https://ipcheck.ing/#/)
-
-[IT DOG](https://www.itdog.cn/ping/)
-
-[Cloudflare](https://dash.cloudflare.com/)
-
-[Discord](https://discord.com/channels/@me)
-
-[YouTube](https://www.youtube.com/)
-
-[DouYin](https://www.douyin.com/?recommend=1)
-
-[Bilibili](https://www.bilibili.com/)
-
-/////
+:lucide-badge-alert: [新文章 - 《下一条》 退出，继续下一条。](http://localhost:8000/essays/2026/next/)
 
 ////
 ///

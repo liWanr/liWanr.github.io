@@ -14,6 +14,9 @@ tags:
 .md-typeset a{
     color: var(--md-default-fg-color) !important;
 }
+.md-typeset a:hover{
+    color: var(--md-typeset-a-color) !important;
+}
 hr {
     height: 0rem;
     border-radius: 5px;
@@ -23,7 +26,37 @@ hr {
 
 ///html | div.grid.cards
 
--   ### 网络黑客
+-   ### 快捷链接
+
+    ---
+
+    ///html | div.grid
+
+    [Microsoft](https://account.microsoft.com/)
+
+    [Outlook](https://outlook.live.com/mail)
+
+    [Gmail](https://mail.google.com/mail)
+
+    [iCloud](https://www.icloud.com.cn/)
+
+    [Chat GPT](https://chat.openai.com/chat)
+
+    [Grok](https://grok.com/)
+
+    [Gemini](https://gemini.google.com/app)
+
+    [Claude](https://claude.ai/)
+
+    [Perplexity](https://www.perplexity.ai/)
+
+    ///
+
+///
+
+///html | div.grid.cards
+
+-   ### 网络专属
 
     ---
 
@@ -33,6 +66,12 @@ hr {
 
     [赔钱机场(村外)](https://xn--mes358aby2apfg.com/register?code=Hw7cqluV)
 
+    [Cloudflare](https://dash.cloudflare.com/)
+
+    [IPCheck](https://ipcheck.ing/#/)
+
+    [IT DOG](https://www.itdog.cn/ping/)
+
     [DigitalOcean](https://m.do.co/c/b4ddfa7be0e7)
     
     [Hero SMS](https://hero-sms.com/services)
@@ -40,6 +79,8 @@ hr {
     [Down for Everyone or Just Me](https://downforeveryoneorjustme.com/)
     
     [Probeops](https://probeops.com/tools)
+
+    [Dynadot](https://www.dynadot.com/)
 
     ///
 
@@ -52,7 +93,6 @@ hr {
     ---
 
     ///html | div.grid
-    [Dynadot](https://www.dynadot.com/)
     
     [Figma](https://www.figma.com/)
     
@@ -73,16 +113,20 @@ hr {
 
 ///html | div.grid.cards
 
--   ### 影音娱乐
+-   ### 娱乐至上
 
     ---
 
     ///html | div.grid
     [厂长资源](https://www.czzy.site/)
 
-    [网飞猫](https://www.ncat26.com/)
-    
-    [大米星球](https://dmr0x2.com/)
+    [Discord](https://discord.com/channels/@me)
+
+    [YouTube](https://www.youtube.com/)
+
+    [DouYin](https://www.douyin.com/?recommend=1)
+
+    [Bilibili](https://www.bilibili.com/)
     ///
 
 ///
