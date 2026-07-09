@@ -35,10 +35,6 @@ tags:
 
     [**Sevenalist**](https://dczcq.cn/)
 
--   ![Wcowin](https://pic2.zhimg.com/100/v2-864dbf5fe2906aae3f5f18b491320a0d_r.jpg)
-
-    [**Wcowin**](https://wcowin.work/)
-
 -   ![fuXes](https://fuxes.cn/favicon.ico)
     
     [**fuXes**](https://fuxes.cn/)
