@@ -86,3 +86,7 @@ figcaption {
 .no-color{
     color: var(--md-default-fg-color) !important;
 }
+
+.md-typeset .result code {
+    background-color: transparent;
+}
