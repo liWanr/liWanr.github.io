@@ -41,9 +41,9 @@ hide:
 
 :lucide-sparkles: [**《乌河》** 上游的人死了，这里的人还在争，下游的人还没出生。](/essays/2026/the-black-river/)
 
-:lucide-sparkle: [**《囚徒日记》** 我的囚徒起点。](/essays/2026/Captive-Journal/)
+:lucide-sparkle: [**《囚徒日记》** 文字引燃火柴，照不亮谁的路，但能让看得见的明白此地亦有人。](/essays/2026/Captive-Journal/)
 
-:lucide-sparkle: [**《沙龙》** 按歌词记录我的每一刻。](/blog/posts/shalong/)
+:lucide-sparkle: [**《沙龙》** 其实 人生并非虚耗 何来尘埃飞舞。](/blog/posts/shalong/)
 
 <hr style="height: 0rem;border-radius: 5px; background-color: var(--md-primary-fg-color);">
 
