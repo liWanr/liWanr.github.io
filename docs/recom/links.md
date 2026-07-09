@@ -13,32 +13,15 @@ tags:
 
 ## 我的信息
 
-///html | div.info-row
+-   **名称**: liWanr
 
--   名称
+-   **描述**: Every nobody is somebody.
 
-    ```text {  linenums="0"  }
-    liWanr
-    ```
+-   **网址**: https://liwanr.com
 
--   网址
+-   **RSS**: https://liwanr.com/rss.xml
 
-    ```text {  linenums="0"  }
-    https://liWanr.com
-    ```
-
--   描述
-
-    ```text {  linenums="0"  }
-    Every nobody is somebody.
-    ```
-
--   头像
-
-    ```text {  linenums="0"  }
-    https://2.gravatar.com/avatar/4cf248a4f4520f081101d70359ac97fb9a6895f6f48dd62c8fa16281b6f86cc4?size=256&d=initials
-    ```
-///
+-   **头像**: https://liwanr.com/assets/avatar.png or [Gravatar](https://2.gravatar.com/avatar/4cf248a4f4520f081101d70359ac97fb9a6895f6f48dd62c8fa16281b6f86cc4)
 
 ## 友情链接
 
@@ -52,6 +35,10 @@ tags:
 
     [**Sevenalist**](https://dczcq.cn/)
 
+-   ![Wcowin](https://pic2.zhimg.com/100/v2-864dbf5fe2906aae3f5f18b491320a0d_r.jpg)
+
+    [**Wcowin**](https://wcowin.work/)
+
 -   ![fuXes](https://fuxes.cn/favicon.ico)
     
     [**fuXes**](https://fuxes.cn/)
@@ -63,14 +50,6 @@ tags:
 -   ![Tony](https://lipeng.ac/favicon.ico)
 
     [**Tony**](https://lipeng.ac/)
-
--   ![LMS](https://lms.im/images/favicon.ico)
-
-    [**LMS**](https://lms.im/)
-
--   ![猪哥杂记](https://gravatar.loli.net/avatar/459a0b9f775f791d461b06612198e200)
-
-    [**猪哥杂记**](https://blog.dazhu1988.com/1181.html)
 
 -   ![莫比乌斯](https://i0.wp.com/mobius.blog/wp-content/uploads/2022/12/MobiusBlogLogo.png?w=1000&ssl=1)
 
