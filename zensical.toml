@@ -112,7 +112,7 @@ font.text = "Noto Serif SC"         # 正文字体
 font.code = "JetBrains Mono"        # 代码块等宽字体
 icon.logo = "local/logo"
 icon.repo = "simple/github"
-favicon = "assets/favicon.png"             # 设置浏览器标签页或标题栏显示的图标
+favicon = "assets/avatar.png"       # 设置浏览器标签页或标题栏显示的图标
 
 features = [
     "announce.dismiss",
