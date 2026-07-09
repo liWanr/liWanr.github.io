@@ -102,6 +102,7 @@ tags:
 
     [官网](https://www.blogsclub.org/) |
     [申请](https://www.blogsclub.org/apply.html?inviteCode=6a8532bb) |
+    [开往](https://www.blogsclub.org/go) |
     [广场](https://www.blogsclub.org/members.html) |
     [我](https://www.blogsclub.org/blog/792.html)
 
