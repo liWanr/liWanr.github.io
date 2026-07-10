@@ -47,7 +47,9 @@ hide:
 
 <hr style="height: 0rem;border-radius: 5px; background-color: var(--md-primary-fg-color);">
 
-:lucide-badge-alert: [新文章 - 《下一条》 退出，继续下一条。](/essays/2026/next/)
+[**`常用链接`**](/recom/website/#快捷链接) [**`网络专属`**](/recom/website/#网络专属)
+[**`娱乐至上`**](/recom/website/#娱乐至上) [**`屌爆了的博客`**](/recom/links/)
+[**`开源协议`**](/about/#license) [**`隐私协议`**](/about/#privacy-policy)
 
 ////
 ///

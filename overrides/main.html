@@ -1,14 +1,13 @@
 {% extends "base.html" %}
 
-{#
-    使用方法：
-    
-    {% block 关键词 %}
-    内容
-    {% endblock %}
-
-    关键词：公告栏announce
-#}
+{% block announce %}
+<strong>新文章</strong>
+<a href="/essays/2026/next/">
+  <strong>《下一条》</strong>
+  -
+  搜了搜那条视频，想再看一眼，但已经找不到原作者了。退出，继续下一条。
+</a>
+{% endblock %}
 
 {% block htmltitle %}
   {% if page.meta and page.meta.title %}
