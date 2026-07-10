@@ -44,18 +44,18 @@
 
 - **`build.sh`**: 预览、部署及更新架构三合一脚本，并且部署后允许将站点文件复制到 Nginx 指定目录
 
-- **`change.py`** --> **`custom_fixes.py`**
+- **`custom_fixes.py`**（原 `change.py`）
 
-  - **功能1**: 删除主页面中的文档地址按钮、标题锚点以及一级标题
- 
-  - **功能2**: 将所有页面中 GitHub 仓库地址的 `master` 分支路径统一替换为 `main` 分支
+  - 功能1：删除主页面 `index.html` 中的文档地址按钮、标题锚点图标 `headerlink`、二级标题的锚点 `id`，以及一级标题整体
 
-  - **功能3**: 为所有带有 `class="only-dark"` 或 `class="only-light"` 的图片元素，在其 src 地址后追加对应的 `#only-dark` 或 `#only-light` 哈希值
+  - 功能2：将所有页面中 GitHub 仓库地址里的 `raw/master/docs` 统一替换为 `raw/main/docs`
 
-  - **功能4**: 根据 `.gitignore` 文件中列出的 Markdown 文件路径，删除对应生成页面，实现指定文章的隐藏功能
+  - 功能3：根据 `.gitignore` 文件中列出的 Markdown 文件路径，删除对应生成页面并同步从 `search.json` 搜索索引中移除，实现指定文章的隐藏及屏蔽站内搜索
 
-  - **功能5**: 按照 `zensical.toml` 里的 `nav` 生成 `rss.xml`，并优先使用文章 front matter 里的 `created` 时间；没有时回退到 Git 首次提交时间，未提交的新文件则使用本地创建时间
+  - 功能5：扫描 `docs/` 目录下全部 Markdown 文件（可通过 front matter `rss: no` 单篇排除）生成 rss.xml，站点信息取自 zensical.toml 的 project 配置；发布时间优先取 Git 首次提交时间，仅当文章 front matter 里的 created 早于等于 2026-01-26 23:46（北京时间）这一分界点时才直接采用该值，Git 查不到时依次回退到 created、本地文件创建时间
 
+  - 功能6：为 `essays/` 目录下的页面，给导航栏和侧边栏中 "Essays" 对应的标签项加上高亮 `--active` 样式
+  
 ## 博客仓库提交说明
 
 |		类型		| 场景	|

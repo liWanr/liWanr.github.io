@@ -177,34 +177,6 @@ def process_index():
         with open(index_path, 'w', encoding='utf-8') as f:
             f.write(new_index_content)
 
-def process_text(content):
-    def rep(m):
-        tag = m.group(0)
-        cls = re.search(r'class=["\']([^"\']*)["\']', tag)
-        if not cls:
-            return tag
-
-        classes = cls.group(1).split()
-
-        if 'only-dark' in classes:
-            h = '#only-dark'
-        elif 'only-light' in classes:
-            h = '#only-light'
-        else:
-            return tag
-
-        return re.sub(
-            r'src="([^"]*)"',
-            lambda s: f'src="{s.group(1)}{h}"' if h not in s.group(1) else s.group(0),
-            tag
-        )
-
-    return re.sub(
-        r'<img\s[^>]*class=["\'][^"\']*only-(?:dark|light)[^"\']*["\'][^>]*>',
-        rep,
-        content
-    )
-
 def process():
     for r, _, fs in os.walk(site_dir):
         for f in fs:
@@ -216,7 +188,7 @@ def process():
             with open(p, encoding='utf-8') as x:
                 c = x.read()
 
-            nc = process_text(c.replace('raw/master/docs', 'raw/main/docs'))
+            nc = c.replace('raw/master/docs', 'raw/main/docs')
 
             if nc != c:
                 with open(p, 'w', encoding='utf-8') as x:
