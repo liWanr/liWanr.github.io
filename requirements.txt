@@ -10,4 +10,4 @@ PyYAML==6.0.3
 soupsieve==2.8.3
 tomli==2.4.1
 typing_extensions==4.15.0
-zensical==0.0.47
+zensical==0.0.50
