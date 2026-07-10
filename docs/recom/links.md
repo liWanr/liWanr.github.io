@@ -88,10 +88,11 @@ tags:
     [开往](https://www.zhblogs.net/site/go) |
     [我](https://www.zhblogs.net/site/019f3bd2-350e-777c-99ae-74f2fd7df954)
 
-<!-- -   **博友圈**
+-   **博友圈**
 
     [官网](https://www.boyouquan.com/) |
     [申请](https://www.boyouquan.com/blog-requests/add/email-validation) |
-    [广场](https://www.boyouquan.com/blogs) -->
+    [广场](https://www.boyouquan.com/blogs) |
+    [我](https://www.boyouquan.com/blogs/liwanr.com)
 
 ///
