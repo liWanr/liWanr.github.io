@@ -1,6 +1,6 @@
 ---
 icon: simple/wireguard
-title: Wire Guard
+title: WireGuard
 comments: true
 # date:
 #     created: 2026-03-17
@@ -78,7 +78,7 @@ tags:
 
 ## 客户端连接
 
-去 [**Wire Guard 官网**](https://www.wireguard.com/install/) 找到对应版本下载, 移动端可以通过配置时生成的二维码进行扫码连接。Apple 生态需要**外区账号**才能在 App Store 下载。
+去 [**WireGuard 官网**](https://www.wireguard.com/install/) 找到对应版本下载, 移动端可以通过配置时生成的二维码进行扫码连接。Apple 生态需要**外区账号**才能在 App Store 下载。
 
 可以在 OpenWrt 的『**状态 --> WireGuard**』中查看握手状态。
 
