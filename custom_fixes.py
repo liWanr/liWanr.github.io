@@ -165,14 +165,7 @@ def process_index():
         r'\1\2',
         new_index_content
     )
-
-    new_index_content = re.sub(
-        r'<h1\b[^>]*>.*?</h1>',
-        '',
-        new_index_content,
-        flags=re.DOTALL | re.IGNORECASE
-    )
-
+    
     if new_index_content != index_content:
         with open(index_path, 'w', encoding='utf-8') as f:
             f.write(new_index_content)
