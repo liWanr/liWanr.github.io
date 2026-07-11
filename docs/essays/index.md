@@ -8,13 +8,13 @@ hide:
 
 <link rel="stylesheet" href="../assets/stylesheets/essays.css">
 
-<h1 align="center">文</h1>
+<h1 style="text-align: center;">文</h1>
 
-<p align="center">没有特定主题，没有固定风格，是一个人思考、有趣观察、碎片想法，或者一些话...</p>
-
----
+<p style="text-align: center; margin-bottom: 0;">没有特定主题，没有固定风格，是一个人思考、有趣观察、碎片想法，或者一些话...</p>
 
 /// html | div.essays
+
+////tab | **2026**
 
 - [**下一条**](./2026/next.md){data-date="2026-07-08"}
 
@@ -33,5 +33,7 @@ hide:
 - [**爱吗？怎么爱**](./2026/on-loving.md){data-date="2026-04-04"}
 
 - [**囚徒日记**](./2026/Captive-Journal.md){data-date="2026-03-23"}
+
+////
 
 ///
