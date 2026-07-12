@@ -25,36 +25,27 @@ tags:
 
 ## 友情链接
 
-///html | div.friend-links
+///html | div.grid.cards
+-   [**DAI X.L.**](https://dxlcq.cn/)
+    { title="室友，身边的技术佬，喜欢折腾" }
 
--   ![Jiao](https://dxlcq.cn/assets/head.png)
+-   [**Deng C.Z.**](https://dczcq.cn/)
+    { title="好朋友，摆烂仔，闷骚" }
 
-    [**Jiao**](https://dxlcq.cn/)
+-   [**fuXes**](https://fuxes.cn/)
+    { title="某组织看到的，是我写文的启发者" }
 
--   ![Sevenalist](https://dczcq.cn/img/logo/icon.svg)
+-   [**双绞麻痹**](https://numb.tech/)
+    { title="某组织看到的，文字吸引到我了" }
 
-    [**Sevenalist**](https://dczcq.cn/)
+-   [**莫比乌斯**](https://mobius.blog/)
+    { title="某组织看到的，文字吸引到我了" }
 
--   ![fuXes](https://fuxes.cn/favicon.ico)
-    
-    [**fuXes**](https://fuxes.cn/)
+-   [**瓦解的生活记事**](https://hin.cool/)
+    { title="某组织看到的，文字吸引到我了" }
 
--   ![双绞麻痹](https://numb.tech/favicon.svg?v=2)
-
-    [**双绞麻痹**](https://numb.tech/)
-
--   ![Tony](https://lipeng.ac/favicon.ico)
-
-    [**Tony**](https://lipeng.ac/)
-
--   ![莫比乌斯](https://i0.wp.com/mobius.blog/wp-content/uploads/2022/12/MobiusBlogLogo.png?w=1000&ssl=1)
-
-    [**莫比乌斯**](https://mobius.blog/)
-
--   ![瓦解的生活记事](https://cdn2.hin.cool/pic/my/LonelyGod.ico)
-
-    [**瓦解的生活记事**](https://hin.cool/)
-
+-   [**Ming**](https://mingblog.site/)
+    { title="跟他抢 BlogsClub 每日首签注意到的，文字风格比较喜欢" }
 ///
 
 ## 加入的博客组织
