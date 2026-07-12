@@ -240,12 +240,12 @@ def activate_essays_tab():
         return
 
     tabs_pattern = re.compile(
-        r'(<li\s+class=")(md-tabs__item)(">\s*<a\s+href="(?:\.\./)+"\s+class="md-tabs__link">[\s\S]*?Essays[\s\S]*?</a>\s*</li>)',
+        r'(<li\s+class=")(md-tabs__item)(">\s*<a\s+href="(?:\.\./)+"\s+class="md-tabs__link">[\s\S]*?ESSAYS[\s\S]*?</a>\s*</li>)',
         re.DOTALL
     )
 
     nav_pattern = re.compile(
-        r'(<li\s+class=")(md-nav__item)(">)\s*(<a\s+href="(?:\.\./)+"\s+class=")(md-nav__link)(">[\s\S]*?Essays[\s\S]*?</a>\s*</li>)',
+        r'(<li\s+class=")(md-nav__item)(">)\s*(<a\s+href="(?:\.\./)+"\s+class=")(md-nav__link)(">[\s\S]*?ESSAYS[\s\S]*?</a>\s*</li>)',
         re.DOTALL
     )
 
