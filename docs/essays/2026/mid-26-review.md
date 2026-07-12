@@ -1,10 +1,10 @@
 ---
-icon: lucide/notepad-text
 title: 说说 26 年年中
 comments: true
-# date:
-    # created: 2025-07-13
+description: 这是一篇迟到的年中小结，没有大段的论述和深刻道理，一次成文，想哪儿写哪儿，没有反复斟酌。
 ---
+
+<link rel="stylesheet" href="../../assets/stylesheets/essays.css">
 
 这是一篇迟到的年中小结，没有大段的论述和深刻道理，一次成文，想哪儿写哪儿，没有反复斟酌。
 
@@ -39,3 +39,7 @@ comments: true
 ///
 
 下半年好好养胃吧，自己做点饭吃，少吃点辛辣的东西，毕竟这是我第二次因为胃溃疡吐血了，真的很难受。
+
+<p align="right" markdown>
+二六年七月十三日·成文
+</p>
