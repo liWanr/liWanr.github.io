@@ -5,7 +5,7 @@ comments: true
 # date:
 #     created: 2025-01-20 16:30
 categories:
-    - Tech
+    - VPN
 ---
 
 ## :simple-linux: Linux

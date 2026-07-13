@@ -6,7 +6,7 @@ comments: true
 #     created: 2025-01-20
 #     updated: 2026-02-20
 categories:
-    - Tech
+    - VPN
 ---
 
 <h1>使用 OpenWrt 配置 IPv6 + DDNS + OpenVPN<br>实现远程访问及异地组网</h1>

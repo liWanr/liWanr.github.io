@@ -6,7 +6,7 @@ comments: true
 #     created: 2026-03-17
 #     updated: 2026-03-23
 categories:
-    - Tech
+    - VPN
 ---
 
 ## 引言

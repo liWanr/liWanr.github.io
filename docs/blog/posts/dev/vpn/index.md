@@ -8,7 +8,7 @@ comments: true
 categories:
     - Tech
 hide:
-    - toc
+    - VPN
 ---
 
 去 [**ImmortalWrt 设备搜索地址**](https://firmware-selector.immortalwrt.org/) 中查找支持设备。以下是我用的版本信息
