@@ -1,7 +1,6 @@
 ---
 icon: simple/applemusic
 title: Apple Music
-comments: true
 date:
     created: 2026-03-25
 categories:

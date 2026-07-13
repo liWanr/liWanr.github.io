@@ -1,7 +1,6 @@
 ---
 icon: lucide/database
 title: Samba
-comments: true
 date:
     created: 2026-02-13
 categories:

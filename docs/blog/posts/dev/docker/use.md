@@ -1,7 +1,6 @@
 ---
 icon: octicons/terminal-16
 title: 服务与架构
-comments: true
 date:
     created: 2026-03-05
 categories:

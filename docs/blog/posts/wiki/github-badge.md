@@ -1,7 +1,6 @@
 ---
 icon: lucide/badge
 title: GitHub 徽章
-comments: true
 date:
     created: 2026-03-23
 categories:

@@ -1,7 +1,8 @@
 ---
 icon: lucide/satellite
 title: 异地组网
-comments: true
+authors: 
+    - Jiao
 date:
     created: 2025-01-20
     updated: 2026-02-20

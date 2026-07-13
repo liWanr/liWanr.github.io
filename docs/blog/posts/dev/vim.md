@@ -1,7 +1,6 @@
 ---
 icon: simple/vim
 title: vim
-comments: true
 date:
     created: 2026-02-22
 categories:

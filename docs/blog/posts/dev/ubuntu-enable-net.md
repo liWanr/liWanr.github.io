@@ -1,7 +1,6 @@
 ---
 icon: lucide/shield-check
 title: 激活 Ubuntu 网卡
-comments: true
 date:
     created: 2025-03-30
     updated: 2026-01-18
