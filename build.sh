@@ -16,7 +16,7 @@ SERVER_USER="root"                          # 远程服务器用户
 SERVER_HOST="172.247.244.38"                # 远程服务器地址
 SERVER_PATH="/usr/local/nginx"              # 服务器 nginx 站点目录
 
-PY_ENV="../.env/zensical/bin/activate"      # Python 虚拟环境激活脚本路径
+PY_ENV="../.env/materialx/bin/activate"      # Python 虚拟环境激活脚本路径
 CACHE_DIR="./.cache"                        # 构建缓存目录
 SITE_DIR="./site"                           # 构建输出目录
 
@@ -79,7 +79,7 @@ deploy() {
     clean
     activate_env
 
-    zensical build -c > /dev/null 2>&1
+    mkdocs build -c > /dev/null 2>&1
     echo -ne "构建完成... \r"
 
     python3 custom_fixes.py
@@ -136,7 +136,7 @@ local_serve() {
 
     echo "========== Local Mode =========="
     activate_env
-    zensical serve
+    mkdocs serve
 }
 
 # ====== 更新框架 ======
@@ -144,7 +144,7 @@ update() {
     clean
     activate_env
 
-    pip install --upgrade --force-reinstall zensical > /dev/null 2>&1
+    pip install --upgrade --force-reinstall mkdocs-materialx > /dev/null 2>&1
     echo "========== Zensical 已更新 =========="
 
     pip freeze > requirements.txt
