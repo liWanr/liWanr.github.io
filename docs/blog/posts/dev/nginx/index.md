@@ -6,7 +6,7 @@ comments: true
 #     created: 2026-02-17
 #     updated: 2026-07-09
 categories:
-    - Tech
+    - Nginx
 ---
 
 ## 准备环境与依赖库

@@ -5,7 +5,7 @@ comments: true
 # date:
 #     created: 2026-04-03
 categories:
-    - Tech
+    - Nginx
 ---
 
 Nginx 的配置文件通常位于 `.../nginx/nginx.conf`。

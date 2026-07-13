@@ -5,7 +5,7 @@ comments: true
 # date:
 #     created: 2026-03-11
 categories:
-    - Tech
+    - Nginx
 ---
 
 最基础的反向代理配置
