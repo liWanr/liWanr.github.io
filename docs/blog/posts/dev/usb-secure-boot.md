@@ -6,7 +6,7 @@ comments: true
 #     created: 2025-01-20
 #     updated: 2026-01-12
 categories:
-    - Exper
+    - DevOps
 ---
 
 ## 解决方案 {id="solution"}

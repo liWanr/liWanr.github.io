@@ -5,7 +5,7 @@ comments: true
 # date:
 #     created: 2026-03-25
 categories:
-    - Tech
+    - DevOps
 ---
 
 ## 安装 / 卸载 / 服务管理

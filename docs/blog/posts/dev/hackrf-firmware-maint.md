@@ -6,7 +6,7 @@ comments: true
 #     created: 2025-03-06 19:23:36
 #     updated: 2026-02-15
 categories:
-    - Exper
+    - DevOps
 ---
 
 ## 引言 {id="introduction"}

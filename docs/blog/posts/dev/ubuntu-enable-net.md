@@ -6,7 +6,7 @@ comments: true
 #     created: 2025-03-30 16:09:00
 #     updated: 2026-01-18
 categories:
-    - Exper
+    - DevOps
 ---
 
 ## 检查网络接口状态 {id="check-network-interface-status"}

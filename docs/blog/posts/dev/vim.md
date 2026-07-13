@@ -5,7 +5,7 @@ comments: true
 # date:
 #     created: 2026-02-22
 categories:
-    - Tech
+    - DevOps
 ---
 
 ## 模式类型 {id="mode-types"}

@@ -6,7 +6,7 @@ comments: true
 #     created: 2025-01-20
 #     updated: 2025-04-09
 categories:
-    - Tech
+    - DevOps
 ---
 
 ## 安装 Git {id="install-git"}
