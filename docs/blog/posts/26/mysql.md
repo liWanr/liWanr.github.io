@@ -1,6 +1,7 @@
 ---
 icon: simple/dolphin
 title: MySQL 使用小全
+comments: true
 date:
     created: 2026-03-25
 categories:

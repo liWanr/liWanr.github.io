@@ -1,6 +1,7 @@
 ---
 icon: lucide/folder-archive
 title: 压缩与解压
+comments: true
 date:
     created: 2025-02-26
     updated: 2025-12-22

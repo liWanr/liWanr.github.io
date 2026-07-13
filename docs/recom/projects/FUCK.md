@@ -1,7 +1,7 @@
 ---
 icon: lucide/hat-glasses
 title: 槽 F.U.C.K.
-rss: no
+comments: true
 ---
 
 ///html | small

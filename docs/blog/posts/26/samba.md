@@ -1,6 +1,7 @@
 ---
 icon: lucide/database
 title: Samba 安装、使用教程
+comments: true
 date:
     created: 2026-02-13
 categories:

@@ -1,6 +1,7 @@
 ---
 icon: lucide/book-open-text
 title: 推背图
+comments: true
 authors: 
     - 袁天罡
     - 李淳风

@@ -1,6 +1,7 @@
 ---
 icon: lucide/file-sliders
 title: Nginx 配置文件
+comments: true
 date:
     created: 2026-04-03
 categories:

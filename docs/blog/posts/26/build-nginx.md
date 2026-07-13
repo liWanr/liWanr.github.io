@@ -1,6 +1,7 @@
 ---
 icon: simple/nginx
 title: Nginx 编译安装
+comments: true
 date:
    created: 2026-02-17
    updated: 2026-07-09

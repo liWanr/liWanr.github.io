@@ -1,6 +1,7 @@
 ---
 icon: simple/jetbrains
 title: 激活 JetBrains
+comments: true
 date:
     created: 2025-03-08
     updated: 2026-01-18

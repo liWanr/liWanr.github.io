@@ -1,6 +1,7 @@
 ---
 icon: lucide/file-terminal
 title: 自制 Dokcer 镜像
+comments: true
 date:
     created: 2026-03-04
 categories:

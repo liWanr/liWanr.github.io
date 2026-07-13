@@ -1,8 +1,8 @@
 ---
 icon: lucide/hammer
 title: 屌爆了的工具
+comments: true
 created: 2025-12-16
-rss: no
 ---
 
 <style>

@@ -1,6 +1,7 @@
 ---
 icon: lucide/calendars
 title: 双系统时间同步
+comments: true
 date:
     created: 2024-12-25
     updated: 2025-02-22
