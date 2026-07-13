@@ -7,12 +7,12 @@ categories:
     - DevOps
 ---
  
-##  前言
-
 > [!quete] 问题描述
 > C:\Program Files\WindowsApps\NVIDIACorp.NVIDIAControlPanel_8.1.959.0_x64_5...\nvcplui.exe
 >
 > 参数错误
+
+<!-- more -->
 
 ## 怀疑
 

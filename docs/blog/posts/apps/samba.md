@@ -1,6 +1,6 @@
 ---
 icon: lucide/database
-title: Samba
+title: Samba 安装、使用教程
 date:
     created: 2026-02-13
 categories:
@@ -46,6 +46,8 @@ categories:
     1. ubuntu 代表用户名
 
 ///
+
+<!-- more -->
 
 ## :fontawesome-brands-windows: Windows 端挂载 {id="windows-mount"}
 

@@ -1,6 +1,6 @@
 ---
 icon: simple/vim
-title: vim
+title: Vim 使用小全
 date:
     created: 2026-02-22
 categories:
@@ -18,6 +18,8 @@ Vim 与普通编辑器的最大区别在于它有模式。
 - **命令行模式**: 按 ++colon++ 进入。用于保存、退出、替换等。
 
 - **可视模式**: 按 ++v++ 进入。用于选中文本块。
+
+<!-- more -->
 
 ///html | small
 :octicons-light-bulb-16:

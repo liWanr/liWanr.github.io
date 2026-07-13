@@ -12,8 +12,6 @@ categories:
 
 <h1>使用 OpenWrt 配置 IPv6 + DDNS + OpenVPN<br>实现远程访问及异地组网</h1>
 
-## 引言
-
 ///html | small
 :octicons-light-bulb-16:
 灵感来自 YouTube 上的 UP 主:
@@ -22,6 +20,8 @@ categories:
 [**世界上最好的奶龙**](https://dxlcq.cn/)
 提供帮助
 ///
+
+<!-- more -->
 
 **首先说明本次用到的装备**
 

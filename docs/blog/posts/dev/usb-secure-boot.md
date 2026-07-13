@@ -14,6 +14,8 @@ categories:
 
 *[security boot]: 安全启动
 
+<!-- more -->
+
 ## 情况说明 {id="condition"}
 
 今天用 U 盘给笔记本重新刷 Ubuntu 系统的时候, 死活进不去, 一直显示这个内容

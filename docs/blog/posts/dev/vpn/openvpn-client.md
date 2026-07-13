@@ -25,6 +25,8 @@ categories:
 
 ///
 
+<!-- more -->
+
 ## :fontawesome-brands-windows: Windows
 
 ///html | div.step

@@ -1,6 +1,6 @@
 ---
 icon: octicons/download-16
-title: 安装
+title: Docker 安装
 date:
     created: 2026-03-04
 categories:
@@ -10,6 +10,8 @@ categories:
 在**开发阶段**使用 Windows 或 macOS 运行 Docker 是完全可行的，但在**部署或生产环境中**，一般还是更推荐直接在 Linux 服务器上运行 Docker。
 
 因为在 Windows 或 macOS 上运行 Docker 时的本质是通过虚拟化 Linux 内核来运行容器，相当于「**容器跑在虚拟机里的 Linux 上**」。这种方式虽然对开发者非常友好，但在性能、文件系统 IO、网络等方面通常会有一定损耗。
+
+<!-- more -->
 
 ## Ubuntu
 

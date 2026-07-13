@@ -1,6 +1,6 @@
 ---
 icon: simple/docker
-title: Docker
+title: Docker 基本信息
 date:
     created: 2026-03-04
 categories:
@@ -22,6 +22,7 @@ categories:
 | [RHEL](https://docs.docker.com/engine/install/rhel/) | - | ✅ | ✅ | - | - | ✅ |
 | [SLES](https://docs.docker.com/engine/install/sles/) | - | - | - | - | ❌ |
 
+<!-- more -->
 
 ### 其他 Linux 发行版 { id="other-linux-distributions" }
 

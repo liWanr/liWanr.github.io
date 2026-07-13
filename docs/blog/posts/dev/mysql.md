@@ -1,15 +1,14 @@
 ---
 icon: simple/dolphin
-title: MySQL
+title: MySQL 使用小全
 date:
     created: 2026-03-25
 categories:
     - DevOps
 ---
 
-## 安装 / 卸载 / 服务管理
+## 安装最新版
 
-///tab | 安装最新版
 ///html | div.step
 1. 更新软件包并安装 MySQL 服务器，安装过程中会自动启动MySQL服务。
 
@@ -36,9 +35,11 @@ categories:
     mysql -u root -p
     ```
 ///
-///
 
-///tab | 安装特定版本
+<!-- more -->
+
+## 安装特定版本
+
 ///html | div.step
 1. 从服务器获取最新密钥，并将其转换为二进制格式存放在正确的路径
 
@@ -107,9 +108,9 @@ categories:
 
     - 重新加载权限表 (Reload privilege tables)
 ///
-///
 
-///tab | 卸载
+## 卸载
+
 ///html | div.step
 1. 停止MySQL服务
 
@@ -131,9 +132,8 @@ categories:
     sudo rm -rf /var/lib/mysql /etc/mysql /var/log/mysql
     ```
 ///
-///
 
-///tab | 服务管理
+## 服务管理
 
 ///html | div.grid
 ```bash { title="启动" linenums="0" }
@@ -151,5 +151,4 @@ sudo systemctl restart mysql
 ```bash { title="查看状态" linenums="0" }
 sudo systemctl status mysql
 ```
-///
 ///

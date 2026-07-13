@@ -1,6 +1,6 @@
 ---
 icon: octicons/terminal-16
-title: 服务与架构
+title: Docker 服务与架构
 date:
     created: 2026-03-05
 categories:
@@ -36,6 +36,8 @@ categories:
     ```
 
 ///
+
+<!-- more -->
 
 **但是在生产环境中不建议这样使用**，因为 docker 组的权限几乎等价于「能以 root 权限运行容器」。攻击者只要拿到这个用户的 shell，就可以通过 `docker run -v /:/host ...` 等方式逃逸到宿主机，读写任意文件，甚至提权为 root。
 

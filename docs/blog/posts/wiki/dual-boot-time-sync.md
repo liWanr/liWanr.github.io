@@ -14,6 +14,8 @@ categories:
 sudo timedatectl set-local-rtc 1
 ```
 
+<!-- more -->
+
 ## 成因解析 {id="cause-analysis"}
 
 出现这种情况的原因是 Windows 和 Linux 它们在默认情况下**看待硬件时间的方式是不一样的**, 计算机有两个主要时间：系统时间[^1] 和硬件时间[^2]。

@@ -1,6 +1,6 @@
 ---
 icon: lucide/file-terminal
-title: 自制镜像
+title: 自制 Dokcer 镜像
 date:
     created: 2026-03-04
 categories:
@@ -18,6 +18,8 @@ categories:
 2. **那为什么 tomcat 镜像要几百兆，实际的 tomcat 只需要几十兆呢？**
 
     官方 Tomcat 镜像几百MB，主要基于基础镜像 + JDK 和 Tomcat 文件，以及安装过程中的缓存、文档等冗余层。大概就是这个逻辑：
+
+    <!-- more -->
 
     ```mermaid
     ---

@@ -13,6 +13,8 @@ categories:
 | [**Icons**](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/ "图标和表情")
 | [**Lucide**](https://lucide.dev/icons/ "图标")
 
+<!-- more -->
+
 <script src="/assets/javascripts/keys.js"></script>
 
 ## 键盘按键格式

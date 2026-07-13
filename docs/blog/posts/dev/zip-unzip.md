@@ -8,6 +8,8 @@ categories:
     - DevOps
 ---
 
+<!-- more -->
+
 ///html | div.grid.cards
 
 -   **FileName**

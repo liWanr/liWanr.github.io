@@ -19,6 +19,8 @@ categories:
 
 3. 必须拥有一个非国区的 iCloud 账号
 
+<!-- more -->
+
 ## 安装流程
 
 ///html | div.step

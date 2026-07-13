@@ -7,8 +7,6 @@ categories:
     - Wiki
 ---
 
-## 前言
-
 - [**生成网站**](https://shields.io/)
 
 ## 技术栈徽
@@ -49,6 +47,8 @@ categories:
     ///
 
 ///
+
+<!-- more -->
 
 ///html | div.step
 

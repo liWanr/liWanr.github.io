@@ -15,6 +15,8 @@ categories:
 
 好在这个问题是可以解决的😎，只需要将账户的国家/地区更换到不受限制的国家就行了，但是更改账户的国家/地区有些麻烦。所以找到一个懒人方法，用这个「[**快捷方式**](https://www.icloud.com/shortcuts/37b8946ecd4d420788bb882629f47712)」更换国家，我一般选的是美国。
 
+<!-- more -->
+
 ///html | div.grid
 <figure markdown="span">
 ![快捷方式](/assets/images/blog/apps/apple-music/1.jpeg)

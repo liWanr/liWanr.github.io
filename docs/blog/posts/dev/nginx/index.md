@@ -21,6 +21,8 @@ zlib1g-dev \
 wget
 ```
 
+<!-- more -->
+
 ///html | small
 :octicons-light-bulb-16:
 注意：安装 `libssl-dev` 是确保 TLS SNI support enabled 的关键，因为它提供了编译所需的 OpenSSL 开发头文件。
