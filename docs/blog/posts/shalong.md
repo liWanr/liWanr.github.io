@@ -6,12 +6,6 @@ authors:
 description: 其实 人生并非虚耗 何来尘埃飞舞
 ---
 
-<p align="right" markdown>
-灵感来源: 沙龙 - 黄伟文
-</p>
-
----
-
 ///html | figcaption[align="center"]
 ![登高峰一秒](/assets/images/blog/shalong/登高峰一秒.png)
 登高峰一秒
