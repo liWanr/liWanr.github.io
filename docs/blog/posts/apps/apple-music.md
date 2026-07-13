@@ -5,7 +5,7 @@ comments: true
 # date:
 #   created: 2026-03-25
 categories:
-    - Exper
+    - Apps
 ---
 
 <h1>
