@@ -50,3 +50,7 @@
 .essays a[data-date] > * {
   order: 1;
 }
+
+.md-content__button {
+    display: none !important;
+}

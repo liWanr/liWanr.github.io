@@ -22,6 +22,9 @@ hide:
 .md-content__inner {
     margin: 0 0.8rem 6rem;
 }
+.md-content__button {
+    display: none !important;
+}
 ///
 
 <h1 style="margin: 0.6em auto 0 auto; font-size:4em;">Hello, I'm liWanr!</h1>
