@@ -1,2 +1,1 @@
-# Blog
-
+# 小小博客 { style="text-align: center;" }
