@@ -1,10 +1,7 @@
 ---
 icon: lucide/app-window-mac
 title: 屌爆了的网站
-comments: true
-date:
-    created: 2025-12-16
-    updated: 2026-04-09
+created: 2025-12-16
 rss: no
 ---
 

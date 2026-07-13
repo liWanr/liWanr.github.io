@@ -1,9 +1,6 @@
 ---
 icon: lucide/hammer
 title: Project
-date:
-    created: 2026-06-24
-comments: true
 rss: no
 ---
 

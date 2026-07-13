@@ -1,5 +1,6 @@
 ---
 title: liWanr
+comments: false
 rss: no
 hide:
     - navigation

@@ -1,5 +1,6 @@
 ---
 title: Essays
+comments: false
 rss: no
 hide:
     - path

@@ -16,3 +16,13 @@ authors:
     description: 作词
     avatar: https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/177806276_314996203331016_1979412036351588459_n.jpg?stp=dst-jpg_tt6&cstp=mx750x750&ctp=s750x750&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=wuprVZAhTAwQ7kNvwGtrOyz&_nc_oc=AdrxjJxNO-frz1J723XA9uboan0FUwKDEI-WMu8TwmseORZAkvGBhGqpchDSv8k2w-4&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=3eLnFaQYxZ_6xDCRm1uR1A&_nc_ss=7b289&oh=00_AQAl_FWqF6AAwGIhXDFFVr7BfXp9QVxMMiTL2HlKgMXqww&oe=6A7C0F2E
     email: whoiswyman@gmail.com
+  opensource:
+    name: 开源倡议
+    description: 开源倡议
+    avatar: https://i0.wp.com/opensource.org/wp-content/uploads/2023/01/cropped-cropped-OSI_Horizontal_Logo_0-e1674081292667.png
+    url: https://opensource.org/
+  TMDB:
+    name: TMDB
+    description: 资源
+    avatar: https://www.themoviedb.org/assets/2/favicon-16x16-b362d267873ce9c5a39f686a11fe67fec2a72ed25fa8396c11b71aa43c938b11.png
+    url: https://www.themoviedb.org/

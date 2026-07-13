@@ -1,9 +1,7 @@
 ---
 title: About Somethings
-date:
-    created: 2025-12-16
-    updated: 2026-07-13
 rss: no
+created: 2025-12-16
 hide:
     - navigation
     - path

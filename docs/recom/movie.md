@@ -1,9 +1,8 @@
 ---
 icon: lucide/clapperboard
 title: 屌爆了的电影
-comments: true
-date:
-    created: 2026-05-08
+authors: 
+    - TMDB
 rss: no
 ---
 
@@ -12,8 +11,6 @@ rss: no
 <p align="right" markdown>
 排名不分先后
 </p>
-
----
 
 ///html | div.movie-links
 
