@@ -2,11 +2,10 @@
 icon: lucide/rss
 title: 屌爆了的博客
 comments: true
-# date:
-#     created: 2026-05-07
+date:
+    created: 2026-05-07
+    updated: 2026-07-13
 rss: no
-categories:
-    - Exper
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/links.css">

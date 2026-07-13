@@ -2,8 +2,8 @@
 icon: lucide/file-terminal
 title: 自制镜像
 comments: true
-# date:
-#     craeted: 2026-03-04
+date:
+    created: 2026-03-04
 categories:
     - Docker
 ---

@@ -2,9 +2,9 @@
 icon: material/usb
 title: U 盘安全启动
 comments: true
-# date:
-#     created: 2025-01-20
-#     updated: 2026-01-12
+date:
+    created: 2025-01-20
+    updated: 2026-01-12
 categories:
     - DevOps
 ---

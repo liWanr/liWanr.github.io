@@ -2,9 +2,9 @@
 icon: simple/openwrt
 title: ImmortalWrt
 comments: true
-# date:
-#     created: 2026-03-08
-#     updated: 2026-03-22
+date:
+    created: 2026-03-08
+    updated: 2026-03-22
 categories:
     - Tech
 hide:

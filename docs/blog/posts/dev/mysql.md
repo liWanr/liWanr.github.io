@@ -2,8 +2,8 @@
 icon: simple/dolphin
 title: MySQL
 comments: true
-# date:
-#     created: 2026-03-25
+date:
+    created: 2026-03-25
 categories:
     - DevOps
 ---

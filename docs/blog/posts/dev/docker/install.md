@@ -2,8 +2,8 @@
 icon: octicons/download-16
 title: 安装
 comments: true
-# date:
-#     craeted: 2026-03-04
+date:
+    created: 2026-03-04
 categories:
     - Docker
 ---

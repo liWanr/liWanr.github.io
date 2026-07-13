@@ -2,9 +2,9 @@
 icon: lucide/satellite
 title: 异地组网
 comments: true
-# date:
-#     created: 2025-01-20
-#     updated: 2026-02-20
+date:
+    created: 2025-01-20
+    updated: 2026-02-20
 categories:
     - VPN
 ---

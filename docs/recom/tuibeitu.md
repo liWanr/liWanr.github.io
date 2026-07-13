@@ -2,10 +2,8 @@
 icon: lucide/book-open-text
 title: 推背图
 comments: true
-# date:
-#   created: 2026-04-12
-categories:
-    - Share
+date:
+    created: 2026-04-12
 ---
 
 **作者: 袁天罡　李淳风**<br>

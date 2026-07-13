@@ -2,8 +2,8 @@
 icon: simple/docker
 title: Docker
 comments: true
-# date:
-#     craeted: 2026-03-04
+date:
+    created: 2026-03-04
 categories:
     - Docker
 ---

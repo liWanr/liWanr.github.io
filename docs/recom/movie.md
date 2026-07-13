@@ -2,11 +2,9 @@
 icon: lucide/clapperboard
 title: 屌爆了的电影
 comments: true
-# date:
-#     created: 2026-05-08
+date:
+    created: 2026-05-08
 rss: no
-categories:
-    - Exper
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/movie.css">

@@ -2,9 +2,9 @@
 icon: lucide/git-graph
 title: Git
 comments: true
-# date:
-#     created: 2025-01-20
-#     updated: 2025-04-09
+date:
+    created: 2025-01-20
+    updated: 2025-04-09
 categories:
     - DevOps
 ---

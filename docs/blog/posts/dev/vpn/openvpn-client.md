@@ -2,8 +2,8 @@
 icon: simple/openvpn
 title: 使用 OpenVPN Client
 comments: true
-# date:
-#     created: 2025-01-20 16:30
+date:
+    created: 2025-01-20
 categories:
     - VPN
 ---

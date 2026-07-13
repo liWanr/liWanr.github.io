@@ -2,9 +2,9 @@
 icon: simple/wireguard
 title: WireGuard
 comments: true
-# date:
-#     created: 2026-03-17
-#     updated: 2026-03-23
+date:
+    created: 2026-03-17
+    updated: 2026-03-23
 categories:
     - VPN
 ---
