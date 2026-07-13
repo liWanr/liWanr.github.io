@@ -211,7 +211,7 @@ def flatten_blog_posts_path():
             with open(p, encoding='utf-8') as x:
                 c = x.read()
 
-            nc = c.replace('/blog/posts/', '/blog/')
+            nc = c.replace('/blog/posts/', '/blog/').replace('blog/posts/', 'blog/')
 
             if nc != c:
                 with open(p, 'w', encoding='utf-8') as x:
