@@ -1,6 +1,5 @@
 ---
 title: 回响
-created: 2026-07-12
 description: 他一直觉得自己小时候是没有声音的人。
 ---
 
