@@ -4,26 +4,21 @@ import json
 import shutil
 import hashlib
 import subprocess
+import yaml
 from datetime import datetime, timedelta, timezone
-from html import escape
-from urllib.parse import urljoin
+from html import escape, unescape
 from pathlib import Path
-
-try:
-    import tomllib
-except ModuleNotFoundError:  # pragma: no cover
-    import tomli as tomllib
 
 site_dir = 'site'
 gitignore_path = '.gitignore'
 search_json_path = os.path.join(site_dir, 'search.json')
-config_path = 'zensical.toml'
+config_path = 'mkdocs.yml'
 docs_dir = Path('docs')
 
 
 def load_config():
-    with open(config_path, 'rb') as f:
-        return tomllib.load(f)
+    with open(config_path, encoding='utf-8') as f:
+        return yaml.unsafe_load(f)
 
 def read_text(path):
     with open(path, encoding='utf-8') as f:
@@ -33,50 +28,36 @@ def markdown_path_to_slug(md_path):
     slug = md_path.replace('\\', '/').strip().removeprefix('docs/').removesuffix('.md')
     return '' if slug == 'index' else slug.removesuffix('/index').rstrip('/')
 
-slug_to_url = lambda site_url, slug: site_url.rstrip('/') + '/' if not slug else urljoin(site_url.rstrip('/') + '/', slug.rstrip('/') + '/')
-front_matter = lambda content: content.split('---', 2)[1] if content.startswith('---') and len(content.split('---', 2)) > 2 else ''
-parse_iso_datetime = lambda v: (datetime.fromisoformat(v.strip().strip("\"'").replace('Z', '+00:00')).astimezone(timezone.utc) if v.strip().strip("\"'") else None)
+BEIJING_TZ = timezone(timedelta(hours=8))
+GIT_PUBDATE_CUTOFF = datetime(2026, 1, 26, 23, 19, tzinfo=BEIJING_TZ)
+format_rss_date = lambda dt: dt.astimezone(BEIJING_TZ).strftime('%a, %d %b %Y %H:%M:%S %z')
 
-def extract_title(content, fallback):
-    m = re.search(r'^\s*title\s*:\s*(.+?)\s*$', front_matter(content), re.M)
-    return m.group(1).strip().strip("\"'") if m and m.group(1).strip().strip("\"'") else fallback
+def parse_iso_datetime(v):
+    v = v.strip().strip("\"'")
+    if not v:
+        return None
+    dt = datetime.fromisoformat(v.replace('Z', '+00:00'))
+    return dt if dt.tzinfo else dt.replace(tzinfo=BEIJING_TZ)
+
+front_matter = lambda content: content.split('---', 2)[1] if content.startswith('---') and len(content.split('---', 2)) > 2 else ''
 
 def extract_created_date(content):
-    m = re.search(r'^(?:\s*#\s*)?(?:date\s*:\s*)?(?:craeted|created)\s*:\s*(.+?)\s*$', front_matter(content), re.M | re.I)
+    m = re.search(r'^\s*created\s*:\s*(.+?)\s*$', front_matter(content), re.M | re.I)
     return parse_iso_datetime(m.group(1)) if m else None
 
-def extract_description(content):
-    fm = front_matter(content)
-    m = re.search(r'^\s*description\s*:\s*(.+?)\s*$', fm, re.M | re.I)
-    if m:
-        return m.group(1).strip().strip("\"'")
-    return ''
-
-def extract_rss_enabled(content):
-    m = re.search(r'^\s*rss\s*:\s*(.+?)\s*$', front_matter(content), re.M | re.I)
-    if not m:
-        return True
-    val = m.group(1).strip().strip("\"'").lower()
-    return val not in {'no', 'false', 'off', '0'}
-
-def git_first_commit(path):
+def git_first_commit_date(path):
     try:
-        out = subprocess.run(['git', 'log', '--follow', '--raw', '--no-abbrev', '--format=%H%x00%aI', '--', str(path)], capture_output=True, text=True, check=False).stdout
-    except FileNotFoundError:
-        return None, None
-    blocks = [b for b in out.strip().split('\n\n') if b.strip()]
-    if len(blocks) < 2:
-        return None, None
-    head, raw = blocks[-2], blocks[-1]
-    _, _, date_str = head.partition('\x00')
-    m = re.search(r'^:\S+ \S+ \S+ ([0-9a-f]{40}) ', raw)
-    return (m.group(1) if m else None), parse_iso_datetime(date_str)
-
-def local_created_date(path):
-    try:
-        st = path.stat()
+        out = subprocess.run(
+            ['git', 'log', '--follow', '--format=%aI', '--', str(path)],
+            capture_output=True, text=True, check=False,
+        ).stdout
     except FileNotFoundError:
         return None
+    lines = [l for l in out.strip().splitlines() if l.strip()]
+    return parse_iso_datetime(lines[-1]) if lines else None
+
+def local_created_date(path):
+    st = path.stat()
     bt = getattr(st, 'st_birthtime', None)
     if bt:
         return datetime.fromtimestamp(bt, tz=timezone.utc)
@@ -86,15 +67,73 @@ def local_created_date(path):
     except (FileNotFoundError, ValueError):
         return datetime.fromtimestamp(st.st_ctime, tz=timezone.utc)
 
-BEIJING_TZ = timezone(timedelta(hours=8))
-GIT_PUBDATE_CUTOFF = datetime(2026, 1, 26, 23, 46, tzinfo=BEIJING_TZ)
-format_rss_date = lambda dt: dt.astimezone(BEIJING_TZ).strftime('%a, %d %b %Y %H:%M:%S %z')
-
-def resolve_pub_date(path, content, first_commit_date):
+def resolve_pub_date(md_path):
+    content = read_text(md_path)
     created = extract_created_date(content)
     if created and created.astimezone(BEIJING_TZ) <= GIT_PUBDATE_CUTOFF:
         return created
-    return first_commit_date or created or local_created_date(path)
+    return git_first_commit_date(md_path) or created or local_created_date(md_path)
+
+def strip_front_matter(content):
+    parts = content.split('---', 2)
+    return parts[2] if content.startswith('---') and len(parts) > 2 else content
+
+def extract_title_from_markdown(content):
+    m = re.search(r'^\s*title\s*:\s*(.+?)\s*$', front_matter(content), re.M)
+    if m:
+        t = m.group(1).strip().strip("\"'")
+        if t:
+            return t
+    m = re.search(r'^\s*#\s+(.+?)\s*$', strip_front_matter(content), re.M)
+    return m.group(1).strip() if m else None
+
+def build_title_index():
+    index = {}
+    for p in docs_dir.rglob('*.md'):
+        title = extract_title_from_markdown(read_text(p))
+        if title:
+            index.setdefault(title, p)
+    return index
+
+_TIME_RE = re.compile(r'<time\b[^>]*?\bdatetime="([^"]+)"')
+_TITLE_RE = re.compile(r'<title>([^<]*)</title>')
+_DESC_RE = re.compile(r'<meta\s+name="description"\s+content="([^"]*)"')
+_OG_DESC_RE = re.compile(r'<meta\s+property="og:description"\s+content="([^"]*)"')
+
+_EXCLUDE_EXACT = {'blog'}
+_EXCLUDE_PREFIXES = ('blog/archive', 'blog/category', 'blog/categories', 'blog/tag', 'blog/tags', 'blog/page', 'recom', 'about')
+
+
+def find_site_pages():
+    for r, dirs, fs in os.walk(site_dir):
+        dirs[:] = [d for d in dirs if d not in ('assets', 'search')]
+        if 'index.html' in fs:
+            yield os.path.join(r, 'index.html')
+
+def is_excluded_page(html_path):
+    rel_dir = Path(html_path).relative_to(site_dir).parent.as_posix()
+    if rel_dir in _EXCLUDE_EXACT:
+        return True
+    return any(rel_dir == p or rel_dir.startswith(p + '/') for p in _EXCLUDE_PREFIXES)
+
+def html_link(html_path, site_url):
+    rel_dir = Path(html_path).relative_to(site_dir).parent.as_posix()
+    return site_url.rstrip('/') + '/' if rel_dir == '.' else f"{site_url.rstrip('/')}/{rel_dir}/"
+
+def extract_title(html, site_name):
+    m = _TITLE_RE.search(html)
+    if not m:
+        return ''
+    title = unescape(m.group(1)).strip()
+    suffix = f' - {site_name}'
+    return title[:-len(suffix)] if site_name and title.endswith(suffix) else title
+
+def extract_description(html):
+    m = _DESC_RE.search(html) or _OG_DESC_RE.search(html)
+    return unescape(m.group(1)).strip() if m else ''
+
+def has_pub_time(html):
+    return bool(_TIME_RE.search(html))
 
 def render_rss_item(i):
     desc = f'\n      <description>{escape(i["description"])}</description>' if i['description'] else ''
@@ -108,25 +147,42 @@ def render_rss_item(i):
     )
 
 def generate_rss():
-    cfg = load_config().get('project', {})
-    site_url, site_name, site_description = cfg.get('site_url', ''), cfg.get('site_name', 'RSS'), cfg.get('site_description', '')
+    cfg = load_config()
+    site_url = cfg.get('site_url', '')
+    site_name = cfg.get('site_name', 'RSS')
+    site_description = cfg.get('site_description', '')
+    title_index = build_title_index()
 
     entries = []
-    for p in sorted(docs_dir.rglob('*.md')):
-        if 'assets' in p.relative_to(docs_dir).parts[:-1]:
+    for html_path in sorted(find_site_pages()):
+        rel = os.path.relpath(html_path, site_dir)
+        if is_excluded_page(html_path):
+            print(f'[skip] {rel}: 命中排除路径（blog 归档/分类/标签/分页、recom）')
             continue
-        content = read_text(p)
-        if not extract_rss_enabled(content):
+        html = read_text(html_path)
+        if not has_pub_time(html):
+            print(f'[skip] {rel}: 页面里没有 <time> 元素')
             continue
-        title = extract_title(content, p.stem)
-        blob_hash, first_commit_date = git_first_commit(p)
-        pub_date = resolve_pub_date(p, content, first_commit_date)
-        if not (title and pub_date):
+        title = extract_title(html, site_name)
+        if not title:
+            print(f'[skip] {rel}: 拿不到 <title>')
             continue
-        link = slug_to_url(site_url, markdown_path_to_slug(str(p.relative_to(docs_dir))))
-        pub_second = pub_date.astimezone(timezone.utc).strftime('%Y-%m-%dT%H:%M:%S')
-        guid = hashlib.md5((blob_hash or f'{pub_second}{link}').encode()).hexdigest()
-        entries.append({'title': title, 'link': link, 'guid': guid, 'description': extract_description(content), 'pub_date': pub_date})
+        md_path = title_index.get(title)
+        if not md_path:
+            print(f'[skip] {rel}: 按标题 "{title}" 反查不到 docs/ 源文件')
+            continue
+        pub_date = resolve_pub_date(md_path)
+        if not pub_date:
+            print(f'[skip] {rel}: 源文件 {md_path} 拿不到任何日期')
+            continue
+        link = html_link(html_path, site_url)
+        entries.append({
+            'title': title,
+            'link': link,
+            'guid': hashlib.md5(link.encode()).hexdigest(),
+            'description': extract_description(html),
+            'pub_date': pub_date,
+        })
 
     entries.sort(key=lambda i: (i['pub_date'], i['title']), reverse=True)
 
@@ -165,7 +221,7 @@ def process_index():
         r'\1\2',
         new_index_content
     )
-    
+
     if new_index_content != index_content:
         with open(index_path, 'w', encoding='utf-8') as f:
             f.write(new_index_content)
@@ -270,5 +326,5 @@ if __name__ == '__main__':
     process_index()
     process()
     hide_articles()
-    generate_rss()
     activate_essays_tab()
+    generate_rss()
