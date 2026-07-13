@@ -157,23 +157,23 @@ def generate_rss():
     for html_path in sorted(find_site_pages()):
         rel = os.path.relpath(html_path, site_dir)
         if is_excluded_page(html_path):
-            print(f'[skip] {rel}: 命中排除路径（blog 归档/分类/标签/分页、recom）')
+            # print(f'[skip] {rel}: 命中排除路径（blog 归档/分类/标签/分页、recom）')
             continue
         html = read_text(html_path)
         if not has_pub_time(html):
-            print(f'[skip] {rel}: 页面里没有 <time> 元素')
+            # print(f'[skip] {rel}: 页面里没有 <time> 元素')
             continue
         title = extract_title(html, site_name)
         if not title:
-            print(f'[skip] {rel}: 拿不到 <title>')
+            # print(f'[skip] {rel}: 拿不到 <title>')
             continue
         md_path = title_index.get(title)
         if not md_path:
-            print(f'[skip] {rel}: 按标题 "{title}" 反查不到 docs/ 源文件')
+            # print(f'[skip] {rel}: 按标题 "{title}" 反查不到 docs/ 源文件')
             continue
         pub_date = resolve_pub_date(md_path)
         if not pub_date:
-            print(f'[skip] {rel}: 源文件 {md_path} 拿不到任何日期')
+            # print(f'[skip] {rel}: 源文件 {md_path} 拿不到任何日期')
             continue
         link = html_link(html_path, site_url)
         entries.append({
