@@ -1,6 +1,6 @@
 ---
 icon: simple/jetbrains
-title: 免费激活 JetBrains
+title: 激活 JetBrains
 date:
     created: 2025-03-08
     updated: 2026-01-18
