@@ -20,7 +20,7 @@ copyright: |
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/search.css
-  # - assets/stylesheets/step.css
+  - assets/stylesheets/step.css
   - assets/stylesheets/link.css
   - assets/stylesheets/table.css
   - assets/stylesheets/progress.css
@@ -40,7 +40,10 @@ theme:
     logo: local/logo
     repo: simple/github
   favicon: assets/avatar.png         # 设置浏览器标签页或标题栏显示的图标
-
+  code:
+    fold:
+      enabled: true
+      lines: 15
   features:
     - announce.dismiss
     - content.action.view            # 在页面顶部添加查看链接，指向 GitHub 上的对应文件，方便读者查看源内容
@@ -160,7 +163,6 @@ plugins:
       exclude:                                # 排除文件列表（支持 unix shell 风格的通配符）
         - index.md                            # 示例：排除 blog 文件夹下所有文件，包括子文件夹
         - blog/*                              # 示例：排除 blog 文件夹下所有文件，包括子文件夹
-        - essays/*                            # 示例：排除 essays 文件夹下所有文件，包括子文件夹
         - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
 
 extra:
