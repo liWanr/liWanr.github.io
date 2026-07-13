@@ -5,7 +5,7 @@ comments: true
 # date:
 #     craeted: 2026-03-04
 categories:
-    - Tech
+    - Docker
 ---
 
 ## 支持系统的安装说明 { id="installation-procedures-for-supported-platforms" }
