@@ -1,211 +1,211 @@
-site_name: liWanr
-site_author: liWanr
-repo_url: https://github.com/liWanr/liWanr.github.io
-repo_name: GitHub/liWanr
-site_url: https://liWanr.com/
-site_description: "Every nobody is somebody."
-dev_addr: 0.0.0.0:8000
+# site_name: liWanr
+# site_author: liWanr
+# repo_url: https://github.com/liWanr/liWanr.github.io
+# repo_name: GitHub/liWanr
+# site_url: https://liWanr.com/
+# site_description: "Every nobody is somebody."
+# dev_addr: 0.0.0.0:8000
 
-copyright: <strong>liWanr &copy; 2024-2026</strong>
+# copyright: <strong>liWanr &copy; 2024-2026</strong>
 
-extra_css:
-  - assets/stylesheets/extra.css
-  - assets/stylesheets/search.css
-  - assets/stylesheets/step.css
-  - assets/stylesheets/link.css
-  - assets/stylesheets/table.css
-  - assets/stylesheets/progress.css
+# extra_css:
+#   - assets/stylesheets/extra.css
+#   - assets/stylesheets/search.css
+#   - assets/stylesheets/step.css
+#   - assets/stylesheets/link.css
+#   - assets/stylesheets/table.css
+#   - assets/stylesheets/progress.css
 
-extra_javascript:
-  - path: assets/javascripts/extra.js
-    async: true
+# extra_javascript:
+#   - path: assets/javascripts/extra.js
+#     async: true
 
-theme:
-  name: materialx
-  language: zh                       # 设置语言,zh简中, en英文, zh-Hant繁中, zh-TW台湾
-  custom_dir: overrides              # 模板覆盖目录，用于自定义主题模板
-  font:
-    text: Noto Serif SC              # 正文字体
-    code: JetBrains Mono             # 代码块等宽字体
-  icon:
-    logo: local/logo
-    repo: simple/github
-  favicon: assets/avatar.png         # 设置浏览器标签页或标题栏显示的图标
-  code:
-    fold:
-      enabled: true
-      lines: 15
-  features:
-    - announce.dismiss
-    - content.action.view            # 在页面顶部添加查看链接，指向 GitHub 上的对应文件，方便读者查看源内容
-    - content.code.annotate          # 在代码关键位置添加图标 + 鼠标悬停提示
-    - content.code.copy              # 在代码块中添加一键复制按钮，无需先选中内容
-    - content.footnote.tooltips      # 将脚注渲染为行内工具提示（tooltip），无需跳转即可阅读
-    - content.tabs.link              # 同步切换内容标签页标题相同的标签
-    - content.tooltips               # 美化 title 提示渲染
-    - navigation.indexes             # 章节索引页功能，允许文档直接挂载到章节下（适合概览页）
-    - navigation.path                # 显示路径面包屑导航（在页面标题上方）
-    - navigation.tabs                # 在大屏幕下，将顶级章节渲染为头部下方的菜单标签页
-    - navigation.tabs.sticky         # 粘性标签页：向下滚动时标签页固定在头部下方始终可见
-    - navigation.top                 # 当用户向下滚动后开始向上滚动时，显示"返回顶部"按钮
-    - navigation.tracking            # 锚点跟踪：地址栏 URL 会自动更新为当前高亮的目录锚点
-    - search.highlight                # 搜索跳转后高亮匹配内容
-    - toc.follow                     # 目录锚点跟随：侧边栏会自动滚动，让当前激活的锚点始终可见
+# theme:
+#   name: materialx
+#   language: zh                       # 设置语言,zh简中, en英文, zh-Hant繁中, zh-TW台湾
+#   custom_dir: overrides              # 模板覆盖目录，用于自定义主题模板
+#   font:
+#     text: Noto Serif SC              # 正文字体
+#     code: JetBrains Mono             # 代码块等宽字体
+#   icon:
+#     logo: local/logo
+#     repo: simple/github
+#   favicon: assets/avatar.png         # 设置浏览器标签页或标题栏显示的图标
+#   code:
+#     fold:
+#       enabled: true
+#       lines: 15
+#   features:
+#     - announce.dismiss
+#     - content.action.view            # 在页面顶部添加查看链接，指向 GitHub 上的对应文件，方便读者查看源内容
+#     - content.code.annotate          # 在代码关键位置添加图标 + 鼠标悬停提示
+#     - content.code.copy              # 在代码块中添加一键复制按钮，无需先选中内容
+#     - content.footnote.tooltips      # 将脚注渲染为行内工具提示（tooltip），无需跳转即可阅读
+#     - content.tabs.link              # 同步切换内容标签页标题相同的标签
+#     - content.tooltips               # 美化 title 提示渲染
+#     - navigation.indexes             # 章节索引页功能，允许文档直接挂载到章节下（适合概览页）
+#     - navigation.path                # 显示路径面包屑导航（在页面标题上方）
+#     - navigation.tabs                # 在大屏幕下，将顶级章节渲染为头部下方的菜单标签页
+#     - navigation.tabs.sticky         # 粘性标签页：向下滚动时标签页固定在头部下方始终可见
+#     - navigation.top                 # 当用户向下滚动后开始向上滚动时，显示"返回顶部"按钮
+#     - navigation.tracking            # 锚点跟踪：地址栏 URL 会自动更新为当前高亮的目录锚点
+#     - search.highlight                # 搜索跳转后高亮匹配内容
+#     - toc.follow                     # 目录锚点跟随：侧边栏会自动滚动，让当前激活的锚点始终可见
 
-  palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: lucide/sun-moon
-        name: 跟随系统
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: lucide/sun
-        name: 浅色模式
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: lucide/moon
-        name: 深色模式
+#   palette:
+#     - media: "(prefers-color-scheme)"
+#       toggle:
+#         icon: lucide/sun-moon
+#         name: 跟随系统
+#     - media: "(prefers-color-scheme: light)"
+#       scheme: default
+#       toggle:
+#         icon: lucide/sun
+#         name: 浅色模式
+#     - media: "(prefers-color-scheme: dark)"
+#       scheme: slate
+#       toggle:
+#         icon: lucide/moon
+#         name: 深色模式
 
-# Markdown 扩展
-markdown_extensions:
-  - abbr                                    # 启用缩写支持
-  - attr_list                               # 启用属性列表（用于按钮、class 等）
-  - def_list                                # 启用定义列表语法
-  - footnotes                               # 启用脚注语法支持
-  - md_in_html                              # 允许在 HTML 中写 Markdown
-  - tables                                  # 启用 Markdown 表格支持
-  - pymdownx.blocks.admonition              # 新，警示块
-  - pymdownx.blocks.caption                 # 新，图片标题与对齐支持
-  - pymdownx.blocks.definition              # 新，定义块
-  - pymdownx.blocks.details                 # 新，折叠警示块
-  - pymdownx.blocks.html                    # 新，自定义 HTML 块支持
-  - pymdownx.caret                          # 上标/下标语法
-  - pymdownx.inlinehilite                   # 行内代码高亮
-  - pymdownx.magiclink                      # 魔法链接
-  - pymdownx.mark                           # 文本高亮标记
-  - pymdownx.progressbar                    # 进度条语法
-  - pymdownx.smartsymbols                   # 将某些字符序列转换为相应的符号，例如版权符号或分数
-  - pymdownx.tilde                          # 删除线与下标语法
-  - toc:                                    # 启用目录锚点永久链接
-      permalink: "#"
-      permalink_title: 锚点
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-  - pymdownx.blocks.tab:                    # 新，内容标签页
-      alternate_style: true
-      combine_header_slug: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji 
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      options:
-        custom_icons:
-          - overrides/.icons                # 自定义 SVG 图标目录
-  - pymdownx.highlight:
-      guess_lang: true
-      linenums: true                        # 为所有代码块添加行号
-      linenums_style: pymdownx-inline       # 行号样式
-      auto_title: false                     # 自动为所有代码块添加标题 ，显示所用语言的名称
-      line_spans: __span                    # 用于行级高亮的 span 标识
-      anchor_linenums: true                 # 允许代码行号作为锚点
-      pygments_lang_class: true             # 给代码块添加语言 class
-  - pymdownx.keys:                          # 启用键盘按键高亮显示
-      key_map: {a: a, b: b, c: c, d: d, e: e, f: f, g: g, h: h, i: i, j: j, k: k, l: l, m: m, n: n, o: o, p: p, q: q, r: r, s: s, t: t, u: u, v: v, w: w, x: x, y: y, z: z, A: A, B: B, C: C, D: D, E: E, F: F, G: G, H: H, I: I, J: J, K: K, L: L, M: M, N: N, O: O, P: P, Q: Q, R: R, S: S, T: T, U: U, V: V, W: W, X: X, Y: Y, Z: Z, asterisk: "*", at: "@", and: "&", sharp: "#", percent: "%", caret: "^", dollar: "$"}
-  - pymdownx.quotes:                        # 更现代的引用
-      callouts: true
-  - pymdownx.snippets:
-      auto_append:
-        - includes/abbreviations.md         # 自动引入缩写定义文件
-  - pymdownx.superfences:                   # 启用 Mermaid 图表
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tasklist:                      # 使用自定义复选框样式
-      custom_checkbox: true
+# # Markdown 扩展
+# markdown_extensions:
+#   - abbr                                    # 启用缩写支持
+#   - attr_list                               # 启用属性列表（用于按钮、class 等）
+#   - def_list                                # 启用定义列表语法
+#   - footnotes                               # 启用脚注语法支持
+#   - md_in_html                              # 允许在 HTML 中写 Markdown
+#   - tables                                  # 启用 Markdown 表格支持
+#   - pymdownx.blocks.admonition              # 新，警示块
+#   - pymdownx.blocks.caption                 # 新，图片标题与对齐支持
+#   - pymdownx.blocks.definition              # 新，定义块
+#   - pymdownx.blocks.details                 # 新，折叠警示块
+#   - pymdownx.blocks.html                    # 新，自定义 HTML 块支持
+#   - pymdownx.caret                          # 上标/下标语法
+#   - pymdownx.inlinehilite                   # 行内代码高亮
+#   - pymdownx.magiclink                      # 魔法链接
+#   - pymdownx.mark                           # 文本高亮标记
+#   - pymdownx.progressbar                    # 进度条语法
+#   - pymdownx.smartsymbols                   # 将某些字符序列转换为相应的符号，例如版权符号或分数
+#   - pymdownx.tilde                          # 删除线与下标语法
+#   - toc:                                    # 启用目录锚点永久链接
+#       permalink: "#"
+#       permalink_title: 锚点
+#       slugify: !!python/object/apply:pymdownx.slugs.slugify
+#         kwds:
+#           case: lower
+#   - pymdownx.blocks.tab:                    # 新，内容标签页
+#       alternate_style: true
+#       combine_header_slug: true
+#       slugify: !!python/object/apply:pymdownx.slugs.slugify
+#         kwds:
+#           case: lower
+#   - pymdownx.emoji:
+#       emoji_index: !!python/name:material.extensions.emoji.twemoji 
+#       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+#       options:
+#         custom_icons:
+#           - overrides/.icons                # 自定义 SVG 图标目录
+#   - pymdownx.highlight:
+#       guess_lang: true
+#       linenums: true                        # 为所有代码块添加行号
+#       linenums_style: pymdownx-inline       # 行号样式
+#       auto_title: false                     # 自动为所有代码块添加标题 ，显示所用语言的名称
+#       line_spans: __span                    # 用于行级高亮的 span 标识
+#       anchor_linenums: true                 # 允许代码行号作为锚点
+#       pygments_lang_class: true             # 给代码块添加语言 class
+#   - pymdownx.keys:                          # 启用键盘按键高亮显示
+#       key_map: {a: a, b: b, c: c, d: d, e: e, f: f, g: g, h: h, i: i, j: j, k: k, l: l, m: m, n: n, o: o, p: p, q: q, r: r, s: s, t: t, u: u, v: v, w: w, x: x, y: y, z: z, A: A, B: B, C: C, D: D, E: E, F: F, G: G, H: H, I: I, J: J, K: K, L: L, M: M, N: N, O: O, P: P, Q: Q, R: R, S: S, T: T, U: U, V: V, W: W, X: X, Y: Y, Z: Z, asterisk: "*", at: "@", and: "&", sharp: "#", percent: "%", caret: "^", dollar: "$"}
+#   - pymdownx.quotes:                        # 更现代的引用
+#       callouts: true
+#   - pymdownx.snippets:
+#       auto_append:
+#         - includes/abbreviations.md         # 自动引入缩写定义文件
+#   - pymdownx.superfences:                   # 启用 Mermaid 图表
+#       custom_fences:
+#         - name: mermaid
+#           class: mermaid
+#           format: !!python/name:pymdownx.superfences.fence_code_format
+#   - pymdownx.tasklist:                      # 使用自定义复选框样式
+#       custom_checkbox: true
   
-plugins:
-  # - tags                                      # 标签
-  - meta
-  - search                                    # 搜索功能
-  - blog:
-      archive_date_format: yyyy               # 归档时间格式
-      blog_toc: true                          # 在 Blog 主页中显示文章目录
-      post_date_format: long                  # 日期格式 yyyy mm dd
-      post_excerpt: optional                  # 摘录，optional选择写，required必写
-      post_excerpt_separator: <!-- more -->   # 生成摘录，more 以上为摘录
-      post_url_date_format: yyyy/MM
-  - glightbox:                                # 图片放大功能
-      draggable: true                         # 图片可拖动
-      touchNavigation: true                   # 触摸触摸导航(滑动)
-      loop: true                              # 图片循环  
-      skip_classes:
-            - movie-links
-  - document-dates:         
-      position: top                           # 显示位置：top（标题下方） bottom（文档末尾），默认: top
-      type: date                              # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date
-      date_format: '%Y-%m-%d'                 # e.g., %Y-%m-%d, %b %d, %Y
-      time_format: '%H:%M:%S'                 # valid only if type=datetime
-      exclude:                                # 排除文件列表（支持 unix shell 风格的通配符）
-        - index.md                            # 示例：排除 blog 文件夹下所有文件，包括子文件夹
-        - blog/*                              # 示例：排除 blog 文件夹下所有文件，包括子文件夹
-        - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
+# plugins:
+#   # - tags                                      # 标签
+#   - meta
+#   - search                                    # 搜索功能
+#   - blog:
+#       archive_date_format: yyyy               # 归档时间格式
+#       blog_toc: true                          # 在 Blog 主页中显示文章目录
+#       post_date_format: long                  # 日期格式 yyyy mm dd
+#       post_excerpt: optional                  # 摘录，optional选择写，required必写
+#       post_excerpt_separator: <!-- more -->   # 生成摘录，more 以上为摘录
+#       post_url_date_format: yyyy/MM
+#   - glightbox:                                # 图片放大功能
+#       draggable: true                         # 图片可拖动
+#       touchNavigation: true                   # 触摸触摸导航(滑动)
+#       loop: true                              # 图片循环  
+#       skip_classes:
+#             - movie-links
+#   - document-dates:         
+#       position: top                           # 显示位置：top（标题下方） bottom（文档末尾），默认: top
+#       type: date                              # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date
+#       date_format: '%Y-%m-%d'                 # e.g., %Y-%m-%d, %b %d, %Y
+#       time_format: '%H:%M:%S'                 # valid only if type=datetime
+#       exclude:                                # 排除文件列表（支持 unix shell 风格的通配符）
+#         - index.md                            # 示例：排除 blog 文件夹下所有文件，包括子文件夹
+#         - blog/*                              # 示例：排除 blog 文件夹下所有文件，包括子文件夹
+#         - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
 
-extra:
-  generator: false                          # 移除 "Made with ***" 声明
+# extra:
+#   generator: false                          # 移除 "Made with ***" 声明
 
-  analytics:
-    provider: google
-    property: G-JJZ9XN4L96
+#   analytics:
+#     provider: google
+#     property: G-JJZ9XN4L96
 
-  annotate:
-    Bash:
-      - .s2
+#   annotate:
+#     Bash:
+#       - .s2
 
-  status:
-    new: 最新发布
+#   status:
+#     new: 最新发布
 
-  # ----  本地部署的底部链接  ----
-  social:
-    - icon: lucide/folder
-      link: https://local.liwanr.com:24/public/
-      name: Public
-    - icon: lucide/folder-lock
-      link: https://local.liwanr.com:24/private/
-      name: Private
-    - icon: simple/openwrt
-      link: http://10.0.0.1
-      name: Openwrt
-    - icon: lucide/hard-drive
-      link: http://10.0.0.1:16601
-      name: Lucky
-    - icon: lucide/rss
-      link: /rss.xml
-      name: RSS订阅
-    - icon: lucide/languages
-      link: https://translate.google.com/?hl=zh-CN&sl=zh-CN&tl=en&op=translate
-      name: Translate
+#   # ----  本地部署的底部链接  ----
+#   social:
+#     - icon: lucide/folder
+#       link: https://local.liwanr.com:24/public/
+#       name: Public
+#     - icon: lucide/folder-lock
+#       link: https://local.liwanr.com:24/private/
+#       name: Private
+#     - icon: simple/openwrt
+#       link: http://10.0.0.1
+#       name: Openwrt
+#     - icon: lucide/hard-drive
+#       link: http://10.0.0.1:16601
+#       name: Lucky
+#     - icon: lucide/rss
+#       link: /rss.xml
+#       name: RSS订阅
+#     - icon: lucide/languages
+#       link: https://translate.google.com/?hl=zh-CN&sl=zh-CN&tl=en&op=translate
+#       name: Translate
 
-nav:
-  - HOME: index.md
-  - ESSAYS: essays/index.md
-  - BLOG:
-    - blog/index.md
-    - 沙龙: blog/posts/shalong.md
-  - RECOM:
-    - recom/website.md
-    - recom/links.md
-    - recom/open-source.md
-    - recom/tools.md
-    - recom/movie.md
-    - recom/tuibeitu.md
-    - Projects:
-      - recom/projects/index.md
-      - recom/projects/dossier.md
-      - recom/projects/FUCK.md
-  - ABOUT: about.md
+# nav:
+#   - HOME: index.md
+#   - ESSAYS: essays/index.md
+#   - BLOG:
+#     - blog/index.md
+#     - 沙龙: blog/posts/shalong.md
+#   - RECOM:
+#     - recom/website.md
+#     - recom/links.md
+#     - recom/open-source.md
+#     - recom/tools.md
+#     - recom/movie.md
+#     - recom/tuibeitu.md
+#     - Projects:
+#       - recom/projects/index.md
+#       - recom/projects/dossier.md
+#       - recom/projects/FUCK.md
+#   - ABOUT: about.md
