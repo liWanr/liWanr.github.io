@@ -1,0 +1,46 @@
+/* ============================================
+   自定义鼠标光标 - Serene Ink 风格
+   适配 Zensical / Material for MkDocs 明暗主题
+   ============================================ */
+
+#cursor {
+  background: var(--md-accent-fg-color); /* 主题色变量，不是写死的橙色 */
+  mix-blend-mode: hard-light; /* 不是 difference！ */
+  opacity: 0;
+  width: 0.75rem;  /* size-3 = 12px */
+  height: 0.75rem;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* 启用自定义光标时，隐藏系统默认光标 */
+html.has-custom-cursor,
+html.has-custom-cursor * {
+  cursor: none !important;
+}
+
+/* ============================================
+   光标开关按钮
+   ============================================ */
+
+#cursor-toggle {
+  background: var(--md-accent-fg-color); /* 主题色变量，不是写死的橙色 */
+  mix-blend-mode: hard-light; /* 不是 difference！ */
+  opacity: 0;
+  width: 0.75rem;  /* size-3 = 12px */
+  height: 0.75rem;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#cursor-toggle.opacity-50 {
+  opacity: 0.5;
+}

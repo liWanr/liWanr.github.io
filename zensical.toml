@@ -80,10 +80,15 @@ extra_css = [
     "assets/stylesheets/link.css",
     "assets/stylesheets/table.css",
     "assets/stylesheets/progress.css",
+    "assets/stylesheets/cursor.css",
 ]
 
 [[project.extra_javascript]]
 path = "assets/javascripts/extra.js"
+async = true
+
+[[project.extra_javascript]]
+path = "assets/javascripts/cursor.js"
 async = true
 
 [project.theme]
@@ -104,6 +109,9 @@ features = [
     "content.tabs.link",            # 同步切换内容标签页标题相同的标签
     "content.tooltips",             # 美化 title 提示渲染
     "navigation.indexes",           # 章节索引页功能，允许文档直接挂载到章节下（适合概览页）
+    "navigation.instant",           # instant navigation（即时导航）
+    "navigation.instant.progress",  # 加载慢的时候，页面顶部会出现一条进度条
+    "navigation.instant.prefetch",  # 可选，鼠标悬停链接时提前预加载，减少等待感
     "navigation.path",              # 显示路径面包屑导航（在页面标题上方）
     "navigation.tabs",              # 在大屏幕下，将顶级章节渲染为头部下方的菜单标签页
     "navigation.tabs.sticky",       # 粘性标签页：向下滚动时标签页固定在头部下方始终可见
