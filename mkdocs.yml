@@ -6,16 +6,7 @@ site_url: https://liWanr.com/
 site_description: "Every nobody is somebody."
 dev_addr: 0.0.0.0:8000
 
-copyright: |
-  <div style="font-feature-settings: 'ss04' off;">
-      <strong>liWanr &copy; 2024-2026</strong>
-      <img src="https://views.whatilearened.today/views/github/liWanr/liWanr.github.io.svg" alt="views" style="width: 56px; position: relative; top: 2.8px;">
-      <small>
-          <a href="/recom/links/">LINKS</a>
-          |
-          <a href="https://icp.gov.moe/?keyword=20261874" style="font-feature-settings: 'ss04' off;" target="_blank">萌ICP备 20261874 号</a>
-      </small>
-  </div>
+copyright: <strong>liWanr &copy; 2024-2026</strong>
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -139,6 +130,7 @@ markdown_extensions:
       custom_checkbox: true
   
 plugins:
+  # - tags                                      # 标签
   - meta
   - search                                    # 搜索功能
   - blog:
@@ -154,7 +146,6 @@ plugins:
       loop: true                              # 图片循环  
       skip_classes:
             - movie-links
-  - tags                                      # 标签
   - document-dates:         
       position: top                           # 显示位置：top（标题下方） bottom（文档末尾），默认: top
       type: date                              # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date

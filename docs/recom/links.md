@@ -44,7 +44,7 @@ rss: no
     { title="跟他抢 BlogsClub 每日首签注意到的，文字风格比较喜欢" }
 ///
 
-## 加入的博客组织
+## 拥抱组织
 
 ///html | div.grid.cards
 
@@ -54,6 +54,12 @@ rss: no
     [申请](https://www.travellings.cn/docs/join.html) |
     [开往](https://www.travellings.cn/go.html) |
     [广场](https://list.travellings.cn/)
+
+-   **萌国ICP备案**
+
+    [官网](https://icp.gov.moe/aboutus.php) |
+    [申请](https://icp.gov.moe/join.php) |
+    [萌ICP备 20261874 号](https://icp.gov.moe/?keyword=20261874)
 
 -   **BlogFinder**
 
