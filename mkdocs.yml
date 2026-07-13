@@ -156,10 +156,10 @@ plugins:
       type: date                              # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date
       date_format: '%Y-%m-%d'                 # e.g., %Y-%m-%d, %b %d, %Y
       time_format: '%H:%M:%S'                 # valid only if type=datetime
-      show_updated: false                     # 指定是否显示上次更新日期。
       exclude:                                # 排除文件列表（支持 unix shell 风格的通配符）
         - index.md                            # 示例：排除 blog 文件夹下所有文件，包括子文件夹
         - blog/*                              # 示例：排除 blog 文件夹下所有文件，包括子文件夹
+        - essays/*                            # 示例：排除 essays 文件夹下所有文件，包括子文件夹
         - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
 
 extra:
