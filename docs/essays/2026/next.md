@@ -4,7 +4,7 @@ comments: true
 description: 搜了搜那条视频，想再看一眼，但已经找不到原作者了。退出，继续下一条。
 ---
 
-<link rel="stylesheet" href="../../assets/stylesheets/essays.css">
+<link rel="stylesheet" href="/assets/stylesheets/essays.css">
 
 黄执中在某次辩论里表达过一个大意：死亡从来不只是终点，它会往回走，重新定义一个人活着时的意义。从此她是谁、做过什么，都要被那场死亡重新解释一遍[^1]。
 

@@ -72,7 +72,7 @@ hide:
 </form>
 <p id="rss-ring-message"></p>
 
-<script src="../assets/javascripts/about.js"></script>
+<script src="/assets/javascripts/about.js"></script>
 
 
 ## :lucide-history: TimeLine

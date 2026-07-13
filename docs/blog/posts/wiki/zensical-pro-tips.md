@@ -14,7 +14,7 @@ tags:
 | [**Icons**](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/ "图标和表情")
 | [**Lucide**](https://lucide.dev/icons/ "图标")
 
-<script src="../../../assets/javascripts/keys.js"></script>
+<script src="/assets/javascripts/keys.js"></script>
 
 ## 键盘按键格式
 
@@ -187,7 +187,7 @@ def bubble_sort(items): # (1)!
     ```css
     @font-face {
     font-family: "MiSans";
-    src: url("../fonts/MiSans-Regular.woff2") format("woff2");
+    src: url("/assets/fonts/MiSans-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;

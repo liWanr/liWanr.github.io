@@ -9,7 +9,7 @@ tags:
     - Exper
 ---
 
-<link rel="stylesheet" href="../assets/stylesheets/movie.css">
+<link rel="stylesheet" href="/assets/stylesheets/movie.css">
 
 <p align="right" markdown>
 排名不分先后

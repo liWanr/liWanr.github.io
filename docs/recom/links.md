@@ -9,7 +9,7 @@ tags:
     - Exper
 ---
 
-<link rel="stylesheet" href="../assets/stylesheets/links.css">
+<link rel="stylesheet" href="/assets/stylesheets/links.css">
 
 ## 我的信息
 

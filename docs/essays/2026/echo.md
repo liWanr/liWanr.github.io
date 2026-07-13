@@ -4,7 +4,7 @@ comments: true
 description: 他一直觉得自己小时候是没有声音的人。
 ---
 
-<link rel="stylesheet" href="../../assets/stylesheets/essays.css">
+<link rel="stylesheet" href="/assets/stylesheets/essays.css">
 
 他一直觉得自己小时候是没有声音的人。
 

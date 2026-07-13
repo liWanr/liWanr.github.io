@@ -36,7 +36,7 @@ small {
 /* 字体 */
 @font-face {
     font-family: "MiSansVF";
-    src: url("../fonts/MiSansVF.ttf") format("truetype");
+    src: url("/assets/fonts/MiSansVF.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
