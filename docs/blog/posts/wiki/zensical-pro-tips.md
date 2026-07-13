@@ -6,7 +6,7 @@ date:
     created: 2025-12-16
     updated: 2026-03-24
 categories:
-    - Exper
+    - Wiki
 ---
 
 [**Mermaid**](https://mermaid.ai/open-source/syntax/flowchart.html "图标")

@@ -5,7 +5,7 @@ comments: true
 date:
     created: 2026-02-18
 categories:
-    - Exper
+    - Wiki
 ---
 
 ## 删除 Win+V 快捷键
