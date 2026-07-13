@@ -15,7 +15,7 @@ hide:
 /// html | div.essays
 
 ////tab | **2026**
-- [**26 年上半年**](./2026/mid-26-review.md){data-date="2026-07-13"}
+- [**26 年上半年**](./2026/first-half-26.md){data-date="2026-07-13"}
 
 - [**回响**](./2026/echo.md){data-date="2026-07-12"}
 
