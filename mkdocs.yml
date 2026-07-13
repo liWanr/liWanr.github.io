@@ -136,6 +136,7 @@ markdown_extensions:
       custom_checkbox: true
   
 plugins:
+  - meta
   - search                                    # 搜索功能
   - blog:
       archive_date_format: yyyy               # 归档时间格式
