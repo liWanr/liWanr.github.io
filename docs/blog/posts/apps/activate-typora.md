@@ -4,7 +4,7 @@ title: 激活 Typora
 comments: true
 # date:
 #   created: 2026-03-21
-tags:
+categories:
     - Exper
 ---
 

@@ -4,7 +4,7 @@ title: Mac 强开 Apple AI
 comments: true
 # date:
 #   created: 2026-03-26
-tags:
+categories:
     - Exper
 ---
 

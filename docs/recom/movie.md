@@ -5,7 +5,7 @@ comments: true
 # date:
 #     created: 2026-05-08
 rss: no
-tags:
+categories:
     - Exper
 ---
 

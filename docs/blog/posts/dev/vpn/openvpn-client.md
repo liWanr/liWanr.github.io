@@ -4,7 +4,7 @@ title: 使用 OpenVPN Client
 comments: true
 # date:
 #     created: 2025-01-20 16:30
-tags:
+categories:
     - Tech
 ---
 

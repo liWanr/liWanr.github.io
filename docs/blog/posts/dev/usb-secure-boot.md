@@ -5,7 +5,7 @@ comments: true
 # date:
 #     created: 2025-01-20
 #     updated: 2026-01-12
-tags:
+categories:
     - Exper
 ---
 

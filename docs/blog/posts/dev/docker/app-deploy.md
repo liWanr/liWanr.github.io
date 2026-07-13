@@ -5,7 +5,7 @@ comments: true
 # date:
 #     craeted: 2026-03-10
 #     updated: 2026-03-24
-tags:
+categories:
     - Tech
 ---
 

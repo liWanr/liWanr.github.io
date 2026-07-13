@@ -4,7 +4,7 @@ title: 反向代理
 comments: true
 # date:
 #     created: 2026-03-11
-tags:
+categories:
     - Tech
 ---
 

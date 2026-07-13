@@ -4,7 +4,7 @@ title: vim
 comments: true
 # date:
 #     created: 2026-02-22
-tags:
+categories:
     - Tech
 ---
 

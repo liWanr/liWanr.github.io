@@ -4,7 +4,7 @@ title: 推背图
 comments: true
 # date:
 #   created: 2026-04-12
-tags:
+categories:
     - Share
 ---
 

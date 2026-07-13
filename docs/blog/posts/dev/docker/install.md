@@ -4,7 +4,7 @@ title: 安装
 comments: true
 # date:
 #     craeted: 2026-03-04
-tags:
+categories:
     - Tech
 ---
 
