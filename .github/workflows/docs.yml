@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt
-      - run: mkdocs build --clean
+      - run: zensical build --clean
       - name: Post process site with Python
         run: python custom_fixes.py
       - uses: actions/upload-pages-artifact@v5
