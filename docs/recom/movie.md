@@ -1,7 +1,6 @@
 ---
 icon: lucide/clapperboard
 title: 屌爆了的电影
-comments: true
 authors: 
     - TMDB
 ---

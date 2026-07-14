@@ -2,7 +2,6 @@
 icon: lucide/star
 title: 屌爆了的开源
 created: 2025-12-16
-comments: true
 authors: 
     - opensource
 ---

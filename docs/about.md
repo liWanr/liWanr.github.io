@@ -1,6 +1,5 @@
 ---
 title: About Somethings
-comments: true
 created: 2025-12-16
 hide:
     - navigation

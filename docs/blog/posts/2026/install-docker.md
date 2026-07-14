@@ -1,9 +1,7 @@
 ---
 icon: octicons/download-16
 title: Docker 安装
-comments: true
-date:
-    created: 2026-03-04
+date: 2026-03-04
 categories:
     - Docker
 ---

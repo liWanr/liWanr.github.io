@@ -1,9 +1,7 @@
 ---
 icon: simple/vim
 title: Vim 使用小全
-comments: true
-date:
-    created: 2026-02-22
+date: 2026-02-22
 categories:
     - DevOps
 ---

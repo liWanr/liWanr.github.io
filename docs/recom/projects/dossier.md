@@ -1,7 +1,6 @@
 ---
 icon: lucide/hat-glasses
 title: 侦探事务所 · Dossier
-comments: true
 ---
 
 ///html | small

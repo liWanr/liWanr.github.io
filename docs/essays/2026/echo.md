@@ -1,6 +1,5 @@
 ---
 title: 回响
-comments: true
 description: 他一直觉得自己小时候是没有声音的人。
 ---
 

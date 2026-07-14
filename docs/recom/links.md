@@ -1,7 +1,6 @@
 ---
 icon: lucide/rss
 title: 屌爆了的博客
-comments: true
 created: 2026-05-07
 ---
 

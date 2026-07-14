@@ -1,7 +1,6 @@
 ---
 icon: lucide/satellite
 title: 异地组网
-comments: true
 authors: 
     - Jiao
 date:

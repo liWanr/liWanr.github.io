@@ -1,11 +1,10 @@
 ---
 icon: lucide/camera
 title: 沙龙
-comments: true
+date: 2026-06-23
+pin: true
 authors: 
     - Wyman
-date:
-    created: 2026-06-23
 description: 其实 人生并非虚耗 何来尘埃飞舞
 ---
 
