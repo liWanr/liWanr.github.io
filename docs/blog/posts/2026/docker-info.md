@@ -12,7 +12,7 @@ categories:
 
 | 平台 | x86_64<br>/ amd64 | arm64<br>/ aarch64 | arm-32bit | ppc64le | s390x |
 | :-: | :-: | :--: | :-: | :-: | :-: |
-| [**Ubuntu 22.04+**](/dev/docker/install/#ubuntu){ data-preview } | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [**Ubuntu 22.04+**](/blog/2026/install-docker/#ubuntu){ data-preview } | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [**Debian 11+**](https://docs.docker.com/engine/install/debian/) | ✅ | ✅ | ✅ | ✅ | - |
 | [**CentOS 9+**](https://docs.docker.com/engine/install/centos/) | ✅ | ✅ | - | ✅ | - |
 | [二进制包](https://docs.docker.com/engine/install/binaries/) | ✅ | ✅ | ✅ | - | - |
