@@ -142,6 +142,7 @@ plugins:
       post_excerpt: optional                  # 摘录，optional选择写，required必写
       post_excerpt_separator: <!-- more -->   # 生成摘录，more 以上为摘录
       post_url_date_format: yyyy
+      post_url_format: "{date}/{file}"
       categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
