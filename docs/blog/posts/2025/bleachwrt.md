@@ -3,9 +3,7 @@ icon: lucide/satellite
 title: 异地组网
 authors: 
     - Jiao
-date:
-    created: 2025-01-20
-    updated: 2026-02-20
+date: 2025-02-22T08:30:44
 categories:
     - VPN
 ---

@@ -2,7 +2,7 @@
 icon: lucide/feather
 title: Zensical 的小技巧
 date:
-    created: 2025-12-16
+    created: 2026-01-27T07:19:20
     updated: 2026-03-24
 categories:
     - Wiki

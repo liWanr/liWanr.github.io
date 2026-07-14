@@ -3,7 +3,7 @@ icon: lucide/calendars
 title: 双系统时间同步
 date:
     created: 2024-12-25
-    updated: 2025-02-22
+    updated: 2025-02-22T08:30:54
 categories:
     - Wiki
 ---

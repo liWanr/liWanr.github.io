@@ -1,7 +1,7 @@
 ---
 icon: simple/nvidia
 title: N卡面板文件损坏
-date: 2023-02-18
+date: 2023-02-18T12:05:55
 categories:
     - DevOps
 ---

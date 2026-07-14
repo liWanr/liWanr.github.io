@@ -1,9 +1,7 @@
 ---
 icon: lucide/shield-check
 title: 激活 Ubuntu 网卡
-date:
-    created: 2025-03-30
-    updated: 2026-01-18
+date: 2025-03-30T08:09:00
 categories:
     - DevOps
 ---

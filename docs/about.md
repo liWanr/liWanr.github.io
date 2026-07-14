@@ -1,6 +1,6 @@
 ---
 title: About Somethings
-created: 2025-12-16
+created: 2025-02-22T08:30:16
 hide:
     - navigation
     - path

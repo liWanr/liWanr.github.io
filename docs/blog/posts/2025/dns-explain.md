@@ -3,7 +3,7 @@ icon: lucide/server-crash
 title: 什么是 DNS
 date:
     created: 2025-01-22
-    updated: 2025-02-26
+    updated: 2025-02-26T15:31:39
 categories:
     - Wiki
 ---
