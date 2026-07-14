@@ -3,6 +3,7 @@ import re
 import json
 import shutil
 import hashlib
+import subprocess
 import yaml
 from datetime import datetime, timedelta, timezone
 from html import escape, unescape
@@ -12,6 +13,7 @@ site_dir = 'site'
 gitignore_path = '.gitignore'
 search_json_path = os.path.join(site_dir, 'search.json')
 config_path = 'mkdocs.yml'
+docs_dir = Path('docs')
 
 # site/ 里这些 slug 是列表页/首页，不是文章本身，RSS 里天然要排除。
 SITE_EXCLUDE_SLUGS = {'', 'about', 'blog', 'essays'}
@@ -39,6 +41,7 @@ def markdown_path_to_slug(md_path):
 
 def generate_rss():
     BEIJING_TZ = timezone(timedelta(hours=8))
+    GIT_PUBDATE_CUTOFF = datetime(2026, 1, 26, 23, 19, tzinfo=BEIJING_TZ)
     TIME_TAG_RE = re.compile(r'<time\s+datetime="([^"]+)"')
     TITLE_TAG_RE = re.compile(r'<title>([^<]*)</title>')
     DESC_META_RE = re.compile(r'<meta\s+name="description"\s+content="([^"]*)"', re.I)
@@ -68,12 +71,60 @@ def generate_rss():
         m = DESC_META_RE.search(html_content)
         return unescape(m.group(1)).strip() if m else ''
 
-    def extract_pub_date_from_html(html_content):
+    def build_title_to_md_index():
+        # blog 插件的文章源文件平铺放在 docs/blog/posts/*.md，URL 里的年份
+        # （比如 blog/2026/xxx）是插件根据文章日期在构建时现算出来塞进去的，
+        # docs 源文件路径里根本没有这层年份目录，没法从 slug 反推路径。
+        # 用标题去对应 docs 源文件，不受这个影响。
+        index = {}
+        for p in docs_dir.rglob('*.md'):
+            content = read_text(p)
+            parts = content.split('---', 2)
+            fm = parts[1] if content.startswith('---') and len(parts) > 2 else ''
+            m = re.search(r'^\s*title\s*:\s*(.+?)\s*$', fm, re.M)
+            if m and m.group(1).strip().strip('"\''):
+                title = m.group(1).strip().strip('"\'')
+            else:
+                body = parts[2] if content.startswith('---') and len(parts) > 2 else content
+                hm = re.search(r'^\s*#\s+(.+?)\s*$', body, re.M)
+                title = hm.group(1).strip() if hm else p.stem
+            index.setdefault(title, p)
+        return index
+
+    def extract_created_date(md_path):
+        if not md_path.exists():
+            return None
+        content = read_text(md_path)
+        parts = content.split('---', 2)
+        front_matter = parts[1] if content.startswith('---') and len(parts) > 2 else ''
+        m = re.search(r'^\s*created\s*:\s*(.+?)\s*$', front_matter, re.M | re.I)
+        return parse_iso_datetime(m.group(1)) if m else None
+
+    def git_first_commit_date(md_path):
+        if not md_path.exists():
+            return None
+        out = subprocess.run(
+            ['git', 'log', '--follow', '--format=%aI', '--', str(md_path)],
+            capture_output=True, text=True, check=False,
+        ).stdout
+        lines = [l for l in out.strip().splitlines() if l.strip()]
+        return parse_iso_datetime(lines[-1]) if lines else None
+
+    def extract_pub_date_from_html(html_content, title, title_to_md):
         # 页面里可能有 <time datetime="2025-12-16T00:00:00+00:00"> 或
         # <time datetime="2026-06-23 00:00:00+00:00" class="md-ellipsis"> 两种写法，
-        # 都只取 datetime 属性本身，第一个出现的就是创建时间。
+        # 都只取 datetime 属性本身。
         m = TIME_TAG_RE.search(html_content)
-        return parse_iso_datetime(m.group(1)) if m else None
+        html_time = parse_iso_datetime(m.group(1)) if m else None
+
+        md_path = title_to_md.get(title)
+
+        # 2026-01-26 23:19 之后的时间才信 git（这个时间点之前 git 历史不可信，
+        # 是迁移时批量导入产生的，不是真实的提交时间）。
+        if html_time and html_time.astimezone(BEIJING_TZ) > GIT_PUBDATE_CUTOFF:
+            return (git_first_commit_date(md_path) if md_path else None) or html_time
+
+        return (extract_created_date(md_path) if md_path else None) or html_time
 
     def slug_to_url(site_url, slug):
         return site_url.rstrip('/') + '/' if not slug else site_url.rstrip('/') + '/' + slug.rstrip('/') + '/'
@@ -104,6 +155,7 @@ def generate_rss():
     site_url = cfg.get('site_url', '')
     site_name = cfg.get('site_name', 'RSS')
     site_description = cfg.get('site_description', '')
+    title_to_md = build_title_to_md_index()
 
     entries = []
     for r, dirs, fs in os.walk(site_dir):
@@ -124,7 +176,7 @@ def generate_rss():
         if not title:
             continue
 
-        pub_date = extract_pub_date_from_html(html_content)
+        pub_date = extract_pub_date_from_html(html_content, title, title_to_md)
         if not pub_date:
             print(f'[skip] site/{slug}/index.html 里没有找到 <time datetime="..."> ')
             continue
