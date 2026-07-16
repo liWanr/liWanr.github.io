@@ -41,6 +41,9 @@ created: 2026-05-08T07:46:22
 
 -   [**Ming**](https://mingblog.site/)
     { title="跟他抢 BlogsClub 每日首签注意到的，文字风格比较喜欢" }
+
+-   [**碎言**](https://www.suiyan.cc/)
+    { title="BlogsClub "朋友"，文字吸引到我了X2" }
 ///
 
 ## 拥抱组织
