@@ -191,7 +191,7 @@ def generate_rss():
         })
 
     entries.sort(key=lambda i: (i['pub_date'], i['title']), reverse=True)
-
+    entries = entries[:15]
     rss_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<rss version="2.0">',
