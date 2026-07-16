@@ -44,7 +44,6 @@ theme:
     - content.footnote.tooltips      # 将脚注渲染为行内工具提示（tooltip），无需跳转即可阅读
     - content.tabs.link              # 同步切换内容标签页标题相同的标签
     - content.tooltips               # 美化 title 提示渲染
-    - navigation.expand              # 默认展开侧边栏的所有章节
     - navigation.indexes             # 章节索引页功能，允许文档直接挂载到章节下（适合概览页）
     - navigation.path                # 显示路径面包屑导航（在页面标题上方）
     - navigation.tabs                # 在大屏幕下，将顶级章节渲染为头部下方的菜单标签页
