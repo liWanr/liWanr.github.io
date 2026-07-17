@@ -6,33 +6,16 @@ created: 2026-05-08T07:46:22
 
 <link rel="stylesheet" href="/assets/stylesheets/links.css">
 
-## 我的信息
-
--   **名称**: liWanr
-
--   **描述**: Every nobody is somebody.
-
--   **网址**: https://liwanr.com
-
--   **RSS**: https://liwanr.com/rss.xml
-
--   **头像**: https://liwanr.com/assets/avatar.png / [方形头像](/assets/avatar_s.JPG){ target="_blank" } / [Gravatar](https://2.gravatar.com/avatar/4cf248a4f4520f081101d70359ac97fb9a6895f6f48dd62c8fa16281b6f86cc4)
-
-
-## 友情链接
+以下是**我关注的博客**，方便时不时来 ~~视奸~~ 欣赏一下，我关注你就好，不必交换。也欢迎留下信息，喜欢的话我会默默加上。可哪天消失了也请不用难过，不是你的文章不够好，是我太花心了。
 
 ///html | small
 :octicons-light-bulb-16:
-前两位乃我好友，其余皆为我关注的博客，但都是便于我去欣赏 ~~视奸~~ 文章的，如果有一天我对某个网站失去感兴趣了，我会随时下架。如有冒犯可以[**联系我**](mailto:itsWanr@iCloud.com)删除。
+如果被冒犯到请[**联系我**](mailto:itsWanr@iCloud.com)，我会删除。
 ///
 
+## 视奸
+
 ///html | div.grid.cards
--   [**DAI X.L.**](https://dxlcq.cn/)
-    { title="骄骄是骄傲的骄" }
-
--   [**Deng C.Z.**](https://dczcq.cn/)
-    { title="Never Stop Thinking." }
-
 -   [**fuXes**](https://fuxes.cn/)
     { title="有胡言乱语、读书感想，以及日常记录。" }
 
@@ -52,7 +35,7 @@ created: 2026-05-08T07:46:22
     { title="几时归去，作个闲人。对一张琴，一壶酒，一溪云。" }
 ///
 
-## 拥抱组织
+## 组织
 
 ///html | div.grid.cards
 

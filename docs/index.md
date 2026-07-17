@@ -38,7 +38,3 @@ hide:
 | [:simple-gravatar:](https://gravatar.com/liwanr){ title="Gravatar" }
 | [:lucide-handshake:](/recom/links/){ title="朋友组织" }
 | [:lucide-scale:](/about/#license){ title="开源许可" }
-
-<!-- [*《乌河》*](/essays/2026/the-black-river/){ title="上游的人死了，这里的人还在争，下游的人还没出生" }
-[*《囚徒日记》*](/essays/2026/Captive-Journal/){ title="文字在牢里引燃火柴，照不亮谁的路，但能让那些看得见的明白：此地亦有人" }
-[*《沙龙》*](/blog/posts/shalong/){ title="其实 人生并非虚耗 何来尘埃飞舞" } -->
