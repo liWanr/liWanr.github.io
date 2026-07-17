@@ -15,6 +15,7 @@ extra_css:
   - assets/stylesheets/link.css
   - assets/stylesheets/table.css
   - assets/stylesheets/progress.css
+  # - assets/stylesheets/essays.css
 
 extra_javascript:
   - assets/javascripts/progress.js
@@ -137,7 +138,7 @@ plugins:
   - blog:
       archive_date_format: yyyy               # 归档时间格式
       blog_toc: true                          # 在 Blog 主页中显示文章目录
-      post_date_format: long                  # 日期格式 yyyy mm dd
+      post_date_format: "yyyy/MM/dd"                  # 日期格式 yyyy mm dd
       post_excerpt: optional                  # 摘录，optional选择写，required必写
       post_excerpt_separator: <!-- more -->   # 生成摘录，more 以上为摘录
       post_url_date_format: yyyy
@@ -150,7 +151,7 @@ plugins:
       archive: true
       archive_date_format: yyyy               # 归档时间格式
       blog_toc: true                          # 在 Blog 主页中显示文章目录
-      post_date_format: long                  # 日期格式 yyyy mm dd
+      post_date_format: "yyyy/MM/dd"                  # 日期格式 yyyy mm dd
       post_excerpt: optional                  # 摘录，optional选择写，required必写
       post_excerpt_separator: <!-- more -->   # 生成摘录，more 以上为摘录
       post_url_date_format: yyyy
@@ -158,6 +159,10 @@ plugins:
       categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+      blog_toc: false
+      pagination: false
+      categories_pagination: false
+      archive_pagination: false
   - glightbox:                                # 图片放大功能
       draggable: true                         # 图片可拖动
       touchNavigation: true                   # 触摸触摸导航(滑动)
@@ -218,6 +223,8 @@ nav:
   - BLOG:
     - blog/index.md
     - 沙龙: blog/2026/shalong/
+    - 压缩与解压: /blog/2025/zip-unzip/
+    - Zensical 小技巧: blog/2026/zensical-pro-tips/
   - RECOM:
     - recom/website.md
     - recom/links.md

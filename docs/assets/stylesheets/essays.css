@@ -1,3 +1,73 @@
 .md-content__inner {
   font-family: "Noto Serif SC", "Songti SC";
+  font-feature-settings: "tnum";
+}
+
+/* 只影响 Essays 页面 */
+.essays {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.essays ul {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0;
+}
+
+.essays li {
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+.essays a[data-date] {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.essays a[data-date]:hover {
+  color: var(--md-accent-fg-color);
+}
+
+.essays a[data-date]::before {
+  content: "";
+  flex: 1;
+  order: 2;
+
+  align-self: center;
+
+  margin: 0.2em 0.6em 0 0.6em;
+
+  border-bottom: 1.5px dashed
+    color-mix(in srgb, currentColor 15%, transparent);
+}
+
+.essays a[data-date]::after {
+  content: attr(data-date);
+
+  order: 3;
+
+  white-space: nowrap;
+
+  font-family: var(--md-code-font);
+  font-size: 0.85em;
+  font-variant-numeric: tabular-nums;
+
+  color: var(--md-default-fg-color--light);
+}
+
+.essays a[data-date]:hover::after {
+  color: var(--md-accent-fg-color);
+}
+
+.essays a[data-date] > * {
+  order: 1;
+}
+
+.essays strong {
+  font-weight: 600;
 }

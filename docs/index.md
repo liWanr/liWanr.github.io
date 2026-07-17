@@ -22,12 +22,13 @@ hide:
 .md-content__inner {
     margin: 0 0.8rem 6rem;
 }
-.md-content__button {
+.md-content__button,
+.headerlink {
     display: none !important;
 }
 ///
 
-<h1 style="margin: 0.6em auto 0 auto; font-size:4em;">Hello, I'm liWanr!</h1>
+# Hello, I'm liWanr! { style="margin: 0.6em auto 0 auto; font-size:4em;" }
 
 记录「技术与思考」的个人空间，也是我在数字世界中圈出的三分地
 { style="margin-top:0px" }

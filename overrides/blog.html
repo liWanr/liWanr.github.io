@@ -1,0 +1,60 @@
+{% extends "main.html" %}
+
+{% block container %}
+
+<div class="md-content" data-md-component="content">
+  <div class="md-content__inner">
+
+    {% if page.url.startswith("essays/") %}
+
+      <link rel="stylesheet" href="/assets/stylesheets/essays.css">
+
+      <article class="md-content__inner md-typeset">
+        {{ page.content }}
+      </article>
+
+      <div class="md-typeset">
+        <div class="essays">
+          <ul>
+            {% for post in posts %}
+            <li>
+              <a
+                href="{{ post.url | url }}"
+                data-date="{{ post.config.date.created | date }}"
+              >
+                {{ post.title }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+
+    {% else %}
+
+      <article class="md-content__inner md-typeset">
+
+        {% include "partials/actions.html" %}
+
+        {{ page.content }}
+
+      </article>
+
+
+      {% for post in posts %}
+        {% include "partials/post.html" %}
+      {% endfor %}
+
+
+    {% endif %}
+
+
+    {% if pagination %}
+      {% include "partials/pagination.html" %}
+    {% endif %}
+
+  </div>
+</div>
+
+{% endblock %}
