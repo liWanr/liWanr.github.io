@@ -2,7 +2,6 @@
 icon: lucide/camera
 title: 沙龙
 date: 2026-06-23
-pin: true
 authors: 
     - Wyman
 description: 其实 人生并非虚耗 何来尘埃飞舞
