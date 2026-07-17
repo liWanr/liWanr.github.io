@@ -16,13 +16,14 @@ created: 2026-05-08T07:46:22
 
 -   **RSS**: https://liwanr.com/rss.xml
 
--   **头像**: https://liwanr.com/assets/avatar.png or [Gravatar](https://2.gravatar.com/avatar/4cf248a4f4520f081101d70359ac97fb9a6895f6f48dd62c8fa16281b6f86cc4)
+-   **头像**: https://liwanr.com/assets/avatar.png / [方形头像](/assets/avatar_s.JPG){ target="_blank" } / [Gravatar](https://2.gravatar.com/avatar/4cf248a4f4520f081101d70359ac97fb9a6895f6f48dd62c8fa16281b6f86cc4)
+
 
 ## 友情链接
 
 ///html | small
 :octicons-light-bulb-16:
-前两位乃我好友，其余皆为我认为值得关注的博客 ~~视奸对象~~，如有冒犯可以[<u>**联系我**</u>](mailto:itsWanr@iCloud.com)删除。
+前两位乃我好友，其余皆为我关注的博客，但都是便于我去欣赏 ~~视奸~~ 文章的，如果有一天我对某个网站失去感兴趣了，我会随时下架。如有冒犯可以[**联系我**](mailto:itsWanr@iCloud.com)删除。
 ///
 
 ///html | div.grid.cards
