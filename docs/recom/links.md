@@ -20,6 +20,11 @@ created: 2026-05-08T07:46:22
 
 ## 友情链接
 
+///html | small
+:octicons-light-bulb-16:
+前两位乃我好友，其余皆为我认为值得关注的博客 ~~视奸对象~~，如有冒犯可以[<u>**联系我**</u>](mailto:itsWanr@iCloud.com)删除。
+///
+
 ///html | div.grid.cards
 -   [**DAI X.L.**](https://dxlcq.cn/)
     { title="骄骄是骄傲的骄" }

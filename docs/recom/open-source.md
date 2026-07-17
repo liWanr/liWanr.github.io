@@ -2,6 +2,7 @@
 icon: lucide/star
 title: 屌爆了的开源
 created: 2026-02-07T01:05:51
+updated: 2026-07-17T17:41:05
 authors: 
     - opensource
 ---
@@ -237,5 +238,32 @@ hr {
     - 核心功能: 播放控制、播放模式、歌单管理、收藏功能等
 
     - 支持格式: mp3 / flac / wav / ape / ogg / m4a
+
+///
+
+## 游戏类
+
+///html | div.grid.cards
+
+-   ### 我的博客
+
+    :lucide-mouse-pointer-click:
+    [**GitHub 仓库地址**](https://github.com/bosichong/MyBlogGame)
+    | [**官网**](https://www.mybloggame.com/)
+
+    ---
+
+    一款关于独立博客经营的模拟经营游戏。在游戏中，你将扮演一名博客站长，通过撰写文章、维护网站、学习技能等方式，逐步提升你的博客影响力，最终成为博客界的传奇人物。
+
+    ///html | small
+    :lucide-circle-alert:
+    开发进度：项目正在积极开发中，预计暑假发布试玩版本。当前功能尚未完善，敬请期待！
+    ///
+
+    - 开源协议: MIT license
+
+    - 支持平台: Windows / macOS / Linux（跨平台）
+
+    - 框架引擎: Godot Engine 4.0+
 
 ///
