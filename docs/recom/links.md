@@ -22,28 +22,28 @@ created: 2026-05-08T07:46:22
 
 ///html | div.grid.cards
 -   [**DAI X.L.**](https://dxlcq.cn/)
-    { title="室友，身边的技术佬，喜欢折腾" }
+    { title="骄骄是骄傲的骄" }
 
 -   [**Deng C.Z.**](https://dczcq.cn/)
-    { title="好朋友，摆烂仔，闷骚" }
+    { title="Never Stop Thinking." }
 
 -   [**fuXes**](https://fuxes.cn/)
-    { title="某组织看到的，是我写文的启发者" }
+    { title="有胡言乱语、读书感想，以及日常记录。" }
 
 -   [**双绞麻痹**](https://numb.tech/)
-    { title="某组织看到的，文字吸引到我了" }
+    { title="应似飞鸿踏雪泥" }
 
 -   [**莫比乌斯**](https://mobius.blog/)
-    { title="某组织看到的，文字吸引到我了" }
+    { title="写作，一场自我悖驳的旅程" }
 
 -   [**瓦解的生活记事**](https://hin.cool/)
-    { title="某组织看到的，文字吸引到我了" }
+    { title="分享有趣和有用的东西，记录不务正业的生活" }
 
 -   [**Ming**](https://mingblog.site/)
-    { title="跟他抢 BlogsClub 每日首签注意到的，文字风格比较喜欢" }
+    { title="记录生活里值得凝视的瞬间" }
 
 -   [**碎言**](https://www.suiyan.cc/)
-    { title="BlogsClub "朋友"，文字吸引到我了X2" }
+    { title="几时归去，作个闲人。对一张琴，一壶酒，一溪云。" }
 ///
 
 ## 拥抱组织
