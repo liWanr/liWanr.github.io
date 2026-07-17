@@ -24,8 +24,9 @@ hide:
 ///html | div.grid.cards
 -   :lucide-bug-play: **框架生成**
     网站基于现代静态网站生成器
-    [Zensical](https://zensical.org/)
+    [MaterialX](https://jaywhj.github.io/mkdocs-materialx/)
     搭建而成。
+    <!-- [Zensical](https://zensical.org/) -->
 
 -   :lucide-cloud-upload: **托管平台**
     [Local Server](https://local.liwanr.com:24)
@@ -54,13 +55,6 @@ hide:
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
-<style>
-#rss-ring-submit:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-</style>
-
 <form id="rss-ring-form">
   <input class="mdx-form__input mdx-form__input--stretch" type="email" name="email" id="bd-email" placeholder="your-email@example.com" autocomplete="email" required/>
   <button class="md-button md-button--primary" type="submit" id="rss-ring-submit" disabled>订阅</button>
@@ -88,6 +82,8 @@ hide:
 - 26年03月22日增加评论功能，次日发表第一篇文
 
 - 26年07月06日增加订阅功能，并移除了 Vercel 和 Netlify 部署
+
+- 26.07.13，Zensical的插件功能还没开发完...所以复古了[mkdocs-material](https://squidfunk.github.io/mkdocs-material/)的大佬变更版[MaterialX](https://jaywhj.github.io/mkdocs-materialx/)
 
 ///
 

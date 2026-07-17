@@ -58,3 +58,8 @@
     min-width: 0;
     padding: .5rem 1rem;
 }
+
+#rss-ring-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
