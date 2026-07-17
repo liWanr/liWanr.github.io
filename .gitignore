@@ -10,5 +10,5 @@ nginx.conf
 build.sh
 
 # 不发布的文章
-docs/essays/2026/toy-store.md
+toy-store.md
 

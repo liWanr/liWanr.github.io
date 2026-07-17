@@ -1,7 +1,5 @@
 import os
 import re
-import json
-import shutil
 import hashlib
 import subprocess
 import yaml
@@ -10,18 +8,14 @@ from html import escape, unescape
 from pathlib import Path
 
 site_dir = 'site'
-gitignore_path = '.gitignore'
-search_json_path = os.path.join(site_dir, 'search.json')
 config_path = 'mkdocs.yml'
 docs_dir = Path('docs')
 
 # site/ 里这些 slug 是列表页/首页，不是文章本身，RSS 里天然要排除。
 SITE_EXCLUDE_SLUGS = {'', 'about', 'blog', 'essays'}
 
-# 手动在这里加需要从 RSS 中排除的路径（对应最终 URL 的 slug，不带域名，不带首尾斜杠）。
-# 可以填具体文章，也可以填目录前缀（会排除该目录下所有文章），例如：
-# RSS_IGNORE_SLUGS = {'blog/some-post', 'essays/2026'}
-RSS_IGNORE_SLUGS = {'blog/archive', 'blog/category', 'blog/page'}
+# 手动在这里加需要从 RSS 中排除的路径。
+RSS_IGNORE_SLUGS = {'blog/archive', 'blog/category', 'blog/page', 'essays/archive', 'essays/category', 'essays/page'}
 
 
 class _ConfigLoader(yaml.SafeLoader):
@@ -29,15 +23,9 @@ class _ConfigLoader(yaml.SafeLoader):
     自定义 tag 引用 pymdownx 的函数（如 toc.slugify），我们只需要读顶层配置，
     没必要真的构造这些对象，遇到就原样忽略即可。"""
 
-
 _ConfigLoader.add_multi_constructor(
     'tag:yaml.org,2002:python/', lambda loader, tag_suffix, node: None
 )
-
-
-def markdown_path_to_slug(md_path):
-    slug = md_path.replace('\\', '/').strip().removeprefix('docs/').removesuffix('.md')
-    return '' if slug == 'index' else slug.removesuffix('/index').rstrip('/')
 
 def generate_rss():
     BEIJING_TZ = timezone(timedelta(hours=8))
@@ -116,6 +104,10 @@ def generate_rss():
         # 都只取 datetime 属性本身。
         m = TIME_TAG_RE.search(html_content)
         html_time = parse_iso_datetime(m.group(1)) if m else None
+        # HTML 里的 datetime 虽然写成 +00:00，但时间数值本身已经是北京时间，
+        # 只把时区标成 +0800，不做时区换算（不调整时间）。
+        if html_time:
+            html_time = html_time.replace(tzinfo=BEIJING_TZ)
 
         md_path = title_to_md.get(title)
 
@@ -209,7 +201,7 @@ def generate_rss():
         f.write('\n'.join(rss_lines))
     print(f'RSS 已生成 {len(entries)} 条信息')
 
-def process():
+def master2main():
     for r, _, fs in os.walk(site_dir):
         for f in fs:
             if not f.endswith('.html'):
@@ -226,89 +218,6 @@ def process():
                 with open(p, 'w', encoding='utf-8') as x:
                     x.write(nc)
 
-def hide_articles():
-    if not os.path.exists(gitignore_path):
-        return
-
-    with open(gitignore_path, encoding='utf-8') as f:
-        md = [l for l in (line.strip() for line in f) if l and not l.startswith('#') and l.endswith('.md')]
-
-    if not md:
-        return
-
-    hide_slugs = [s for s in (markdown_path_to_slug(p.lstrip('/')) for p in md) if s]
-    if not hide_slugs:
-        return
-
-    print('准备隐藏以下文章：')
-    for slug in hide_slugs:
-        print(f'- docs/{slug}.md')
-    print()
-
-    for slug in hide_slugs:
-        t = os.path.join(site_dir, slug)
-        if os.path.exists(t):
-            shutil.rmtree(t, ignore_errors=True)
-
-    if not os.path.exists(search_json_path):
-        return
-
-    with open(search_json_path, encoding='utf-8') as f:
-        data = json.load(f)
-
-    to_remove = set()
-    for slug in hide_slugs:
-        base = slug.rstrip('/') + '/'
-        to_remove.add(base)
-        to_remove.add(base + '#')
-
-    data["items"] = [
-        item for item in data.get("items", [])
-        if not any(
-            str(item.get("location", "")).startswith(prefix)
-            for prefix in to_remove
-        )
-    ]
-
-    with open(search_json_path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
-
-def activate_essays_tab():
-    essays_dir = os.path.join(site_dir, 'essays')
-    if not os.path.exists(essays_dir):
-        return
-
-    tabs_pattern = re.compile(
-        r'(<li\s+class=")(md-tabs__item)(">\s*<a\s+href="(?:\.\./)+"\s+class="md-tabs__link">[\s\S]*?ESSAYS[\s\S]*?</a>\s*</li>)',
-        re.DOTALL
-    )
-
-    nav_pattern = re.compile(
-        r'(<li\s+class=")(md-nav__item)(">)\s*(<a\s+href="(?:\.\./)+"\s+class=")(md-nav__link)(">[\s\S]*?ESSAYS[\s\S]*?</a>\s*</li>)',
-        re.DOTALL
-    )
-
-    nav_replacement = r'\1\2 md-nav__item--active\3\4\5 md-nav__link--active\6'
-
-    for r, _, fs in os.walk(essays_dir):
-        if 'index.html' not in fs:
-            continue
-
-        html_path = os.path.join(r, 'index.html')
-        with open(html_path, encoding='utf-8') as f:
-            content = f.read()
-
-        new_content = tabs_pattern.sub(r'\1\2 md-tabs__item--active\3', content)
-        new_content = nav_pattern.sub(nav_replacement, new_content)
-
-        if new_content != content:
-            with open(html_path, 'w', encoding='utf-8') as f:
-                f.write(new_content)
-
 if __name__ == '__main__':
-    if not os.path.isdir(site_dir):
-        raise SystemExit(f'找不到 {site_dir}/ 目录，请先执行构建命令生成站点产物，再运行这个脚本。')
-    process()
-    hide_articles()
-    activate_essays_tab()
+    master2main()
     generate_rss()
