@@ -178,7 +178,7 @@ plugins:
         - index.md                            # 示例：排除 blog 文件夹下所有文件，包括子文件夹
         - blog/*                              # 示例：排除 blog 文件夹下所有文件，包括子文件夹
         - essays/*                            # 示例：排除 essays 文件夹下所有文件，包括子文件夹
-        - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
+        # - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
 
 extra:
   generator: false                          # 移除 "Made with ***" 声明
@@ -236,4 +236,7 @@ nav:
       - recom/projects/index.md
       - recom/projects/dossier.md
       - recom/projects/FUCK.md
-  - ABOUT: about.md
+  - ABOUT:
+    - about.md
+    - about/LICENSE.md
+    - about/privacy-policy.md

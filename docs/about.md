@@ -2,12 +2,24 @@
 title: About Somethings
 created: 2025-02-22T08:30:16
 hide:
-    - navigation
+    # - navigation
     - path
-    - feedback
+    # - feedback
 ---
 
+///html | style
+.md-nav--lifted {
+    display: none !important;
+}
+///
+
 <link rel="stylesheet" href="/assets/stylesheets/about.css">
+
+///html | div.grid[style="text-align: center;"]
+[**Privacy Policy / 隐私政策**](/about/privacy-policy/)
+
+[**LICENSE / 许可证授权**](/about/LICENSE/)
+///
 
 ## :lucide-megaphone: Speak
 
@@ -23,29 +35,27 @@ hide:
 
 ///html | div.grid.cards
 -   :lucide-bug-play: **框架生成**
-    网站基于现代静态网站生成器
-    [MaterialX](https://jaywhj.github.io/mkdocs-materialx/)
-    搭建而成。
+
+    基于静态网站生成器
+    [MaterialX](https://jaywhj.github.io/mkdocs-materialx/)。
     <!-- [Zensical](https://zensical.org/) -->
 
 -   :lucide-cloud-upload: **托管平台**
-    [Local Server](https://local.liwanr.com:24)
+
+    [Local](https://local.liwanr.com:24)
     / [OuluCloud](https://yun.oulucloud.com/aff/WMOMVMPX)
     / [GitHub Pages](https://docs.github.com/pages)
     
 -   :lucide-code-xml: **编码存储**
-    代码通过
-    [Visual Studio Code](https://code.visualstudio.com/)
-    编写并存储在本地服务器和
-    [GitHub](https://github.com/github)
-    公开仓库中。
+
+    - 代码通过 [VS Code](https://code.visualstudio.com/) 编写
+    - 存储在本地及 [GitHub](https://github.com/github) 公开仓库中。
 
 -   :lucide-type-outline: **字体样式**
-    常规文字采用
-    [MiSans](https://hyperos.mi.com/font),
-    等宽文字采用
-    [JetBrains Mono](https://www.jetbrains.com/lp/mono/),
-    板块[文](http://localhost:8000/essays/)的常规字体采用
+
+    - 常规文字采用 [MiSans](https://hyperos.mi.com/font)
+    - 等宽文字采用 [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+    - [Essays](http://localhost:8000/essays/)的正文采用
     [Noto Serif SC](https://fonts.google.com/noto/specimen/Noto+Serif+SC?preview.layout=grid&query=Noto+Serif+SC&preview.script=Hans)。
 ///
 
@@ -68,7 +78,6 @@ hide:
 
 <script src="/assets/javascripts/about.js"></script>
 
-
 ## :lucide-history: TimeLine
 
 ///tab | **2026年初**
@@ -79,11 +88,11 @@ hide:
 
 - 迁移并整理之数据，继续写技术内容和经验分享
 
-- 26年03月22日增加评论功能，次日发表第一篇文
+- 26/03/22，增加评论功能，次日发表第一篇文
 
-- 26年07月06日增加订阅功能，并移除了 Vercel 和 Netlify 部署
+- 26/07/06，增加订阅功能，并移除了 Vercel 和 Netlify 部署
 
-- 26.07.13，Zensical的插件功能还没开发完...所以复古了[mkdocs-material](https://squidfunk.github.io/mkdocs-material/)的大佬变更版[MaterialX](https://jaywhj.github.io/mkdocs-materialx/)
+- 26/07/13，Zensical是半成品...所以复古了Mkdocs-material的大佬变更版[**MaterialX**](https://jaywhj.github.io/mkdocs-materialx/)
 
 ///
 
@@ -139,6 +148,8 @@ hide:
 
 ## :lucide-computer: Setup
 
+///tab | **编程机 · Dev Machine**
+
 <div class="divider">编程机 · Dev Machine</div>
 
 ///html | div.grid.cards[style='font-family: JetBrains Mono;']
@@ -153,7 +164,10 @@ hide:
     <span class="badge">16GB RAM</span>
     <small>[:lucide-mouse-pointer-click:去看看](https://rog.asus.com.cn/laptops/rog-zephyrus/2021-rog-zephyrus-m16-series/)</small>
 ///
+///
 
+
+///tab | **游戏机 · Gaming Machine**
 <div class="divider">
 游戏主机
 <span class="dot"></span>
@@ -197,7 +211,7 @@ System Specs
     <span class="badge">7200RPM</span>
     <small>[:lucide-mouse-pointer-click:去看看](https://www.westerndigital.com/products/internal-drives/wd-blue-desktop-sata-hdd?sku=WD20EZBX)</small>
 
--   <small>:lucide-fan: 散热器</small><br>
+-   <small>:lucide-thermometer-snowflake: 散热器</small><br>
     **TCOMAS SJ-A090 360**<br>
     <span class="badge theme">水冷</span>
     <span class="badge">35.7dB</span>
@@ -214,8 +228,16 @@ System Specs
     <span class="badge theme">全塔</span>
     <span class="badge">风扇≦9</span>
     <small>[:lucide-mouse-pointer-click:去看看](https://cougargaming.com/products/cases/mx600-rgb/)</small>
+
+-   <small>:lucide-fan: 风扇</small><br>
+    **棱镜 4 代 MAX 黑色 × 6**<br>
+    <span class="badge theme">神光同步</span>
+    <span class="badge">≦20dBA</span>
+    <small>[:lucide-mouse-pointer-click:去看看](https://cougargaming.com/products/cases/mx600-rgb/)</small>
+///
 ///
 
+///tab | **外设 · Peripherals**
 <div class="divider">外设 · Peripherals</div>
 
 ///html | div.grid.cards[style='font-family: JetBrains Mono;']
@@ -244,53 +266,4 @@ System Specs
     <span class="badge">119h+</span>
     <small>[:lucide-mouse-pointer-click:去看看](https://rog.asus.com/mice-mouse-pads/mice/ergonomic-right-handed/rog-gladius-iii-wireless-aimpoint-model/)</small>
 ///
-
-## :lucide-scale: License
-
--   **The source code is licensed under the MIT License.**<br>
-    **源代码采用 MIT 许可证授权。**
-
-    ///html | div[style='font-family: JetBrains Mono;']
-    MIT License
-
-    Copyright (c) 2026 liWanr
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-    ///
-
--   **Unless otherwise noted, all original articles and images are licensed under CC BY-NC-SA 4.0.**<br>
-    **除非另有说明，所有原创文章和图片均采用 CC BY-NC-SA 4.0 许可证授权。**
-
-    ///html | div[style='font-family: JetBrains Mono;']
-    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
-
-    Except where otherwise noted, all original articles, documentation,
-    and images in this repository are licensed under the
-    Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-    International License.
-
-    To view a copy of this license, visit:
-
-    https://creativecommons.org/licenses/by-nc-sa/4.0/
-
-    or send a letter to:
-
-    Creative Commons<br>
-    PO Box 1866, Mountain View, CA 94042, USA
-    ///
-
-## :lucide-cookie: Privacy Policy
-
-本站最终呈现的是静态网站，不会收集任何用户数据，但依赖的外部服务可能会有收集数据，**本站不对外部服务商的隐私政策负责**，请用户自行查阅这些服务商的隐私政策。
-
--  **Cloudflare**: 本站使用了 Cloudflare 的 CDN 服务来加速内容传输和 Turnstile 服务来防止垃圾邮件和滥用行为，可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以优化性能和安全性。详细信息请参阅 [Cloudflare 隐私政策](https://www.cloudflare.com/privacypolicy/) / [Turnstile 隐私政策](https://www.cloudflare.com/turnstile-privacy-policy/)。
-
-- **GitHub**: 本站的源代码托管在 GitHub 上，GitHub 可能会收集用户的账户信息、访问日志等数据。详细信息请参阅 [GitHub 隐私政策](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement)。
-
-- **Google Analytics**: 本站使用了 Google Analytics 来分析访问者的行为，Google Analytics 可能会收集访问者的 IP 地址、浏览器类型、访问时间等信息以提供统计数据。详细信息请参阅 [Google Analytics 隐私政策](https://policies.google.com/privacy)。
-
-- **Giscus**: 本站使用了 Giscus 来提供评论功能，giscus 可能会收集用户的 GitHub 账户信息、评论内容等数据。详细信息请参阅 [Giscus 隐私政策](https://giscus.app/privacy)。
+///
