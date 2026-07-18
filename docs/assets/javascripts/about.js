@@ -33,11 +33,11 @@ document.getElementById('rss-ring-form').addEventListener('submit', async functi
   }
 
   if (!rssRingTurnstileToken) {
-    messageEl.textContent = '请等待人机验证...';
+    messageEl.textContent = '请等待人机验证...如果长时间未响应，请刷新页面重试';
     return;
   }
 
-  messageEl.textContent = '提交中...';
+  messageEl.textContent = '提交中，请稍后...如果长时间未响应，请刷新页面重试';
 
   try {
     const resp = await fetch('https://rss-ring.itswanr.workers.dev/subscribe', {

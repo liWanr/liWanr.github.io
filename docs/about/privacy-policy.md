@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy / 隐私政策
+title: 隐私政策
 comments: false
 hide:
     - path
@@ -12,10 +12,10 @@ hide:
 ///
 
 ///html | div.grid[style="text-align: center;"]
-Privacy Policy / 隐私政策
+隐私政策
 { style="opacity: 0.5;" }
 
-[**LICENSE / 许可证授权**](/about/LICENSE/)
+[**许可证授权**](/about/LICENSE/)
 ///
 
 ## 说明

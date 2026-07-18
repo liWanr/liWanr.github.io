@@ -1,5 +1,5 @@
 ---
-title: LICENSE / 许可证授权
+title: 许可证授权
 comments: false
 hide:
     - path
@@ -12,9 +12,9 @@ hide:
 ///
 
 ///html | div.grid[style="text-align: center;"]
-[**Privacy Policy / 隐私政策**](/about/privacy-policy/)
+[**隐私政策**](/about/privacy-policy/)
 
-LICENSE / 许可证授权
+许可证授权
 { style="opacity: 0.5;" }
 ///
 

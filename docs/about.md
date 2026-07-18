@@ -1,5 +1,5 @@
 ---
-title: About Somethings
+title: 关于
 created: 2025-02-22T08:30:16
 hide:
     # - navigation
@@ -16,12 +16,12 @@ hide:
 <link rel="stylesheet" href="/assets/stylesheets/about.css">
 
 ///html | div.grid[style="text-align: center;"]
-[**Privacy Policy / 隐私政策**](/about/privacy-policy/)
+[**隐私政策**](/about/privacy-policy/)
 
-[**LICENSE / 许可证授权**](/about/LICENSE/)
+[**许可证授权**](/about/LICENSE/)
 ///
 
-## :lucide-megaphone: Speak
+## :lucide-megaphone: 关于博客
 
 记录「**技术与思考**」的个人空间，也是我在数字世界中圈出的三分地。
 
@@ -31,7 +31,7 @@ hide:
 
 故搭建站点不仅是备份代码，更是在备份灵魂。在这个算法比我们更了解自己的时代，唯有亲手写下的文字，能在大数据的洪流中，拓出名为「**我**」的岛。
 
-## :lucide-ev-charger: Powered By
+## :lucide-ev-charger: 提供动力
 
 ///html | div.grid.cards
 -   :lucide-bug-play: **框架生成**
@@ -55,30 +55,31 @@ hide:
 
     - 常规文字采用 [MiSans](https://hyperos.mi.com/font)
     - 等宽文字采用 [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-    - [Essays](http://localhost:8000/essays/)的正文采用
+    - [ESSAYS](http://localhost:8000/essays/)正文采用
     [Noto Serif SC](https://fonts.google.com/noto/specimen/Noto+Serif+SC?preview.layout=grid&query=Noto+Serif+SC&preview.script=Hans)。
 ///
 
-## :lucide-newspaper: Newsletter
-
-内容更新不会等你，但订阅可以。
+## :lucide-newspaper: 新闻简报
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 <form id="rss-ring-form">
-  <input class="mdx-form__input mdx-form__input--stretch" type="email" name="email" id="bd-email" placeholder="your-email@example.com" autocomplete="email" required/>
-  <button class="md-button md-button--primary" type="submit" id="rss-ring-submit" disabled>订阅</button>
+  <div style="display: flex; gap: 8px; align-items: center;">
+    <input class="mdx-form__input mdx-form__input--stretch" type="email" name="email" id="bd-email" style="flex: 1;"  placeholder="your-email@example.com" autocomplete="email" required/>
+    <button class="md-button md-button--primary" type="submit" id="rss-ring-submit" disabled>订阅</button>
+  </div>
   <div class="cf-turnstile"
        data-sitekey="0x4AAAAAADwZnEQiPgcV_V17"
        data-callback="rssRingOnVerified"
        data-expired-callback="rssRingOnExpired"
        data-error-callback="rssRingOnExpired"></div>
 </form>
-<p id="rss-ring-message"></p>
+
+<p id="rss-ring-message">内容更新不会等你，但订阅可以。</p>
 
 <script src="/assets/javascripts/about.js"></script>
 
-## :lucide-history: TimeLine
+## :lucide-history: 历程轨迹
 
 ///tab | **2026年初**
 
@@ -146,9 +147,7 @@ hide:
 
 ///
 
-## :lucide-computer: Setup
-
-///tab | **编程机 · Dev Machine**
+## :lucide-computer: 战机可查
 
 <div class="divider">编程机 · Dev Machine</div>
 
@@ -164,10 +163,7 @@ hide:
     <span class="badge">16GB RAM</span>
     <small>[:lucide-mouse-pointer-click:去看看](https://rog.asus.com.cn/laptops/rog-zephyrus/2021-rog-zephyrus-m16-series/)</small>
 ///
-///
 
-
-///tab | **游戏机 · Gaming Machine**
 <div class="divider">
 游戏主机
 <span class="dot"></span>
@@ -230,14 +226,12 @@ System Specs
     <small>[:lucide-mouse-pointer-click:去看看](https://cougargaming.com/products/cases/mx600-rgb/)</small>
 
 -   <small>:lucide-fan: 风扇</small><br>
-    **棱镜 4 代 MAX 黑色 × 6**<br>
+    **Jungle Leopard PRISM 4 MAX × 6**<br>
     <span class="badge theme">神光同步</span>
     <span class="badge">≦20dBA</span>
-    <small>[:lucide-mouse-pointer-click:去看看](https://cougargaming.com/products/cases/mx600-rgb/)</small>
-///
+    <small>[:lucide-mouse-pointer-click:去看看](https://www.jlcpucooler.com/prism-4-max-black-edition-product/)</small>
 ///
 
-///tab | **外设 · Peripherals**
 <div class="divider">外设 · Peripherals</div>
 
 ///html | div.grid.cards[style='font-family: JetBrains Mono;']
@@ -265,5 +259,4 @@ System Specs
     <span class="badge theme">79g</span>
     <span class="badge">119h+</span>
     <small>[:lucide-mouse-pointer-click:去看看](https://rog.asus.com/mice-mouse-pads/mice/ergonomic-right-handed/rog-gladius-iii-wireless-aimpoint-model/)</small>
-///
 ///
