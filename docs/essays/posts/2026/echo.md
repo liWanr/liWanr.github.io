@@ -1,6 +1,6 @@
 ---
 title: 回响
-date: 2026-07-12T10:54:04
+date: 2026-07-12T18:54:04
 description: 他一直觉得自己小时候是没有声音的人。
 categories:
   - 想法
