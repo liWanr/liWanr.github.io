@@ -36,6 +36,9 @@ created: 2026-05-08T07:46:22
 
 -   [**孤斗**](https://d-d.design/)
     { title="做自己，不隨波逐流，不妥協" }
+
+-   [**索玛**](https://suo.ma/)
+    { title="生活博客，记录生活的点点滴滴" }
 ///
 
 ## 群* { style="font-feature-settings: var(--features), 'ss08' on;"}
