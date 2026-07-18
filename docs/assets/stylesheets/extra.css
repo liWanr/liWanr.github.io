@@ -44,6 +44,7 @@ small {
 
 :root {
     --md-text-font: "MiSansVF";
+    --features: "tnum" on, "ss04" on;
 }
 
 /* 二级无序嵌套列表为空心圆 */
