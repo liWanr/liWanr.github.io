@@ -33,9 +33,12 @@ created: 2026-05-08T07:46:22
 
 -   [**碎言**](https://www.suiyan.cc/)
     { title="几时归去，作个闲人。对一张琴，一壶酒，一溪云。" }
+
+-   [**孤斗**](https://d-d.design/)
+    { title="做自己，不隨波逐流，不妥協" }
 ///
 
-## 组织
+## 群* { style="font-feature-settings: var(--features), 'ss08' on;"}
 
 ///html | div.grid.cards
 
