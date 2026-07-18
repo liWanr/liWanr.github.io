@@ -41,7 +41,7 @@ created: 2026-05-08T07:46:22
     { title="生活博客，记录生活的点点滴滴" }
 ///
 
-## 群* { style="font-feature-settings: var(--features), 'ss08' on;"}
+## 群*
 
 ///html | div.grid.cards
 

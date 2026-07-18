@@ -44,10 +44,10 @@ small {
 
 :root {
     --md-text-font: "MiSansVF";
-    --features: "tnum" on, "ss04" on;
+    --features: 'tnum' on, 'ss04' on, 'ss08' on;
 }
 
-body {
+* {
     font-feature-settings: var(--features);
 }
 
