@@ -47,6 +47,10 @@ small {
     --features: "tnum" on, "ss04" on;
 }
 
+body {
+    font-feature-settings: var(--features);
+}
+
 /* 二级无序嵌套列表为空心圆 */
 .md-typeset ul ul {
     list-style-type: circle;
