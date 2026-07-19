@@ -15,8 +15,11 @@ docs_dir = Path('docs')
 SITE_EXCLUDE_SLUGS = {'', 'about', 'blog', 'essays'}
 
 # 手动在这里加需要从 RSS 中排除的路径。
-RSS_IGNORE_SLUGS = {'blog/archive', 'blog/category', 'blog/page', 'essays/archive', 'essays/category', 'essays/page'}
-
+RSS_IGNORE_SLUGS = {
+    'blog/archive', 'blog/category', 'blog/page', 
+    'essays/archive', 'essays/category', 'essays/page',
+    'about/privacy-policy', 'about/LICENSE',
+}
 
 class _ConfigLoader(yaml.SafeLoader):
     """mkdocs.yml 里的 markdown_extensions 会用 !!python/object/apply 之类的
