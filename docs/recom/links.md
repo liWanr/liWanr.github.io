@@ -58,13 +58,6 @@ created: 2026-05-08T07:46:22
     [申请](https://icp.gov.moe/join.php) |
     [萌ICP备 20261874 号](https://icp.gov.moe/?keyword=20261874)
 
--   **BlogFinder**
-
-    [官网](https://bf.zzxworld.com/) |
-    [申请](https://bf.zzxworld.com/share) |
-    [广场](https://bf.zzxworld.com/s) |
-    [我](https://bf.zzxworld.com/s/1868)
-
 -   **BlogsClub**
 
     [官网](https://www.blogsclub.org/) |
@@ -80,12 +73,17 @@ created: 2026-05-08T07:46:22
     [随机前往](https://www.zhblogs.net/site/go) |
     [我](https://www.zhblogs.net/site/019f3bd2-350e-777c-99ae-74f2fd7df954)
 
+-   **BlogFinder**
+
+    [官网](https://bf.zzxworld.com/) |
+    [申请](https://bf.zzxworld.com/share) |
+    [广场](https://bf.zzxworld.com/s) |
+
 -   **博友圈**
 
     [官网](https://www.boyouquan.com/) |
     [申请](https://www.boyouquan.com/blog-requests/add/email-validation) |
     [星球穿梭](https://www.boyouquan.com/planet-shuttle) |
     [广场](https://www.boyouquan.com/blogs) |
-    [我](https://www.boyouquan.com/blogs/liwanr.com)
 
 ///
