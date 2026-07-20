@@ -56,7 +56,7 @@ hr {
 
     ///html | div.grid
 
-    [赔钱机场(村内)](https://xn--cp3a08l.com/#/register?code=Hw7cqluV) 
+    [赔钱机场(村内)](https://dash.pqjc.site/#/register?code=Hw7cqluV) 
 
     [赔钱机场(村外)](https://xn--mes358aby2apfg.com/register?code=Hw7cqluV)
 
