@@ -66,24 +66,28 @@ created: 2026-05-08T07:46:22
     [随机前往](https://www.zhblogs.net/site/go) |
     [我](https://www.zhblogs.net/site/019f3bd2-350e-777c-99ae-74f2fd7df954)
 
--   **Travelling** (已退出)
+-   **Travelling**<span style="font-feature-settings: 'ss08' off">*</span>
 
     [官网](https://www.travellings.cn/) |
     [申请](https://www.travellings.cn/docs/join.html) |
     [开往](https://www.travellings.cn/go.html) |
     [广场](https://list.travellings.cn/)
 
--   **BlogFinder** (已退出)
+-   **BlogFinder**<span style="font-feature-settings: 'ss08' off">*</span>
 
     [官网](https://bf.zzxworld.com/) |
     [申请](https://bf.zzxworld.com/share) |
     [广场](https://bf.zzxworld.com/s)
 
--   **博友圈** (已退出)
+-   **博友圈**<span style="font-feature-settings: 'ss08' off">*</span>
 
     [官网](https://www.boyouquan.com/) |
     [申请](https://www.boyouquan.com/blog-requests/add/email-validation) |
     [星球穿梭](https://www.boyouquan.com/planet-shuttle) |
     [广场](https://www.boyouquan.com/blogs)
 
+///
+
+///html | small
+\*标记代表本站已从相关平台退出，但均属个人原因，与平台无关。
 ///
