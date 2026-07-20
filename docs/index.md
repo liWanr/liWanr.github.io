@@ -19,6 +19,10 @@ hide:
     justify-content: center;
     min-height: calc(100vh - var(--md-header-height));
 }
+.md-sidebar__inner {
+    text-align: left;
+    align-items: flex-start;
+}
 .md-content__inner {
     margin: 0 0.8rem 6rem;
 }
