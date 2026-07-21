@@ -15,7 +15,6 @@ extra_css:
   - assets/stylesheets/link.css
   - assets/stylesheets/table.css
   - assets/stylesheets/progress.css
-  # - assets/stylesheets/essays.css
 
 extra_javascript:
   - assets/javascripts/progress.js
@@ -51,7 +50,7 @@ theme:
     - navigation.tabs.sticky         # 粘性标签页：向下滚动时标签页固定在头部下方始终可见
     - navigation.top                 # 当用户向下滚动后开始向上滚动时，显示"返回顶部"按钮
     - navigation.tracking            # 锚点跟踪：地址栏 URL 会自动更新为当前高亮的目录锚点
-    - search.highlight                # 搜索跳转后高亮匹配内容
+    - search.highlight               # 搜索跳转后高亮匹配内容
     - toc.follow                     # 目录锚点跟随：侧边栏会自动滚动，让当前激活的锚点始终可见
 
   palette:
@@ -134,7 +133,32 @@ markdown_extensions:
 plugins:
   - optimize                                 
   - meta
-  - search                                    # 搜索功能
+  - search:                                   # 搜索功能
+      provider: pagefind
+      pagefind:
+        output_subdir: search                 # 搜索索引文件输出目录
+        root_selector: html                   # CSS 选择器 Pagefind 将每个文档的根元素视为根元素
+        force_language: zh
+        exclude_selectors:
+          - nav
+          - footer
+        include_characters: ._
+        keep_index_url: true
+        write_playground: false
+        verbose: false
+        options:
+          excerptLength: 30
+          exactDiacritics: false
+          ranking:
+            termFrequency: 1.0
+            termSimilarity: 1.0
+            pageLength: 0.75
+            termSaturation: 1.4
+            diacriticSimilarity: 0.8
+            metaWeights:
+              title: 5.0
+          indexWeight: 1.0
+          noWorker: false
   - blog:
       archive_date_format: yyyy               # 归档时间格式
       blog_toc: true                          # 在 Blog 主页中显示文章目录
@@ -219,12 +243,12 @@ nav:
   - HOME: index.md
   - ESSAYS: 
     - essays/index.md
-    - 囚徒日记: essays/2026/Captive-Journal/
+    - 囚徒日记: essays/posts/2026/Captive-Journal.md
   - BLOG:
     - blog/index.md
-    - 沙龙: blog/2026/shalong/
-    - 压缩与解压: /blog/2025/zip-unzip/
-    - Zensical 小技巧: blog/2026/zensical-pro-tips/
+    - 沙龙: blog/posts/2026/shalong.md
+    - 压缩与解压: /blog/posts/2025/zip-unzip.md
+    - Zensical 小技巧: blog/posts/2026/zensical-pro-tips.md
   - RECOM:
     - recom/website.md
     - recom/links.md

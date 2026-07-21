@@ -23,6 +23,7 @@ jobs:
           python-version: 3.x
       - name: Install pngquant
         run: sudo apt-get update && sudo apt-get install -y pngquant
+      - run: pip install -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple mkdocs-materialx==10.2.0
       - run: pip install -r requirements.txt
       - run: mkdocs build --clean
       - name: Post process site with Python
