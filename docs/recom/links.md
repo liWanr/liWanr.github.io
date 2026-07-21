@@ -61,10 +61,10 @@ created: 2026-05-08T07:46:22
 
 -   **集博栈**
 
-    [官网](https://www.zhblogs.net/) |
-    [申请](https://www.zhblogs.net/site/submit) |
-    [随机前往](https://www.zhblogs.net/site/go) |
-    [我](https://www.zhblogs.net/site/019f3bd2-350e-777c-99ae-74f2fd7df954)
+    [官网](https://www.heyblog.net/) |
+    [申请](https://www.heyblog.net/site/submit) |
+    [随机前往](https://www.heyblog.net/site/go) |
+    [我](https://www.heyblog.net/site/019f3bd2-350e-777c-99ae-74f2fd7df954)
 
 -   **Travelling**<span style="font-feature-settings: 'ss08' off">*</span>
 
