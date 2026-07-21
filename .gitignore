@@ -10,5 +10,4 @@ nginx.conf
 build.sh
 
 # 不发布的文章
-toy-store.md
-
+new.md
