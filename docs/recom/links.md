@@ -40,7 +40,7 @@ created: 2026-05-08T07:46:22
 -   [**索玛**](https://suo.ma/)
     { title="生活博客, 记录生活的点点滴滴" }
 
--   [**𝙹𝚊𝚜𝚘𝚗**](https://i.Lilog.cn)
+-   [**Jason**](https://i.Lilog.cn)
     { title="Jason 独自研发, 没有依赖任何框架的博客系统" }
 ///
 
