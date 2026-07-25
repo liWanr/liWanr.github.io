@@ -111,14 +111,14 @@ categories:
 ## 按钮
 
 ```markdown { linenums="0"}
-[Button](#通用){ .md-button }
-[Button](#通用){ .md-button .md-button--primary }
+[Button](#按钮){ .md-button }
+[Button](#按钮){ .md-button .md-button--primary }
 ```
 
 ///html | div.result
 
-[Button](#通用){ .md-button }
-[Button](#通用){ .md-button .md-button--primary }
+[Button](#按钮){ .md-button }
+[Button](#按钮){ .md-button .md-button--primary }
 
 ///
 
