@@ -206,7 +206,7 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了�
 
 ///
 
-如果想在 Windows / Mac / Linux 的设备上使用 OpenVPN 请查看 [**使用 OpenVPN Client**](openvpn-client/){ data-preview } 文章
+如果想在 Windows / Mac / Linux 的设备上使用 OpenVPN 请查看 [**使用 OpenVPN Client**](/blog/2025/openvpn-client/){ data-preview } 文章
 
 ## 防火墙地址伪装
 
