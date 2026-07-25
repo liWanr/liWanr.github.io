@@ -131,6 +131,12 @@ markdown_extensions:
       custom_checkbox: true
   
 plugins:
+  - echo:
+      server_url: https://echo.liwanr.com:8888   # 必填，第二步部署好的公开 API 地址
+      theme: auto                                  # auto / light / dark，默认 auto，跟随站点主题
+      lang: zh                                     # 界面语言
+      sort: newest                                 # newest / oldest，一级评论排序方式
+      owner_github_id: "114280055"                  # 可选，站长的 GitHub 数字 ID，用于评论区显示 Author 徽章
   - optimize                                 
   - meta
   - search:                                   # 搜索功能
