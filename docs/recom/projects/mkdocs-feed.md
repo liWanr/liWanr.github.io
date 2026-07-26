@@ -97,7 +97,7 @@ plugins:
 
 ///html | div.step
 
-1. `meta`: 取 front matter 的 `date` 或 `updated`。写在页面里，作者的意图最明确。
+1. `meta`: 取 front matter 的 `date` 或 `created`。写在页面里，作者的意图最明确。
 
 2. `git`: 取文件首次提交的 git blob 哈希的时间戳。真实的时刻，编辑后不变，重命名后不变。
 
