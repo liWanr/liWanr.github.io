@@ -133,6 +133,11 @@ markdown_extensions:
 plugins:
   - optimize                                 
   - meta
+  - feed:
+      filename: rss.xml
+      length: 15
+      timezone: Asia/Shanghai
+      exclude: [recom, about]
   - search:                                   # 搜索功能
       provider: pagefind
       pagefind:
