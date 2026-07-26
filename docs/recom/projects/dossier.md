@@ -1,5 +1,4 @@
 ---
-icon: lucide/hat-glasses
 title: 侦探事务所 · Dossier
 created: 2026-06-03T21:39:34
 ---

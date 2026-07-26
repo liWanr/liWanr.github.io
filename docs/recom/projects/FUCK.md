@@ -1,7 +1,6 @@
 ---
-icon: lucide/hat-glasses
 title: 槽 F.U.C.K.
-craeted: 2026-06-06T07:05:50
+created: 2026-06-06T07:05:50
 ---
 
 ///html | small
