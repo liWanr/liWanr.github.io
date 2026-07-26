@@ -4,14 +4,6 @@ title: MkDocs-feed
 
 给 MkDocs 站点生成 RSS 2.0 订阅源的插件。**开源地址**：[liWanr/mkdocs-feed](https://github.com/liWanr/mkdocs-feed)
 
-![Release](https://img.shields.io/github/v/release/liWanr/mkdocs-feed)
-![License](https://img.shields.io/github/license/liWanr/mkdocs-feed)
-![Last Commit](https://img.shields.io/github/last-commit/liWanr/mkdocs-feed)
-
-![Python](https://img.shields.io/badge/Python-3.9+-blue)
-[![Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-9.2+-orange)](https://squidfunk.github.io/mkdocs-material/)
-[![Materialx](https://img.shields.io/badge/Materialx-10.0+-green)](https://jaywhj.github.io/mkdocs-materialx/)
-
 ## 安装并启用
 
 ///tab | **安装**
