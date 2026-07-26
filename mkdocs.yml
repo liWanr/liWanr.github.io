@@ -262,9 +262,9 @@ nav:
     - recom/movie.md
     - recom/tuibeitu.md
     - Projects:
-      - recom/projects/index.md
       - recom/projects/dossier.md
       - recom/projects/FUCK.md
+      - recom/projects/mkdocs-feed.md
   - ABOUT:
     - about.md
     - about/LICENSE.md
