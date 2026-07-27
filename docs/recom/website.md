@@ -11,191 +11,139 @@ created: 2026-02-07T13:14:33
 .md-typeset a:hover{
     color: var(--md-typeset-a-color) !important;
 }
-hr {
+/* hr {
     height: 0rem;
     border-radius: 5px;
     background-color: var(--md-accent-fg-color);
-}
+} */
 </style>
 
-///html | div.grid.cards
+### 专属链接
 
--   ### 快捷链接
+-   [**Microsoft**](https://account.microsoft.com/)
+    /
+    [**Outlook**](https://outlook.live.com/mail)
+    /
+    [**Google**](https://myaccount.google.com/)
+    /
+    [**Gmail**](https://mail.google.com/mail)
+    /
+    [**Apple**](https://www.apple.com/)
+    /
+    [**iCloud**](https://www.icloud.com.cn/)
 
-    ---
+-   [**Chat GPT**](https://chat.openai.com/chat)
+    /
+    [**Grok**](https://grok.com/)
+    /
+    [**Gemini**](https://gemini.google.com/app)
+    /
+    [**Claude**](https://claude.ai/)
+    /
+    [**Perplexity**](https://www.perplexity.ai/)
 
-    ///html | div.grid
+---
 
-    [Microsoft](https://account.microsoft.com/)
+### 网络专属
 
-    [Outlook](https://outlook.live.com/mail)
+-   [**赔钱机场**](https://dash.pqjc.site/#/register?code=Hw7cqluV){ title="每月最低1.5元100GB"}
 
-    [Gmail](https://mail.google.com/mail)
+-   [**Cloudflare**](https://dash.cloudflare.com/)
+    /
+    [**Dynadot**](https://www.dynadot.com/){ title="域名注册和管理（应该最低价了）"}
+    /
+    [中科大测速](https://test.ustc.edu.cn/)
+    /
+    [UApiPro](https://uapis.cn/docs/api-reference){ title="免费、稳定、快速的公共 API"}
 
-    [iCloud](https://www.icloud.com.cn/)
-
-    [Chat GPT](https://chat.openai.com/chat)
-
-    [Grok](https://grok.com/)
-
-    [Gemini](https://gemini.google.com/app)
-
-    [Claude](https://claude.ai/)
-
-    [Perplexity](https://www.perplexity.ai/)
-
-    ///
-
-///
-
-///html | div.grid.cards
-
--   ### 网络专属
-
-    ---
-
-    ///html | div.grid
-
-    [赔钱机场(村内)](https://dash.pqjc.site/#/register?code=Hw7cqluV) 
-
-    [赔钱机场(村外)](https://xn--mes358aby2apfg.com/register?code=Hw7cqluV)
-
-    [Cloudflare](https://dash.cloudflare.com/)
-
+-   [Down for Everyone or Just Me](https://downforeveryoneorjustme.com/)
+    /
     [IPCheck](https://ipcheck.ing/#/)
-
+    /
     [IT DOG](https://www.itdog.cn/ping/)
+    /
+    [ProbeOps](https://probeops.com/tools){ title="网络诊断工具" }
 
-    [DigitalOcean](https://m.do.co/c/b4ddfa7be0e7)
-    
-    [Hero SMS](https://hero-sms.com/services)
+---
 
-    [Down for Everyone or Just Me](https://downforeveryoneorjustme.com/)
-    
-    [Probeops](https://probeops.com/tools)
+### 网站设计
 
-    [Dynadot](https://www.dynadot.com/)
-
-    ///
-
-///
-
-///html | div.grid.cards
-
--   ### 网站设计
-
-    ---
-
-    ///html | div.grid
-    
-    [Figma](https://www.figma.com/)
-    
-    [Icons8](https://icons8.com/)
-    
+-   [**Figma**](https://www.figma.com/)
+    /
+    [**Icons8**](https://icons8.com/)
+    /
     [阿里图库](https://www.iconfont.cn/)
-
-    [WebUtility](https://webutility.io/)
-    
-    [Uiverse](https://uiverse.io/elements)
-    
+ 
+-   [Uiverse](https://uiverse.io/elements)
+    /
     [Anime.js](https://animejs.com/documentation/events/onscroll/scrollobserver-settings/target)
-    
+    /
     [Awwwards](https://www.awwwards.com/websites/sites_of_the_day/)
-    ///
 
-///
+---
 
-///html | div.grid.cards
+### 娱乐至上
 
--   ### 娱乐至上
+-   [**厂长资源**](https://www.czzy.site/){ title="电影电视剧动漫" }
+    /
+    [**雪落影视**](https://v.xl.in.ua){ title="电影电视剧动漫" }
 
-    ---
-
-    ///html | div.grid
-    [厂长资源](https://www.czzy.site/)
-
-    [Discord](https://discord.com/channels/@me)
-
-    [YouTube](https://www.youtube.com/)
-
+-   [**Discord**](https://discord.com/channels/@me)
+    /
+    [**YouTube**](https://www.youtube.com/)
+    /
     [DouYin](https://www.douyin.com/?recommend=1)
-
+    /
     [Bilibili](https://www.bilibili.com/)
-    ///
 
-///
+-   [**S.H.I.T**](https://shitjournal.org/)
 
-///html | div.grid.cards
+---
 
--   ### 生产工具
+### 生产工具
 
-    ---
+-   [**果核剥壳**](https://www.ghxi.com/)
+    /
+    [Mac 软件资源网站](https://macwk.cn/)
+    /
+    [**WebUtility**](https://webutility.io/){ title="在线多功能工具箱" }
 
-    ///html | div.grid
-    [果核剥壳](https://www.ghxi.com/)
-    
-    [电子印章](http://web.aa6666.com/)
-
+-   [**电子印章**](http://web.aa6666.com/)
+    /
     [Spotify 下载器](https://spotimate.io/#)
+    /
+    [Hero SMS](https://hero-sms.com/services){ title="虚拟手机号接收短信平台" }
 
-    [Macwk](https://macwk.cn/)
-    ///
+---
 
-///
+### 一生归属
 
-///html | div.grid.cards
-
--   ### 一生归属
-
-    ---
-
-    ///html | div.grid
-    [BYRUTOR](https://byrutgame.org/)
-    
-    [风灵月影](https://flingtrainer.com/)
-    
-    [CE 修改器](https://www.cheatengine.org/)
-    
+-   [**BYRUTOR**](https://byrutgame.org/){ title="毛子的游戏资源网站"}
+    /
     [麻将理牌](https://tenhou.net/2/)
 
-    [Minecraft](https://www.minecraft.net/)
-    
-    [PCL2](https://afdian.com/p/0164034c016c11ebafcb52540025c377)
-    
+-   [**风灵月影**](https://flingtrainer.com/)
+    /
+    [**CE 修改器**](https://www.cheatengine.org/)
+
+-   [Minecraft](https://www.minecraft.net/)
+    /
+    [**PCL2**](https://afdian.com/p/0164034c016c11ebafcb52540025c377)
+    /
     [MC 百科](https://www.mcmod.cn/)
-    
+    /
     [MC 皮肤站](https://littleskin.cn/)
-    
+    /
     [MC 区块查询工具](https://www.chunkbase.com/)
-    ///
 
-///
+---
 
-///html | div.grid.cards
+### 镜像系统
 
--   ### 镜像系统
-
-    ---
-
-    ///html | div.grid
-    [Windows](https://www.xitongku.com)
-    
-    [Ubuntu](https://releases.ubuntu.com/)
-    
+-   [Windows](https://www.xitongku.com)
+    /
+    [**Ubuntu**](https://releases.ubuntu.com/)
+    /
     [Debian](http://cdimage.debian.org/cdimage/archive/)
-    
+    /
     [CentOS](https://vault.centos.org/)
-    ///
-
-///
-
-///html | div.grid.cards
-
--   ### 精神慰藉
-
-    ---
-
-    ///html | div.grid
-    [S.H.I.T](https://shitjournal.org/)
-    ///
-///
