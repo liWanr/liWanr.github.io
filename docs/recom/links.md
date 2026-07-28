@@ -31,8 +31,14 @@ created: 2026-05-08T07:46:22
 -   [**索玛**](https://suo.ma/)
     { title="生活博客, 记录生活的点点滴滴" }
 
--   [**Jason**](https://i.Lilog.cn)
+-   [**Jason**](https://limhy.cn)
     { title="Jason 独自研发, 没有依赖任何框架的博客系统" }
+
+-   [**初然忆**](https://www.imcry.vip/)
+    { title="初心如初见，然忆似流年。" }
+
+-   [**白熊阿丸的小屋**](https://blog.bxaw.name/)
+    { title="在这里可以看到一个真实的我，我会在这里书写我的一切" }
 ///
 
 ## 群*
