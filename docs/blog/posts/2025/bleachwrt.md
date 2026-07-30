@@ -58,7 +58,7 @@ categories:
     R4S 存储固件的方式是用 TF 卡, 所以只需要将固件刷进 TF 卡就行了。 **设备** 选择 U 盘, **引导类型** 选择下好的 Wrt 固件, 然后 **点击开始**, 等待 **准备就绪** 变成绿色就可以将 TF 插到 R4S 的卡槽中了。
 
     <figure markdown="span">
-    ![1.png](/assets/images/blog/dev/vpn/bleachwrt/1.png)
+    ![1.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/1.png)
     ///caption
     图中 1 代表 U 盘名称, 2 代表固件名称
     ///
@@ -86,11 +86,11 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了�
 
 1. 在 **网络 --> 接口** 中将全局网络选项中的 IPv6 前缀删掉。
 
-    ![2.png](/assets/images/blog/dev/vpn/bleachwrt/2.png)
+    ![2.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/2.png)
 
 2. 然后在顶部的 WAN 口, 如果是 IPv6 的话就设置 WAN6 , 将传输协议设置为 PPPoE, 用户名和密码就是宽带账号和密码, 如果不知道就在改光猫桥接的时候问一下, 设置完成后点击 **保存&应用**
 
-    ![3.png](/assets/images/blog/dev/vpn/bleachwrt/3.png)
+    ![3.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/3.png)
 
 ///
 
@@ -102,11 +102,11 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了�
 
 1. 在 **iStore** 中搜索并下载 **Lucky** 插件, 下载的终端弹窗边缘变成绿色就代表完成
 
-    ![4.png](/assets/images/blog/dev/vpn/bleachwrt/4.png)
+    ![4.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/4.png)
 
 2. 在 **服务 --> Lucky** 中找到插件基本设置, 然后启动服务, 进入 Lucky 后台管理页面, **初始用户名和密码都是 666**。    进入之后设置安全入口以及用户名和密码, 否则不能设置 DDNS 动态域名
 
-    ![5.png](/assets/images/blog/dev/vpn/bleachwrt/5.png)
+    ![5.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/5.png)
 
 ///
 
@@ -128,13 +128,13 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了�
     |IP 选择<br>匹配规则|测试一下, 如果测试结果是 240e、2409、2408开头的都是公网 IP（分别代表电信、移动、联通）<br>如果实在不知道就把测试得到的 IP 拿去 ITDOG ping 一下, 如果全绿就是公网 IP, 否则就不是|
     |域名列表|就是你买的那个域名, 可以设置成三级域名, 比如我的就是 `ovpn.leeyearn.com`|
 
-    <!-- ![6.png](/assets/images/blog/dev/vpn/bleachwrt/6.png) -->
+    <!-- ![6.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/6.png) -->
 
 2. 看同步情况
 
     如果同步情况是 **公网 IP 未改变** / **托管商记录一致** 都表示通过了
 
-    ![7.png](/assets/images/blog/dev/vpn/bleachwrt/7.png)
+    ![7.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/7.png)
 
 ///
 
@@ -156,7 +156,7 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了�
 |客户端推送配置3|默认|
 |客户端推送配置4|建议把 DNS 后面的 IP 改成域名商的 DNS IP, 比如阿里的就是 223.5.5.5|
 
-![8.png](/assets/images/blog/dev/vpn/bleachwrt/8.png)
+![8.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/8.png)
 
 ### 添加 Server 的参数
 
@@ -181,7 +181,7 @@ R4S 上电后, 等待 system 亮绿灯后就可以进入 Wrt 的登录页面了�
     option duplicate_cn "1"
     ```
 
-    ![9.png](/assets/images/blog/dev/vpn/bleachwrt/9.png)
+    ![9.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/9.png)
 
 3. 按 ++esc++ 退出编辑模式, 再按 ++colon++ 进入命令模式, 输入 `wq!` 保存并退出, 最后使用这个命令重启 OpenVPN 服务就好了
 
@@ -225,7 +225,7 @@ iptables -t nat -A POSTROUTING -o br-lan -j MASQUERADE
 **提示:** 参数的含义就是对于从 br-lan 接口发出的所有数据包, 将它们的源 IP 地址修改为 br-lan 接口的 IP 地址, 使内网主机能够通过 NAT 访问外部网络。
 ///
 
-![10.png](/assets/images/blog/dev/vpn/bleachwrt/10.png)
+![10.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/10.png)
 
 ### 远程访问内网设备测试
 
@@ -233,11 +233,11 @@ iptables -t nat -A POSTROUTING -o br-lan -j MASQUERADE
 
 1. 这里通过手机使用流量在 **Windows App** 软件远程连接内网 PC 进行测试。但是首先打开电脑的远程连接功能。
 
-    ![11.png](/assets/images/blog/dev/vpn/bleachwrt/11.png)
+    ![11.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/11.png)
 
 2. 然后在 **Windows App** 中点击 ++plus++ 号添加设备, 输入电脑的。
 
-    ![12.png](/assets/images/blog/dev/vpn/bleachwrt/12.png)
+    ![12.png](https://local.liwanr.com:24/assets/images/blog/dev/vpn/bleachwrt/12.png)
 
 ///
 
