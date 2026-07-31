@@ -2,7 +2,7 @@
 title: 关于
 created: 2025-02-22T08:30:16
 hide:
-    # - navigation
+    - navigation
     - path
     # - feedback
 ---
@@ -38,12 +38,11 @@ hide:
 
     基于静态网站生成器
     [MaterialX](https://jaywhj.github.io/mkdocs-materialx/)。
-    <!-- [Zensical](https://zensical.org/) -->
 
 -   :lucide-cloud-upload: **托管平台**
 
     [Local](https://local.liwanr.com:24)
-    / [OuluCloud](https://yun.oulucloud.com/aff/WMOMVMPX)
+    / [Vercel](https://vercel.com/)
     / [GitHub Pages](https://docs.github.com/pages)
     
 -   :lucide-code-xml: **编码存储**
@@ -83,7 +82,7 @@ hide:
 
 ///tab | **2026年初**
 
-- 框架使用[**Zensical**](https://zensical.org/)，本地服务器部署 + [GitHub Pages](https://liwanr.github.io/) + [Vercel](https://liwanr.vercel.app/) + [Netlify](https://liwanr.netlify.app/)
+- 框架使用[**Zensical**](https://zensical.org/)，本地服务器部署 + [GitHub Pages](https://liwanr.github.io/) + [Vercel](https://vercel.com/) + [Netlify](https://netlify.com/)
 
 - 域名更为**liWanr.com**，网站更名**liWanr**
 
@@ -91,7 +90,7 @@ hide:
 
 - 26/03/22，增加评论功能，次日发表第一篇文
 
-- 26/07/06，增加订阅功能，并移除了 Vercel 和 Netlify 部署
+- 26/07/06，增加订阅功能，并移除 Netlify 部署
 
 - 26/07/13，Zensical是半成品...所以复古了Mkdocs-material的大佬变更版[**MaterialX**](https://jaywhj.github.io/mkdocs-materialx/)
 
@@ -225,11 +224,11 @@ System Specs
     <span class="badge">风扇≦9</span>
     <small>[:lucide-mouse-pointer-click:去看看](https://cougargaming.com/products/cases/mx600-rgb/)</small>
 
--   <small>:lucide-fan: 风扇</small><br>
+<!-- -   <small>:lucide-fan: 风扇</small><br>
     **Jungle Leopard PRISM 4 MAX × 6**<br>
     <span class="badge theme">神光同步</span>
     <span class="badge">≦20dBA</span>
-    <small>[:lucide-mouse-pointer-click:去看看](https://www.jlcpucooler.com/prism-4-max-black-edition-product/)</small>
+    <small>[:lucide-mouse-pointer-click:去看看](https://www.jlcpucooler.com/prism-4-max-black-edition-product/)</small> -->
 ///
 
 <div class="divider">外设 · Peripherals</div>
