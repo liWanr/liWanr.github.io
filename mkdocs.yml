@@ -18,6 +18,7 @@ extra_css:
 
 extra_javascript:
   - assets/javascripts/progress.js
+  - assets/javascripts/speed-insights-init.js
   - path: assets/javascripts/extra.js
     async: true
 

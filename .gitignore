@@ -2,6 +2,9 @@
 .cache/*
 site/*
 
+# Node.js dependencies
+node_modules/
+
 # 最小化复现目录
 reproduction/*
 

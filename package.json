@@ -1,0 +1,30 @@
+{
+  "name": "liwanr-blog",
+  "version": "1.0.0",
+  "description": "Personal blog built with MkDocs Material",
+  "private": true,
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liWanr/liWanr.github.io.git"
+  },
+  "keywords": [
+    "blog",
+    "mkdocs",
+    "material"
+  ],
+  "author": "liWanr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liWanr/liWanr.github.io/issues"
+  },
+  "homepage": "https://github.com/liWanr/liWanr.github.io#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
