@@ -20,6 +20,8 @@ extra_javascript:
   - assets/javascripts/progress.js
   - path: assets/javascripts/extra.js
     async: true
+  - path: assets/javascripts/speed-insights.js
+    defer: true
 
 theme:
   name: materialx
