@@ -1,4 +1,0 @@
-{
-  "buildCommand": "pip install -r requirements.txt && mkdocs build --clean && python custom_fixes.py",
-  "outputDirectory": "site"
-}
