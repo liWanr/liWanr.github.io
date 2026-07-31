@@ -131,7 +131,6 @@ markdown_extensions:
       custom_checkbox: true
   
 plugins:
-  - optimize                                 
   - meta
   - feed:
       filename: rss.xml
