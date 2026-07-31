@@ -1,0 +1,12 @@
+{
+  "name": "liwanr-blog",
+  "version": "1.0.0",
+  "description": "Personal blog with MkDocs and Vercel Speed Insights",
+  "private": true,
+  "scripts": {
+    "build": "echo 'No build step required for static assets'"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0"
+  }
+}
