@@ -8,7 +8,7 @@ description: 其实 人生并非虚耗 何来尘埃飞舞
 ---
 
 ///html | figcaption[align="center"]
-![登高峰一秒](https://local.liwanr.com:24/assets/images/blog/shalong/登高峰一秒.png)
+![登高峰一秒](/assets/images/blog/shalong/登高峰一秒.png)
 登高峰一秒
 ///
 
@@ -23,7 +23,7 @@ description: 其实 人生并非虚耗 何来尘埃飞舞
 ///
 
 ///html | figcaption[align="center"]
-![港湾晚灯](https://local.liwanr.com:24/assets/images/blog/shalong/港湾晚灯.png)
+![港湾晚灯](/assets/images/blog/shalong/港湾晚灯.png)
 港湾晚灯
 ///
 
@@ -33,7 +33,7 @@ description: 其实 人生并非虚耗 何来尘埃飞舞
 ///
 
 ///html | figcaption[align="center"]
-![摘下怀念 记住美妙](https://local.liwanr.com:24/assets/images/blog/shalong/摘下怀念 记住美妙.jpg)
+![摘下怀念 记住美妙](/assets/images/blog/shalong/摘下怀念 记住美妙.jpg)
 摘下怀念 记住美妙
 ///
 

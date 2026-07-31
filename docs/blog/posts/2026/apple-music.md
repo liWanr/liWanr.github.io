@@ -18,11 +18,11 @@ categories:
 
 ///html | div.grid
 <figure markdown="span">
-![快捷方式](https://local.liwanr.com:24/assets/images/blog/apps/apple-music/1.jpeg)
+![快捷方式](/assets/images/blog/apps/apple-music/1.jpeg)
 </figure>
 
 <figure markdown="span">
-![更改](https://local.liwanr.com:24/assets/images/blog/apps/apple-music/2.jpeg)
+![更改](/assets/images/blog/apps/apple-music/2.jpeg)
 </figure>
 ///
 
