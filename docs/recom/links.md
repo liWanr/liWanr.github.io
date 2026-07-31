@@ -31,7 +31,7 @@ created: 2026-05-08T07:46:22
 -   [**索玛**](https://suo.ma/)
     { title="生活博客, 记录生活的点点滴滴" }
 
--   [**Jason**](https://limhy.cn)
+-   [**Jason**](https://i.limhy.cn)
     { title="Jason 独自研发, 没有依赖任何框架的博客系统" }
 
 -   [**初然忆**](https://www.imcry.vip/)
