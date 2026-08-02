@@ -251,7 +251,7 @@ nav:
   - BLOG:
     - blog/index.md
     - 沙龙: blog/posts/2026/shalong.md
-    - 压缩与解压: /blog/posts/2025/zip-unzip.md
+    - 压缩与解压: blog/posts/2025/zip-unzip.md
     - Zensical 小技巧: blog/posts/2026/zensical-pro-tips.md
   - RECOM:
     - recom/website.md
