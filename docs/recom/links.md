@@ -17,7 +17,7 @@ created: 2026-05-08T07:46:22
 
 ///html | div.grid.cards
 -   [**fuXes**](https://fuxes.cn/)
-    { title="有胡言乱语、读书感想，以及日常记录。" }
+    { title="人生如逆旅，你我皆行人" }
 
 -   [**莫比乌斯**](https://mobius.blog/)
     { title="写作, 一场自我悖驳的旅程" }
@@ -32,10 +32,10 @@ created: 2026-05-08T07:46:22
     { title="生活博客, 记录生活的点点滴滴" }
 
 -   [**Jason**](https://i.limhy.cn)
-    { title="Jason 独自研发, 没有依赖任何框架的博客系统" }
+    { title="一个关于技术折腾、生活记录和个人项目的静态博客" }
 
 -   [**初然忆**](https://www.imcry.vip/)
-    { title="初心如初见，然忆似流年。" }
+    { title="初心如初见，然忆似流年" }
 
 -   [**白熊阿丸的小屋**](https://blog.bxaw.name/)
     { title="在这里可以看到一个真实的我，我会在这里书写我的一切" }
