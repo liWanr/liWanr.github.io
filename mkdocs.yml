@@ -248,9 +248,9 @@ nav:
   - ESSAYS: 
     - essays/index.md
     - 囚徒日记: essays/posts/2026/Captive-Journal.md
+    - 沙龙: essays/posts/2026/shalong.md
   - BLOG:
     - blog/index.md
-    - 沙龙: blog/posts/2026/shalong.md
     - 压缩与解压: blog/posts/2025/zip-unzip.md
     - Zensical 小技巧: blog/posts/2026/zensical-pro-tips.md
   - RECOM:

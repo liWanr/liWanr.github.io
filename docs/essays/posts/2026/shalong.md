@@ -1,11 +1,15 @@
 ---
-icon: lucide/camera
 title: 沙龙
 date: 2026-06-23
+icon: lucide/camera
+description: 其实 人生并非虚耗 何来尘埃飞舞
+categories:
+  - 思考
 authors: 
     - Wyman
-description: 其实 人生并非虚耗 何来尘埃飞舞
 ---
+
+<link rel="stylesheet" href="/assets/stylesheets/essays.css">
 
 ///html | figcaption[align="center"]
 ![登高峰一秒](/assets/images/blog/shalong/登高峰一秒.png)
