@@ -28,15 +28,6 @@ created: 2026-05-08T07:46:22
 -   [**孤斗**](https://d-d.design/)
     { title="做自己, 不隨波逐流, 不妥協" }
 
--   [**索玛**](https://suo.ma/)
-    { title="生活博客, 记录生活的点点滴滴" }
-
--   [**Jason**](https://i.limhy.cn)
-    { title="一个关于技术折腾、生活记录和个人项目的静态博客" }
-
--   [**初然忆**](https://www.imcry.vip/)
-    { title="初心如初见，然忆似流年" }
-
 -   [**白熊阿丸的小屋**](https://blog.bxaw.name/)
     { title="在这里可以看到一个真实的我，我会在这里书写我的一切" }
 ///
