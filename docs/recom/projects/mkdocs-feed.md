@@ -63,10 +63,10 @@ plugins:
 | `filename` | str | `feed.xml` | 输出文件名，相对 `site_dir`。改名不影响内容格式，始终是 RSS 2.0 |
 | `length` | int | `20` | 保留最新多少条。排序后截断 |
 | `pretty_print` | bool | `true` | 输出带缩进的 XML。关掉省体积，两种都是合法 XML |
-| `include_last_build_date` | bool | `true` | 是否输出 `<lastBuildDate>`。见[下方说明](#每次构建生成的文件都不一样) |
+| `include_last_build_date` | bool | `true` | 是否输出 `<lastBuildDate>`。|
 | `full_content` | bool | `false` | 是否把完整 HTML 写进 `<content:encoded>` |
 | `abstract_chars_count` | int | `300` | 自动提取的摘要截断长度。**只对自动提取生效** |
-| `timezone` | IANA 时区名 | `UTC` | 见[日期与时区](#日期与时区)。写错在配置阶段就报错 |
+| `timezone` | IANA 时区名 | `UTC` | 写错在配置阶段就报错 |
 | `date_priority` | list | `[meta, git, mtime]` | 依次尝试的日期来源，先命中的赢 |
 | `git_history_valid_after` | ISO 8601 | 无 | 迁移仓库的截断点 |
 | `sort_by` | `created` \| `updated` | `created` | 排序依据。不影响 `<pubDate>` 的语义 |
