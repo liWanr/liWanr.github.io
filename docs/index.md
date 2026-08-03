@@ -41,5 +41,3 @@ hide:
 | [:simple-github:](https://github.com/liWanr){ title="GitHub" }
 | [:simple-telegram:](https://t.me/itsWanr){ title="Telegram" }
 | [:simple-gravatar:](https://gravatar.com/liwanr){ title="Gravatar" }
-| [:lucide-handshake:](/recom/links/){ title="朋友组织" }
-| [:lucide-scale:](/about/#license){ title="开源许可" }
