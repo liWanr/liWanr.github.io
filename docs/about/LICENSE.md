@@ -1,22 +1,9 @@
 ---
-title: 许可证授权
+title: 许可授权
 comments: false
 hide:
     - path
 ---
-
-///html | style
-.md-nav--lifted {
-    display: none !important;
-}
-///
-
-///html | div.grid[style="text-align: center;"]
-[**隐私政策**](/about/privacy-policy/)
-
-许可证授权
-{ style="opacity: 0.5;" }
-///
 
 **The source code is licensed under the MIT License.**<br>
 **源代码采用 MIT 许可证授权。**

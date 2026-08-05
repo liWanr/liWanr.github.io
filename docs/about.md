@@ -15,10 +15,12 @@ hide:
 
 <link rel="stylesheet" href="/assets/stylesheets/about.css">
 
-///html | div.grid[style="text-align: center;"]
+///html | div.grid[style="text-align: center;grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); font-family: JetBrains Mono;"]
+[**新闻简报**](/about/newspaper/)
+
 [**隐私政策**](/about/privacy-policy/)
 
-[**许可证授权**](/about/LICENSE/)
+[**许可授权**](/about/LICENSE/)
 ///
 
 ## :lucide-megaphone: 关于博客
@@ -57,26 +59,6 @@ hide:
     - [ESSAYS](http://localhost:8000/essays/)正文采用
     [Noto Serif SC](https://fonts.google.com/noto/specimen/Noto+Serif+SC?preview.layout=grid&query=Noto+Serif+SC&preview.script=Hans)。
 ///
-
-## :lucide-newspaper: 新闻简报
-
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
-<form id="rss-ring-form">
-  <div style="display: flex; gap: 8px; align-items: center;">
-    <input class="mdx-form__input mdx-form__input--stretch" type="email" name="email" id="bd-email" style="flex: 1;"  placeholder="your-email@example.com" autocomplete="email" required/>
-    <button class="md-button md-button--primary" type="submit" id="rss-ring-submit" disabled>订阅</button>
-  </div>
-  <div class="cf-turnstile"
-       data-sitekey="0x4AAAAAADwZnEQiPgcV_V17"
-       data-callback="rssRingOnVerified"
-       data-expired-callback="rssRingOnExpired"
-       data-error-callback="rssRingOnExpired"></div>
-</form>
-
-<p id="rss-ring-message">内容更新不会等你，但订阅可以。</p>
-
-<script src="/assets/javascripts/about.js"></script>
 
 ## :lucide-history: 历程轨迹
 

@@ -1,23 +1,8 @@
 ---
 title: 隐私政策
-comments: false
-updated: 2026-07-19T18:30:00+08:00
 hide:
     - path
 ---
-
-///html | style
-.md-nav--lifted {
-    display: none !important;
-}
-///
-
-///html | div.grid[style="text-align: center;"]
-隐私政策
-{ style="opacity: 0.5;" }
-
-[**许可证授权**](/about/LICENSE/)
-///
 
 ## 基本说明
 

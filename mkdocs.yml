@@ -266,5 +266,6 @@ nav:
       - recom/projects/mkdocs-feed.md
   - ABOUT:
     - about.md
-    - about/LICENSE.md
+    - about/newspaper.md
     - about/privacy-policy.md
+    - about/LICENSE.md
