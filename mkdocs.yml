@@ -251,16 +251,54 @@ nav:
     - 沙龙: essays/posts/2026/shalong.md
   - BLOG:
     - blog/index.md
-    - 压缩与解压: blog/posts/2025/zip-unzip.md
-    - Zensical 小技巧: blog/posts/2026/zensical-pro-tips.md
-  - RECOM:
+  - TECH.:
+    - WiKi:
+      - tec/WiKi/github-badge.md
+      - tec/WiKi/windows-shortcut.md
+      - tec/WiKi/zensical-pro-tips.md
+      - tec/WiKi/dns-explain.md
+      - tec/WiKi/dual-boot-time-sync.md
+      - tec/WiKi/execution-breakdown.md
+    - VPN:
+      - tec/VPN/wireGuard.md
+      - tec/VPN/immortalWrt.md
+      - tec/VPN/bleachwrt.md
+      - tec/VPN/openvpn-client.md
+    - Nginx:
+      - tec/Nginx/nginx-config.md
+      - tec/Nginx/nginx-reverse-proxy.md
+      - tec/Nginx/build-nginx.md
+    - Docker:
+      - tec/Docker/docker-app-deploy.md
+      - tec/Docker/use-docker.md
+      - tec/Docker/custom-docker-img.md
+      - tec/Docker/docker-info.md
+      - tec/Docker/install-docker.md
+    - DevOps:
+      - tec/DevOps/mysql.md
+      - tec/DevOps/vim.md
+      - tec/DevOps/ubuntu-enable-net.md
+      - tec/DevOps/hackrf-firmware-maint.md
+      - tec/DevOps/git.md
+      - tec/DevOps/usb-secure-boot.md
+      - tec/DevOps/zip-unzip.md
+      - tec/DevOps/nvidia-control-panel-fs-corrupt.md
+    - Apps:
+      - tec/Apps/apple-ai.md
+      - tec/Apps/apple-music.md
+      - tec/Apps/bandizip.md
+      - tec/Apps/activate-typora.md
+      - tec/Apps/samba.md
+      - tec/Apps/active-jetbrains.md
+      - tec/Apps/chrome-search-new-tab.md
+  - RRCOM:
     - recom/website.md
     - recom/links.md
     - recom/open-source.md
     - recom/tools.md
     - recom/movie.md
     - recom/tuibeitu.md
-    - Projects:
+    - PROJECTS:
       - recom/projects/dossier.md
       - recom/projects/FUCK.md
       - recom/projects/mkdocs-feed.md
