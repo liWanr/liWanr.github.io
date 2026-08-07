@@ -136,7 +136,7 @@ plugins:
       filename: rss.xml
       length: 15
       timezone: Asia/Shanghai
-      exclude: [recom, about]
+      exclude: [recom, about, blog]
   - search:                                   # 搜索功能
       provider: pagefind
       pagefind:
