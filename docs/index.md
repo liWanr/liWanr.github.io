@@ -37,7 +37,7 @@ hide:
 记录「技术与思考」的个人空间，也是我在数字世界中圈出的三分地
 { style="margin-top:0px" }
 
-[:lucide-mail:](mailto:itsWanr@iCloud.com){ title="邮箱" }
-| [:simple-github:](https://github.com/liWanr){ title="GitHub" }
-| [:simple-telegram:](https://t.me/itsWanr){ title="Telegram" }
-| [:simple-gravatar:](https://gravatar.com/liwanr){ title="Gravatar" }
+[:lucide-mail:](mailto:itsWanr@iCloud.com){ title="邮箱" rel="me" }
+| [:simple-github:](https://github.com/liWanr){ title="GitHub" rel="me" }
+| [:simple-telegram:](https://t.me/itsWanr){ title="Telegram" rel="me" }
+| [:simple-gravatar:](https://gravatar.com/liwanr){ title="Gravatar" rel="me" }
