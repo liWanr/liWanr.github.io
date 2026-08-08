@@ -41,4 +41,7 @@ hide:
        data-error-callback="rssRingOnExpired"></div>
 </form>
 
+<input type="checkbox" id="rss-ring-privacy-checkbox" />
+我已阅读并同意[隐私政策](/about/privacy-policy/)。
+
 <script src="/assets/javascripts/about.js"></script>

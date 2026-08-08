@@ -2,13 +2,19 @@ const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 let rssRingTurnstileToken = '';
 let rssRingEmailValid = false;
+let rssRingPrivacyChecked = false;
 
 function rssRingUpdateSubmitState() {
-  document.getElementById('rss-ring-submit').disabled = !(rssRingEmailValid && rssRingTurnstileToken);
+  document.getElementById('rss-ring-submit').disabled = !(rssRingEmailValid && rssRingTurnstileToken && rssRingPrivacyChecked);
 }
 
 document.getElementById('bd-email').addEventListener('input', function (e) {
   rssRingEmailValid = EMAIL_REGEX.test(e.target.value.trim());
+  rssRingUpdateSubmitState();
+});
+
+document.getElementById('rss-ring-privacy-checkbox').addEventListener('change', function (e) {
+  rssRingPrivacyChecked = e.target.checked;
   rssRingUpdateSubmitState();
 });
 
@@ -29,6 +35,11 @@ document.getElementById('rss-ring-form').addEventListener('submit', async functi
 
   if (!rssRingEmailValid) {
     messageEl.textContent = '邮箱格式不正确，请检查后重试';
+    return;
+  }
+
+  if (!rssRingPrivacyChecked) {
+    messageEl.textContent = '请先阅读并勾选同意隐私政策';
     return;
   }
 
