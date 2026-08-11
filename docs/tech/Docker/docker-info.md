@@ -6,24 +6,28 @@ categories:
     - Docker
 ---
 
-## 支持系统的安装说明 { id="installation-procedures-for-supported-platforms" }
+<style>
+.green{ color:  #00e676 }
+.red { color:  #fb4d4d }
+.yellow { color:  #ffcc2f }
+</style>
+
+## 支持系统的安装说明
 
 点击对应系统的链接即可查看具体的安装步骤。
 
 | 平台 | x86_64<br>/ amd64 | arm64<br>/ aarch64 | arm-32bit | ppc64le | s390x |
 | :-: | :-: | :--: | :-: | :-: | :-: |
-| [**Ubuntu 22.04+**](/blog/2026/install-docker/#ubuntu){ data-preview } | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [**Debian 11+**](https://docs.docker.com/engine/install/debian/) | ✅ | ✅ | ✅ | ✅ | - |
-| [**CentOS 9+**](https://docs.docker.com/engine/install/centos/) | ✅ | ✅ | - | ✅ | - |
-| [二进制包](https://docs.docker.com/engine/install/binaries/) | ✅ | ✅ | ✅ | - | - |
-| [Fedora](https://docs.docker.com/engine/install/fedora/) |✅|✅| - |✅| - |
-| [Raspberry Pi OS<br>(32-bit)](https://docs.docker.com/engine/install/raspberry-pi-os/) | - | - | - | ⚠️ | - | 
-| [RHEL](https://docs.docker.com/engine/install/rhel/) | - | ✅ | ✅ | - | - | ✅ |
-| [SLES](https://docs.docker.com/engine/install/sles/) | - | - | - | - | ❌ |
+| [**Ubuntu 22.04+**](/tech/Docker/install-docker/#ubuntu) | :lucide-circle-check-big:{ .green } | :lucide-circle-check-big:{ .green } | :lucide-circle-check-big:{ .green } | :lucide-circle-check-big:{ .green } | :lucide-circle-check-big:{ .green } |
+| [**Debian 11+**](https://docs.docker.com/engine/install/debian/) | :lucide-circle-check-big:{ .green } | :lucide-circle-check-big:{ .green } | :lucide-circle-check-big:{ .green } | :lucide-circle-check-big:{ .green } | - |
+| [**CentOS 9+**](https://docs.docker.com/engine/install/centos/) | :lucide-circle-check-big:{ .green } | :lucide-circle-check-big:{ .green } | - | :lucide-circle-check-big:{ .green } | - |
+| [二进制包](https://docs.docker.com/engine/install/binaries/) | :lucide-circle-check-big:{ .green } | :lucide-circle-check-big:{ .green } | :lucide-circle-check-big:{ .green } | - | - |
+| [Fedora](https://docs.docker.com/engine/install/fedora/) |:lucide-circle-check-big:{ .green }|:lucide-circle-check-big:{ .green }| - |:lucide-circle-check-big:{ .green }| - |
+| [Raspberry Pi OS<br>(32-bit)](https://docs.docker.com/engine/install/raspberry-pi-os/) | - | - | - | :lucide-circle-alert:{ .yellow } | - | 
+| [RHEL](https://docs.docker.com/engine/install/rhel/) | - | :lucide-circle-check-big:{ .green } | :lucide-circle-check-big:{ .green } | - | - | :lucide-circle-check-big:{ .green } |
+| [SLES](https://docs.docker.com/engine/install/sles/) | - | - | - | - | :lucide-circle-x:{ .red } |
 
-<!-- more -->
-
-### 其他 Linux 发行版 { id="other-linux-distributions" }
+### 其他 Linux 发行版
 
 > [!note] 这些方法在某些情况下可能可用, 但 Docker 并不会对这些衍生发行版进行专门测试或验证。
 > - **如果是 Debian 的衍生版本**, 例如 「BunsenLabs Linux」、「Kali Linux」 或 「LMDE」（基于 Debian 的 Linux Mint）, 可以参考 Debian 的安装说明。安装时, 将文档中的 Debian 版本替换为你当前发行版所对应的 Debian 版本, 具体对应关系可查阅你所用发行版的官方文档。
