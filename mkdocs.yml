@@ -302,6 +302,7 @@ nav:
       - recom/projects/dossier.md
       - recom/projects/FUCK.md
       - recom/projects/mkdocs-feed.md
+      - recom/projects/mkdocs-webmention.md
   - ABOUT:
     - about.md
     - about/newspaper.md
