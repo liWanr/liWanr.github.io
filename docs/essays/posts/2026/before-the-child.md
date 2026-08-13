@@ -4,6 +4,7 @@ date: 2026-04-27T13:05:50
 description: 当决定把一个生命带到这个世界上时，真正重要的不是证明自己不自私，而是尽可能减少那份自私对孩子造成的伤害。
 categories:
   - 思考
+draft: true
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">
