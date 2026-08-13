@@ -134,9 +134,9 @@ plugins:
   - meta
   - feed:
       filename: rss.xml
-      length: 15
+      length: 10
       timezone: Asia/Shanghai
-      exclude: [recom, about, blog]
+      exclude: [recom, about, quote]
   - search:                                   # 搜索功能
       provider: pagefind
       pagefind:
@@ -163,17 +163,6 @@ plugins:
               title: 5.0
           indexWeight: 1.0
           noWorker: false
-  # - blog:
-  #     archive_date_format: yyyy               # 归档时间格式
-  #     blog_toc: true                          # 在 Blog 主页中显示文章目录
-  #     post_date_format: "yyyy/MM/dd"                  # 日期格式 yyyy mm dd
-  #     post_excerpt: optional                  # 摘录，optional选择写，required必写
-  #     post_excerpt_separator: <!-- more -->   # 生成摘录，more 以上为摘录
-  #     post_url_date_format: yyyy
-  #     post_url_format: "{date}/{file}"
-  #     categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
-  #       kwds:
-  #         case: lower
   - blog:
       blog_dir: essays
       archive: true

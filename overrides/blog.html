@@ -4,14 +4,15 @@
 
 <style>
 .headerlink {
-    display: none !important;
+  display: none !important;
 }
 .md-content__button {
   display: none !important;
 } 
-/* .md-content__inner {
-  margin-left: 0 !important;
-} */
+.essays .md-draft {
+    font-size: 0.9em;
+    margin-left: 0.4rem;
+}
 </style>
 
 <div class="md-content" data-md-component="content">
@@ -35,6 +36,11 @@
                 data-date="{{ post.config.date.created | date }}"
               >
                 {{ post.title }}
+                {% if post.config.draft %}
+                  <span class="md-draft">
+                    {{ lang.t("blog.draft") }}
+                  </span>
+                {% endif %}
               </a>
             </li>
             {% endfor %}
