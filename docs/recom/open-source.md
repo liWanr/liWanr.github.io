@@ -102,6 +102,10 @@ hr {
 
     基于 sing-box 的「一键安装 & 管理脚本」, 自动完成安装、更新、配置等工作。脚本会自动创建 REALITY 配置, 适合新手快速搭建多协议并存的科学上网节点。
 
+    ```Bash
+    bash <(wget -qO- -o- https://github.com/233boy/sing-box/raw/main/install.sh)
+    ```
+
     - 开源协议: GPL-3.0 license
 
     - 支持平台: **Ubuntu** / Debian / CentOS(慎用, 可能无法正常运行)
