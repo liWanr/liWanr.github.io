@@ -4,7 +4,6 @@ date: 2026-04-14T15:53:25
 description: 有时我们得到的并不是知识本身，而是一种拥有知识的感觉。而这种感觉，往往比真正的无知，更难被察觉。
 categories:
   - 思考
-draft: true
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">
