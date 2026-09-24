@@ -214,10 +214,10 @@ extra:
   # ----  本地部署的底部链接  ----
   social:
     - icon: lucide/folder
-      link: https://local.liwanr.com:24/public/
+      link: https://local.liwanr.com:25/public/
       name: Public
     - icon: lucide/folder-lock
-      link: https://local.liwanr.com:24/private/
+      link: https://local.liwanr.com:25/private/
       name: Private
     - icon: simple/openwrt
       link: http://10.0.0.1

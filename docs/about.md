@@ -43,7 +43,7 @@ hide:
 
 -   :lucide-cloud-upload: **托管平台**
 
-    [Local](https://local.liwanr.com:24)
+    [Local](https://local.liwanr.com:25)
     / [Vercel](https://vercel.com/)
     / [GitHub Pages](https://docs.github.com/pages)
     
