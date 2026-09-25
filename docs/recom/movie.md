@@ -86,7 +86,7 @@ authors:
 
     活着
 
--   [![霸王别姬](https://www.themoviedb.org/t/p/w1280/f54hNIiHNINw3JiUJB2XaQl5wCN.jpg)](https://www.themoviedb.org/movie/10997)
+-   [![霸王别姬](https://image.tmdb.org/t/p/original/vOEkLofQ8N1OdbGs5L87m7Plpw2.jpg)](https://www.themoviedb.org/movie/10997)
 
     霸王别姬
 
@@ -94,7 +94,7 @@ authors:
 
     浪潮
 
--   [![功夫](https://image.tmdb.org/t/p/original/18BmJuz8LgY5GyiRO6H16hN7iWP.jpg)](https://www.themoviedb.org/movie/9470)
+-   [![功夫](https://image.tmdb.org/t/p/original/3XSIZoxL4daMFloCoaC6nGzhcIS.jpg)](https://www.themoviedb.org/movie/9470)
 
     功夫
 
@@ -110,9 +110,9 @@ authors:
 
     阳光灿烂的日子
 
--   [![2001太空漫游](https://www.themoviedb.org/t/p/w1280/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg)](https://www.themoviedb.org/movie/62-2001-a-space-odyssey)
+-   [![高山下的花环](https://image.tmdb.org/t/p/original/A8GUbKyDLCJ5RDjeQidCQgrwMXr.jpg)](https://www.themoviedb.org/movie/258424)
 
-    2001太空漫游
+    高山下的花环
 
 -   [![何以为家](https://image.tmdb.org/t/p/original/3JIbdk0HpCt5xNG6s7X1QNfAqPW.jpg)](https://www.themoviedb.org/movie/517814)
 
@@ -126,4 +126,51 @@ authors:
 
     死亡诗社
 
+-   [![致命魔术](https://image.tmdb.org/t/p/original/6QBVVAPcUh92JKandnpZTS9UjI7.jpg)](https://www.themoviedb.org/movie/1124-the-prestige)
+
+    致命魔术
+
+-   [![罗根](https://image.tmdb.org/t/p/original/a65S6Mh9NFiNURj1IZMulsV03n4.jpg)](https://www.themoviedb.org/movie/263115-logan)
+
+    罗根
+
+-   [![小丑](https://image.tmdb.org/t/p/original/g9l7iLYusH82bbEbwGCJzhVkOe2.jpg)](https://www.themoviedb.org/movie/475557-joker)
+
+    小丑
+
+-  [![第六感](https://www.themoviedb.org/t/p/w1280/vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg)](https://www.themoviedb.org/movie/745-the-sixth-sense)
+
+    第六感
+
+-  [![罗生门](https://image.tmdb.org/t/p/original/g0nUa3Yv9Q4dD7xf8UaKG2paTZo.jpg)](https://www.themoviedb.org/movie/548)
+
+    罗生门
+
+-  [![复仇者联盟4](https://image.tmdb.org/t/p/original/e7W3hhusGQsp3DJ8CL3AFzJpXRD.jpg)](https://www.themoviedb.org/movie/299534-avengers-endgame)
+
+    复仇者联盟4
+
+-  [![控方证人](https://image.tmdb.org/t/p/original/mM5Cad2ESBprh6ucPnMzMfI34Cu.jpg)](https://www.themoviedb.org/movie/37257-witness-for-the-prosecution)
+
+    控方证人
+
+-  [![蝴蝶效应](https://image.tmdb.org/t/p/original/o61NWsaOs4sFmMUwqYDMQFVkCMN.jpg)](https://www.themoviedb.org/movie/1954-the-butterfly-effect)
+
+    蝴蝶效应
+
+-  [![杀人回忆](https://image.tmdb.org/t/p/original/9wEtsEbYxSdDzg8kPhsqfOPqhR1.jpg)](https://www.themoviedb.org/movie/11423)
+
+    杀人回忆
+
+-  [![催眠大师](https://image.tmdb.org/t/p/original/j36Bz7SqGXavHrMjZzF1KKtpIFu.jpg)](https://www.themoviedb.org/movie/273197)
+
+    催眠大师
+
+-  [![狗镇](https://image.tmdb.org/t/p/original/ef8ByFpQyxetGUTRDKVUnIAu36u.jpg)](https://www.themoviedb.org/movie/553-dogville)
+
+    狗镇
+
+-  [![烈日灼心](https://image.tmdb.org/t/p/original/qIHktPhZoNvoIonI4lziWezJnEp.jpg)](https://www.themoviedb.org/movie/344556)
+
+    烈日灼心
 ///
