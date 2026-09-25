@@ -30,13 +30,13 @@ authors:
 
     盗梦空间
 
--   [![星际穿越](https://www.themoviedb.org/t/p/w1280/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg)](https://www.themoviedb.org/movie/157336-interstellar)
+-   [![星际穿越](https://image.tmdb.org/t/p/original/cA5TGzNpwxhLGeAELmWHB5klcvN.jpg)](https://www.themoviedb.org/movie/157336-interstellar)
 
     星际穿越
 
--   [![寄生虫](https://image.tmdb.org/t/p/original/fLcDvPPoKtsBdkpRegemFGJR8KK.jpg)](https://www.themoviedb.org/movie/496243)
+-   [![忠犬八公的故事](https://image.tmdb.org/t/p/original/67F00DOtupYMh76OSlnwRkvFbme.jpg)](https://www.themoviedb.org/movie/28178-hachi-a-dog-s-tale)
 
-    寄生虫
+    忠犬八公的故事
 
 -   [![大红灯笼高高挂](https://image.tmdb.org/t/p/original/c8e6H3G3RNRsBQrSPv3yxUhblXZ.jpg)](https://www.themoviedb.org/movie/10404)
 
@@ -173,4 +173,20 @@ authors:
 -  [![烈日灼心](https://image.tmdb.org/t/p/original/qIHktPhZoNvoIonI4lziWezJnEp.jpg)](https://www.themoviedb.org/movie/344556)
 
     烈日灼心
+
+-  [![飞屋环游记](https://www.themoviedb.org/t/p/w1280/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg)](https://www.themoviedb.org/movie/14160-up)
+
+    飞屋环游记
+
+-  [![飞越疯人院](https://image.tmdb.org/t/p/original/tjO8B0TmLbrjqUSirfbMsoDxNx2.jpg)](https://www.themoviedb.org/movie/510-one-flew-over-the-cuckoo-s-nest)
+
+    飞越疯人院
+
+-  [![末代皇帝](https://image.tmdb.org/t/p/original/7CZSCaGxCD2HXo8LrdcW183moqJ.jpg)](https://www.themoviedb.org/movie/746-the-last-emperor)
+
+    末代皇帝
+
+-  [![战争之王](https://image.tmdb.org/t/p/original/3MGQD4yXokufNlW1AyRXdiy7ytP.jpg)](https://www.themoviedb.org/movie/1830-lord-of-war)
+
+    战争之王
 ///
