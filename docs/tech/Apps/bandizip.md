@@ -13,6 +13,6 @@ Bandizip - 最后的辉煌
 </h1>
 
 ///html | div.step
-1. 点击下载安装包 [:lucide-mouse-pointer-click: **Bandizip**](https://local.liwanr.com:25/public/Tools/Bandizip_v7.06.zip), 解压密码 `#!text 1111`
+1. 点击下载安装包 [:lucide-mouse-pointer-click: **Bandizip**](https://local.liwanr.com:2525/public/Tools/Bandizip_v7.06.zip), 解压密码 `#!text 1111`
 
 ///

@@ -163,16 +163,16 @@ plugins:
       stylesheet: ""
       length: 10
       match_path: "(tech|essays/posts)/*"
-#   - document-dates:         
-#       position: top                           # 显示位置：top（标题下方） bottom（文档末尾），默认: top
-#       type: timeago                           # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date
-#       date_format: '%Y-%m-%d'                 # e.g., %Y-%m-%d, %b %d, %Y
-#       time_format: '%H:%M:%S'                 # valid only if type=datetime
-#       exclude:                                # 排除文件列表（支持 unix shell 风格的通配符）
-#         - index.md                            # 示例：排除 blog 文件夹下所有文件，包括子文件夹
-#         - blog/*                              # 示例：排除 blog 文件夹下所有文件，包括子文件夹
-#         - essays/*                            # 示例：排除 essays 文件夹下所有文件，包括子文件夹
-#         # - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
+  - document-dates:         
+      position: top                           # 显示位置：top（标题下方） bottom（文档末尾），默认: top
+      type: timeago                           # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date
+      date_format: '%Y-%m-%d'                 # e.g., %Y-%m-%d, %b %d, %Y
+      time_format: '%H:%M:%S'                 # valid only if type=datetime
+      exclude:                                # 排除文件列表（支持 unix shell 风格的通配符）
+        - index.md                            # 示例：排除 blog 文件夹下所有文件，包括子文件夹
+        - blog/*                              # 示例：排除 blog 文件夹下所有文件，包括子文件夹
+        - essays/*                            # 示例：排除 essays 文件夹下所有文件，包括子文件夹
+        # - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
 
 extra:
   generator: false                          # 移除 "Made with ***" 声明
@@ -191,10 +191,10 @@ extra:
   # ----  本地部署的底部链接  ----
   social:
     - icon: lucide/folder
-      link: https://local.liwanr.com:25/public/
+      link: https://local.liwanr.com:2525/public/
       name: Public
     - icon: lucide/folder-lock
-      link: https://local.liwanr.com:25/private/
+      link: https://local.liwanr.com:2525/private/
       name: Private
     - icon: simple/openwrt
       link: http://10.0.0.1
@@ -205,9 +205,6 @@ extra:
     - icon: lucide/rss
       link: /rss.xml
       name: RSS订阅
-    - icon: lucide/languages
-      link: https://translate.google.com/?hl=zh-CN&sl=zh-CN&tl=en&op=translate
-      name: Translate
 
 nav:
   - HOME: index.md
@@ -215,8 +212,6 @@ nav:
     - essays/index.md
     - 囚徒日记: essays/posts/2026/Captive-Journal.md
     - 沙龙: essays/posts/2026/shalong.md
-  # - BLOG:
-  #   - blog/index.md
   - TECH.:
     - WiKi:
       - tech/WiKi/github-badge.md

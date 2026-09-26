@@ -213,12 +213,12 @@
 # # ----  本地部署的底部链接  ----
 # [[project.extra.social]]
 # icon = "lucide/folder"
-# link = "https://local.liwanr.com:25/public/"
+# link = "https://local.liwanr.com:2525/public/"
 # name = "Public"
 
 # [[project.extra.social]]
 # icon = "lucide/folder-lock"
-# link = "https://local.liwanr.com:25/private/"
+# link = "https://local.liwanr.com:2525/private/"
 # name = "Private"
 
 # [[project.extra.social]]
