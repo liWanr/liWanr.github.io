@@ -10,5 +10,4 @@ nginx.conf
 build.sh
 
 # 不发布的文章
-new.md
-newnew.md
+back2dust.md

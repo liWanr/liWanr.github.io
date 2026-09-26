@@ -22,7 +22,6 @@ extra_javascript:
     async: true
 
 theme:
-  name: materialx
   language: zh                       # 设置语言,zh简中, en英文, zh-Hant繁中, zh-TW台湾
   custom_dir: overrides              # 模板覆盖目录，用于自定义主题模板
   font:
@@ -102,8 +101,8 @@ markdown_extensions:
         kwds:
           case: lower
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji 
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:zensical.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:zensical.extensions.emoji.to_svg
       options:
         custom_icons:
           - overrides/.icons                # 自定义 SVG 图标目录
@@ -132,43 +131,12 @@ markdown_extensions:
   
 plugins:
   - meta
-  - feed:
-      filename: rss.xml
-      length: 10
-      timezone: Asia/Shanghai
-      exclude: [recom, about, quote]
-  - search:                                   # 搜索功能
-      provider: pagefind
-      pagefind:
-        output_subdir: search                 # 搜索索引文件输出目录
-        root_selector: html                   # CSS 选择器 Pagefind 将每个文档的根元素视为根元素
-        force_language: zh
-        exclude_selectors:
-          - nav
-          - footer
-        include_characters: ._
-        keep_index_url: true
-        write_playground: false
-        verbose: false
-        options:
-          excerptLength: 30
-          exactDiacritics: false
-          ranking:
-            termFrequency: 1.0
-            termSimilarity: 1.0
-            pageLength: 0.75
-            termSaturation: 1.4
-            diacriticSimilarity: 0.8
-            metaWeights:
-              title: 5.0
-          indexWeight: 1.0
-          noWorker: false
   - blog:
       blog_dir: essays
       archive: true
       archive_date_format: yyyy               # 归档时间格式
       blog_toc: true                          # 在 Blog 主页中显示文章目录
-      post_date_format: "yyyy/MM/dd"                  # 日期格式 yyyy mm dd
+      post_date_format: "yyyy/MM/dd"          # 日期格式 yyyy mm dd
       post_excerpt: optional                  # 摘录，optional选择写，required必写
       post_excerpt_separator: <!-- more -->   # 生成摘录，more 以上为摘录
       post_url_date_format: yyyy
@@ -186,16 +154,25 @@ plugins:
       loop: true                              # 图片循环  
       skip_classes:
             - movie-links
-  - document-dates:         
-      position: top                           # 显示位置：top（标题下方） bottom（文档末尾），默认: top
-      type: timeago                           # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date
-      date_format: '%Y-%m-%d'                 # e.g., %Y-%m-%d, %b %d, %Y
-      time_format: '%H:%M:%S'                 # valid only if type=datetime
-      exclude:                                # 排除文件列表（支持 unix shell 风格的通配符）
-        - index.md                            # 示例：排除 blog 文件夹下所有文件，包括子文件夹
-        - blog/*                              # 示例：排除 blog 文件夹下所有文件，包括子文件夹
-        - essays/*                            # 示例：排除 essays 文件夹下所有文件，包括子文件夹
-        # - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
+  - rss:
+      feeds_filenames:
+          rss_created: rss.xml
+          rss_updated: rss-updated.xml
+      json_feed_enabled: false
+      pretty_print: false
+      stylesheet: ""
+      length: 10
+      match_path: "(tech|essays/posts)/*"
+#   - document-dates:         
+#       position: top                           # 显示位置：top（标题下方） bottom（文档末尾），默认: top
+#       type: timeago                           # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date
+#       date_format: '%Y-%m-%d'                 # e.g., %Y-%m-%d, %b %d, %Y
+#       time_format: '%H:%M:%S'                 # valid only if type=datetime
+#       exclude:                                # 排除文件列表（支持 unix shell 风格的通配符）
+#         - index.md                            # 示例：排除 blog 文件夹下所有文件，包括子文件夹
+#         - blog/*                              # 示例：排除 blog 文件夹下所有文件，包括子文件夹
+#         - essays/*                            # 示例：排除 essays 文件夹下所有文件，包括子文件夹
+#         # - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
 
 extra:
   generator: false                          # 移除 "Made with ***" 声明

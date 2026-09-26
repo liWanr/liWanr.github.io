@@ -18,7 +18,7 @@
 <div class="md-content" data-md-component="content">
   <div class="md-content__inner">
 
-    {% if page.url.startswith("essays/") %}
+    {% if page.url[:7] == "essays/" %}
 
       <link rel="stylesheet" href="/assets/stylesheets/essays.css">
 
