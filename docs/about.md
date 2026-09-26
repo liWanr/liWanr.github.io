@@ -39,18 +39,21 @@ hide:
 -   :lucide-bug-play: **框架生成**
 
     基于静态网站生成器
-    [MaterialX](https://jaywhj.github.io/mkdocs-materialx/)。
+    [Zensical](https://zensical.org/)。
 
 -   :lucide-cloud-upload: **托管平台**
 
-    [Local](https://local.liwanr.com:2525)
-    / [Vercel](https://vercel.com/)
+    [Vercel](https://vercel.com/)
+    / [本地服务器](https://local.liwanr.com:2525)
     / [GitHub Pages](https://docs.github.com/pages)
     
 -   :lucide-code-xml: **编码存储**
 
-    - 代码通过 [VS Code](https://code.visualstudio.com/) 编写
-    - 存储在本地及 [GitHub](https://github.com/github) 公开仓库中。
+    - 使用 [VS Code](https://code.visualstudio.com/) 进行代码编写与维护。
+
+    - 网站内容主要使用 [Markdown](https://commonmark.org/) 编写。
+
+    - 源码与站点资源均纳入 [Git](https://git-scm.com/) 版本管理。
 
 -   :lucide-type-outline: **字体样式**
 
@@ -75,6 +78,8 @@ hide:
 - 26/07/06，增加订阅功能，并移除 Netlify 部署
 
 - 26/07/13，Zensical是半成品...所以复古了Mkdocs-material的大佬变更版[**MaterialX**](https://jaywhj.github.io/mkdocs-materialx/)
+
+- 26/09/26，Zensical更新了我想要的功能，遂再次迁移回Zensical
 
 ///
 
