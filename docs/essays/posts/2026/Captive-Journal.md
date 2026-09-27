@@ -1,6 +1,6 @@
 ---
 title: 囚徒日记
-icon: lucide/notebook-pen
+readtime: 5
 date: 2026-04-28T03:26:17+08:00
 description: 文字在牢里引燃火柴，照不亮谁的路，但能让那些看得见的明白：此地亦有人。
 categories:

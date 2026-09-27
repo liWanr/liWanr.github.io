@@ -131,6 +131,8 @@ markdown_extensions:
   
 plugins:
   - meta
+  - git-revision-date-localized:
+      enable_creation_date: true
   - blog:
       blog_dir: essays
       archive: true

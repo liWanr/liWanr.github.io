@@ -1,12 +1,12 @@
 ---
 title: 沙龙
+readtime: 2
 date: 2026-06-24T04:10:58+08:00
-icon: lucide/camera
 description: 其实 人生并非虚耗 何来尘埃飞舞
 categories:
   - 思考
 authors: 
-    - Wyman
+  - Wyman
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">

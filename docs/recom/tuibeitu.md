@@ -3,9 +3,9 @@ icon: lucide/book-open-text
 title: 推背图
 created: 2026-04-12T07:26:33
 authors: 
-    - 袁天罡
-    - 李淳风
-    - 金圣叹
+  - 袁天罡
+  - 李淳风
+  - 金圣叹
 ---
 
 ///html | small
