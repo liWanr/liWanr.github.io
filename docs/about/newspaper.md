@@ -30,9 +30,9 @@ hide:
 <p id="rss-ring-message">内容更新不会等你，但订阅可以。</p>
 
 <form id="rss-ring-form">
-  <div style="display: flex; gap: 8px; align-items: center;">
+  <div style="display: flex; gap: 8px; align-items: stretch;">
     <input class="mdx-form__input mdx-form__input--stretch" type="email" name="email" id="bd-email" style="flex: 1;"  placeholder="your-email@example.com" autocomplete="email" required/>
-    <button class="md-button md-button--primary" type="submit" id="rss-ring-submit" disabled>订阅</button>
+    <button class="md-button md-button--primary" style="border-radius: .5rem;" type="submit" id="rss-ring-submit" disabled>订阅</button>
   </div>
   <div class="cf-turnstile"
        data-sitekey="0x4AAAAAADwZnEQiPgcV_V17"
