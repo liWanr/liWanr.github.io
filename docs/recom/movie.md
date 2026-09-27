@@ -189,4 +189,8 @@ authors:
 -  [![战争之王](https://image.tmdb.org/t/p/original/3MGQD4yXokufNlW1AyRXdiy7ytP.jpg)](https://www.themoviedb.org/movie/1830-lord-of-war)
 
     战争之王
+
+-  [![魔鬼代言人](https://image.tmdb.org/t/p/original/5ZzBGpxy55OQzHxKVY11IpY6a0o.jpg)](https://www.themoviedb.org/movie/1813-the-devil-s-advocate)
+
+    魔鬼代言人
 ///
