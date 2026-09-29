@@ -30,6 +30,9 @@ created: 2026-05-08T07:46:22
 
 -   [**白熊阿丸的小屋**](https://blog.bxaw.name/)
     { title="在这里可以看到一个真实的我，我会在这里书写我的一切" }
+
+-   [**太隐**](https://wangyurui.com/)
+    { title="一个人的思想发育史就是他的阅读史" }
 ///
 
 ## 群*
@@ -43,6 +46,10 @@ created: 2026-05-08T07:46:22
     [空间穿梭](https://www.blogsclub.org/go) |
     [广场](https://www.blogsclub.org/members.html?inviteCode=6a8532bb) |
     [我](https://www.blogsclub.org/blog/792.html?inviteCode=6a8532bb)
+
+-   **可能吧**
+
+    [官网](https://kenengba.com/)
 
 ///
 
