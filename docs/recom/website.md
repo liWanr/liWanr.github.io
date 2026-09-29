@@ -42,6 +42,8 @@ created: 2026-02-07T13:14:33
     /
     [**Perplexity**](https://www.perplexity.ai/)
 
+-   [**Z-Library**](https://zh.z-library.sk/)
+
 ---
 
 ### 网络专属
