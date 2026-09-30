@@ -6,14 +6,12 @@ created: 2026-05-08T07:46:22
 
 <link rel="stylesheet" href="/assets/stylesheets/links.css">
 
-以下是**我关注的博客**，方便时不时来 ~~视奸~~ 欣赏一下，我关注你就好，不必交换。也欢迎留下信息，喜欢的话我会默默加上。可哪天消失了也请不用难过，不是你的文章不够好，是我太花心了。
+## 视奸
 
 ///html | small
 :octicons-light-bulb-16:
-如果被冒犯到请[**联系我**](mailto:itsWanr@iCloud.com)，我会删除。
+以下是**我关注的博客**，方便时不时来 ~~视奸~~ 欣赏一下，我关注你就好，不必交换。可哪天消失了也请不用难过，不是你的文章不够好，是我太花心了。但如果被冒犯到请[**联系我**](mailto:itsWanr@iCloud.com)，我会尽快删除。
 ///
-
-## 视奸
 
 ///html | div.grid.cards
 -   [**fuXes**](https://fuxes.cn/)
@@ -33,6 +31,42 @@ created: 2026-05-08T07:46:22
 
 -   [**太隐**](https://wangyurui.com/)
     { title="一个人的思想发育史就是他的阅读史" }
+///
+
+## 友情链接
+
+///html | small
+:octicons-light-bulb-16:
+以下是**我的博客邻居**，欢迎交换链接。
+///
+
+///html | div.grid.cards
+
+-   [**DAI X.L.**](https://dxlcq.cn/)
+    { title="骄骄是骄傲的骄" style="font-family: 'Noto Serif SC', 'Songti SC';" }
+
+-   [**Jason**](https://i.limhy.cn/)
+    { title="我退网了" }
+
+-   [**拥抱日出的小屋**](https://blog.byside.top/)
+    { title="拥抱日出，也拥抱生活" }
+
+-   [**白熊**](https://whitebear.im/)
+    { title="May everything go well." }
+
+-   [**索玛**](https://www.suo.ma/)
+
+-   [**Sevenalist**](https://dengcz.cn/)
+    { title="Never Stop Thinking." }
+
+-   [**WanJc**](https://wanjc.top/)
+
+-   [**CaoY**](http://caoyan.online)
+    { title="A better day when night belongs to dawn" }
+
+-   [**合荒小站**](https://hehuang.site)
+    { title="万物合鸣·独守一荒" }
+
 ///
 
 ## 群*
