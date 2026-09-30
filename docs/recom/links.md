@@ -47,13 +47,14 @@ created: 2026-05-08T07:46:22
     [广场](https://www.blogsclub.org/members.html?inviteCode=6a8532bb) |
     [我](https://www.blogsclub.org/blog/792.html?inviteCode=6a8532bb)
 
--   **可能吧**
+-   **其他**
 
-    [官网](https://kenengba.com/)
+    [可能吧](https://kenengba.com/) |
+    [聚合阅读](https://lilog.cn/is/){ title="Power by Lilog" }
 
 ///
 
 ///html | small
 :octicons-light-bulb-16:
-上述博客聚合网站为我加入的组织，我也退出过一些，加一个自己喜欢的就好。
+上述博客聚&合网站为我加入的组织，我也退出过一些，加一个自己喜欢的就好。
 ///
