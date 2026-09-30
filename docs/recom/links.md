@@ -33,6 +33,32 @@ created: 2026-05-08T07:46:22
     { title="一个人的思想发育史就是他的阅读史" }
 ///
 
+## 群*
+
+///html | small
+:octicons-light-bulb-16:
+以下博客聚&合网站为我加入的组织，我也退出过一些，加一个自己喜欢的就好。
+///
+
+///html | div.grid.cards
+
+-   **BlogsClub**
+
+    [官网](https://www.blogsclub.org/?inviteCode=6a8532bb) |
+    [申请](https://www.blogsclub.org/apply.html?inviteCode=6a8532bb) |
+    [空间穿梭](https://www.blogsclub.org/go) |
+    [广场](https://www.blogsclub.org/members.html?inviteCode=6a8532bb) |
+    [我](https://www.blogsclub.org/blog/792.html?inviteCode=6a8532bb)
+    { title="Power by WhiteBear" }
+    
+
+-   **其他**
+
+    [可能吧](https://kenengba.com/){ title="Power by Jason Ng" } |
+    [聚合阅读](https://lilog.cn/is/){ title="Power by Lilog" }
+
+///
+
 ## 友情链接
 
 ///html | small
@@ -67,28 +93,7 @@ created: 2026-05-08T07:46:22
 -   [**合荒小站**](https://hehuang.site)
     { title="万物合鸣·独守一荒" }
 
-///
+-   [**Qvi**](https://qvixxxi.github.io/)
+    { title="万物合鸣·独守一荒" }
 
-## 群*
-
-///html | div.grid.cards
-
--   **BlogsClub**
-
-    [官网](https://www.blogsclub.org/?inviteCode=6a8532bb) |
-    [申请](https://www.blogsclub.org/apply.html?inviteCode=6a8532bb) |
-    [空间穿梭](https://www.blogsclub.org/go) |
-    [广场](https://www.blogsclub.org/members.html?inviteCode=6a8532bb) |
-    [我](https://www.blogsclub.org/blog/792.html?inviteCode=6a8532bb)
-
--   **其他**
-
-    [可能吧](https://kenengba.com/) |
-    [聚合阅读](https://lilog.cn/is/){ title="Power by Lilog" }
-
-///
-
-///html | small
-:octicons-light-bulb-16:
-上述博客聚&合网站为我加入的组织，我也退出过一些，加一个自己喜欢的就好。
 ///
