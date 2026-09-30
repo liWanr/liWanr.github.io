@@ -40,4 +40,5 @@ hide:
 [:lucide-mail:](mailto:itsWanr@iCloud.com){ title="邮箱" rel="me" }
 | [:simple-github:](https://github.com/liWanr){ title="GitHub" rel="me" }
 | [:simple-telegram:](https://t.me/itsWanr){ title="Telegram" rel="me" }
+| [:simple-steam:](https://steamcommunity.com/profiles/76561199004333008/){ title="Steam" rel="me" }
 | [:simple-gravatar:](https://gravatar.com/liwanr){ title="Gravatar" rel="me" }
