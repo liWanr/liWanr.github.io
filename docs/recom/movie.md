@@ -193,4 +193,16 @@ authors:
 -  [![魔鬼代言人](https://image.tmdb.org/t/p/original/5ZzBGpxy55OQzHxKVY11IpY6a0o.jpg)](https://www.themoviedb.org/movie/1813-the-devil-s-advocate)
 
     魔鬼代言人
+
+-   [![推拿](https://image.tmdb.org/t/p/original/zxyiI9swWxyBQfmL9p0hHwuo7pl.jpg)](https://www.themoviedb.org/movie/256106)
+
+    推拿
+
+-   [![暴裂无声](https://image.tmdb.org/t/p/original/zltwFfFeXsykNtVeX4XRuDkqIna.jpg)](https://www.themoviedb.org/movie/473328)
+
+    暴裂无声
+
+-   [![心迷宫](https://image.tmdb.org/t/p/original/a7Eb5korUAji3X4eiN6ybE1r9yn.jpg)](https://www.themoviedb.org/movie/292362)
+
+    心迷宫
 ///
