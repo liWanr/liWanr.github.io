@@ -1,5 +1,4 @@
 ---
-icon: lucide/book-open-text
 title: 推背图
 created: 2026-04-12T07:26:33
 authors: 
@@ -12,6 +11,9 @@ authors:
 :octicons-light-bulb-16:
 此作品在全世界都属于公有领域，因为作者逝世已经超过100年，且作品于1931年1月1日之前出版。
 ///
+
+- **作者**：袁天罡、李淳风
+- **批注**：金圣叹
 
 ## 金圣叹序
 

@@ -1,11 +1,14 @@
+# 站点信息
 site_name: liWanr
 site_author: liWanr
-repo_url: https://github.com/liWanr/liWanr.github.io
-repo_name: GitHub/liWanr
 site_url: https://liWanr.com/
 site_description: "Every nobody is somebody."
-dev_addr: 0.0.0.0:8000
 
+# 仓库
+repo_url: https://github.com/liWanr/liWanr.github.io
+repo_name: GitHub/liWanr
+
+# 版权
 copyright: <strong>liWanr &copy; 2024-2026</strong>
 
 extra_css:
@@ -21,6 +24,7 @@ extra_javascript:
   - path: assets/javascripts/extra.js
     async: true
 
+# 配置
 theme:
   language: zh                       # 设置语言,zh简中, en英文, zh-Hant繁中, zh-TW台湾
   custom_dir: overrides              # 模板覆盖目录，用于自定义主题模板
@@ -37,6 +41,7 @@ theme:
       lines: 15
   features:
     - announce.dismiss
+    - content.action.copy
     - content.action.view            # 在页面顶部添加查看链接，指向 GitHub 上的对应文件，方便读者查看源内容
     - content.code.annotate          # 在代码关键位置添加图标 + 鼠标悬停提示
     - content.code.copy              # 在代码块中添加一键复制按钮，无需先选中内容
@@ -45,6 +50,7 @@ theme:
     - content.tooltips               # 美化 title 提示渲染
     - navigation.indexes             # 章节索引页功能，允许文档直接挂载到章节下（适合概览页）
     - navigation.path                # 显示路径面包屑导航（在页面标题上方）
+    - navigation.sections
     - navigation.tabs                # 在大屏幕下，将顶级章节渲染为头部下方的菜单标签页
     - navigation.tabs.sticky         # 粘性标签页：向下滚动时标签页固定在头部下方始终可见
     - navigation.top                 # 当用户向下滚动后开始向上滚动时，显示"返回顶部"按钮
@@ -68,7 +74,7 @@ theme:
         icon: lucide/moon
         name: 深色模式
 
-# Markdown 扩展
+# 扩展
 markdown_extensions:
   - abbr                                    # 启用缩写支持
   - attr_list                               # 启用属性列表（用于按钮、class 等）
@@ -128,9 +134,12 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist:                      # 使用自定义复选框样式
       custom_checkbox: true
-  
+
+# 插件
 plugins:
   - meta
+  - mkdocs-audio
+  - mkdocs-video
   - git-revision-date-localized:
       enable_creation_date: true
   - blog:
@@ -165,17 +174,20 @@ plugins:
       stylesheet: ""
       length: 10
       match_path: "(tech|essays/posts)/*"
-  - document-dates:         
-      position: top                           # 显示位置：top（标题下方） bottom（文档末尾），默认: top
-      type: timeago                           # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date
-      date_format: '%Y-%m-%d'                 # e.g., %Y-%m-%d, %b %d, %Y
-      time_format: '%H:%M:%S'                 # valid only if type=datetime
-      exclude:                                # 排除文件列表（支持 unix shell 风格的通配符）
-        - index.md                            # 示例：排除 blog 文件夹下所有文件，包括子文件夹
-        - blog/*                              # 示例：排除 blog 文件夹下所有文件，包括子文件夹
-        - essays/*                            # 示例：排除 essays 文件夹下所有文件，包括子文件夹
-        # - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
+  - minify:
+      minify_html: true
+  # - document-dates:         
+  #     position: top                           # 显示位置：top（标题下方） bottom（文档末尾），默认: top
+  #     type: timeago                           # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date
+  #     date_format: '%Y-%m-%d'                 # e.g., %Y-%m-%d, %b %d, %Y
+  #     time_format: '%H:%M:%S'                 # valid only if type=datetime
+  #     exclude:                                # 排除文件列表（支持 unix shell 风格的通配符）
+  #       - index.md                            # 示例：排除 blog 文件夹下所有文件，包括子文件夹
+  #       - blog/*                              # 示例：排除 blog 文件夹下所有文件，包括子文件夹
+  #       - essays/*                            # 示例：排除 essays 文件夹下所有文件，包括子文件夹
+  #       # - '*/index.md'                        # 示例：排除任意子文件夹下所有的 index.md 文件
 
+# 附加配置
 extra:
   generator: false                          # 移除 "Made with ***" 声明
 
@@ -186,9 +198,6 @@ extra:
   annotate:
     Bash:
       - .s2
-
-  status:
-    new: 最新发布
 
   # ----  本地部署的底部链接  ----
   social:
@@ -208,12 +217,11 @@ extra:
       link: /rss.xml
       name: RSS订阅
 
+# 页面树
 nav:
   - HOME: index.md
   - ESSAYS: 
     - essays/index.md
-    - 囚徒日记: essays/posts/2026/Captive-Journal.md
-    - 沙龙: essays/posts/2026/shalong.md
   - TECH.:
     - WiKi:
       - tech/WiKi/github-badge.md
@@ -260,7 +268,8 @@ nav:
     - recom/open-source.md
     - recom/tools.md
     - recom/movie.md
-    - recom/tuibeitu.md
+    - 书:
+      - recom/books/tuibeitu.md
     - PROJECTS:
       - recom/projects/dossier.md
       - recom/projects/FUCK.md

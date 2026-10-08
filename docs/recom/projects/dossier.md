@@ -7,13 +7,7 @@ created: 2026-06-03T21:39:34
 把「爱因斯坦谜题」做成侦探剧情游戏，一次完整的"小游戏当大工程做"复盘。
 ///
 
-///html | div.grid.cards
-
-- **在线游玩**：[侦探事务所 · Dossier](https://Dossier.liWanr.vercel.app)
-
 - **开源地址**：[liWanr/Dossier](https://github.com/liWanr/Dossier)
-
-///
 
 ## 起源
 
