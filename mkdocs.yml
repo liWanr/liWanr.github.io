@@ -143,17 +143,16 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   - rss:
-      use_git: false
       feed_ttl: 0
       date_from_meta:
         default_timezone: Asia/Shanghai
-      feeds_filenames:
-          rss_created: rss.xml
-          rss_updated: rss.up.xml
-      json_feed_enabled: false
-      pretty_print: false
-      stylesheet: ""
-      length: 10
+      # feeds_filenames:
+      #     rss_created: rss.xml
+      #     rss_updated: rss.up.xml
+      # json_feed_enabled: false
+      # pretty_print: false
+      # stylesheet: ""
+      # length: 10
       match_path: "(tech|essays/posts)/*"
   - blog:
       blog_dir: essays
