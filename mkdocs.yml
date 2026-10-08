@@ -143,6 +143,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   - rss:
+      use_git: false
       feed_ttl: 0
       date_from_meta:
         default_timezone: Asia/Shanghai
