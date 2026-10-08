@@ -41,7 +41,7 @@ theme:
       lines: 15
   features:
     - announce.dismiss
-    - content.action.copy
+    - content.action.copy            # 在页面顶部添加复制为markdown的按钮，但是不知道为什么没效果
     - content.action.view            # 在页面顶部添加查看链接，指向 GitHub 上的对应文件，方便读者查看源内容
     - content.code.annotate          # 在代码关键位置添加图标 + 鼠标悬停提示
     - content.code.copy              # 在代码块中添加一键复制按钮，无需先选中内容
@@ -142,6 +142,18 @@ plugins:
   - mkdocs-video
   - git-revision-date-localized:
       enable_creation_date: true
+  - rss:
+      date_from_meta:
+        as_creation: date
+        default_timezone: Asia/Shanghai
+      feeds_filenames:
+          rss_created: rss.xml
+          rss_updated: rss-updated.xml
+      json_feed_enabled: false
+      pretty_print: false
+      stylesheet: ""
+      length: 10
+      match_path: "(tech|essays/posts)/*"
   - blog:
       blog_dir: essays
       archive: true
