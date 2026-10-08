@@ -166,6 +166,10 @@ plugins:
       skip_classes:
             - movie-links
   - rss:
+      use_material_blog: true
+      date_from_meta:
+        as_creation: date
+        default_timezone: Asia/Shanghai
       feeds_filenames:
           rss_created: rss.xml
           rss_updated: rss-updated.xml
