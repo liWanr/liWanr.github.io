@@ -142,10 +142,10 @@ plugins:
   - mkdocs-video
   - git-revision-date-localized:
       enable_creation_date: true
-  - rss:
-      feed_ttl: 0
-      date_from_meta:
-        default_timezone: Asia/Shanghai
+  - rss
+      # feed_ttl: 0
+      # date_from_meta:
+      #   default_timezone: Asia/Shanghai
       # feeds_filenames:
       #     rss_created: rss.xml
       #     rss_updated: rss.up.xml
@@ -153,7 +153,7 @@ plugins:
       # pretty_print: false
       # stylesheet: ""
       # length: 10
-      match_path: "(tech|essays/posts)/*"
+      # match_path: "(tech|essays/posts)/*"
   - blog:
       blog_dir: essays
       archive: true
