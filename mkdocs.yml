@@ -143,12 +143,12 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   - rss:
+      feed_ttl: 0
       date_from_meta:
-        as_creation: date
         default_timezone: Asia/Shanghai
       feeds_filenames:
           rss_created: rss.xml
-          rss_updated: rss-updated.xml
+          rss_updated: rss.up.xml
       json_feed_enabled: false
       pretty_print: false
       stylesheet: ""
