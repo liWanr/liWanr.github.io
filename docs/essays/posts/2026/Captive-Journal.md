@@ -1,10 +1,10 @@
 ---
 title: 囚徒日记
 readtime: 5
+tags: [Essays]
+categories: [一些话]
 date: 2026-04-28T03:26:17+08:00
 description: 文字在牢里引燃火柴，照不亮谁的路，但能让那些看得见的明白：此地亦有人。
-categories:
-  - 一些话
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">

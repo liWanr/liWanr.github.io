@@ -1,12 +1,11 @@
 ---
 title: 沙龙
 readtime: 2
+tags: [Essays]
+categories: [一些话]
+authors: [Wyman]
 date: 2026-06-24T04:10:58+08:00
 description: 其实 人生并非虚耗 何来尘埃飞舞
-categories:
-  - 一些话
-authors: 
-  - Wyman
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">

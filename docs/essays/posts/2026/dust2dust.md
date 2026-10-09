@@ -1,10 +1,10 @@
 ---
 title: 尘归尘
 readtime: 4
+tags: [Essays]
+categories: [读书]
 date: 2026-09-27T01:41:40+08:00
 description: 他自妖梦中，完全醒过来。是一回戏弄。太美满了！强撑着爬起来。拍拍灰尘。嘴角挂着一朵诡异的笑。“我这辈子就是想当虞姬！”
-categories:
-  - 读书
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">

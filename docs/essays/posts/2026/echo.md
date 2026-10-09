@@ -1,10 +1,10 @@
 ---
 title: 回响
 readtime: 13
+tags: [Essays]
+categories: [想法]
 date: 2026-07-12T18:54:04+08:00
 description: 他一直觉得自己小时候是没有声音的人。
-categories:
-  - 想法
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">

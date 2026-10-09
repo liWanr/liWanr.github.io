@@ -1,10 +1,10 @@
 ---
 title: 读的书很快会忘掉，还读书吗？
 readtime: 7
+tags: [Essays]
+categories: [思考]
 date: 2026-09-28T01:17:15+08:00
 description: 书翻过去的时候，人被文字过了一遍，像水从地上流去湿了地皮，即便后来晒干无痕，总归会渗到看不见的地方。
-categories:
-  - 思考
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">

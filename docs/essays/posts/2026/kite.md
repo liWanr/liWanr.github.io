@@ -1,10 +1,10 @@
 ---
 title: 风筝
 readtime: 8
+tags: [Essays]
+categories: [思考]
 date: 2026-06-24T02:53:18+08:00
 description: 公园里有一只风筝在高空飘荡。它离地三百米，俯瞰着公园里嬉闹的人群，那是它够得着的天空，白云为底，风为伴。
-categories:
-  - 思考
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">

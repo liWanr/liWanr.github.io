@@ -1,10 +1,10 @@
 ---
 title: 在梦里死了，又活了
 readtime: 3
+tags: [Essays]
+categories: [思考]
 date: 2026-07-21T22:25:16+08:00
 description: 因为一个梦，和高中的好朋友聊了起来，梦里她死了，又活了。
-categories:
-  - 思考
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">

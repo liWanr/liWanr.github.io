@@ -1,10 +1,10 @@
 ---
 title: 下一条
 readtime: 5
+tags: [Essays]
+categories: [想法]
 date: 2026-07-08T03:34:36+08:00
 description: 搜了搜那条视频，想再看一眼，但已经找不到原作者了。退出，继续下一条。
-categories:
-  - 想法
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">

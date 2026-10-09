@@ -1,10 +1,10 @@
 ---
 title: 九五至会
 readtime: 2
+tags: [Essays]
+categories: [一些话]
 date: 2026-09-05T23:59:59+08:00
 description: 假生辰之名，与友人自四方而至，庆我等犹在，庆未曾相散。
-categories:
-  - 一些话
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">

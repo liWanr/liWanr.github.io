@@ -1,10 +1,10 @@
 ---
 title: 她的位置
 readtime: 4
+tags: [Essays]
+categories:  [思考]
 date: 2026-07-28T11:07:58+08:00
 description: 她小学在墙边、在扫帚旁，初中在我旁边，后来在毕业照里都没有位置，最后只在我的梦里。
-categories: 
-  - 思考
 ---
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">
