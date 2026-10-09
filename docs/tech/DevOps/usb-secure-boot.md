@@ -1,9 +1,8 @@
 ---
 icon: material/usb
 title: U 盘安全启动
+tags: [DevOps]
 date: 2025-02-26T15:31:39
-categories:
-    - DevOps
 ---
 
 ## 解决方案 {id="solution"}

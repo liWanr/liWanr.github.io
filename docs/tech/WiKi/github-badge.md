@@ -1,9 +1,8 @@
 ---
 icon: lucide/badge
 title: GitHub 徽章
+tags: [Wiki]
 date: 2026-03-23
-categories:
-    - Wiki
 ---
 
 - [**生成网站**](https://shields.io/)

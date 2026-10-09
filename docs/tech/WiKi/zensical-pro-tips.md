@@ -1,11 +1,10 @@
 ---
 icon: lucide/feather
 title: Zensical 的小技巧
+tags: [Wiki]
 date:
     created: 2026-01-27T07:19:20
     updated: 2026-07-19
-categories:
-    - Wiki
 ---
 
 [**Mermaid**](https://mermaid.ai/open-source/syntax/flowchart.html "图标")

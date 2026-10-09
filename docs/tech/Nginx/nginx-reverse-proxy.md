@@ -1,9 +1,8 @@
 ---
 icon: lucide/square-arrow-out-up-right
 title: Nginx 反向代理
+tags: [Nginx]
 date: 2026-03-11
-categories:
-    - Nginx
 ---
 
 最基础的反向代理配置

@@ -1,9 +1,8 @@
 ---
 icon: simple/vim
 title: Vim 使用小全
+tags: [DevOps]
 date: 2026-02-22
-categories:
-    - DevOps
 ---
 
 ## 模式类型 {id="mode-types"}

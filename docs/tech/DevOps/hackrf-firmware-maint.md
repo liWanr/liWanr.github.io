@@ -1,11 +1,10 @@
 ---
 icon: lucide/radio-tower
 title: HackRF 固件维护
+tags: [DevOps]
 date:
     created: 2025-03-06T11:23:36
     updated: 2026-02-15
-categories:
-    - DevOps
 ---
 
 网上有很多 HackRF One 固件的安装教程，我归为 **直接克隆项目进行 cmake 编译** 和 **下载发行版的压缩包** 两种方式。两种我都试过，**直接下载发行包的方式更加简单高效** ，因此本文仅记录使用发行包的方式安装。不用编译的方式是因为我在编译的过程中老是因为拔掉 USB 或者按下 reset 按钮后设备无法重新连接 USB ，非常麻烦。  

@@ -1,11 +1,10 @@
 ---
 icon: simple/wireguard
 title: WireGuard
+tags: [VPN]
 date:
     created: 2026-03-17
     updated: 2026-03-23
-categories:
-    - VPN
 ---
 
 ## 引言

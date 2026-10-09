@@ -1,11 +1,10 @@
 ---
 icon: octicons/desktop-download-16
 title: Docker 应用部署
+tags: [Docker]
 date:
     created: 2026-03-10
     updated: 2026-03-24
-categories:
-    - Docker
 ---
 
 ## 部署 Nginx

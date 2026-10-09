@@ -1,11 +1,9 @@
 ---
 icon: lucide/satellite
 title: 异地组网
-authors: 
-    - Jiao
+tags: [VPN]
+authors: [Jiao]
 date: 2025-02-22T08:30:44
-categories:
-    - VPN
 ---
 
 <h1>使用 OpenWrt 配置 IPv6 + DDNS + OpenVPN<br>实现远程访问及异地组网</h1>

@@ -1,11 +1,10 @@
 ---
 icon: lucide/folder-archive
 title: 压缩与解压
+tags: [DevOps]
 date:
     created: 2025-02-26T15:31:39Z
     updated: 2025-12-22
-categories:
-    - DevOps
 ---
 
 <!-- more -->

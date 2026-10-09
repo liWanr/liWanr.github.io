@@ -1,11 +1,10 @@
 ---
 icon: simple/openwrt
 title: ImmortalWrt
+tags: [VPN]
 date:
     created: 2026-03-08
     updated: 2026-03-22
-categories:
-    - VPN
 ---
 
 去 [**ImmortalWrt 设备搜索地址**](https://firmware-selector.immortalwrt.org/) 中查找支持设备。以下是我用的版本信息

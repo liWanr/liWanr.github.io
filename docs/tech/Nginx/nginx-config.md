@@ -1,9 +1,8 @@
 ---
 icon: lucide/file-sliders
 title: Nginx 配置文件
+tags: [Nginx]
 date: 2026-04-03
-categories:
-    - Nginx
 ---
 
 Nginx 的配置文件通常位于 `*/nginx/nginx.conf`。

@@ -1,9 +1,8 @@
 ---
 icon: local/apple-ai
 title: Mac 强开 Apple AI
+tags: [Apps]
 date: 2026-03-26
-categories:
-    - Apps
 ---
 
 <h1>

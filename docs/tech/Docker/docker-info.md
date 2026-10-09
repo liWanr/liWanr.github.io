@@ -1,9 +1,8 @@
 ---
 icon: simple/docker
 title: Docker 基本信息
+tags: [Docker]
 date: 2026-03-04
-categories:
-    - Docker
 ---
 
 <style>

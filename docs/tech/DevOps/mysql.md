@@ -1,9 +1,8 @@
 ---
 icon: simple/dolphin
 title: MySQL 使用小全
+tags: [DevOps]
 date: 2026-03-25
-categories:
-    - DevOps
 ---
 
 ## 安装最新版

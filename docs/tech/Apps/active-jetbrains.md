@@ -1,11 +1,10 @@
 ---
 icon: simple/jetbrains
 title: 激活 JetBrains
+tags: [Apps]
 date:
     created: 2025-03-08
     updated: 2026-01-18
-categories:
-    - Apps
 ---
 
 ///html | div.step

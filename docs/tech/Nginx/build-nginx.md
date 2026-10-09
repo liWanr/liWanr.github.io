@@ -1,11 +1,10 @@
 ---
 icon: simple/nginx
 title: Nginx 编译安装
+tags: [Nginx]
 date:
    created: 2026-02-17T07:20:26
    updated: 2026-07-09
-categories:
-    - Nginx
 ---
 
 ## 准备环境与依赖库

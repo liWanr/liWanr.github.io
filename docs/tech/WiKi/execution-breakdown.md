@@ -1,11 +1,10 @@
 ---
 icon: lucide/construction
 title: 拆解执行
+tags: [Wiki]
 date:
     created: 2023-09-23T17:23:33
     updated: 2025-02-19
-categories:
-    - Wiki
 ---
 
 ## 基本介绍

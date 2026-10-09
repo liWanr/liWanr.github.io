@@ -1,9 +1,8 @@
 ---
 icon: simple/applemusic
 title: Apple Music
+tags: [Apps]
 date: 2026-03-25
-categories:
-    - Apps
 ---
 
 <h1>

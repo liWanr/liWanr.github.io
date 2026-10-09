@@ -1,9 +1,8 @@
 ---
 icon: lucide/database
 title: Samba 安装、使用教程
+tags: [Apps]
 date: 2026-02-16T22:51:55
-categories:
-    - Apps
 ---
 
 ## :simple-linux: Ubuntu 端配置 {id="ubuntu-config"}

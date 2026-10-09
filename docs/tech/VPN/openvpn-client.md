@@ -1,9 +1,8 @@
 ---
 icon: simple/openvpn
 title: 使用 OpenVPN Client
+tags: [VPN]
 date: 2025-01-20
-categories:
-    - VPN
 ---
 
 ## :simple-linux: Linux

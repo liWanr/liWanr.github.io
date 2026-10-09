@@ -1,9 +1,8 @@
 ---
 icon: lucide/shield-check
 title: 激活 Ubuntu 网卡
+tags: [DevOps]
 date: 2025-03-30T08:09:00
-categories:
-    - DevOps
 ---
 
 ## 检查网络接口状态 {id="check-network-interface-status"}
