@@ -4,11 +4,19 @@
 
 ## 地址矩阵
 
-[**Myself**](https://liwanr.com) ｜
+[**Vercel**](https://liwanr.com) ｜
 [**LocalSite**](http://local.liwanr.com:2525) ｜
 [**GitHub Page**](https://liwanr.github.io/)
 
 ## 构建方式
+
+### Vercel
+
+- Vercel 的构建命令
+  
+  ```Bash
+  zensical build --clean && python custom_fixes.py
+  ```
 
 ### Netlify（弃用）
 
@@ -16,14 +24,6 @@
   
   ```Bash
   pip install zensical && zensical build --clean && python custom_fixes.py
-  ```
-
-### Vercel（弃用）
-
-- Vercel 的构建命令
-  
-  ```Bash
-  python -m venv .venv && . .venv/bin/activate && pip install zensical && zensical build --clean && python custom_fixes.py
   ```
 
 ### 本地构建

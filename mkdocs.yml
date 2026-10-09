@@ -41,7 +41,7 @@ theme:
       lines: 15
   features:
     - announce.dismiss
-    - content.action.copy            # 在页面顶部添加复制为markdown的按钮，但是不知道为什么没效果
+    # - content.action.copy            # 在页面顶部添加复制为markdown的按钮，但是不知道为什么没效果
     - content.action.view            # 在页面顶部添加查看链接，指向 GitHub 上的对应文件，方便读者查看源内容
     - content.code.annotate          # 在代码关键位置添加图标 + 鼠标悬停提示
     - content.code.copy              # 在代码块中添加一键复制按钮，无需先选中内容
@@ -147,8 +147,8 @@ plugins:
       date_from_meta:
         default_timezone: Asia/Shanghai
       feeds_filenames:
-          rss_created: rss.xml
-          rss_updated: rss2.xml
+        rss_created: rss.xml
+        rss_updated: rss2.xml
       json_feed_enabled: false
       pretty_print: false
       stylesheet: ""
@@ -158,16 +158,15 @@ plugins:
       blog_dir: essays
       archive: true
       archive_date_format: yyyy               # 归档时间格式
-      blog_toc: true                          # 在 Blog 主页中显示文章目录
+      blog_toc: false                         # 在 Blog 主页中显示文章目录
       post_date_format: "yyyy/MM/dd"          # 日期格式 yyyy mm dd
       post_excerpt: optional                  # 摘录，optional选择写，required必写
-      post_excerpt_separator: <!-- more -->   # 生成摘录，more 以上为摘录
+      post_excerpt_separator: "<!-- more -->" # 生成摘录，more 以上为摘录
       post_url_date_format: yyyy
       post_url_format: "{date}/{file}"
       categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
-      blog_toc: false
       pagination: false
       categories_pagination: false
       archive_pagination: false
@@ -176,9 +175,7 @@ plugins:
       touchNavigation: true                   # 触摸触摸导航(滑动)
       loop: true                              # 图片循环  
       skip_classes:
-            - movie-links
-  # - minify:
-  #     minify_html: true
+        - movie-links
   # - document-dates:         
   #     position: top                           # 显示位置：top（标题下方） bottom（文档末尾），默认: top
   #     type: timeago                           # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date
@@ -194,13 +191,13 @@ plugins:
 extra:
   generator: false                          # 移除 "Made with ***" 声明
 
-  analytics:
-    provider: google
-    property: G-JJZ9XN4L96
+  # analytics:
+  #   provider: google
+  #   property: G-JJZ9XN4L96
 
-  annotate:
-    Bash:
-      - .s2
+  # annotate:
+  #   Bash:
+  #     - .s2
 
   # ----  本地部署的底部链接  ----
   social:
@@ -265,7 +262,7 @@ nav:
       - tech/Apps/samba.md
       - tech/Apps/active-jetbrains.md
       - tech/Apps/chrome-search-new-tab.md
-  - RRCOM:
+  - RECOM:
     - recom/website.md
     - recom/links.md
     - recom/open-source.md
