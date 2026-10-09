@@ -149,7 +149,6 @@ plugins:
       feeds_filenames:
         rss_created: rss.xml
         rss_updated: rss2.xml
-      use_git: false
       json_feed_enabled: false
       pretty_print: false
       stylesheet: ""
