@@ -1,7 +1,7 @@
 from pathlib import Path
 import requests
 
-path = Path("rss.xml")
+path = Path("site/rss.xml")
 old_content = path.read_bytes()
 
 response = requests.get("https://liwanr.github.io/rss.xml", timeout=30)
