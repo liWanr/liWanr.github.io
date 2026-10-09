@@ -147,8 +147,8 @@ plugins:
       date_from_meta:
         default_timezone: Asia/Shanghai
       feeds_filenames:
-          rss_updated: rss.xml
-          rss_created: rss2.xml
+          rss_created: rss.xml
+          rss_updated: rss2.xml
       json_feed_enabled: false
       pretty_print: false
       stylesheet: ""
@@ -177,8 +177,8 @@ plugins:
       loop: true                              # 图片循环  
       skip_classes:
             - movie-links
-  - minify:
-      minify_html: true
+  # - minify:
+  #     minify_html: true
   # - document-dates:         
   #     position: top                           # 显示位置：top（标题下方） bottom（文档末尾），默认: top
   #     type: timeago                           # 日期类型：date（仅日期） datetime（日期+时间） timeago（相对时间，如"3天前"），默认: date
