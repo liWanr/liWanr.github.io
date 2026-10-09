@@ -149,7 +149,7 @@ plugins:
       feeds_filenames:
           rss_created: rss.xml
           rss_updated: rss2.xml
-      # json_feed_enabled: false
+      json_feed_enabled: false
       pretty_print: false
       stylesheet: ""
       length: 10
