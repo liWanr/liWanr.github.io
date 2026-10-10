@@ -96,6 +96,9 @@ created: 2026-05-08T07:46:22
 -   [**Qvi**](https://qvixxxi.github.io/)
     { title="万物合鸣·独守一荒" }
 
+-   [**Sunrise's Blog**](https://wowtang.top)
+    { title="心境自成天地，地狱可化作桃源，天堂也能沦为苦海。" }
+
 -   [**日和**](https://codevfun.work/)
     { title="想把一些代码笔记、阅读碎片和日常里的小幸福慢慢留下来，以及分享一些有趣的东西" }
 
