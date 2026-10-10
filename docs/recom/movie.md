@@ -50,9 +50,9 @@ authors:
 
     破·地狱
 
--   [![七武士](https://www.themoviedb.org/t/p/w1280/lOMGc8bnSwQhS4XyE1S99uH8NXf.jpg)](https://www.themoviedb.org/movie/346)
+-   [![宇宙探索编辑部](https://image.tmdb.org/t/p/original/eoqKtjRMvHvv3f87QSmHFGgRIHo.jpg)](https://www.themoviedb.org/movie/851977)
 
-    七武士
+    宇宙探索编辑部
 
 -   [![无间道](https://image.tmdb.org/t/p/original/ha2CnGPVGyfumTHpvbFzKielABl.jpg)](https://www.themoviedb.org/movie/10775)
 
@@ -90,9 +90,9 @@ authors:
 
     霸王别姬
 
--   [![浪潮](https://image.tmdb.org/t/p/original/8j0stuDjQGvzL00EaL6h0DvObxm.jpg)](https://www.themoviedb.org/movie/7735-die-welle)
+-   [![死亡实验](https://image.tmdb.org/t/p/original/nIAJnivbh5N8gpbyVmtPFC9psON.jpg)](https://www.themoviedb.org/movie/575-das-experiment)
 
-    浪潮
+    死亡实验
 
 -   [![功夫](https://image.tmdb.org/t/p/original/3XSIZoxL4daMFloCoaC6nGzhcIS.jpg)](https://www.themoviedb.org/movie/9470)
 
@@ -130,13 +130,13 @@ authors:
 
     致命魔术
 
--   [![罗根](https://image.tmdb.org/t/p/original/a65S6Mh9NFiNURj1IZMulsV03n4.jpg)](https://www.themoviedb.org/movie/263115-logan)
+-   [![心迷宫](https://image.tmdb.org/t/p/original/a7Eb5korUAji3X4eiN6ybE1r9yn.jpg)](https://www.themoviedb.org/movie/292362)
 
-    罗根
+    心迷宫
 
--   [![小丑](https://image.tmdb.org/t/p/original/g9l7iLYusH82bbEbwGCJzhVkOe2.jpg)](https://www.themoviedb.org/movie/475557-joker)
+-   [![暴裂无声](https://image.tmdb.org/t/p/original/zltwFfFeXsykNtVeX4XRuDkqIna.jpg)](https://www.themoviedb.org/movie/473328)
 
-    小丑
+    暴裂无声
 
 -  [![第六感](https://www.themoviedb.org/t/p/w1280/vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg)](https://www.themoviedb.org/movie/745-the-sixth-sense)
 
@@ -146,9 +146,9 @@ authors:
 
     罗生门
 
--  [![复仇者联盟4](https://image.tmdb.org/t/p/original/e7W3hhusGQsp3DJ8CL3AFzJpXRD.jpg)](https://www.themoviedb.org/movie/299534-avengers-endgame)
+-   [![推拿](https://image.tmdb.org/t/p/original/zxyiI9swWxyBQfmL9p0hHwuo7pl.jpg)](https://www.themoviedb.org/movie/256106)
 
-    复仇者联盟4
+    推拿
 
 -  [![控方证人](https://image.tmdb.org/t/p/original/mM5Cad2ESBprh6ucPnMzMfI34Cu.jpg)](https://www.themoviedb.org/movie/37257-witness-for-the-prosecution)
 
@@ -165,10 +165,6 @@ authors:
 -  [![催眠大师](https://image.tmdb.org/t/p/original/j36Bz7SqGXavHrMjZzF1KKtpIFu.jpg)](https://www.themoviedb.org/movie/273197)
 
     催眠大师
-
--  [![狗镇](https://image.tmdb.org/t/p/original/ef8ByFpQyxetGUTRDKVUnIAu36u.jpg)](https://www.themoviedb.org/movie/553-dogville)
-
-    狗镇
 
 -  [![烈日灼心](https://image.tmdb.org/t/p/original/qIHktPhZoNvoIonI4lziWezJnEp.jpg)](https://www.themoviedb.org/movie/344556)
 
@@ -194,15 +190,4 @@ authors:
 
     魔鬼代言人
 
--   [![推拿](https://image.tmdb.org/t/p/original/zxyiI9swWxyBQfmL9p0hHwuo7pl.jpg)](https://www.themoviedb.org/movie/256106)
-
-    推拿
-
--   [![暴裂无声](https://image.tmdb.org/t/p/original/zltwFfFeXsykNtVeX4XRuDkqIna.jpg)](https://www.themoviedb.org/movie/473328)
-
-    暴裂无声
-
--   [![心迷宫](https://image.tmdb.org/t/p/original/a7Eb5korUAji3X4eiN6ybE1r9yn.jpg)](https://www.themoviedb.org/movie/292362)
-
-    心迷宫
 ///
