@@ -96,4 +96,9 @@ created: 2026-05-08T07:46:22
 -   [**Qvi**](https://qvixxxi.github.io/)
     { title="万物合鸣·独守一荒" }
 
+-   [**Sunrise's Blog**](https://wowtang.top)
+    { title="心境自成天地，地狱可化作桃源，天堂也能沦为苦海。" }
+
+-   [**detached**](https://detached.online/)
+    { title="总能看见不完美，所以一直追求完美，从修好每一处细节做起" }
 ///
