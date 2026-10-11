@@ -1,0 +1,202 @@
+/* ---------- 基础设置 ---------- */
+.books-table {
+  --ft-head: 48px;
+  --ft-author-width: 8rem;
+  --ft-status-width: 4rem;
+  margin: .8rem 0 1.5rem;
+}
+
+/* ---------- 总表头 ---------- */
+.books-table > p:first-child {
+  display: none;
+}
+
+.books-table .ft-head {
+  position: sticky;
+  top: var(--ft-site-header, 48px);
+  z-index: 2;
+  backdrop-filter: blur(.4rem);
+  -webkit-backdrop-filter: blur(.4rem);
+  background-color: var(--md-default-bg-color--light);
+}
+
+.books-table .ft-header {
+  display: table;
+  width: 100%;
+  margin: 0;
+  table-layout: fixed;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.books-table .ft-header th {
+  box-sizing: border-box;
+  height: var(--ft-head);
+  padding: 0 .5rem;
+  border-bottom: 2px solid var(--md-default-fg-color--light);
+  font-size: .8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 作者列 */
+.books-table .ft-header th:nth-child(2) {
+  width: var(--ft-author-width);
+  padding: 0 .4rem;
+  text-align: right;
+}
+
+/* 状态列 */
+.books-table .ft-header th:nth-child(3) {
+  width: var(--ft-status-width);
+  padding: 0 .4rem;
+  text-align: center;
+}
+
+/* ---------- 去掉主题给 Markdown 表格套的外壳 ---------- */
+html .md-typeset .books-table .md-typeset__scrollwrap {
+  margin: 0;
+  overflow: visible;
+}
+
+html .md-typeset .books-table .md-typeset__table {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- 每个分类一张表 ---------- */
+html .md-typeset .books-table table:not(.ft-header) {
+  display: table;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  table-layout: fixed;
+  border: 0;
+  border-radius: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  box-shadow: none;
+  background: none;
+  overflow: visible;
+  font-size: inherit;
+}
+
+/* ---------- 单元格基础样式 ---------- */
+html .md-typeset .books-table table:not(.ft-header) th,
+html .md-typeset .books-table table:not(.ft-header) td {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: .65rem .5rem;
+  border: 0;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  font-weight: 400;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* 作者列：固定宽度，超出省略 */
+html .md-typeset .books-table table:not(.ft-header) th:nth-child(2),
+html .md-typeset .books-table table:not(.ft-header) td:nth-child(2) {
+  width: var(--ft-author-width);
+  padding-left: .4rem;
+  padding-right: .4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 状态列：固定宽度，超出省略 */
+html .md-typeset .books-table table:not(.ft-header) th:nth-child(3),
+html .md-typeset .books-table table:not(.ft-header) td:nth-child(3) {
+  width: var(--ft-status-width);
+}
+
+/* ---------- 分类标题：吸在总表头下面 ---------- */
+html .md-typeset .books-table table:not(.ft-header) thead th {
+  position: sticky;
+  top: calc(var(--ft-site-header, 48px) + var(--ft-head));
+  z-index: 1;
+  padding-top: .65rem;
+  padding-bottom: .25rem;
+  border-bottom: 0;
+  box-shadow: 0 1px var(--md-default-fg-color--lightest);
+  backdrop-filter: blur(.4rem);
+  -webkit-backdrop-filter: blur(.4rem);
+  background-color: var(--md-default-bg-color--light);
+  color: var(--md-default-fg-color--light);
+  font-size: .6rem;
+  font-weight: 400;
+}
+
+/* ---------- 数据行 ---------- */
+html .md-typeset .books-table table:not(.ft-header) tbody tr {
+  transition: none;
+}
+
+html .md-typeset .books-table table:not(.ft-header) tbody tr:hover {
+  background: none;
+  box-shadow: none;
+}
+
+html .md-typeset .books-table table:not(.ft-header) tbody tr > * {
+  transition: background-color .15s ease;
+}
+
+html .md-typeset .books-table table:not(.ft-header) tbody tr:hover > * {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+html .md-typeset .books-table table:not(.ft-header) tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+/* 简介：单行省略 */
+html .md-typeset .books-table table:not(.ft-header) tbody td:first-child small {
+  display: block;
+  margin-top: .2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* ---------- 移动端 ---------- */
+@media (max-width: 600px) {
+  .books-table {
+    --ft-author-width: 6.5rem;
+    --ft-status-width: 3.5rem;
+  }
+}
+
+/* 灰度未读行 */
+.books-table tbody tr:has(td:last-child .lucide-circle-x),
+.books-table tbody tr:has(td:last-child .lucide-circle-x) svg {
+  color: var(--md-default-fg-color--light);
+  opacity: 0.9;
+}
+
+/* 标记已读图标 */
+.books-table tbody tr:has(td:last-child .lucide-circle-check) svg {
+  color: #4caf50;
+}
+
+/* 旋转在读图标 */
+.books-table svg.lucide-loader {
+  animation: loader-spin 5s linear infinite;
+  color: var(--md-accent-fg-color);
+}
+
+@keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
