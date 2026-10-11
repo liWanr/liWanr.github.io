@@ -100,3 +100,65 @@ figcaption {
 .md-typeset .result pre code {
     background-color: transparent;
 }
+
+/* 深色主题公告栏 */
+[data-md-color-scheme="slate"] [data-md-component="announce"] {
+    background: radial-gradient(circle at 50% -180%,var(--md-accent-fg-color--transparent),transparent 58%), #1b1c21;
+    border-bottom-color: hsla(0, 0%, 100%, .07);
+}
+
+/* 默认主题公告栏 */
+[data-md-component="announce"] {
+    background: radial-gradient(circle at 50% -180%,var(--md-accent-fg-color--transparent),transparent 58%), #15161a;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+/* 公告容器 */
+[data-md-component="announce"] .md-banner {
+    background-color: transparent;
+    color: #fff;
+}
+
+/* Badge 标签 */
+.mdx-announcement__label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+
+    background-color: rgba(68, 137, 255, 0.152);
+    border: .5px solid var(--md-accent-fg-color);
+    border-radius: 1rem;
+
+    color: var(--md-accent-fg-color);
+    font-size: .57rem;
+    font-weight: 700;
+    line-height: 1.4;
+
+    gap: .3rem;
+    padding: .12rem .45rem;
+    vertical-align: middle;
+}
+
+/* 公告文字：白色，垂直居中 */
+a.mdx-announcement__message,
+a.mdx-announcement__message:hover{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    color: #fff !important;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+/* Badge 内部元素颜色继承 */
+.mdx-announcement__message .mdx-announcement__label {
+    align-self: center;
+}
+
+/* 公告栏关闭按钮 */
+[dir="ltr"] .md-banner__button {
+    color: #fff;
+}
