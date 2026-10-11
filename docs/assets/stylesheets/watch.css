@@ -1,37 +1,39 @@
 .movie-links ul {
   display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 12px;
-  margin: 1rem 0;
+  grid-template-columns: repeat(6, 1fr) !important;
+  gap: 6px;
+  margin: 0.6rem 0;
   padding: 0;
   list-style: none;
 }
 
 @media (max-width: 768px) {
   .movie-links ul {
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 6px;
   }
 }
 
 @media (max-width: 480px) {
   .movie-links ul {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 4px;
   }
 }
 
-[dir=ltr] .md-typeset ol li, [dir=ltr] .md-typeset ul li {
-  margin-left: 0em;
+[dir=ltr] .md-typeset ol li,
+[dir=ltr] .md-typeset ul li {
+  margin-left: 0;
 }
 
 .movie-links li {
-  border-radius: 8px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
 }
 
 .movie-links li > p {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .movie-links li > p:first-child a {
@@ -46,22 +48,23 @@
   inset: 0;
 }
 
+/* 电影海报 */
 .movie-links li img {
   width: 100% !important;
-  aspect-ratio: 2/3;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
   display: block;
   margin: 0 !important;
   border-radius: 0 !important;
 }
 
-.movie-links ul li > p{
-  margin-bottom: 0 !important;
-}
-
+/* 电影标题 */
 .movie-links li > p:nth-child(2) {
   margin: 0 !important;
+  padding: 3px 1px;
   text-align: center;
+  font-size: 0.7em;
+  line-height: 1.4;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

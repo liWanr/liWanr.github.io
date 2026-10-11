@@ -1,16 +1,15 @@
 ---
 icon: lucide/clapperboard
-title: 屌爆了的电影
+title: 观 · 电影
 created: 2026-05-08T09:59:34
-authors: 
-    - TMDB
+authors: [TMDB]
+hide: [toc]
+comments: false
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/movie.css">
+# 观 · 银幕上的故事
 
-<p align="right" markdown>
-排名不分先后
-</p>
+<link rel="stylesheet" href="/assets/stylesheets/watch.css">
 
 ///html | div.movie-links
 
