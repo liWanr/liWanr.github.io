@@ -153,7 +153,7 @@ plugins:
       pretty_print: false
       stylesheet: ""
       length: 10
-      match_path: "(tech|essays/posts)/*"
+      match_path: "essays/posts/*"
   - blog:
       blog_dir: essays
       archive: true
@@ -262,19 +262,20 @@ nav:
       - tech/Apps/samba.md
       - tech/Apps/active-jetbrains.md
       - tech/Apps/chrome-search-new-tab.md
+    - Projects:
+      - tech/projects/dossier.md
+      - tech/projects/FUCK.md
+      - tech/projects/mkdocs-feed.md
+      - tech/projects/mkdocs-webmention.md
   - RECOM:
     - recom/website.md
     - recom/links.md
     - recom/open-source.md
     - recom/tools.md
-    - recom/movie.md
-    - 书:
-      - recom/books/tuibeitu.md
-    - PROJECTS:
-      - recom/projects/dossier.md
-      - recom/projects/FUCK.md
-      - recom/projects/mkdocs-feed.md
-      - recom/projects/mkdocs-webmention.md
+    - 观 · 读 · 听:
+      - recom/watch.md
+      - recom/read.md
+      - recom/listen.md
   - ABOUT:
     - about.md
     - about/newspaper.md
