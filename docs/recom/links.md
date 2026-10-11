@@ -55,7 +55,8 @@ created: 2026-05-08T07:46:22
 -   **其他**
 
     [可能吧](https://kenengba.com/){ title="Power by Jason Ng" } |
-    [聚合阅读](https://lilog.cn/is/){ title="Power by Lilog" }
+    [聚合阅读](https://lilog.cn/is/){ title="Power by Lilog" } |
+    [博客汇](https://bkh.jyblog.com/){ title="Power by 倦意" } 
 
 ///
 
