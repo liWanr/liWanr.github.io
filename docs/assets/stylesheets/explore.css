@@ -27,33 +27,39 @@
       cursor: pointer;
 
       /* ---------- 封面与悬停效果 ---------- */
-      > p:first-child {
-        > a {
-          display: block;
-          width: 100%;
-          aspect-ratio: var(--explore-cover-ratio);
-          box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
-          transition: transform .25s ease, box-shadow .25s ease;
-        }
+      > p:first-child,
+      > a {
+        display: block;
+        width: 100%;
+        aspect-ratio: var(--explore-cover-ratio);
+        box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+        transition: transform .25s ease, box-shadow .25s ease;
+        margin: 0;
+      }
 
-        > a > img,
-        > img {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
+      > p:first-child > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
 
       @media (hover: hover) {
-        &:hover > p:first-child > a {
+        &:hover > p:first-child,
+        &:hover > a {
           transform: translateY(-.2rem);
           box-shadow: 0 6px 16px rgb(0 0 0 / 16%);
         }
       }
 
-      /* ---------- 标题：单行截断 ---------- */
-      > p:not(:first-child) {
+      /* ---------- 自动生成的标题样式 ---------- */
+      .explore-title {
         overflow: hidden;
         margin: .4rem 0 0;
         line-height: 1.45;
