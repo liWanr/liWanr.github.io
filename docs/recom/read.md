@@ -27,7 +27,7 @@ comments: false
 | 古书 | | |
 | --- | -: | :-: |
 | **推背图**<small>中国古代预言奇书，以图谶隐喻历史兴衰，充满神秘色彩。</small> | *袁天罡、李淳风* | [:lucide-circle-check:](/quote/推背图/) |
-| **孙子兵法**<small>古代军事经典，阐述了战争的策略与战术。</small> | *孙武* | [:lucide-circle-x:](https://book.douban.com/subject/1823533/) |
+| **孙子兵法**<small>古代军事经典，阐述了战争的策略与战术。</small> | *孙武* | [:lucide-circle-x:](https://book.douban.com/subject/1949420/) |
 
 | 历史 | | |
 | --- | -: | :-: |
