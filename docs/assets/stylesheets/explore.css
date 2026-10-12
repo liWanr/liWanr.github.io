@@ -23,7 +23,6 @@
       min-width: 0;
       margin: 0;
       padding: 0;
-      overflow: hidden;
       cursor: pointer;
 
       /* ---------- 封面与悬停效果 ---------- */
@@ -32,9 +31,15 @@
         display: block;
         width: 100%;
         aspect-ratio: var(--explore-cover-ratio);
-        box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+        /* 初始不在这里给阴影，或者通过 pending 状态统一控制，避免提前闪烁 */
         transition: transform .25s ease, box-shadow .25s ease;
         margin: 0;
+      }
+
+      /* 让阴影随着卡片整体的显示（explore-visible）才优雅呈现，或者直接在 pending 时隐藏阴影 */
+      &.explore-visible > p:first-child,
+      &.explore-visible > a {
+        box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
       }
 
       > p:first-child > a {
