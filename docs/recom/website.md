@@ -5,10 +5,10 @@ created: 2026-02-07T13:14:33
 ---
 
 <style>
-.md-typeset .md-content__inner a{
+.md-content__inner a {
     color: var(--md-default-fg-color) !important;
 }
-.md-typeset .md-content__inner a:hover{
+.md-content__inner a:hover{
     color: var(--md-typeset-a-color) !important;
 }
 </style>
