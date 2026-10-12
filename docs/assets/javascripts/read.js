@@ -1,99 +1,76 @@
 (() => {
-  const selectors = ['.md-header', '.md-tabs'];
   let last = -1, until = 0, running = false;
+  const titleSelector = '.feature-table tbody td:not(:first-child), .feature-table tbody td:first-child small';
 
-  function measure() {
+  const measure = () => {
     let offset = 0;
-
-    selectors.forEach(selector => {
-      document.querySelectorAll(selector).forEach(el => {
-        if (!['sticky', 'fixed'].includes(getComputedStyle(el).position)) return;
-        const rect = el.getBoundingClientRect();
-        if (rect.height > 0) offset = Math.max(offset, rect.bottom);
-      });
+    document.querySelectorAll('.md-header, .md-tabs').forEach(el => {
+      if (['sticky', 'fixed'].includes(getComputedStyle(el).position)) {
+        offset = Math.max(offset, el.getBoundingClientRect().bottom);
+      }
     });
 
     offset = Math.max(0, Math.round(offset));
-
     if (offset !== last) {
       last = offset;
-      document.documentElement.style.setProperty('--ft-site-header', offset + 'px');
+      document.documentElement.style.setProperty('--ft-site-header', `${offset}px`);
     }
-  }
+  };
 
-  function kick() {
+  const kick = () => {
     until = performance.now() + 600;
     if (running) return;
     running = true;
 
-    function tick() {
+    const tick = () => {
       measure();
       if (performance.now() < until) requestAnimationFrame(tick);
       else running = false;
-    }
-
+    };
     requestAnimationFrame(tick);
-  }
+  };
 
-  function updateTitle(el) {
-    if (!el) return;
-    const text = el.textContent.trim();
+  const updateTitles = () => {
+    document.querySelectorAll(titleSelector).forEach(el => {
+      const text = el.textContent.trim();
+      if (text && el.scrollWidth > el.clientWidth + 1) el.setAttribute('title', text);
+      else el.removeAttribute('title');
+    });
+  };
 
-    if (text && el.scrollWidth > el.clientWidth + 1) {
-      el.setAttribute('title', text);
-    } else {
-      el.removeAttribute('title');
-    }
-  }
-
-  function updateTitles() {
-    document.querySelectorAll(
-      '.feature-table tbody td:not(:first-child), ' +
-      '.feature-table tbody td:first-child small'
-    ).forEach(updateTitle);
-  }
-
-  function build() {
+  const build = () => {
     document.querySelectorAll('.feature-table').forEach(box => {
       const header = box.querySelector('.ft-header');
       const source = box.querySelector('table:not(.ft-header) thead tr');
-
       if (!header || !source) return;
 
       header.querySelectorAll('th').forEach((th, i) => {
         const cell = source.cells[i];
         if (!cell) return;
-
-        const style = cell.getAttribute('style') || '';
-        const align = cell.getAttribute('align') ||
-          style.match(/text-align\s*:\s*(left|center|right)/i)?.[1] ||
+        th.style.textAlign = cell.getAttribute('align') || 
+          (cell.getAttribute('style') || '').match(/text-align\s*:\s*(left|center|right)/i)?.[1] || 
           'left';
-
-        th.style.textAlign = align;
       });
     });
 
     kick();
     updateTitles();
-  }
+  };
 
-  document.addEventListener('mouseover', event => {
-    const el = event.target.closest?.(
-      '.feature-table tbody td:not(:first-child), ' +
-      '.feature-table tbody td:first-child small'
-    );
-    if (el) updateTitle(el);
+  document.addEventListener('mouseover', e => {
+    const el = e.target.closest?.(titleSelector);
+    if (el) {
+      const text = el.textContent.trim();
+      if (text && el.scrollWidth > el.clientWidth + 1) el.setAttribute('title', text);
+      else el.removeAttribute('title');
+    }
   });
 
   addEventListener('scroll', kick, { passive: true });
-  addEventListener('resize', () => {
-    kick();
-    updateTitles();
-  });
+  addEventListener('resize', () => { kick(); updateTitles(); });
 
-  addEventListener('load', build);
-  document.addEventListener('DOMContentLoaded', build);
-  if (window.document$) window.document$.subscribe(build);
+  ['load', 'DOMContentLoaded'].forEach(ev => addEventListener(ev, build));
+  window.document$?.subscribe(build);
 
   if (document.readyState !== 'loading') build();
   else kick();
