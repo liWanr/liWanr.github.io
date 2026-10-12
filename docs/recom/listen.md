@@ -15,7 +15,7 @@ hide: [toc]
 
 -   [![Time Flies](https://resources.tidal.com/images/a7fd7fa5/7cc1/4a84/881b/e18100febeb0/1280x1280.jpg)](https://raygum.com/releases/oD6O126yI5kz/time-flies)
 
--   [![H^3^M](https://resources.tidal.com/images/d76677a4/17f7/4bd3/bfe3/7fca3fba6712/1280x1280.jpg)](https://raygum.com/releases/whIciqw9AFjq/hm)
+-   [![H³M](https://resources.tidal.com/images/d76677a4/17f7/4bd3/bfe3/7fca3fba6712/1280x1280.jpg)](https://raygum.com/releases/whIciqw9AFjq/hm)
 
 -   [![U87](https://resources.tidal.com/images/a524b222/5572/434b/8937/7f4d5593ffa9/1280x1280.jpg)](https://raygum.com/releases/aoxbpA24BbRi/u87)
 
