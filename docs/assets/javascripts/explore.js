@@ -26,10 +26,22 @@
       rootMargin: "0px 0px 50px 0px" 
     });
 
+    // 定义全局统一的时间戳，保证同一次加载的所有图片带有相同批次标识（也可以用每次都变随机数）
+    const cacheBuster = Date.now();
+
     document.querySelectorAll(".explore").forEach(container => {
       container.querySelectorAll("img").forEach(img => {
         if (!img.hasAttribute("loading")) img.loading = "lazy";
         img.decoding = "async";
+
+        // === 核心新增：为 .explore 下的图片禁用缓存 ===
+        const originalSrc = img.getAttribute("src") || img.src;
+        if (originalSrc && !originalSrc.includes('nocache=')) {
+          // 检查原本是否有 query 参数，合理拼接
+          const separator = originalSrc.includes('?') ? '&' : '?';
+          img.src = `${originalSrc}${separator}nocache=${cacheBuster}`;
+        }
+        // ===========================================
 
         // 自动提取 alt 并在图片下方补全标题文字
         const li = img.closest("li");
