@@ -6,94 +6,53 @@
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const hasObserver = "IntersectionObserver" in window;
 
-    // 创建交叉观察器：只有当卡片进入视口时，才移除 pending 状态触发上滑动画
-    const observer = (!reduceMotion && hasObserver) && new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        
-        const target = entry.target;
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            target.classList.remove("explore-pending");
-            target.classList.add("explore-visible");
-          });
-        });
-        
-        obs.unobserve(target);
-      });
-    }, { 
-      threshold: 0.05, 
-      rootMargin: "0px 0px 50px 0px" 
+    // 1. 统一处理图片属性与标题补全
+    document.querySelectorAll(".explore img").forEach(img => {
+      if (!img.hasAttribute("loading")) img.loading = "lazy";
+      img.decoding = "async";
+
+      const li = img.closest("li");
+      if (li && img.alt && !li.querySelector(".explore-title")) {
+        const titleText = img.alt.trim();
+        if (titleText) {
+          const p = document.createElement("p");
+          p.className = "explore-title";
+          p.textContent = titleText;
+          li.appendChild(p);
+        }
+      }
     });
 
-    // 定义全局统一的时间戳，保证同一次加载的所有图片带有相同批次标识（也可以用每次都变随机数）
-    const cacheBuster = Date.now();
+    if (reduceMotion || !hasObserver) {
+      document.querySelectorAll(".explore ul > li").forEach(c => c.classList.add("explore-visible"));
+      return;
+    }
 
-    document.querySelectorAll(".explore").forEach(container => {
-      container.querySelectorAll("img").forEach(img => {
-        if (!img.hasAttribute("loading")) img.loading = "lazy";
-        img.decoding = "async";
+    // 2. 交叉观察器：卡片露出 1/3 时触发
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const card = entry.target;
+        obs.unobserve(card);
 
-        // === 核心新增：为 .explore 下的图片禁用缓存 ===
-        const originalSrc = img.getAttribute("src") || img.src;
-        if (originalSrc && !originalSrc.includes('nocache=')) {
-          // 检查原本是否有 query 参数，合理拼接
-          const separator = originalSrc.includes('?') ? '&' : '?';
-          img.src = `${originalSrc}${separator}nocache=${cacheBuster}`;
-        }
-        // ===========================================
-
-        // 自动提取 alt 并在图片下方补全标题文字
-        const li = img.closest("li");
-        if (li && img.alt && !li.querySelector(".explore-title")) {
-          const titleText = img.alt.trim();
-          if (titleText) {
-            const p = document.createElement("p");
-            p.className = "explore-title";
-            p.textContent = titleText;
-            li.appendChild(p);
-          }
-        }
+        // 利用 Promise.all 并发等待所有图片解码完成，代码瞬间清爽
+        const imgs = [...card.querySelectorAll("img")];
+        Promise.all(imgs.map(img => (typeof img.decode === "function" ? img.decode().catch(() => {}) : Promise.resolve())))
+          .then(() => {
+            requestAnimationFrame(() => {
+              card.classList.remove("explore-pending");
+              card.classList.add("explore-visible");
+            });
+          });
       });
+    }, { threshold: 0.1 });
 
-      // 处理每一个卡片的加载与动画入场
-      container.querySelectorAll("ul > li").forEach((card) => {
-        if (reduceMotion || !hasObserver) {
-          card.classList.add("explore-visible");
-          return;
-        }
-        if (card.dataset.exploreRevealReady) return;
-        card.dataset.exploreRevealReady = "true";
-
-        // 1. 核心：一开始必须加上 pending 状态（隐藏），彻底杜绝未加载时阴影和文字光秃秃露出的丑陋现象
-        card.classList.add("explore-pending");
-
-        const imgs = card.querySelectorAll("img");
-        if (imgs.length === 0) {
-          observer.observe(card);
-          return;
-        }
-
-        // 2. 检查图片是否加载完成（兼容缓存和实时加载）
-        let loadedCount = 0;
-        const checkImagesLoaded = () => {
-          loadedCount++;
-          if (loadedCount === imgs.length) {
-            // 只有当图片（也就是整个卡片的内容）准备就绪后，才交给视口观察器
-            // 这样能确保图片、阴影、文字是作为一个整体，在滚动到视口时才一起出现
-            observer.observe(card);
-          }
-        };
-
-        imgs.forEach(img => {
-          if (img.complete && img.naturalHeight !== 0) {
-            checkImagesLoaded();
-          } else {
-            img.addEventListener("load", checkImagesLoaded, { once: true });
-            img.addEventListener("error", checkImagesLoaded, { once: true });
-          }
-        });
-      });
+    // 3. 初始化卡片状态
+    document.querySelectorAll(".explore ul > li").forEach(card => {
+      if (card.dataset.exploreRevealReady) return;
+      card.dataset.exploreRevealReady = "true";
+      card.classList.add("explore-pending");
+      observer.observe(card);
     });
   };
 

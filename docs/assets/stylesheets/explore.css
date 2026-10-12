@@ -1,13 +1,11 @@
-/* ---------- 容器与变量 ---------- */
 .md-typeset .explore {
   --explore-cover-ratio: 2 / 3;
   margin: 0 0 .5rem;
-  
+
   &.music {
     --explore-cover-ratio: 1 / 1;
   }
 
-  /* ---------- 网格与列表项 ---------- */
   ul {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -25,27 +23,17 @@
       padding: 0;
       cursor: pointer;
 
-      /* ---------- 封面与悬停效果 ---------- */
+      /* 封面卡片容器与悬停效果 */
       > p:first-child,
       > a {
         display: block;
         width: 100%;
         aspect-ratio: var(--explore-cover-ratio);
-        /* 初始不在这里给阴影，或者通过 pending 状态统一控制，避免提前闪烁 */
-        transition: transform .25s ease, box-shadow .25s ease;
         margin: 0;
-      }
-
-      /* 让阴影随着卡片整体的显示（explore-visible）才优雅呈现，或者直接在 pending 时隐藏阴影 */
-      &.explore-visible > p:first-child,
-      &.explore-visible > a {
         box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
-      }
+        transition: transform .25s ease, box-shadow .25s ease;
 
-      > p:first-child > a {
-        display: block;
-        width: 100%;
-        height: 100%;
+        > a { height: 100%; }
       }
 
       img {
@@ -63,7 +51,6 @@
         }
       }
 
-      /* ---------- 自动生成的标题样式 ---------- */
       .explore-title {
         overflow: hidden;
         margin: .4rem 0 0;
@@ -72,16 +59,17 @@
         white-space: nowrap;
       }
 
-      /* ---------- 滚动进入视口动画 ---------- */
+      /* 滚动入场动画状态 */
       &.explore-pending {
         opacity: 0;
-        transform: translateY(32px);
+        transform: translateY(36px);
       }
 
       &.explore-visible {
         opacity: 1;
         transform: translateY(0);
-        transition: opacity .8s ease, transform .8s cubic-bezier(.2, .7, .2, 1);
+        will-change: opacity, transform;
+        transition: opacity 1.0s cubic-bezier(0.16, 1, 0.3, 1), transform 1.0s cubic-bezier(0.16, 1, 0.3, 1);
       }
     }
   }
