@@ -5,17 +5,12 @@ created: 2026-02-07T13:14:33
 ---
 
 <style>
-.md-typeset a{
+.md-typeset .md-content__inner a{
     color: var(--md-default-fg-color) !important;
 }
-.md-typeset a:hover{
+.md-typeset .md-content__inner a:hover{
     color: var(--md-typeset-a-color) !important;
 }
-/* hr {
-    height: 0rem;
-    border-radius: 5px;
-    background-color: var(--md-accent-fg-color);
-} */
 </style>
 
 ### 专属链接
