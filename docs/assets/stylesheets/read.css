@@ -173,7 +173,7 @@ html .md-typeset .books-table table:not(.ft-header) {
   tbody tr:has(td:last-child .lucide-circle-x) {
     color: var(--md-default-fg-color--light);
     opacity: 0.9;
-    & svg { color: inherit; }
+    & svg { color: var(--md-default-fg-color--light); }
   }
 
   tbody tr:has(td:last-child .lucide-circle-check) svg {
