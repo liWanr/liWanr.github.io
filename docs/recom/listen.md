@@ -9,13 +9,11 @@ hide: [toc]
 
 # 听 · 乐曲中的回响
 
-<link rel="stylesheet" href="/assets/stylesheets/listen.css">
-<script src="/assets/javascripts/listen.js"></script>
+<link rel="stylesheet" href="/assets/stylesheets/explore.css">
+<script src="/assets/javascripts/explore.js"></script>
 
 
-/// html | section.cover-wall
-
-### 陈奕迅
+/// html | section.explore.music
 
 -   [![The Key](https://resources.tidal.com/images/c97be3c1/62d9/42a3/b7b9/49b2314d43d0/1280x1280.jpg)](https://raygum.com/releases/D9V3TZtgIf0n/the-key)
 
@@ -80,11 +78,6 @@ hide: [toc]
 -   [![FEAR and DREAMS](https://resources.tidal.com/images/a56bd3a9/ee99/408f/b5a1/798c161a7f55/1280x1280.jpg)](https://raygum.com/releases/BYnpqIyfp9ct/fear-and-dreams)
 
     FEAR and DREAMS
-///
-
-/// html | section.cover-wall
-
-### Adele
 
 -   [![19](https://resources.tidal.com/images/517eafaa/e0f3/40a0/9a79/0e05571e0abf/1280x1280.jpg)](https://raygum.com/releases/oZePujXsyBrG/19)
 
@@ -102,21 +95,9 @@ hide: [toc]
 
     30
 
-///
-
-/// html | section.cover-wall
-
-### 郭顶
-
 -   [![飞行器的执行周期](https://resources.tidal.com/images/8772fae2/b7a0/466a/b955/f44ce221f749/1280x1280.jpg)](https://raygum.com/releases/QaNK0nOyJI41)
 
     飞行器的执行周期
-
-///
-
-/// html | section.cover-wall
-
-### 宋冬野
 
 -   [![安和桥北](https://resources.tidal.com/images/0a9d74a4/ea19/47bb/bb29/596c71d76997/1280x1280.jpg)](https://raygum.com/releases/uBoWw0bJJpYX)
 
@@ -126,21 +107,9 @@ hide: [toc]
 
     郭源潮
 
-///
-
-/// html | section.cover-wall
-
-### 丁世光
-
 -   [![神经志](https://resources.tidal.com/images/04288220/9da1/461d/81df/d648e2099fa0/1280x1280.jpg)](https://raygum.com/releases/tdSazlQ0BHp5)
 
     神经志
-
-///
-
-/// html | section.cover-wall
-
-### 林俊杰
 
 -   [![重拾_快乐](https://resources.tidal.com/images/836ee45a/8976/4a77/86ca/cfd8f8711bce/1280x1280.jpg)](https://raygum.com/releases/s4cPCm1pOWnt)
 
@@ -149,11 +118,6 @@ hide: [toc]
 -  [![和自己对话](https://resources.tidal.com/images/2a5b69d6/5951/4f5a/8495/a269103863ec/1280x1280.jpg)](https://raygum.com/releases/SAIaJ7kB7SIs/from-me-to-myself)
 
     和自己对话
-///
-
-/// html | section.cover-wall
-
-### 徐佳莹
 
 -   [![心理学](https://resources.tidal.com/images/d55ba81c/4125/4672/a2ca/356eed9f942b/1280x1280.jpg)](https://raygum.com/releases/gFV0fUR1Ttgk)
 
@@ -162,11 +126,6 @@ hide: [toc]
 -   [![Lala Hsu](https://resources.tidal.com/images/8c8165d9/a00b/4f49/a8c1/5cfd139acbef/1280x1280.jpg)](https://raygum.com/releases/JXsewjmvF0ok/lala)
 
     Lala Hsu
-///
-
-/// html | section.cover-wall
-
-### 五月天
 
 -   [![自传](https://resources.tidal.com/images/c2039ee3/2eec/48b0/92a0/36833981b78a/1280x1280.jpg)](https://raygum.com/releases/GYTfkK7cR2JN)
 
@@ -180,13 +139,6 @@ hide: [toc]
 
     后 青春期的诗
 
-///
-
-/// html | section.cover-wall
-
-
-### 万能青年旅店
-
 -   [![万能青年旅店](https://resources.tidal.com/images/88b4232c/9c8c/4523/92ee/3bfd6b10d717/1280x1280.jpg)](https://raygum.com/releases/DBIpcgpTCJpk)
 
     万能青年旅店
@@ -194,31 +146,14 @@ hide: [toc]
 -   [![冀西南林路行](https://resources.tidal.com/images/72f8d31f/084a/4d28/915f/2f6668229264/1280x1280.jpg)](https://raygum.com/releases/RHr3leChjWYK)
 
     冀西南林路行
-///
-
-/// html | section.cover-wall
-
-
-### 胡彦斌
 
 -   [![太歌](https://resources.tidal.com/images/5d18d3b8/6e76/40b9/be6d/abe828c6aa7a/1280x1280.jpg)](https://raygum.com/releases/OIaP8B43msdU)
 
     太歌
-///
-
-/// html | section.cover-wall
-
-### 汤令山
 
 -   [![THE PROTÉGÉ](https://resources.tidal.com/images/9bf47bdd/333c/4c21/9866/719ab8a2f663/1280x1280.jpg)](https://raygum.com/releases/mP6VV1zb2MQA/the-protege)
 
     THE PROTÉGÉ
-
-///
-
-/// html | section.cover-wall
-
-### 林家谦
 
 -   [![某种老朋友](https://resources.tidal.com/images/0629c0d4/0e18/4ce4/bb8f/6d360701e084/1280x1280.jpg)](https://raygum.com/releases/ALp5ap027eiy)
 
@@ -227,12 +162,6 @@ hide: [toc]
 -   [![Major in Minor](https://resources.tidal.com/images/2443d893/2fd8/4c3a/9f2e/aa26faaab165/1280x1280.jpg)](https://raygum.com/releases/SjGNHwiLzgoz/major-in-minor)
 
     Major in Minor
-
-///
-
-/// html | section.cover-wall
-
-### 林宥嘉
 
 -   [![感官/世界](https://resources.tidal.com/images/63f6ac40/5907/49c8/88e3/5853e76a6311/1280x1280.jpg)](https://raygum.com/releases/cbh89v11tDAl)
 
@@ -245,12 +174,6 @@ hide: [toc]
 -   [![大小说家](https://resources.tidal.com/images/b296fefc/3b4e/4c5b/bfc2/d86a0c0e930e/1280x1280.jpg)](https://raygum.com/releases/RqXniqsmj67p)
 
     大小说家
-
-///
-
-/// html | section.cover-wall
-
-### 李荣浩
 
 -   [![李荣浩](https://resources.tidal.com/images/fc4dc722/2fb3/4345/b6b7/7d3bdacbc7ca/1280x1280.jpg)](https://raygum.com/releases/JeIoyBm4xN6l)
 
@@ -266,12 +189,7 @@ hide: [toc]
 
 -   [![Live Session](https://resources.tidal.com/images/62f0a63b/a789/4718/b796/1c6cfc81c577/1280x1280.jpg)](https://raygum.com/releases/g8sdBXjFiqZC/itunes-session)
 
-    Live Session
-///
-
-/// html | section.cover-wall
-
-### 赵雷
+    Live Sessio
 
 -   [![赵小雷](https://resources.tidal.com/images/0e6244fd/fe76/45e4/9572/659b0ac1261b/1280x1280.jpg)](https://raygum.com/releases/lBs35iKOWkk3)
 
@@ -284,12 +202,6 @@ hide: [toc]
 -   [![署前街少年](https://resources.tidal.com/images/1e6495a5/02db/42df/adc9/143f73eabf29/1280x1280.jpg)](https://raygum.com/releases/Qm2CD7iKLyXS)
 
     署前街少年
-
-///
-
-/// html | section.cover-wall
-
-### 周柏豪
 
 -   [![REMEMBRANCE](https://resources.tidal.com/images/95d24a91/c98a/4dec/9e35/018834b9919b/1280x1280.jpg)](https://raygum.com/releases/mkSsxGhuDGAe/remembrance)
 

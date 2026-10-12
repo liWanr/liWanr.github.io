@@ -9,9 +9,10 @@ comments: false
 
 # 观 · 银幕上的故事
 
-<link rel="stylesheet" href="/assets/stylesheets/watch.css">
+<link rel="stylesheet" href="/assets/stylesheets/explore.css">
+<script src="/assets/javascripts/explore.js"></script>
 
-///html | div.movie-links
+/// html | section.explore.movie
 
 -   [![肖申克的救赎](https://www.themoviedb.org/t/p/w1280/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg)](https://www.themoviedb.org/movie/278-the-shawshank-redemption)
 
