@@ -9,6 +9,12 @@ hide: [toc]
 
 # 听 · 乐曲中的回响
 
+<p id="album-count" style="text-align:right;font-size:smaller"></p>
+<script>
+setTimeout(() => document.getElementById("album-count").textContent =
+  `共 ${document.querySelectorAll(".explore.music li").length} 张专辑`);
+</script>
+
 /// html | section.explore.music
 
 -   [![The Key](https://resources.tidal.com/images/c97be3c1/62d9/42a3/b7b9/49b2314d43d0/1280x1280.jpg)](https://raygum.com/releases/D9V3TZtgIf0n/the-key)
@@ -57,7 +63,21 @@ hide: [toc]
 
 -   [![郭源潮](https://resources.tidal.com/images/876b7e91/463b/4fd3/9e48/7252f2ac1933/1280x1280.jpg)](https://raygum.com/releases/5Gs0M9Lrjapw)
 
+-   [![陶喆](https://resources.tidal.com/images/988ea5bb/6d2e/4738/9d4c/95ac1f2b865d/1280x1280.jpg)](https://raygum.com/releases/dAH9LU3dJm55)
+
+-   [![I'm OK](https://resources.tidal.com/images/7e9f347f/dbbb/4164/a18c/29ad77edbd51/1280x1280.jpg)](https://raygum.com/releases/zc0der1tyvtm/im-ok)
+
+-   [![黑色柳丁](https://cdn.raygum.com/o76TMzmsJEqq.webp?width=372&format=webp)](https://raygum.com/releases/o76TMzmsJEqq)
+
 -   [![神经志](https://resources.tidal.com/images/04288220/9da1/461d/81df/d648e2099fa0/1280x1280.jpg)](https://raygum.com/releases/tdSazlQ0BHp5)
+
+-   [![Doo-Wops & Hooligans](https://resources.tidal.com/images/e12dcd8b/0cdf/48aa/b2e3/8212a4ab1c0f/1280x1280.jpg)](https://raygum.com/releases/D5BOo0uv6bsP/doo-wops-and-hooligans)
+
+-   [![Human](https://resources.tidal.com/images/a18a0a67/7335/48b7/9553/828272075811/1280x1280.jpg)](https://raygum.com/releases/yjb3nZc8YSNp/human)
+
+-   [![游戏 基](https://resources.tidal.com/images/7aec2adf/4b63/4cf0/9c2f/e76c5a577c92/1280x1280.jpg)](https://raygum.com/releases/2c6iLfKYDguX)
+
+-   [![大雄](https://resources.tidal.com/images/e6c93bbf/145d/406a/8ee7/091652ce019f/1280x1280.jpg)](https://raygum.com/releases/steBmjN203wZ)
 
 -   [![重拾_快乐](https://resources.tidal.com/images/836ee45a/8976/4a77/86ca/cfd8f8711bce/1280x1280.jpg)](https://raygum.com/releases/s4cPCm1pOWnt)
 
