@@ -18,9 +18,11 @@ extra_css:
   - assets/stylesheets/link.css
   - assets/stylesheets/table.css
   - assets/stylesheets/progress.css
+  - assets/stylesheets/explore.css
 
 extra_javascript:
   - assets/javascripts/progress.js
+  - assets/javascripts/explore.js
   - path: assets/javascripts/extra.js
     async: true
 
@@ -190,14 +192,6 @@ plugins:
 # 附加配置
 extra:
   generator: false                          # 移除 "Made with ***" 声明
-
-  # analytics:
-  #   provider: google
-  #   property: G-JJZ9XN4L96
-
-  # annotate:
-  #   Bash:
-  #     - .s2
 
   # ----  本地部署的底部链接  ----
   social:

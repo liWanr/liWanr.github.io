@@ -9,10 +9,6 @@ hide: [toc]
 
 # 听 · 乐曲中的回响
 
-<link rel="stylesheet" href="/assets/stylesheets/explore.css">
-<script src="/assets/javascripts/explore.js"></script>
-
-
 /// html | section.explore.music
 
 -   [![The Key](https://resources.tidal.com/images/c97be3c1/62d9/42a3/b7b9/49b2314d43d0/1280x1280.jpg)](https://raygum.com/releases/D9V3TZtgIf0n/the-key)
