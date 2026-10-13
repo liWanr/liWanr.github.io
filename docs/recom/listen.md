@@ -9,10 +9,15 @@ hide: [toc]
 
 # 听 · 乐曲中的回响
 
-<p id="album-count" style="text-align:right;font-size:smaller"></p>
+<p style="text-align:right;font-size:smaller">
+  共 <span id="album-count"></span> 张专辑
+</p>
+
 <script>
-setTimeout(() => document.getElementById("album-count").textContent =
-  `共 ${document.querySelectorAll(".explore.music li").length} 张专辑`);
+  document.addEventListener("DOMContentLoaded", () => {
+    const count = document.querySelectorAll(".explore li").length;
+    document.getElementById("album-count").textContent = `${count}`;
+  });
 </script>
 
 /// html | section.explore.music

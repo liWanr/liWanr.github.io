@@ -9,10 +9,15 @@ comments: false
 
 # 观 · 银幕上的故事
 
-<p id="album-count" style="text-align:right;font-size:smaller"></p>
+<p style="text-align:right;font-size:smaller">
+  共 <span id="album-count"></span> 部影视作品
+</p>
+
 <script>
-setTimeout(() => document.getElementById("album-count").textContent =
-  `共 ${document.querySelectorAll(".explore.movie li").length} 部影视作品`);
+  document.addEventListener("DOMContentLoaded", () => {
+    const count = document.querySelectorAll(".explore li").length;
+    document.getElementById("album-count").textContent = `${count}`;
+  });
 </script>
 
 /// html | section.explore.movie
