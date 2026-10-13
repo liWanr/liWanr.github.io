@@ -92,6 +92,8 @@ hide: [toc]
 
 -   [![Lala Hsu](https://resources.tidal.com/images/8c8165d9/a00b/4f49/a8c1/5cfd139acbef/1280x1280.jpg)](https://raygum.com/releases/JXsewjmvF0ok/lala)
 
+-   [![Shirley’s Era](https://resources.tidal.com/images/04135c0a/7905/4d4f/a52e/e773f8256a50/1280x1280.jpg)](https://raygum.com/releases/BDDmejbw5Uer/shirleys-era)
+
 -   [![自传](https://resources.tidal.com/images/c2039ee3/2eec/48b0/92a0/36833981b78a/1280x1280.jpg)](https://raygum.com/releases/GYTfkK7cR2JN)
 
 -   [![第二人生](https://resources.tidal.com/images/77808df3/704a/40f7/a38c/d5ce23bf0e73/1280x1280.jpg)](https://raygum.com/releases/l2KUZKpcApH6)
@@ -130,10 +132,26 @@ hide: [toc]
 
 -   [![署前街少年](https://resources.tidal.com/images/1e6495a5/02db/42df/adc9/143f73eabf29/1280x1280.jpg)](https://raygum.com/releases/Qm2CD7iKLyXS)
 
--   [![REMEMBRANCE](https://resources.tidal.com/images/95d24a91/c98a/4dec/9e35/018834b9919b/1280x1280.jpg)](https://raygum.com/releases/mkSsxGhuDGAe/remembrance)
+-   [![Remembrance](https://resources.tidal.com/images/95d24a91/c98a/4dec/9e35/018834b9919b/1280x1280.jpg)](https://raygum.com/releases/mkSsxGhuDGAe/remembrance)
 
 -   [![Follow](https://resources.tidal.com/images/c29dc85e/dc36/43c0/a5e8/9312b37a8203/1280x1280.jpg)](https://raygum.com/releases/lkNP9mUWPMYo/follow)
 
 -   [![White](https://resources.tidal.com/images/28458717/3082/4b8a/9fde/75a9708eb0d4/1280x1280.jpg)](https://raygum.com/releases/UTeGuETqdL9a/white)
+
+-   [![枯萎颂](https://resources.tidal.com/images/124f724a/d45b/4104/be47/29c08af8febf/1280x1280.jpg)](https://raygum.com/releases/sbXzud6OyBnW)
+
+-   [![幸福了 然后呢](https://cdn.raygum.com/eNtRNuAlr0Ey.webp?width=372&format=webp)](https://raygum.com/releases/eNtRNuAlr0Ey)
+
+-   [![鸽子](https://cdn.raygum.com/TIpjbiNrUsWv.webp?width=372&format=webp)](https://raygum.com/releases/TIpjbiNrUsWv)
+
+-   [![初爱](https://resources.tidal.com/images/e6cc7545/882f/4392/adb2/1cbfaa339f8c/1280x1280.jpg)](https://raygum.com/releases/og1HsnehDmAM)
+
+-   [![新的心跳](https://resources.tidal.com/images/ce08263a/b24b/4e3e/b3c7/d2dbf7588d68/1280x1280.jpg)](https://raygum.com/releases/jriep7QVxs4Q)
+
+-   [![摩天动物园](https://resources.tidal.com/images/b120d6f5/0048/4b72/b920/96fcea4bdc44/1280x1280.jpg)](https://raygum.com/releases/gNpA0BCpktzX)
+
+-   [![依然](https://resources.tidal.com/images/767edb95/f15f/4b15/91d3/bb02fc44aa81/1280x1280.jpg)](https://raygum.com/releases/msJ3jUL32Dfu)
+
+-   [![想念你](https://cdn.raygum.com/tLyTYft3XZGF.webp?width=372&format=webp)](https://raygum.com/releases/tLyTYft3XZGF)
 
 ///

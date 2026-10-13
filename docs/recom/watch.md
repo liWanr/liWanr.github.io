@@ -42,11 +42,15 @@ comments: false
 
 -   [![宇宙探索编辑部](https://image.tmdb.org/t/p/original/eoqKtjRMvHvv3f87QSmHFGgRIHo.jpg)](https://www.themoviedb.org/movie/851977)
 
--   [![无间道](https://image.tmdb.org/t/p/original/ha2CnGPVGyfumTHpvbFzKielABl.jpg)](https://www.themoviedb.org/movie/10775)
-
 -   [![七宗罪](https://image.tmdb.org/t/p/original/qQVQ3zy2KkUYc4HkM46oSXilWaH.jpg)](https://www.themoviedb.org/movie/807-se7en)
 
 -   [![机器人总动员](https://www.themoviedb.org/t/p/w1280/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg)](https://www.themoviedb.org/movie/10681-wall-e)
+
+-   [![无间道](https://image.tmdb.org/t/p/original/ha2CnGPVGyfumTHpvbFzKielABl.jpg)](https://www.themoviedb.org/movie/10775)
+
+-   [![无间道2](https://media.themoviedb.org/t/p/w440_and_h660_face/5xRCFetYT8cHlcIFjuWL5uyNjy.jpg)](https://www.themoviedb.org/movie/11647-ii)
+
+-   [![无间道3](https://media.themoviedb.org/t/p/w440_and_h660_face/7jfnSTsriW9MW0OXK0lbA9qtcLI.jpg)](https://www.themoviedb.org/movie/14310-iii)
 
 -   [![楚门的世界](https://www.themoviedb.org/t/p/w1280/vuza0WqY239yBXOadKlGwJsZJFE.jpg)](https://www.themoviedb.org/movie/37165-the-truman-show)
 
@@ -138,13 +142,55 @@ comments: false
 
 -   [![康斯坦丁](https://image.tmdb.org/t/p/original/cLFIWpYTNL6pfq92U74fAZoLdhB.jpg)](https://www.themoviedb.org/movie/561-constantine)
 
--   [![寄生虫](https://image.tmdb.org/t/p/original/fLcDvPPoKtsBdkpRegemFGJR8KK.jpg)](https://www.themoviedb.org/movie/496243)
+-   [![钢铁侠](https://image.tmdb.org/t/p/original/8sxDCrdn0UcBa3hjs0m50XT3R44.jpg)](https://www.themoviedb.org/movie/1726-iron-man)
+
+-   [![钢铁侠2](https://image.tmdb.org/t/p/original/t4P8jFGcs2PsWJfp8QwcBg8NvNb.jpg)](https://www.themoviedb.org/movie/10138-iron-man-2)
 
 -   [![钢铁侠3](https://image.tmdb.org/t/p/original/cicMG9cj5KK5pO4AG2jzWJXI7cY.jpg)](https://www.themoviedb.org/movie/68721-iron-man-3)
 
+-   [![美国队长](https://image.tmdb.org/t/p/original/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg)](https://www.themoviedb.org/movie/1771-captain-america-the-first-avenger)
+
+-   [![美国队长2](https://image.tmdb.org/t/p/original/l79VoTIPEXwo9zCTPTnpqdASvus.jpg)](https://www.themoviedb.org/movie/100402-captain-america-the-winter-soldier)
+
+-   [![美国队长3](https://image.tmdb.org/t/p/original/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg)](https://www.themoviedb.org/movie/271110-captain-america-civil-war)
+
+-   [![雷神](https://image.tmdb.org/t/p/original/jWnbuXuzMIl3FDIs0qY9ZdDPxCl.jpg)](https://www.themoviedb.org/movie/10195-thor)
+
+-   [![雷神2](https://image.tmdb.org/t/p/original/fVc37mqcq4xw11ks83vczT97Aim.jpg)](https://www.themoviedb.org/movie/76338-thor-the-dark-world)
+
+-   [![雷神3](https://image.tmdb.org/t/p/original/8hnNdUFlUkjPWxKDyiE4Kn8h7Q5.jpg)](https://www.themoviedb.org/movie/284053-thor-ragnarok)
+
+-   [![无敌浩克](https://image.tmdb.org/t/p/original/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg)](https://www.themoviedb.org/movie/1724-the-incredible-hulk)
+
+-   [![黑寡妇](https://image.tmdb.org/t/p/original/ytnhzdwtj0YfC5NVWrrPRGSGZb7.jpg)](https://www.themoviedb.org/movie/497698-black-widow)
+
+-   [![鹰眼](https://image.tmdb.org/t/p/original/48ShmCj3DCLScqXqVNfvta1nM76.jpg)](https://www.themoviedb.org/tv/88329-hawkeye)
+
+-   [![复仇者联盟](https://image.tmdb.org/t/p/original/irOqMLOR61xdcnhwSsItr16DCUc.jpg)](https://www.themoviedb.org/movie/24428-the-avengers)
+
+-   [![复仇者联盟2](https://image.tmdb.org/t/p/original/xVFMwOv0uzkuYUjIMdJx9KDJpzc.jpg)](https://www.themoviedb.org/movie/99861-avengers-age-of-ultron)
+
+-   [![复仇者联盟3](https://image.tmdb.org/t/p/original/szmEy9n7iYYxuEXZUxaDHgs2ZVC.jpg)](https://www.themoviedb.org/movie/299536-avengers-infinity-war)
+
 -   [![复仇者联盟4](https://image.tmdb.org/t/p/original/bJLYrLIHT1r7cikhWGbpZkxlUpA.jpg)](https://www.themoviedb.org/movie/299534-avengers-endgame)
 
+-   [![复仇者联盟5](https://image.tmdb.org/t/p/original/nwmCsKmuYcX80zQhK2rUhJSjOJG.jpg)](https://www.themoviedb.org/movie/1003596-avengers-doomsday)
+
 -   [![罗根](https://image.tmdb.org/t/p/original/a65S6Mh9NFiNURj1IZMulsV03n4.jpg)](https://www.themoviedb.org/movie/263115-logan)
+
+-   [![银河护卫队](https://image.tmdb.org/t/p/original/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg)](https://www.themoviedb.org/movie/118340-guardians-of-the-galaxy)
+
+-   [![银河护卫队2](https://image.tmdb.org/t/p/original/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg)](https://www.themoviedb.org/movie/283995-guardians-of-the-galaxy-vol-2)
+
+-   [![银河护卫队3](https://image.tmdb.org/t/p/original/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg)](https://www.themoviedb.org/movie/330054-guardians-of-the-galaxy-vol-3)
+
+-   [![黑豹](https://image.tmdb.org/t/p/original/uxzzxijgPIY7slzFvMotPv8wjKA.jpg)](https://www.themoviedb.org/movie/284054-black-panther)
+
+-   [![奇异博士](https://image.tmdb.org/t/p/original/7WfK17BXE6szXlm4WOxfswgbdsL.jpg)](https://www.themoviedb.org/movie/284052-doctor-strange)
+
+-   [![奇异博士2](https://image.tmdb.org/t/p/original/sF0Ciu56om4sTR1KtuZvbUoqKrf.jpg)](https://www.themoviedb.org/movie/453395-doctor-strange-in-the-multiverse-of-madness)
+
+-   [![惊奇队长](https://image.tmdb.org/t/p/original/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg)](https://www.themoviedb.org/movie/299537-captain-marvel)
 
 -   [![小丑](https://image.tmdb.org/t/p/original/jIIHHkQbX3JYh2A9ghXeyuC0FBP.jpg)](https://www.themoviedb.org/movie/475557-joker)
 
@@ -152,13 +198,15 @@ comments: false
 
 -   [![无耻之徒](https://image.tmdb.org/t/p/original/r3mjNFGEPZ7d1DDF238p7LTx14o.jpg)](https://www.themoviedb.org/tv/34307-shameless)
 
+-   [![寄生虫](https://image.tmdb.org/t/p/original/fLcDvPPoKtsBdkpRegemFGJR8KK.jpg)](https://www.themoviedb.org/movie/496243)
+
+-   [![华尔街之狼](https://image.tmdb.org/t/p/original/ouASmpTP0qkHZFTttjczMkhFscS.jpg)](https://www.themoviedb.org/movie/106646-the-wolf-of-wall-street)
+
 -   [![千谎百计](https://image.tmdb.org/t/p/original/f3CxFGUHDtfPcNf5dkuPhRAOyBM.jpg)](https://www.themoviedb.org/tv/8358-lie-to-me)
 
 -   [![猩球崛起](https://image.tmdb.org/t/p/original/NushtPvbgQtdQh1fUGZ4YlGqUA.jpg)](https://www.themoviedb.org/movie/61791-rise-of-the-planet-of-the-apes)
 
 -   [![普罗米修斯](https://image.tmdb.org/t/p/original/2NbYG5BfFFkexY6RGFFkB6GGhjd.jpg)](https://www.themoviedb.org/movie/70981-prometheus)
-
--   [![华尔街之狼](https://image.tmdb.org/t/p/original/ouASmpTP0qkHZFTttjczMkhFscS.jpg)](https://www.themoviedb.org/movie/106646-the-wolf-of-wall-street)
 
 -   [![爆裂鼓手](https://image.tmdb.org/t/p/original/s3xQVKgEtXqEp9GZ78nZs6sbDiS.jpg)](https://www.themoviedb.org/movie/244786-whiplash)
 
@@ -308,4 +356,69 @@ comments: false
 
 -   [![查理和巧克力工厂](https://image.tmdb.org/t/p/original/iKP6wg3c6COUe8gYutoGG7qcPnO.jpg)](https://www.themoviedb.org/movie/118-charlie-and-the-chocolate-factory)
 
+-   [![年轻的心](https://image.tmdb.org/t/p/original/iGCtYxfuvXfy0BD5m6p7vKuPOxS.jpg)](https://www.themoviedb.org/movie/1232449-young-hearts)
+
+-   [![千与千寻](https://image.tmdb.org/t/p/original/rzqcMOjZU0idJvK3dKPl57tWosF.jpg)](https://www.themoviedb.org/movie/129)
+
+-   [![哈尔的移动城堡](https://image.tmdb.org/t/p/original/hbBZVKu2jy0aSWbaLVG8bcDCEM1.jpg)](https://www.themoviedb.org/movie/4935)
+
+-   [![哈利·波特与死亡圣器（下）](https://image.tmdb.org/t/p/original/uyTnCZz3rEGGfTePuNy3euyhiO4.jpg)](https://www.themoviedb.org/movie/12445-harry-potter-and-the-deathly-hallows-part-2)
+
+-   [![三傻大闹宝莱坞](https://image.tmdb.org/t/p/original/66A9MqXOyVFCssoloscw79z8Tew.jpg)](https://www.themoviedb.org/movie/20453-3-idiots)
+
+-   [![玩具总动员](https://image.tmdb.org/t/p/original/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg)](https://www.themoviedb.org/movie/862-toy-story)
+
+-   [![杀死一只知更鸟](https://image.tmdb.org/t/p/original/nphJLWyMLUJ5t6GXdbtmhRPNUQ.jpg)](https://www.themoviedb.org/movie/595-to-kill-a-mockingbird)
+
+-   [![夏洛特烦恼](https://www.themoviedb.org/t/p/w1280/zaDitWyV81WOg2tiujj6kxEFYtZ.jpg)](https://www.themoviedb.org/movie/362682)
+
+-   [![奇迹笨小孩](https://www.themoviedb.org/t/p/w1280/tQnIsgXkAWH4iLrY79GArjCzMDq.jpg)](https://www.themoviedb.org/movie/803266)
+
+-   [![西红市首富](https://media.themoviedb.org/t/p/w440_and_h660_face/q64cOhXEm7iw9n9DgycxEmxeFQU.jpg)](https://www.themoviedb.org/movie/538331)
+
+-   [![转娃娃](https://media.themoviedb.org/t/p/w440_and_h660_face/dXjYk7fnA6HNqhJHTnmeD6rV4Aw.jpg)](https://www.themoviedb.org/movie/1299537)
+
+-   [![逆鳞](https://www.themoviedb.org/t/p/w1280/cDNaEw5peNrEHpcPcsjPyMMxZuV.jpg)](https://www.themoviedb.org/movie/1301464)
+
+-   [![失恋33天](https://media.themoviedb.org/t/p/w440_and_h660_face/r4iebzRRqGPXqrrRcB7YBsmpWgJ.jpg)](https://www.themoviedb.org/movie/79824-33)
+
+-   [![海洋天堂](https://media.themoviedb.org/t/p/w440_and_h660_face/f5DzLLIDdgQIlL4pe9e6UYJjYOV.jpg)](https://www.themoviedb.org/movie/54328)
+
+-   [![西游降魔篇](https://media.themoviedb.org/t/p/w440_and_h660_face/dOPEI4sVX4OiH7uSiAo0uoZb9UL.jpg)](https://www.themoviedb.org/movie/170657)
+
+-   [![大象席地而坐](https://media.themoviedb.org/t/p/w440_and_h660_face/ZQkBanXS4IXJX9tTFVwoQyWS7R.jpg)](https://www.themoviedb.org/movie/499556)
+
+-   [![我不是药神](https://media.themoviedb.org/t/p/w440_and_h660_face/sOrMz3I1Z0K8jLlNHdHsawfXDah.jpg)](https://www.themoviedb.org/movie/532753)
+
+-   [![滚蛋吧！肿瘤君](https://media.themoviedb.org/t/p/w440_and_h660_face/xjw6ApMqEtNkP4bLg56NBieSUXT.jpg)](https://www.themoviedb.org/movie/354128)
+
+-   [![无人区](https://media.themoviedb.org/t/p/w440_and_h660_face/7QVoHsiCm7f8p3tuTFpZAFRmNwi.jpg)](https://www.themoviedb.org/movie/238811)
+
+-   [![人再囧途之泰囧](https://media.themoviedb.org/t/p/w440_and_h660_face/764nbubybs6325aUQLs27wfRKVT.jpg)](https://www.themoviedb.org/movie/151743)
+
+-   [![春娇与志明](https://media.themoviedb.org/t/p/w440_and_h660_face/rl3Zpc8a3jFnjpHamj2hw6t8DB4.jpg)](https://www.themoviedb.org/movie/105680)
+
+-   [![心花怒放](https://image.tmdb.org/t/p/original/q71oIp6uUEF0EwsDcIGIFwik8sM.jpg)](https://www.themoviedb.org/movie/284298)
+
+-   [![中国合伙人](https://media.themoviedb.org/t/p/w440_and_h660_face/3ih3WBdQmvNwoiiDhCc5EatDIoD.jpg)](https://www.themoviedb.org/movie/196325)
+
+-   [![影](https://www.themoviedb.org/t/p/w1280/jOSdl4US14PADyaPilVp8sQS9M4.jpg)](https://www.themoviedb.org/movie/463319)
+
+-   [![美人鱼](https://media.themoviedb.org/t/p/w440_and_h660_face/iUfIVi1mI9aEyiiJIdqfWehii2i.jpg)](https://www.themoviedb.org/movie/381890)
+
+-   [![狄仁杰之通天帝国](https://media.themoviedb.org/t/p/w440_and_h660_face/h6tYwSug8FggYIFGvAvlQcocO0j.jpg)](https://www.themoviedb.org/movie/48492)
+
+-   [![银河补习班](https://www.themoviedb.org/t/p/w1280/iGBUeEFacHLZiAtTxvnH6mgLpsS.jpg)](https://www.themoviedb.org/movie/603765)
+
+-   [![驴得水](https://media.themoviedb.org/t/p/w440_and_h660_face/batno59Ebq7mbUbatR34MMpz4Cn.jpg)](https://www.themoviedb.org/movie/421742)
+
+-   [![无名之辈](https://media.themoviedb.org/t/p/w440_and_h660_face/j8t7gbWj0u2EOVuXNaHYJEBMfn6.jpg)](https://www.themoviedb.org/movie/554205)
+
+-   [![半个喜剧](https://media.themoviedb.org/t/p/w440_and_h660_face/soSCFMWppACEbNqeKn2679liFyv.jpg)](https://www.themoviedb.org/movie/649177)
+
+-   [![漫长的季节](https://media.themoviedb.org/t/p/w440_and_h660_face/tJLiKDYdfMskFkJXV1HnaQAdpGf.jpg)](https://www.themoviedb.org/tv/225008)
+
+-   [![一秒钟](https://www.themoviedb.org/t/p/w1280/nLcha9n4qwFE5bFQ4VzFMySBu9D.jpg)](https://www.themoviedb.org/movie/575089)
+
+-   [![默杀](https://media.themoviedb.org/t/p/w440_and_h660_face/g1btG7E7wqXDj3RbesBHgKLP8XB.jpg)](https://www.themoviedb.org/movie/1300945-un-lugar-llamado-silencio)
 ///
