@@ -9,6 +9,12 @@ hide: [toc]
 
 # 听 · 乐曲中的回响
 
+<style>
+.headerlink {
+  display: none !important;
+}
+</style>
+
 <p style="text-align:right;font-size:smaller">
   共 <span id="album-count"></span> 张专辑
 </p>

@@ -267,9 +267,9 @@ nav:
     - recom/open-source.md
     - recom/tools.md
     - 观 · 读 · 听:
-      - recom/watch.md
-      - recom/read.md
-      - recom/listen.md
+      - recom/movie.md
+      - recom/library.md
+      - recom/music.md
   - ABOUT:
     - about.md
     - about/newspaper.md

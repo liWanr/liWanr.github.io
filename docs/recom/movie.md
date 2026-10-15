@@ -9,6 +9,12 @@ comments: false
 
 # 观 · 银幕上的故事
 
+<style>
+.headerlink {
+  display: none !important;
+}
+</style>
+
 <p style="text-align:right;font-size:smaller">
   共 <span id="album-count"></span> 部影视作品
 </p>
@@ -296,6 +302,8 @@ comments: false
 
 -   [旺达幻视![](https://image.tmdb.org/t/p/original/68dh2tkwjtgYjVupxLkJaTSrHAn.jpg)](https://www.themoviedb.org/tv/85271-wandavision)
 
+-    [幻视任务![](https://media.themoviedb.org/t/p/w440_and_h660_face/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg)](https://www.themoviedb.org/tv/213375-vision-quest)
+
 -   [黑袍纠察队![](https://image.tmdb.org/t/p/original/wpLak4zYWGk6vnr84a1ItHaJNhm.jpg)](https://www.themoviedb.org/tv/76479-the-boys)
 
 -   [女巫阿加莎![](https://image.tmdb.org/t/p/original/qiTk8O471Rvrbq8u1wnBKh0ZqGo.jpg)](https://www.themoviedb.org/tv/138501-agatha-all-along)
@@ -324,7 +332,7 @@ comments: false
 
 -   [唐伯虎点秋香![](https://media.themoviedb.org/t/p/w440_and_h660_face/64ERuayNCjv9zP8bIpqMg61D461.jpg)](https://www.themoviedb.org/movie/37703)
 
--   [功夫之王![](https://media.themoviedb.org/t/p/w440_and_h660_face/g399BaBv0weqbYhaqogYMpgBeol.jpg)](https://www.themoviedb.org/movie/1729-the-forbidden-kingdom)
+-   [功夫之王![](https://image.tmdb.org/t/p/original/hC2TsqpcT32uiE8Q6bfdPaqB7SQ.jpg)](https://www.themoviedb.org/movie/1729-the-forbidden-kingdom)
 
 -   [仙剑奇侠传![](https://media.themoviedb.org/t/p/w440_and_h660_face/fdLDouYBTjlhr0Hdh3dOsJrdEQY.jpg)](https://www.themoviedb.org/tv/8757-chinese-paladin)
 
@@ -356,8 +364,6 @@ comments: false
 
 -   [毒舌律师![](https://www.themoviedb.org/t/p/w1280/dH61jsD8oT8yhDQzRkoXWfVgX63.jpg)](https://www.themoviedb.org/movie/990326)
 
--   [寒战![](https://image.tmdb.org/t/p/original/8ZLsiEHfhh38IV7EDxXhL1wHUMz.jpg)](https://www.themoviedb.org/movie/137409)
-
 -   [叶问![](https://image.tmdb.org/t/p/original/oKDcAUXhfXVGYmaWnTmX18Z3Owa.jpg)](https://www.themoviedb.org/movie/14756)
 
 -   [叶问2![](https://media.themoviedb.org/t/p/w440_and_h660_face/mWjVxwDiI1JaNkrYELOkpXXvWMh.jpg)](https://www.themoviedb.org/movie/37472-2)
@@ -370,9 +376,15 @@ comments: false
 
 -   [胜券在握![](https://www.themoviedb.org/t/p/w1280/xCO3v95JTVHyYp8cKRh8VwaQKrT.jpg)](https://www.themoviedb.org/movie/1241475)
 
+-   [寒战![](https://image.tmdb.org/t/p/original/8ZLsiEHfhh38IV7EDxXhL1wHUMz.jpg)](https://www.themoviedb.org/movie/137409)
+
+-   [寒战2![](https://media.themoviedb.org/t/p/w440_and_h660_face/w2fzpJRN7ijahzwolYilXfsFa5d.jpg)](https://www.themoviedb.org/movie/416249-ii)
+
+-   [寒战1994![](https://media.themoviedb.org/t/p/w440_and_h660_face/digyHMNMAljJZnCm6GSuWcOo4fw.jpg)](https://www.themoviedb.org/movie/1499071-1994)
+
 -   [朝云暮雨![](https://www.themoviedb.org/t/p/w1280/jLDbBhKc94pflsMJMWBnfb4cpKB.jpg)](https://www.themoviedb.org/movie/824117)
 
--   [乘风破浪![](https://www.themoviedb.org/t/p/w1280/dp3W8r29xBaIm7bmRXOWbZAdLEJ.jpg)](https://www.themoviedb.org/movie/438081)
+-   [乘风破浪![](https://media.themoviedb.org/t/p/w440_and_h660_face/fgd5fV20n6SzDZZszAquW12wdtO.jpg)](https://www.themoviedb.org/movie/438081)
 
 -   [变节 <small>潜罪犯</small>![](https://media.themoviedb.org/t/p/w440_and_h660_face/qccntl6tOR49bsT3NtvZUa8nvkY.jpg)](https://www.themoviedb.org/movie/91759-laughing-gor)
 
@@ -396,7 +408,7 @@ comments: false
 
 -   [夜王![](https://image.tmdb.org/t/p/original/i3IyXktC54hNExAeseA5ssk9kYr.jpg)](https://www.themoviedb.org/movie/1602727)
 
--   [后室![](https://image.tmdb.org/t/p/original/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg)](https://www.themoviedb.org/movie/1083381-backrooms)
+-   [后室![](https://media.themoviedb.org/t/p/w440_and_h660_face/9OxkLPMIet9brBWxp3tXyvu9tkW.jpg)](https://www.themoviedb.org/movie/1083381-backrooms)
 
 -   [庆余年![](https://image.tmdb.org/t/p/original/wW8MTKNsaDMI7bPGfLFLpTdStg5.jpg)](https://www.themoviedb.org/tv/95842-qing-yu-nian)
 
@@ -494,7 +506,7 @@ comments: false
 
 -   [海洋天堂![](https://media.themoviedb.org/t/p/w440_and_h660_face/f5DzLLIDdgQIlL4pe9e6UYJjYOV.jpg)](https://www.themoviedb.org/movie/54328)
 
--   [西游降魔篇![](https://media.themoviedb.org/t/p/w440_and_h660_face/vJhzymkkH6ZqDoj4rZOPH2cOnMU.jpg)](https://www.themoviedb.org/movie/170657)
+-   [西游 <small>降魔篇</small>![](https://media.themoviedb.org/t/p/w440_and_h660_face/vJhzymkkH6ZqDoj4rZOPH2cOnMU.jpg)](https://www.themoviedb.org/movie/170657)
 
 -   [大象席地而坐![](https://image.tmdb.org/t/p/original/56t86UhV9aw6eGqcYWYikyoVuOn.jpg)](https://www.themoviedb.org/movie/499556)
 
@@ -561,4 +573,14 @@ comments: false
 -   [大话西游 <small>大圣娶亲</small>![](https://media.themoviedb.org/t/p/w440_and_h660_face/tKp9LAQsSdoUKrPJryoI965KWPw.jpg)](https://www.themoviedb.org/movie/21835)
 
 -   [大话西游 <small>月光宝盒</small>![](https://media.themoviedb.org/t/p/w440_and_h660_face/sljUdfF7p32MdeMQj3B7Xs0YTh5.jpg)](https://www.themoviedb.org/movie/13345)
+
+-   [九品芝麻官![](https://media.themoviedb.org/t/p/w440_and_h660_face/a3ef4JTOIaVtLA0VvWziE86vqpw.jpg)](https://www.themoviedb.org/movie/55156)
+
+-   [济公![](https://media.themoviedb.org/t/p/w440_and_h660_face/fzpqqUPNvQQsHYZkTAsgTSvcPO3.jpg)](http://themoviedb.org/movie/75197)
+
+-   [武状元苏乞儿![](https://media.themoviedb.org/t/p/w440_and_h660_face/1TufKkL3ygfm9o494vQNU90WXmq.jpg)](https://www.themoviedb.org/movie/47648)
+
+-   [三少爷的剑![](https://media.themoviedb.org/t/p/w440_and_h660_face/7v2EQ98wRLcC9Vel8tU93V2LLXC.jpg)](https://www.themoviedb.org/movie/367206)
+
+-   [国产凌凌漆![](https://media.themoviedb.org/t/p/w440_and_h660_face/eygBdtp35XGzjyxDXKR4BbReYem.jpg)](https://www.themoviedb.org/movie/12990)
 ///

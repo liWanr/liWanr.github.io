@@ -32,4 +32,4 @@ description: 这书最戳我的地方不是没看见，是回避，是看见之�
 大象 / 图源: [Backiee](https://backiee.com)
 ///
 
-[^1]: [美]Eviatar Zerubavel, 《[The Elephant in the Room: Silence and Denial in Everyday Life](https://book.douban.com/subject/6157548/)》,2006.03.09
+[^1]: [美][Eviatar Zerubavel](https://en.wikipedia.org/wiki/Eviatar_Zerubavel), 《The Elephant in the Room: Silence and Denial in Everyday Life》,2006.03.09
