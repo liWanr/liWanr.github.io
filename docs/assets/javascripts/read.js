@@ -1,34 +1,5 @@
 (() => {
-  let last = -1, until = 0, running = false;
   const titleSelector = '.feature-table tbody td:not(:first-child), .feature-table tbody td:first-child small';
-
-  const measure = () => {
-    let offset = 0;
-    document.querySelectorAll('.md-header, .md-tabs').forEach(el => {
-      if (['sticky', 'fixed'].includes(getComputedStyle(el).position)) {
-        offset = Math.max(offset, el.getBoundingClientRect().bottom);
-      }
-    });
-
-    offset = Math.max(0, Math.round(offset));
-    if (offset !== last) {
-      last = offset;
-      document.documentElement.style.setProperty('--ft-site-header', `${offset}px`);
-    }
-  };
-
-  const kick = () => {
-    until = performance.now() + 600;
-    if (running) return;
-    running = true;
-
-    const tick = () => {
-      measure();
-      if (performance.now() < until) requestAnimationFrame(tick);
-      else running = false;
-    };
-    requestAnimationFrame(tick);
-  };
 
   const updateTitles = () => {
     document.querySelectorAll(titleSelector).forEach(el => {
@@ -53,7 +24,6 @@
       });
     });
 
-    kick();
     updateTitles();
   };
 
@@ -66,12 +36,11 @@
     }
   });
 
-  addEventListener('scroll', kick, { passive: true });
-  addEventListener('resize', () => { kick(); updateTitles(); });
+  // 尺寸调整时更新文本溢出提示（顶栏计算已交由全局 JS 接管）
+  addEventListener('resize', updateTitles);
 
   ['load', 'DOMContentLoaded'].forEach(ev => addEventListener(ev, build));
   window.document$?.subscribe(build);
 
   if (document.readyState !== 'loading') build();
-  else kick();
 })();

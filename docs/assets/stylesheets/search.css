@@ -58,7 +58,7 @@
   }
 
   /* 在移动端竖屏（mobile portrait）隐藏 meta */
-  @media (max-width: 480px) {
+  @media (max-width: 700px) {
     .mdx-search-result__meta {
       display: none;
     }

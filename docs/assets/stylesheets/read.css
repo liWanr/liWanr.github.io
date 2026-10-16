@@ -1,4 +1,4 @@
-/* ---------- 基础设置 ---------- */
+/* ---------- 1. 基础设置与列宽变量 ---------- */
 .books-table {
   --ft-head: 48px;
   --ft-author-width: 8rem;
@@ -6,19 +6,11 @@
   margin: .8rem 0 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .books-table {
     --ft-author-width: 6.5rem;
     --ft-status-width: 3.5rem;
   }
-}
-
-/* ---------- 总表头 & 分类表头公共毛玻璃与定位 ---------- */
-.books-table .ft-head,
-html .md-typeset .books-table table:not(.ft-header) thead th {
-  backdrop-filter: blur(.4rem);
-  -webkit-backdrop-filter: blur(.4rem);
-  background-color: var(--md-default-bg-color--light);
 }
 
 .books-table > p:first-child {
@@ -29,6 +21,9 @@ html .md-typeset .books-table table:not(.ft-header) thead th {
   position: sticky;
   top: var(--ft-site-header, 48px);
   z-index: 2;
+  backdrop-filter: blur(.4rem);
+  -webkit-backdrop-filter: blur(.4rem);
+  background-color: var(--md-default-bg-color--light);
 }
 
 .books-table .ft-header {
@@ -78,20 +73,7 @@ html .md-typeset .books-table table:not(.ft-header) td:nth-child(3) {
   padding: 0 .4rem;
 }
 
-/* ---------- 去掉主题外壳 ---------- */
-html .md-typeset .books-table {
-  & .md-typeset__scrollwrap {
-    margin: 0;
-    overflow: visible;
-  }
-  & .md-typeset__table {
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-/* ---------- 每个分类一张表 & 单元格基础样式 ---------- */
+/* ---------- 2. 每个分类一张表 & 单元格基础样式 ---------- */
 html .md-typeset .books-table table:not(.ft-header) {
   display: table;
   width: 100%;
@@ -123,13 +105,16 @@ html .md-typeset .books-table table:not(.ft-header) {
     text-overflow: ellipsis;
   }
 
-  /* 分类标题 */
+  /* 分类标题（已补回毛玻璃效果） */
   thead th {
     position: sticky;
     top: calc(var(--ft-site-header, 48px) + var(--ft-head));
     z-index: 1;
     padding-top: .65rem;
     padding-bottom: .25rem;
+    backdrop-filter: blur(.4rem);
+    -webkit-backdrop-filter: blur(.4rem);
+    background-color: var(--md-default-bg-color--light);
     border-bottom: 0;
     box-shadow: 0 1px var(--md-default-fg-color--lightest);
     color: var(--md-default-fg-color--light);
@@ -168,7 +153,7 @@ html .md-typeset .books-table table:not(.ft-header) {
   }
 }
 
-/* ---------- 图标与状态样式 ---------- */
+/* ---------- 3. 图标与状态样式 ---------- */
 .books-table {
   tbody tr:has(td:last-child .lucide-circle-x) {
     color: var(--md-default-fg-color--light);
@@ -179,13 +164,4 @@ html .md-typeset .books-table table:not(.ft-header) {
   tbody tr:has(td:last-child .lucide-circle-check) svg {
     color: #4caf50;
   }
-
-  svg.lucide-loader {
-    animation: loader-spin 5s linear infinite;
-    color: var(--md-accent-fg-color);
-  }
-}
-
-@keyframes loader-spin {
-  to { transform: rotate(360deg); }
 }

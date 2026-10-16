@@ -1,52 +1,28 @@
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let turnstileToken = '';
 
-let rssRingTurnstileToken = '';
-let rssRingEmailValid = false;
-let rssRingPrivacyChecked = false;
+const emailEl = document.getElementById('bd-email');
+const privacyEl = document.getElementById('rss-ring-privacy-checkbox');
+const submitBtn = document.getElementById('rss-ring-submit');
+const messageEl = document.getElementById('rss-ring-message');
 
-function rssRingUpdateSubmitState() {
-  document.getElementById('rss-ring-submit').disabled = !(rssRingEmailValid && rssRingTurnstileToken && rssRingPrivacyChecked);
+function updateState() {
+  submitBtn.disabled = !(EMAIL_REGEX.test(emailEl.value.trim()) && turnstileToken && privacyEl.checked);
 }
 
-document.getElementById('bd-email').addEventListener('input', function (e) {
-  rssRingEmailValid = EMAIL_REGEX.test(e.target.value.trim());
-  rssRingUpdateSubmitState();
-});
+emailEl.addEventListener('input', updateState);
+privacyEl.addEventListener('change', updateState);
 
-document.getElementById('rss-ring-privacy-checkbox').addEventListener('change', function (e) {
-  rssRingPrivacyChecked = e.target.checked;
-  rssRingUpdateSubmitState();
-});
+window.rssRingOnVerified = (token) => { turnstileToken = token; updateState(); };
+window.rssRingOnExpired = () => { turnstileToken = ''; updateState(); };
 
-function rssRingOnVerified(token) {
-  rssRingTurnstileToken = token;
-  rssRingUpdateSubmitState();
-}
-
-function rssRingOnExpired() {
-  rssRingTurnstileToken = '';
-  rssRingUpdateSubmitState();
-}
-
-document.getElementById('rss-ring-form').addEventListener('submit', async function (e) {
+document.getElementById('rss-ring-form').addEventListener('submit', async (e) => {
   e.preventDefault();
-  const email = document.getElementById('bd-email').value;
-  const messageEl = document.getElementById('rss-ring-message');
+  const email = emailEl.value.trim();
 
-  if (!rssRingEmailValid) {
-    messageEl.textContent = '邮箱格式不正确，请检查后重试';
-    return;
-  }
-
-  if (!rssRingPrivacyChecked) {
-    messageEl.textContent = '请先阅读并勾选同意隐私政策';
-    return;
-  }
-
-  if (!rssRingTurnstileToken) {
-    messageEl.textContent = '请等待人机验证...如果长时间未响应，请刷新页面重试';
-    return;
-  }
+  if (!EMAIL_REGEX.test(email)) return messageEl.textContent = '邮箱格式不正确，请检查后重试';
+  if (!privacyEl.checked) return messageEl.textContent = '请先阅读并勾选同意隐私政策';
+  if (!turnstileToken) return messageEl.textContent = '请等待人机验证...如果长时间未响应，请刷新页面重试';
 
   messageEl.textContent = '提交中，请稍后...如果长时间未响应，请刷新页面重试';
 
@@ -54,11 +30,11 @@ document.getElementById('rss-ring-form').addEventListener('submit', async functi
     const resp = await fetch('https://rss-ring.itswanr.workers.dev/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, turnstileToken: rssRingTurnstileToken }),
+      body: JSON.stringify({ email, turnstileToken }),
     });
     const data = await resp.json();
     messageEl.textContent = data.message;
-  } catch (err) {
+  } catch {
     messageEl.textContent = '提交失败，请稍后重试';
   } finally {
     turnstile.reset();

@@ -1,164 +1,181 @@
-@media screen and (min-width: 45em) {
-    .md-social {
-        padding: 0;
-    }
-}
-
-.md-social,
-.md-copyright,
-.md-footer-meta__inner {
-    padding: 0;
-}
-
-/* small */
-small {
-    font-feature-settings: 'ss04' off;
-}
-
-/* 复制title */
-.md-dialog {
-    backdrop-filter: blur(.4rem);
-    background-color: var(--md-default-bg-color--light);
-    border-radius: 1.6rem;
-    box-shadow: var(--md-shadow-z2);
-}
-
-.md-dialog__inner {
-    color: var(--md-default-fg-color--light);
-    font-size: .7rem;
-}
-
-/* 页面最大宽度 */
-/* .md-grid {
-    max-width: 1440px; 
-} */
-
-/* 字体 */
-@font-face {
-    font-family: "MiSansVF";
-    src: url("/assets/fonts/MiSansVF.ttf") format("truetype");
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-}
-
+/* ---------- 1. 全局变量与字体/全局重置 ---------- */
 :root {
-    --md-text-font: "MiSansVF";
-    --features: 'tnum' on, 'ss08' on;
-    
+  --md-table-head-height: 48px;
+  --md-text-font: "MiSansVF";
+  --features: 'tnum' on, 'ss08' on;
 }
 
-::-webkit-scrollbar {
-  display: none;
+@font-face {
+  font-family: "MiSansVF";
+  src: url("/assets/fonts/MiSansVF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
 }
 
-* {
-    font-feature-settings: var(--features);
-}
+::-webkit-scrollbar { display: none; }
+* { font-feature-settings: var(--features); }
+small { font-feature-settings: 'ss04' off; }
 
-/* 二级无序嵌套列表为空心圆 */
-.md-typeset ul ul {
-    list-style-type: circle;
-}
+.md-social, .md-copyright, .md-footer-meta__inner { padding: 0; }
+.no-color { color: var(--md-default-fg-color) !important; }
 
-/* 题注的字体比例 */
-figcaption {
-    font-size: 80%;
-}
+/* ---------- 2. MkDocs 正文排版与组件增强 (.md-typeset) ---------- */
+.md-typeset {
+  ul ul { list-style-type: circle; }
+  figcaption { font-size: 80%; }
+  h2 .twemoji { margin-top: 2.7px; }
+  .emojione, .gemoji, .twemoji { --md-icon-size: 1.22em; }
+  .result pre code { background: none; }
 
-/* 图标位置的调整，尽量保证水平居中 */
-.md-typeset h2 .twemoji {
-    margin-top: 2.7px;
-}
+  a {
+    text-decoration: underline transparent;
+    &:not(.md-button):not(>label):not(.headerlink):not(.badge):hover {
+      text-decoration-color: currentColor;
+    }
+  }
 
-/* 图标大小 */
-.md-typeset .emojione, .md-typeset .gemoji, .md-typeset .twemoji {
-    --md-icon-size: 1.22em;
-}
+  /* 保证 Sticky 吸顶不被外壳裁切 */
+  & .md-typeset__scrollwrap { margin: 0; overflow: visible; }
+  & .md-typeset__table { display: block; margin: 0; padding: 0; }
 
-/* 底部那一条改改样式，尺寸小的时候只显示快捷图标并居中 */
-@media (max-width: 750px) {
-    .md-social {
-        padding: 0;
+  table:not(.books-table table) {
+    display: table;
+    width: 100%;             /* 表格总宽 100% 占满容器 */
+    table-layout: auto;      /* 列宽根据文字内容完全自适应 */
+    margin: .8rem 0 1.5rem;
+    border-spacing: 0;
+    overflow: visible;
+
+    th, td {
+      box-sizing: border-box;
+      padding: .65rem .75rem;
+      vertical-align: middle;
     }
 
-    .md-copyright__highlight {
-        display: none;
+    thead th {
+      position: sticky;
+      top: var(--ft-site-header, 48px);
+      z-index: 2;
+      height: var(--md-table-head-height);
+      backdrop-filter: blur(.4rem);
+      -webkit-backdrop-filter: blur(.4rem);
+      background: var(--md-default-bg-color--light);
+      border-bottom: 2px solid var(--md-default-fg-color--light);
+      white-space: nowrap;
     }
 
-    .md-grid {
-        align-items: center;
-        justify-content: center;
-        height: 100%;
+    /* 多级/分类表头级联吸顶与线框 */
+    & + table thead th {
+      top: calc(var(--ft-site-header, 48px) + var(--md-table-head-height));
+      z-index: 1;
+      border-bottom: 0;
+      box-shadow: 0 1px var(--md-default-fg-color--lightest);
     }
+  }
+
+  /* 步骤列表 (.step > ol) */
+  .step > ol {
+    counter-reset: item;
+    > li {
+      position: relative;
+      padding-left: 1em;
+      list-style: none;
+
+      &::before {
+        position: absolute;
+        top: .9px;
+        left: -1px;
+        z-index: -1;
+        width: 1.9em;
+        height: 1.9em;
+        margin-left: -1.25em;
+        color: var(--md-default-fg-color);
+        font: 600 .9em/1.9em inherit;
+        text-align: center;
+        background: var(--md-code-bg-color);
+        border: 1px solid var(--md-default-fg-color);
+        border-radius: 50%;
+        content: counter(item);
+        counter-increment: item;
+      }
+
+      &::after {
+        position: absolute;
+        top: 6px;
+        bottom: 1px;
+        left: -0.36em;
+        width: 1px;
+        margin-top: 2em;
+        border-left: 1px solid hsla(0, 0%, 75%, 1);
+        content: "";
+      }
+    }
+  }
 }
 
-.no-color{
-    color: var(--md-default-fg-color) !important;
+svg.lucide-loader {
+  animation: loader-spin 5s linear infinite;
+  color: var(--md-accent-fg-color);
 }
+@keyframes loader-spin { to { transform: rotate(360deg); } }
 
-.md-typeset .result pre code {
-    background-color: transparent;
-}
-
-/* 深色主题公告栏 */
-[data-md-color-scheme="slate"] [data-md-component="announce"] {
-    background: radial-gradient(circle at 50% -180%,var(--md-accent-fg-color--transparent),transparent 58%), #1b1c21;
-    border-bottom-color: hsla(0, 0%, 100%, .07);
-}
-
-/* 默认主题公告栏 */
+/* ---------- 3. 公告栏、徽章与滚动进度条 ---------- */
 [data-md-component="announce"] {
-    background: radial-gradient(circle at 50% -180%,var(--md-accent-fg-color--transparent),transparent 58%), #15161a;
-    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+  background: radial-gradient(circle at 50% -180%, var(--md-accent-fg-color--transparent), transparent 58%), #15161a;
+  border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+
+  [data-md-color-scheme="slate"] & {
+    background: radial-gradient(circle at 50% -180%, var(--md-accent-fg-color--transparent), transparent 58%), #1b1c21;
+    border-bottom-color: hsla(0, 0%, 100%, .07);
+  }
+  .md-banner { background: none; color: #fff; }
 }
 
-/* 公告容器 */
-[data-md-component="announce"] .md-banner {
-    background-color: transparent;
-    color: #fff;
-}
-
-/* Badge 标签 */
 .mdx-announcement__label {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0 0 auto;
-
-    background-color: rgba(68, 137, 255, 0.152);
-    border: .5px solid var(--md-accent-fg-color);
-    border-radius: 1rem;
-
-    color: var(--md-accent-fg-color);
-    font-size: .57rem;
-    font-weight: 700;
-    line-height: 1.4;
-
-    gap: .3rem;
-    padding: .12rem .45rem;
-    vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(68, 137, 255, .152);
+  border: .5px solid var(--md-accent-fg-color);
+  border-radius: 1rem;
+  color: var(--md-accent-fg-color);
+  font: 700 .57rem/1.4 inherit;
+  padding: .12rem .45rem;
+  gap: .3rem;
+  vertical-align: middle;
 }
 
-/* 公告文字：白色，垂直居中 */
-a.mdx-announcement__message,
-a.mdx-announcement__message:hover{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-
-    color: #fff !important;
-    line-height: 1.5;
-    vertical-align: middle;
+a.mdx-announcement__message {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  color: #fff !important;
+  line-height: 1.5;
+  vertical-align: middle;
+  .mdx-announcement__label { align-self: center; }
 }
 
-/* Badge 内部元素颜色继承 */
-.mdx-announcement__message .mdx-announcement__label {
-    align-self: center;
+[dir="ltr"] .md-banner__button { color: #fff; }
+
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--md-primary-fg-color);
+  z-index: 10000;
+  opacity: 0;
+  transition: width .1s ease-out, opacity .2s ease;
+  pointer-events: none;
 }
 
-/* 公告栏关闭按钮 */
-[dir="ltr"] .md-banner__button {
-    color: #fff;
+/* ---------- 4. 移动端响应式隐藏与微调 ---------- */
+@media (max-width: 700px)  {
+  .md-dialog, [data-md-component="announce"] { display: none !important; }
+  .md-social { padding: 0; }
+  .md-copyright__highlight { display: none; }
+  .md-grid { align-items: center; justify-content: center; height: 100%; }
+  .md-typeset table:not([class*="md-table"]) thead th {position: static; }
+  .md-typeset .md-typeset__scrollwrap { overflow: auto; }
 }

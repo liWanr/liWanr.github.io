@@ -3,76 +3,64 @@
   window.__exploreBound = true;
 
   const init = () => {
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const hasObserver = "IntersectionObserver" in window;
+    const countEl = document.getElementById("album-count");
+    if (countEl) {
+      countEl.textContent = document.querySelectorAll(".explore li").length;
+    }
 
     // 1. 统一处理图片属性与标题补全
     document.querySelectorAll(".explore img").forEach(img => {
-      if (!img.hasAttribute("loading")) img.loading = "lazy";
+      img.loading ||= "lazy";
       img.decoding = "async";
 
       const li = img.closest("li");
-      if (li && !li.querySelector(".explore-title")) {
-        const a = img.closest("a") || li;
-        
-        // 1. 克隆 a 标签用于安全提取标题内容
-        const clone = a.cloneNode(true);
-        clone.querySelectorAll("img").forEach(i => i.remove());
-        
-        const titleText = clone.textContent.trim();
-        const finalTitle = titleText || img.alt.trim();
+      if (!li || li.querySelector(".explore-title")) return;
 
-        if (finalTitle) {
-          // 2. 创建标题段落
-          const p = document.createElement("p");
-          p.className = "explore-title";
-          
-          if (titleText) {
-            while (clone.firstChild) {
-              p.appendChild(clone.firstChild);
-            }
-          } else {
-            p.textContent = finalTitle;
-          }
+      const a = img.closest("a") || li;
+      const clone = a.cloneNode(true);
+      clone.querySelectorAll("img").forEach(i => i.remove());
 
-          // 3. 【核心修复】将 <a> 里的所有节点清空，只重新挂载 <img>，确保 <a> 恢复纯净
-          if (a.tagName === "A") {
-            a.replaceChildren(img); // 仅保留 img，消灭任何文本行高带来的高度挤压
-          }
+      const titleText = clone.textContent.trim();
+      const finalTitle = titleText || img.alt.trim();
+      if (!finalTitle) return;
 
-          // 4. 把标题放入 li 底部
-          li.appendChild(p);
-        }
+      const p = document.createElement("p");
+      p.className = "explore-title";
+      if (titleText) {
+        p.replaceChildren(...clone.childNodes);
+      } else {
+        p.textContent = finalTitle;
       }
+
+      if (a.tagName === "A") a.replaceChildren(img);
+      li.appendChild(p);
     });
 
-    if (reduceMotion || !hasObserver) {
-      document.querySelectorAll(".explore ul > li").forEach(c => c.classList.add("explore-visible"));
+    const cards = document.querySelectorAll(".explore ul > li");
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
+      cards.forEach(c => c.classList.add("explore-visible"));
       return;
     }
 
-    // 2. 交叉观察器：卡片露出 1/3 时触发
+    // 2. 交叉观察器
     const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
+      entries.forEach(async entry => {
         if (!entry.isIntersecting) return;
-        const card = entry.target;
-        obs.unobserve(card);
+        obs.unobserve(entry.target);
 
-        const imgs = [...card.querySelectorAll("img")];
-        Promise.all(imgs.map(img => (typeof img.decode === "function" ? img.decode().catch(() => {}) : Promise.resolve())))
-          .then(() => {
-            requestAnimationFrame(() => {
-              card.classList.remove("explore-pending");
-              card.classList.add("explore-visible");
-            });
-          });
+        await Promise.all([...entry.target.querySelectorAll("img")].map(img => img.decode?.().catch(() => {})));
+        
+        requestAnimationFrame(() => {
+          entry.target.classList.remove("explore-pending");
+          entry.target.classList.add("explore-visible");
+        });
       });
     }, { threshold: 0.1 });
 
     // 3. 初始化卡片状态
-    document.querySelectorAll(".explore ul > li").forEach(card => {
-      if (card.dataset.exploreRevealReady) return;
-      card.dataset.exploreRevealReady = "true";
+    cards.forEach(card => {
+      if (card.dataset.exploreReady) return;
+      card.dataset.exploreReady = "true";
       card.classList.add("explore-pending");
       observer.observe(card);
     });

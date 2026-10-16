@@ -13,16 +13,8 @@ copyright: <strong>liWanr &copy; 2024-2026</strong>
 
 extra_css:
   - assets/stylesheets/extra.css
-  - assets/stylesheets/search.css
-  - assets/stylesheets/step.css
-  - assets/stylesheets/link.css
-  - assets/stylesheets/table.css
-  - assets/stylesheets/progress.css
-  - assets/stylesheets/explore.css
 
 extra_javascript:
-  - assets/javascripts/progress.js
-  - assets/javascripts/explore.js
   - path: assets/javascripts/extra.js
     async: true
 

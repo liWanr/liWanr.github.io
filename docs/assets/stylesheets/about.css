@@ -1,46 +1,46 @@
 .divider {
-    font-family: 'Orbitron', monospace;
-    font-size: 80%;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin: 1.25rem 0 1rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 1.25rem 0 1rem;
+  font-family: 'Orbitron', monospace;
+  font-size: 80%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 
-.divider::before, .divider::after {
+  &::before, &::after {
     content: '';
     flex: 1;
     height: 0.5px;
     background: #2a2a2a;
+  }
 }
 
 .dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #22c55e;
-    display: inline-block;
-    animation: pulse 2s infinite;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
 }
 
 .badge {
-    font-size: 10px;
-    padding: 2px 8px;
-    border-radius: 20px;
-    border: 0.5px solid #333;
-    letter-spacing: 0.05em;
-    text-decoration: initial !important;
-}
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  border: 0.5px solid #333;
+  letter-spacing: 0.05em;
+  text-decoration: initial !important;
 
-.badge.theme {
+  &.theme {
     border-color: #4489ff49;
     color: var(--md-accent-fg-color);
     background: var(--md-accent-fg-color--transparent);
+  }
 }

@@ -15,6 +15,7 @@ date:
 <!-- more -->
 
 <script src="/assets/javascripts/keys.js"></script>
+<link rel="stylesheet" href="/assets/stylesheets/search.css">
 
 ## 键盘按键格式
 
@@ -308,89 +309,87 @@ strong mark{
 
 MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版更加精致, 符合实际设计、开发需求, 每个字体功能都有对应的标签, 用于标记功能效果。MiSans 包含 15 种特性以满足不同业务对字体上的不同需求, 提供可选择性。
 
-///html | div.step
-
-1. **局部开启(推荐)**, 用内联样式或者自定义类使用, 这样也不会影响其他正常文本, 使用方法如下：
+**局部开启(推荐)**, 用内联样式或者自定义类使用, 这样也不会影响其他正常文本, 使用方法如下：
     
-    ///tab | `CSS`
+///tab | `CSS`
 
-    ```Css
-    .ss01{
-        font-feature-settings: 'ss01' on;
-    }
-    ```
+```Css
+.ss01{
+    font-feature-settings: 'ss01' on;
+}
+```
 
-    ///
+///
+
+///tab | `HTML`
+
+```Html
+未开启 __123,435,400__
+已开启 __123,435,400__{style="font-feature-settings: 'ss01' on"}
+```
+
+///
+
+////html | div.big-strong
+///html | div.grid.cards[style="text-align: center; grid-template-columns:repeat(auto-fit,minmax(min(40%,16rem),1fr));"]
+
+-   未开启
+            
+    __123<mark>,</mark>435<mark>,</mark>00__
+
+-   已开启
+        
+    __123<mark style="font-feature-settings: 'ss01' on">,</mark>435<mark style="font-feature-settings: var(--features), 'ss01' on">,</mark>00__
+///
+////
+
+这个特征是数字专用标点, 除了这个还有其他的特征:
+
+///html | div.big-strong
+
+|CSS 属性|特征效果|未启用|已启用|
+|:-|:-|:-:|:-:|
+|`'ss01'`|数字专用标点|__:1,234.5__|__:1,234.5__{style="font-feature-settings: 'ss01' on"}|
+|`'ss02'`|单位改为上标|__96% 96℃__|__96% 96℃__{style="font-feature-settings: 'ss02' on"}|
+|`'ss03'`|单位改为下标|__96% 96℃__|__96% 96℃__{style="font-feature-settings: 'ss03' on"}|
+|`'ss04'`|数字等高汉字|__4月21日__|__4月21日__{style="font-feature-settings: 'ss04' on;"}|
+|`'ss05'`|将大写的 M<br>改为 [小米](https://www.mi.com/) 图标|__M__|__M__{style="font-feature-settings: 'ss05' on"}|
+|`'ss06'`|将大写的 M<br>改为 [MIUI](https://home.miui.com/) 图标|__M__|__M__{style="font-feature-settings: 'ss06' on"}|
+|`'ss07'`|西文式标点|__“Hi, it’s.”__|__“Hi, it’s”__{style="font-feature-settings: 'ss07' on"}|
+|`'ss08'`|拨号专用符号|__*0#__|__*0#__{style="font-feature-settings: 'ss08' on"}|
+|`'SS09'`|小字面数字|__359264__|__359264__{style="font-feature-settings: 'ss09' on"}|
+|`'case'`|英文括号与<br>大写字母等高|__{[(ABC)]}__|__{[(ABC)]}__{style="font-feature-settings: 'case' on"}|
+|`'frac'`|分数|__5/9__|__5/9__{style="font-feature-settings: 'frac' on"}|
+|`'sups'`|数字/小写字母<br>全部为上标|__12ABab__|__12ABab__{style="font-feature-settings: 'sups' on"}|
+|`'tnum'`[^1]|数字等宽|__4,56<mark>7</mark>,890__|__4,56<mark>7</mark>,890__{style="font-feature-settings: 'tnum' on"}|
+
+///
+
+**全局开启**, `font-feature-settings` 属性提供了对 OpenType 字体特性的底层精细控制, 它的设计初衷是让开发者能够访问那些不常用但在特定场景下非常需要的字体特性, 所以在全局状态下使用这个属性浏览器**不一定会渲染**。所以这是我想到一个强制加载的方法, 但是比较麻烦。
     
-    ///tab | `HTML`
+///tab | `docs/stylesheets/extra.css`
 
-    ```Html
-    未开启 __123,435,400__
-    已开启 __123,435,400__{style="font-feature-settings: 'ss01' on"}
-    ```
+```css
+:root {
+    --features: "tnum" on, "ss04" on;
+}
 
-    ///
+* {
+    font-feature-settings: var(--features);
+}
+```
 
-    ////html | div.big-strong
-    ///html | div.grid.cards[style="text-align: center; grid-template-columns:repeat(auto-fit,minmax(min(40%,16rem),1fr));"]
+///
 
-    -   未开启
-                
-        __123<mark>,</mark>435<mark>,</mark>00__
-    
-    -   已开启
-           
-        __123<mark style="font-feature-settings: 'ss01' on">,</mark>435<mark style="font-feature-settings: var(--features), 'ss01' on">,</mark>00__
-    ///
-    ////
-    
-    这个特征是数字专用标点, 除了这个还有其他的特征:
+///tab | `*.md`
 
-    ///html | div.big-strong
+```html
+<span style="font-feature-settings: var(--features), 'ss01' on">
+2026年4月21日 15:23
+</span>
+```
 
-    |CSS 属性|特征效果|未启用|已启用|
-    |:-|:-|:-:|:-:|
-    |`'ss01'`|数字专用标点|__:1,234.5__|__:1,234.5__{style="font-feature-settings: 'ss01' on"}|
-    |`'ss02'`|单位改为上标|__96% 96℃__|__96% 96℃__{style="font-feature-settings: 'ss02' on"}|
-    |`'ss03'`|单位改为下标|__96% 96℃__|__96% 96℃__{style="font-feature-settings: 'ss03' on"}|
-    |`'ss04'`|数字等高汉字|__4月21日__|__4月21日__{style="font-feature-settings: 'ss04' on;"}|
-    |`'ss05'`|将大写的 M<br>改为 [小米](https://www.mi.com/) 图标|__M__|__M__{style="font-feature-settings: 'ss05' on"}|
-    |`'ss06'`|将大写的 M<br>改为 [MIUI](https://home.miui.com/) 图标|__M__|__M__{style="font-feature-settings: 'ss06' on"}|
-    |`'ss07'`|西文式标点|__“Hi, it’s.”__|__“Hi, it’s”__{style="font-feature-settings: 'ss07' on"}|
-    |`'ss08'`|拨号专用符号|__*0#__|__*0#__{style="font-feature-settings: 'ss08' on"}|
-    |`'SS09'`|小字面数字|__359264__|__359264__{style="font-feature-settings: 'ss09' on"}|
-    |`'case'`|英文括号与<br>大写字母等高|__{[(ABC)]}__|__{[(ABC)]}__{style="font-feature-settings: 'case' on"}|
-    |`'frac'`|分数|__5/9__|__5/9__{style="font-feature-settings: 'frac' on"}|
-    |`'sups'`|数字/小写字母<br>全部为上标|__12ABab__|__12ABab__{style="font-feature-settings: 'sups' on"}|
-    |`'tnum'`[^1]|数字等宽|__4,56<mark>7</mark>,890__|__4,56<mark>7</mark>,890__{style="font-feature-settings: 'tnum' on"}|
-
-    ///
-
-2. **全局开启**, `font-feature-settings` 属性提供了对 OpenType 字体特性的底层精细控制, 它的设计初衷是让开发者能够访问那些不常用但在特定场景下非常需要的字体特性, 所以在全局状态下使用这个属性浏览器**不一定会渲染**。所以这是我想到一个强制加载的方法, 但是比较麻烦。
-    
-    ///tab | `docs/stylesheets/extra.css`
-
-    ```css
-    :root {
-        --features: "tnum" on, "ss04" on;
-    }
-
-    * {
-        font-feature-settings: var(--features);
-    }
-    ```
-
-    ///
-    
-    ///tab | `*.md`
-
-    ```html
-    <span style="font-feature-settings: var(--features), 'ss01' on">
-    2026年4月21日 15:23
-    </span>
-    ```
-
-    ///
+///
 ///
 
 ## 使用 Base64 编码
