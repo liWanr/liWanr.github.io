@@ -4,7 +4,18 @@ title: 屌爆了的博客
 created: 2026-05-08T07:46:22
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/links.css">
+<style>
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > .card {
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > .card:hover {
+    transform: translateY(-3px);
+    border-color: var(--md-accent-fg-color);
+}
+</style>
 
 ## 视奸
 

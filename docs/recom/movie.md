@@ -7,24 +7,14 @@ hide: [toc]
 comments: false
 ---
 
-# 观 · 银幕上的故事
+<h1>观 · 银幕上的故事</h1>
 
-<style>
-.headerlink {
-  display: none !important;
-}
-</style>
+<link rel="stylesheet" href="/assets/stylesheets/explore.css">
+<script src="/assets/javascripts/explore.js"></script>
 
 <p style="text-align:right;font-size:smaller">
   共 <span id="album-count"></span> 部影视作品
 </p>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const count = document.querySelectorAll(".explore li").length;
-    document.getElementById("album-count").textContent = `${count}`;
-  });
-</script>
 
 /// html | section.explore.movie
 

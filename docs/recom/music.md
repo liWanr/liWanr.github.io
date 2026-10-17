@@ -7,24 +7,14 @@ comments: false
 hide: [toc]
 ---
 
-# 听 · 乐曲中的回响
+<h1>听 · 乐曲中的回响</h1>
 
-<style>
-.headerlink {
-  display: none !important;
-}
-</style>
+<link rel="stylesheet" href="/assets/stylesheets/explore.css">
+<script src="/assets/javascripts/explore.js"></script>
 
 <p style="text-align:right;font-size:smaller">
   共 <span id="album-count"></span> 张专辑
 </p>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const count = document.querySelectorAll(".explore li").length;
-    document.getElementById("album-count").textContent = `${count}`;
-  });
-</script>
 
 /// html | section.explore.music
 
