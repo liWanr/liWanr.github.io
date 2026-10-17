@@ -3,7 +3,7 @@ title: 武·林
 readtime: 7
 tags: [Essays]
 categories: [思考]
-date: 2026-10-17T03:36:50+08:00
+date: 2026-10-18T03:36:50+08:00
 description: 武侠滤镜外，少林在滚滚红尘中化作时代巨轮，武当于深山古木间追寻水善利万物而不争
 ---
 
