@@ -7,17 +7,11 @@ hide: [toc]
 comments: false
 ---
 
-# 读 · 文字里的世界
+<h1>读 · 文字里的世界</h1>
 
-<style>
-.headerlink {
-  display: none !important;
-}
-</style>
+<link rel="stylesheet" href="/assets/stylesheets/library.css">
 
-<link rel="stylesheet" href="/assets/stylesheets/read.css">
-
-<script src="/assets/javascripts/read.js"></script>
+<script src="/assets/javascripts/library.js"></script>
 
 /// html | div.books-table
 
