@@ -133,16 +133,17 @@ svg.lucide-loader {
 
 .mdx-announcement__label {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(68, 137, 255, .152);
-  border: .5px solid var(--md-accent-fg-color);
-  border-radius: 1rem;
-  color: var(--md-accent-fg-color);
-  font: 700 .57rem/1.4 inherit;
-  padding: .12rem .45rem;
+  flex: 0 0 auto;
   gap: .3rem;
-  vertical-align: middle;
+  align-items: center;
+  border: 1px solid rgba(255, 138, 140, 0.28);
+  border-radius: 1rem;
+  padding: .12rem .45rem;
+  background-color: rgba(255, 119, 53, 0.128);
+  color: #ffb06f;
+  font-size: .57rem;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 a.mdx-announcement__message {
@@ -163,7 +164,7 @@ a.mdx-announcement__message {
   top: 0;
   left: 0;
   height: 2px;
-  background: var(--md-primary-fg-color);
+  background: var(--md-accent-fg-color);
   z-index: 10000;
   opacity: 0;
   transition: width .1s ease-out, opacity .2s ease;
@@ -178,4 +179,22 @@ a.mdx-announcement__message {
   .md-grid { align-items: center; justify-content: center; height: 100%; }
   .md-typeset table:not([class*="md-table"]) thead th {position: static; }
   .md-typeset .md-typeset__scrollwrap { overflow: auto; }
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 1.25rem 0 1rem;
+  font-family: 'Orbitron', monospace;
+  font-size: 80%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  &::before, &::after {
+    content: '';
+    flex: 1;
+    height: 0.5px;
+    background: #2a2a2a;
+  }
 }

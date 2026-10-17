@@ -62,11 +62,13 @@ theme:
       toggle:
         icon: lucide/sun
         name: 浅色模式
+      accent: orange
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: lucide/moon
         name: 深色模式
+      accent: orange
 
 # 扩展
 markdown_extensions:
@@ -161,9 +163,8 @@ plugins:
       categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
-      pagination: false
-      categories_pagination: false
-      archive_pagination: false
+      pagination: true
+      pagination_per_page: 10
   - glightbox:                                # 图片放大功能
       draggable: true                         # 图片可拖动
       touchNavigation: true                   # 触摸触摸导航(滑动)
