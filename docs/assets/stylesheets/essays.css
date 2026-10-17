@@ -29,6 +29,10 @@
   overflow: hidden;
 }
 
+.md-typeset .footnote {
+  font-size: .64rem !important;
+}
+
 .essays a[data-date]:hover {
   color: var(--md-accent-fg-color);
 }

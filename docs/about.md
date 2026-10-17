@@ -15,7 +15,7 @@ hide:
 
 <link rel="stylesheet" href="/assets/stylesheets/about.css">
 
-///html | div.grid[style="text-align: center;grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); font-family: JetBrains Mono;"]
+///html | div.grid[style="text-align: center;grid-template-columns: repeat(auto-fit, minmax(min(100%, 5rem), 1fr))"]
 [**新闻简报**](/about/newspaper/)
 
 [**隐私政策**](/about/privacy-policy/)

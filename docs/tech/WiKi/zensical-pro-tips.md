@@ -331,7 +331,7 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
 ///
 
 ////html | div.big-strong
-///html | div.grid.cards[style="text-align: center; grid-template-columns:repeat(auto-fit,minmax(min(40%,16rem),1fr));"]
+///html | div.grid.cards
 
 -   未开启
             

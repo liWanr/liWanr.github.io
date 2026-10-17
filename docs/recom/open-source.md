@@ -13,6 +13,12 @@ hr {
     border-radius: 5px;
     background-color: var(--md-accent-fg-color);
 }
+.md-content__inner a {
+    color: var(--md-default-fg-color) !important;
+}
+.md-content__inner a:hover{
+    color: var(--md-accent-fg-color) !important;
+}
 </style>
 
 [**Open Source**](https://opensource.org/)

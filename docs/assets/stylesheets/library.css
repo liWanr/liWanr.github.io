@@ -6,6 +6,8 @@
   margin: .8rem 0 1.5rem;
 }
 
+.books-table .md-typeset__scrollwrap { overflow: visible !important; }
+
 @media (max-width: 700px) {
   .books-table {
     --ft-author-width: 6.5rem;
@@ -105,7 +107,7 @@ html .md-typeset .books-table table:not(.ft-header) {
     text-overflow: ellipsis;
   }
 
-  /* 分类标题（已补回毛玻璃效果） */
+  /* 分类标题（毛玻璃效果） */
   thead th {
     position: sticky;
     top: calc(var(--ft-site-header, 48px) + var(--ft-head));

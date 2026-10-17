@@ -10,6 +10,12 @@ hr {
     border-radius: 5px;
     background-color: var(--md-accent-fg-color);
 }
+.md-content__inner a {
+    color: var(--md-default-fg-color) !important;
+}
+.md-content__inner a:hover{
+    color: var(--md-accent-fg-color) !important;
+}
 </style>
 
 ## 网络
@@ -18,7 +24,8 @@ hr {
 
 -   ### Termius
 
-    [:lucide-mouse-pointer-click: **官方网站**](https://termius.com/) |
+    :lucide-mouse-pointer-click:
+    [**官方网站**](https://termius.com/) |
     [**下载链接**](https://termius.com/download/) |
     [**GitHub 地址**](https://github.com/termius)
 
@@ -42,7 +49,8 @@ hr {
 
 -   ### PixPin
 
-    [:lucide-mouse-pointer-click: **官方网站**](https://pixpin.cn/) |
+    :lucide-mouse-pointer-click:
+    [**官方网站**](https://pixpin.cn/) |
     [**下载链接**](https://pixpin.cn/download/)
 
     ---

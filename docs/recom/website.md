@@ -9,7 +9,7 @@ created: 2026-02-07T13:14:33
     color: var(--md-default-fg-color) !important;
 }
 .md-content__inner a:hover{
-    color: var(--md-typeset-a-color) !important;
+    color: var(--md-accent-fg-color) !important;
 }
 </style>
 

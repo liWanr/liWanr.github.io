@@ -15,6 +15,14 @@ created: 2026-05-08T07:46:22
     transform: translateY(-3px);
     border-color: var(--md-accent-fg-color);
 }
+
+.md-content__inner a {
+    color: var(--md-default-fg-color) !important;
+}
+
+.md-content__inner a:hover{
+    color: var(--md-accent-fg-color) !important;
+}
 </style>
 
 ## 视奸
@@ -24,7 +32,8 @@ created: 2026-05-08T07:46:22
 以下是**我关注的博客**，方便时不时来 ~~视奸~~ 欣赏一下，我关注你就好，不必交换。可哪天消失了也请不用难过，不是你的文章不够好，是我太花心了。但如果被冒犯到请[**联系我**](mailto:itsWanr@iCloud.com)，我会尽快删除。
 ///
 
-///html | div.grid.cards
+///html | div.grid.cards[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr))']
+
 -   [**fuXes**](https://fuxes.cn/)
     { title="人生如逆旅，你我皆行人" }
 
@@ -78,7 +87,7 @@ created: 2026-05-08T07:46:22
 以下是**我的博客邻居**，欢迎交换链接。
 ///
 
-///html | div.grid.cards
+///html | div.grid.cards[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr))']
 
 -   [**DAI X.L.**](https://dxlcq.cn/)
     { title="骄骄是骄傲的骄" style="font-family: 'Noto Serif SC', 'Songti SC';" }

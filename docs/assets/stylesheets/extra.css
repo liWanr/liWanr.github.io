@@ -121,14 +121,9 @@ svg.lucide-loader {
 
 /* ---------- 3. 公告栏、徽章与滚动进度条 ---------- */
 [data-md-component="announce"] {
-  background: radial-gradient(circle at 50% -180%, var(--md-accent-fg-color--transparent), transparent 58%), #15161a;
+  background: radial-gradient(ellipse at 50% 0%, rgb(129 203 218 / 28%), transparent 70%), #1c2429;
   border-bottom: 1px solid hsla(0, 0%, 100%, .1);
-
-  [data-md-color-scheme="slate"] & {
-    background: radial-gradient(circle at 50% -180%, var(--md-accent-fg-color--transparent), transparent 58%), #1b1c21;
-    border-bottom-color: hsla(0, 0%, 100%, .07);
-  }
-  .md-banner { background: none; color: #fff; }
+  .md-banner { background-color: transparent;color: #f7f7f8;}
 }
 
 .mdx-announcement__label {
@@ -136,13 +131,12 @@ svg.lucide-loader {
   flex: 0 0 auto;
   gap: .3rem;
   align-items: center;
-  border: 1px solid rgba(255, 138, 140, 0.28);
+  border: 1px solid rgb(82 207 232 / 40%);
   border-radius: 1rem;
   padding: .12rem .45rem;
-  background-color: rgba(255, 119, 53, 0.128);
-  color: #ffb06f;
+  background-color: rgb(82 207 232 / 12.8%);
+  color: rgb(82, 207, 232);
   font-size: .57rem;
-  font-weight: 700;
   line-height: 1.4;
 }
 
@@ -172,13 +166,21 @@ a.mdx-announcement__message {
 }
 
 /* ---------- 4. 移动端响应式隐藏与微调 ---------- */
-@media (max-width: 700px)  {
+@media (max-width: 700px) {
   .md-dialog, [data-md-component="announce"] { display: none !important; }
   .md-social { padding: 0; }
   .md-copyright__highlight { display: none; }
-  .md-grid { align-items: center; justify-content: center; height: 100%; }
-  .md-typeset table:not([class*="md-table"]) thead th {position: static; }
-  .md-typeset .md-typeset__scrollwrap { overflow: auto; }
+  .md-footer .md-grid { align-items: center; justify-content: center; height: 100%; }
+
+  table:not(.books-table table) thead th {
+    position: static !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .md-typeset__scrollwrap { overflow-x: auto !important; overflow-y: visible; }
+
+  /* 优先级更高，只放行 books-table 内部 */
 }
 
 .divider {
@@ -190,7 +192,6 @@ a.mdx-announcement__message {
   font-size: 80%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   &::before, &::after {
     content: '';
     flex: 1;
@@ -198,3 +199,5 @@ a.mdx-announcement__message {
     background: #2a2a2a;
   }
 }
+
+a.divider {color: var(--md-default-fg-color);}
