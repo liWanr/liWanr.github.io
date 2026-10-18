@@ -263,6 +263,5 @@ nav:
       - recom/music.md
   - ABOUT:
     - about.md
-    - about/newspaper.md
-    - about/privacy-policy.md
     - about/LICENSE.md
+    - about/privacy-policy.md

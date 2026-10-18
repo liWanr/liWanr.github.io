@@ -1,7 +1,7 @@
 ---
 title: 隐私政策
-hide:
-    - path
+comments: false
+hide: [path]
 ---
 
 ## 基本说明

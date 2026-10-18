@@ -1,8 +1,7 @@
 ---
 title: 许可授权
 comments: false
-hide:
-    - path
+hide: [path]
 ---
 
 **The source code is licensed under the MIT License.**<br>
