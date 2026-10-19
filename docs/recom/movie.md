@@ -486,7 +486,7 @@ comments: false
 
 -   [夏洛特烦恼![](https://www.themoviedb.org/t/p/w1280/zaDitWyV81WOg2tiujj6kxEFYtZ.jpg)](https://www.themoviedb.org/movie/362682)
 
--   [西红市首富![](https://media.themoviedb.org/t/p/w440_and_h660_face/q64cOhXEm7iw9n9DgycxEmxeFQU.jpg)](https://www.themoviedb.org/movie/538331)
+-   [西虹市首富![](https://media.themoviedb.org/t/p/w440_and_h660_face/q64cOhXEm7iw9n9DgycxEmxeFQU.jpg)](https://www.themoviedb.org/movie/538331)
 
 -   [转娃娃![](https://media.themoviedb.org/t/p/w440_and_h660_face/dXjYk7fnA6HNqhJHTnmeD6rV4Aw.jpg)](https://www.themoviedb.org/movie/1299537)
 
@@ -506,7 +506,7 @@ comments: false
 
 -   [漫长的季节![](https://media.themoviedb.org/t/p/w440_and_h660_face/tJLiKDYdfMskFkJXV1HnaQAdpGf.jpg)](https://www.themoviedb.org/tv/225008)
 
--   [滚蛋吧！肿瘤君![](https://media.themoviedb.org/t/p/w440_and_h660_face/xjw6ApMqEtNkP4bLg56NBieSUXT.jpg)](https://www.themoviedb.org/movie/354128)
+-   [大闹天宫![](https://image.tmdb.org/t/p/original/tA73ZiQCqCEuM4ePVaNZSMCQmZu.jpg)](https://www.themoviedb.org/movie/47759)
 
 -   [无人区![](https://media.themoviedb.org/t/p/w440_and_h660_face/7QVoHsiCm7f8p3tuTFpZAFRmNwi.jpg)](https://www.themoviedb.org/movie/238811)
 
@@ -572,5 +572,49 @@ comments: false
 
 -   [三少爷的剑![](https://media.themoviedb.org/t/p/w440_and_h660_face/7v2EQ98wRLcC9Vel8tU93V2LLXC.jpg)](https://www.themoviedb.org/movie/367206)
 
--   [国产凌凌漆![](https://media.themoviedb.org/t/p/w440_and_h660_face/eygBdtp35XGzjyxDXKR4BbReYem.jpg)](https://www.themoviedb.org/movie/12990)
+-   [国产凌凌漆![](https://media.themoviedb.org/t/p/w440_and_h660_face/eygBdtp35XGzjyxDXKR4BbReYem.jpg)](https://www.themoviedb.org/movie/41387)
+
+-   [黑洞频率![](https://image.tmdb.org/t/p/original/aFuw2yow5Og0e2M7uEHQtpS5GPz.jpg)](https://www.themoviedb.org/movie/10559-frequency)
+
+-   [红毯先生![](https://image.tmdb.org/t/p/original/mt0FZUQ000ET3BfuluReGpQHGrH.jpg)](https://www.themoviedb.org/movie/1022659)
+
+-   [地心引力![](https://image.tmdb.org/t/p/original/kZ2nZw8D681aphje8NJi8EfbL1U.jpg)](https://www.themoviedb.org/movie/49047-gravity)
+
+-   [爱![](https://image.tmdb.org/t/p/original/19hyCudualHxCD0GrEngqsi0wBF.jpg)](https://www.themoviedb.org/movie/86837-amour)
+
+-   [指环王 <small>护戒使者</small>![](https://image.tmdb.org/t/p/original/fI5N3yPEyl73VjugEU3fXvgISgj.jpg)](https://www.themoviedb.org/movie/120-the-lord-of-the-rings-the-fellowship-of-the-ring)
+
+-   [指环王 <small>双塔奇兵</small>![](https://image.tmdb.org/t/p/original/cfPi9m2ArmDaeSZg6GJPE0CwzjK.jpg)](https://www.themoviedb.org/movie/121-the-lord-of-the-rings-the-two-towers)
+
+-   [指环王 <small>王者无敌</small>![](https://image.tmdb.org/t/p/original/zO3T5JiIbMRXXTzMuBvlxQYJk4O.jpg)](https://www.themoviedb.org/movie/122-the-lord-of-the-rings-the-return-of-the-king)
+
+-   [窃听风暴![](https://image.tmdb.org/t/p/original/jJVt79u4fg6Rh9NF9IljpQo64Dh.jpg)](https://www.themoviedb.org/movie/582-das-leben-der-anderen)
+
+-   [一一![](https://image.tmdb.org/t/p/original/umillz4L0XfUQ7DTBUycV19a7wT.jpg)](https://www.themoviedb.org/movie/25538)
+
+-   [蝙蝠侠 <small>黑暗骑士</small>![](https://image.tmdb.org/t/p/original/hJJPOAOkJuApOy7YaprKI1pDjVJ.jpg)](https://www.themoviedb.org/movie/155-the-dark-knight)
+
+-   [卧虎藏龙![](https://image.tmdb.org/t/p/original/z2tQZ6Hb7b8FH1AoQRgClmn7116.jpg)](https://www.themoviedb.org/movie/146)
+
+-   [社交网络![](https://image.tmdb.org/t/p/original/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg)](https://www.themoviedb.org/movie/37799-the-social-network)
+
+-   [逃出绝命镇![](https://image.tmdb.org/t/p/original/xJK1BZQdOfmvQi6FmZD0GUQT4pW.jpg)](https://www.themoviedb.org/movie/419430-get-out)
+
+-   [月光男孩![](https://image.tmdb.org/t/p/original/toISiI0UfQi0fwQilXlmPycVoyS.jpg)](https://www.themoviedb.org/movie/376867)
+
+-   [亲爱的，不要跨过那条江![](https://image.tmdb.org/t/p/original/iOZvpm5CmhDOWMzwDrBw2XdTPu8.jpg)](https://www.themoviedb.org/movie/306598)
+
+-   [猴子![](https://image.tmdb.org/t/p/original/797KzFdpG0M5Y3um7ghl3WlvSrR.jpg)](https://www.themoviedb.org/movie/417466-monos)
+
+-   [燃烧女子的肖像![](https://image.tmdb.org/t/p/original/5Xdf9djYHMvJSPRdKgg9rEXFRHQ.jpg)](https://www.themoviedb.org/movie/531428-portrait-de-la-jeune-fille-en-feu)
+
+-   [战争![](https://image.tmdb.org/t/p/original/twr5coP6f0YdYJgVLycwQmMVaeC.jpg)](https://www.themoviedb.org/movie/348674-krigen)
+
+-   [搏击俱乐部![](https://image.tmdb.org/t/p/original/wR5HZWdVpcXx9sevV1bQi7rP4op.jpg)](https://www.themoviedb.org/movie/550-fight-club)
+
+-   [源代码![](https://image.tmdb.org/t/p/original/5XNruQt3gjsvFokPgX5O4DxLcdd.jpg)](https://www.themoviedb.org/movie/45612-source-code)
+
+-   [十二猴子![](https://image.tmdb.org/t/p/original/hqPHLcRXKunu93K3j9cogL3aFPv.jpg)](https://www.themoviedb.org/tv/60948-12-monkeys)
+
+-   [追随![](https://image.tmdb.org/t/p/original/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg)](https://www.themoviedb.org/movie/11660-following)
 ///
