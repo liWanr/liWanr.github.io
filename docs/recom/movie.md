@@ -12,9 +12,11 @@ comments: false
 <link rel="stylesheet" href="/assets/stylesheets/explore.css">
 <script src="/assets/javascripts/explore.js"></script>
 
-<p style="text-align:right;font-size:smaller">
-  共 <span id="album-count"></span> 部影视作品
-</p>
+<p style="text-align:right;" markdown><small>
+  <span id="album-count"></span> Films&TVShows ·
+  Artwork from [TMDB](https://www.themoviedb.org/) ·
+  Links to  [TMDB](https://www.themoviedb.org/)
+</small></p>
 
 /// html | section.explore.movie
 

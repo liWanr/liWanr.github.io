@@ -2,7 +2,6 @@
 icon: lucide/clef-treble
 title: 听 · 音乐
 created: 2026-05-08T09:59:34
-authors: [RAYGUM,TIDAL]
 comments: false
 hide: [toc]
 ---
@@ -12,162 +11,176 @@ hide: [toc]
 <link rel="stylesheet" href="/assets/stylesheets/explore.css">
 <script src="/assets/javascripts/explore.js"></script>
 
-<p style="text-align:right;font-size:smaller">
-  共 <span id="album-count"></span> 张专辑
-</p>
+<p style="text-align:right;" markdown><small>
+  <span id="album-count"></span> Albums ·
+  Artwork from [Internet Archive](https://archive.org/) ·
+  Links to  [MusicBrainz](https://musicbrainz.org/)
+</small></p>
 
 /// html | section.explore.music
 
--   [The Key![](https://resources.tidal.com/images/c97be3c1/62d9/42a3/b7b9/49b2314d43d0/1280x1280.jpg)](https://tidal.com/album/89073111/credits)
+-   [The Key![](https://dn710209.ca.archive.org/0/items/mbid-1a1c3f25-3336-41b6-8524-8855e834db31/mbid-1a1c3f25-3336-41b6-8524-8855e834db31-30486727430.jpg)](https://musicbrainz.org/release/1a1c3f25-3336-41b6-8524-8855e834db31)
 
--   [Time Flies![](https://resources.tidal.com/images/a7fd7fa5/7cc1/4a84/881b/e18100febeb0/1280x1280.jpg)](https://tidal.com/album/4507300/credits)
+-   [Time Flies![](https://ia800607.us.archive.org/14/items/mbid-ca67208c-c406-476a-900e-76a64f0a99a4/mbid-ca67208c-c406-476a-900e-76a64f0a99a4-40847652103.jpg)](https://musicbrainz.org/release/ca67208c-c406-476a-900e-76a64f0a99a4)
 
--   [H^3^M![](https://resources.tidal.com/images/d76677a4/17f7/4bd3/bfe3/7fca3fba6712/1280x1280.jpg)](https://tidal.com/album/125716278/credits)
+-   [H^3^M![](https://ia601609.us.archive.org/29/items/mbid-9568aa00-d9f1-4d53-ad25-2535506e867a/mbid-9568aa00-d9f1-4d53-ad25-2535506e867a-46497008792.jpg)](https://musicbrainz.org/release/9568aa00-d9f1-4d53-ad25-2535506e867a)
 
--   [U 87![](https://resources.tidal.com/images/a524b222/5572/434b/8937/7f4d5593ffa9/1280x1280.jpg)](https://tidal.com/album/7450718/credits)
+-   [U 87![](https://ia902802.us.archive.org/20/items/mbid-ad5d597a-5ebb-46c1-b007-f09baf0062bf/mbid-ad5d597a-5ebb-46c1-b007-f09baf0062bf-46497002274.jpg)](https://musicbrainz.org/release/ad5d597a-5ebb-46c1-b007-f09baf0062bf)
 
--   [準備中![](https://resources.tidal.com/images/e8e44260/554e/4cdf/b87b/322018096c08/1280x1280.jpg)](https://tidal.com/album/130961948/credits)
+-   [準備中![](https://dn710600.ca.archive.org/0/items/mbid-cbb5113b-5685-4e6f-be74-38e350e5d1cb/mbid-cbb5113b-5685-4e6f-be74-38e350e5d1cb-11092144417.jpg)](https://musicbrainz.org/release/cbb5113b-5685-4e6f-be74-38e350e5d1cb)
 
--   [Life Continues![](https://resources.tidal.com/images/6aa6ae09/71b4/4eae/ba96/782f1127a507/1280x1280.jpg)](https://tidal.com/album/4035264/credits)
+-   [Life Continues...![](https://ia903103.us.archive.org/30/items/mbid-8b2c93e7-e397-3b2f-baef-592eef1d96f4/mbid-8b2c93e7-e397-3b2f-baef-592eef1d96f4-46496149766.jpg)](https://musicbrainz.org/release/8b2c93e7-e397-3b2f-baef-592eef1d96f4)
 
--   [...3mm![](https://resources.tidal.com/images/05d3ddf6/b055/4f00/a33c/26270f856640/1280x1280.jpg)](https://tidal.com/album/16664403/credits)
+-   [...3mm![](https://dn721904.ca.archive.org/0/items/mbid-21bb77c6-6c9f-4380-a673-024cb60b99d3/mbid-21bb77c6-6c9f-4380-a673-024cb60b99d3-42784257848.jpg)](https://musicbrainz.org/release/21bb77c6-6c9f-4380-a673-024cb60b99d3)
 
--   [Solidays![](https://resources.tidal.com/images/cbbc82f4/a6ca/4352/8ff1/fb27395881eb/1280x1280.jpg)](https://tidal.com/album/7093441/credits)
+-   [Solidays![](https://ia601601.us.archive.org/24/items/mbid-4f7452e3-b3c4-4abc-bc73-950686cdc847/mbid-4f7452e3-b3c4-4abc-bc73-950686cdc847-46496994972.jpg)](https://musicbrainz.org/release/4f7452e3-b3c4-4abc-bc73-950686cdc847)
 
--   [The Line-Up![](https://resources.tidal.com/images/e7610330/e18d/4947/992e/8e29a77dfdfb/1280x1280.jpg)](https://musicbrainz.org/release/90339139-35ba-4b62-9184-fbe5b1ab856e)
+-   [The Line-Up![](https://ia600507.us.archive.org/10/items/mbid-90339139-35ba-4b62-9184-fbe5b1ab856e/mbid-90339139-35ba-4b62-9184-fbe5b1ab856e-46496164629.jpg)](https://musicbrainz.org/release/90339139-35ba-4b62-9184-fbe5b1ab856e)
 
--   [What’s Going On…?![](https://resources.tidal.com/images/453b14a1/93d7/4d57/8ebc/7812cbede5ae/1280x1280.jpg)](https://tidal.com/album/13429184/credits)
+-   [What’s Going On…?![](https://ia600404.us.archive.org/30/items/mbid-2c9d524d-d662-41d3-ac4b-4fb26c3c25d9/mbid-2c9d524d-d662-41d3-ac4b-4fb26c3c25d9-46496170306.jpg)](https://musicbrainz.org/release/2c9d524d-d662-41d3-ac4b-4fb26c3c25d9)
 
--   [上五楼的快活![](https://resources.tidal.com/images/5c366e2c/7a32/463b/bea9/681bde06aa02/1280x1280.jpg)](https://tidal.com/album/7602651/credits)
+-   [上五樓的快活![](https://dn711401.ca.archive.org/0/items/mbid-859e52eb-5c4c-4e82-aa90-dcfe186bf14b/mbid-859e52eb-5c4c-4e82-aa90-dcfe186bf14b-46496181343.jpg)](https://musicbrainz.org/release/db402969-5b79-46e1-9a5c-a2c298efa165)
 
--   [CHIN UP!![](https://resources.tidal.com/images/0eba4be1/e0cb/4150/a30c/c6f4b4f9e2e8/1280x1280.jpg)](https://tidal.com/album/322801104/credits)
+-   [Stranger Under My Skin![](https://dn711000.ca.archive.org/0/items/mbid-b0463f37-c2de-4ea5-8244-152e0a346b9f/mbid-b0463f37-c2de-4ea5-8244-152e0a346b9f-1386064159.jpg)](https://musicbrainz.org/release/b0463f37-c2de-4ea5-8244-152e0a346b9f)
 
--   [天佑愛人![](https://resources.tidal.com/images/79ca1f4c/d002/4933/aa1f/8464253ad58e/1280x1280.jpg)](https://tidal.com/album/34586343/credits)
+-   [CHIN UP!![](https://dn721600.ca.archive.org/0/items/mbid-f1e89185-9c7d-421e-8da9-16fae0575fb3/mbid-f1e89185-9c7d-421e-8da9-16fae0575fb3-37171430948.jpg)](https://musicbrainz.org/release/f1e89185-9c7d-421e-8da9-16fae0575fb3)
 
--   [不想放手![](https://resources.tidal.com/images/c61b99c2/e701/4885/bc63/bb88fb7b1650/1280x1280.jpg)](https://tidal.com/album/2253980/credits)
+-   [天佑愛人![](https://ia601801.us.archive.org/8/items/mbid-bcaba590-73a0-4e31-b2ac-0c58fea8f8ee/mbid-bcaba590-73a0-4e31-b2ac-0c58fea8f8ee-46495739464.jpg)](https://musicbrainz.org/release/bcaba590-73a0-4e31-b2ac-0c58fea8f8ee)
 
--   [Nothing Really Matters![](https://resources.tidal.com/images/c64916d9/a45d/4d7b/be4f/bac8a8d792a4/1280x1280.jpg)](https://tidal.com/album/34595852/credits)
+-   [認了吧![](https://dn710805.ca.archive.org/0/items/mbid-3c3e5c33-5bd5-4eff-8d8d-c7e8b9dfbb48/mbid-3c3e5c33-5bd5-4eff-8d8d-c7e8b9dfbb48-33865971772.jpg)](https://beta.musicbrainz.org/release/3c3e5c33-5bd5-4eff-8d8d-c7e8b9dfbb48)
 
--   [Stranger Under My Skin![](https://resources.tidal.com/images/1ed7a473/0a5a/471f/9ae7/bfeabd32e1a7/1280x1280.jpg)](https://tidal.com/album/5760195/credits)
+-   [黑 白 灰![](https://dn711102.ca.archive.org/0/items/mbid-d7024a7c-d04f-4236-8074-62aaf4b70868/mbid-d7024a7c-d04f-4236-8074-62aaf4b70868-46496221660.jpg)](https://musicbrainz.org/release/d7024a7c-d04f-4236-8074-62aaf4b70868)
 
--   [DUO![](https://resources.tidal.com/images/6903b9fc/ccd9/460e/8967/e8252c3884a2/1280x1280.jpg)](https://tidal.com/album/4623996/credits)
+-   [不想放手![](https://ia600504.us.archive.org/6/items/mbid-94d3809d-d594-4742-a15f-2297c46f107f/mbid-94d3809d-d594-4742-a15f-2297c46f107f-46496956272.jpg)](https://musicbrainz.org/release/94d3809d-d594-4742-a15f-2297c46f107f)
 
--   [FEAR and DREAMS![](https://resources.tidal.com/images/a56bd3a9/ee99/408f/b5a1/798c161a7f55/1280x1280.jpg)](https://tidal.com/album/454671715/credits)
+-   [Nothing Really Matters![](https://ia902801.us.archive.org/35/items/mbid-2eb0ecef-5a9d-491f-bdda-ae30e476ea3f/mbid-2eb0ecef-5a9d-491f-bdda-ae30e476ea3f-46496198797.jpg)](https://musicbrainz.org/release/2eb0ecef-5a9d-491f-bdda-ae30e476ea3f)
 
--   [19![](https://resources.tidal.com/images/517eafaa/e0f3/40a0/9a79/0e05571e0abf/1280x1280.jpg)](https://tidal.com/album/2216013/credits)
+-   [L.O.V.E.![](https://dn710201.ca.archive.org/0/items/mbid-0ea12a3c-29ee-4b07-9805-8fd88e10f006/mbid-0ea12a3c-29ee-4b07-9805-8fd88e10f006-37694325824.jpg)](https://musicbrainz.org/release/0ea12a3c-29ee-4b07-9805-8fd88e10f006)
 
--   [21![](https://resources.tidal.com/images/b1b312a6/aa44/446c/ae1b/282bd49ba128/1280x1280.jpg)](https://tidal.com/album/5267732/credits)
+-   [19![](https://dn711305.ca.archive.org/0/items/mbid-62a80ba6-d417-3df4-9535-f8a26a3ee5eb/mbid-62a80ba6-d417-3df4-9535-f8a26a3ee5eb-32049953673.jpg)](https://musicbrainz.org/release/62a80ba6-d417-3df4-9535-f8a26a3ee5eb)
 
--   [25![](https://resources.tidal.com/images/9fb9417d/ab64/42a9/a4d2/22052d5217d0/1280x1280.jpg)](https://tidal.com/album/62300892/credits)
+-   [21![](https://dn710307.ca.archive.org/0/items/mbid-3b7ac2ca-7323-3858-9685-498a4aed1a48/mbid-3b7ac2ca-7323-3858-9685-498a4aed1a48-28613583137.jpg)](https://musicbrainz.org/release/3b7ac2ca-7323-3858-9685-498a4aed1a48)
 
--   [30![](https://resources.tidal.com/images/a173ee14/db90/4f21/b530/0f7bab7d95e2/1280x1280.jpg)](https://tidal.com/album/205573153/credits)
+-   [25![](https://dn721608.ca.archive.org/0/items/mbid-11506187-0013-4276-8c87-4a2e561af7d8/mbid-11506187-0013-4276-8c87-4a2e561af7d8-35691990856.png)](https://musicbrainz.org/release/11506187-0013-4276-8c87-4a2e561af7d8)
 
--   [飞行器的执行周期![](https://resources.tidal.com/images/8772fae2/b7a0/466a/b955/f44ce221f749/1280x1280.jpg)](https://tidal.com/album/67331021/credits)
+-   [30![](https://dn721603.ca.archive.org/0/items/mbid-6d541211-c604-4344-a799-11adfea40c9d/mbid-6d541211-c604-4344-a799-11adfea40c9d-30676520786.png)](https://musicbrainz.org/release/6d541211-c604-4344-a799-11adfea40c9d)
 
--   [安和桥北![](https://resources.tidal.com/images/0a9d74a4/ea19/47bb/bb29/596c71d76997/1280x1280.jpg)](https://tidal.com/album/555353087/credits)
+-   [飞行器的执行周期![](https://dn721806.ca.archive.org/0/items/mbid-b808a48c-b38b-4c0f-8dd5-0720fe6b8f86/mbid-b808a48c-b38b-4c0f-8dd5-0720fe6b8f86-31474988981.jpg)](https://musicbrainz.org/release/b808a48c-b38b-4c0f-8dd5-0720fe6b8f86)
 
--   [再想想![](https://resources.tidal.com/images/e2a4363d/f239/4cdd/b001/b4504118aaf8/1280x1280.jpg)](https://tidal.com/album/535441463/credits)
+-   [安和桥北![](https://ia903209.us.archive.org/21/items/mbid-80d70223-ce1f-4781-ac78-9287ae19c6d4/mbid-80d70223-ce1f-4781-ac78-9287ae19c6d4-46496921655.jpg)](https://musicbrainz.org/release/80d70223-ce1f-4781-ac78-9287ae19c6d4)
 
--   [陶喆![](https://resources.tidal.com/images/988ea5bb/6d2e/4738/9d4c/95ac1f2b865d/1280x1280.jpg)](https://tidal.com/album/91952460/credits)
+-   [再想想![](https://ia600802.us.archive.org/19/items/mbid-5fa0eac9-ae9f-4939-9a02-96b5f757171c/mbid-5fa0eac9-ae9f-4939-9a02-96b5f757171c-46496227170.jpg)](https://musicbrainz.org/release/5fa0eac9-ae9f-4939-9a02-96b5f757171c)
 
--   [I'm OK![](https://resources.tidal.com/images/7e9f347f/dbbb/4164/a18c/29ad77edbd51/1280x1280.jpg)](https://tidal.com/album/34573424/credits)
+-   [陶喆![](https://dn720002.ca.archive.org/0/items/mbid-1c673a29-4dae-415e-8079-0112346fca2c/mbid-1c673a29-4dae-415e-8079-0112346fca2c-45424005157.jpg)](https://musicbrainz.org/release/1c673a29-4dae-415e-8079-0112346fca2c)
 
--   [黑色柳丁![](https://resources.tidal.com/images/e89c09d0/daa8/41c2/8e8a/e0d63c54ff7f/1280x1280.jpg)](https://tidal.com/album/33859641/credits)
+-   [I'm ok![](https://ia600901.us.archive.org/14/items/mbid-baa723fd-ac31-310e-8065-53eaddfba864/mbid-baa723fd-ac31-310e-8065-53eaddfba864-45424028240.jpg)](https://musicbrainz.org/release/baa723fd-ac31-310e-8065-53eaddfba864)
 
--   [神经志![](https://resources.tidal.com/images/04288220/9da1/461d/81df/d648e2099fa0/1280x1280.jpg)](https://tidal.com/album/497771543/credits)
+-   [黑色柳丁![](https://dn710407.ca.archive.org/0/items/mbid-bade1adc-6282-427e-802d-b523ab3ad434/mbid-bade1adc-6282-427e-802d-b523ab3ad434-44802828256.jpg)](https://musicbrainz.org/release/bade1adc-6282-427e-802d-b523ab3ad434)
 
--   [背面是我![](https://resources.tidal.com/images/dcad74c8/44ad/4381/bcfc/5d6ed55ffb46/1280x1280.jpg)](https://tidal.com/album/406726989/credits)
+-   [神经志![](https://dn710200.ca.archive.org/0/items/mbid-e311c017-5dd1-46e7-a3fc-6148a78af7fe/mbid-e311c017-5dd1-46e7-a3fc-6148a78af7fe-37877771068.jpg)](https://musicbrainz.org/release/e311c017-5dd1-46e7-a3fc-6148a78af7fe)
 
--   [Doo-Wops & Hooligans![](https://resources.tidal.com/images/e12dcd8b/0cdf/48aa/b2e3/8212a4ab1c0f/1280x1280.jpg)](https://tidal.com/album/5274605/credits)
+-   [背面是我![](https://dn720705.ca.archive.org/0/items/mbid-416a1342-6d99-4dda-babd-bab6a055e702/mbid-416a1342-6d99-4dda-babd-bab6a055e702-40900681682.jpg)](https://musicbrainz.org/release/416a1342-6d99-4dda-babd-bab6a055e702)
 
--   [Human![](https://resources.tidal.com/images/a18a0a67/7335/48b7/9553/828272075811/1280x1280.jpg)](https://tidal.com/album/154069999/credits)
+-   [Doo-Wops & Hooligans![](https://ia800907.us.archive.org/10/items/mbid-3d2b148e-8c0a-42b6-baae-c3ee7322a569/mbid-3d2b148e-8c0a-42b6-baae-c3ee7322a569-998580956.jpg)](https://musicbrainz.org/release/3d2b148e-8c0a-42b6-baae-c3ee7322a569)
 
--   [游戏 基![](https://resources.tidal.com/images/7aec2adf/4b63/4cf0/9c2f/e76c5a577c92/1280x1280.jpg)](https://tidal.com/album/154071649/credits)
+-   [Human 我生![](https://ia600903.us.archive.org/3/items/mbid-8c7c2543-d698-47eb-92d6-bf5f57650ec5/mbid-8c7c2543-d698-47eb-92d6-bf5f57650ec5-46495863597.jpg)](https://musicbrainz.org/release/8c7c2543-d698-47eb-92d6-bf5f57650ec5)
 
--   [大雄![](https://resources.tidal.com/images/e6c93bbf/145d/406a/8ee7/091652ce019f/1280x1280.jpg)](https://tidal.com/album/154069787/credits)
+-   [遊戲 基![](https://ia601602.us.archive.org/4/items/mbid-35c10382-4187-4c0c-9e49-816a89a714a5/mbid-35c10382-4187-4c0c-9e49-816a89a714a5-46496887804.png)](https://musicbrainz.org/release/35c10382-4187-4c0c-9e49-816a89a714a5)
 
--   [重拾_快乐![](https://resources.tidal.com/images/836ee45a/8976/4a77/86ca/cfd8f8711bce/1280x1280.jpg)](https://tidal.com/album/289911813/credits)
+-   [大雄![](https://dn721604.ca.archive.org/0/items/mbid-7ecec9c8-7a16-4345-9218-e8f2be426740/mbid-7ecec9c8-7a16-4345-9218-e8f2be426740-36105787991.png)](https://musicbrainz.org/release/1c277dd1-5afb-4c21-82ef-658d39c8342c)
 
--   [和自己对话![](https://resources.tidal.com/images/2a5b69d6/5951/4f5a/8495/a269103863ec/1280x1280.jpg)](https://tidal.com/album/492175533/credits)
+-   [告別我的戀人們![](https://ia600409.us.archive.org/18/items/mbid-66c29205-4462-4abf-a993-c93f2c4fac8a/mbid-66c29205-4462-4abf-a993-c93f2c4fac8a-46497168478.png)](https://beta.musicbrainz.org/release/66c29205-4462-4abf-a993-c93f2c4fac8a)
 
--   [伟大的渺小![](https://resources.tidal.com/images/afd54452/4cc2/4957/a4c9/f3cb769af0f3/1280x1280.jpg)](https://tidal.com/album/85246132/credits)
+-   [重拾_快樂![](https://dn710108.ca.archive.org/0/items/mbid-17bbb77d-ff4f-4588-9bbc-016591e8c8ad/mbid-17bbb77d-ff4f-4588-9bbc-016591e8c8ad-44928756194.jpg)](https://musicbrainz.org/release/17bbb77d-ff4f-4588-9bbc-016591e8c8ad)
 
--   [心理学![](https://resources.tidal.com/images/d55ba81c/4125/4672/a2ca/356eed9f942b/1280x1280.jpg)](https://tidal.com/album/82978014/credits)
+-   [和自己對話![](https://dn710900.ca.archive.org/0/items/mbid-74f7537c-b115-44e8-8b18-92e2e6000f8f/mbid-74f7537c-b115-44e8-8b18-92e2e6000f8f-44570594707.jpg)](https://musicbrainz.org/release/74f7537c-b115-44e8-8b18-92e2e6000f8f)
 
--   [Lala Hsu![](https://resources.tidal.com/images/8c8165d9/a00b/4f49/a8c1/5cfd139acbef/1280x1280.jpg)](https://tidal.com/album/89956305/credits)
+-   [偉大的渺小![](https://ia601605.us.archive.org/5/items/mbid-19725867-6c7f-412a-aa5f-672d73d982a5/mbid-19725867-6c7f-412a-aa5f-672d73d982a5-44928549173.jpg)](https://musicbrainz.org/release/19725867-6c7f-412a-aa5f-672d73d982a5)
 
--   [Shirley’s Era![](https://resources.tidal.com/images/04135c0a/7905/4d4f/a52e/e773f8256a50/1280x1280.jpg)](https://tidal.com/album/125775237/credits)
+-   [心裡學![](https://dn711302.ca.archive.org/0/items/mbid-c4eabce4-b569-479b-82c1-cfc99828c8f1/mbid-c4eabce4-b569-479b-82c1-cfc99828c8f1-20024600846.jpg)](https://musicbrainz.org/release/c4eabce4-b569-479b-82c1-cfc99828c8f1)
 
--   [自传![](https://resources.tidal.com/images/c2039ee3/2eec/48b0/92a0/36833981b78a/1280x1280.jpg)](https://tidal.com/album/345574818/credits)
+-   [Lala Hsu![](https://ia601901.us.archive.org/32/items/mbid-6f9a059b-48ad-438b-954c-770411a6b92b/mbid-6f9a059b-48ad-438b-954c-770411a6b92b-46496870736.jpg)](https://musicbrainz.org/release/6f9a059b-48ad-438b-954c-770411a6b92b)
 
--   [第二人生![](https://resources.tidal.com/images/77808df3/704a/40f7/a38c/d5ce23bf0e73/1280x1280.jpg)](https://tidal.com/album/347515430/credits)
+-   [Shirley’s Era![](https://ia600905.us.archive.org/2/items/mbid-327d97df-abb0-4e3d-8baa-eef1d4978bd0/mbid-327d97df-abb0-4e3d-8baa-eef1d4978bd0-46489336579.jpg)](https://musicbrainz.org/release/327d97df-abb0-4e3d-8baa-eef1d4978bd0)
 
--   [后 青春期的诗![](https://resources.tidal.com/images/5c1299d0/a76e/4933/af02/781e831e5378/1280x1280.jpg)](https://tidal.com/album/345574804/credits)
+-   [自傳![](https://dn710305.ca.archive.org/0/items/mbid-5322bd2f-7db6-409d-a90b-d7e7599399f2/mbid-5322bd2f-7db6-409d-a90b-d7e7599399f2-14158532788.jpg)](https://musicbrainz.org/release/5322bd2f-7db6-409d-a90b-d7e7599399f2)
 
--   [万能青年旅店![](https://resources.tidal.com/images/88b4232c/9c8c/4523/92ee/3bfd6b10d717/1280x1280.jpg)](https://tidal.com/album/160798949/credits)
+-   [第二人生 <small>末日版</small>![](https://ia601602.us.archive.org/3/items/mbid-b508bc61-2d08-429f-adee-2c3da08673bd/mbid-b508bc61-2d08-429f-adee-2c3da08673bd-46496246261.jpg)](https://musicbrainz.org/release/d16c150c-a181-4d22-a9ab-bdd08e302ede)
 
--   [冀西南林路行![](https://resources.tidal.com/images/72f8d31f/084a/4d28/915f/2f6668229264/1280x1280.jpg)](https://tidal.com/album/166203100/credits)
+-   [後 青春期的詩![](https://dn710903.ca.archive.org/0/items/mbid-b7d4861c-3ad4-4155-b197-38132abacb18/mbid-b7d4861c-3ad4-4155-b197-38132abacb18-1563899841.jpg)](https://musicbrainz.org/release/b7d4861c-3ad4-4155-b197-38132abacb18)
 
--   [who cares?![](https://resources.tidal.com/images/51c12769/2d60/42fb/a339/adf05dd68530/1280x1280.jpg)](https://tidal.com/album/546780635/credits)
+-   [万能青年旅店![](https://dn721606.ca.archive.org/0/items/mbid-b27ad74f-c8e5-4698-9d18-800539368ff8/mbid-b27ad74f-c8e5-4698-9d18-800539368ff8-28286090376.png)](https://musicbrainz.org/release/263f5af9-e59f-46fd-abea-ddb6d0fb74cc)
 
--   [太歌![](https://resources.tidal.com/images/5d18d3b8/6e76/40b9/be6d/abe828c6aa7a/1280x1280.jpg)](https://tidal.com/album/494178335/credits)
+-   [冀西南林路行![](https://ia600107.us.archive.org/25/items/mbid-9a9973e5-d386-4ae6-8713-36b35203e4df/mbid-9a9973e5-d386-4ae6-8713-36b35203e4df-46496846278.jpg)](https://musicbrainz.org/release/9a9973e5-d386-4ae6-8713-36b35203e4df)
 
--   [THE PROTÉGÉ![](https://resources.tidal.com/images/9bf47bdd/333c/4c21/9866/719ab8a2f663/1280x1280.jpg)](https://tidal.com/album/505484440/credits)
+-   [Who Cares?![](https://ia803109.us.archive.org/22/items/mbid-1e53979d-0dfc-47a7-9876-ab49a749a90d/mbid-1e53979d-0dfc-47a7-9876-ab49a749a90d-45332590849.jpg)](https://musicbrainz.org/release/1e53979d-0dfc-47a7-9876-ab49a749a90d)
 
--   [Major in Minor![](https://resources.tidal.com/images/2443d893/2fd8/4c3a/9f2e/aa26faaab165/1280x1280.jpg)](https://tidal.com/album/182116931/credits)
+-   [太歌![](https://ia802807.us.archive.org/19/items/mbid-b30ed191-8083-424c-bfc7-e1880ad280ac/mbid-b30ed191-8083-424c-bfc7-e1880ad280ac-43881008918.jpg)](https://musicbrainz.org/release/b30ed191-8083-424c-bfc7-e1880ad280ac)
 
--   [某种老朋友![](https://resources.tidal.com/images/0629c0d4/0e18/4ce4/bb8f/6d360701e084/1280x1280.jpg)](https://tidal.com/album/216595550/credits)
+-   [THE PROTÉGÉ![](https://dn711000.ca.archive.org/0/items/mbid-872e0c36-a01e-4075-98f4-ddedfdbe6ab9/mbid-872e0c36-a01e-4075-98f4-ddedfdbe6ab9-44855576883.jpg)](https://musicbrainz.org/release/872e0c36-a01e-4075-98f4-ddedfdbe6ab9)
 
--   [普渡众生![](https://resources.tidal.com/images/c061c0c7/9f03/4493/9384/9a860d5a123f/1280x1280.jpg)](https://tidal.com/album/394212734/credits)
+-   [Major in Minor![](https://dn721905.ca.archive.org/0/items/mbid-e18ff329-0e4c-4999-8b77-06926bed0dd2/mbid-e18ff329-0e4c-4999-8b77-06926bed0dd2-37037920297.jpg)](https://musicbrainz.org/release/e18ff329-0e4c-4999-8b77-06926bed0dd2)
 
--   [感官/世界![](https://resources.tidal.com/images/63f6ac40/5907/49c8/88e3/5853e76a6311/1280x1280.jpg)](https://tidal.com/album/46843529/credits)
+-   [某種老朋友![](https://dn721603.ca.archive.org/0/items/mbid-5f4e0815-ef8e-43f4-941d-a4bd5be7e617/mbid-5f4e0815-ef8e-43f4-941d-a4bd5be7e617-33543234121.jpg)](https://musicbrainz.org/release/5f4e0815-ef8e-43f4-941d-a4bd5be7e617)
 
--   [美妙生活![](https://resources.tidal.com/images/1fc75200/64ac/451f/85b5/e8449c9d0663/1280x1280.jpg)](https://tidal.com/album/24899134/credits)
+-   [普渡眾生![](https://dn721309.ca.archive.org/0/items/mbid-41317cc9-6885-4688-9558-ffa58c8cf43f/mbid-41317cc9-6885-4688-9558-ffa58c8cf43f-42031121484.jpg)](https://musicbrainz.org/release/41317cc9-6885-4688-9558-ffa58c8cf43f)
 
--   [大/小说家![](https://resources.tidal.com/images/b296fefc/3b4e/4c5b/bfc2/d86a0c0e930e/1280x1280.jpg)](https://tidal.com/album/24899380/credits)
+-   [感官/世界![](https://dn710005.ca.archive.org/0/items/mbid-3353bf94-ed70-449d-8845-dfc1b38579bf/mbid-3353bf94-ed70-449d-8845-dfc1b38579bf-35464164527.jpg)](https://musicbrainz.org/release/3353bf94-ed70-449d-8845-dfc1b38579bf)
 
--   [李荣浩![](https://resources.tidal.com/images/fc4dc722/2fb3/4345/b6b7/7d3bdacbc7ca/1280x1280.jpg)](https://tidal.com/album/71107348/credits)
+-   [美妙生活![](https://dn710005.ca.archive.org/0/items/mbid-f627a701-3ef4-40b2-b351-425e69180b94/mbid-f627a701-3ef4-40b2-b351-425e69180b94-36095182614.jpg)](https://musicbrainz.org/release/f627a701-3ef4-40b2-b351-425e69180b94)
 
--   [有理想![](https://resources.tidal.com/images/d7336e3a/900b/448a/b996/59f7dd9d952f/1280x1280.jpg)](https://tidal.com/album/71109866/credits)
+-   [大小說家![](https://dn721602.ca.archive.org/0/items/mbid-927e7301-4553-4f68-9f5a-ebec69b902d9/mbid-927e7301-4553-4f68-9f5a-ebec69b902d9-36095677191.jpg)](https://musicbrainz.org/release/927e7301-4553-4f68-9f5a-ebec69b902d9)
 
--   [模特![](https://resources.tidal.com/images/1d2d2a0c/71b5/4a2c/a1a9/31e6f2479a5b/1280x1280.jpg)](https://tidal.com/album/359790272/credits)
+-   [李榮浩![](https://dn711004.ca.archive.org/0/items/mbid-d2786f3b-55ae-4768-bf23-891cefe39a1b/mbid-d2786f3b-55ae-4768-bf23-891cefe39a1b-25023131370.jpg)](https://musicbrainz.org/release/d2786f3b-55ae-4768-bf23-891cefe39a1b)
 
--   [耳朵![](https://resources.tidal.com/images/efbe52dc/6172/47d9/8afa/a383838a21fc/1280x1280.jpg)](https://tidal.com/album/96383304/credits)
+-   [有理想![](https://dn710708.ca.archive.org/0/items/mbid-1caa708d-f753-47ad-be3a-113605cb437e/mbid-1caa708d-f753-47ad-be3a-113605cb437e-25025235459.jpg)](https://musicbrainz.org/release/1caa708d-f753-47ad-be3a-113605cb437e)
 
--   [Live Session![](https://resources.tidal.com/images/62f0a63b/a789/4718/b796/1c6cfc81c577/1280x1280.jpg)](https://tidal.com/album/73547034/credits)
+-   [模特![](https://ia902807.us.archive.org/34/items/mbid-abd5c5e1-77e9-4e43-ab20-4d54280b8ea5/mbid-abd5c5e1-77e9-4e43-ab20-4d54280b8ea5-46496818461.jpg)](https://musicbrainz.org/release/abd5c5e1-77e9-4e43-ab20-4d54280b8ea5)
 
--   [赵小雷![](https://resources.tidal.com/images/0e6244fd/fe76/45e4/9572/659b0ac1261b/1280x1280.jpg)](https://tidal.com/album/336447545/credits)
+-   [耳朵![](https://dn710902.ca.archive.org/0/items/mbid-cced0b09-4e07-4e39-96ea-76916eb51487/mbid-cced0b09-4e07-4e39-96ea-76916eb51487-25023214604.jpg)](https://musicbrainz.org/release/cced0b09-4e07-4e39-96ea-76916eb51487)
 
--   [无法长大![](https://resources.tidal.com/images/4244bfac/bcc8/46c4/a7d8/b3d28e2e9528/1280x1280.jpg)](https://tidal.com/album/336445178/credits)
+-   [Live Session![](https://ia600606.us.archive.org/26/items/mbid-3da2762e-f3f2-4105-abcf-ba5279e7a75f/mbid-3da2762e-f3f2-4105-abcf-ba5279e7a75f-46495871692.jpg)](https://musicbrainz.org/release/3da2762e-f3f2-4105-abcf-ba5279e7a75f)
 
--   [署前街少年![](https://resources.tidal.com/images/1e6495a5/02db/42df/adc9/143f73eabf29/1280x1280.jpg)](https://tidal.com/album/336445503/credits)
+-   [赵小雷![](https://ia600805.us.archive.org/0/items/mbid-abd26504-9d44-4b83-9cc1-18bedf64df1d/mbid-abd26504-9d44-4b83-9cc1-18bedf64df1d-46496802397.jpg)](https://musicbrainz.org/release/abd26504-9d44-4b83-9cc1-18bedf64df1d)
 
--   [Remembrance![](https://resources.tidal.com/images/95d24a91/c98a/4dec/9e35/018834b9919b/1280x1280.jpg)](https://tidal.com/album/318375033/credits)
+-   [無法長大![](https://dn711005.ca.archive.org/0/items/mbid-56f3d34d-4000-4e9a-9836-97ccb3494d0e/mbid-56f3d34d-4000-4e9a-9836-97ccb3494d0e-22771265596.jpg)](https://musicbrainz.org/release/56f3d34d-4000-4e9a-9836-97ccb3494d0e)
 
--   [Follow![](https://resources.tidal.com/images/c29dc85e/dc36/43c0/a5e8/9312b37a8203/1280x1280.jpg)](https://tidal.com/album/324385971/credits)
+-   [署前街少年![](https://dn710209.ca.archive.org/0/items/mbid-54c56b2a-3dca-4d34-b17c-30b403f9bcfb/mbid-54c56b2a-3dca-4d34-b17c-30b403f9bcfb-39872337668.jpg)](https://musicbrainz.org/release/54c56b2a-3dca-4d34-b17c-30b403f9bcfb)
 
--   [White![](https://resources.tidal.com/images/28458717/3082/4b8a/9fde/75a9708eb0d4/1280x1280.jpg)](https://tidal.com/album/71106654/credits)
+-   [Binary![](https://dn710306.ca.archive.org/0/items/mbid-17bf00d2-c515-489a-93ad-59bc1850e531/mbid-17bf00d2-c515-489a-93ad-59bc1850e531-4695818504.jpg)](https://musicbrainz.org/release/17bf00d2-c515-489a-93ad-59bc1850e531)
 
--   [枯萎颂![](https://resources.tidal.com/images/124f724a/d45b/4104/be47/29c08af8febf/1280x1280.jpg)](https://tidal.com/album/503499657/credits)
+-   [Remembrance![](https://ia601407.us.archive.org/14/items/mbid-81bf4bf4-200a-45e3-b37d-54104bdb986c/mbid-81bf4bf4-200a-45e3-b37d-54104bdb986c-46495880838.jpg)](https://musicbrainz.org/release/81bf4bf4-200a-45e3-b37d-54104bdb986c)
 
--   [初爱![](https://resources.tidal.com/images/e6cc7545/882f/4392/adb2/1cbfaa339f8c/1280x1280.jpg)](https://tidal.com/album/338305754/credits)
+-   [Follow![](https://ia903108.us.archive.org/22/items/mbid-00334c4b-33f9-4842-bf81-6910c2c122dc/mbid-00334c4b-33f9-4842-bf81-6910c2c122dc-46495896545.jpg)](https://musicbrainz.org/release/00334c4b-33f9-4842-bf81-6910c2c122dc)
 
--   [新的心跳![](https://resources.tidal.com/images/ce08263a/b24b/4e3e/b3c7/d2dbf7588d68/1280x1280.jpg)](https://tidal.com/album/53037541/credits)
+-   [White![](https://ia601407.us.archive.org/2/items/mbid-5dff8c0b-eeef-4159-b1db-4722e197a71a/mbid-5dff8c0b-eeef-4159-b1db-4722e197a71a-46495892441.jpg)](https://musicbrainz.org/release/5dff8c0b-eeef-4159-b1db-4722e197a71a)
 
--   [摩天动物园![](https://resources.tidal.com/images/b120d6f5/0048/4b72/b920/96fcea4bdc44/1280x1280.jpg)](https://tidal.com/album/125506975/credits)
+-   [依然![](https://ia601508.us.archive.org/1/items/mbid-d0913c18-2d2f-4193-afe7-9ae8e63af4a6/mbid-d0913c18-2d2f-4193-afe7-9ae8e63af4a6-46496314023.jpg)](https://musicbrainz.org/release/d0913c18-2d2f-4193-afe7-9ae8e63af4a6)
 
--   [依然![](https://resources.tidal.com/images/767edb95/f15f/4b15/91d3/bb02fc44aa81/1280x1280.jpg)](https://tidal.com/album/34569961/credits)
+-   [想念你![](https://dn711104.ca.archive.org/0/items/mbid-29dbe11b-8c05-4a45-a59a-6b9649b49e37/mbid-29dbe11b-8c05-4a45-a59a-6b9649b49e37-33773607373.jpg)](https://musicbrainz.org/release/29dbe11b-8c05-4a45-a59a-6b9649b49e37)
 
--   [想念你![](https://resources.tidal.com/images/1a1c988a/4556/4ddb/8c4b/822d117f230a/1280x1280.jpg)](https://tidal.com/album/356663135/credits)
+-   [初愛![](https://ia601402.us.archive.org/16/items/mbid-f602fc22-d492-4fad-b291-cbbd6d2bc1ed/mbid-f602fc22-d492-4fad-b291-cbbd6d2bc1ed-46496777403.jpg)](https://musicbrainz.org/release/f602fc22-d492-4fad-b291-cbbd6d2bc1ed)
 
--   [二十,三十![](https://resources.tidal.com/images/d60b5443/0584/42e8/99a7/c3d6371abb84/1280x1280.jpg)](https://tidal.com/album/534506298/credits)
+-   [鴿子![](https://dn711103.ca.archive.org/0/items/mbid-da7a8539-c38e-4825-b32a-425e5b96f381/mbid-da7a8539-c38e-4825-b32a-425e5b96f381-17510660768.jpg)](https://musicbrainz.org/release/da7a8539-c38e-4825-b32a-425e5b96f381)
 
--   [黑神话：悟空![](https://resources.tidal.com/images/f6cdc6d5/09d6/4432/9150/fdbc065af50f/1280x1280.jpg)](https://tidal.com/album/386030256/credits)
+-   [原色![](https://ia601601.us.archive.org/14/items/mbid-ee173dc3-ae19-4bca-a5cc-2f5e247c8c0d/mbid-ee173dc3-ae19-4bca-a5cc-2f5e247c8c0d-46497080746.jpg)](https://beta.musicbrainz.org/release/ee173dc3-ae19-4bca-a5cc-2f5e247c8c0d)
 
--   [Lose Control![](https://resources.tidal.com/images/b1621a1c/c85b/4c86/ac74/f32f88acf724/1280x1280.jpg)](https://tidal.com/album/356889596/credits)
+-   [枯萎颂![](https://dn710305.ca.archive.org/0/items/mbid-53980c78-e0f0-40cc-aca9-41689fd7572e/mbid-53980c78-e0f0-40cc-aca9-41689fd7572e-45956818209.jpg)](https://musicbrainz.org/release/53980c78-e0f0-40cc-aca9-41689fd7572e)
 
--   [Binary![](https://resources.tidal.com/images/d66ca816/5806/4fac/9b34/2c2d96b9836b/1280x1280.jpg)](https://tidal.com/album/2254174/credits)
+-   [二十,三十![](https://dn711309.ca.archive.org/0/items/mbid-1b5d50c5-280f-4f38-ab12-ec0066d4814f/mbid-1b5d50c5-280f-4f38-ab12-ec0066d4814f-46495998841.jpg)](https://musicbrainz.org/release/1b5d50c5-280f-4f38-ab12-ec0066d4814f)
 
--   [笑忘书![](https://resources.tidal.com/images/f429ec8f/78fb/41f9/a90b/6b89e1320376/1280x1280.jpg)](https://tidal.com/album/7396575/credits)
+-   [黑神话：悟空![](https://dn721601.ca.archive.org/0/items/mbid-57685e6c-3e11-4cd2-924e-c253f93d67e5/mbid-57685e6c-3e11-4cd2-924e-c253f93d67e5-39858888020.jpg)](https://musicbrainz.org/release/57685e6c-3e11-4cd2-924e-c253f93d67e5)
+
+-   [笑忘書![](https://dn711102.ca.archive.org/0/items/mbid-4a1698ac-c401-4661-bb57-ff6ea73dfb50/mbid-4a1698ac-c401-4661-bb57-ff6ea73dfb50-1386743885.jpg)](https://musicbrainz.org/release/4a1698ac-c401-4661-bb57-ff6ea73dfb50)
+
+-   [Lose Control![](https://ia600100.us.archive.org/26/items/mbid-6326ff16-f359-4323-b49e-088aab0a78c9/mbid-6326ff16-f359-4323-b49e-088aab0a78c9-39806433786.jpg)](https://musicbrainz.org/release/6326ff16-f359-4323-b49e-088aab0a78c9)
+
+-   [醜奴兒![](https://archive.org/download/mbid-53b74bc7-1337-4e76-af81-dc78e2e04558/mbid-53b74bc7-1337-4e76-af81-dc78e2e04558-46496320945.jpg)](https://musicbrainz.org/release/53b74bc7-1337-4e76-af81-dc78e2e04558)
+
+-   [The Dark Side of the Moon![](https://dn710607.ca.archive.org/0/items/mbid-956fbc58-362d-43b8-b880-3779e0508559/mbid-956fbc58-362d-43b8-b880-3779e0508559-34025419985.jpg)](https://musicbrainz.org/release/b84ee12a-09ef-421b-82de-0441a926375b)
+
+-   [我去2000年![](https://ia903102.us.archive.org/5/items/mbid-86ca5fb6-c364-47dc-b734-4be99e8e5215/mbid-86ca5fb6-c364-47dc-b734-4be99e8e5215-46497105091.jpg)](https://beta.musicbrainz.org/release/86ca5fb6-c364-47dc-b734-4be99e8e5215)
+
+-   [呼吸之野![](https://dn711005.ca.archive.org/0/items/mbid-a6d2222d-08fe-444b-b105-3c98980d9c08/mbid-a6d2222d-08fe-444b-b105-3c98980d9c08-41155440529.jpg)](https://beta.musicbrainz.org/release/a6d2222d-08fe-444b-b105-3c98980d9c08)
 
 ///
