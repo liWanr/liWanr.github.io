@@ -4,6 +4,7 @@
 
   const STEP = 200;  // 同一行相邻两张卡片的错开时间（ms）
   const JITTER = 40; // 额外随机抖动（ms）
+  const BLANK = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2 3'%3E%3Crect width='2' height='3' fill='%23888' fill-opacity='.2'/%3E%3C/svg%3E";
   const still = matchMedia("(prefers-reduced-motion: reduce)").matches || !window.IntersectionObserver;
   const queue = new Set();
   let timer;
@@ -14,12 +15,30 @@
     return e;
   };
 
+  const text = s => s.replace(/<[^>]+>/g, ""); // alt 是纯文本，去掉 HTML 标签
+
   const shuffle = a => {
     for (let i = a.length; --i;) {
       const j = Math.random() * (i + 1) | 0;
       [a[i], a[j]] = [a[j], a[i]];
     }
     return a;
+  };
+
+  // 图片加载失败：依次换备用地址，都没有就用占位图
+  const fail = ({ target: i }) => {
+    const next = i._alt.shift();
+    if (!next) i.onerror = null;
+    i.src = next || BLANK;
+  };
+
+  // 等图片解码完成；失败时等 onerror 换完 src 后再试，直到不再变化
+  const ready = async i => {
+    for (let s; s !== i.src;) {
+      s = i.src;
+      try { return await i.decode(); } catch {}
+      await new Promise(r => setTimeout(r));
+    }
   };
 
   // 同一批准备好的卡片：按行分组，行内随机排序，依次错开出现
@@ -48,7 +67,7 @@
     // 进入视窗：强制立即加载并提高优先级，加载解码完再出现
     const imgs = [...c.querySelectorAll("img")];
     imgs.forEach(i => (i.loading = "eager", i.fetchPriority = "high"));
-    await Promise.all(imgs.map(i => i.decode?.().catch(() => {})));
+    await Promise.all(imgs.map(ready));
     if (!c._in) return;
 
     queue.add(c);
@@ -64,11 +83,14 @@
       return console.error("explore: 读取 JSON 失败", box.dataset.json, e);
     }
 
-    box.replaceChildren(el("ul", null, ...data.map(({ title, sub, img, link }) => {
+    box.replaceChildren(el("ul", null, ...data.map(({ title, sub, img, link, backup }) => {
       const li = el("li", { className: still ? "explore-visible" : "explore-pending" },
         el(link ? "a" : "p", link && { href: link, target: "_blank", rel: "noopener" },
-          el("img", { loading: "lazy", decoding: "async", alt: [title, sub].filter(Boolean).join(" "), src: img })),
-        el("p", { className: "explore-title" }, title, sub && el("small", null, " ", sub)));
+          el("img", {
+            loading: "lazy", decoding: "async", onerror: fail, _alt: [].concat(backup || []),
+            alt: text([title, sub].filter(Boolean).join(" ")), src: img
+          })),
+        el("p", { className: "explore-title", innerHTML: sub ? `${title} <small>${sub}</small>` : title }));
       io?.observe(li);
       return li;
     })));

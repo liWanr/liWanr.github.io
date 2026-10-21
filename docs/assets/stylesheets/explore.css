@@ -24,6 +24,7 @@
       }
 
       .explore-title { overflow: hidden; margin: .4rem 0 0; line-height: 1.45; text-overflow: ellipsis; white-space: nowrap }
+      .explore-title sup { line-height: 0 }
 
       &.explore-pending { opacity: 0; transform: translateY(36px) }
 

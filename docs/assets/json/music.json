@@ -1,413 +1,495 @@
 [
   {
     "title": "The Key",
-    "img": "https://dn710209.ca.archive.org/0/items/mbid-1a1c3f25-3336-41b6-8524-8855e834db31/mbid-1a1c3f25-3336-41b6-8524-8855e834db31-30486727430.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-1a1c3f25-3336-41b6-8524-8855e834db31-30486727430.jpg",
+    "backup": "https://dn710209.ca.archive.org/0/items/mbid-1a1c3f25-3336-41b6-8524-8855e834db31/mbid-1a1c3f25-3336-41b6-8524-8855e834db31-30486727430.jpg",
     "link": "https://musicbrainz.org/release/1a1c3f25-3336-41b6-8524-8855e834db31"
   },
   {
     "title": "Time Flies",
-    "img": "https://ia800607.us.archive.org/14/items/mbid-ca67208c-c406-476a-900e-76a64f0a99a4/mbid-ca67208c-c406-476a-900e-76a64f0a99a4-40847652103.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-ca67208c-c406-476a-900e-76a64f0a99a4-40847652103.jpg",
+    "backup": "https://ia800607.us.archive.org/14/items/mbid-ca67208c-c406-476a-900e-76a64f0a99a4/mbid-ca67208c-c406-476a-900e-76a64f0a99a4-40847652103.jpg",
     "link": "https://musicbrainz.org/release/ca67208c-c406-476a-900e-76a64f0a99a4"
   },
   {
-    "title": "H^3^M",
-    "img": "https://ia601609.us.archive.org/29/items/mbid-9568aa00-d9f1-4d53-ad25-2535506e867a/mbid-9568aa00-d9f1-4d53-ad25-2535506e867a-46497008792.jpg",
+    "title": "H<sup>3</sup>M",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-9568aa00-d9f1-4d53-ad25-2535506e867a-46497008792.jpg",
+    "backup": "https://ia601609.us.archive.org/29/items/mbid-9568aa00-d9f1-4d53-ad25-2535506e867a/mbid-9568aa00-d9f1-4d53-ad25-2535506e867a-46497008792.jpg",
     "link": "https://musicbrainz.org/release/9568aa00-d9f1-4d53-ad25-2535506e867a"
   },
   {
     "title": "U 87",
-    "img": "https://ia902802.us.archive.org/20/items/mbid-ad5d597a-5ebb-46c1-b007-f09baf0062bf/mbid-ad5d597a-5ebb-46c1-b007-f09baf0062bf-46497002274.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-ad5d597a-5ebb-46c1-b007-f09baf0062bf-46497002274.jpg",
+    "backup": "https://ia902802.us.archive.org/20/items/mbid-ad5d597a-5ebb-46c1-b007-f09baf0062bf/mbid-ad5d597a-5ebb-46c1-b007-f09baf0062bf-46497002274.jpg",
     "link": "https://musicbrainz.org/release/ad5d597a-5ebb-46c1-b007-f09baf0062bf"
   },
   {
     "title": "準備中",
-    "img": "https://dn710600.ca.archive.org/0/items/mbid-cbb5113b-5685-4e6f-be74-38e350e5d1cb/mbid-cbb5113b-5685-4e6f-be74-38e350e5d1cb-11092144417.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-cbb5113b-5685-4e6f-be74-38e350e5d1cb-11092144417.jpg",
+    "backup": "https://dn710600.ca.archive.org/0/items/mbid-cbb5113b-5685-4e6f-be74-38e350e5d1cb/mbid-cbb5113b-5685-4e6f-be74-38e350e5d1cb-11092144417.jpg",
     "link": "https://musicbrainz.org/release/cbb5113b-5685-4e6f-be74-38e350e5d1cb"
   },
   {
     "title": "Life Continues...",
-    "img": "https://ia903103.us.archive.org/30/items/mbid-8b2c93e7-e397-3b2f-baef-592eef1d96f4/mbid-8b2c93e7-e397-3b2f-baef-592eef1d96f4-46496149766.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-8b2c93e7-e397-3b2f-baef-592eef1d96f4-46496149766.jpg",
+    "backup": "https://ia903103.us.archive.org/30/items/mbid-8b2c93e7-e397-3b2f-baef-592eef1d96f4/mbid-8b2c93e7-e397-3b2f-baef-592eef1d96f4-46496149766.jpg",
     "link": "https://musicbrainz.org/release/8b2c93e7-e397-3b2f-baef-592eef1d96f4"
   },
   {
     "title": "...3mm",
-    "img": "https://dn721904.ca.archive.org/0/items/mbid-21bb77c6-6c9f-4380-a673-024cb60b99d3/mbid-21bb77c6-6c9f-4380-a673-024cb60b99d3-42784257848.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-21bb77c6-6c9f-4380-a673-024cb60b99d3-42784257848.jpg",
+    "backup": "https://dn721904.ca.archive.org/0/items/mbid-21bb77c6-6c9f-4380-a673-024cb60b99d3/mbid-21bb77c6-6c9f-4380-a673-024cb60b99d3-42784257848.jpg",
     "link": "https://musicbrainz.org/release/21bb77c6-6c9f-4380-a673-024cb60b99d3"
   },
   {
     "title": "Solidays",
-    "img": "https://ia601601.us.archive.org/24/items/mbid-4f7452e3-b3c4-4abc-bc73-950686cdc847/mbid-4f7452e3-b3c4-4abc-bc73-950686cdc847-46496994972.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-4f7452e3-b3c4-4abc-bc73-950686cdc847-46496994972.jpg",
+    "backup": "https://ia601601.us.archive.org/24/items/mbid-4f7452e3-b3c4-4abc-bc73-950686cdc847/mbid-4f7452e3-b3c4-4abc-bc73-950686cdc847-46496994972.jpg",
     "link": "https://musicbrainz.org/release/4f7452e3-b3c4-4abc-bc73-950686cdc847"
   },
   {
     "title": "The Line-Up",
-    "img": "https://ia600507.us.archive.org/10/items/mbid-90339139-35ba-4b62-9184-fbe5b1ab856e/mbid-90339139-35ba-4b62-9184-fbe5b1ab856e-46496164629.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-90339139-35ba-4b62-9184-fbe5b1ab856e-46496164629.jpg",
+    "backup": "https://ia600507.us.archive.org/10/items/mbid-90339139-35ba-4b62-9184-fbe5b1ab856e/mbid-90339139-35ba-4b62-9184-fbe5b1ab856e-46496164629.jpg",
     "link": "https://musicbrainz.org/release/90339139-35ba-4b62-9184-fbe5b1ab856e"
   },
   {
     "title": "What’s Going On…?",
-    "img": "https://ia600404.us.archive.org/30/items/mbid-2c9d524d-d662-41d3-ac4b-4fb26c3c25d9/mbid-2c9d524d-d662-41d3-ac4b-4fb26c3c25d9-46496170306.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-2c9d524d-d662-41d3-ac4b-4fb26c3c25d9-46496170306.jpg",
+    "backup": "https://ia600404.us.archive.org/30/items/mbid-2c9d524d-d662-41d3-ac4b-4fb26c3c25d9/mbid-2c9d524d-d662-41d3-ac4b-4fb26c3c25d9-46496170306.jpg",
     "link": "https://musicbrainz.org/release/2c9d524d-d662-41d3-ac4b-4fb26c3c25d9"
   },
   {
     "title": "上五樓的快活",
-    "img": "https://dn711401.ca.archive.org/0/items/mbid-859e52eb-5c4c-4e82-aa90-dcfe186bf14b/mbid-859e52eb-5c4c-4e82-aa90-dcfe186bf14b-46496181343.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-859e52eb-5c4c-4e82-aa90-dcfe186bf14b-46496181343.jpg",
+    "backup": "https://dn711401.ca.archive.org/0/items/mbid-859e52eb-5c4c-4e82-aa90-dcfe186bf14b/mbid-859e52eb-5c4c-4e82-aa90-dcfe186bf14b-46496181343.jpg",
     "link": "https://musicbrainz.org/release/db402969-5b79-46e1-9a5c-a2c298efa165"
   },
   {
     "title": "Stranger Under My Skin",
-    "img": "https://dn711000.ca.archive.org/0/items/mbid-b0463f37-c2de-4ea5-8244-152e0a346b9f/mbid-b0463f37-c2de-4ea5-8244-152e0a346b9f-1386064159.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-b0463f37-c2de-4ea5-8244-152e0a346b9f-1386064159.jpg",
+    "backup": "https://dn711000.ca.archive.org/0/items/mbid-b0463f37-c2de-4ea5-8244-152e0a346b9f/mbid-b0463f37-c2de-4ea5-8244-152e0a346b9f-1386064159.jpg",
     "link": "https://musicbrainz.org/release/b0463f37-c2de-4ea5-8244-152e0a346b9f"
   },
   {
     "title": "CHIN UP!",
-    "img": "https://dn721600.ca.archive.org/0/items/mbid-f1e89185-9c7d-421e-8da9-16fae0575fb3/mbid-f1e89185-9c7d-421e-8da9-16fae0575fb3-37171430948.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-f1e89185-9c7d-421e-8da9-16fae0575fb3-37171430948.jpg",
+    "backup": "https://dn721600.ca.archive.org/0/items/mbid-f1e89185-9c7d-421e-8da9-16fae0575fb3/mbid-f1e89185-9c7d-421e-8da9-16fae0575fb3-37171430948.jpg",
     "link": "https://musicbrainz.org/release/f1e89185-9c7d-421e-8da9-16fae0575fb3"
   },
   {
     "title": "天佑愛人",
-    "img": "https://ia601801.us.archive.org/8/items/mbid-bcaba590-73a0-4e31-b2ac-0c58fea8f8ee/mbid-bcaba590-73a0-4e31-b2ac-0c58fea8f8ee-46495739464.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-bcaba590-73a0-4e31-b2ac-0c58fea8f8ee-46495739464.jpg",
+    "backup": "https://ia601801.us.archive.org/8/items/mbid-bcaba590-73a0-4e31-b2ac-0c58fea8f8ee/mbid-bcaba590-73a0-4e31-b2ac-0c58fea8f8ee-46495739464.jpg",
     "link": "https://musicbrainz.org/release/bcaba590-73a0-4e31-b2ac-0c58fea8f8ee"
   },
   {
     "title": "認了吧",
-    "img": "https://dn710805.ca.archive.org/0/items/mbid-3c3e5c33-5bd5-4eff-8d8d-c7e8b9dfbb48/mbid-3c3e5c33-5bd5-4eff-8d8d-c7e8b9dfbb48-33865971772.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-3c3e5c33-5bd5-4eff-8d8d-c7e8b9dfbb48-33865971772.jpg",
+    "backup": "https://dn710805.ca.archive.org/0/items/mbid-3c3e5c33-5bd5-4eff-8d8d-c7e8b9dfbb48/mbid-3c3e5c33-5bd5-4eff-8d8d-c7e8b9dfbb48-33865971772.jpg",
     "link": "https://beta.musicbrainz.org/release/3c3e5c33-5bd5-4eff-8d8d-c7e8b9dfbb48"
   },
   {
     "title": "黑 白 灰",
-    "img": "https://dn711102.ca.archive.org/0/items/mbid-d7024a7c-d04f-4236-8074-62aaf4b70868/mbid-d7024a7c-d04f-4236-8074-62aaf4b70868-46496221660.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-d7024a7c-d04f-4236-8074-62aaf4b70868-46496221660.jpg",
+    "backup": "https://dn711102.ca.archive.org/0/items/mbid-d7024a7c-d04f-4236-8074-62aaf4b70868/mbid-d7024a7c-d04f-4236-8074-62aaf4b70868-46496221660.jpg",
     "link": "https://musicbrainz.org/release/d7024a7c-d04f-4236-8074-62aaf4b70868"
   },
   {
     "title": "不想放手",
-    "img": "https://ia600504.us.archive.org/6/items/mbid-94d3809d-d594-4742-a15f-2297c46f107f/mbid-94d3809d-d594-4742-a15f-2297c46f107f-46496956272.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-94d3809d-d594-4742-a15f-2297c46f107f-46496956272.jpg",
+    "backup": "https://ia600504.us.archive.org/6/items/mbid-94d3809d-d594-4742-a15f-2297c46f107f/mbid-94d3809d-d594-4742-a15f-2297c46f107f-46496956272.jpg",
     "link": "https://musicbrainz.org/release/94d3809d-d594-4742-a15f-2297c46f107f"
   },
   {
     "title": "Nothing Really Matters",
-    "img": "https://ia902801.us.archive.org/35/items/mbid-2eb0ecef-5a9d-491f-bdda-ae30e476ea3f/mbid-2eb0ecef-5a9d-491f-bdda-ae30e476ea3f-46496198797.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-2eb0ecef-5a9d-491f-bdda-ae30e476ea3f-46496198797.jpg",
+    "backup": "https://ia902801.us.archive.org/35/items/mbid-2eb0ecef-5a9d-491f-bdda-ae30e476ea3f/mbid-2eb0ecef-5a9d-491f-bdda-ae30e476ea3f-46496198797.jpg",
     "link": "https://musicbrainz.org/release/2eb0ecef-5a9d-491f-bdda-ae30e476ea3f"
   },
   {
     "title": "L.O.V.E.",
-    "img": "https://dn710201.ca.archive.org/0/items/mbid-0ea12a3c-29ee-4b07-9805-8fd88e10f006/mbid-0ea12a3c-29ee-4b07-9805-8fd88e10f006-37694325824.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-0ea12a3c-29ee-4b07-9805-8fd88e10f006-37694325824.jpg",
+    "backup": "https://dn710201.ca.archive.org/0/items/mbid-0ea12a3c-29ee-4b07-9805-8fd88e10f006/mbid-0ea12a3c-29ee-4b07-9805-8fd88e10f006-37694325824.jpg",
     "link": "https://musicbrainz.org/release/0ea12a3c-29ee-4b07-9805-8fd88e10f006"
   },
   {
     "title": "19",
-    "img": "https://dn711305.ca.archive.org/0/items/mbid-62a80ba6-d417-3df4-9535-f8a26a3ee5eb/mbid-62a80ba6-d417-3df4-9535-f8a26a3ee5eb-32049953673.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-62a80ba6-d417-3df4-9535-f8a26a3ee5eb-32049953673.jpg",
+    "backup": "https://dn711305.ca.archive.org/0/items/mbid-62a80ba6-d417-3df4-9535-f8a26a3ee5eb/mbid-62a80ba6-d417-3df4-9535-f8a26a3ee5eb-32049953673.jpg",
     "link": "https://musicbrainz.org/release/62a80ba6-d417-3df4-9535-f8a26a3ee5eb"
   },
   {
     "title": "21",
-    "img": "https://dn710307.ca.archive.org/0/items/mbid-3b7ac2ca-7323-3858-9685-498a4aed1a48/mbid-3b7ac2ca-7323-3858-9685-498a4aed1a48-28613583137.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-3b7ac2ca-7323-3858-9685-498a4aed1a48-28613583137.jpg",
+    "backup": "https://dn710307.ca.archive.org/0/items/mbid-3b7ac2ca-7323-3858-9685-498a4aed1a48/mbid-3b7ac2ca-7323-3858-9685-498a4aed1a48-28613583137.jpg",
     "link": "https://musicbrainz.org/release/3b7ac2ca-7323-3858-9685-498a4aed1a48"
   },
   {
     "title": "25",
-    "img": "https://dn721608.ca.archive.org/0/items/mbid-11506187-0013-4276-8c87-4a2e561af7d8/mbid-11506187-0013-4276-8c87-4a2e561af7d8-35691990856.png",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-11506187-0013-4276-8c87-4a2e561af7d8-35691990856.png",
+    "backup": "https://dn721608.ca.archive.org/0/items/mbid-11506187-0013-4276-8c87-4a2e561af7d8/mbid-11506187-0013-4276-8c87-4a2e561af7d8-35691990856.png",
     "link": "https://musicbrainz.org/release/11506187-0013-4276-8c87-4a2e561af7d8"
   },
   {
     "title": "30",
-    "img": "https://dn721603.ca.archive.org/0/items/mbid-6d541211-c604-4344-a799-11adfea40c9d/mbid-6d541211-c604-4344-a799-11adfea40c9d-30676520786.png",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-6d541211-c604-4344-a799-11adfea40c9d-30676520786.png",
+    "backup": "https://dn721603.ca.archive.org/0/items/mbid-6d541211-c604-4344-a799-11adfea40c9d/mbid-6d541211-c604-4344-a799-11adfea40c9d-30676520786.png",
     "link": "https://musicbrainz.org/release/6d541211-c604-4344-a799-11adfea40c9d"
   },
   {
     "title": "飞行器的执行周期",
-    "img": "https://dn721806.ca.archive.org/0/items/mbid-b808a48c-b38b-4c0f-8dd5-0720fe6b8f86/mbid-b808a48c-b38b-4c0f-8dd5-0720fe6b8f86-31474988981.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-b808a48c-b38b-4c0f-8dd5-0720fe6b8f86-31474988981.jpg",
+    "backup": "https://dn721806.ca.archive.org/0/items/mbid-b808a48c-b38b-4c0f-8dd5-0720fe6b8f86/mbid-b808a48c-b38b-4c0f-8dd5-0720fe6b8f86-31474988981.jpg",
     "link": "https://musicbrainz.org/release/b808a48c-b38b-4c0f-8dd5-0720fe6b8f86"
   },
   {
     "title": "安和桥北",
-    "img": "https://ia903209.us.archive.org/21/items/mbid-80d70223-ce1f-4781-ac78-9287ae19c6d4/mbid-80d70223-ce1f-4781-ac78-9287ae19c6d4-46496921655.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-80d70223-ce1f-4781-ac78-9287ae19c6d4-46496921655.jpg",
+    "backup": "https://ia903209.us.archive.org/21/items/mbid-80d70223-ce1f-4781-ac78-9287ae19c6d4/mbid-80d70223-ce1f-4781-ac78-9287ae19c6d4-46496921655.jpg",
     "link": "https://musicbrainz.org/release/80d70223-ce1f-4781-ac78-9287ae19c6d4"
   },
   {
     "title": "再想想",
-    "img": "https://ia600802.us.archive.org/19/items/mbid-5fa0eac9-ae9f-4939-9a02-96b5f757171c/mbid-5fa0eac9-ae9f-4939-9a02-96b5f757171c-46496227170.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-5fa0eac9-ae9f-4939-9a02-96b5f757171c-46496227170.jpg",
+    "backup": "https://ia600802.us.archive.org/19/items/mbid-5fa0eac9-ae9f-4939-9a02-96b5f757171c/mbid-5fa0eac9-ae9f-4939-9a02-96b5f757171c-46496227170.jpg",
     "link": "https://musicbrainz.org/release/5fa0eac9-ae9f-4939-9a02-96b5f757171c"
   },
   {
     "title": "陶喆",
-    "img": "https://dn720002.ca.archive.org/0/items/mbid-1c673a29-4dae-415e-8079-0112346fca2c/mbid-1c673a29-4dae-415e-8079-0112346fca2c-45424005157.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-1c673a29-4dae-415e-8079-0112346fca2c-45424005157.jpg",
+    "backup": "https://dn720002.ca.archive.org/0/items/mbid-1c673a29-4dae-415e-8079-0112346fca2c/mbid-1c673a29-4dae-415e-8079-0112346fca2c-45424005157.jpg",
     "link": "https://musicbrainz.org/release/1c673a29-4dae-415e-8079-0112346fca2c"
   },
   {
     "title": "I'm ok",
-    "img": "https://ia600901.us.archive.org/14/items/mbid-baa723fd-ac31-310e-8065-53eaddfba864/mbid-baa723fd-ac31-310e-8065-53eaddfba864-45424028240.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-baa723fd-ac31-310e-8065-53eaddfba864-45424028240.jpg",
+    "backup": "https://ia600901.us.archive.org/14/items/mbid-baa723fd-ac31-310e-8065-53eaddfba864/mbid-baa723fd-ac31-310e-8065-53eaddfba864-45424028240.jpg",
     "link": "https://musicbrainz.org/release/baa723fd-ac31-310e-8065-53eaddfba864"
   },
   {
     "title": "黑色柳丁",
-    "img": "https://dn710407.ca.archive.org/0/items/mbid-bade1adc-6282-427e-802d-b523ab3ad434/mbid-bade1adc-6282-427e-802d-b523ab3ad434-44802828256.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-bade1adc-6282-427e-802d-b523ab3ad434-44802828256.jpg",
+    "backup": "https://dn710407.ca.archive.org/0/items/mbid-bade1adc-6282-427e-802d-b523ab3ad434/mbid-bade1adc-6282-427e-802d-b523ab3ad434-44802828256.jpg",
     "link": "https://musicbrainz.org/release/bade1adc-6282-427e-802d-b523ab3ad434"
   },
   {
     "title": "神经志",
-    "img": "https://dn710200.ca.archive.org/0/items/mbid-e311c017-5dd1-46e7-a3fc-6148a78af7fe/mbid-e311c017-5dd1-46e7-a3fc-6148a78af7fe-37877771068.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-e311c017-5dd1-46e7-a3fc-6148a78af7fe-37877771068.jpg",
+    "backup": "https://dn710200.ca.archive.org/0/items/mbid-e311c017-5dd1-46e7-a3fc-6148a78af7fe/mbid-e311c017-5dd1-46e7-a3fc-6148a78af7fe-37877771068.jpg",
     "link": "https://musicbrainz.org/release/e311c017-5dd1-46e7-a3fc-6148a78af7fe"
   },
   {
     "title": "背面是我",
-    "img": "https://dn720705.ca.archive.org/0/items/mbid-416a1342-6d99-4dda-babd-bab6a055e702/mbid-416a1342-6d99-4dda-babd-bab6a055e702-40900681682.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-416a1342-6d99-4dda-babd-bab6a055e702-40900681682.jpg",
+    "backup": "https://dn720705.ca.archive.org/0/items/mbid-416a1342-6d99-4dda-babd-bab6a055e702/mbid-416a1342-6d99-4dda-babd-bab6a055e702-40900681682.jpg",
     "link": "https://musicbrainz.org/release/416a1342-6d99-4dda-babd-bab6a055e702"
   },
   {
     "title": "Doo-Wops & Hooligans",
-    "img": "https://ia800907.us.archive.org/10/items/mbid-3d2b148e-8c0a-42b6-baae-c3ee7322a569/mbid-3d2b148e-8c0a-42b6-baae-c3ee7322a569-998580956.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-3d2b148e-8c0a-42b6-baae-c3ee7322a569-998580956.jpg",
+    "backup": "https://ia800907.us.archive.org/10/items/mbid-3d2b148e-8c0a-42b6-baae-c3ee7322a569/mbid-3d2b148e-8c0a-42b6-baae-c3ee7322a569-998580956.jpg",
     "link": "https://musicbrainz.org/release/3d2b148e-8c0a-42b6-baae-c3ee7322a569"
   },
   {
     "title": "Human 我生",
-    "img": "https://ia600903.us.archive.org/3/items/mbid-8c7c2543-d698-47eb-92d6-bf5f57650ec5/mbid-8c7c2543-d698-47eb-92d6-bf5f57650ec5-46495863597.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-8c7c2543-d698-47eb-92d6-bf5f57650ec5-46495863597.jpg",
+    "backup": "https://ia600903.us.archive.org/3/items/mbid-8c7c2543-d698-47eb-92d6-bf5f57650ec5/mbid-8c7c2543-d698-47eb-92d6-bf5f57650ec5-46495863597.jpg",
     "link": "https://musicbrainz.org/release/8c7c2543-d698-47eb-92d6-bf5f57650ec5"
   },
   {
     "title": "遊戲 基",
-    "img": "https://ia601602.us.archive.org/4/items/mbid-35c10382-4187-4c0c-9e49-816a89a714a5/mbid-35c10382-4187-4c0c-9e49-816a89a714a5-46496887804.png",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-35c10382-4187-4c0c-9e49-816a89a714a5-46496887804.png",
+    "backup": "https://ia601602.us.archive.org/4/items/mbid-35c10382-4187-4c0c-9e49-816a89a714a5/mbid-35c10382-4187-4c0c-9e49-816a89a714a5-46496887804.png",
     "link": "https://musicbrainz.org/release/35c10382-4187-4c0c-9e49-816a89a714a5"
   },
   {
     "title": "大雄",
-    "img": "https://dn721604.ca.archive.org/0/items/mbid-7ecec9c8-7a16-4345-9218-e8f2be426740/mbid-7ecec9c8-7a16-4345-9218-e8f2be426740-36105787991.png",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-7ecec9c8-7a16-4345-9218-e8f2be426740-36105787991.png",
+    "backup": "https://dn721604.ca.archive.org/0/items/mbid-7ecec9c8-7a16-4345-9218-e8f2be426740/mbid-7ecec9c8-7a16-4345-9218-e8f2be426740-36105787991.png",
     "link": "https://musicbrainz.org/release/1c277dd1-5afb-4c21-82ef-658d39c8342c"
   },
   {
-    "title": "告別我的戀人們",
-    "img": "https://ia600409.us.archive.org/18/items/mbid-66c29205-4462-4abf-a993-c93f2c4fac8a/mbid-66c29205-4462-4abf-a993-c93f2c4fac8a-46497168478.png",
+    "title": "告別我的恋人们",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-66c29205-4462-4abf-a993-c93f2c4fac8a-46497168478.png",
+    "backup": "https://ia600409.us.archive.org/18/items/mbid-66c29205-4462-4abf-a993-c93f2c4fac8a/mbid-66c29205-4462-4abf-a993-c93f2c4fac8a-46497168478.png",
     "link": "https://beta.musicbrainz.org/release/66c29205-4462-4abf-a993-c93f2c4fac8a"
   },
   {
     "title": "重拾_快樂",
-    "img": "https://dn710108.ca.archive.org/0/items/mbid-17bbb77d-ff4f-4588-9bbc-016591e8c8ad/mbid-17bbb77d-ff4f-4588-9bbc-016591e8c8ad-44928756194.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-17bbb77d-ff4f-4588-9bbc-016591e8c8ad-44928756194.jpg",
+    "backup": "https://dn710108.ca.archive.org/0/items/mbid-17bbb77d-ff4f-4588-9bbc-016591e8c8ad/mbid-17bbb77d-ff4f-4588-9bbc-016591e8c8ad-44928756194.jpg",
     "link": "https://musicbrainz.org/release/17bbb77d-ff4f-4588-9bbc-016591e8c8ad"
   },
   {
     "title": "和自己對話",
-    "img": "https://dn710900.ca.archive.org/0/items/mbid-74f7537c-b115-44e8-8b18-92e2e6000f8f/mbid-74f7537c-b115-44e8-8b18-92e2e6000f8f-44570594707.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-74f7537c-b115-44e8-8b18-92e2e6000f8f-44570594707.jpg",
+    "backup": "https://dn710900.ca.archive.org/0/items/mbid-74f7537c-b115-44e8-8b18-92e2e6000f8f/mbid-74f7537c-b115-44e8-8b18-92e2e6000f8f-44570594707.jpg",
     "link": "https://musicbrainz.org/release/74f7537c-b115-44e8-8b18-92e2e6000f8f"
   },
   {
     "title": "偉大的渺小",
-    "img": "https://ia601605.us.archive.org/5/items/mbid-19725867-6c7f-412a-aa5f-672d73d982a5/mbid-19725867-6c7f-412a-aa5f-672d73d982a5-44928549173.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-19725867-6c7f-412a-aa5f-672d73d982a5-44928549173.jpg",
+    "backup": "https://ia601605.us.archive.org/5/items/mbid-19725867-6c7f-412a-aa5f-672d73d982a5/mbid-19725867-6c7f-412a-aa5f-672d73d982a5-44928549173.jpg",
     "link": "https://musicbrainz.org/release/19725867-6c7f-412a-aa5f-672d73d982a5"
   },
   {
     "title": "心裡學",
-    "img": "https://dn711302.ca.archive.org/0/items/mbid-c4eabce4-b569-479b-82c1-cfc99828c8f1/mbid-c4eabce4-b569-479b-82c1-cfc99828c8f1-20024600846.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-c4eabce4-b569-479b-82c1-cfc99828c8f1-20024600846.jpg",
+    "backup": "https://dn711302.ca.archive.org/0/items/mbid-c4eabce4-b569-479b-82c1-cfc99828c8f1/mbid-c4eabce4-b569-479b-82c1-cfc99828c8f1-20024600846.jpg",
     "link": "https://musicbrainz.org/release/c4eabce4-b569-479b-82c1-cfc99828c8f1"
   },
   {
     "title": "Lala Hsu",
-    "img": "https://ia601901.us.archive.org/32/items/mbid-6f9a059b-48ad-438b-954c-770411a6b92b/mbid-6f9a059b-48ad-438b-954c-770411a6b92b-46496870736.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-6f9a059b-48ad-438b-954c-770411a6b92b-46496870736.jpg",
+    "backup": "https://ia601901.us.archive.org/32/items/mbid-6f9a059b-48ad-438b-954c-770411a6b92b/mbid-6f9a059b-48ad-438b-954c-770411a6b92b-46496870736.jpg",
     "link": "https://musicbrainz.org/release/6f9a059b-48ad-438b-954c-770411a6b92b"
   },
   {
     "title": "Shirley’s Era",
-    "img": "https://ia600905.us.archive.org/2/items/mbid-327d97df-abb0-4e3d-8baa-eef1d4978bd0/mbid-327d97df-abb0-4e3d-8baa-eef1d4978bd0-46489336579.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-327d97df-abb0-4e3d-8baa-eef1d4978bd0-46489336579.jpg",
+    "backup": "https://ia600905.us.archive.org/2/items/mbid-327d97df-abb0-4e3d-8baa-eef1d4978bd0/mbid-327d97df-abb0-4e3d-8baa-eef1d4978bd0-46489336579.jpg",
     "link": "https://musicbrainz.org/release/327d97df-abb0-4e3d-8baa-eef1d4978bd0"
   },
   {
     "title": "自傳",
-    "img": "https://dn710305.ca.archive.org/0/items/mbid-5322bd2f-7db6-409d-a90b-d7e7599399f2/mbid-5322bd2f-7db6-409d-a90b-d7e7599399f2-14158532788.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-5322bd2f-7db6-409d-a90b-d7e7599399f2-14158532788.jpg",
+    "backup": "https://dn710305.ca.archive.org/0/items/mbid-5322bd2f-7db6-409d-a90b-d7e7599399f2/mbid-5322bd2f-7db6-409d-a90b-d7e7599399f2-14158532788.jpg",
     "link": "https://musicbrainz.org/release/5322bd2f-7db6-409d-a90b-d7e7599399f2"
   },
   {
     "title": "第二人生",
     "sub": "末日版",
-    "img": "https://ia601602.us.archive.org/3/items/mbid-b508bc61-2d08-429f-adee-2c3da08673bd/mbid-b508bc61-2d08-429f-adee-2c3da08673bd-46496246261.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-b508bc61-2d08-429f-adee-2c3da08673bd-46496246261.jpg",
+    "backup": "https://ia601602.us.archive.org/3/items/mbid-b508bc61-2d08-429f-adee-2c3da08673bd/mbid-b508bc61-2d08-429f-adee-2c3da08673bd-46496246261.jpg",
     "link": "https://musicbrainz.org/release/d16c150c-a181-4d22-a9ab-bdd08e302ede"
   },
   {
     "title": "後 青春期的詩",
-    "img": "https://dn710903.ca.archive.org/0/items/mbid-b7d4861c-3ad4-4155-b197-38132abacb18/mbid-b7d4861c-3ad4-4155-b197-38132abacb18-1563899841.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-b7d4861c-3ad4-4155-b197-38132abacb18-1563899841.jpg",
+    "backup": "https://dn710903.ca.archive.org/0/items/mbid-b7d4861c-3ad4-4155-b197-38132abacb18/mbid-b7d4861c-3ad4-4155-b197-38132abacb18-1563899841.jpg",
     "link": "https://musicbrainz.org/release/b7d4861c-3ad4-4155-b197-38132abacb18"
   },
   {
     "title": "万能青年旅店",
-    "img": "https://dn721606.ca.archive.org/0/items/mbid-b27ad74f-c8e5-4698-9d18-800539368ff8/mbid-b27ad74f-c8e5-4698-9d18-800539368ff8-28286090376.png",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-b27ad74f-c8e5-4698-9d18-800539368ff8-28286090376.png",
+    "backup": "https://dn721606.ca.archive.org/0/items/mbid-b27ad74f-c8e5-4698-9d18-800539368ff8/mbid-b27ad74f-c8e5-4698-9d18-800539368ff8-28286090376.png",
     "link": "https://musicbrainz.org/release/263f5af9-e59f-46fd-abea-ddb6d0fb74cc"
   },
   {
     "title": "冀西南林路行",
-    "img": "https://ia600107.us.archive.org/25/items/mbid-9a9973e5-d386-4ae6-8713-36b35203e4df/mbid-9a9973e5-d386-4ae6-8713-36b35203e4df-46496846278.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-9a9973e5-d386-4ae6-8713-36b35203e4df-46496846278.jpg",
+    "backup": "https://ia600107.us.archive.org/25/items/mbid-9a9973e5-d386-4ae6-8713-36b35203e4df/mbid-9a9973e5-d386-4ae6-8713-36b35203e4df-46496846278.jpg",
     "link": "https://musicbrainz.org/release/9a9973e5-d386-4ae6-8713-36b35203e4df"
   },
   {
     "title": "Who Cares?",
-    "img": "https://ia803109.us.archive.org/22/items/mbid-1e53979d-0dfc-47a7-9876-ab49a749a90d/mbid-1e53979d-0dfc-47a7-9876-ab49a749a90d-45332590849.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-1e53979d-0dfc-47a7-9876-ab49a749a90d-45332590849.jpg",
+    "backup": "https://ia803109.us.archive.org/22/items/mbid-1e53979d-0dfc-47a7-9876-ab49a749a90d/mbid-1e53979d-0dfc-47a7-9876-ab49a749a90d-45332590849.jpg",
     "link": "https://musicbrainz.org/release/1e53979d-0dfc-47a7-9876-ab49a749a90d"
   },
   {
     "title": "太歌",
-    "img": "https://ia802807.us.archive.org/19/items/mbid-b30ed191-8083-424c-bfc7-e1880ad280ac/mbid-b30ed191-8083-424c-bfc7-e1880ad280ac-43881008918.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-b30ed191-8083-424c-bfc7-e1880ad280ac-43881008918.jpg",
+    "backup": "https://ia802807.us.archive.org/19/items/mbid-b30ed191-8083-424c-bfc7-e1880ad280ac/mbid-b30ed191-8083-424c-bfc7-e1880ad280ac-43881008918.jpg",
     "link": "https://musicbrainz.org/release/b30ed191-8083-424c-bfc7-e1880ad280ac"
   },
   {
     "title": "THE PROTÉGÉ",
-    "img": "https://dn711000.ca.archive.org/0/items/mbid-872e0c36-a01e-4075-98f4-ddedfdbe6ab9/mbid-872e0c36-a01e-4075-98f4-ddedfdbe6ab9-44855576883.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-872e0c36-a01e-4075-98f4-ddedfdbe6ab9-44855576883.jpg",
+    "backup": "https://ia802807.us.archive.org/19/items/mbid-872e0c36-a01e-4075-98f4-ddedfdbe6ab9/mbid-872e0c36-a01e-4075-98f4-ddedfdbe6ab9-44855576883.jpg",
     "link": "https://musicbrainz.org/release/872e0c36-a01e-4075-98f4-ddedfdbe6ab9"
   },
   {
     "title": "Major in Minor",
-    "img": "https://dn721905.ca.archive.org/0/items/mbid-e18ff329-0e4c-4999-8b77-06926bed0dd2/mbid-e18ff329-0e4c-4999-8b77-06926bed0dd2-37037920297.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-e18ff329-0e4c-4999-8b77-06926bed0dd2-37037920297.jpg",
+    "backup": "https://dn721905.ca.archive.org/0/items/mbid-e18ff329-0e4c-4999-8b77-06926bed0dd2/mbid-e18ff329-0e4c-4999-8b77-06926bed0dd2-37037920297.jpg",
     "link": "https://musicbrainz.org/release/e18ff329-0e4c-4999-8b77-06926bed0dd2"
   },
   {
     "title": "某種老朋友",
-    "img": "https://dn721603.ca.archive.org/0/items/mbid-5f4e0815-ef8e-43f4-941d-a4bd5be7e617/mbid-5f4e0815-ef8e-43f4-941d-a4bd5be7e617-33543234121.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-5f4e0815-ef8e-43f4-941d-a4bd5be7e617-33543234121.jpg",
+    "backup": "https://dn721603.ca.archive.org/0/items/mbid-5f4e0815-ef8e-43f4-941d-a4bd5be7e617/mbid-5f4e0815-ef8e-43f4-941d-a4bd5be7e617-33543234121.jpg",
     "link": "https://musicbrainz.org/release/5f4e0815-ef8e-43f4-941d-a4bd5be7e617"
   },
   {
     "title": "普渡眾生",
-    "img": "https://dn721309.ca.archive.org/0/items/mbid-41317cc9-6885-4688-9558-ffa58c8cf43f/mbid-41317cc9-6885-4688-9558-ffa58c8cf43f-42031121484.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-41317cc9-6885-4688-9558-ffa58c8cf43f-42031121484.jpg",
+    "backup": "https://dn721309.ca.archive.org/0/items/mbid-41317cc9-6885-4688-9558-ffa58c8cf43f/mbid-41317cc9-6885-4688-9558-ffa58c8cf43f-42031121484.jpg",
     "link": "https://musicbrainz.org/release/41317cc9-6885-4688-9558-ffa58c8cf43f"
   },
   {
     "title": "感官/世界",
-    "img": "https://dn710005.ca.archive.org/0/items/mbid-3353bf94-ed70-449d-8845-dfc1b38579bf/mbid-3353bf94-ed70-449d-8845-dfc1b38579bf-35464164527.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-3353bf94-ed70-449d-8845-dfc1b38579bf-35464164527.jpg",
+    "backup": "https://dn710005.ca.archive.org/0/items/mbid-3353bf94-ed70-449d-8845-dfc1b38579bf/mbid-3353bf94-ed70-449d-8845-dfc1b38579bf-35464164527.jpg",
     "link": "https://musicbrainz.org/release/3353bf94-ed70-449d-8845-dfc1b38579bf"
   },
   {
     "title": "美妙生活",
-    "img": "https://dn710005.ca.archive.org/0/items/mbid-f627a701-3ef4-40b2-b351-425e69180b94/mbid-f627a701-3ef4-40b2-b351-425e69180b94-36095182614.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-f627a701-3ef4-40b2-b351-425e69180b94-36095182614.jpg",
+    "backup": "https://dn710005.ca.archive.org/0/items/mbid-f627a701-3ef4-40b2-b351-425e69180b94/mbid-f627a701-3ef4-40b2-b351-425e69180b94-36095182614.jpg",
     "link": "https://musicbrainz.org/release/f627a701-3ef4-40b2-b351-425e69180b94"
   },
   {
     "title": "大小說家",
-    "img": "https://dn721602.ca.archive.org/0/items/mbid-927e7301-4553-4f68-9f5a-ebec69b902d9/mbid-927e7301-4553-4f68-9f5a-ebec69b902d9-36095677191.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-927e7301-4553-4f68-9f5a-ebec69b902d9-36095677191.jpg",
+    "backup": "https://dn721602.ca.archive.org/0/items/mbid-927e7301-4553-4f68-9f5a-ebec69b902d9/mbid-927e7301-4553-4f68-9f5a-ebec69b902d9-36095677191.jpg",
     "link": "https://musicbrainz.org/release/927e7301-4553-4f68-9f5a-ebec69b902d9"
   },
   {
     "title": "李榮浩",
-    "img": "https://dn711004.ca.archive.org/0/items/mbid-d2786f3b-55ae-4768-bf23-891cefe39a1b/mbid-d2786f3b-55ae-4768-bf23-891cefe39a1b-25023131370.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-d2786f3b-55ae-4768-bf23-891cefe39a1b-25023131370.jpg",
+    "backup": "https://dn711004.ca.archive.org/0/items/mbid-d2786f3b-55ae-4768-bf23-891cefe39a1b/mbid-d2786f3b-55ae-4768-bf23-891cefe39a1b-25023131370.jpg",
     "link": "https://musicbrainz.org/release/d2786f3b-55ae-4768-bf23-891cefe39a1b"
   },
   {
     "title": "有理想",
-    "img": "https://dn710708.ca.archive.org/0/items/mbid-1caa708d-f753-47ad-be3a-113605cb437e/mbid-1caa708d-f753-47ad-be3a-113605cb437e-25025235459.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-1caa708d-f753-47ad-be3a-113605cb437e-25025235459.jpg",
+    "backup": "https://dn710708.ca.archive.org/0/items/mbid-1caa708d-f753-47ad-be3a-113605cb437e/mbid-1caa708d-f753-47ad-be3a-113605cb437e-25025235459.jpg",
     "link": "https://musicbrainz.org/release/1caa708d-f753-47ad-be3a-113605cb437e"
   },
   {
     "title": "模特",
-    "img": "https://ia902807.us.archive.org/34/items/mbid-abd5c5e1-77e9-4e43-ab20-4d54280b8ea5/mbid-abd5c5e1-77e9-4e43-ab20-4d54280b8ea5-46496818461.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-abd5c5e1-77e9-4e43-ab20-4d54280b8ea5-46496818461.jpg",
+    "backup": "https://ia902807.us.archive.org/34/items/mbid-abd5c5e1-77e9-4e43-ab20-4d54280b8ea5/mbid-abd5c5e1-77e9-4e43-ab20-4d54280b8ea5-46496818461.jpg",
     "link": "https://musicbrainz.org/release/abd5c5e1-77e9-4e43-ab20-4d54280b8ea5"
   },
   {
     "title": "耳朵",
-    "img": "https://dn710902.ca.archive.org/0/items/mbid-cced0b09-4e07-4e39-96ea-76916eb51487/mbid-cced0b09-4e07-4e39-96ea-76916eb51487-25023214604.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-cced0b09-4e07-4e39-96ea-76916eb51487-25023214604.jpg",
+    "backup": "https://dn710902.ca.archive.org/0/items/mbid-cced0b09-4e07-4e39-96ea-76916eb51487/mbid-cced0b09-4e07-4e39-96ea-76916eb51487-25023214604.jpg",
     "link": "https://musicbrainz.org/release/cced0b09-4e07-4e39-96ea-76916eb51487"
   },
   {
     "title": "Live Session",
-    "img": "https://ia600606.us.archive.org/26/items/mbid-3da2762e-f3f2-4105-abcf-ba5279e7a75f/mbid-3da2762e-f3f2-4105-abcf-ba5279e7a75f-46495871692.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-3da2762e-f3f2-4105-abcf-ba5279e7a75f-46495871692.jpg",
+    "backup": "https://ia600606.us.archive.org/26/items/mbid-3da2762e-f3f2-4105-abcf-ba5279e7a75f/mbid-3da2762e-f3f2-4105-abcf-ba5279e7a75f-46495871692.jpg",
     "link": "https://musicbrainz.org/release/3da2762e-f3f2-4105-abcf-ba5279e7a75f"
   },
   {
     "title": "赵小雷",
-    "img": "https://ia600805.us.archive.org/0/items/mbid-abd26504-9d44-4b83-9cc1-18bedf64df1d/mbid-abd26504-9d44-4b83-9cc1-18bedf64df1d-46496802397.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-abd26504-9d44-4b83-9cc1-18bedf64df1d-46496802397.jpg",
+    "backup": "https://ia600805.us.archive.org/0/items/mbid-abd26504-9d44-4b83-9cc1-18bedf64df1d/mbid-abd26504-9d44-4b83-9cc1-18bedf64df1d-46496802397.jpg",
     "link": "https://musicbrainz.org/release/abd26504-9d44-4b83-9cc1-18bedf64df1d"
   },
   {
     "title": "無法長大",
-    "img": "https://dn711005.ca.archive.org/0/items/mbid-56f3d34d-4000-4e9a-9836-97ccb3494d0e/mbid-56f3d34d-4000-4e9a-9836-97ccb3494d0e-22771265596.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-56f3d34d-4000-4e9a-9836-97ccb3494d0e-22771265596.jpg",
+    "backup": "https://dn711005.ca.archive.org/0/items/mbid-56f3d34d-4000-4e9a-9836-97ccb3494d0e/mbid-56f3d34d-4000-4e9a-9836-97ccb3494d0e-22771265596.jpg",
     "link": "https://musicbrainz.org/release/56f3d34d-4000-4e9a-9836-97ccb3494d0e"
   },
   {
     "title": "署前街少年",
-    "img": "https://dn710209.ca.archive.org/0/items/mbid-54c56b2a-3dca-4d34-b17c-30b403f9bcfb/mbid-54c56b2a-3dca-4d34-b17c-30b403f9bcfb-39872337668.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-54c56b2a-3dca-4d34-b17c-30b403f9bcfb-39872337668.jpg",
+    "backup": "https://dn710209.ca.archive.org/0/items/mbid-54c56b2a-3dca-4d34-b17c-30b403f9bcfb/mbid-54c56b2a-3dca-4d34-b17c-30b403f9bcfb-39872337668.jpg",
     "link": "https://musicbrainz.org/release/54c56b2a-3dca-4d34-b17c-30b403f9bcfb"
   },
   {
     "title": "Binary",
-    "img": "https://dn710306.ca.archive.org/0/items/mbid-17bf00d2-c515-489a-93ad-59bc1850e531/mbid-17bf00d2-c515-489a-93ad-59bc1850e531-4695818504.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-17bf00d2-c515-489a-93ad-59bc1850e531-4695818504.jpg",
+    "backup": "https://dn710306.ca.archive.org/0/items/mbid-17bf00d2-c515-489a-93ad-59bc1850e531/mbid-17bf00d2-c515-489a-93ad-59bc1850e531-4695818504.jpg",
     "link": "https://musicbrainz.org/release/17bf00d2-c515-489a-93ad-59bc1850e531"
   },
   {
     "title": "Remembrance",
-    "img": "https://ia601407.us.archive.org/14/items/mbid-81bf4bf4-200a-45e3-b37d-54104bdb986c/mbid-81bf4bf4-200a-45e3-b37d-54104bdb986c-46495880838.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-81bf4bf4-200a-45e3-b37d-54104bdb986c-46495880838.jpg",
+    "backup": "https://ia601407.us.archive.org/14/items/mbid-81bf4bf4-200a-45e3-b37d-54104bdb986c/mbid-81bf4bf4-200a-45e3-b37d-54104bdb986c-46495880838.jpg",
     "link": "https://musicbrainz.org/release/81bf4bf4-200a-45e3-b37d-54104bdb986c"
   },
   {
     "title": "Follow",
-    "img": "https://ia903108.us.archive.org/22/items/mbid-00334c4b-33f9-4842-bf81-6910c2c122dc/mbid-00334c4b-33f9-4842-bf81-6910c2c122dc-46495896545.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-00334c4b-33f9-4842-bf81-6910c2c122dc-46495896545.jpg",
+    "backup": "https://ia903108.us.archive.org/22/items/mbid-00334c4b-33f9-4842-bf81-6910c2c122dc/mbid-00334c4b-33f9-4842-bf81-6910c2c122dc-46495896545.jpg",
     "link": "https://musicbrainz.org/release/00334c4b-33f9-4842-bf81-6910c2c122dc"
   },
   {
     "title": "White",
-    "img": "https://ia601407.us.archive.org/2/items/mbid-5dff8c0b-eeef-4159-b1db-4722e197a71a/mbid-5dff8c0b-eeef-4159-b1db-4722e197a71a-46495892441.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-5dff8c0b-eeef-4159-b1db-4722e197a71a-46495892441.jpg",
+    "backup": "https://ia601407.us.archive.org/2/items/mbid-5dff8c0b-eeef-4159-b1db-4722e197a71a/mbid-5dff8c0b-eeef-4159-b1db-4722e197a71a-46495892441.jpg",
     "link": "https://musicbrainz.org/release/5dff8c0b-eeef-4159-b1db-4722e197a71a"
   },
   {
     "title": "依然",
-    "img": "https://ia601508.us.archive.org/1/items/mbid-d0913c18-2d2f-4193-afe7-9ae8e63af4a6/mbid-d0913c18-2d2f-4193-afe7-9ae8e63af4a6-46496314023.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-d0913c18-2d2f-4193-afe7-9ae8e63af4a6-46496314023.jpg",
+    "backup": "https://ia601508.us.archive.org/1/items/mbid-d0913c18-2d2f-4193-afe7-9ae8e63af4a6/mbid-d0913c18-2d2f-4193-afe7-9ae8e63af4a6-46496314023.jpg",
     "link": "https://musicbrainz.org/release/d0913c18-2d2f-4193-afe7-9ae8e63af4a6"
   },
   {
     "title": "想念你",
-    "img": "https://dn711104.ca.archive.org/0/items/mbid-29dbe11b-8c05-4a45-a59a-6b9649b49e37/mbid-29dbe11b-8c05-4a45-a59a-6b9649b49e37-33773607373.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-29dbe11b-8c05-4a45-a59a-6b9649b49e37-33773607373.jpg",
+    "backup": "https://dn711104.ca.archive.org/0/items/mbid-29dbe11b-8c05-4a45-a59a-6b9649b49e37/mbid-29dbe11b-8c05-4a45-a59a-6b9649b49e37-33773607373.jpg",
     "link": "https://musicbrainz.org/release/29dbe11b-8c05-4a45-a59a-6b9649b49e37"
   },
   {
     "title": "初愛",
-    "img": "https://ia601402.us.archive.org/16/items/mbid-f602fc22-d492-4fad-b291-cbbd6d2bc1ed/mbid-f602fc22-d492-4fad-b291-cbbd6d2bc1ed-46496777403.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-f602fc22-d492-4fad-b291-cbbd6d2bc1ed-46496777403.jpg",
+    "backup": "https://ia601402.us.archive.org/16/items/mbid-f602fc22-d492-4fad-b291-cbbd6d2bc1ed/mbid-f602fc22-d492-4fad-b291-cbbd6d2bc1ed-46496777403.jpg",
     "link": "https://musicbrainz.org/release/f602fc22-d492-4fad-b291-cbbd6d2bc1ed"
   },
   {
     "title": "鴿子",
-    "img": "https://dn711103.ca.archive.org/0/items/mbid-da7a8539-c38e-4825-b32a-425e5b96f381/mbid-da7a8539-c38e-4825-b32a-425e5b96f381-17510660768.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-da7a8539-c38e-4825-b32a-425e5b96f381-17510660768.jpg",
+    "backup": "https://dn711103.ca.archive.org/0/items/mbid-da7a8539-c38e-4825-b32a-425e5b96f381/mbid-da7a8539-c38e-4825-b32a-425e5b96f381-17510660768.jpg",
     "link": "https://musicbrainz.org/release/da7a8539-c38e-4825-b32a-425e5b96f381"
   },
   {
     "title": "原色",
-    "img": "https://ia601601.us.archive.org/14/items/mbid-ee173dc3-ae19-4bca-a5cc-2f5e247c8c0d/mbid-ee173dc3-ae19-4bca-a5cc-2f5e247c8c0d-46497080746.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-ee173dc3-ae19-4bca-a5cc-2f5e247c8c0d-46497080746.jpg",
+    "backup": "https://ia601601.us.archive.org/14/items/mbid-ee173dc3-ae19-4bca-a5cc-2f5e247c8c0d/mbid-ee173dc3-ae19-4bca-a5cc-2f5e247c8c0d-46497080746.jpg",
     "link": "https://beta.musicbrainz.org/release/ee173dc3-ae19-4bca-a5cc-2f5e247c8c0d"
   },
   {
     "title": "枯萎颂",
-    "img": "https://dn710305.ca.archive.org/0/items/mbid-53980c78-e0f0-40cc-aca9-41689fd7572e/mbid-53980c78-e0f0-40cc-aca9-41689fd7572e-45956818209.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-53980c78-e0f0-40cc-aca9-41689fd7572e-45956818209.jpg",
+    "backup": "https://dn710305.ca.archive.org/0/items/mbid-53980c78-e0f0-40cc-aca9-41689fd7572e/mbid-53980c78-e0f0-40cc-aca9-41689fd7572e-45956818209.jpg",
     "link": "https://musicbrainz.org/release/53980c78-e0f0-40cc-aca9-41689fd7572e"
   },
   {
     "title": "二十,三十",
-    "img": "https://dn711309.ca.archive.org/0/items/mbid-1b5d50c5-280f-4f38-ab12-ec0066d4814f/mbid-1b5d50c5-280f-4f38-ab12-ec0066d4814f-46495998841.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-1b5d50c5-280f-4f38-ab12-ec0066d4814f-46495998841.jpg",
+    "backup": "https://dn711309.ca.archive.org/0/items/mbid-1b5d50c5-280f-4f38-ab12-ec0066d4814f/mbid-1b5d50c5-280f-4f38-ab12-ec0066d4814f-46495998841.jpg",
     "link": "https://musicbrainz.org/release/1b5d50c5-280f-4f38-ab12-ec0066d4814f"
   },
   {
     "title": "黑神话：悟空",
-    "img": "https://dn721601.ca.archive.org/0/items/mbid-57685e6c-3e11-4cd2-924e-c253f93d67e5/mbid-57685e6c-3e11-4cd2-924e-c253f93d67e5-39858888020.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-57685e6c-3e11-4cd2-924e-c253f93d67e5-39858888020.jpg",
+    "backup": "https://dn721601.ca.archive.org/0/items/mbid-57685e6c-3e11-4cd2-924e-c253f93d67e5/mbid-57685e6c-3e11-4cd2-924e-c253f93d67e5-39858888020.jpg",
     "link": "https://musicbrainz.org/release/57685e6c-3e11-4cd2-924e-c253f93d67e5"
   },
   {
     "title": "笑忘書",
-    "img": "https://dn711102.ca.archive.org/0/items/mbid-4a1698ac-c401-4661-bb57-ff6ea73dfb50/mbid-4a1698ac-c401-4661-bb57-ff6ea73dfb50-1386743885.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-4a1698ac-c401-4661-bb57-ff6ea73dfb50-1386743885.jpg",
+    "backup": "https://dn711102.ca.archive.org/0/items/mbid-4a1698ac-c401-4661-bb57-ff6ea73dfb50/mbid-4a1698ac-c401-4661-bb57-ff6ea73dfb50-1386743885.jpg",
     "link": "https://musicbrainz.org/release/4a1698ac-c401-4661-bb57-ff6ea73dfb50"
   },
   {
     "title": "Lose Control",
-    "img": "https://ia600100.us.archive.org/26/items/mbid-6326ff16-f359-4323-b49e-088aab0a78c9/mbid-6326ff16-f359-4323-b49e-088aab0a78c9-39806433786.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-6326ff16-f359-4323-b49e-088aab0a78c9-39806433786.jpg",
+    "backup": "https://ia600100.us.archive.org/26/items/mbid-6326ff16-f359-4323-b49e-088aab0a78c9/mbid-6326ff16-f359-4323-b49e-088aab0a78c9-39806433786.jpg",
     "link": "https://musicbrainz.org/release/6326ff16-f359-4323-b49e-088aab0a78c9"
   },
   {
     "title": "醜奴兒",
-    "img": "https://archive.org/download/mbid-53b74bc7-1337-4e76-af81-dc78e2e04558/mbid-53b74bc7-1337-4e76-af81-dc78e2e04558-46496320945.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-53b74bc7-1337-4e76-af81-dc78e2e04558-46496320945.jpg",
+    "backup": "https://archive.org/download/mbid-53b74bc7-1337-4e76-af81-dc78e2e04558/mbid-53b74bc7-1337-4e76-af81-dc78e2e04558-46496320945.jpg",
     "link": "https://musicbrainz.org/release/53b74bc7-1337-4e76-af81-dc78e2e04558"
   },
   {
     "title": "The Dark Side of the Moon",
-    "img": "https://dn710607.ca.archive.org/0/items/mbid-956fbc58-362d-43b8-b880-3779e0508559/mbid-956fbc58-362d-43b8-b880-3779e0508559-34025419985.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-956fbc58-362d-43b8-b880-3779e0508559-34025419985.jpg",
+    "backup": "https://dn710607.ca.archive.org/0/items/mbid-956fbc58-362d-43b8-b880-3779e0508559/mbid-956fbc58-362d-43b8-b880-3779e0508559-34025419985.jpg",
     "link": "https://musicbrainz.org/release/b84ee12a-09ef-421b-82de-0441a926375b"
   },
   {
     "title": "我去2000年",
-    "img": "https://ia903102.us.archive.org/5/items/mbid-86ca5fb6-c364-47dc-b734-4be99e8e5215/mbid-86ca5fb6-c364-47dc-b734-4be99e8e5215-46497105091.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-86ca5fb6-c364-47dc-b734-4be99e8e5215-46497105091.jpg",
+    "backup": "https://ia903102.us.archive.org/5/items/mbid-86ca5fb6-c364-47dc-b734-4be99e8e5215/mbid-86ca5fb6-c364-47dc-b734-4be99e8e5215-46497105091.jpg",
     "link": "https://beta.musicbrainz.org/release/86ca5fb6-c364-47dc-b734-4be99e8e5215"
   },
   {
     "title": "呼吸之野",
-    "img": "https://dn711005.ca.archive.org/0/items/mbid-a6d2222d-08fe-444b-b105-3c98980d9c08/mbid-a6d2222d-08fe-444b-b105-3c98980d9c08-41155440529.jpg",
+    "img": "https://local.liwanr.com:2525/image/artwork/mbid-a6d2222d-08fe-444b-b105-3c98980d9c08-41155440529.jpg",
+    "backup": "https://dn711005.ca.archive.org/0/items/mbid-a6d2222d-08fe-444b-b105-3c98980d9c08/mbid-a6d2222d-08fe-444b-b105-3c98980d9c08-41155440529.jpg",
     "link": "https://beta.musicbrainz.org/release/a6d2222d-08fe-444b-b105-3c98980d9c08"
   }
 ]
