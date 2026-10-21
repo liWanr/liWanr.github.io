@@ -22,7 +22,7 @@
 
         let data = {};
         const t = $('script[src*="keys.js"]');
-        fetch(t ? t.src.replace('.js', '.json') : '/javascripts/keys.json').then(r => r.json()).then(d => data = d);
+        fetch(t ? t.src.replace('.js', '.json') : '/json/keys.json').then(r => r.json()).then(d => data = d);
 
         const render = (val) => {
             const q = val.toLowerCase(), isSym = val.length === 1 && !/[a-z0-9]/i.test(val);

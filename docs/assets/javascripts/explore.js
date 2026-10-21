@@ -2,76 +2,84 @@
   if (window.__exploreBound) return;
   window.__exploreBound = true;
 
-  const init = () => {
-    const countEl = document.getElementById("album-count");
-    if (countEl) {
-      countEl.textContent = document.querySelectorAll(".explore li").length;
+  const STEP = 200;  // 同一行相邻两张卡片的错开时间（ms）
+  const JITTER = 40; // 额外随机抖动（ms）
+  const still = matchMedia("(prefers-reduced-motion: reduce)").matches || !window.IntersectionObserver;
+  const queue = new Set();
+  let timer;
+
+  const el = (tag, props, ...kids) => {
+    const e = Object.assign(document.createElement(tag), props);
+    e.append(...kids.filter(Boolean));
+    return e;
+  };
+
+  const shuffle = a => {
+    for (let i = a.length; --i;) {
+      const j = Math.random() * (i + 1) | 0;
+      [a[i], a[j]] = [a[j], a[i]];
     }
+    return a;
+  };
 
-    // 1. 统一处理图片属性与标题补全
-    document.querySelectorAll(".explore img").forEach(img => {
-      img.loading ||= "lazy";
-      img.decoding = "async";
+  // 同一批准备好的卡片：按行分组，行内随机排序，依次错开出现
+  const flush = () => {
+    timer = 0;
+    const rows = {};
+    queue.forEach(c => c._in && (rows[c.offsetTop] ||= []).push(c));
+    queue.clear();
+    Object.values(rows).forEach(row => shuffle(row).forEach((c, i) => {
+      c.style.transitionDelay = `${i * STEP + Math.random() * JITTER}ms`;
+      c.className = "explore-visible";
+    }));
+  };
 
-      const li = img.closest("li");
-      if (!li || li.querySelector(".explore-title")) return;
+  const io = still ? null : new IntersectionObserver(entries => entries.forEach(async ({ target: c, isIntersecting }) => {
+    c._in = isIntersecting;
 
-      const a = img.closest("a") || li;
-      const clone = a.cloneNode(true);
-      clone.querySelectorAll("img").forEach(i => i.remove());
-
-      const titleText = clone.textContent.trim();
-      const finalTitle = titleText || img.alt.trim();
-      if (!finalTitle) return;
-
-      const p = document.createElement("p");
-      p.className = "explore-title";
-      if (titleText) {
-        p.replaceChildren(...clone.childNodes);
-      } else {
-        p.textContent = finalTitle;
-      }
-
-      if (a.tagName === "A") a.replaceChildren(img);
-      li.appendChild(p);
-    });
-
-    const cards = document.querySelectorAll(".explore ul > li");
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
-      cards.forEach(c => c.classList.add("explore-visible"));
+    // 离开视窗：重置，下次进入再播放动画
+    if (!isIntersecting) {
+      queue.delete(c);
+      c.style.transitionDelay = "";
+      c.className = "explore-pending";
       return;
     }
 
-    // 2. 交叉观察器
-    const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach(async entry => {
-        if (!entry.isIntersecting) return;
-        obs.unobserve(entry.target);
+    // 进入视窗：强制立即加载并提高优先级，加载解码完再出现
+    const imgs = [...c.querySelectorAll("img")];
+    imgs.forEach(i => (i.loading = "eager", i.fetchPriority = "high"));
+    await Promise.all(imgs.map(i => i.decode?.().catch(() => {})));
+    if (!c._in) return;
 
-        await Promise.all([...entry.target.querySelectorAll("img")].map(img => img.decode?.().catch(() => {})));
-        
-        requestAnimationFrame(() => {
-          entry.target.classList.remove("explore-pending");
-          entry.target.classList.add("explore-visible");
-        });
-      });
-    }, { threshold: 0.1 });
+    queue.add(c);
+    timer ||= setTimeout(() => requestAnimationFrame(flush), 30);
+  }), { threshold: .1 });
 
-    // 3. 初始化卡片状态
-    cards.forEach(card => {
-      if (card.dataset.exploreReady) return;
-      card.dataset.exploreReady = "true";
-      card.classList.add("explore-pending");
-      observer.observe(card);
-    });
+  // 从 JSON 生成卡片（每个容器只请求一次）
+  const setup = box => (box._p ||= (async () => {
+    let data;
+    try {
+      data = await (await fetch(box.dataset.json)).json();
+    } catch (e) {
+      return console.error("explore: 读取 JSON 失败", box.dataset.json, e);
+    }
+
+    box.replaceChildren(el("ul", null, ...data.map(({ title, sub, img, link }) => {
+      const li = el("li", { className: still ? "explore-visible" : "explore-pending" },
+        el(link ? "a" : "p", link && { href: link, target: "_blank", rel: "noopener" },
+          el("img", { loading: "lazy", decoding: "async", alt: [title, sub].filter(Boolean).join(" "), src: img })),
+        el("p", { className: "explore-title" }, title, sub && el("small", null, " ", sub)));
+      io?.observe(li);
+      return li;
+    })));
+  })());
+
+  const init = async () => {
+    await Promise.all([...document.querySelectorAll(".explore[data-json]")].map(setup));
+    const n = document.getElementById("album-count");
+    if (n) n.textContent = document.querySelectorAll(".explore li").length;
   };
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init, { once: true });
-  } else {
-    init();
-  }
-
-  window.addEventListener("load", init);
-  window.document$?.subscribe?.(init);
+  document.readyState === "loading" ? addEventListener("DOMContentLoaded", init, { once: true }) : init();
+  window.document$?.subscribe(init);
 })();
