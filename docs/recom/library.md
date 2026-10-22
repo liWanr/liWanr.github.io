@@ -31,9 +31,9 @@ comments: false
 | 历史 | | |
 | --- | -: | :-: |
 | **明朝那些事儿**<small>以通俗幽默的笔触重构明朝三百年风云，在宏大事件与人物悲欢中展现权谋、理想主义与人性的终极抉择。</small> | *当年明月* | [:lucide-circle-check:](https://zh.wikipedia.org/wiki/明朝那些事兒) |
+| **伊利亚特**<small>荷马史诗双璧之一，以特洛伊战争最后阶段为背景，在阿喀琉斯的狂怒与英雄们的死亡交响中直面命运的残酷。</small> | *Homer* | [:lucide-circle-check:](https://en.wikipedia.org/wiki/Iliad) |
+| **奥德赛**<small>讲述英雄奥德修斯在特洛伊战后历经十年海上漂泊、重返故乡的传奇，交织着奇幻冒险、生存智慧与深沉的归家意志。</small> | *Homer* | [:lucide-circle-check:](https://en.wikipedia.org/wiki/Odyssey) |
 | **三国志**<small>纪传体史学典范，以严谨干炼的文字还原三国时期的政治博弈、军事较量与历史人物真实的面貌。</small> | *陈寿* | [:lucide-loader:](https://zh.wikipedia.org/wiki/三國志) |
-| **伊利亚特**<small>荷马史诗双璧之一，以特洛伊战争最后阶段为背景，在阿喀琉斯的狂怒与英雄们的死亡交响中直面命运的残酷。</small> | *Homer* | [:lucide-circle-x:](https://en.wikipedia.org/wiki/Iliad) |
-| **奥德赛**<small>讲述英雄奥德修斯在特洛伊战后历经十年海上漂泊、重返故乡的传奇，交织着奇幻冒险、生存智慧与深沉的归家意志。</small> | *Homer* | [:lucide-circle-x:](https://en.wikipedia.org/wiki/Odyssey) |
 
 | 政治寓言 | | |
 | --- | -: | :-: |

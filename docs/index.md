@@ -2,12 +2,7 @@
 title: liWanr
 comments: false
 rss: no
-hide:
-    - navigation
-    - toc
-    - path
-    - feedback
-    - footer
+hide: [navigation, toc, path, feedback, footer]
 ---
 
 ///html | style

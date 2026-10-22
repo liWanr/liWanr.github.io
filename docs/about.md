@@ -1,10 +1,7 @@
 ---
 title: 关于
 created: 2025-02-22T08:30:16
-hide:
-    - navigation
-    - path
-    # - feedback
+hide: [navigation, path]
 ---
 
 ///html | style
