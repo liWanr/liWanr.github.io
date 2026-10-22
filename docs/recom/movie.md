@@ -18,4 +18,4 @@ comments: false
   Links to  [TMDB](https://www.themoviedb.org/)
 </small></p>
 
-<div class="explore movie" data-json="/assets/json/movies.json"></div>
+<div class="explore movie" data-json="https://local.liwanr.com:2525/website/json/movies.json"></div>
