@@ -17,4 +17,4 @@ hide: [toc]
   Links to  [MusicBrainz](https://musicbrainz.org/)
 </small></p>
 
-<div class="explore music" data-json="https://local.liwanr.com:2525/website/json/music.json"></div>
+<div class="explore music" data-json="/assets/json/music.json"></div>
