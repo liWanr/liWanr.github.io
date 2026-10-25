@@ -51,6 +51,9 @@ created: 2026-05-08T07:46:22
 
 -   [**太隐**](https://wangyurui.com/)
     { title="一个人的思想发育史就是他的阅读史" }
+
+-   [**再花**](https://flowersink.com/)
+    { title="好耶！是再花猫猫头ฅ•ω•ฅ" }
 ///
 
 ## 群*
@@ -72,7 +75,7 @@ created: 2026-05-08T07:46:22
     { title="Power by WhiteBear" }
     
 
--   **其他**
+-   **OtherClubs**
 
     [可能吧](https://kenengba.com/){ title="Power by Jason Ng" } |
     [聚合阅读](https://lilog.cn/is/){ title="Power by Lilog" } |
@@ -80,7 +83,7 @@ created: 2026-05-08T07:46:22
 
 ///
 
-## 友情链接
+## 赛博邻居
 
 ///html | small
 :octicons-light-bulb-16:
