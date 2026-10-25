@@ -123,7 +123,18 @@ svg.lucide-loader {
 [data-md-component="announce"] {
   background: radial-gradient(ellipse at 50% 0%, rgb(129 203 218 / 28%), transparent 70%), #1c2429;
   border-bottom: 1px solid hsla(0, 0%, 100%, .1);
-  .md-banner { background-color: transparent;color: #f7f7f8;}
+  .md-banner { background-color: transparent; color: #f7f7f8; }
+}
+
+/* 公告栏：徽章 + 文本 + 叉 同一行 */
+[data-md-component="announce"] .md-banner__inner {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: .5rem;
+  margin: .6rem auto;   /* 恢复 Material 默认 */
+  padding: 0 .8rem;     /* 恢复 Material 默认 */
+  font-size: .7rem;
 }
 
 .mdx-announcement__label {
@@ -138,20 +149,29 @@ svg.lucide-loader {
   color: rgb(82, 207, 232);
   font-size: .57rem;
   line-height: 1.4;
+  white-space: nowrap;
 }
 
 a.mdx-announcement__message {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: .5rem;
+  display: block;            /* 不能用 inline-flex，否则省略号失效 */
+  flex: 1 1 0;
+  min-width: 0;              /* 允许收缩到比内容更窄 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: #fff !important;
   line-height: 1.5;
-  vertical-align: middle;
-  .mdx-announcement__label { align-self: center; }
 }
 
-[dir="ltr"] .md-banner__button { color: #fff; }
+/* 叉：放到最右，不收缩 */
+[data-md-component="announce"] .md-banner__inner .md-banner__button {
+  order: 3;
+  flex: 0 0 auto;
+  position: static;          /* 取消 Material 默认 sticky/float */
+  float: none;
+  margin: 0;
+  color: #fff;
+}
 
 .scroll-progress-bar {
   position: fixed;
@@ -192,7 +212,7 @@ a.mdx-announcement__message {
   font-size: 80%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  a {color: var(--md-default-fg-color);}
+  a { color: var(--md-default-fg-color); }
   &::before, &::after {
     content: '';
     flex: 1;

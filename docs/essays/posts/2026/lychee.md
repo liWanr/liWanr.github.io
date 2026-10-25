@@ -9,9 +9,9 @@ description: 荔枝甜不甜，尝一口就知道了，可我偏偏想给它写�
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">
 
-<p align="right" style="margin-bottom: 0px;" markdown>
-《停[^1]》阅记
-</p>
+<h1 style="margin-bottom: 0px;">快看！荔枝还在树上？哈哈哈</h1>
+
+<p style="margin-top: 0px;" markdown><small><em>《停[^1]》阅记</em></small></p>
 
 [^1]: 天一联考作文《停》 [原文](/quote/停/)
 

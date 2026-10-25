@@ -9,9 +9,11 @@ description: 他自妖梦中，完全醒过来。是一回戏弄。太美满了�
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">
 
-<p align="right" style="margin-bottom: 0px;" markdown>
-《霸王别姬》[^1]阅记
-</p>
+<h1 style="margin-bottom: 0px;">尘归尘</h1>
+
+<p style="margin-top: 0px;" markdown><small><em>《霸王别姬[^1]》阅记</em></small></p>
+
+[^1]: 《霸王别姬》, 作者李碧华, 1985年首次出版, 后经陈凯歌改编为同名电影(1993)。
 
 > 婊子无情，戏子无义。婊子合该在床上有情，戏子，只能在台上有义。
 
@@ -70,5 +72,3 @@ description: 他自妖梦中，完全醒过来。是一回戏弄。太美满了�
 <p align="right" markdown>
 二六年八月十七日·成文
 </p>
-
-[^1]: 《[霸王别姬](https://zh.wikipedia.org/wiki/霸王别姬_(小說))》, 作者李碧华, 1985年首次出版, 后经陈凯歌改编为同名电影(1993)。

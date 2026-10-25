@@ -9,9 +9,11 @@ description: 这书最戳我的地方不是没看见，是回避，是看见之�
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">
 
-<p align="right" style="margin-bottom: 0px;" markdown>
-《房间里的大象》[^1]阅记
-</p>
+<h1 style="margin-bottom: 0px;">快看！荔枝还在树上？哈哈哈</h1>
+
+<p style="margin-top: 0px;" markdown><small><em>《房间里的大象[^1]》阅记</em></small></p>
+
+[^1]: [美]Eviatar Zerubavel, 《The Elephant in the Room: Silence and Denial in Everyday Life》,2006.03.09
 
 或许那些没说出口的，才最沉。
 
@@ -31,5 +33,3 @@ description: 这书最戳我的地方不是没看见，是回避，是看见之�
 ///html | figcaption[align="center"]
 大象 / 图源: [Backiee](https://backiee.com)
 ///
-
-[^1]: [美][Eviatar Zerubavel](https://en.wikipedia.org/wiki/Eviatar_Zerubavel), 《The Elephant in the Room: Silence and Denial in Everyday Life》,2006.03.09
