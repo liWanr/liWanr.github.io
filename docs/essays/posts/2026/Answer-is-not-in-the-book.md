@@ -9,9 +9,11 @@ description: 如果一本书最后什么都没有教会我，却让我带着一�
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">
 
-<p align="right" markdown>
-RE《[承认吧，你其实根本不爱看书](https://blog.solazy.me/20260729/)》
-</p>
+<h1 style="margin-bottom: 0px;">不要试图在书里找答案</h1>
+
+<p style="margin-top: 0px;" markdown><small><em>RE《[承认吧，你其实根本不爱看书](https://blog.solazy.me/20260729/)》</em></small></p>
+
+[^1]: 
 
 最近看到这篇我认为很好的文章。作者坦然地承认了自己不爱看书的事实，还为自己不爱看书找了理由 - ***低效：***
 
