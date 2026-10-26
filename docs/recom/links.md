@@ -23,6 +23,18 @@ created: 2026-05-08T07:46:22
 .md-content__inner a:hover{
     color: var(--md-accent-fg-color) !important;
 }
+
+/* 整卡可点击：只对带 .clickable 的 grid cards 生效 */
+.md-typeset .grid.cards.clickable > ul > li {
+  position: relative;   /* 作为伪元素的定位参照 */
+  cursor: pointer;
+}
+
+.md-typeset .grid.cards.clickable > ul > li a::after {
+  content: "";
+  position: absolute;
+  inset: 0;             /* 撑满整个卡片 */
+}
 </style>
 
 ## 视奸
@@ -32,7 +44,7 @@ created: 2026-05-08T07:46:22
 以下是**我关注的博客**，方便时不时来 ~~视奸~~ 欣赏一下，我关注你就好，不必交换。可哪天消失了也请不用难过，不是你的文章不够好，是我太花心了。但如果被冒犯到请[**联系我**](mailto:itsWanr@iCloud.com)，我会尽快删除。
 ///
 
-///html | div.grid.cards[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr))']
+///html | div.grid.cards.clickable[style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); font-family: 'Noto Serif SC', 'Songti SC';"]
 
 -   [**fuXes**](https://fuxes.cn/)
     { title="人生如逆旅，你我皆行人" }
@@ -63,16 +75,15 @@ created: 2026-05-08T07:46:22
 以下博客聚&合网站为我加入的组织，我也退出过一些，加一个自己喜欢的就好。
 ///
 
-///html | div.grid.cards
+///html | div.grid.cards[style="font-family: 'Noto Serif SC', 'Songti SC';"]
 
--   **BlogsClub**
+-   **BlogsClub** <small>*PowerBy WhiteBear*</small>
 
     [官网](https://www.blogsclub.org/?inviteCode=6a8532bb) |
     [申请](https://www.blogsclub.org/apply.html?inviteCode=6a8532bb) |
     [空间穿梭](https://www.blogsclub.org/go) |
     [广场](https://www.blogsclub.org/members.html?inviteCode=6a8532bb) |
     [我](https://www.blogsclub.org/blog/792.html?inviteCode=6a8532bb)
-    { title="Power by WhiteBear" }
     
 
 -   **OtherClubs**
@@ -90,40 +101,40 @@ created: 2026-05-08T07:46:22
 以下是**我的博客邻居**，欢迎交换链接。
 ///
 
-///html | div.grid.cards[style='grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr))']
+///html | div.grid.cards.clickable[style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); font-family: 'Noto Serif SC', 'Songti SC';"]
 
--   [**DAI X.L.**](https://dxlcq.cn/)
-    { title="骄骄是骄傲的骄" style="font-family: 'Noto Serif SC', 'Songti SC';" }
+-   [DAI X.L.](https://dxlcq.cn/)
+    { title="骄骄是骄傲的骄"}
 
--   [**Jason**](https://i.limhy.cn/)
+-   [Jason](https://i.limhy.cn/)<br>
     { title="我退网了" }
 
--   [**拥抱日出的小屋**](https://blog.byside.top/)
+-   [拥抱日出的小屋](https://blog.byside.top/)
     { title="拥抱日出，也拥抱生活" }
 
--   [**白熊**](https://whitebear.im/)
+-   [WhiteBear](https://whitebear.im/)
     { title="May everything go well." }
 
--   [**索玛**](https://www.suo.ma/)
+-   [索玛](https://www.suo.ma/)
 
--   [**Sevenalist**](https://dengcz.cn/)
+-   [Sevenalist](https://dengcz.cn/)
     { title="Never Stop Thinking." }
 
--   [**WanJc**](https://wanjc.top/)
+-   [WanJc](https://wanjc.top/)
 
--   [**CaoY**](http://caoyan.online)
+-   [CaoY](http://caoyan.online)
     { title="A better day when night belongs to dawn" }
 
--   [**合荒小站**](https://hehuang.site)
+-   [合荒小站](https://hehuang.site)
     { title="万物合鸣·独守一荒" }
 
--   [**Qvi**](https://qvixxxi.github.io/)
+-   [Qvi](https://qvixxxi.github.io/)
     { title="万物合鸣·独守一荒" }
 
--   [**Sunrise's Blog**](https://wowtang.top)
+-   [Sunrise's Blog](https://wowtang.top)
     { title="心境自成天地，地狱可化作桃源，天堂也能沦为苦海。" }
 
--   [**日和**](https://codevfun.work/)
+-   [日和](https://codevfun.work/)
     { title="想把一些代码笔记、阅读碎片和日常里的小幸福慢慢留下来，以及分享一些有趣的东西" }
 
 ///

@@ -9,7 +9,7 @@ description: 书翻过去的时候，人被文字过了一遍，像水从地上�
 
 <link rel="stylesheet" href="/assets/stylesheets/essays.css">
 
-我问我[朋友](https://dengcz.cn/about/me/)这个问题，他说可能是对那本书不感兴趣，我是持怀疑态度的。
+我问 [@Sevenalist](https://dengcz.cn/about/me/) 这个问题，他说可能是对那本书不感兴趣，我是持怀疑态度的。
 
 我不确定他说“我感兴趣的书，哪怕初中只读了一次，现在都还记得”是书名还是书里的内容，因为如果是内容那简直是太离谱了。本想着与他辩一番高低，但感觉又没有必要在这种事情上浪费时间，万一人家真能记住呢。
 
