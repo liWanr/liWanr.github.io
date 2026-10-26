@@ -5,7 +5,7 @@ rss: no
 hide: [navigation, toc, path, feedback, footer]
 ---
 
-///html | style
+<style>
 .md-main{
     text-align: center;
     display: flex;
@@ -25,15 +25,14 @@ hide: [navigation, toc, path, feedback, footer]
 .headerlink {
     display: none !important;
 }
-///
+</style>
 
 # Hello, I'm liWanr! { style="margin: 0.6em auto 0 auto; font-size:4em;" }
 
 记录「技术与思考」的个人空间，也是我在数字世界中圈出的三分地
 { style="margin-top:0px" }
 
-[:lucide-mail:](mailto:itsWanr@iCloud.com){ title="邮箱" rel="me" }
-| [:simple-github:](https://github.com/liWanr){ title="GitHub" rel="me" }
-| [:simple-telegram:](https://t.me/itsWanr){ title="Telegram" rel="me" }
-| [:simple-steam:](https://steamcommunity.com/profiles/76561199004333008/){ title="Steam" rel="me" }
-| [:simple-gravatar:](https://gravatar.com/liwanr){ title="Gravatar" rel="me" }
+[**Email**](mailto:itsWanr@iCloud.com){ rel="me" } <small>/</small>
+[Gravatar](https://gravatar.com/liwanr){ rel="me" } <small>/</small>
+[Steam](https://steamcommunity.com/profiles/76561199004333008/){ rel="me" } <small>/</small>
+[**Links**](/recom/links/)
