@@ -13,4 +13,4 @@ PyYAML==6.0.3
 requests==2.34.2
 tomli==2.5.0
 urllib3==2.8.0
-zensical==0.0.72
+zensical==0.0.73
