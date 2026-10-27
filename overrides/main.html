@@ -31,4 +31,121 @@
   <link rel="authorization_endpoint" href="https://indieauth.com/auth">
   <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
 
-  {% endblock %}
+  <!-- 样式：跟随系统深色/浅色模式，右下角纯数字百分比，从下往上 slide-up 动画 -->
+  <style>
+    #page-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 999999;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 4vw;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      transition: transform 0.8s cubic-bezier(0.76, 0, 0.24, 1);
+      transform: translateY(0);
+    }
+
+    #page-loader.slide-up {
+      transform: translateY(-100%);
+    }
+
+    /* 内部路由跳转时快速隐藏，避免干扰 */
+    #page-loader.no-anim {
+      display: none !important;
+    }
+
+    .loader-counter {
+      font-size: clamp(5rem, 15vw, 13rem);
+      font-weight: 200;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* 浅色模式：白底黑字 */
+    #page-loader {
+      background-color: #ffffff;
+      color: #111111;
+    }
+
+    /* 深色模式：黑底白字 */
+    @media (prefers-color-scheme: dark) {
+      #page-loader {
+        background-color: #0c1013;
+        color: #f7f7f8;
+      }
+    }
+
+    [data-md-color-scheme="slate"] #page-loader {
+      background-color: #0c1013;
+      color: #f7f7f8;
+    }
+
+    [data-md-color-scheme="default"] #page-loader {
+      background-color: #ffffff;
+      color: #111111;
+    }
+  </style>
+{% endblock %}
+
+{% block container %}
+  <div id="page-loader">
+    <div class="loader-counter" id="loader-counter">0%</div>
+  </div>
+
+  {{ super() }}
+
+  <script>
+    (function() {
+      const loader = document.getElementById('page-loader');
+      const counter = document.getElementById('loader-counter');
+      if (!loader || !counter) return;
+
+      // 判断页面加载类型
+      const navEntries = performance.getEntriesByType("navigation");
+      const navType = navEntries.length > 0 ? navEntries[0].type : "";
+      const isReload = navType === "reload";
+      const hasVisited = sessionStorage.getItem('site_visited');
+
+      // 如果不是第一次打开，且不是刷新页面（即属于站内跳转），直接隐藏遮罩
+      if (hasVisited && !isReload) {
+        loader.classList.add('no-anim');
+        loader.remove();
+        return;
+      }
+
+      // 标记会话已建立
+      sessionStorage.setItem('site_visited', 'true');
+
+      // 首次进入/刷新页面时执行数字增长与 slide-up 上滑转场
+      let currentProgress = 0;
+      
+      const updateCounter = (target, speed, callback) => {
+        const interval = setInterval(() => {
+          currentProgress += Math.floor(Math.random() * 8) + 3;
+          if (currentProgress >= target) {
+            currentProgress = target;
+            clearInterval(interval);
+            if (callback) callback();
+          }
+          counter.textContent = currentProgress + '%';
+        }, speed);
+      };
+
+      const fontReady = document.fonts ? document.fonts.ready : Promise.resolve();
+      const maxTimeout = new Promise((resolve) => setTimeout(resolve, 2000));
+
+      updateCounter(80, 25, () => {
+        Promise.race([fontReady, maxTimeout]).then(() => {
+          updateCounter(100, 10, () => {
+            setTimeout(() => {
+              loader.classList.add('slide-up');
+              setTimeout(() => loader.remove(), 800);
+            }, 100);
+          });
+        });
+      });
+    })();
+  </script>
+{% endblock %}
