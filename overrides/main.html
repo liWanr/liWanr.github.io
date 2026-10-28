@@ -1,5 +1,191 @@
 {% extends "base.html" %}
 
+{% block site_meta %}
+{{ super() }}
+<style>
+  :root { color-scheme: light dark; }
+  html.pl-lock { overflow: hidden; }
+  #preloader {
+    --pl-base: #111111;
+    --pl-fill: #ffffff;
+    position: fixed; inset: 0; z-index: 2147483647;
+    background: var(--pl-base);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    transition: opacity .6s ease, visibility .6s ease;
+  }
+  @media (prefers-color-scheme: dark) {
+    #preloader { --pl-base: #f2f2f2; --pl-fill: #0b0b0b; }
+  }
+  #preloader.leave { opacity: 0; visibility: hidden; }
+  #preloader .pl-fill {
+    position: absolute; inset: 0; background: var(--pl-fill);
+    transform: scaleY(0); transform-origin: bottom; will-change: transform;
+  }
+  #preloader .pl-ui {
+    position: absolute; inset: 0; padding: 2rem; box-sizing: border-box;
+    display: flex; flex-direction: column; justify-content: space-between;
+    color: #fff; mix-blend-mode: difference;
+  }
+  #preloader .pl-name { font-size: 1.1rem; font-weight: 600; }
+  #preloader .pl-role { font-size: .8rem; opacity: .7; margin-top: .2rem; }
+  #preloader .pl-count {
+    font-size: clamp(3.5rem, 14vw, 10rem); font-weight: 600; line-height: 1;
+    font-variant-numeric: tabular-nums; letter-spacing: -.02em;
+  }
+</style>
+<script>
+(function () {
+  var root = document.documentElement;
+
+  /* ---------- 0. 是否播放：刷新必播；其他情况仅本标签页第一次播 ---------- */
+  var KEY = "pl-seen";
+  var play = true;
+  var navType = "";
+  try {
+    var nav = performance.getEntriesByType("navigation")[0];
+    navType = nav ? nav.type : "";
+  } catch (e) {}
+
+  try {
+    var seen = sessionStorage.getItem(KEY);
+    sessionStorage.setItem(KEY, "1");
+    if (navType !== "reload" && seen) play = false;
+  } catch (e) {}
+
+  if (!play) return;
+
+  function whenLoaded(cb) {
+    if (document.readyState === "complete") cb();
+    else window.addEventListener("load", cb, { once: true });
+  }
+
+  /* ---------- 1. 加载页 ---------- */
+  var el = document.createElement("div");
+  el.id = "preloader";
+  el.innerHTML =
+    '<div class="pl-fill"></div>' +
+    '<div class="pl-ui">' +
+      '<div><div class="pl-name">liWanr</div><em class="pl-role">Every nobody is somebody.</em></div>' +
+      '<div class="pl-count">0%</div>' +
+    '</div>';
+  root.appendChild(el);
+  root.classList.add("pl-lock");
+
+  var fill = el.querySelector(".pl-fill");
+  var count = el.querySelector(".pl-count");
+  var cap = 35, cur = 0, loaded = false, done = false;
+  var t0 = performance.now(), MIN = 1200;   // 至少展示 1.2 秒
+
+  function setCap(v) { if (v > cap) cap = v; }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    setCap(60);
+    var imgs = Array.prototype.slice.call(document.images);
+    var total = imgs.length, n = 0;
+    function bump() { n++; setCap(60 + Math.round(35 * n / total)); }
+    imgs.forEach(function (i) {
+      if (i.complete) n++;
+      else { i.addEventListener("load", bump); i.addEventListener("error", bump); }
+    });
+    setCap(total ? 60 + Math.round(35 * n / total) : 95);
+  });
+
+  whenLoaded(function () { loaded = true; });
+
+  function render(p) {
+    fill.style.transform = "scaleY(" + (p / 100) + ")";
+    count.textContent = p + "%";
+  }
+
+  function finish() {
+    if (done) return; done = true;
+    render(100);
+    setTimeout(function () {
+      el.classList.add("leave");
+      root.classList.remove("pl-lock");
+      setTimeout(function () { el.remove(); }, 700);
+    }, 300);
+  }
+
+  function frame(now) {
+    if (done) return;
+    var target = (loaded && now - t0 >= MIN) ? 100 : Math.min(cap, 99);
+    cur = Math.min(target, cur + (target - cur) * 0.05 + 0.1);
+    var p = Math.floor(cur);
+    render(p);
+    if (p >= 100) return finish();
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+  setTimeout(finish, 15000);   // 保险：最多 15 秒必定退场
+
+  /* ---------- 2. 后台静默预加载 ---------- */
+  var SITEMAP = new URL("{{ base_url }}/sitemap.xml", location.href).href;
+
+  function prefetchAll() {
+    var c = navigator.connection;
+    if (c && (c.saveData || /2g/.test(c.effectiveType || ""))) return;
+
+    var seenUrl = {};
+    seenUrl[location.origin + location.pathname] = true;
+
+    function sameOrigin(u) {
+      try { var x = new URL(u); return x.origin === location.origin ? x.href.split("#")[0] : null; }
+      catch (e) { return null; }
+    }
+
+    function getAsset(url) {
+      if (seenUrl[url]) return;
+      seenUrl[url] = true;
+      fetch(url, { credentials: "same-origin", priority: "low" }).catch(function () {});
+    }
+
+    fetch(SITEMAP, { credentials: "same-origin" })
+      .then(function (r) { return r.ok ? r.text() : ""; })
+      .then(function (xml) {
+        var pages = [];
+        (xml.match(/<loc>[^<]+<\/loc>/g) || []).forEach(function (m) {
+          var path = new URL(m.replace(/<\/?loc>/g, "")).pathname;
+          pages.push(location.origin + path);
+        });
+        var i = 0, running = 0, MAX = 2;
+
+        function schedule() {
+          if (window.requestIdleCallback) requestIdleCallback(next, { timeout: 2000 });
+          else setTimeout(next, 200);
+        }
+
+        function next() {
+          while (running < MAX && i < pages.length) {
+            (function (url) {
+              if (seenUrl[url]) return;
+              seenUrl[url] = true;
+              running++;
+              fetch(url, { credentials: "same-origin", priority: "low" })
+                .then(function (r) { return r.ok ? r.text() : ""; })
+                .then(function (html) {
+                  var doc = new DOMParser().parseFromString(html, "text/html");
+                  doc.querySelectorAll("link[rel=stylesheet][href], script[src], img[src]")
+                    .forEach(function (n) {
+                      var u = sameOrigin(new URL(n.getAttribute("href") || n.getAttribute("src"), url).href);
+                      if (u) getAsset(u);
+                    });
+                })
+                .catch(function () {})
+                .then(function () { running--; schedule(); });
+            })(pages[i++]);
+          }
+        }
+        schedule();
+      })
+      .catch(function () {});
+  }
+
+  whenLoaded(function () { setTimeout(prefetchAll, 1500); });
+})();
+</script>
+{% endblock %}
+
 {% block announce %}
 <span class="mdx-announcement__label">新文章</span>
 <a href="/essays/2026/farewell-to-fate/" class="mdx-announcement__message">
@@ -17,135 +203,4 @@
   {% else %}
     <title>{{ config.site_name }}</title>
   {% endif %}
-{% endblock %}
-
-{% block extrahead %}
-  {{ super() }}
-
-  <meta name="blogsclub-verify" content="2add1d537e9341e19060c2423286d265"/>
-  <link rel="prefetch" as="image" href="https://www.blogsclub.org/badge/liwanr.com"/>
-  
-  <link rel="webmention" href="https://webmention.io/liwanr.com/webmention"/>
-  <link rel="pingback" href="https://webmention.io/liwanr.com/xmlrpc"/>
-
-  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-
-  <!-- 样式：跟随系统深色/浅色模式，右下角纯数字百分比，从下往上 slide-up 动画 -->
-  <style>
-    #page-loader {
-      position: fixed;
-      inset: 0;
-      z-index: 999999;
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-      padding: 4vw;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      transition: transform 0.8s cubic-bezier(0.76, 0, 0.24, 1);
-      transform: translateY(0);
-    }
-
-    #page-loader.slide-up {
-      transform: translateY(-100%);
-    }
-
-    /* 内部路由跳转时快速隐藏，避免干扰 */
-    #page-loader.no-anim {
-      display: none !important;
-    }
-
-    .loader-counter {
-      font-size: clamp(5rem, 15vw, 13rem);
-      font-weight: 200;
-      line-height: 1;
-      letter-spacing: -0.04em;
-      font-variant-numeric: tabular-nums;
-    }
-
-    /* 浅色模式：白底黑字 */
-    #page-loader {
-      background-color: #ffffff;
-      color: #111111;
-    }
-
-    /* 深色模式：黑底白字 */
-    @media (prefers-color-scheme: dark) {
-      #page-loader {
-        background-color: #0c1013;
-        color: #f7f7f8;
-      }
-    }
-
-    [data-md-color-scheme="slate"] #page-loader {
-      background-color: #0c1013;
-      color: #f7f7f8;
-    }
-
-    [data-md-color-scheme="default"] #page-loader {
-      background-color: #ffffff;
-      color: #111111;
-    }
-  </style>
-{% endblock %}
-
-{% block container %}
-  <div id="page-loader">
-    <div class="loader-counter" id="loader-counter">0%</div>
-  </div>
-
-  {{ super() }}
-
-  <script>
-    (function() {
-      const loader = document.getElementById('page-loader');
-      const counter = document.getElementById('loader-counter');
-      if (!loader || !counter) return;
-
-      // 判断页面加载类型
-      const navEntries = performance.getEntriesByType("navigation");
-      const navType = navEntries.length > 0 ? navEntries[0].type : "";
-      const isReload = navType === "reload";
-      const hasVisited = sessionStorage.getItem('site_visited');
-
-      // 如果不是第一次打开，且不是刷新页面（即属于站内跳转），直接隐藏遮罩
-      if (hasVisited && !isReload) {
-        loader.classList.add('no-anim');
-        loader.remove();
-        return;
-      }
-
-      // 标记会话已建立
-      sessionStorage.setItem('site_visited', 'true');
-
-      // 首次进入/刷新页面时执行数字增长与 slide-up 上滑转场
-      let currentProgress = 0;
-      
-      const updateCounter = (target, speed, callback) => {
-        const interval = setInterval(() => {
-          currentProgress += Math.floor(Math.random() * 8) + 3;
-          if (currentProgress >= target) {
-            currentProgress = target;
-            clearInterval(interval);
-            if (callback) callback();
-          }
-          counter.textContent = currentProgress + '%';
-        }, speed);
-      };
-
-      const fontReady = document.fonts ? document.fonts.ready : Promise.resolve();
-      const maxTimeout = new Promise((resolve) => setTimeout(resolve, 2000));
-
-      updateCounter(80, 25, () => {
-        Promise.race([fontReady, maxTimeout]).then(() => {
-          updateCounter(100, 10, () => {
-            setTimeout(() => {
-              loader.classList.add('slide-up');
-              setTimeout(() => loader.remove(), 800);
-            }, 100);
-          });
-        });
-      });
-    })();
-  </script>
 {% endblock %}
