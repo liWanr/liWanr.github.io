@@ -6,7 +6,7 @@ hide: [path]
 
 <h1 style="margin-bottom: 0px;">隐私政策</h1>
 
-<p style="margin-top: 0px;"><small><em>最后更新及生效日期: 2026-10-22 16:54:45 UTC+8</em></small></p>
+<p style="margin-top: 0px;"><small><em>最后更新及生效日期: 2026-10-31 23:03:30 UTC+8</em></small></p>
 
 ## 基本说明
 
@@ -33,7 +33,7 @@ Giscus 及 GitHub 均为第三方服务，都有其自身的隐私政策，建�
 本站使用**站主自建的外部闭源订阅系统**管理新闻简报订阅，您的电子邮件地址仅用于接收新闻简报通知。您也可以随时点击任何简报邮件中的退订链接或直接与我联系以取消订阅。当您订阅本站的新闻简报时，订阅系统会收集您的:
 
 - 电子邮件地址
-- 订阅日期和时间
+- 订阅时间和日期
 - IP 地址（用于防止欺诈）
 
 其中所有数据都存储在 Cloudflare 的 D1 SQLite 数据库中。Cloudflare 的 D1 是一项第三方服务，有其自身的隐私政策，建议您查看
@@ -47,11 +47,23 @@ Giscus 及 GitHub 均为第三方服务，都有其自身的隐私政策，建�
 
 - IP 地址
 - 浏览器类型
-- 访问时间
+- 访问时间和日期
 
 Cloudflare 的 Turnstile 是一项第三方服务，有其自身的隐私政策，建议您查看
 [**Cloudflare 通用隐私政策**](https://www.cloudflare.com/privacypolicy/) /
 [**Turnstile 隐私政策**](https://www.cloudflare.com/turnstile-privacy-policy/)
+以了解他们如何处理您的数据。
+
+### 4. 语言翻译
+
+本站使用 jsDelivr CDN 提供的 OpenCC 脚本实现网页动态简繁语言切换功能，该过程完全在客户端本地完成，本站不会收集或存储您的任何语言偏好数据。当加载切换脚本时，第三方服务商可能会收集以下信息:
+
+- IP 地址
+- 浏览器及设备信息
+- 访问时间和日期
+
+jsDelivr 是一项第三方服务，有其自身的隐私政策，建议您查看
+[**jsDelivr 隐私政策**](https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net)
 以了解他们如何处理您的数据。
 
 ## 数据安全
