@@ -7,6 +7,7 @@ site_description: "Every nobody is somebody."
 # 仓库
 repo_url: https://github.com/liWanr/liWanr.github.io
 repo_name: GitHub/liWanr
+edit_uri: "edit/main/docs/"
 
 # 版权
 copyright: <strong>liWanr &copy; 2024-2026</strong>
@@ -35,7 +36,6 @@ theme:
       lines: 15
   features:
     - announce.dismiss
-    # - content.action.copy            # 在页面顶部添加复制为markdown的按钮，但是不知道为什么没效果
     - content.action.view            # 在页面顶部添加查看链接，指向 GitHub 上的对应文件，方便读者查看源内容
     - content.code.annotate          # 在代码关键位置添加图标 + 鼠标悬停提示
     - content.code.copy              # 在代码块中添加一键复制按钮，无需先选中内容
