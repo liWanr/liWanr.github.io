@@ -25,7 +25,7 @@ comments: false
 
 | 古书 | | |
 | --- | -: | :-: |
-| **推背图**<small>中国古代第一预言奇书，融合易学与图谶隐喻历史兴衰变局，寄托古人对天道国运的终极窥探。</small> | *袁天罡、李淳风* | [:lucide-circle-check:](/quote/推背图/) |
+| **推背图**<small>中国古代第一预言奇书，融合易学与图谶隐喻历史兴衰变局，寄托古人对天道国运的终极窥探。</small> | *袁天罡、李淳风* | [:lucide-circle-check:](./historicalArticles/TuiBeiTu/) |
 | **孙子兵法**<small>超越具体战术的兵家圣典，从谋略、地形到心理博弈，在止戈与全胜之间凝炼生存智慧与对人性的深刻洞察。</small> | *孙武* | :lucide-circle-x: |
 
 | 历史 | | |
