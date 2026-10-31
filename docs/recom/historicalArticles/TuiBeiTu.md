@@ -1,24 +1,22 @@
 ---
 title: 推背图
 created: 2026-04-12T07:26:33
-tags: [Books]
+tags: [历史文章]
 authors: [袁天罡, 李淳风, 金圣叹]
-hide: [navigation]
 ---
+
+<script src="/assets/javascripts/translate.js"></script>
 
 <h1 style="margin-bottom: 0px;">推背图</h1>
 
-<p style="margin-top: 0px;" markdown><small><em>
-:octicons-light-bulb-16:
-此作品在全世界都属于公有领域，因为作者逝世已经超过100年，且作品于1931年1月1日之前出版。</em></small></p>
+<p style="margin-top: 0px;" markdown><small>
+:fontawesome-brands-creative-commons-pd:
+此作品在全世界都属于公有领域，因为作者逝世已经超过100年，且作品于1931年1月1日之前出版。</small></p>
 
-///html | div.grid.cards
-
-袁天罡、李淳风 **作**
-
-金圣叹 **批注**
-
-///
+<div class="grid cards">
+<div><strong>袁天罡</strong>、<strong>李淳风</strong> 作 <small>/</small> <strong>金圣叹</strong> 批注 </div>
+<div style="text-align:right;">[<a href="javascript:void(0);" id="zh-convert-btn" onclick="toggleLanguage()" style="cursor: pointer; text-decoration: underline;">繁體中文</a>]</div>
+</div>
 
 ## 金圣叹序
 
@@ -1587,4 +1585,3 @@ hide: [navigation]
 
 > **金圣叹**<br>
 > 一人在前，一人在后，有往无来，无独有偶，以此殿图，其寓意至深远。盖无象之象胜于有象。我以不解解之，著者有知当亦许可。
-

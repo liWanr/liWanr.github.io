@@ -261,6 +261,9 @@ nav:
       - recom/movie.md
       - recom/library.md
       - recom/music.md
+    - 历史文章:
+      - recom/historicalArticles/TuiBeiTu.md
+      - recom/historicalArticles/RangXianZiMingBenZhiLing.md
   - ABOUT:
     - about.md
     - about/LICENSE.md
