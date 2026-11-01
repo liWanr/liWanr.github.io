@@ -1,0 +1,65 @@
+{
+  "古书": [ {
+      "title": "推背图",
+      "sub": "中国古代第一预言奇书，融合易学与图谶隐喻历史兴衰变局，寄托古人对天道国运的终极窥探。",
+      "author": "袁天罡、李淳风",
+      "status": "done",
+      "link": "./historicalArticles/TuiBeiTu/"
+    }, {
+      "title": "孙子兵法",
+      "sub": "超越具体战术的兵家圣典，从谋略、地形到心理博弈，在止戈与全胜之间凝炼生存智慧与对人性的深刻洞察。",
+      "author": "孙武",
+      "status": "todo"
+    }
+  ],
+  "历史": [ {
+      "title": "荷马史诗",
+      "sub": "由《伊利亚特》与《奥德赛》组成的西方文学源头，讲述特洛伊战争与英雄漂泊归途的历险，开创以“人”为核心的文学创作。",
+      "author": "Homer",
+      "status": "done", "link": "/essays/2026/farewell-to-fate/"
+    }, {
+      "title": "三国志",
+      "sub": "纪传体史学典范，以严谨干炼的文字还原三国时期的政治博弈、军事较量与历史人物真实的面貌。",
+      "author": "陈寿",
+      "status": "reading", "link": "https://zh.z-library.sk/book/qOXqaexBRk/三国志全译版.html"
+    }
+  ],
+  "政治寓言": [ {
+      "title": "动物庄园",
+      "sub": "以动物推翻人类统治的寓言，深刻讽刺集权权力的演变过程，揭示理想主义如何在机制运作中走向自我背叛与变质。",
+      "author": "George Orwell",
+      "status": "done",
+      "link": "/essays/2026/pigs-and-the-mirror/"
+    }
+  ],
+  "社会学": [ {
+      "title": "房间里的大象",
+      "sub": "聚焦社会心理学中的“合谋沉默”，探讨人们如何通过集体无视与语言禁忌，共同回避那些显而易见却敏感的真相。",
+      "author": "Eviatar Zerubavel",
+      "status": "done", "link": "/essays/2026/named-silence/"
+    }, {
+      "title": "乌合之众",
+      "sub": "大众心理学奠基之作，剖析个体一旦融入群体便会丧失理性判断与独立思考，揭示无意识群体狂热、盲从与易被操纵的本质。",
+      "author": "Gustave Le Bon",
+      "status": "todo"
+    }
+  ],
+  "小说": [ {
+      "title": "霸王别姬",
+      "sub": "以半个世纪的京剧浮沉与几位主角的情感纠葛为主线，将个人痴狂、执念与命运的悲剧交织于剧烈的时代巨浪变迁之中。",
+      "author": "李碧华",
+      "status": "done",
+      "link": "/essays/2026/dust2dust/"
+    }, {
+      "title": "推拿",
+      "sub": "以盲人推拿师这一边缘群体为切口，剥离廉价的同情，深入黑暗之中直面他们对尊严、欲望、爱情与自我认同的强烈渴望。",
+      "author": "毕飞宇",
+      "status": "reading"
+    }, {
+      "title": "儒林外史",
+      "sub": "讲述清代读书人的故事，揭露科举制度对人性的毒害，描绘文人阶层在功名利禄面前的狂热、虚伪与堕落全景。",
+      "author": "吴敬梓",
+      "status": "todo"
+    }
+  ]
+}

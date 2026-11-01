@@ -1,169 +1,23 @@
-/* ---------- 1. 基础设置与列宽变量 ---------- */
-.books-table {
-  --ft-head: 48px;
-  --ft-author-width: 8rem;
-  --ft-status-width: 4rem;
-  margin: .8rem 0 1.5rem;
-}
+.books-table{--h:48px;--a:8rem;--s:4rem;--top:var(--ft-site-header,48px);margin:.8rem 0 1.5rem}
+@media(max-width:700px){.books-table{--a:6.5rem;--s:3.5rem}}
 
-.books-table .md-typeset__scrollwrap { overflow: visible !important; }
+.ft-head,.books-table th{position:sticky;background:var(--md-default-bg-color--light);backdrop-filter:blur(.4rem)}
+.ft-head{top:var(--top);z-index:2;display:grid;grid-template-columns:1fr var(--a) var(--s);align-items:center;height:var(--h);border-bottom:2px solid var(--md-default-fg-color--light);font-size:.8rem;font-weight:700}
 
-@media (max-width: 700px) {
-  .books-table {
-    --ft-author-width: 6.5rem;
-    --ft-status-width: 3.5rem;
-  }
-}
+.books-table table{width:100%;table-layout:fixed;border-spacing:0}
+.books-table :is(span,th,td){padding:.65rem .5rem}
+.books-table :is(th,td){border-bottom:1px solid var(--md-default-fg-color--lightest);font-weight:400;text-align:left;vertical-align:middle}
+.books-table :is(span,th,td):nth-child(2){width:var(--a);padding-inline:.4rem;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.books-table :is(span,th,td):nth-child(3){width:var(--s);text-align:center}
 
-.books-table > p:first-child {
-  display: none;
-}
+.books-table th{top:calc(var(--top) + var(--h));z-index:1;padding-bottom:.25rem;border:0;box-shadow:0 1px var(--md-default-fg-color--lightest);color:var(--md-default-fg-color--light);font-size:.6rem}
+.books-table td{transition:background .15s}
+.books-table tr:hover>td{background:var(--md-default-fg-color--lightest)}
+.books-table tr:last-child>td{border:0}
+.books-table small{display:block;margin-top:.2rem;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
-.books-table .ft-head {
-  position: sticky;
-  top: var(--ft-site-header, 48px);
-  z-index: 2;
-  backdrop-filter: blur(.4rem);
-  -webkit-backdrop-filter: blur(.4rem);
-  background-color: var(--md-default-bg-color--light);
-}
-
-.books-table .ft-header {
-  display: table;
-  width: 100%;
-  margin: 0;
-  table-layout: fixed;
-  border-spacing: 0;
-}
-
-.books-table .ft-header th {
-  box-sizing: border-box;
-  height: var(--ft-head);
-  padding: 0 .5rem;
-  border-bottom: 2px solid var(--md-default-fg-color--light);
-  font-size: .8rem;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: left;
-  vertical-align: middle;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* 作者列 & 状态列公共宽度复用 */
-.books-table .ft-header th:nth-child(2),
-html .md-typeset .books-table table:not(.ft-header) th:nth-child(2),
-html .md-typeset .books-table table:not(.ft-header) td:nth-child(2) {
-  width: var(--ft-author-width);
-  padding-left: .4rem;
-  padding-right: .4rem;
-}
-
-.books-table .ft-header th:nth-child(2) {
-  text-align: right;
-}
-
-.books-table .ft-header th:nth-child(3),
-html .md-typeset .books-table table:not(.ft-header) th:nth-child(3),
-html .md-typeset .books-table table:not(.ft-header) td:nth-child(3) {
-  width: var(--ft-status-width);
-}
-
-.books-table .ft-header th:nth-child(3) {
-  text-align: center;
-  padding: 0 .4rem;
-}
-
-/* ---------- 2. 每个分类一张表 & 单元格基础样式 ---------- */
-html .md-typeset .books-table table:not(.ft-header) {
-  display: table;
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  table-layout: fixed;
-  border-radius: 0;
-  border-spacing: 0;
-  box-shadow: none;
-  background: none;
-  overflow: visible;
-  font-size: inherit;
-
-  th, td {
-    box-sizing: border-box;
-    min-width: 0;
-    padding: .65rem .5rem;
-    border: 0;
-    border-bottom: 1px solid var(--md-default-fg-color--lightest);
-    font-weight: 400;
-    text-align: left;
-    vertical-align: middle;
-  }
-
-  /* 二列（作者）内容溢出省略 */
-  th:nth-child(2), td:nth-child(2) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  /* 分类标题（毛玻璃效果） */
-  thead th {
-    position: sticky;
-    top: calc(var(--ft-site-header, 48px) + var(--ft-head));
-    z-index: 1;
-    padding-top: .65rem;
-    padding-bottom: .25rem;
-    backdrop-filter: blur(.4rem);
-    -webkit-backdrop-filter: blur(.4rem);
-    background-color: var(--md-default-bg-color--light);
-    border-bottom: 0;
-    box-shadow: 0 1px var(--md-default-fg-color--lightest);
-    color: var(--md-default-fg-color--light);
-    font-size: .6rem;
-    font-weight: 400;
-  }
-
-  /* 数据行交互 */
-  tbody {
-    tr {
-      transition: none;
-      background: none;
-      box-shadow: none;
-
-      &:last-child > * { border-bottom: 0; }
-    }
-
-    tr > * {
-      transition: background-color .15s ease;
-    }
-
-    tr:hover > * {
-      background-color: var(--md-default-fg-color--lightest);
-    }
-
-    td:first-child small {
-      display: block;
-      margin-top: .2rem;
-      font-weight: 400;
-      line-height: 1.5;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 100%;
-    }
-  }
-}
-
-/* ---------- 3. 图标与状态样式 ---------- */
-.books-table {
-  tbody tr:has(td:last-child .lucide-circle-x) {
-    color: var(--md-default-fg-color--light);
-    opacity: 0.9;
-    & svg { color: var(--md-default-fg-color--light); }
-  }
-
-  tbody tr:has(td:last-child .lucide-circle-check) svg {
-    color: #4caf50;
-  }
-}
+.books-table svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
+.books-table .todo{color:var(--md-default-fg-color--light);opacity:.9}
+.books-table .done svg{color:#4caf50}
+.books-table .reading svg{color:var(--md-primary-fg-color);animation:r 5s linear infinite}
+@keyframes r{to{rotate:1turn}}
