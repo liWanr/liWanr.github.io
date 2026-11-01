@@ -1,96 +1,77 @@
 (() => {
-  /* ==================== 1. 滚动进度条逻辑 ==================== */
-  const IGNORED = ['/essays/'];
-  const norm = p => p.replace(/\/$/, '');
-  const isIgnored = IGNORED.some(p => norm(p) === norm(location.pathname));
+  const root = document.documentElement;
+  const IGNORED = ['/essays'];
+  const bar = Object.assign(document.createElement('div'), { className: 'scroll-progress-bar' });
+  let barTicking = false, headerOffset = 0, headerUntil = 0, headerRunning = false;
 
-  let bar = null;
-  if (!isIgnored) {
-    bar = document.body.appendChild(document.createElement('div'));
-    bar.className = 'scroll-progress-bar';
-  }
-
-  let barTicking = false;
+  /* 1. 滚动进度条 */
   const updateBar = () => {
     barTicking = false;
-    if (!bar) return;
-    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+    const { scrollTop, scrollHeight, clientHeight } = root;
     const max = scrollHeight - clientHeight;
-    const progress = max > 0 ? Math.min(1, Math.max(0, scrollTop / max)) : 0;
-
-    bar.style.opacity = max > 0 ? '1' : '0';
-    bar.style.width = `${progress * 100}%`;
+    bar.style.display = IGNORED.includes(location.pathname.replace(/\/$/, '')) ? 'none' : '';
+    bar.style.opacity = +(max > 0);
+    bar.style.width = (max > 0 ? Math.min(1, Math.max(0, scrollTop / max)) * 100 : 0) + '%';
   };
 
-  const triggerBar = () => {
-    if (!barTicking && bar) {
-      barTicking = true;
-      requestAnimationFrame(updateBar);
-    }
-  };
-
-  /* ==================== 2. 表格吸顶与顶栏偏移逻辑 ==================== */
-  let lastHeaderOffset = 0, headerUntil = 0, headerRunning = false;
-
+  /* 2. 顶栏偏移（动画期间持续测量 600ms） */
   const measureHeader = () => {
-    let offset = 0;
-    document.querySelectorAll('.md-header, .md-tabs').forEach(el => {
-      if (/sticky|fixed/.test(getComputedStyle(el).position)) {
-        offset = Math.max(offset, el.getBoundingClientRect().bottom);
-      }
-    });
-    if ((offset = Math.max(0, Math.round(offset))) !== lastHeaderOffset) {
-      document.documentElement.style.setProperty('--ft-site-header', `${lastHeaderOffset = offset}px`);
-    }
+    const offset = Math.round(Math.max(0, ...[...document.querySelectorAll('.md-header, .md-tabs')]
+      .filter(el => /sticky|fixed/.test(getComputedStyle(el).position))
+      .map(el => el.getBoundingClientRect().bottom)));
+    if (offset !== headerOffset) root.style.setProperty('--ft-site-header', `${headerOffset = offset}px`);
   };
 
-  const kickHeader = () => {
+  const tick = () => {
+    measureHeader();
+    (headerRunning = performance.now() < headerUntil) && requestAnimationFrame(tick);
+  };
+
+  const onChange = () => {
+    if (!barTicking) { barTicking = true; requestAnimationFrame(updateBar); }
     headerUntil = performance.now() + 600;
-    if (!headerRunning && (headerRunning = true)) {
-      requestAnimationFrame(function tick() {
-        measureHeader();
-        performance.now() < headerUntil ? requestAnimationFrame(tick) : headerRunning = false;
+    if (!headerRunning) { headerRunning = true; requestAnimationFrame(tick); }
+  };
+
+  /* 2.1 合并单元格（仅 .sanguo 表格）：<< 并入左侧，>> 并入右侧 */
+  const mergeCells = () => {
+    document.querySelectorAll('.sanguo table:not([data-merged])').forEach(table => {
+      table.dataset.merged = 1;
+      table.querySelectorAll('tr').forEach(tr => {
+        let anchor;
+        [...tr.children].forEach(c => {
+          if (anchor && c.textContent.trim() === '<<') { anchor.colSpan += c.colSpan; c.remove(); }
+          else anchor = c;
+        });
+        [...tr.children].forEach(c => {
+          const next = c.nextElementSibling;
+          if (next && c.textContent.trim() === '>>') { next.colSpan += c.colSpan; c.remove(); }
+        });
       });
-    }
-  };
-
-  const buildTables = () => {
-    document.querySelectorAll('.md-typeset table thead th').forEach(th => {
-      const align = th.getAttribute('align') || (th.style.textAlign || '').match(/left|center|right/i)?.[0];
-      if (align) th.style.textAlign = align;
     });
-    kickHeader();
   };
 
-  /* ==================== 3. 统一初始化与事件绑定 ==================== */
-  // A. 外链安全拦截
+  const initAll = () => {
+    bar.isConnected || document.body.append(bar);
+    updateBar();
+    mergeCells();
+    document.querySelectorAll('.md-typeset table thead th[align]').forEach(th => th.style.textAlign = th.align);
+    onChange();
+  };
+
+  /* 3. 事件绑定 */
   document.addEventListener('click', e => {
-    const link = e.target.closest('a[href^="http"]');
-    if (link && !link.href.startsWith(location.origin) && !link.classList.contains('glightbox')) {
+    const a = e.target.closest('a[href^="http"]');
+    if (a && a.origin !== location.origin && !a.classList.contains('glightbox')) {
       e.preventDefault();
-      window.open(link.href, '_blank', 'noopener,noreferrer');
+      open(a.href, '_blank', 'noopener,noreferrer');
     }
   });
 
-  // B. 页面滚动与尺寸调整事件（合并监听器）
-  addEventListener('scroll', () => {
-    triggerBar();
-    kickHeader();
-  }, { passive: true });
+  addEventListener('scroll', onChange, { passive: true });
+  addEventListener('resize', onChange);
+  addEventListener('load', onChange);
 
-  addEventListener('resize', () => {
-    triggerBar();
-    kickHeader();
-  });
-
-  // C. 页面加载与 Material 主题 DOM$ 监听
-  const initAll = () => {
-    updateBar();
-    buildTables();
-  };
-
-  ['load', 'DOMContentLoaded'].forEach(ev => addEventListener(ev, initAll));
+  document.readyState === 'loading' ? addEventListener('DOMContentLoaded', initAll) : initAll();
   window.document$?.subscribe?.(initAll);
-
-  if (document.readyState !== 'loading') initAll();
 })();
