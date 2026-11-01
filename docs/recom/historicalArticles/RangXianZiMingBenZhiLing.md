@@ -1,7 +1,7 @@
 ---
 title: 让县自明本志令
 created: 2026-04-12T07:26:33
-tags: [历史文章]
+tags: [历史]
 authors: [曹操]
 comments: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: 推背图
 created: 2026-04-12T07:26:33
-tags: [历史文章]
+tags: [历史]
 authors: [袁天罡, 李淳风, 金圣叹]
 comments: false
 ---
