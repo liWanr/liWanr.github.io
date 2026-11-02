@@ -213,62 +213,62 @@ nav:
   - TECH.:
     - tech/index.md
     - WiKi:
-      - tech/WiKi/github-badge.md
-      - tech/WiKi/windows-shortcut.md
-      - tech/WiKi/zensical-pro-tips.md
-      - tech/WiKi/dns-explain.md
-      - tech/WiKi/dual-boot-time-sync.md
-      - tech/WiKi/execution-breakdown.md
+      - tech/WiKi/githubBadge.md
+      - tech/WiKi/windowsShortcut.md
+      - tech/WiKi/zensicalProTips.md
+      - tech/WiKi/dnsExplain.md
+      - tech/WiKi/dualBootTimeSync.md
+      - tech/WiKi/executionBreakdown.md
     - VPN:
-      - tech/VPN/bleachwrt.md
+      - tech/VPN/bleachWrt.md
       - tech/VPN/immortalWrt.md
       - tech/VPN/wireGuard.md
-      - tech/VPN/openvpn-client.md
+      - tech/VPN/openvpnClient.md
     - Nginx:
-      - tech/Nginx/build-nginx.md
-      - tech/Nginx/nginx-config.md
-      - tech/Nginx/nginx-reverse-proxy.md
+      - tech/Nginx/buildNginx.md
+      - tech/Nginx/nginxConfig.md
+      - tech/Nginx/nginxReverseProxy.md
     - Docker:
-      - tech/Docker/docker-info.md
-      - tech/Docker/install-docker.md
-      - tech/Docker/use-docker.md
-      - tech/Docker/docker-app-deploy.md
-      - tech/Docker/custom-docker-img.md
+      - tech/Docker/dockerInfo.md
+      - tech/Docker/installDocker.md
+      - tech/Docker/useDocker.md
+      - tech/Docker/dockerAppDeploy.md
+      - tech/Docker/customDockerImg.md
     - DevOps:
       - tech/DevOps/mysql.md
       - tech/DevOps/vim.md
-      - tech/DevOps/ubuntu-enable-net.md
-      - tech/DevOps/hackrf-firmware-maint.md
+      - tech/DevOps/ubuntuEnableNet.md
+      - tech/DevOps/hackrfFirmwareMaint.md
       - tech/DevOps/git.md
-      - tech/DevOps/usb-secure-boot.md
-      - tech/DevOps/zip-unzip.md
-      - tech/DevOps/nvidia-control-panel-fs-corrupt.md
+      - tech/DevOps/usbSecureBoot.md
+      - tech/DevOps/zipUnzip.md
+      - tech/DevOps/nvidiaControlPanelFSCorrupt.md
     - Apps:
-      - tech/Apps/apple-ai.md
-      - tech/Apps/apple-music.md
+      - tech/Apps/appleAI.md
+      - tech/Apps/appleMusic.md
       - tech/Apps/bandizip.md
-      - tech/Apps/activate-typora.md
+      - tech/Apps/activateTypora.md
       - tech/Apps/samba.md
-      - tech/Apps/active-jetbrains.md
-      - tech/Apps/chrome-search-new-tab.md
+      - tech/Apps/activeJetbrains.md
+      - tech/Apps/chromeSearchNewTab.md
     - Projects:
-      - tech/projects/dossier.md
-      - tech/projects/FUCK.md
-      - tech/projects/mkdocs-feed.md
-      - tech/projects/mkdocs-webmention.md
+      - tech/Projects/dossier.md
+      - tech/Projects/FUCK.md
+      - tech/Projects/mkdocsFeed.md
+      - tech/Projects/mkdocsWebmention.md
   - RECOM:
     - recom/website.md
     - recom/links.md
-    - recom/open-source.md
+    - recom/openSource.md
     - recom/tools.md
     - 观 · 读 · 听:
-      - recom/movie.md
-      - recom/library.md
-      - recom/music.md
-    - 历史文章:
-      - recom/historicalArticles/TuiBeiTu.md
-      - recom/historicalArticles/RangXianZiMingBenZhiLing.md
-      - recom/historicalArticles/SanGuoNianBiao.md
+      - recom/culture/filmTV.md
+      - recom/culture/library.md
+      - recom/culture/album.md
+    - 历史:
+      - recom/history/tuiBeiTu.md
+      - recom/history/rangXianZiMingBenZhiLing.md
+      - recom/history/sanGuoNianBiao.md
   - ABOUT:
     - about.md
     - about/LICENSE.md

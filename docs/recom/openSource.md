@@ -3,8 +3,7 @@ icon: lucide/star
 title: 屌爆了的开源
 created: 2026-02-07T01:05:51
 updated: 2026-07-17T17:41:05
-authors: 
-    - opensource
+authors: [opensource]
 ---
 
 <style>
@@ -22,9 +21,6 @@ hr {
 </style>
 
 [**Open Source**](https://opensource.org/)
-
-![snake](https://raw.githubusercontent.com/liWanr/liWanr/output/snake.svg#only-light)
-![snake dark](https://raw.githubusercontent.com/liWanr/liWanr/output/snake-dark.svg#only-dark)
 
 ## 网络类
 
