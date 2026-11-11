@@ -17,21 +17,21 @@ extra_css:
 
 extra_javascript:
   - path: assets/javascripts/extra.js
-    async: true
+    defer: true
 
 # 配置
 theme:
   language: zh                       # 设置语言,zh简中, en英文, zh-Hant繁中, zh-TW台湾
   custom_dir: overrides              # 模板覆盖目录，用于自定义主题模板
-  font:
-    text: Noto Serif SC              # 正文字体
-    code: JetBrains Mono             # 代码块等宽字体
+  font: false
+    # font: false
+    # code: JetBrains Mono             # 代码块等宽字体
   icon:
     logo: local/logo
     repo: simple/github
     tag:
       default: lucide/hash
-  favicon: assets/avatar.png         # 设置浏览器标签页或标题栏显示的图标
+  favicon: assets/avatar.webp        # 设置浏览器标签页或标题栏显示的图标
   code:
     fold:
       enabled: true

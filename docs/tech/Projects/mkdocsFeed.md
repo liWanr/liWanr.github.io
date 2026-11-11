@@ -202,7 +202,7 @@ tags: [运维, 反向代理]
 
 ```xml
 <image>
-  <url>https://example.com/assets/avatar.png</url>
+  <url>https://example.com/assets/avatar.webp</url>
   <title>站点名</title>
   <link>https://example.com/</link>
 </image>
