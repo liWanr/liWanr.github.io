@@ -125,7 +125,7 @@ body:has(#profile-image) #profile-image { display: block; width: auto; height: a
 
 <div id="profile-image-container">
   <img class="movie-links" 
-    src="/assets/images/index/me.webp" 
+    src="/assets/images/index/me.avif" 
     alt="liWanr 的肖像" id="profile-image"
     fetchpriority="high">
 </div>

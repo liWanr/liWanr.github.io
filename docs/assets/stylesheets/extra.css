@@ -1,16 +1,75 @@
 /* ---------- 1. 全局变量与字体/全局重置 ---------- */
+
 :root {
   --md-table-head-height: 48px;
-  --md-text-font: "MiSansVF";
+  --md-text-font: "MiSans";
   --features: 'tnum' on, 'ss08' on;
 }
 
 @font-face {
-  font-family: "MiSansVF";
-  src: url("/assets/fonts/MiSansVF.ttf") format("truetype");
-  font-weight: 100 900;
+  font-family: "MiSans";
+  src: url("/assets/fonts/MiSans-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "MiSans";
+  src: url("/assets/fonts/MiSans-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MiSans";
+  src: url("/assets/fonts/MiSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MiSans";
+  src: url("/assets/fonts/MiSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MiSans";
+  src: url("/assets/fonts/MiSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MiSans";
+  src: url("/assets/fonts/MiSans-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MiSans";
+  src: url("/assets/fonts/MiSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MiSans";
+  src: url("/assets/fonts/MiSans-Heavy.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 ::-webkit-scrollbar { display: none; }
 * { font-feature-settings: var(--features); }
