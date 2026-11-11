@@ -6,7 +6,7 @@ authors: [袁天罡, 李淳风, 金圣叹]
 comments: false
 ---
 
-<script src="/assets/javascripts/translate.js"></script>
+<script src="/assets/javascripts/translate.js" defer></script>
 
 <h1 style="margin-bottom: 0px;">推背图</h1>
 

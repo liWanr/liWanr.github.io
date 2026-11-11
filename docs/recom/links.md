@@ -44,7 +44,7 @@ created: 2026-05-08T07:46:22
 以下是**我关注的博客**，方便时不时来 ~~视奸~~ 欣赏一下，我关注你就好，不必交换。可哪天消失了也请不用难过，不是你的文章不够好，是我太花心了。但如果被冒犯到请[**联系我**](mailto:itsWanr@iCloud.com)，我会尽快删除。
 ///
 
-///html | div.grid.cards.clickable[style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); font-family: 'Noto Serif SC', 'Songti SC';"]
+///html | div.grid.cards.clickable[style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));"]
 
 -   [**fuXes**](https://fuxes.cn/)
     { title="人生如逆旅，你我皆行人" }
@@ -75,7 +75,7 @@ created: 2026-05-08T07:46:22
 以下博客聚&合网站为我加入的组织，我也退出过一些，加一个自己喜欢的就好。
 ///
 
-///html | div.grid.cards[style="font-family: 'Noto Serif SC', 'Songti SC';"]
+///html | div.grid.cards
 
 -   **BlogsClub** <small>*PowerBy WhiteBear*</small>
 
@@ -101,7 +101,7 @@ created: 2026-05-08T07:46:22
 以下是**我的博客邻居**，欢迎交换链接。
 ///
 
-///html | div.grid.cards.clickable[style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); font-family: 'Noto Serif SC', 'Songti SC';"]
+///html | div.grid.cards.clickable[style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));"]
 
 -   [DAI X.L.](https://dxlcq.cn/)
     { title="骄骄是骄傲的骄"}

@@ -9,7 +9,7 @@ hide: [toc]
 <h1>听 · 乐曲中的回响</h1>
 
 <link rel="stylesheet" href="/assets/stylesheets/explore.css">
-<script src="/assets/javascripts/explore.js"></script>
+<script src="/assets/javascripts/explore.js" defer></script>
 
 <p style="text-align:right;" markdown><small>
   <span id="album-count"></span> Albums ·

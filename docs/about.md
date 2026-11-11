@@ -259,7 +259,7 @@ System Specs
 }
 </style>
 
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 
 <p id="rss-ring-message">内容更新不会等你，但订阅可以。</p>
 
@@ -278,4 +278,4 @@ System Specs
 <input type="checkbox" id="rss-ring-privacy-checkbox" />
 我已阅读并同意[隐私政策](/about/privacy-policy/)。
 
-<script src="/assets/javascripts/about.js"></script>
+<script src="/assets/javascripts/about.js" defer></script>

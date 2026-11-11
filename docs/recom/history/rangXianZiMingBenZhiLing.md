@@ -12,7 +12,7 @@ comments: false
 :fontawesome-brands-creative-commons-pd:
 此东汉作品在全世界都属于公有领域，因为作者逝世已经超过100年，且作品于1931年1月1日之前出版。</small></p>
 
-<script src="/assets/javascripts/translate.js"></script>
+<script src="/assets/javascripts/translate.js" defer></script>
 
 <div class="grid cards">
 <div>公元210年 <strong>曹操</strong> 作</div>

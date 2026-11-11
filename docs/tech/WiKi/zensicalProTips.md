@@ -14,7 +14,7 @@ date:
 
 <!-- more -->
 
-<script src="/assets/javascripts/keys.js"></script>
+<script src="/assets/javascripts/keys.js" defer></script>
 <link rel="stylesheet" href="/assets/stylesheets/search.css">
 
 ## 键盘按键格式
