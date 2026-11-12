@@ -308,7 +308,7 @@ def bubble_sort(items): # (1)!
 .font-switch span::after { content: ""; position: absolute; width: 16px; height: 16px; top: 3px; left: 3px; border-radius: 50%; background: var(--md-default-bg-color); transition: .25s; }
 .font-switch input:checked + span { background: var(--md-code-hl-color); }
 .font-switch input:checked + span::after { transform: translateX(18px); }
-#font-a, #font-b, #font-c, #font-d, #font-e, #font-f, #font-g, #font-h, #font-i, #font-j, #font-k, #font-l, #font-m { font-feature-settings: "tnum" off, "ss08" off; }
+#font-a, #font-b, #font-c, #font-d, #font-e, #font-f, #font-g, #font-h, #font-i, #font-j, #font-k, #font-l, #font-m, #font-n { font-feature-settings: "tnum" off, "ss08" off; }
 #font-a.enabled { font-feature-settings: "ss01" on; }
 #font-b.enabled { font-feature-settings: "ss02" on; }
 #font-c.enabled { font-feature-settings: "ss03" on; }
@@ -321,7 +321,8 @@ def bubble_sort(items): # (1)!
 #font-j.enabled { font-feature-settings: "case" on; }
 #font-k.enabled { font-feature-settings: "frac" on; }
 #font-l.enabled { font-feature-settings: "sups" on; }
-#font-m.enabled { font-feature-settings: "tnum" on; }
+#font-m.enabled { font-feature-settings: "subs" on; }
+#font-n.enabled { font-feature-settings: "tnum" on; }
 </style>
 
 <script>
@@ -385,7 +386,8 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
 | `'case'` | 英文括号与<br>大写字母等高 | __<span id="font-j">{[(ABC)]}</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-j"><span></span></label> |
 | `'frac'` | 分数 | __<span id="font-k">5/9</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-k"><span></span></label> |
 | `'sups'` | 数字&小写字母<br>全部为上标 | __<span id="font-l">12ABab</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-l"><span></span></label> |
-| `'tnum'`[^1] | 数字等宽 | __<span id="font-m">12345678</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-m"><span></span></label> |
+| `'subs'` | 数字全部为下标 | __<span id="font-m">12ABab</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-m"><span></span></label> |
+| `'tnum'`[^1] | 数字等宽 | __<span id="font-n">12345678</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-n"><span></span></label> |
 ///
 
 **全局开启**, `font-feature-settings` 属性提供了对 OpenType 字体特性的底层精细控制, 它的设计初衷是让开发者能够访问那些不常用但在特定场景下非常需要的字体特性, 所以在全局状态下使用这个属性浏览器**不一定会渲染**。所以这是我想到一个强制加载的方法, 但是比较麻烦。
