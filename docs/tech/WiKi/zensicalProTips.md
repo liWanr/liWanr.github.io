@@ -304,9 +304,9 @@ def bubble_sort(items): # (1)!
 .big-strong th:nth-child(4), .big-strong td:nth-child(4) { width: 20%; }
 .font-switch { display: inline-flex; cursor: pointer; vertical-align: middle; }
 .font-switch input { display: none; }
-.font-switch span { display: inline-block; width: 40px; height: 22px; border-radius: 20px; background: #aaa; position: relative; transition: .25s; }
-.font-switch span::after { content: ""; position: absolute; width: 16px; height: 16px; top: 3px; left: 3px; border-radius: 50%; background: white; transition: .25s; }
-.font-switch input:checked + span { background: #0d84ff; }
+.font-switch span { display: inline-block; width: 40px; height: 22px; border-radius: 20px; background: var(--md-default-fg-color); position: relative; transition: .25s; }
+.font-switch span::after { content: ""; position: absolute; width: 16px; height: 16px; top: 3px; left: 3px; border-radius: 50%; background: var(--md-default-bg-color); transition: .25s; }
+.font-switch input:checked + span { background: var(--md-code-hl-color); }
 .font-switch input:checked + span::after { transform: translateX(18px); }
 #font-a, #font-b, #font-c, #font-d, #font-e, #font-f, #font-g, #font-h, #font-i, #font-j, #font-k, #font-l, #font-m { font-feature-settings: "tnum" off, "ss08" off; }
 #font-a.enabled { font-feature-settings: "ss01" on; }
