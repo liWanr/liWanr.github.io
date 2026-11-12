@@ -51,10 +51,45 @@
     });
   };
 
+  /* 2.2 返回顶部按钮：滚动时唤醒显示，停止滚动 1 秒后平滑淡出 */
+  const initBackToTop = () => {
+    if (window._backToTopInitialized) return;
+    window._backToTopInitialized = true;
+
+    // 动态注入平滑过渡的 CSS 样式
+    const styleEl = document.createElement('style');
+    styleEl.innerHTML = `
+      button[data-md-component="top"] {
+        transition: opacity 0.4s ease, visibility 0.4s ease !important;
+      }
+    `;
+    document.head.append(styleEl);
+
+    let hideTimer = null;
+
+    window.addEventListener('scroll', () => {
+      const btn = document.querySelector('button[data-md-component="top"]');
+      if (!btn) return;
+
+      // 只要发生滚动，立刻清除隐藏状态，使按钮恢复显示
+      btn.style.opacity = '';
+      btn.style.visibility = '';
+
+      clearTimeout(hideTimer);
+      
+      // 停止滚动 1 秒后，开始平滑淡出
+      hideTimer = setTimeout(() => {
+        btn.style.opacity = '0';
+        btn.style.visibility = 'hidden';
+      }, 1500);
+    }, { passive: true });
+  };
+
   const initAll = () => {
     bar.isConnected || document.body.append(bar);
     updateBar();
     mergeCells();
+    initBackToTop();
     document.querySelectorAll('.md-typeset table thead th[align]').forEach(th => th.style.textAlign = th.align);
     onChange();
   };
