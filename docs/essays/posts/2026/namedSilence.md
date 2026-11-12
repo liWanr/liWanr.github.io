@@ -7,7 +7,7 @@ date: 2026-07-16T15:33:00+08:00
 description: 这书最戳我的地方不是没看见，是回避，是看见之后的集体沉默。书里那句「我们知道，但我们清楚地知道自己不该知道」，读了几遍才觉出它的冷。这并非无知，而是一场持续的表演，演给别人，也演给自己。
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/essays.css">
+<style>.md-content__inner { font-family: "ShangTu"; }</style>
 
 <h1 style="margin-bottom: 0px;">快看！荔枝还在树上？哈哈哈</h1>
 
@@ -33,3 +33,7 @@ description: 这书最戳我的地方不是没看见，是回避，是看见之�
 ///html | figcaption[align="center"]
 大象 / 图源: [Backiee](https://backiee.com)
 ///
+
+<p align="right" markdown>
+丙午年六月初三日·申时成文
+</p>

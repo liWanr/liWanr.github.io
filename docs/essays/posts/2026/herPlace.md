@@ -7,7 +7,7 @@ date: 2026-07-28T11:07:58+08:00
 description: 她小学在墙边、在扫帚旁，初中在我旁边，后来在毕业照里都没有位置，最后只在我的梦里。
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/essays.css">
+<style>.md-content__inner { font-family: "ShangTu"; }</style>
 
 我今天又梦到她了，梦里没有发生什么特别的事，她只是坐在旁边，我在看她写的东西。她从小学到初中一直和我同班，我相信没有人会对她没有印象。
 
@@ -32,5 +32,5 @@ description: 她小学在墙边、在扫帚旁，初中在我旁边，后来在�
 **她小学在墙边、在扫帚旁，初中在我旁边，后来在毕业照里都没有位置，最后只在我的梦里。**
 
 <p align="right" markdown>
-农历二六年六月十五日
+丙午年六月十五日·午时成文
 </p>

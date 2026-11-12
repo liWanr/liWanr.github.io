@@ -8,7 +8,7 @@ date: 2026-06-24T04:10:58+08:00
 description: 其实 人生并非虚耗 何来尘埃飞舞
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/essays.css">
+<style>.md-content__inner { font-family: "ShangTu"; }</style>
 
 ///html | figcaption[align="center"]
 ![登高峰一秒](/assets/images/blog/shalong/登高峰一秒.png)

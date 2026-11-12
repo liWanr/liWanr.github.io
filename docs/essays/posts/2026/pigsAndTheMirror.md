@@ -7,7 +7,7 @@ date: 2026-04-25T23:21:30+08:00
 description: 动物们透过窗户，看着猪和人类坐在一起打牌、谈笑风生。他们的目光从猪移向人，再从人移向猪，最后，他们再也分不清哪个是哪个。
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/essays.css">
+<style>.md-content__inner { font-family: "ShangTu"; }</style>
 
 <h1 style="margin-bottom: 0px;">猪的镜子</h1>
 
@@ -245,7 +245,7 @@ description: 动物们透过窗户，看着猪和人类坐在一起打牌、谈�
 奥威尔不是一个绝望主义者。他写这本书，恰恰是因为他相信：如果人们能够认清这些机制，就有可能打断这个循环。一本书能做到的，不是推翻一个政权，而是让人们在那个关键时刻，认出窗外的那张脸。
 
 <p align="right" markdown>
-二六年四月廿五日·成文
+丙午年三月初九日·子时成文
 </p>
 
 [^1]: 《动物庄园<small>*/Animal Farm* </small>》, 英国作家乔治·奥威尔创作的托寓小说, 在1945年8月17日正式于英国出版。

@@ -7,7 +7,7 @@ date: 2026-09-05T23:59:59+08:00
 description: 假生辰之名，与友人自四方而至，庆我等犹在，庆未曾相散。
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/essays.css">
+<style>.md-content__inner { font-family: "ShangTu"; }</style>
 
 夫人生一世，譬如行旅，岁月自往来，而人各有其途。幼时未尝以蛋糕、蜡烛为意，今亦然。然生辰既至，流程不可废，所幸假生辰之名，得与友人相会，叙近况、啖饭饮酒，亦足以为庆。
 
@@ -18,3 +18,7 @@ description: 假生辰之名，与友人自四方而至，庆我等犹在，庆�
 夫岁月不居，来日亦未可知。今日相聚，明日复当各归其途；今日谈笑，来日或隔经年。然既得相会，便当惜之。生辰不过为由，所庆者，乃我等犹在，未曾相散。至于所愿，亦不过不为人所易、不为事所扰、不为贫所困、不为欲所迷，自知、自信、自重、自爱，如此而已。
 
 ![photo](/assets/images/essays/26/birthday/jubensha.png)
+
+<p align="right" markdown>
+丙午年七月廿四日·子时成文
+</p>

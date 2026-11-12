@@ -7,7 +7,7 @@ date: 2026-04-04T06:58:53+08:00
 description: 如果有一天这种循环真的成为一种常态，那么也许我们需要重新理解爱国的含义，不是它在最响亮的时候意味着什么，而是它在最安静的时候，还剩下多少。
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/essays.css">
+<style>.md-content__inner { font-family: "ShangTu"; }</style>
 
 在今天的互联网语境里，爱国是不是有点奇怪？
 
@@ -42,7 +42,7 @@ Nike、H&M、Burberry、New Balance 都逃不过这个循环。直播间被网�
 如果这真的会一直循环下去，那我们可能得重新想想，爱国这件事，安静下来之后，到底还剩多少。
 
 <p align="right" markdown>
-二六年四月三日·成文
+丙午年二月十七日·卯时成文
 </p>
 
 [^1]: [2021年新疆棉花争议事件](https://zh.wikipedia.org/wiki/2021年新疆棉花争议事件). 维基百科. 2021-03-26.

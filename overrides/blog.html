@@ -6,15 +6,23 @@
 .headerlink { display: none !important; }
 .md-content__button { display: none !important; }
 .essays .md-draft { font-size: 0.9em; margin-left: 0.4rem; }
+.essays { display: flex; flex-direction: column; gap: 0.4rem; }
+.essays ul { list-style: none; margin: 0 !important; padding: 0; }
+.essays li { margin-right: .8rem !important; padding: 0; }
+.essays a[data-date] { display: flex; align-items: baseline; text-decoration: none; color: inherit; overflow: hidden; }
+.md-typeset .footnote { font-size: .64rem !important; }
+.essays a[data-date]:hover { color: var(--md-accent-fg-color); }
+.essays a[data-date]::before { content: ""; flex: 1; order: 2; align-self: center; margin: 0.2em 0.6em 0 0.6em; border-bottom: 1.5px dashed   color-mix(in srgb, currentColor 15%, transparent); }
+.essays a[data-date]::after { content: attr(data-date); order: 3; white-space: nowrap; font-family: var(--md-code-font); font-size: 0.85em; font-variant-numeric: tabular-nums; color: var(--md-default-fg-color--light); }
+.essays a[data-date]:hover::after { color: var(--md-accent-fg-color); }
+.essays a[data-date] > * { order: 1; }
+.essays strong { font-weight: 600; }
 </style>
 
 <div class="md-content" data-md-component="content">
   <div class="md-content__inner">
 
     {% if page.url[:7] == "essays/" %}
-
-      <link rel="stylesheet" href="/assets/stylesheets/essays.css">
-
       <article class="md-content__inner md-typeset">
         {{ page.content }}
       </article>

@@ -7,7 +7,7 @@ date: 2026-09-27T01:41:40+08:00
 description: 他自妖梦中，完全醒过来。是一回戏弄。太美满了！强撑着爬起来。拍拍灰尘。嘴角挂着一朵诡异的笑。“我这辈子就是想当虞姬！”
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/essays.css">
+<style>.md-content__inner { font-family: "ShangTu"; }</style>
 
 <h1 style="margin-bottom: 0px;">尘归尘</h1>
 
@@ -70,5 +70,5 @@ description: 他自妖梦中，完全醒过来。是一回戏弄。太美满了�
 段小楼的房子要被主人收回了，连浴德池也没有了。一个唱了半辈子霸王的人，回到自己的城市外面，连个能重复走回去的地方都没留下。骨灰没找着，那句“别怪我”也没说完，像是这本书存心不让任何一笔账，真正结清。
 
 <p align="right" markdown>
-二六年八月十七日·成文
+丙午年八月十七日·丑时成文
 </p>

@@ -7,7 +7,7 @@ date: 2026-07-21T22:25:16+08:00
 description: 因为一个梦，和高中的好朋友聊了起来，梦里她死了，又活了。
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/essays.css">
+<style>.md-content__inner { font-family: "ShangTu"; }</style>
 
 因为一个梦，和高中的好朋友聊了起来，梦里她死了，又活了。
 
@@ -27,3 +27,6 @@ description: 因为一个梦，和高中的好朋友聊了起来，梦里她死�
 
 **我们能聊以前，却不能和以前一样聊。**当我自己都感到冒犯的时候，以前的他应该已经在我心里死了吧。他又活过来了，不过是作为同学的他🤷。
 
+<p align="right" markdown>
+丙午年六月十七日·亥时成文
+</p>

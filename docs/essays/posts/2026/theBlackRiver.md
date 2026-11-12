@@ -7,7 +7,7 @@ date: 2026-05-14T00:06:47+08:00
 description: 那一年的春天来得很早，乌河两岸的草是青的，新来的孩子哭声很响。乌河还是那条乌河，上游的人死了，这里的人还在争，下游的人还没出生。
 ---
 
-<link rel="stylesheet" href="/assets/stylesheets/essays.css">
+<style>.md-content__inner { font-family: "ShangTu"; }</style>
 
 山谷深处，炊烟三缕。
 
@@ -344,5 +344,5 @@ description: 那一年的春天来得很早，乌河两岸的草是青的，新�
 乌河还是那条乌河，上游的人死了，这里的人还在争，下游的人还没出生。
 
 <p align="right" markdown>
-二六年五月十四日·成文
+丙午年三月廿八日·子时成文
 </p>
