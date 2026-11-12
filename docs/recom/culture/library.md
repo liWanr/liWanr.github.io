@@ -11,6 +11,6 @@ comments: false
 <link rel="stylesheet" href="/assets/stylesheets/library.css">
 <script src="/assets/javascripts/library.js" defer></script>
 
-<p style="text-align:right;" markdown><small>共 <span id="book-count">—</span> 本书 · 数据来源 [Z-Library](https://zh.z-library.sk/profile/50809534/8cd19f)</small></p>
+<p style="text-align:right;" markdown><small><span id="book-count"></span> Books · Data from [Z-Library](https://zh.z-library.sk/profile/50809534/8cd19f)</small></p>
 
 <div class="books-table" data-src="/assets/datas/library.json"></div>

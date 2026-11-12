@@ -17,4 +17,4 @@ hide: [toc]
   Links to  [MusicBrainz](https://musicbrainz.org/)
 </small></p>
 
-<div class="explore music" data-json="/assets/datas/music.json"></div>
+<div class="explore music" data-json="/assets/datas/album.json"></div>
