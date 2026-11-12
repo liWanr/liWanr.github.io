@@ -12,8 +12,6 @@ date:
 | [**Icons**](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/ "图标和表情")
 | [**Lucide**](https://lucide.dev/icons/ "图标")
 
-<!-- more -->
-
 <script src="/assets/javascripts/keys.js" defer></script>
 <link rel="stylesheet" href="/assets/stylesheets/search.css">
 
@@ -297,15 +295,42 @@ def bubble_sort(items): # (1)!
 
 ### 使用高级特性
 
-///html | style
-.big-strong strong {
-    font-size: 2.5em;
-    font-feature-settings: 'tnum' off, 'ss04' off;
-}
-strong mark{
-    font-feature-settings: 'tnum' off, 'ss04' off;
-}
-///
+<style>
+.big-strong strong { font-size: 2.5em; }
+.big-strong table { width: 100%; table-layout: fixed; }
+.big-strong th:nth-child(1), .big-strong td:nth-child(1) { width: 10%; }
+.big-strong th:nth-child(2), .big-strong td:nth-child(2) { width: 20%; }
+.big-strong th:nth-child(3), .big-strong td:nth-child(3) { width: 50%; }
+.big-strong th:nth-child(4), .big-strong td:nth-child(4) { width: 20%; }
+.font-switch { display: inline-flex; cursor: pointer; vertical-align: middle; }
+.font-switch input { display: none; }
+.font-switch span { display: inline-block; width: 40px; height: 22px; border-radius: 20px; background: #aaa; position: relative; transition: .25s; }
+.font-switch span::after { content: ""; position: absolute; width: 16px; height: 16px; top: 3px; left: 3px; border-radius: 50%; background: white; transition: .25s; }
+.font-switch input:checked + span { background: #0d84ff; }
+.font-switch input:checked + span::after { transform: translateX(18px); }
+#font-a, #font-b, #font-c, #font-d, #font-e, #font-f, #font-g, #font-h, #font-i, #font-j, #font-k, #font-l, #font-m { font-feature-settings: "tnum" off, "ss08" off; }
+#font-a.enabled { font-feature-settings: "ss01" on; }
+#font-b.enabled { font-feature-settings: "ss02" on; }
+#font-c.enabled { font-feature-settings: "ss03" on; }
+#font-d.enabled { font-feature-settings: "ss04" on; }
+#font-e.enabled { font-feature-settings: "ss05" on; }
+#font-f.enabled { font-feature-settings: "ss06" on; }
+#font-g.enabled { font-feature-settings: "ss07" on; }
+#font-h.enabled { font-feature-settings: "ss08" on; }
+#font-i.enabled { font-feature-settings: "ss09" on; }
+#font-j.enabled { font-feature-settings: "case" on; }
+#font-k.enabled { font-feature-settings: "frac" on; }
+#font-l.enabled { font-feature-settings: "sups" on; }
+#font-m.enabled { font-feature-settings: "tnum" on; }
+</style>
+
+<script>
+document.addEventListener("change", event => {
+  const input = event.target.closest(".font-switch input[data-target]");
+  if (!input) return;
+  document.getElementById(input.dataset.target)?.classList.toggle("enabled", input.checked);
+});
+</script>
 
 MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版更加精致, 符合实际设计、开发需求, 每个字体功能都有对应的标签, 用于标记功能效果。MiSans 包含 15 种特性以满足不同业务对字体上的不同需求, 提供可选择性。
 
@@ -330,39 +355,37 @@ MiSans 包含多种 OpenType 高级排版功能, 也就是可以让字体排版�
 
 ///
 
-////html | div.big-strong
-///html | div.grid.cards
+///html | div.grid.cards.big-strong
 
 -   未开启
             
-    __123<mark>,</mark>435<mark>,</mark>00__
+    __123<mark>,</mark>435<mark>.</mark>00__
 
 -   已开启
         
-    __123<mark style="font-feature-settings: 'ss01' on">,</mark>435<mark style="font-feature-settings: var(--features), 'ss01' on">,</mark>00__
+    __123<mark style="font-feature-settings: 'ss01' on">,</mark>435<mark style="font-feature-settings: var(--features), 'ss01' on">.</mark>00__
+
 ///
-////
 
 这个特征是数字专用标点, 除了这个还有其他的特征:
 
 ///html | div.big-strong
 
-|CSS 属性|特征效果|未启用|已启用|
-|:-|:-|:-:|:-:|
-|`'ss01'`|数字专用标点|__:1,234.5__|__:1,234.5__{style="font-feature-settings: 'ss01' on"}|
-|`'ss02'`|单位改为上标|__96% 96℃__|__96% 96℃__{style="font-feature-settings: 'ss02' on"}|
-|`'ss03'`|单位改为下标|__96% 96℃__|__96% 96℃__{style="font-feature-settings: 'ss03' on"}|
-|`'ss04'`|数字等高汉字|__4月21日__|__4月21日__{style="font-feature-settings: 'ss04' on;"}|
-|`'ss05'`|将大写的 M<br>改为 [小米](https://www.mi.com/) 图标|__M__|__M__{style="font-feature-settings: 'ss05' on"}|
-|`'ss06'`|将大写的 M<br>改为 [MIUI](https://home.miui.com/) 图标|__M__|__M__{style="font-feature-settings: 'ss06' on"}|
-|`'ss07'`|西文式标点|__“Hi, it’s.”__|__“Hi, it’s”__{style="font-feature-settings: 'ss07' on"}|
-|`'ss08'`|拨号专用符号|__*0#__|__*0#__{style="font-feature-settings: 'ss08' on"}|
-|`'SS09'`|小字面数字|__359264__|__359264__{style="font-feature-settings: 'ss09' on"}|
-|`'case'`|英文括号与<br>大写字母等高|__{[(ABC)]}__|__{[(ABC)]}__{style="font-feature-settings: 'case' on"}|
-|`'frac'`|分数|__5/9__|__5/9__{style="font-feature-settings: 'frac' on"}|
-|`'sups'`|数字/小写字母<br>全部为上标|__12ABab__|__12ABab__{style="font-feature-settings: 'sups' on"}|
-|`'tnum'`[^1]|数字等宽|__4,56<mark>7</mark>,890__|__4,56<mark>7</mark>,890__{style="font-feature-settings: 'tnum' on"}|
-
+| CSS 属性 | 特征效果 | 效果 | 切换 |
+| :- | :- | :-:| :-: |
+| `'ss01'` | 数字专用标点 | __<span id="font-a">123,435.00</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-a"><span></span></label> |
+| `'ss02'` | 单位改为上标 | __<span id="font-b">96% 96℃</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-b"><span></span></label> |
+| `'ss03'` | 单位改为下标 | __<span id="font-c">96% 96℃</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-c"><span></span></label> |
+| `'ss04'` | 数字等高汉字 | __<span id="font-d">4月21日</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-d"><span></span></label> |
+| `'ss05'` | 将大写的 M<br>改为 [小米](https://www.mi.com/) 图标 | __<span id="font-e">M</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-e"><span></span></label> |
+| `'ss06'` | 将大写的 M<br>改为 [MIUI](https://home.miui.com/) 图标 | __<span id="font-f">M</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-f"><span></span></label> |
+| `'ss07'` | 西文式标点 | __<span id="font-g">“Hi, it’s.”</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-g"><span></span></label> |
+| `'ss08'` | 拨号专用符号 | __<span id="font-h">*0#</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-h"><span></span></label> |
+| `'ss09'` | 小字面数字 | __<span id="font-i">359264</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-i"><span></span></label> |
+| `'case'` | 英文括号与<br>大写字母等高 | __<span id="font-j">{[(ABC)]}</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-j"><span></span></label> |
+| `'frac'` | 分数 | __<span id="font-k">5/9</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-k"><span></span></label> |
+| `'sups'` | 数字&小写字母<br>全部为上标 | __<span id="font-l">12ABab</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-l"><span></span></label> |
+| `'tnum'`[^1] | 数字等宽 | __<span id="font-m">12345678</span>__ | <label class="font-switch"><input type="checkbox" data-target="font-m"><span></span></label> |
 ///
 
 **全局开启**, `font-feature-settings` 属性提供了对 OpenType 字体特性的底层精细控制, 它的设计初衷是让开发者能够访问那些不常用但在特定场景下非常需要的字体特性, 所以在全局状态下使用这个属性浏览器**不一定会渲染**。所以这是我想到一个强制加载的方法, 但是比较麻烦。
