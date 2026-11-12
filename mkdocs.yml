@@ -10,7 +10,7 @@ repo_name: GitHub/liWanr
 edit_uri: "edit/main/docs/"
 
 # 版权
-copyright: <strong>liWanr &copy; 2024-2026</strong>
+copyright: <span class="ss09">24~26</span> &copy; liWanr
 
 extra_css:
   - assets/stylesheets/extra.css

@@ -6,6 +6,8 @@
   --features: 'tnum' on, 'ss08' on;
 }
 
+.ss09 { font-feature-settings: 'ss09' on; }
+
 @font-face {
   font-family: "MiSans";
   src: url("/assets/fonts/MiSans-Thin.woff2") format("woff2");
