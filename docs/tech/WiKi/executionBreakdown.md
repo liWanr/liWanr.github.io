@@ -39,7 +39,6 @@ date:
 
 ///
 
-<!-- more -->
 
 ```mermaid
 ---

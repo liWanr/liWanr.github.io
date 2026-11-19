@@ -13,7 +13,6 @@ date:
 sudo timedatectl set-local-rtc 1
 ```
 
-<!-- more -->
 
 ## 成因解析 {id="cause-analysis"}
 

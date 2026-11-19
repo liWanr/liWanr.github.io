@@ -28,7 +28,6 @@ ubuntu@ubuntu:~$ ip a
 ```
 ///
 
-<!-- more -->
 
 ///html | small
 :octicons-light-bulb-16:

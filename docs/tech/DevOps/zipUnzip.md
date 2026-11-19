@@ -7,7 +7,6 @@ date:
     updated: 2025-12-22
 ---
 
-<!-- more -->
 
 ///html | div.grid.cards
 

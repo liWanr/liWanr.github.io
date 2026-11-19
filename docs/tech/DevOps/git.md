@@ -20,7 +20,6 @@ date:
 >
 > 2. 从您安装的终端模拟器安装 Git。 例如, 在 Termux 中, 输入 `pkg install git` 并在出现提示时键入 ++y++。
 
-<!-- more -->
 
 ## 速查表
 

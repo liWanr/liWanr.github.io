@@ -20,7 +20,6 @@ zlib1g-dev \
 wget
 ```
 
-<!-- more -->
 
 ///html | small
 :octicons-light-bulb-16:

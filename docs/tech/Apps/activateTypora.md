@@ -10,7 +10,6 @@ date: 2026-03-21
 >
 > - 本教程 Ubuntu/Debian 可以无脑 CV，其他 Linux/Mac 按流程激活, Windows 直接下载即可使用
 
-<!-- more -->
 
 ///html | div.step
 

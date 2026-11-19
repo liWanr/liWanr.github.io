@@ -17,7 +17,6 @@ Vim 与普通编辑器的最大区别在于它有模式。
 
 - **可视模式**: 按 ++v++ 进入。用于选中文本块。
 
-<!-- more -->
 
 ///html | small
 :octicons-light-bulb-16:
